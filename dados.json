@@ -499,8 +499,8 @@
       "fora": "morocco",
       "kickoff": "2026-06-13T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 1,
+        "fora": 1,
         "avancou": null
       },
       "palpites": {
@@ -534,8 +534,8 @@
       "fora": "scotland",
       "kickoff": "2026-06-14T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 0,
+        "fora": 1,
         "avancou": null
       },
       "palpites": {
@@ -639,8 +639,8 @@
       "fora": "turkey",
       "kickoff": "2026-06-14T04:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 2,
+        "fora": 0,
         "avancou": null
       },
       "palpites": {
