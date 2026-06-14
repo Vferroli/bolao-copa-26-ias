@@ -14,7 +14,7 @@ const LOGOS = {
     '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M9.27 15.29l7.978-5.897c.391-.29.95-.177 1.137.272.98 2.369.542 5.215-1.41 7.169-1.951 1.954-4.667 2.382-7.149 1.406l-2.711 1.257c3.889 2.661 8.611 2.003 11.562-.953 2.341-2.344 3.066-5.539 2.388-8.42l.006.007c-.983-4.232.242-5.924 2.75-9.383.06-.082.12-.164.179-.248l-3.301 3.305v-.01L9.267 15.292M7.623 16.723c-2.792-2.67-2.31-6.801.071-9.184 1.761-1.763 4.647-2.483 7.166-1.425l2.705-1.25a7.808 7.808 0 00-1.829-1A8.975 8.975 0 005.984 5.83c-2.533 2.536-3.33 6.436-1.962 9.764 1.022 2.487-.653 4.246-2.34 6.022-.599.63-1.199 1.259-1.682 1.925l7.62-6.815"/></svg>',
 };
 
-const estado = { dados: null, prompt: "", fases: {}, ia: {}, TZ: "America/Sao_Paulo", HOJE: "" };
+const estado = { dados: null, prompt: "", fases: {}, ia: {}, TZ: "America/Sao_Paulo", HOJE: "", eventos: null };
 
 /* ---------- carregamento ---------- */
 async function carregar() {
@@ -37,7 +37,7 @@ async function carregar() {
     estado.prompt = "";
   }
   render();
-  carregarAoVivo();
+  await sincronizarResultados();
 }
 
 /* ---------- datas em horário local (Brasília) ---------- */
@@ -89,6 +89,65 @@ function ranking() {
     });
   });
   return estado.dados.ias.map((i) => ({ ...i, total: tot[i.id] })).sort((a, b) => b.total - a.total);
+}
+
+/* ---------- auto-apuração via API (TheSportsDB) ----------
+   Casa os resultados já finalizados na API com os nossos jogos e
+   preenche o placar real sozinho. Um placar lançado na mão (no
+   dados.json) tem prioridade e nunca é sobrescrito. */
+const SDB_ALIAS = {
+  "bosnia-and-herzegovina": "bosnia-herzegovina",
+  "czechia": "czech-republic",
+  "democratic-republic-of-congo": "dr-congo",
+  "dr-congo": "dr-congo",
+  "cote-d-ivoire": "ivory-coast",
+  "cote-divoire": "ivory-coast",
+  "united-states": "usa",
+  "united-states-of-america": "usa",
+  "turkiye": "turkey",
+  "korea-republic": "south-korea",
+  "south-korea": "south-korea",
+  "ir-iran": "iran",
+};
+function normNome(s) {
+  return String(s || "")
+    .toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+function idDoTime(strTeam) {
+  const n = normNome(strTeam);
+  if (estado.dados.times[n]) return n;
+  if (SDB_ALIAS[n]) return SDB_ALIAS[n];
+  return null;
+}
+function autoApurar() {
+  let mudou = 0;
+  (estado.eventos || []).forEach((e) => {
+    if (e.intHomeScore == null || e.intAwayScore == null) return;
+    const ch = idDoTime(e.strHomeTeam), cf = idDoTime(e.strAwayTeam);
+    if (!ch || !cf) return;
+    const cands = estado.dados.jogos.filter(
+      (g) => !apurado(g) &&
+        ((g.casa === ch && g.fora === cf) || (g.casa === cf && g.fora === ch))
+    );
+    if (!cands.length) return;
+    const j = cands.find((g) => kickData(g) === e.dateEvent) || cands[0];
+    const hc = Number(e.intHomeScore), ac = Number(e.intAwayScore);
+    const av = j.real ? j.real.avancou : null;
+    j.real = j.casa === ch
+      ? { casa: hc, fora: ac, avancou: av }
+      : { casa: ac, fora: hc, avancou: av };
+    j._auto = true;
+    mudou++;
+  });
+  return mudou;
+}
+async function sincronizarResultados() {
+  await buscarEventos();
+  if (autoApurar()) render();
+  desenharAoVivo();
 }
 
 /* ---------- helpers ---------- */
@@ -187,7 +246,7 @@ function cardHoje(j) {
     ${confrontoHTML(j, true)}
     <div class="palpites">${pals || '<span class="sem-pal">Sem palpites ainda — use o prompt do dia e pergunte às IAs.</span>'}</div>
     <div class="jogo-acoes">
-      <span class="status ${ao ? "ok" : "open"}">${ao ? "✓ apurado" : "○ aberto"}</span>
+      <span class="status ${ao ? "ok" : "open"}">${ao ? (j._auto ? "✓ apurado · API" : "✓ apurado") : "○ aberto"}</span>
     </div>
   </div>`;
 }
@@ -358,7 +417,24 @@ function blocoAoVivo() {
     </div>
   </section>`;
 }
-async function carregarAoVivo() {
+async function buscarEventos() {
+  const cfg = estado.dados.ao_vivo || {};
+  const liga = cfg.league_id || 4429;
+  const key = localStorage.getItem("bolao_apikey") || cfg.chave_padrao || "3";
+  try {
+    const b = `https://www.thesportsdb.com/api/v1/json/${key}`;
+    const [prox, pass] = await Promise.all([
+      fetch(`${b}/eventsnextleague.php?id=${liga}`).then((r) => r.json()).catch(() => ({})),
+      fetch(`${b}/eventspastleague.php?id=${liga}`).then((r) => r.json()).catch(() => ({})),
+    ]);
+    estado.eventos = [].concat(pass.events || [], prox.events || []);
+  } catch (_) {
+    estado.eventos = [];
+  }
+  return estado.eventos;
+}
+
+async function desenharAoVivo() {
   const cont = document.getElementById("aovivo-conteudo");
   if (!cont) return;
   const cfg = estado.dados.ao_vivo || {};
@@ -369,20 +445,10 @@ async function carregarAoVivo() {
   const key = keyGuardada || cfg.chave_padrao || "3";
   document.getElementById("salvar-key")?.addEventListener("click", () => {
     localStorage.setItem("bolao_apikey", keyInput.value.trim());
-    carregarAoVivo();
+    sincronizarResultados();
   });
 
-  let eventos = [];
-  try {
-    const b = `https://www.thesportsdb.com/api/v1/json/${key}`;
-    const [prox, pass] = await Promise.all([
-      fetch(`${b}/eventsnextleague.php?id=${liga}`).then((r) => r.json()).catch(() => ({})),
-      fetch(`${b}/eventspastleague.php?id=${liga}`).then((r) => r.json()).catch(() => ({})),
-    ]);
-    eventos = [].concat(pass.events || [], prox.events || []);
-  } catch (_) {
-    eventos = [];
-  }
+  const eventos = estado.eventos || [];
   if (!eventos.length) {
     cont.className = "aviso";
     cont.innerHTML = "Sem jogos da Copa retornados pela API agora. (Pode não estar em andamento, ou a chave grátis está limitada.)";

@@ -47,6 +47,19 @@ Preencha `real`. Os pontos aparecem sozinhos no painel:
 "real": { "casa": 2, "fora": 1, "avancou": null }
 ```
 
+### Apuração automática pela API
+
+Quando um jogo **termina de verdade**, o painel busca o resultado na TheSportsDB
+e preenche o `real` sozinho — o ranking se atualiza sem ninguém lançar nada.
+Esses jogos aparecem marcados como **"✓ apurado · API"**.
+
+- O lançamento **na mão sempre vence**: se você já tiver preenchido o `real` no
+  `dados.json`, a API nunca sobrescreve. Use isso para corrigir um placar errado
+  ou apurar antes da API atualizar.
+- A auto-apuração roda toda vez que alguém abre o painel; nada é gravado no
+  `dados.json` (é só em memória, no navegador).
+- O `avancou` do mata-mata continua sendo manual — a API só preenche os gols.
+
 ## Mata-mata (bônus de classificação +8)
 
 Nos jogos de mata-mata, em cada palpite diga quem a IA crava pra avançar no campo `avanca` (use o **id** do time), e quando o jogo acabar preencha `avancou` no `real` com quem passou de verdade:
