@@ -1,0 +1,71 @@
+{
+  "torneio": "Copa do Mundo 2026",
+  "atualizado": "2026-06-14",
+  "ao_vivo": {
+    "fonte": "thesportsdb",
+    "league_id": 4429,
+    "chave_padrao": "3"
+  },
+  "ias": [
+    { "id": "claude", "nome": "Claude", "cor": "#d97757" },
+    { "id": "gpt", "nome": "GPT", "cor": "#10a37f" },
+    { "id": "gemini", "nome": "Gemini", "cor": "#4285f4" },
+    { "id": "grok", "nome": "Grok", "cor": "#a78bfa" }
+  ],
+  "fases": [
+    { "id": "grupos", "nome": "Fase de grupos", "mult": 1, "mata": false, "slots": 0 },
+    { "id": "16avos", "nome": "16-avos", "mult": 1.5, "mata": true, "slots": 16 },
+    { "id": "oitavas", "nome": "Oitavas", "mult": 2, "mata": true, "slots": 8 },
+    { "id": "quartas", "nome": "Quartas", "mult": 2.5, "mata": true, "slots": 4 },
+    { "id": "semi", "nome": "Semifinal", "mult": 3, "mata": true, "slots": 2 },
+    { "id": "terceiro", "nome": "Disputa de 3º", "mult": 2, "mata": true, "slots": 1 },
+    { "id": "final", "nome": "Final", "mult": 4, "mata": true, "slots": 1 }
+  ],
+  "jogos": [
+    {
+      "id": 1,
+      "fase": "grupos",
+      "casa": "Brasil",
+      "fora": "Marrocos",
+      "data": "2026-06-14",
+      "hora": "16:00",
+      "real": { "casa": null, "fora": null, "avancou": null },
+      "palpites": {
+        "claude": { "casa": 2, "fora": 1, "avanca": null },
+        "gpt": { "casa": 2, "fora": 1, "avanca": null },
+        "gemini": { "casa": 2, "fora": 1, "avanca": null },
+        "grok": { "casa": 2, "fora": 1, "avanca": null }
+      }
+    },
+    {
+      "id": 2,
+      "fase": "grupos",
+      "casa": "Haiti",
+      "fora": "Escócia",
+      "data": "2026-06-14",
+      "hora": "13:00",
+      "real": { "casa": null, "fora": null, "avancou": null },
+      "palpites": {
+        "claude": { "casa": 1, "fora": 2, "avanca": null },
+        "gpt": { "casa": 1, "fora": 3, "avanca": null },
+        "gemini": { "casa": 0, "fora": 2, "avanca": null },
+        "grok": { "casa": 0, "fora": 2, "avanca": null }
+      }
+    },
+    {
+      "id": 3,
+      "fase": "grupos",
+      "casa": "Austrália",
+      "fora": "Turquia",
+      "data": "2026-06-14",
+      "hora": "19:00",
+      "real": { "casa": null, "fora": null, "avancou": null },
+      "palpites": {
+        "claude": { "casa": 1, "fora": 2, "avanca": null },
+        "gpt": { "casa": 1, "fora": 2, "avanca": null },
+        "gemini": { "casa": 1, "fora": 2, "avanca": null },
+        "grok": { "casa": 0, "fora": 1, "avanca": null }
+      }
+    }
+  ]
+}

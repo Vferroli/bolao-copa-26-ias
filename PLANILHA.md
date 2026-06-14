@@ -1,5 +1,7 @@
 # Planilha online (Google Sheets) — celular + PC
 
+> ℹ️ **Rota alternativa.** O caminho principal agora é o **painel web** (veja o [`README.md`](./README.md)), que já faz tudo isso de forma mais bonita e a partir do `dados.json`. Esta planilha fica como opção pra quem prefere o Google Sheets.
+
 Objetivo: acompanhar e digitar placar de qualquer lugar; pontos e ranking calculam sozinhos.
 
 ## Passo a passo (uma vez só)
