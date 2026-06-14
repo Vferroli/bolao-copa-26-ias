@@ -76,6 +76,10 @@ Nos jogos de mata-mata, em cada palpite diga quem a IA crava pra avançar no cam
 - `kickoff` é o horário do jogo em **UTC** (formato `AAAA-MM-DDThh:mm:00Z`). O painel converte sozinho para o horário de Brasília e usa isso para decidir o que é "hoje", "próximo" e "histórico".
 - O campo `fuso` no topo (`America/Sao_Paulo`) define esse fuso.
 
+## Carimbo de última atualização
+
+No topo do arquivo há `atualizado_em` (um horário em **UTC**, formato `AAAA-MM-DDThh:mm:ssZ`). É o que o painel mostra no subtítulo como "última atualização". **Sempre que mexer na base** (lançar resultado, adicionar palpites), atualize esse campo para o horário do momento. O campo `atualizado` (só a data) continua existindo para o "Dados de …".
+
 ## Lembretes
 
 - `casa`/`fora` nos palpites e no `real` são **números** (gols).
