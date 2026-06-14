@@ -734,7 +734,23 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "gpt": {
+          "casa": 4,
+          "fora": 0,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 4,
+          "fora": 0,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 26,
@@ -748,7 +764,23 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 27,
@@ -818,7 +850,23 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 32,
@@ -832,7 +880,23 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "gpt": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 33,
