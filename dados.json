@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-14",
-  "atualizado_em": "2026-06-14T21:47:49.179Z",
+  "atualizado_em": "2026-06-14T22:06:36.715Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -857,8 +857,8 @@
       "fora": "japan",
       "kickoff": "2026-06-14T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 2,
+        "fora": 2,
         "avancou": null
       },
       "palpites": {
@@ -1627,12 +1627,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 31,
-      "casa": 2,
-      "fora": 1,
-      "min": "ao vivo"
-    }
-  ]
+  "live": []
 }
