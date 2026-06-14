@@ -21,10 +21,13 @@ REGRAS DA RESPOSTA:
 - Dê UM único placar final (ex: 2-1), sem intervalos nem "depende".
 - Se for mata-mata, diga também quem você crava para AVANÇAR.
 - NÃO escreva justificativa nem texto extra.
+- ENTREGUE TODA a resposta dentro de UM ÚNICO bloco de código (cercado por três crases ```), e NADA fora dele. Assim o usuário copia tudo com um clique no botão de copiar do bloco, sem precisar selecionar texto.
 
-FORMATO EXATO DA RESPOSTA (responda só isto):
+FORMATO EXATO DA RESPOSTA (responda só isto, dentro de um bloco de código):
+```
 Resposta do XXXX
 Placar: [time A] [gols] x [gols] [time B]
 Avança (se mata-mata): [time]
+```
 
 O jogo que você vai palpitar é:

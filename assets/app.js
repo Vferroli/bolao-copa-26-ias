@@ -412,10 +412,14 @@ function copiarPromptDia(dateStr, btn) {
 
   const n = jogos.length;
   const instr =
-    `\n\nHoje há ${n} jogo${n > 1 ? "s" : ""}. Palpite TODOS de uma vez, no formato:\n` +
+    `\n\nHoje há ${n} jogo${n > 1 ? "s" : ""}. Palpite TODOS de uma vez.\n` +
+    `ENTREGUE TODA a resposta dentro de UM ÚNICO bloco de código (cercado por três crases \`\`\`), e NADA fora dele — assim eu copio tudo com um clique no botão de copiar do bloco, sem selecionar texto.\n` +
+    `Formato exato, dentro do bloco de código:\n` +
+    `\`\`\`\n` +
     `Resposta do XXXX\n` +
     `Jogo 1 — [Time A] [gols] x [gols] [Time B]\n` +
     `Jogo 2 — [Time A] [gols] x [gols] [Time B]\n` +
+    `\`\`\`\n` +
     `(em jogo de mata-mata, acrescente "Avança: [time]" na linha do jogo)\n\n` +
     `Os jogos do dia:\n${lista}\n`;
 

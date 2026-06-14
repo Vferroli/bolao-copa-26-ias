@@ -1,6 +1,6 @@
 {
   "torneio": "Copa do Mundo 2026",
-  "atualizado": "2026-06-14",
+  "atualizado": "2026-06-15",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -986,7 +986,28 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 38,
@@ -1000,7 +1021,28 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 39,
@@ -1070,7 +1112,28 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 44,
@@ -1084,7 +1147,28 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 1,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 45,
@@ -1154,7 +1238,28 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 50,
@@ -1168,7 +1273,28 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 51,
@@ -1238,7 +1364,28 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null
+        }
+      }
     },
     {
       "id": 56,
