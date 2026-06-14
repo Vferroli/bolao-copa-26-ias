@@ -256,11 +256,13 @@ function secProximos() {
 /* ---------- GRUPOS & classificação ---------- */
 function secGrupos() {
   const grupos = [...new Set(Object.values(S.dados.times).map((t) => t.grupo))].sort();
+  const top3 = melhoresTerceiros(grupos); // Set com os 8 melhores 3º colocados
   const cards = grupos.map((g) => {
     const tab = standings(g);
     const rows = tab.map((t, i) => {
       const sg = t.gp - t.gc;
-      return `<tr class="${i < 2 ? "qual" : ""}">
+      const cls = i < 2 ? "qual" : (i === 2 && top3.has(t.id) ? "qual3" : "");
+      return `<tr class="${cls}">
         <td class="team-cell"><span class="rk">${i + 1}</span><span class="flag">${t.flag}</span>${esc(t.nome)}</td>
         <td>${t.j}</td><td>${t.v}</td><td>${t.e}</td><td>${t.d}</td>
         <td>${sg > 0 ? "+" + sg : sg}</td><td class="pts">${t.pts}</td>
@@ -277,17 +279,33 @@ function secGrupos() {
         </tr></thead>
         <tbody>${rows}</tbody>
       </table>
-      <div class="grp-foot"><span class="q"></span> 2 primeiros avançam</div>
+      <div class="grp-foot">
+        <span class="q"></span> 2 primeiros
+        <span class="q q3"></span> 3º entre os 8 melhores
+      </div>
     </div>`;
   }).join("");
   return `<section class="reveal" id="grupos">
     <div class="sec-head">
       <span class="kicker">Fase de grupos</span>
       <h2>Grupos &amp; classificação</h2>
-      <span class="pill">A–L</span>
+      <span class="pill">2 + 8 melhores 3º</span>
     </div>
     <div class="groups-grid">${cards}</div>
   </section>`;
+}
+
+/* 8 melhores terceiros (formato Copa 2026): 3º de cada grupo, ranqueados por
+   pts > saldo > gols pró; os 8 primeiros avançam aos 16-avos. */
+function melhoresTerceiros(grupos) {
+  const terceiros = grupos
+    .map((g) => standings(g)[2])
+    .filter(Boolean)
+    .filter((t) => t.j > 0) // só conta quem já jogou (evita marcar grupo vazio)
+    .sort((a, b) =>
+      b.pts - a.pts || (b.gp - b.gc) - (a.gp - a.gc) || b.gp - a.gp || a.nome.localeCompare(b.nome)
+    );
+  return new Set(terceiros.slice(0, 8).map((t) => t.id));
 }
 
 /* ---------- MATA-MATA (chaveamento) ---------- */
