@@ -42,6 +42,26 @@ function kit(ia, cls) {
   return `<span class="kit ${cls || ""}" style="--cor:${ia.cor}" title="${esc(ia.nome)}">${LOGOS[ia.id] || ""}</span>`;
 }
 
+/* ---------- bandeiras (SVG via flagcdn — renderiza igual em qualquer device) ----------
+   Inglaterra/Escócia usam código de subdivisão (gb-eng/gb-sct). Fallback: emoji do dados.json. */
+const ISO = {
+  algeria: "dz", argentina: "ar", australia: "au", austria: "at", belgium: "be",
+  "bosnia-herzegovina": "ba", brazil: "br", canada: "ca", "cape-verde": "cv", colombia: "co",
+  croatia: "hr", curacao: "cw", "czech-republic": "cz", "dr-congo": "cd", ecuador: "ec",
+  egypt: "eg", england: "gb-eng", france: "fr", germany: "de", ghana: "gh",
+  haiti: "ht", iran: "ir", iraq: "iq", "ivory-coast": "ci", japan: "jp",
+  jordan: "jo", mexico: "mx", morocco: "ma", netherlands: "nl", "new-zealand": "nz",
+  norway: "no", panama: "pa", paraguay: "py", portugal: "pt", qatar: "qa",
+  "saudi-arabia": "sa", scotland: "gb-sct", senegal: "sn", "south-africa": "za", "south-korea": "kr",
+  spain: "es", sweden: "se", switzerland: "ch", tunisia: "tn", turkey: "tr",
+  uruguay: "uy", usa: "us", uzbekistan: "uz",
+};
+function bandeira(id) {
+  const iso = ISO[id];
+  if (!iso) { const t = time(id); return `<span class="flag flag-emoji">${t.flag || ""}</span>`; }
+  return `<img class="flag flag-img" src="https://flagcdn.com/${iso}.svg" loading="lazy" decoding="async" alt="" />`;
+}
+
 /* ---------- scoring (mirrors REGRAS.md) ---------- */
 function faixaBase(p, r) {
   const pc = p.casa, pf = p.fora, rc = r.casa, rf = r.fora;

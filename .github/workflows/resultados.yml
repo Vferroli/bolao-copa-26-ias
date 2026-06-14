@@ -2,13 +2,14 @@ name: Atualizar resultados
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # tenta a cada 5 min (cron do GitHub é best-effort)
-  workflow_dispatch: {}      # botão manual
+    - cron: "*/5 * * * *"   # backup (schedule do GitHub é best-effort/instável)
+  workflow_dispatch: {}      # disparo manual e auto-corrente (ver abaixo)
 
 permissions:
   contents: write
+  actions: write
 
-# novo tick substitui o loop em andamento -> cobertura contínua sem empilhar runs
+# novo run substitui o loop anterior -> cobertura contínua sem empilhar
 concurrency:
   group: resultados
   cancel-in-progress: true
@@ -23,18 +24,17 @@ jobs:
         with:
           node-version: "20"
 
-      # Repo público = minutos de Actions grátis. Cada run faz auto-poll por ~10min
-      # (a cada 55s) -> ao vivo com granularidade ~1min, resiliente a tick pulado.
-      # Os commits levam [skip ci] -> Netlify NÃO deploya (site lê dados via raw/CDN).
-      # O script só chama a API quando há jogo na janela; fora disso é no-op barato.
-      - name: Auto-poll de placares (~10 min)
+      # Repo público = Actions grátis. Cada run faz auto-poll por ~50min (a cada 55s)
+      # -> ao vivo com granularidade ~1min. Commits levam [skip ci] (não deploya;
+      # site lê dados via raw/CDN). O script só chama a API quando há jogo na janela.
+      - name: Auto-poll de placares (~50 min)
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          fim=$((SECONDS + 600))
+          fim=$((SECONDS + 3000))
           while [ $SECONDS -lt $fim ]; do
             node scripts/update-resultados.mjs || true
             if [ -n "$(git status --porcelain dados.json)" ]; then
@@ -45,3 +45,21 @@ jobs:
             fi
             sleep 55
           done
+
+      # Auto-corrente: re-dispara o próprio workflow para rodar de forma contínua
+      # sem depender do schedule do GitHub. Requer secret DISPATCH_PAT (fine-grained,
+      # Actions: read+write neste repo). Sem o PAT, cai no schedule/manual.
+      - name: Re-dispara (corrente contínua)
+        if: ${{ always() }}
+        env:
+          PAT: ${{ secrets.DISPATCH_PAT }}
+        run: |
+          if [ -n "$PAT" ]; then
+            curl -sf -X POST \
+              -H "Authorization: Bearer $PAT" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/workflows/resultados.yml/dispatches" \
+              -d '{"ref":"main"}' && echo "re-dispatch ok" || echo "re-dispatch falhou"
+          else
+            echo "Sem DISPATCH_PAT — sem corrente; depende de schedule/manual."
+          fi

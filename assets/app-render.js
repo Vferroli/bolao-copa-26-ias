@@ -141,9 +141,9 @@ function secAoVivo() {
         <span class="live-min">${esc(min || "ao vivo")} · ${faseLbl(j)}</span>
       </div>
       <div class="match big">
-        <div class="team home"><span class="tn">${esc(c.nome)}</span><span class="flag">${c.flag}</span></div>
+        <div class="team home"><span class="tn">${esc(c.nome)}</span>${bandeira(j.casa)}</div>
         <div class="score">${casa}<em>:</em>${fora}</div>
-        <div class="team away"><span class="flag">${f.flag}</span><span class="tn">${esc(f.nome)}</span></div>
+        <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
     </article>`;
   }).join("");
@@ -155,9 +155,9 @@ function secAoVivo() {
         <span class="live-min">${rotuloData(kickData(j)).split(",")[0]} · ${kickHora(j)}</span>
       </div>
       <div class="match">
-        <div class="team home"><span class="tn">${esc(a.nome)}</span><span class="flag">${a.flag}</span></div>
+        <div class="team home"><span class="tn">${esc(a.nome)}</span>${bandeira(j.casa)}</div>
         <div class="score tbd">vs</div>
-        <div class="team away"><span class="flag">${b.flag}</span><span class="tn">${esc(b.nome)}</span></div>
+        <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(b.nome)}</span></div>
       </div>
     </article>`;
   }).join("");
@@ -209,9 +209,9 @@ function secHoje() {
         <span class="time">${fim ? "Encerrado" : "Hoje · " + kickHora(j)}</span>
       </div>
       <div class="match big">
-        <div class="team home"><span class="tn">${esc(c.nome)}</span><span class="flag">${c.flag}</span></div>
+        <div class="team home"><span class="tn">${esc(c.nome)}</span>${bandeira(j.casa)}</div>
         <div class="score ${fim ? "" : "tbd"}">${sc}</div>
-        <div class="team away"><span class="flag">${f.flag}</span><span class="tn">${esc(f.nome)}</span></div>
+        <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
@@ -243,9 +243,9 @@ function secProximos() {
       return `<div class="fix">
         <span class="fh">${kickHora(j)}</span>
         <div class="fm">
-          <span class="t home"><span>${esc(a.nome)}</span><span class="flag">${a.flag}</span></span>
+          <span class="t home"><span>${esc(a.nome)}</span>${bandeira(j.casa)}</span>
           <span class="x">×</span>
-          <span class="t away"><span class="flag">${b.flag}</span><span>${esc(b.nome)}</span></span>
+          <span class="t away">${bandeira(j.fora)}<span>${esc(b.nome)}</span></span>
         </div>
       </div>`;
     }).join("");
@@ -305,7 +305,7 @@ function secGrupos() {
       const sg = t.gp - t.gc;
       const cls = i < 2 ? "qual" : (i === 2 && top3.has(t.id) ? "qual3" : "");
       return `<tr class="${cls}">
-        <td class="team-cell"><span class="rk">${i + 1}</span><span class="flag">${t.flag}</span>${esc(t.nome)}</td>
+        <td class="team-cell"><span class="rk">${i + 1}</span>${bandeira(t.id)}${esc(t.nome)}</td>
         <td>${t.j}</td><td>${t.v}</td><td>${t.e}</td><td>${t.d}</td>
         <td>${sg > 0 ? "+" + sg : sg}</td><td class="pts">${t.pts}</td>
       </tr>`;
@@ -398,9 +398,9 @@ function secHistorico() {
     }).join("");
     return `<div class="hrow">
       <div class="hmatch">
-        <div class="t home"><span>${esc(c.nome)}</span><span class="flag">${c.flag}</span></div>
+        <div class="t home"><span>${esc(c.nome)}</span>${bandeira(j.casa)}</div>
         <div class="fin">${j.real.casa}<span style="color:var(--faint)">:</span>${j.real.fora}</div>
-        <div class="t away"><span class="flag">${f.flag}</span><span>${esc(f.nome)}</span></div>
+        <div class="t away">${bandeira(j.fora)}<span>${esc(f.nome)}</span></div>
       </div>
       <div class="hpts">${pills}</div>
     </div>`;
