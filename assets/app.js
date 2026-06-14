@@ -199,7 +199,8 @@ function render() {
     blocoMataMata() +
     blocoAgenda("📜", "Histórico", hist, true);
 
-  const lm = estado.dadosLastMod ? new Date(estado.dadosLastMod) : null;
+  const quando = estado.dados.atualizado_em || estado.dadosLastMod;
+  const lm = quando ? new Date(quando) : null;
   const carimbo = lm && !isNaN(lm)
     ? ` · última atualização ${dataTZ(lm).split("-").reverse().join("/")} às ${horaSegTZ(lm)}`
     : "";
