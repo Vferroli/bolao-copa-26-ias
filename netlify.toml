@@ -1,0 +1,12 @@
+# Publicação no Netlify — site estático servido da raiz do repositório.
+# Não há etapa de build: o painel é HTML + CSS + JS puro.
+
+[build]
+  publish = "."
+  command = ""
+
+# Não cachear o dados.json: assim o painel sempre pega o placar mais recente.
+[[headers]]
+  for = "/dados.json"
+  [headers.values]
+    Cache-Control = "no-cache"
