@@ -1,71 +1,1398 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-14",
+  "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
     "league_id": 4429,
     "chave_padrao": "3"
   },
   "ias": [
-    { "id": "claude", "nome": "Claude", "cor": "#d97757" },
-    { "id": "gpt", "nome": "GPT", "cor": "#10a37f" },
-    { "id": "gemini", "nome": "Gemini", "cor": "#4285f4" },
-    { "id": "grok", "nome": "Grok", "cor": "#a78bfa" }
+    {
+      "id": "claude",
+      "nome": "Claude",
+      "cor": "#d97757"
+    },
+    {
+      "id": "gpt",
+      "nome": "GPT",
+      "cor": "#10a37f"
+    },
+    {
+      "id": "gemini",
+      "nome": "Gemini",
+      "cor": "#4285f4"
+    },
+    {
+      "id": "grok",
+      "nome": "Grok",
+      "cor": "#a78bfa"
+    }
   ],
   "fases": [
-    { "id": "grupos", "nome": "Fase de grupos", "mult": 1, "mata": false, "slots": 0 },
-    { "id": "16avos", "nome": "16-avos", "mult": 1.5, "mata": true, "slots": 16 },
-    { "id": "oitavas", "nome": "Oitavas", "mult": 2, "mata": true, "slots": 8 },
-    { "id": "quartas", "nome": "Quartas", "mult": 2.5, "mata": true, "slots": 4 },
-    { "id": "semi", "nome": "Semifinal", "mult": 3, "mata": true, "slots": 2 },
-    { "id": "terceiro", "nome": "Disputa de 3º", "mult": 2, "mata": true, "slots": 1 },
-    { "id": "final", "nome": "Final", "mult": 4, "mata": true, "slots": 1 }
+    {
+      "id": "grupos",
+      "nome": "Fase de grupos",
+      "mult": 1,
+      "mata": false,
+      "slots": 0
+    },
+    {
+      "id": "16avos",
+      "nome": "16-avos",
+      "mult": 1.5,
+      "mata": true,
+      "slots": 16
+    },
+    {
+      "id": "oitavas",
+      "nome": "Oitavas",
+      "mult": 2,
+      "mata": true,
+      "slots": 8
+    },
+    {
+      "id": "quartas",
+      "nome": "Quartas",
+      "mult": 2.5,
+      "mata": true,
+      "slots": 4
+    },
+    {
+      "id": "semi",
+      "nome": "Semifinal",
+      "mult": 3,
+      "mata": true,
+      "slots": 2
+    },
+    {
+      "id": "terceiro",
+      "nome": "Disputa de 3º",
+      "mult": 2,
+      "mata": true,
+      "slots": 1
+    },
+    {
+      "id": "final",
+      "nome": "Final",
+      "mult": 4,
+      "mata": true,
+      "slots": 1
+    }
   ],
+  "times": {
+    "algeria": {
+      "nome": "Argélia",
+      "flag": "🇩🇿",
+      "grupo": "J"
+    },
+    "argentina": {
+      "nome": "Argentina",
+      "flag": "🇦🇷",
+      "grupo": "J"
+    },
+    "australia": {
+      "nome": "Austrália",
+      "flag": "🇦🇺",
+      "grupo": "D"
+    },
+    "austria": {
+      "nome": "Áustria",
+      "flag": "🇦🇹",
+      "grupo": "J"
+    },
+    "belgium": {
+      "nome": "Bélgica",
+      "flag": "🇧🇪",
+      "grupo": "G"
+    },
+    "bosnia-herzegovina": {
+      "nome": "Bósnia e Herzegovina",
+      "flag": "🇧🇦",
+      "grupo": "B"
+    },
+    "brazil": {
+      "nome": "Brasil",
+      "flag": "🇧🇷",
+      "grupo": "C"
+    },
+    "canada": {
+      "nome": "Canadá",
+      "flag": "🇨🇦",
+      "grupo": "B"
+    },
+    "cape-verde": {
+      "nome": "Cabo Verde",
+      "flag": "🇨🇻",
+      "grupo": "H"
+    },
+    "colombia": {
+      "nome": "Colômbia",
+      "flag": "🇨🇴",
+      "grupo": "K"
+    },
+    "croatia": {
+      "nome": "Croácia",
+      "flag": "🇭🇷",
+      "grupo": "L"
+    },
+    "curacao": {
+      "nome": "Curaçao",
+      "flag": "🇨🇼",
+      "grupo": "E"
+    },
+    "czech-republic": {
+      "nome": "Tchéquia",
+      "flag": "🇨🇿",
+      "grupo": "A"
+    },
+    "dr-congo": {
+      "nome": "RD Congo",
+      "flag": "🇨🇩",
+      "grupo": "K"
+    },
+    "ecuador": {
+      "nome": "Equador",
+      "flag": "🇪🇨",
+      "grupo": "E"
+    },
+    "egypt": {
+      "nome": "Egito",
+      "flag": "🇪🇬",
+      "grupo": "G"
+    },
+    "england": {
+      "nome": "Inglaterra",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "grupo": "L"
+    },
+    "france": {
+      "nome": "França",
+      "flag": "🇫🇷",
+      "grupo": "I"
+    },
+    "germany": {
+      "nome": "Alemanha",
+      "flag": "🇩🇪",
+      "grupo": "E"
+    },
+    "ghana": {
+      "nome": "Gana",
+      "flag": "🇬🇭",
+      "grupo": "L"
+    },
+    "haiti": {
+      "nome": "Haiti",
+      "flag": "🇭🇹",
+      "grupo": "C"
+    },
+    "iran": {
+      "nome": "Irã",
+      "flag": "🇮🇷",
+      "grupo": "G"
+    },
+    "iraq": {
+      "nome": "Iraque",
+      "flag": "🇮🇶",
+      "grupo": "I"
+    },
+    "ivory-coast": {
+      "nome": "Costa do Marfim",
+      "flag": "🇨🇮",
+      "grupo": "E"
+    },
+    "japan": {
+      "nome": "Japão",
+      "flag": "🇯🇵",
+      "grupo": "F"
+    },
+    "jordan": {
+      "nome": "Jordânia",
+      "flag": "🇯🇴",
+      "grupo": "J"
+    },
+    "mexico": {
+      "nome": "México",
+      "flag": "🇲🇽",
+      "grupo": "A"
+    },
+    "morocco": {
+      "nome": "Marrocos",
+      "flag": "🇲🇦",
+      "grupo": "C"
+    },
+    "netherlands": {
+      "nome": "Países Baixos",
+      "flag": "🇳🇱",
+      "grupo": "F"
+    },
+    "new-zealand": {
+      "nome": "Nova Zelândia",
+      "flag": "🇳🇿",
+      "grupo": "G"
+    },
+    "norway": {
+      "nome": "Noruega",
+      "flag": "🇳🇴",
+      "grupo": "I"
+    },
+    "panama": {
+      "nome": "Panamá",
+      "flag": "🇵🇦",
+      "grupo": "L"
+    },
+    "paraguay": {
+      "nome": "Paraguai",
+      "flag": "🇵🇾",
+      "grupo": "D"
+    },
+    "portugal": {
+      "nome": "Portugal",
+      "flag": "🇵🇹",
+      "grupo": "K"
+    },
+    "qatar": {
+      "nome": "Catar",
+      "flag": "🇶🇦",
+      "grupo": "B"
+    },
+    "saudi-arabia": {
+      "nome": "Arábia Saudita",
+      "flag": "🇸🇦",
+      "grupo": "H"
+    },
+    "scotland": {
+      "nome": "Escócia",
+      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "grupo": "C"
+    },
+    "senegal": {
+      "nome": "Senegal",
+      "flag": "🇸🇳",
+      "grupo": "I"
+    },
+    "south-africa": {
+      "nome": "África do Sul",
+      "flag": "🇿🇦",
+      "grupo": "A"
+    },
+    "south-korea": {
+      "nome": "Coreia do Sul",
+      "flag": "🇰🇷",
+      "grupo": "A"
+    },
+    "spain": {
+      "nome": "Espanha",
+      "flag": "🇪🇸",
+      "grupo": "H"
+    },
+    "sweden": {
+      "nome": "Suécia",
+      "flag": "🇸🇪",
+      "grupo": "F"
+    },
+    "switzerland": {
+      "nome": "Suíça",
+      "flag": "🇨🇭",
+      "grupo": "B"
+    },
+    "tunisia": {
+      "nome": "Tunísia",
+      "flag": "🇹🇳",
+      "grupo": "F"
+    },
+    "turkey": {
+      "nome": "Turquia",
+      "flag": "🇹🇷",
+      "grupo": "D"
+    },
+    "uruguay": {
+      "nome": "Uruguai",
+      "flag": "🇺🇾",
+      "grupo": "H"
+    },
+    "usa": {
+      "nome": "Estados Unidos",
+      "flag": "🇺🇸",
+      "grupo": "D"
+    },
+    "uzbekistan": {
+      "nome": "Uzbequistão",
+      "flag": "🇺🇿",
+      "grupo": "K"
+    }
+  },
   "jogos": [
     {
       "id": 1,
       "fase": "grupos",
-      "casa": "Brasil",
-      "fora": "Marrocos",
-      "data": "2026-06-14",
-      "hora": "16:00",
-      "real": { "casa": null, "fora": null, "avancou": null },
-      "palpites": {
-        "claude": { "casa": 2, "fora": 1, "avanca": null },
-        "gpt": { "casa": 2, "fora": 1, "avanca": null },
-        "gemini": { "casa": 2, "fora": 1, "avanca": null },
-        "grok": { "casa": 2, "fora": 1, "avanca": null }
-      }
+      "grupo": "A",
+      "casa": "mexico",
+      "fora": "south-africa",
+      "kickoff": "2026-06-11T19:00:00Z",
+      "real": {
+        "casa": 2,
+        "fora": 0,
+        "avancou": null
+      },
+      "palpites": {}
     },
     {
       "id": 2,
       "fase": "grupos",
-      "casa": "Haiti",
-      "fora": "Escócia",
-      "data": "2026-06-14",
-      "hora": "13:00",
-      "real": { "casa": null, "fora": null, "avancou": null },
-      "palpites": {
-        "claude": { "casa": 1, "fora": 2, "avanca": null },
-        "gpt": { "casa": 1, "fora": 3, "avanca": null },
-        "gemini": { "casa": 0, "fora": 2, "avanca": null },
-        "grok": { "casa": 0, "fora": 2, "avanca": null }
-      }
+      "grupo": "A",
+      "casa": "south-korea",
+      "fora": "czech-republic",
+      "kickoff": "2026-06-12T02:00:00Z",
+      "real": {
+        "casa": 2,
+        "fora": 1,
+        "avancou": null
+      },
+      "palpites": {}
     },
     {
       "id": 3,
       "fase": "grupos",
-      "casa": "Austrália",
-      "fora": "Turquia",
-      "data": "2026-06-14",
-      "hora": "19:00",
-      "real": { "casa": null, "fora": null, "avancou": null },
+      "grupo": "A",
+      "casa": "czech-republic",
+      "fora": "south-africa",
+      "kickoff": "2026-06-18T16:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 4,
+      "fase": "grupos",
+      "grupo": "A",
+      "casa": "mexico",
+      "fora": "south-korea",
+      "kickoff": "2026-06-19T01:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 5,
+      "fase": "grupos",
+      "grupo": "A",
+      "casa": "czech-republic",
+      "fora": "mexico",
+      "kickoff": "2026-06-25T01:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 6,
+      "fase": "grupos",
+      "grupo": "A",
+      "casa": "south-africa",
+      "fora": "south-korea",
+      "kickoff": "2026-06-25T01:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 7,
+      "fase": "grupos",
+      "grupo": "B",
+      "casa": "canada",
+      "fora": "bosnia-herzegovina",
+      "kickoff": "2026-06-12T19:00:00Z",
+      "real": {
+        "casa": 1,
+        "fora": 1,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 8,
+      "fase": "grupos",
+      "grupo": "B",
+      "casa": "qatar",
+      "fora": "switzerland",
+      "kickoff": "2026-06-13T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 9,
+      "fase": "grupos",
+      "grupo": "B",
+      "casa": "switzerland",
+      "fora": "bosnia-herzegovina",
+      "kickoff": "2026-06-18T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 10,
+      "fase": "grupos",
+      "grupo": "B",
+      "casa": "canada",
+      "fora": "qatar",
+      "kickoff": "2026-06-18T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 11,
+      "fase": "grupos",
+      "grupo": "B",
+      "casa": "switzerland",
+      "fora": "canada",
+      "kickoff": "2026-06-24T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 12,
+      "fase": "grupos",
+      "grupo": "B",
+      "casa": "bosnia-herzegovina",
+      "fora": "qatar",
+      "kickoff": "2026-06-24T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 13,
+      "fase": "grupos",
+      "grupo": "C",
+      "casa": "brazil",
+      "fora": "morocco",
+      "kickoff": "2026-06-13T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
       "palpites": {
-        "claude": { "casa": 1, "fora": 2, "avanca": null },
-        "gpt": { "casa": 1, "fora": 2, "avanca": null },
-        "gemini": { "casa": 1, "fora": 2, "avanca": null },
-        "grok": { "casa": 0, "fora": 1, "avanca": null }
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        }
       }
+    },
+    {
+      "id": 14,
+      "fase": "grupos",
+      "grupo": "C",
+      "casa": "haiti",
+      "fora": "scotland",
+      "kickoff": "2026-06-14T01:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 3,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null
+        }
+      }
+    },
+    {
+      "id": 15,
+      "fase": "grupos",
+      "grupo": "C",
+      "casa": "scotland",
+      "fora": "morocco",
+      "kickoff": "2026-06-19T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 16,
+      "fase": "grupos",
+      "grupo": "C",
+      "casa": "brazil",
+      "fora": "haiti",
+      "kickoff": "2026-06-20T00:30:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 17,
+      "fase": "grupos",
+      "grupo": "C",
+      "casa": "scotland",
+      "fora": "brazil",
+      "kickoff": "2026-06-24T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 18,
+      "fase": "grupos",
+      "grupo": "C",
+      "casa": "morocco",
+      "fora": "haiti",
+      "kickoff": "2026-06-24T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 19,
+      "fase": "grupos",
+      "grupo": "D",
+      "casa": "usa",
+      "fora": "paraguay",
+      "kickoff": "2026-06-13T01:00:00Z",
+      "real": {
+        "casa": 4,
+        "fora": 1,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 20,
+      "fase": "grupos",
+      "grupo": "D",
+      "casa": "australia",
+      "fora": "turkey",
+      "kickoff": "2026-06-14T04:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 1,
+          "avanca": null
+        }
+      }
+    },
+    {
+      "id": 21,
+      "fase": "grupos",
+      "grupo": "D",
+      "casa": "usa",
+      "fora": "australia",
+      "kickoff": "2026-06-19T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 22,
+      "fase": "grupos",
+      "grupo": "D",
+      "casa": "turkey",
+      "fora": "paraguay",
+      "kickoff": "2026-06-20T03:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 23,
+      "fase": "grupos",
+      "grupo": "D",
+      "casa": "turkey",
+      "fora": "usa",
+      "kickoff": "2026-06-26T02:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 24,
+      "fase": "grupos",
+      "grupo": "D",
+      "casa": "paraguay",
+      "fora": "australia",
+      "kickoff": "2026-06-26T02:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 25,
+      "fase": "grupos",
+      "grupo": "E",
+      "casa": "germany",
+      "fora": "curacao",
+      "kickoff": "2026-06-14T17:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 26,
+      "fase": "grupos",
+      "grupo": "E",
+      "casa": "ivory-coast",
+      "fora": "ecuador",
+      "kickoff": "2026-06-14T23:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 27,
+      "fase": "grupos",
+      "grupo": "E",
+      "casa": "germany",
+      "fora": "ivory-coast",
+      "kickoff": "2026-06-20T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 28,
+      "fase": "grupos",
+      "grupo": "E",
+      "casa": "ecuador",
+      "fora": "curacao",
+      "kickoff": "2026-06-21T00:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 29,
+      "fase": "grupos",
+      "grupo": "E",
+      "casa": "curacao",
+      "fora": "ivory-coast",
+      "kickoff": "2026-06-25T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 30,
+      "fase": "grupos",
+      "grupo": "E",
+      "casa": "ecuador",
+      "fora": "germany",
+      "kickoff": "2026-06-25T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 31,
+      "fase": "grupos",
+      "grupo": "F",
+      "casa": "netherlands",
+      "fora": "japan",
+      "kickoff": "2026-06-14T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 32,
+      "fase": "grupos",
+      "grupo": "F",
+      "casa": "sweden",
+      "fora": "tunisia",
+      "kickoff": "2026-06-15T02:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 33,
+      "fase": "grupos",
+      "grupo": "F",
+      "casa": "netherlands",
+      "fora": "sweden",
+      "kickoff": "2026-06-20T17:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 34,
+      "fase": "grupos",
+      "grupo": "F",
+      "casa": "tunisia",
+      "fora": "japan",
+      "kickoff": "2026-06-21T04:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 35,
+      "fase": "grupos",
+      "grupo": "F",
+      "casa": "japan",
+      "fora": "sweden",
+      "kickoff": "2026-06-25T23:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 36,
+      "fase": "grupos",
+      "grupo": "F",
+      "casa": "tunisia",
+      "fora": "netherlands",
+      "kickoff": "2026-06-25T23:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 37,
+      "fase": "grupos",
+      "grupo": "G",
+      "casa": "belgium",
+      "fora": "egypt",
+      "kickoff": "2026-06-15T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 38,
+      "fase": "grupos",
+      "grupo": "G",
+      "casa": "iran",
+      "fora": "new-zealand",
+      "kickoff": "2026-06-16T01:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 39,
+      "fase": "grupos",
+      "grupo": "G",
+      "casa": "belgium",
+      "fora": "iran",
+      "kickoff": "2026-06-21T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 40,
+      "fase": "grupos",
+      "grupo": "G",
+      "casa": "new-zealand",
+      "fora": "egypt",
+      "kickoff": "2026-06-22T01:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 41,
+      "fase": "grupos",
+      "grupo": "G",
+      "casa": "egypt",
+      "fora": "iran",
+      "kickoff": "2026-06-27T03:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 42,
+      "fase": "grupos",
+      "grupo": "G",
+      "casa": "new-zealand",
+      "fora": "belgium",
+      "kickoff": "2026-06-27T03:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 43,
+      "fase": "grupos",
+      "grupo": "H",
+      "casa": "spain",
+      "fora": "cape-verde",
+      "kickoff": "2026-06-15T16:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 44,
+      "fase": "grupos",
+      "grupo": "H",
+      "casa": "saudi-arabia",
+      "fora": "uruguay",
+      "kickoff": "2026-06-15T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 45,
+      "fase": "grupos",
+      "grupo": "H",
+      "casa": "spain",
+      "fora": "saudi-arabia",
+      "kickoff": "2026-06-21T16:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 46,
+      "fase": "grupos",
+      "grupo": "H",
+      "casa": "uruguay",
+      "fora": "cape-verde",
+      "kickoff": "2026-06-21T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 47,
+      "fase": "grupos",
+      "grupo": "H",
+      "casa": "cape-verde",
+      "fora": "saudi-arabia",
+      "kickoff": "2026-06-27T00:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 48,
+      "fase": "grupos",
+      "grupo": "H",
+      "casa": "uruguay",
+      "fora": "spain",
+      "kickoff": "2026-06-27T00:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 49,
+      "fase": "grupos",
+      "grupo": "I",
+      "casa": "france",
+      "fora": "senegal",
+      "kickoff": "2026-06-16T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 50,
+      "fase": "grupos",
+      "grupo": "I",
+      "casa": "iraq",
+      "fora": "norway",
+      "kickoff": "2026-06-16T22:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 51,
+      "fase": "grupos",
+      "grupo": "I",
+      "casa": "france",
+      "fora": "iraq",
+      "kickoff": "2026-06-22T21:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 52,
+      "fase": "grupos",
+      "grupo": "I",
+      "casa": "norway",
+      "fora": "senegal",
+      "kickoff": "2026-06-23T00:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 53,
+      "fase": "grupos",
+      "grupo": "I",
+      "casa": "norway",
+      "fora": "france",
+      "kickoff": "2026-06-26T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 54,
+      "fase": "grupos",
+      "grupo": "I",
+      "casa": "senegal",
+      "fora": "iraq",
+      "kickoff": "2026-06-26T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 55,
+      "fase": "grupos",
+      "grupo": "J",
+      "casa": "argentina",
+      "fora": "algeria",
+      "kickoff": "2026-06-17T01:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 56,
+      "fase": "grupos",
+      "grupo": "J",
+      "casa": "austria",
+      "fora": "jordan",
+      "kickoff": "2026-06-17T04:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 57,
+      "fase": "grupos",
+      "grupo": "J",
+      "casa": "argentina",
+      "fora": "austria",
+      "kickoff": "2026-06-22T17:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 58,
+      "fase": "grupos",
+      "grupo": "J",
+      "casa": "jordan",
+      "fora": "algeria",
+      "kickoff": "2026-06-23T03:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 59,
+      "fase": "grupos",
+      "grupo": "J",
+      "casa": "algeria",
+      "fora": "austria",
+      "kickoff": "2026-06-28T02:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 60,
+      "fase": "grupos",
+      "grupo": "J",
+      "casa": "jordan",
+      "fora": "argentina",
+      "kickoff": "2026-06-28T02:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 61,
+      "fase": "grupos",
+      "grupo": "K",
+      "casa": "portugal",
+      "fora": "dr-congo",
+      "kickoff": "2026-06-17T17:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 62,
+      "fase": "grupos",
+      "grupo": "K",
+      "casa": "uzbekistan",
+      "fora": "colombia",
+      "kickoff": "2026-06-18T02:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 63,
+      "fase": "grupos",
+      "grupo": "K",
+      "casa": "portugal",
+      "fora": "uzbekistan",
+      "kickoff": "2026-06-23T17:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 64,
+      "fase": "grupos",
+      "grupo": "K",
+      "casa": "colombia",
+      "fora": "dr-congo",
+      "kickoff": "2026-06-24T02:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 65,
+      "fase": "grupos",
+      "grupo": "K",
+      "casa": "colombia",
+      "fora": "portugal",
+      "kickoff": "2026-06-27T23:30:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 66,
+      "fase": "grupos",
+      "grupo": "K",
+      "casa": "dr-congo",
+      "fora": "uzbekistan",
+      "kickoff": "2026-06-27T23:30:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 67,
+      "fase": "grupos",
+      "grupo": "L",
+      "casa": "england",
+      "fora": "croatia",
+      "kickoff": "2026-06-17T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 68,
+      "fase": "grupos",
+      "grupo": "L",
+      "casa": "ghana",
+      "fora": "panama",
+      "kickoff": "2026-06-17T23:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 69,
+      "fase": "grupos",
+      "grupo": "L",
+      "casa": "england",
+      "fora": "ghana",
+      "kickoff": "2026-06-23T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 70,
+      "fase": "grupos",
+      "grupo": "L",
+      "casa": "panama",
+      "fora": "croatia",
+      "kickoff": "2026-06-23T23:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 71,
+      "fase": "grupos",
+      "grupo": "L",
+      "casa": "panama",
+      "fora": "england",
+      "kickoff": "2026-06-27T21:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
+    },
+    {
+      "id": 72,
+      "fase": "grupos",
+      "grupo": "L",
+      "casa": "croatia",
+      "fora": "ghana",
+      "kickoff": "2026-06-27T21:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {}
     }
   ]
 }

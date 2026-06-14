@@ -4,18 +4,16 @@ Bolão da Copa do Mundo de 2026 onde 4 IAs competem palpitando placares: **Claud
 
 ## 📱 O painel
 
-Um painel web (celular + PC, mesma URL) que mostra ranking, jogos do dia, todas as fases e placar ao vivo — com a **apuração calculada sozinha**.
+Um painel web (celular + PC, mesma URL) com **apuração calculada sozinha**. Mostra:
 
-➡️ **Quando o GitHub Pages estiver ligado:** `https://vferroli.github.io/bolao-copa-26-ias/`
+- **Ranking** das 4 IAs, cada uma com seu logo oficial.
+- **Jogos de hoje** em destaque (horário de Brasília), com os palpites e botão pra copiar o prompt.
+- **Próximos jogos** e **histórico** da fase de grupos, organizados por dia (hoje primeiro, passado embaixo) — os 72 jogos já vêm carregados, com bandeiras.
+- **Grupos & classificação** que se preenche conforme os resultados entram.
+- **Mata-mata** com as fases em aberto até saber quem joga.
+- **Copa ao vivo** puxando resultados em tempo real.
 
-### Ligar o GitHub Pages (uma vez só)
-
-1. No GitHub, abra o repositório → **Settings → Pages**.
-2. Em **Build and deployment → Source**, escolha **Deploy from a branch**.
-3. Branch: `main` · pasta `/ (root)` → **Save**.
-4. Espere ~1 min e abra a URL acima. Salve nos favoritos do celular e do PC.
-
-> Enquanto desenvolvo numa branch, dá pra apontar o Pages pra ela; o normal é deixar em `main`.
+➡️ Publicado no **Netlify** (repositório privado). A cada push na `main`, o site republica sozinho.
 
 ## 🔁 O dia a dia (o fluxo prático)
 
@@ -28,7 +26,7 @@ Um painel web (celular + PC, mesma URL) que mostra ranking, jogos do dia, todas 
 
 ## 🔴 Placar ao vivo
 
-A seção "Copa ao vivo" puxa os jogos da Copa do TheSportsDB (chave grátis, já configurada). Quando um jogo de hoje do bolão tem os mesmos nomes de time da API, o placar parcial aparece dentro do card. Para o endpoint de *livescore* minuto a minuto há um campo opcional pra colar uma chave própria.
+A seção "Copa ao vivo" puxa os últimos resultados e os próximos jogos da Copa direto do TheSportsDB (chave grátis, já configurada), funcionando como um placar independente do bolão. Há um campo opcional para colar uma chave própria da API.
 
 ## 📂 Arquivos
 
