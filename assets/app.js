@@ -108,8 +108,38 @@ async function carregar() {
   S.TZ = S.dados.fuso || "America/Sao_Paulo";
   // demo-friendly "today": use dataset reference date so the panel is always populated
   S.HOJE = S.dados.atualizado || dataTZ(new Date());
+  indexar();
+  try { S.prompt = await (await fetch("PROMPT.md?ts=" + Date.now())).text(); } catch (_) { S.prompt = ""; }
+  S._stamp = S.dados.atualizado_em || "";
+  render();
+  iniciarPoll();
+}
+
+function indexar() {
+  S.fases = {}; S.ia = {};
   S.dados.fases.forEach((f) => (S.fases[f.id] = f));
   S.dados.ias.forEach((i) => (S.ia[i.id] = i));
-  try { S.prompt = await (await fetch("PROMPT.md?ts=" + Date.now())).text(); } catch (_) { S.prompt = ""; }
-  render();
+}
+
+/* auto-atualização: repolla dados.json e re-renderiza só quando muda.
+   Acompanha o cron (a cada 5 min) sem reload manual. Pausa em aba oculta. */
+function iniciarPoll() {
+  const INTERVALO = 45000;
+  async function tick() {
+    if (document.hidden) return;
+    try {
+      const r = await fetch("dados.json?ts=" + Date.now(), { cache: "no-store" });
+      if (!r.ok) return;
+      const novo = await r.json();
+      if ((novo.atualizado_em || "") === S._stamp) return;
+      S._stamp = novo.atualizado_em || "";
+      S.dados = novo;
+      S.TZ = novo.fuso || S.TZ;
+      S.HOJE = novo.atualizado || S.HOJE;
+      indexar();
+      render();
+    } catch (_) { /* silencioso: tenta de novo no próximo tick */ }
+  }
+  setInterval(tick, INTERVALO);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
 }

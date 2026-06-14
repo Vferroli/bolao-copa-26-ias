@@ -94,37 +94,41 @@ function secScoring() {
   </section>`;
 }
 
-/* ---------- COPA AO VIVO (demo: 1 ao vivo + próximos) ---------- */
+/* ---------- COPA AO VIVO (placar real de dados.live + próximos) ---------- */
 function liveModel() {
-  const hoje = S.dados.jogos
-    .filter((j) => j.fase === "grupos" && kickData(j) === S.HOJE && !apurado(j))
-    .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
-  const futuros = S.dados.jogos
-    .filter((j) => !apurado(j) && j.kickoff > S.dados.atualizado_em)
-    .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
-  const live = hoje[0] || futuros[0];
-  const liveScore = live ? { casa: 1, fora: 0, min: "67'" } : null; // demo live state
-  const prox = (hoje.slice(1).concat(futuros))
-    .filter((j) => j !== live)
-    .filter((j, i, a) => a.indexOf(j) === i)
-    .slice(0, 3);
-  return { live, liveScore, prox };
+  const byId = {};
+  S.dados.jogos.forEach((j) => (byId[j.id] = j));
+  // jogos ao vivo: alimentados pelo script/API em dados.live
+  const live = (Array.isArray(S.dados.live) ? S.dados.live : [])
+    .map((l) => ({ j: byId[l.id], casa: l.casa, fora: l.fora, min: l.min }))
+    .filter((x) => x.j)
+    .sort((a, b) => a.j.kickoff.localeCompare(b.j.kickoff));
+  const liveIds = new Set(live.map((x) => x.j.id));
+  const ref = S.dados.atualizado_em || new Date().toISOString();
+  const prox = S.dados.jogos
+    .filter((j) => !apurado(j) && !liveIds.has(j.id) && j.kickoff > ref)
+    .sort((a, b) => a.kickoff.localeCompare(b.kickoff))
+    .slice(0, live.length ? 3 : 4);
+  return { live, prox };
 }
 function secAoVivo() {
-  const { live, liveScore, prox } = liveModel();
-  if (!live) return "";
-  const c = time(live.casa), f = time(live.fora);
-  const liveCard = `<article class="live-card featured" data-live="${live.id}">
-    <div class="live-head">
-      <span class="live-tag"><span class="blink"></span> Ao vivo</span>
-      <span class="live-min">${liveScore.min} · Grupo ${live.grupo}</span>
-    </div>
-    <div class="match big">
-      <div class="team home"><span class="tn">${esc(c.nome)}</span><span class="flag">${c.flag}</span></div>
-      <div class="score" id="livescore">${liveScore.casa}<em>:</em>${liveScore.fora}</div>
-      <div class="team away"><span class="flag">${f.flag}</span><span class="tn">${esc(f.nome)}</span></div>
-    </div>
-  </article>`;
+  const { live, prox } = liveModel();
+  if (!live.length && !prox.length) return "";
+  const faseLbl = (j) => (j.fase === "grupos" ? "Grupo " + j.grupo : (S.fases[j.fase] && S.fases[j.fase].nome) || "Mata-mata");
+  const liveCards = live.map(({ j, casa, fora, min }) => {
+    const c = time(j.casa), f = time(j.fora);
+    return `<article class="live-card featured" data-live="${j.id}">
+      <div class="live-head">
+        <span class="live-tag"><span class="blink"></span> Ao vivo</span>
+        <span class="live-min">${esc(min || "ao vivo")} · ${faseLbl(j)}</span>
+      </div>
+      <div class="match big">
+        <div class="team home"><span class="tn">${esc(c.nome)}</span><span class="flag">${c.flag}</span></div>
+        <div class="score">${casa}<em>:</em>${fora}</div>
+        <div class="team away"><span class="flag">${f.flag}</span><span class="tn">${esc(f.nome)}</span></div>
+      </div>
+    </article>`;
+  }).join("");
   const proxCards = prox.map((j) => {
     const a = time(j.casa), b = time(j.fora);
     return `<article class="live-card next">
@@ -139,13 +143,14 @@ function secAoVivo() {
       </div>
     </article>`;
   }).join("");
+  const headPill = live.length ? "tempo real" : "em breve";
   return `<section class="reveal" id="aovivo">
     <div class="sec-head">
       <span class="kicker">Copa ao vivo</span>
-      <h2>No gramado agora</h2>
-      <span class="pill">tempo real</span>
+      <h2>${live.length ? "No gramado agora" : "A seguir"}</h2>
+      <span class="pill">${headPill}</span>
     </div>
-    <div class="live-grid">${liveCard}${proxCards}</div>
+    <div class="live-grid">${liveCards}${proxCards}</div>
   </section>`;
 }
 
