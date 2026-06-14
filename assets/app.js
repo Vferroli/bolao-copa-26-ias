@@ -121,25 +121,47 @@ function indexar() {
   S.dados.ias.forEach((i) => (S.ia[i.id] = i));
 }
 
-/* auto-atualização: repolla dados.json e re-renderiza só quando muda.
-   Acompanha o cron (a cada 5 min) sem reload manual. Pausa em aba oculta. */
+/* auto-atualização adaptativa: repolla dados.json e re-renderiza só quando muda.
+   Rápido (60s) só quando há jogo ao vivo ou prestes a começar; lento (5min)
+   o resto do tempo. Pausa em aba oculta. Economiza requisições (e crédito). */
+const POLL_VIVO = 60000;    // 1 min: jogo rolando / janela de jogo
+const POLL_OCIOSO = 300000; // 5 min: sem jogo por perto
+
+function temJogoPorPerto() {
+  if (Array.isArray(S.dados.live) && S.dados.live.length) return true;
+  const agora = Date.now(), J = 2 * 3600 * 1000; // ±2h de qualquer kickoff sem placar
+  return (S.dados.jogos || []).some((j) => {
+    if (j.real && j.real.casa != null) return false;
+    const k = new Date(j.kickoff).getTime();
+    return k >= agora - J && k <= agora + J;
+  });
+}
+
 function iniciarPoll() {
-  const INTERVALO = 45000;
+  let timer = null;
   async function tick() {
-    if (document.hidden) return;
-    try {
-      const r = await fetch("dados.json?ts=" + Date.now(), { cache: "no-store" });
-      if (!r.ok) return;
-      const novo = await r.json();
-      if ((novo.atualizado_em || "") === S._stamp) return;
-      S._stamp = novo.atualizado_em || "";
-      S.dados = novo;
-      S.TZ = novo.fuso || S.TZ;
-      S.HOJE = novo.atualizado || S.HOJE;
-      indexar();
-      render();
-    } catch (_) { /* silencioso: tenta de novo no próximo tick */ }
+    if (!document.hidden) {
+      try {
+        const r = await fetch("dados.json?ts=" + Date.now(), { cache: "no-store" });
+        if (r.ok) {
+          const novo = await r.json();
+          if ((novo.atualizado_em || "") !== S._stamp) {
+            S._stamp = novo.atualizado_em || "";
+            S.dados = novo;
+            S.TZ = novo.fuso || S.TZ;
+            S.HOJE = novo.atualizado || S.HOJE;
+            indexar();
+            render();
+          }
+        }
+      } catch (_) { /* silencioso: tenta de novo no próximo tick */ }
+    }
+    agendar();
   }
-  setInterval(tick, INTERVALO);
+  function agendar() {
+    clearTimeout(timer);
+    timer = setTimeout(tick, temJogoPorPerto() ? POLL_VIVO : POLL_OCIOSO);
+  }
+  agendar();
   document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
 }
