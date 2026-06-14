@@ -735,6 +735,11 @@
         "avancou": null
       },
       "palpites": {
+        "claude": {
+          "casa": 4,
+          "fora": 0,
+          "avanca": null
+        },
         "gpt": {
           "casa": 4,
           "fora": 0,
@@ -765,6 +770,11 @@
         "avancou": null
       },
       "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null
+        },
         "gpt": {
           "casa": 1,
           "fora": 1,
@@ -851,6 +861,11 @@
         "avancou": null
       },
       "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
         "gpt": {
           "casa": 2,
           "fora": 1,
@@ -881,6 +896,11 @@
         "avancou": null
       },
       "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null
+        },
         "gpt": {
           "casa": 1,
           "fora": 0,
