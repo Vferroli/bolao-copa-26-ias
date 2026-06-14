@@ -1,9 +1,11 @@
 name: Atualizar resultados
 
 on:
-  schedule:
-    - cron: "*/10 * * * *"   # best-effort; repo privado tem cota de Actions
-  workflow_dispatch: {}       # botão manual
+  # CRON DESLIGADO: Netlify cobra ~15 créditos/deploy e cada commit de dados.json
+  # dispara 1 deploy. Reativar só após desacoplar dados de deploy (CDN ou Vercel).
+  # schedule:
+  #   - cron: "*/10 * * * *"
+  workflow_dispatch: {}       # só disparo manual por enquanto
 
 permissions:
   contents: write
