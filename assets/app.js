@@ -121,8 +121,8 @@ function render() {
     blocoAgenda("📜", "Histórico", hist, true);
 
   document.getElementById("atualizado").textContent = "Dados de " + (estado.dados.atualizado || "—");
-  app.querySelectorAll("[data-prompt-jogo]").forEach((btn) =>
-    btn.addEventListener("click", () => copiarPrompt(Number(btn.dataset.promptJogo), btn))
+  app.querySelectorAll("[data-prompt-dia]").forEach((btn) =>
+    btn.addEventListener("click", () => copiarPromptDia(btn.dataset.promptDia, btn))
   );
 }
 
@@ -171,7 +171,8 @@ function blocoHoje(hoje) {
   if (!hoje.length)
     return `<section>${cabec}<div class="aviso">Nenhum jogo da fase de grupos hoje. Veja os próximos jogos abaixo.</div></section>`;
   hoje.sort((a, b) => a.kickoff.localeCompare(b.kickoff));
-  return `<section>${cabec}${hoje.map(cardHoje).join("")}</section>`;
+  const cta = `<button class="btn cta-dia" data-prompt-dia="${estado.HOJE}">📋 Copiar prompt do dia · ${hoje.length} jogo${hoje.length > 1 ? "s" : ""}</button>`;
+  return `<section>${cabec}${cta}${hoje.map(cardHoje).join("")}</section>`;
 }
 
 function cardHoje(j) {
@@ -184,9 +185,8 @@ function cardHoje(j) {
       <span class="hora">${kickHora(j)}</span>
     </div>
     ${confrontoHTML(j, true)}
-    <div class="palpites">${pals || '<span class="sem-pal">Sem palpites ainda — copie o prompt e pergunte às IAs.</span>'}</div>
+    <div class="palpites">${pals || '<span class="sem-pal">Sem palpites ainda — use o prompt do dia e pergunte às IAs.</span>'}</div>
     <div class="jogo-acoes">
-      <button class="btn" data-prompt-jogo="${j.id}">📋 Copiar prompt deste jogo</button>
       <span class="status ${ao ? "ok" : "open"}">${ao ? "✓ apurado" : "○ aberto"}</span>
     </div>
   </div>`;
@@ -195,7 +195,6 @@ function cardHoje(j) {
 function linhaJogo(j, comPts) {
   const ao = apurado(j);
   const pals = palpitesHTML(j, comPts);
-  const acao = comPts ? "" : `<button class="btn pequeno" data-prompt-jogo="${j.id}">📋 prompt</button>`;
   return `<div class="linha ${ao ? "fin" : ""}">
     <div class="linha-top">
       <span class="hora">${kickHora(j)}</span>
@@ -203,7 +202,6 @@ function linhaJogo(j, comPts) {
       <span class="status ${ao ? "ok" : "open"}">${ao ? "✓" : "○"}</span>
     </div>
     ${pals ? `<div class="linha-pals">${pals}</div>` : ""}
-    ${acao}
   </div>`;
 }
 
@@ -220,9 +218,12 @@ function blocoAgenda(emoji, titulo, jogos, decrescente) {
     .map((d, idx) => {
       const lista = porDia[d].sort((a, b) => a.kickoff.localeCompare(b.kickoff));
       const aberto = !decrescente && idx === 0 ? "open" : "";
+      const cta = decrescente
+        ? ""
+        : `<button class="btn pequeno cta-dia" data-prompt-dia="${d}">📋 Copiar prompt do dia · ${lista.length} jogo${lista.length > 1 ? "s" : ""}</button>`;
       return `<details class="dia" ${aberto}>
         <summary><span class="dia-rot">${rotuloData(d)}</span><span class="dia-cont">${lista.length} jogo${lista.length > 1 ? "s" : ""}</span></summary>
-        <div class="dia-jogos">${lista.map((j) => linhaJogo(j, decrescente)).join("")}</div>
+        <div class="dia-jogos">${cta}${lista.map((j) => linhaJogo(j, decrescente)).join("")}</div>
       </details>`;
     })
     .join("");
@@ -305,16 +306,39 @@ function corFase(id) {
   return cores[id] || "#64748b";
 }
 
-/* ---------- copiar prompt ---------- */
-function copiarPrompt(idJogo, btn) {
-  const j = estado.dados.jogos.find((x) => x.id === idJogo);
-  if (!j) return;
-  const fase = estado.fases[j.fase];
-  const linhaMata = fase.mata ? " (mata-mata — diga também quem avança)" : "";
-  const texto =
-    (estado.prompt || "O jogo que você vai palpitar é:") +
-    `\n${time(j.casa).nome} x ${time(j.fora).nome} — ${fase.nome}${j.grupo ? " (Grupo " + j.grupo + ")" : ""}${linhaMata}\n`;
-  navigator.clipboard.writeText(texto).then(() => flash(btn, "✓ Copiado!"), () => flash(btn, "Erro"));
+/* ---------- copiar prompt do dia (todos os jogos do dia num CTA só) ---------- */
+function copiarPromptDia(dateStr, btn) {
+  const jogos = estado.dados.jogos
+    .filter((j) => j.fase === "grupos" && kickData(j) === dateStr)
+    .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
+  if (!jogos.length) return;
+
+  const base = (estado.prompt || "")
+    .replace(/\s*O jogo que você vai palpitar é:\s*$/i, "")
+    .trimEnd();
+
+  const lista = jogos
+    .map((j, i) => {
+      const fase = estado.fases[j.fase];
+      return `${i + 1}) ${time(j.casa).nome} x ${time(j.fora).nome} — ${fase.nome}${
+        j.grupo ? " (Grupo " + j.grupo + ")" : ""
+      } — ${kickHora(j)}`;
+    })
+    .join("\n");
+
+  const n = jogos.length;
+  const instr =
+    `\n\nHoje há ${n} jogo${n > 1 ? "s" : ""}. Palpite TODOS de uma vez, no formato:\n` +
+    `Resposta do XXXX\n` +
+    `Jogo 1 — [Time A] [gols] x [gols] [Time B]\n` +
+    `Jogo 2 — [Time A] [gols] x [gols] [Time B]\n` +
+    `(em jogo de mata-mata, acrescente "Avança: [time]" na linha do jogo)\n\n` +
+    `Os jogos do dia:\n${lista}\n`;
+
+  navigator.clipboard.writeText(base + instr).then(
+    () => flash(btn, `✓ Copiado · ${n} jogo${n > 1 ? "s" : ""}`),
+    () => flash(btn, "Erro")
+  );
 }
 function flash(btn, msg) {
   const orig = btn.textContent;
@@ -376,6 +400,32 @@ async function carregarAoVivo() {
   cont.innerHTML =
     (recentes ? `<div class="ev-col"><h3>Últimos resultados</h3>${recentes}</div>` : "") +
     (futuros ? `<div class="ev-col"><h3>Próximos jogos</h3>${futuros}</div>` : "");
+
+  // Minuto ao vivo (strProgress) — só existe no endpoint v2, que exige chave premium.
+  // Com a chave grátis o bloco abaixo é ignorado.
+  if (key && key !== (cfg.chave_padrao || "3")) {
+    try {
+      const r = await fetch("https://www.thesportsdb.com/api/v2/json/livescore/soccer", {
+        headers: { "X-API-KEY": key },
+      });
+      if (r.ok) {
+        const d = await r.json();
+        const live = (d.livescore || d.events || []).filter(
+          (e) => String(e.idLeague) === String(liga) || /world cup/i.test(e.strLeague || "")
+        );
+        if (live.length) {
+          const html = live
+            .map(
+              (e) => `<div class="ev live"><span>${esc(e.strHomeTeam)}</span><b>${e.intHomeScore} - ${e.intAwayScore}</b><span>${esc(e.strAwayTeam)}</span><i><span class="live-tag">${esc(e.strProgress || "AO VIVO")}</span></i></div>`
+            )
+            .join("");
+          cont.insertAdjacentHTML("afterbegin", `<div class="ev-col live-col"><h3>🔴 Acontecendo agora</h3>${html}</div>`);
+        }
+      }
+    } catch (_) {
+      /* sem chave premium / CORS — segue só com placar final */
+    }
+  }
 }
 
 carregar();
