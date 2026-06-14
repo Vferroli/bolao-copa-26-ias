@@ -18,8 +18,9 @@ const DADOS = join(__dir, "..", "dados.json");
 const FD_KEY = process.env.FOOTBALL_DATA_KEY || "";
 const AF_KEY = process.env.API_FOOTBALL_KEY || "";
 
-/* janela: só consulta jogos sem placar com kickoff entre -48h e +30min */
-const ATRAS_MS = 48 * 3600 * 1000;
+/* janela: só consulta jogos sem placar com kickoff entre -ATRAS e +30min.
+   JANELA_ATRAS_H sobrescreve o padrão (ex.: 240 p/ backfill inicial). */
+const ATRAS_MS = (Number(process.env.JANELA_ATRAS_H) || 48) * 3600 * 1000;
 const FRENTE_MS = 30 * 60 * 1000;
 
 /* ---------- de-para de seleções (provider name -> meu id) ---------- */
@@ -71,12 +72,23 @@ function buildResolver(times) {
 /* normaliza para: {homeId, awayId, status, h, a, winnerId}
    status: "LIVE" | "FINISHED" | "OTHER"                                   */
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 async function fetchFootballData(dates, resolve) {
   if (!FD_KEY) return null;
   const from = dates[0], to = dates[dates.length - 1];
   const url = `https://api.football-data.org/v4/competitions/WC/matches?dateFrom=${from}&dateTo=${to}`;
-  const r = await fetch(url, { headers: { "X-Auth-Token": FD_KEY } });
+  let r = await fetch(url, { headers: { "X-Auth-Token": FD_KEY } });
+  // respeita o ratelimiter (instrução do provedor): 429 -> espera e tenta 1x
+  if (r.status === 429) {
+    const wait = (Number(r.headers.get("retry-after")) || 60) * 1000;
+    console.log(`football-data 429: aguardando ${wait / 1000}s`);
+    await sleep(wait);
+    r = await fetch(url, { headers: { "X-Auth-Token": FD_KEY } });
+  }
   if (!r.ok) throw new Error(`football-data ${r.status}`);
+  const rest = r.headers.get("x-requests-available-minute");
+  if (rest != null && Number(rest) <= 1) console.log(`football-data: cota baixa (${rest}/min restante)`);
   const data = await r.json();
   const LIVE = new Set(["IN_PLAY", "PAUSED", "LIVE"]);
   return (data.matches || []).map((m) => {

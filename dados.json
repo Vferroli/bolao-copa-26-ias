@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
-  "atualizado": "2026-06-15",
-  "atualizado_em": "2026-06-14T13:15:31Z",
+  "atualizado": "2026-06-14",
+  "atualizado_em": "2026-06-14T21:47:49.179Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -430,8 +430,8 @@
       "fora": "switzerland",
       "kickoff": "2026-06-13T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 1,
+        "fora": 1,
         "avancou": null
       },
       "palpites": {}
@@ -731,8 +731,8 @@
       "fora": "curacao",
       "kickoff": "2026-06-14T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 7,
+        "fora": 1,
         "avancou": null
       },
       "palpites": {
@@ -1625,6 +1625,14 @@
         "avancou": null
       },
       "palpites": {}
+    }
+  ],
+  "live": [
+    {
+      "id": 31,
+      "casa": 2,
+      "fora": 1,
+      "min": "ao vivo"
     }
   ]
 }
