@@ -43,42 +43,54 @@
       "nome": "16-avos",
       "mult": 1.5,
       "mata": true,
-      "slots": 16
+      "slots": 16,
+      "inicio": "2026-06-28",
+      "fim": "2026-07-03"
     },
     {
       "id": "oitavas",
       "nome": "Oitavas",
       "mult": 2,
       "mata": true,
-      "slots": 8
+      "slots": 8,
+      "inicio": "2026-07-04",
+      "fim": "2026-07-07"
     },
     {
       "id": "quartas",
       "nome": "Quartas",
       "mult": 2.5,
       "mata": true,
-      "slots": 4
+      "slots": 4,
+      "inicio": "2026-07-09",
+      "fim": "2026-07-11"
     },
     {
       "id": "semi",
       "nome": "Semifinal",
       "mult": 3,
       "mata": true,
-      "slots": 2
+      "slots": 2,
+      "inicio": "2026-07-14",
+      "fim": "2026-07-15"
     },
     {
       "id": "terceiro",
       "nome": "Disputa de 3º",
       "mult": 2,
       "mata": true,
-      "slots": 1
+      "slots": 1,
+      "inicio": "2026-07-18",
+      "fim": "2026-07-18"
     },
     {
       "id": "final",
       "nome": "Final",
       "mult": 4,
       "mata": true,
-      "slots": 1
+      "slots": 1,
+      "inicio": "2026-07-19",
+      "fim": "2026-07-19"
     }
   ],
   "times": {

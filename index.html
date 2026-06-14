@@ -113,10 +113,78 @@
     </p>
     <div class="links">
       <a href="REGRAS.md">REGRAS.md</a>
-      <a href="PROMPT.md">PROMPT.md</a>
       <a href="https://github.com/vferroli/bolao-copa-26-ias">Repositório</a>
     </div>
   </footer>
+
+  <!-- ░░ MODAL: o que foi pedido às IAs ░░ -->
+  <div class="modal" id="prompt-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title" aria-hidden="true" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="document">
+      <span class="modal-grip" aria-hidden="true"></span>
+      <header class="modal-head">
+        <div>
+          <span class="modal-kicker">Prompt único · idêntico para as 4 IAs</span>
+          <h2 id="pm-title">O que foi pedido às IAs</h2>
+        </div>
+        <button class="modal-x" data-close type="button" aria-label="Fechar">✕</button>
+      </header>
+      <div class="modal-body">
+        <p class="pm-intro">
+          Cada IA recebe <b>exatamente o mesmo briefing</b> e palpita o mesmo jogo.
+          Está valendo orgulho de máquina — o pedido é o <b>melhor</b> palpite, não um chute genérico.
+        </p>
+
+        <div class="pm-block">
+          <div class="pm-num">01</div>
+          <div>
+            <h3>Antes de cravar, pesquise de verdade</h3>
+            <ul>
+              <li>Forma recente das duas seleções — vitórias, derrotas, gols feitos e sofridos.</li>
+              <li><b>Resultados e zebras já ocorridos nesta Copa 2026</b> — como cada seleção vem se saindo no torneio.</li>
+              <li>Confrontos diretos no histórico e em Copas.</li>
+              <li><b>Lesões</b>, desfalques, suspensões e jogadores em alta.</li>
+              <li>Contexto e fase do jogo: importância, necessidade de resultado, mando de campo.</li>
+              <li>Estilo de jogo — força de ataque contra a defesa de cada lado.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pm-block">
+          <div class="pm-num">02</div>
+          <div>
+            <h3>Pense na pontuação ao escolher</h3>
+            <p>Ouse no placar exato (25 pts) quando houver convicção, mas não jogue fora o acerto do vencedor. Fases finais multiplicam até ×4.</p>
+          </div>
+        </div>
+
+        <div class="pm-block">
+          <div class="pm-num">03</div>
+          <div>
+            <h3>Regras da resposta</h3>
+            <ul>
+              <li>Começar com <b>"Resposta do [nome da IA]"</b> — é assim que sabemos quem respondeu.</li>
+              <li>Um <b>único</b> placar final (ex.: 2-1) — sem intervalos, sem "depende".</li>
+              <li>Se for mata-mata, dizer também <b>quem avança</b>.</li>
+              <li>Sem justificativa nem texto extra.</li>
+              <li>Tudo dentro de <b>um único bloco de código</b>, para copiar com um clique.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pm-format">
+          <span class="pm-format-lbl">Formato exato da resposta</span>
+          <pre><code>Resposta do XXXX
+Placar: [time A] [gols] x [gols] [time B]
+Avança (se mata-mata): [time]</code></pre>
+        </div>
+      </div>
+      <footer class="modal-foot">
+        <span class="mf-note">O briefing completo é gerenciado internamente.</span>
+        <button class="btn-mini" data-close type="button">Fechar</button>
+      </footer>
+    </div>
+  </div>
 
   <script src="assets/app.js"></script>
   <script src="assets/app-render.js"></script>

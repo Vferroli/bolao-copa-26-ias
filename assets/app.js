@@ -123,7 +123,6 @@ async function carregar() {
   // demo-friendly "today": use dataset reference date so the panel is always populated
   S.HOJE = S.dados.atualizado || dataTZ(new Date());
   indexar();
-  try { S.prompt = await (await fetch("PROMPT.md?ts=" + Date.now())).text(); } catch (_) { S.prompt = ""; }
   S._stamp = S.dados.atualizado_em || "";
   render();
   iniciarPoll();

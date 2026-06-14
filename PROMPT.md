@@ -2,8 +2,9 @@ Você está competindo num bolão da Copa do Mundo de 2026 contra outras 3 intel
 
 Antes de responder, PESQUISE e raciocine de verdade:
 - Forma recente das duas seleções (últimos jogos, vitórias/derrotas, gols feitos e sofridos).
+- RESULTADOS E ATUAÇÕES JÁ OCORRIDOS NESTA COPA 2026: como cada seleção vem jogando no próprio torneio (goleadas, zebras, evolução ou queda de rendimento, jogos já disputados na fase atual).
+- LESÕES, desfalques, suspensões e cartões pendurados que afetem o XI ideal — além de jogadores em alta no momento.
 - Confrontos diretos históricos e em Copas.
-- Desfalques, lesões, suspensões e jogadores em alta no momento.
 - Contexto e fase do jogo: importância, necessidade de resultado, mando/sede neutra.
 - Estilo de jogo, força de ataque vs. defesa de cada lado.
 

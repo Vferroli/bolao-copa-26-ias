@@ -8,6 +8,7 @@ function render() {
   const app = document.getElementById("app");
   app.innerHTML = [
     secScoring(),
+    secPrompt(),
     secAoVivo(),
     secHoje(),
     secProximos(),
@@ -90,6 +91,23 @@ function secScoring() {
         <span class="mult">Final <b>×4</b></span>
         <span class="mult bonus">Cravou quem avança <b>+8</b></span>
       </div>
+    </div>
+  </section>`;
+}
+
+/* ---------- O QUE FOI SOLICITADO ÀS IAS ---------- */
+function secPrompt() {
+  return `<section class="reveal" id="prompt-ias">
+    <div class="prompt-cta card">
+      <span class="pc-badge" aria-hidden="true">🤖</span>
+      <div class="pc-txt">
+        <span class="kicker">IA vs IA</span>
+        <h3>O que foi solicitado para as IAs</h3>
+        <p>Um único prompt, idêntico para Claude, GPT, Gemini e Grok: pesquisar a fundo, cravar UM placar e responder num formato fixo. Sem chute genérico.</p>
+      </div>
+      <button class="pc-btn" id="open-prompt" type="button">
+        Conferir <span aria-hidden="true">→</span>
+      </button>
     </div>
   </section>`;
 }
@@ -200,16 +218,12 @@ function secHoje() {
       ${chips(j, fim)}
     </article>`;
   }).join("");
-  const cta = `<button class="cta-day" data-prompt-dia="${S.HOJE}">
-    <span class="ico">📋</span> Copiar prompt do dia · ${hoje.length} jogo${hoje.length > 1 ? "s" : ""}
-  </button>`;
   return `<section class="reveal" id="hoje">
     <div class="sec-head">
       <span class="kicker">Rodada de hoje</span>
       <h2>Jogos de hoje</h2>
       <span class="pill">${rotuloData(S.HOJE)}</span>
     </div>
-    ${cta}
     <div class="today-grid">${cards}</div>
   </section>`;
 }
@@ -222,7 +236,7 @@ function secProximos() {
   if (!fut.length) return "";
   const dias = {};
   fut.forEach((j) => { (dias[kickData(j)] = dias[kickData(j)] || []).push(j); });
-  const blocos = Object.keys(dias).sort().slice(0, 6).map((d, i) => {
+  const blocos = Object.keys(dias).sort().map((d, i) => {
     const lista = dias[d];
     const fixes = lista.map((j) => {
       const a = time(j.casa), b = time(j.fora);
@@ -248,9 +262,37 @@ function secProximos() {
     <div class="sec-head">
       <span class="kicker">Agenda</span>
       <h2>Próximos jogos</h2>
+      <span class="pill">Fase de grupos completa</span>
     </div>
     <div class="agenda">${blocos}</div>
+    ${secMataDatas()}
   </section>`;
+}
+
+/* ---------- datas do mata-mata (roadmap) ---------- */
+function fmtDiaCurto(iso) {
+  const MES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+  const [, m, dia] = iso.split("-");
+  return `${dia} ${MES[Number(m) - 1]}`;
+}
+function secMataDatas() {
+  const fases = (S.dados.fases || []).filter((f) => f.mata && f.inicio);
+  if (!fases.length) return "";
+  const linhas = fases.map((f) => {
+    const dt = f.fim && f.fim !== f.inicio
+      ? `${fmtDiaCurto(f.inicio)} – ${fmtDiaCurto(f.fim)}`
+      : fmtDiaCurto(f.inicio);
+    return `<div class="kr">
+      <span class="kr-fase">${esc(f.nome)}</span>
+      <span class="kr-mx">×${fmt(f.mult)}</span>
+      <span class="kr-data">${dt}</span>
+    </div>`;
+  }).join("");
+  return `<div class="mata-datas">
+    <div class="md-head"><span class="kicker">Eliminatórias · datas</span></div>
+    <div class="kr-list">${linhas}</div>
+    <p class="md-note">Confrontos definidos após a fase de grupos. Fases finais valem mais pontos.</p>
+  </div>`;
 }
 
 /* ---------- GRUPOS & classificação ---------- */
@@ -377,9 +419,49 @@ function secHistorico() {
    INTERACTIONS & ANIMATIONS
    ============================================================ */
 function wireInteractions() {
-  document.querySelectorAll("[data-prompt-dia]").forEach((btn) =>
-    btn.addEventListener("click", () => copiarPromptDia(btn.dataset.promptDia, btn))
-  );
+  setupPromptModal();
+}
+
+/* ---------- modal: o que foi pedido às IAs ---------- */
+function setupPromptModal() {
+  const modal = document.getElementById("prompt-modal");
+  const opener = document.getElementById("open-prompt");
+  if (!modal) return;
+  let lastFocus = null;
+  const open = () => {
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    requestAnimationFrame(() => {
+      modal.classList.add("show");
+      const x = modal.querySelector(".modal-x");
+      if (x) x.focus();
+    });
+  };
+  const close = () => {
+    modal.classList.remove("show");
+    document.body.classList.remove("modal-open");
+    modal.setAttribute("aria-hidden", "true");
+    const finish = () => { modal.hidden = true; modal.removeEventListener("transitionend", finish); };
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) finish();
+    else setTimeout(finish, 260);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  };
+  if (opener) opener.addEventListener("click", open);
+  modal.querySelectorAll("[data-close]").forEach((el) => el.addEventListener("click", close));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.hidden) close();
+  });
+  // contenção simples de foco
+  modal.addEventListener("keydown", (e) => {
+    if (e.key !== "Tab") return;
+    const f = [...modal.querySelectorAll('a[href],button:not([disabled])')].filter((n) => n.offsetParent !== null);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
 }
 
 /* count-up for ranking points */
@@ -432,35 +514,3 @@ function spawnConfetti() {
   }
 }
 
-/* ---------- copiar prompt do dia ---------- */
-function copiarPromptDia(dateStr, btn) {
-  const jogos = S.dados.jogos
-    .filter((j) => j.fase === "grupos" && kickData(j) === dateStr)
-    .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
-  const linhas = jogos.map((j, i) => {
-    const c = time(j.casa), f = time(j.fora);
-    return `${i + 1}. ${c.nome} x ${f.nome} (Grupo ${j.grupo}, ${kickHora(j)})`;
-  }).join("\n");
-  const n = jogos.length;
-  const base = S.prompt && S.prompt.trim() ? S.prompt.trim() + "\n\n" : "";
-  const texto = `${base}Jogos de hoje (${rotuloData(dateStr)}):\n${linhas}\n\n` +
-    `Há ${n} jogo${n > 1 ? "s" : ""}. Palpite TODOS de uma vez, cada um no formato:\n` +
-    "```\nResposta do XXXX\n" + jogos.map((j) => {
-      const c = time(j.casa), f = time(j.fora);
-      return `${c.nome} [gols] x [gols] ${f.nome}`;
-    }).join("\n") + "\n```";
-  const done = () => {
-    const old = btn.innerHTML;
-    btn.classList.add("flash");
-    btn.innerHTML = "✓ Prompt copiado!";
-    setTimeout(() => { btn.classList.remove("flash"); btn.innerHTML = old; }, 1600);
-  };
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(texto).then(done).catch(done);
-  } else {
-    const ta = document.createElement("textarea");
-    ta.value = texto; document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); } catch (_) {}
-    document.body.removeChild(ta); done();
-  }
-}
