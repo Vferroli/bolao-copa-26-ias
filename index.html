@@ -3,27 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#080b16" />
   <title>Bolão Copa 2026 — IAs</title>
+  <meta name="description" content="Claude, GPT, Gemini e Grok cravando os placares da Copa do Mundo 2026. Quem é a melhor IA palpiteira?" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🏆&lt;/text&gt;&lt;/svg&gt;" />
 </head>
 <body>
-  <header class="topo">
-    <h1>🏆 Bolão Copa 2026 <span>· IAs</span></h1>
-    <p class="legenda">Claude · GPT · Gemini · Grok cravando placares</p>
-    <p id="atualizado" class="atualizado">carregando…</p>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <a href="#hoje" class="skip">Pular para os jogos de hoje</a>
+
+  <!-- ░░ TOP BAR ░░ -->
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="crest" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#cdd6ee" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3h12v3a6 6 0 0 1-12 0V3Z" />
+            <path d="M18 4h2.5a2 2 0 0 1 0 4H17" />
+            <path d="M6 4H3.5a2 2 0 0 0 0 4H7" />
+            <path d="M12 12v4" />
+            <path d="M8.5 20h7l-.7-3.2a1 1 0 0 0-1-.8H10.2a1 1 0 0 0-1 .8L8.5 20Z" />
+          </svg>
+        </span>
+        <div class="txt">
+          <div class="ttl">Bolão Copa 2026 <b>· IAs</b></div>
+          <div class="sub">Claude · GPT · Gemini · Grok</div>
+        </div>
+      </div>
+      <nav aria-label="Seções">
+        <a href="#hoje">Hoje</a>
+        <a href="#grupos">Grupos</a>
+        <a href="#mata">Mata-mata</a>
+        <a href="#historico">Histórico</a>
+      </nav>
+      <div class="stamp">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="lbl">Atualizado</span>
+        <span id="stamp-time">—</span>
+      </div>
+    </div>
   </header>
 
-  <main id="app">
-    <div class="aviso">Carregando o painel…</div>
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="ranking">
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 1200 560" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <radialGradient id="pitch" cx="50%" cy="120%" r="80%">
+            <stop offset="0%" stop-color="rgba(80,150,255,0.10)" />
+            <stop offset="100%" stop-color="rgba(80,150,255,0)" />
+          </radialGradient>
+        </defs>
+        <rect width="1200" height="560" fill="url(#pitch)" />
+        <g fill="none" stroke="rgba(180,200,255,0.10)" stroke-width="2">
+          <!-- stadium tiers -->
+          <ellipse cx="600" cy="640" rx="560" ry="240" />
+          <ellipse cx="600" cy="640" rx="430" ry="184" />
+          <ellipse cx="600" cy="640" rx="300" ry="128" />
+          <!-- pitch markings -->
+          <line x1="40" y1="470" x2="1160" y2="470" stroke="rgba(180,200,255,0.14)" />
+          <circle cx="600" cy="470" r="74" stroke="rgba(180,200,255,0.14)" />
+          <path d="M600 396 v148" stroke="rgba(180,200,255,0.14)" />
+        </g>
+        <!-- confetti specks -->
+        <g>
+          <rect x="180" y="120" width="7" height="11" rx="1" fill="#ffce5c" opacity="0.55" transform="rotate(20 183 125)" />
+          <rect x="980" y="90" width="7" height="11" rx="1" fill="#d97757" opacity="0.5" transform="rotate(-15 983 95)" />
+          <rect x="320" y="60" width="6" height="10" rx="1" fill="#4285f4" opacity="0.5" transform="rotate(35 323 65)" />
+          <rect x="860" y="150" width="6" height="10" rx="1" fill="#a78bfa" opacity="0.5" transform="rotate(-25 863 155)" />
+          <rect x="520" y="50" width="6" height="10" rx="1" fill="#10a37f" opacity="0.5" transform="rotate(15 523 55)" />
+          <rect x="700" y="110" width="6" height="10" rx="1" fill="#ffce5c" opacity="0.45" transform="rotate(-30 703 115)" />
+        </g>
+      </svg>
+    </div>
+    <div class="hero-in">
+      <span class="eyebrow">🏆 Copa do Mundo · EUA · México · Canadá</span>
+      <h1>Quatro IAs.<br /><span class="glow">Um troféu.</span></h1>
+      <p class="lede">
+        <span class="ia-mini">Claude</span>, <span class="ia-mini">GPT</span>,
+        <span class="ia-mini">Gemini</span> e <span class="ia-mini">Grok</span>
+        cravando os placares de cada jogo. Orgulho de máquina em disputa.
+      </p>
+      <div class="podium" id="podium"><!-- ranking injetado --></div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTEÚDO ░░ -->
+  <main id="app" class="wrap">
+    <div class="card" style="padding:18px;color:var(--dim)">Carregando o painel…</div>
   </main>
 
-  <footer class="rodape">
-    <p>Pontos = (faixa × multiplicador da fase) + bônus de classificação. Regras completas no repositório.</p>
-    <p><a href="REGRAS.md">REGRAS.md</a> · <a href="PROMPT.md">PROMPT.md</a> · <a href="https://github.com/vferroli/bolao-copa-26-ias">repositório</a></p>
+  <!-- ░░ RODAPÉ ░░ -->
+  <footer class="foot">
+    <div class="fbrand">
+      <span class="crest" aria-hidden="true" style="width:28px;height:28px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#cdd6ee" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px">
+          <path d="M6 3h12v3a6 6 0 0 1-12 0V3Z" /><path d="M18 4h2.5a2 2 0 0 1 0 4H17" /><path d="M6 4H3.5a2 2 0 0 0 0 4H7" /><path d="M12 12v4" /><path d="M8.5 20h7l-.7-3.2a1 1 0 0 0-1-.8H10.2a1 1 0 0 0-1 .8L8.5 20Z" />
+        </svg>
+      </span>
+      Bolão Copa 2026 · IAs
+    </div>
+    <p>
+      Pontos = <b>(faixa base × multiplicador da fase) + bônus de classificação</b>.
+      Placar exato vale 25; fases finais multiplicam até ×4; cravar quem avança no mata-mata soma +8.
+    </p>
+    <div class="links">
+      <a href="REGRAS.md">REGRAS.md</a>
+      <a href="PROMPT.md">PROMPT.md</a>
+      <a href="https://github.com/vferroli/bolao-copa-26-ias">Repositório</a>
+    </div>
   </footer>
 
   <script src="assets/app.js"></script>
+  <script src="assets/app-render.js"></script>
 </body>
 </html>
