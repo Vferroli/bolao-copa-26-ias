@@ -108,6 +108,9 @@ h2 .sub, h2 .data-hoje {
 .btn:active { transform: scale(0.97); }
 .btn.flash { background: var(--ok); }
 .btn.pequeno { padding: 5px 10px; font-size: 0.72rem; }
+.cta-dia { display: block; width: 100%; margin: 0 0 14px; padding: 12px; font-size: 0.9rem; background: linear-gradient(135deg, #2563eb, #7c3aed); }
+.cta-dia:hover { filter: brightness(1.08); background: linear-gradient(135deg, #2563eb, #7c3aed); }
+.dia-jogos .cta-dia { margin-bottom: 8px; font-size: 0.76rem; padding: 8px; }
 
 /* ---------- agenda por dia ---------- */
 .dia, .grupo {
@@ -155,6 +158,9 @@ h2 .sub, h2 .data-hoje {
 .ev b { font-weight: 800; }
 .ev.futuro b { color: var(--dim); }
 .ev i { grid-column: 1 / -1; text-align: center; color: var(--dim); font-size: 0.7rem; font-style: normal; }
+.live-col { border-color: rgba(239, 68, 68, 0.5); box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.2); }
+.ev.live b { color: #fff; }
+.live-tag { background: var(--live); color: #fff; font-size: 0.64rem; font-weight: 800; padding: 1px 8px; border-radius: 10px; }
 .aovivo-cfg { margin-top: 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 0.78rem; color: var(--dim); }
 .aovivo-cfg input { background: var(--bg2); border: 1px solid var(--line); border-radius: 8px; color: var(--txt); padding: 6px 8px; margin-left: 6px; }
 
