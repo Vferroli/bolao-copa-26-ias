@@ -4,6 +4,9 @@
 [build]
   publish = "."
   command = ""
+  # Pula o deploy quando SÓ o dados.json mudou (o site lê dados via GitHub raw/CDN).
+  # Netlify cobra ~15 créditos/deploy; assim placar não gera deploy. Sai 0 = pula.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)dados.json'"
 
 # Não cachear o dados.json: assim o painel sempre pega o placar mais recente.
 [[headers]]

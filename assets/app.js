@@ -95,11 +95,25 @@ function standings(grupo) {
 
 document.addEventListener("DOMContentLoaded", carregar);
 
+/* dados.json servido pelo GitHub raw (CDN) — assim atualizar placar é só git push,
+   sem deploy no Netlify (que cobra ~15 créditos/deploy). Cache-bust mantém o live
+   fresco (raw cacheia 300s, mas a query fura o cache). Fallback: cópia same-origin. */
+const DATA_RAW = "https://raw.githubusercontent.com/Vferroli/bolao-copa-26-ias/main/dados.json";
+async function fetchDados() {
+  try {
+    const r = await fetch(DATA_RAW + "?ts=" + Date.now(), { cache: "no-store" });
+    if (r.ok) return await r.json();
+    throw new Error("raw HTTP " + r.status);
+  } catch (_) {
+    const r = await fetch("dados.json?ts=" + Date.now(), { cache: "no-store" }); // fallback local
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return await r.json();
+  }
+}
+
 async function carregar() {
   try {
-    const resp = await fetch("dados.json?ts=" + Date.now());
-    if (!resp.ok) throw new Error("HTTP " + resp.status);
-    S.dados = await resp.json();
+    S.dados = await fetchDados();
   } catch (e) {
     document.getElementById("app").innerHTML =
       `<div class="card" style="padding:18px;color:#fca5a5">Não consegui carregar <code>dados.json</code> (${e.message}).</div>`;
@@ -142,17 +156,14 @@ function iniciarPoll() {
   async function tick() {
     if (!document.hidden) {
       try {
-        const r = await fetch("dados.json?ts=" + Date.now(), { cache: "no-store" });
-        if (r.ok) {
-          const novo = await r.json();
-          if ((novo.atualizado_em || "") !== S._stamp) {
-            S._stamp = novo.atualizado_em || "";
-            S.dados = novo;
-            S.TZ = novo.fuso || S.TZ;
-            S.HOJE = novo.atualizado || S.HOJE;
-            indexar();
-            render();
-          }
+        const novo = await fetchDados();
+        if ((novo.atualizado_em || "") !== S._stamp) {
+          S._stamp = novo.atualizado_em || "";
+          S.dados = novo;
+          S.TZ = novo.fuso || S.TZ;
+          S.HOJE = novo.atualizado || S.HOJE;
+          indexar();
+          render();
         }
       } catch (_) { /* silencioso: tenta de novo no próximo tick */ }
     }
