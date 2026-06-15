@@ -51,6 +51,9 @@ const ALIAS = {
   "congo-democratic-republic": "dr-congo",
   "bosnia-and-herzegovina": "bosnia-herzegovina",
   "cabo-verde": "cape-verde",
+  "cape-verde-islands": "cape-verde",
+  "cabo-verde-islands": "cape-verde",
+  "cap-vert": "cape-verde",
   "holland": "netherlands",
 };
 
@@ -95,10 +98,12 @@ async function fetchFootballData(dates, resolve) {
     const st = m.status;
     const ft = m.score?.fullTime || {};
     const win = m.score?.winner;
-    const homeId = resolve(m.homeTeam?.name || m.homeTeam?.shortName);
-    const awayId = resolve(m.awayTeam?.name || m.awayTeam?.shortName);
+    const homeRaw = m.homeTeam?.name || m.homeTeam?.shortName;
+    const awayRaw = m.awayTeam?.name || m.awayTeam?.shortName;
+    const homeId = resolve(homeRaw);
+    const awayId = resolve(awayRaw);
     return {
-      homeId, awayId,
+      homeId, awayId, homeRaw, awayRaw,
       status: st === "FINISHED" ? "FINISHED" : LIVE.has(st) ? "LIVE" : "OTHER",
       h: ft.home, a: ft.away,
       min: m.minute != null ? `${m.minute}'` : (st === "PAUSED" ? "INT" : ""),
@@ -119,11 +124,12 @@ async function fetchApiFootball(dates, resolve) {
     const FIN = new Set(["FT", "AET", "PEN"]);
     for (const fx of data.response || []) {
       const sh = fx.fixture?.status?.short;
-      const homeId = resolve(fx.teams?.home?.name);
-      const awayId = resolve(fx.teams?.away?.name);
+      const homeRaw = fx.teams?.home?.name, awayRaw = fx.teams?.away?.name;
+      const homeId = resolve(homeRaw);
+      const awayId = resolve(awayRaw);
       const winnerId = fx.teams?.home?.winner ? homeId : fx.teams?.away?.winner ? awayId : null;
       out.push({
-        homeId, awayId,
+        homeId, awayId, homeRaw, awayRaw,
         status: FIN.has(sh) ? "FINISHED" : LIVE.has(sh) ? "LIVE" : "OTHER",
         h: fx.goals?.home, a: fx.goals?.away,
         min: fx.fixture?.status?.elapsed ? `${fx.fixture.status.elapsed}'` : "",
@@ -291,7 +297,10 @@ async function main() {
   const idx = {};
   for (const p of partidas) {
     if (!p.homeId || !p.awayId) {
-      console.log(`? time não mapeado: ${p.homeId || "?"} x ${p.awayId || "?"}`);
+      // loga o nome CRU do provedor p/ cravar o alias certo quando algo não resolve
+      const h = p.homeId || `?(${p.homeRaw ?? "—"})`;
+      const a = p.awayId || `?(${p.awayRaw ?? "—"})`;
+      console.log(`? time não mapeado: ${h} x ${a}`);
       continue;
     }
     idx[`${p.homeId}|${p.awayId}`] = p;
