@@ -1003,7 +1003,8 @@
         "claude": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Kevin De Bruyne"
         },
         "gpt": {
           "casa": 2,
@@ -1039,9 +1040,10 @@
       },
       "palpites": {
         "claude": {
-          "casa": 2,
+          "casa": 1,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Mehdi Taremi"
         },
         "gpt": {
           "casa": 2,
@@ -1135,7 +1137,8 @@
         "claude": {
           "casa": 3,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Ferran Torres"
         },
         "gpt": {
           "casa": 3,
@@ -1172,8 +1175,9 @@
       "palpites": {
         "claude": {
           "casa": 0,
-          "fora": 2,
-          "avanca": null
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Darwin Núñez"
         },
         "gpt": {
           "casa": 0,
@@ -1267,7 +1271,8 @@
         "claude": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
         },
         "gpt": {
           "casa": 3,
@@ -1305,7 +1310,8 @@
         "claude": {
           "casa": 0,
           "fora": 2,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Erling Haaland"
         },
         "gpt": {
           "casa": 0,
@@ -1398,8 +1404,9 @@
       "palpites": {
         "claude": {
           "casa": 2,
-          "fora": 0,
-          "avanca": null
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Lautaro Martínez"
         },
         "gpt": {
           "casa": 2,
@@ -1447,6 +1454,12 @@
           "marcador": "Marcel Sabitzer"
         },
         "gpt": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Marko Arnautović"
+        },
+        "claude": {
           "casa": 2,
           "fora": 0,
           "avanca": null,
@@ -1540,6 +1553,12 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Cristiano Ronaldo"
+        },
+        "claude": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
         }
       }
     },
@@ -1571,6 +1590,12 @@
         "gpt": {
           "casa": 0,
           "fora": 1,
+          "avanca": null,
+          "marcador": "Luis Díaz"
+        },
+        "claude": {
+          "casa": 0,
+          "fora": 2,
           "avanca": null,
           "marcador": "Luis Díaz"
         }
@@ -1662,6 +1687,12 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Harry Kane"
+        },
+        "claude": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Harry Kane"
         }
       }
     },
@@ -1691,6 +1722,12 @@
           "marcador": "Mohammed Kudus"
         },
         "gpt": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Antoine Semenyo"
+        },
+        "claude": {
           "casa": 1,
           "fora": 0,
           "avanca": null,
