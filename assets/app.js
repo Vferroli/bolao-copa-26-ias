@@ -78,7 +78,64 @@ function pontosJogo(j, p) {
   const fase = S.fases[j.fase];
   let pts = faixaBase(p, r) * fase.mult;
   if (fase.mata && p.avanca && r.avancou && p.avanca === r.avancou) pts += 8;
+  // bônus artilheiro: cravou 1 marcador (e não palpitou 0x0) e ele marcou → +3 fixo
+  if (cravouMarcador(p, r)) pts += 3;
   return pts;
+}
+
+/* ---------- bônus artilheiro: fuzzy de nome (Jaro-Winkler, sem libs) ----------
+   O palpite traz o NOME do jogador (texto livre da IA); o real traz a lista de
+   quem marcou (via API). Normaliza (sem acento/sufixos) e casa por token com
+   Jaro-Winkler — robusto a apelido, grafia e abreviação. Limiar conservador. */
+function jaro(a, b) {
+  if (a === b) return 1;
+  const la = a.length, lb = b.length;
+  if (!la || !lb) return 0;
+  const win = Math.max(0, Math.floor(Math.max(la, lb) / 2) - 1);
+  const fa = new Array(la).fill(false), fb = new Array(lb).fill(false);
+  let m = 0;
+  for (let i = 0; i < la; i++) {
+    const lo = Math.max(0, i - win), hi = Math.min(i + win + 1, lb);
+    for (let k = lo; k < hi; k++) {
+      if (fb[k] || a[i] !== b[k]) continue;
+      fa[i] = fb[k] = true; m++; break;
+    }
+  }
+  if (!m) return 0;
+  let t = 0, k = 0;
+  for (let i = 0; i < la; i++) {
+    if (!fa[i]) continue;
+    while (!fb[k]) k++;
+    if (a[i] !== b[k++]) t++;
+  }
+  return (m / la + m / lb + (m - t / 2) / m) / 3;
+}
+function jaroWinkler(a, b) {
+  const j = jaro(a, b);
+  let p = 0;
+  const max = Math.min(4, a.length, b.length);
+  while (p < max && a[p] === b[p]) p++;
+  return j + p * 0.1 * (1 - j);
+}
+const normNome = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "")
+  .toLowerCase().replace(/['’`.\-]/g, " ")
+  .replace(/\b(jr|junior|filho|neto|i{2,3})\b/g, " ")
+  .replace(/\s+/g, " ").trim();
+const tokensNome = (s) => normNome(s).split(" ").filter((t) => t.length > 1);
+
+/* true se o palpite de artilheiro bateu com algum gol do jogo. Regra: não vale
+   se a IA palpitou 0x0 (não pode cravar marcador num jogo sem gols). */
+function cravouMarcador(p, r) {
+  if (!p || !p.marcador || (p.casa === 0 && p.fora === 0)) return false;
+  if (!r || !Array.isArray(r.marcadores) || !r.marcadores.length) return false;
+  const pt = tokensNome(p.marcador);
+  if (!pt.length) return false;
+  for (const nome of r.marcadores) {
+    for (const b of tokensNome(nome)) {
+      for (const a of pt) if (jaroWinkler(a, b) >= 0.9) return true;
+    }
+  }
+  return false;
 }
 function ranking() {
   const tot = {};

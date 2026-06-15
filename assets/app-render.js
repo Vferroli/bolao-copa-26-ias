@@ -179,10 +179,14 @@ function chips(j, comPts) {
     if (!p) return `<div class="chip miss" style="--cor:${ia.cor}">
       ${kit(ia, "sm")}<span class="who">${esc(ia.nome)}</span><span class="gv">—</span></div>`;
     const pts = comPts ? pontosJogo(j, p) : null;
+    const marc = p.marcador
+      ? `<span class="marc${apurado(j) ? (cravouMarcador(p, j.real) ? " ok" : " no") : ""}">⚽ ${esc(p.marcador)}</span>`
+      : "";
     return `<div class="chip" style="--cor:${ia.cor}">
       ${kit(ia, "sm")}<span class="who">${esc(ia.nome)}</span>
       <span class="gv">${placar(p)}</span>
       ${pts == null ? "" : `<span class="pts">+${fmt(pts)}</span>`}
+      ${marc}
     </div>`;
   });
   const any = S.dados.ias.some((ia) => j.palpites && j.palpites[ia.id]);

@@ -203,6 +203,60 @@ async function liveApiFootball(dados, resolve) {
   return arr;
 }
 
+/* ---------- artilheiros (API-Football) ----------
+   Para a regra de bônus "cravou um jogador que marcou": grava em jogos[].real.marcadores
+   a lista de quem fez gol. football-data free não expõe goleadores; só API-Football
+   (/fixtures/events). 1ª passada pega o fixture.id por data; depois 1 req de eventos
+   por jogo encerrado sem lista. Gol contra e pênalti perdido NÃO entram na lista. */
+async function marcadores(dados, resolve) {
+  if (!AF_KEY) return false;
+  const pend = dados.jogos.filter((j) => apurado(j) && !Array.isArray(j.real.marcadores));
+  if (!pend.length) return false;
+
+  // 1) mapeia par de times -> fixture.id (por data)
+  const dates = [...new Set(pend.map((j) => j.kickoff.slice(0, 10)))].sort();
+  const fxId = {};
+  for (const date of dates) {
+    const url = `https://v3.football.api-sports.io/fixtures?date=${date}&league=1&season=2026`;
+    let r;
+    try { r = await fetch(url, { headers: { "x-apisports-key": AF_KEY } }); }
+    catch (e) { console.log(`marcadores: fixtures ${date} falhou: ${e.message}`); continue; }
+    if (!r.ok) { console.log(`marcadores: fixtures ${date} http ${r.status}`); continue; }
+    const data = await r.json();
+    for (const fx of data.response || []) {
+      const hId = resolve(fx.teams?.home?.name), aId = resolve(fx.teams?.away?.name);
+      const id = fx.fixture?.id;
+      if (hId && aId && id != null) { fxId[`${hId}|${aId}`] = id; fxId[`${aId}|${hId}`] = id; }
+    }
+  }
+
+  // 2) eventos de gol por jogo encerrado
+  let mudou = false;
+  for (const j of pend) {
+    const id = fxId[`${j.casa}|${j.fora}`];
+    if (id == null) { console.log(`marcadores: sem fixture p/ ${j.casa} x ${j.fora}`); continue; }
+    const url = `https://v3.football.api-sports.io/fixtures/events?fixture=${id}`;
+    let r;
+    try { r = await fetch(url, { headers: { "x-apisports-key": AF_KEY } }); }
+    catch (e) { console.log(`marcadores: eventos ${id} falhou: ${e.message}`); continue; }
+    if (!r.ok) { console.log(`marcadores: eventos ${id} http ${r.status}`); continue; }
+    const data = await r.json();
+    const ev = data.response || [];
+    const nomes = ev
+      .filter((e) => e.type === "Goal" && e.detail !== "Own Goal" && e.detail !== "Missed Penalty")
+      .map((e) => e.player?.name)
+      .filter(Boolean);
+    const totalGols = j.real.casa + j.real.fora;
+    // só grava se a API já tem eventos do jogo (evita lista vazia prematura num jogo com gols)
+    if (totalGols === 0 || ev.length) {
+      j.real.marcadores = nomes;
+      console.log(`marcadores ${j.casa} x ${j.fora}: ${nomes.join(", ") || "(nenhum)"}`);
+      mudou = true;
+    }
+  }
+  return mudou;
+}
+
 /* ---------- main ---------- */
 const apurado = (j) => j.real && j.real.casa != null && j.real.fora != null;
 
@@ -260,6 +314,9 @@ async function main() {
     }
   }
 
+  // ARTILHEIROS: lista de quem marcou (API-Football) p/ o bônus de palpite de marcador
+  if (await marcadores(dados, resolve)) mudou = true;
+
   // AO VIVO: API-Football (football-data free não dá placar ao vivo)
   const liveNovo = await liveApiFootball(dados, resolve);
   const limpo = (arr) => (arr || []).filter((l) => {
@@ -276,7 +333,7 @@ async function main() {
   dados.atualizado_em = new Date().toISOString();
 
   await writeFile(DADOS, JSON.stringify(dados, null, 2) + "\n", "utf8");
-  console.log(`✓ dados.json atualizado (${live.length} ao vivo).`);
+  console.log(`✓ dados.json atualizado (${liveFinal.length} ao vivo).`);
 }
 
 main().catch((e) => { console.error("ERRO:", e); process.exit(1); });

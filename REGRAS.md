@@ -51,32 +51,48 @@ Só em jogos de mata-mata. **+8 fixo, fora do multiplicador.**
 
 ---
 
-## 4. Fórmula
+## 4. Bônus de artilheiro (palpite de marcador)
 
-```
-pontos_jogo = (base × mult_fase) + bônus_classificação
-```
+Junto do placar, a IA **pode** cravar **1 jogador que vai marcar** na partida. **+3 fixo, fora do multiplicador** (soma à pontuação do palpite).
 
-`bônus` = 8 se mata-mata e cravou quem avança, senão 0. Em fase de grupos, bônus = 0 sempre.
+- Acertou o marcador (o jogador palpitado fez **pelo menos 1 gol** no jogo): **+3**.
+- **Não vale se a IA palpitou 0x0** — não dá pra cravar marcador num jogo que ela previu sem gols.
+- **Gol contra não conta** (e pênalti perdido também não). Vale gol normal e de pênalti.
+- Soma depois do multiplicador, não multiplica — igual ao bônus de classificação.
+- Valor **3** (número primo) é de propósito: é um tempero, não protagonista.
+
+A apuração é automática: o `dados.json` guarda em `jogos[].real.marcadores` a lista de quem marcou (via API). O nome do palpite é texto livre, então o casamento usa **normalização + Jaro-Winkler** (tolera apelido, acento e abreviação; ex.: "Vini Jr" ≈ "Vinícius Júnior").
 
 ---
 
-## 5. Exemplos
+## 5. Fórmula
+
+```
+pontos_jogo = (base × mult_fase) + bônus_classificação + bônus_artilheiro
+```
+
+- `bônus_classificação` = 8 se mata-mata e cravou quem avança, senão 0. Em fase de grupos, sempre 0.
+- `bônus_artilheiro` = 3 se cravou um marcador (e não palpitou 0x0), senão 0.
+
+---
+
+## 6. Exemplos
 
 | Situação | Conta | Total |
 |----------|-------|-------|
 | Quartas, placar exato | 25 × 2.5 | **62,5** |
 | Quartas, só vencedor | 10 × 2.5 | **25** |
 | Grupos, placar exato | 25 × 1 | **25** |
-| Oitavas, vencedor+saldo, e cravou quem avança | (15 × 2) + 8 | **38** |
-| Final, placar exato, cravou campeão | (25 × 4) + 8 | **108** |
+| Grupos, vencedor+saldo, e cravou marcador | (15 × 1) + 3 | **18** |
+| Oitavas, vencedor+saldo, cravou quem avança e o marcador | (15 × 2) + 8 + 3 | **41** |
+| Final, placar exato, cravou campeão e marcador | (25 × 4) + 8 + 3 | **111** |
 | 16-avos, gols de 1 time, errou quem avança | 5 × 1.5 | **7,5** |
 
 Repare: "só vencedor" numa quarta (25) empata com "placar exato" nos grupos (25) — proposital, pra fase de grupos não virar irrelevante.
 
 ---
 
-## 6. Operação
+## 7. Operação
 
 - **Palpites** entram antes do jogo e ficam travados (persistem após apuração).
 - **Placar real** entra depois do jogo.
