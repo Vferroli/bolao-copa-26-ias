@@ -6,8 +6,9 @@ function render() {
   renderStamp();
   renderPodium();
   const app = document.getElementById("app");
-  // com jogo ao vivo, "Hoje" (que já traz o live) sobe pro topo do conteúdo
-  const temLive = Array.isArray(S.dados.live) && S.dados.live.length;
+  // com jogo ao vivo (e ainda não apurado), "Hoje" sobe pro topo do conteúdo
+  const temLive = (Array.isArray(S.dados.live) ? S.dados.live : [])
+    .some((l) => { const j = S.dados.jogos.find((x) => String(x.id) === String(l.id)); return j && !apurado(j); });
   const secs = temLive
     ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secGrupos(), secMata(), secHistorico()]
     : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secGrupos(), secMata(), secHistorico()];
@@ -377,7 +378,9 @@ function secHoje() {
   const liveById = {};
   (Array.isArray(S.dados.live) ? S.dados.live : []).forEach((l) => { liveById[l.id] = l; });
   const liveIds = new Set(Object.keys(liveById).map((k) => String(k)));
-  const isLive = (j) => liveIds.has(String(j.id));
+  // jogo apurado NUNCA é "ao vivo", mesmo que ainda conste em dados.live (latência
+  // de limpeza/CDN): o placar final manda. Desacopla o front do timing do script.
+  const isLive = (j) => liveIds.has(String(j.id)) && !apurado(j);
   const byKick = (a, b) => a.kickoff.localeCompare(b.kickoff);
   // jogos de hoje (todas as fases) ∪ qualquer jogo ao vivo; dedup
   const seen = new Set();
@@ -395,7 +398,7 @@ function secHoje() {
   // flash de gol: compara placares ao vivo com o render anterior
   const prevScores = S._liveScores || {};
   const newScores = {};
-  const card = (j) => cardHoje(j, liveById[j.id] || null, prevScores, newScores);
+  const card = (j) => cardHoje(j, isLive(j) ? liveById[j.id] : null, prevScores, newScores);
   const cards = [
     ...liveG.map(card),
     ...upG.map(card),
