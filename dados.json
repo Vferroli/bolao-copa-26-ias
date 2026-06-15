@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-15",
-  "atualizado_em": "2026-06-15T20:59:37.852Z",
+  "atualizado_em": "2026-06-15T21:03:24.686Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -995,8 +995,8 @@
       "fora": "egypt",
       "kickoff": "2026-06-15T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 1,
+        "fora": 1,
         "avancou": null
       },
       "palpites": {
