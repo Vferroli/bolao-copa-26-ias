@@ -190,12 +190,12 @@ function standings(grupo) {
 
 document.addEventListener("DOMContentLoaded", carregar);
 
-/* dados.json servido por CDN — atualizar placar é só git push, sem deploy no
-   Netlify (~15 créditos). Primário: jsDelivr (o workflow PURGA o cache após o
-   push → placar novo em segundos). raw.githubusercontent cacheia ~300s e IGNORA
-   cache-bust, então é só fallback. Último fallback: cópia same-origin. */
+/* dados.json servido pelo GitHub raw — atualizar placar é só git push, sem deploy
+   no Netlify (~15 créditos). raw cacheia ~300s (e ignora cache-bust), então o
+   dado fica no máx ~5min atrás — confiável e self-healing. (jsDelivr foi testado
+   e DESCARTADO: cacheia a resolução do branch @main por 12h e não solta nem com
+   purge → servia dado preso de ~50min.) Fallback: cópia same-origin do deploy. */
 const DATA_CDNS = [
-  "https://cdn.jsdelivr.net/gh/Vferroli/bolao-copa-26-ias@main/dados.json",
   "https://raw.githubusercontent.com/Vferroli/bolao-copa-26-ias/main/dados.json",
   "dados.json",
 ];

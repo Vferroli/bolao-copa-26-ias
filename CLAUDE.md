@@ -26,10 +26,10 @@ One-page (SPA estática) que acompanha um bolão da Copa 2026 entre 4 IAs (Claud
 - Só depois de validado, reportar resultado e pedir o "ok" de deploy.
 
 ## Fluxo de dados (live)
-- O front lê `dados.json` de **CDN** (não do Netlify) → atualizar dado = só `git push`, sem deploy. Cascata de fontes (`fetchDados`): **jsDelivr** (primário) → **raw.githubusercontent** → cópia same-origin.
-- **jsDelivr é primário porque o workflow PURGA o cache dele após cada push** (`purge.jsdelivr.net/gh/...`, 2 tentativas) → placar novo em ~segundos. ⚠️ `raw` cacheia ~300s e **ignora `?ts=`** (testado: X-Cache HIT); jsDelivr tem `s-maxage` 12h, então **o purge é essencial** — sem ele o front serve velho.
+- O front lê `dados.json` do **GitHub raw** (`raw.githubusercontent.com/.../main/dados.json`), não do Netlify → atualizar dado = só `git push`, sem deploy. `fetchDados`: raw → fallback cópia same-origin.
+- ⚠️ **raw cacheia ~300s e IGNORA `?ts=`** (testado: X-Cache HIT) → dado fica no máx ~5min atrás. É o piso confiável e self-healing. **jsDelivr foi testado e DESCARTADO**: cacheia a resolução de `@main` por 12h e não solta nem com `purge.jsdelivr.net` (servia dado preso de ~50min). Não reintroduzir jsDelivr p/ esse arquivo.
 - Poll adaptativo: **30s** com jogo, 5min ocioso. Pausa em aba oculta; `visibilitychange` força tick ao voltar.
-- Percepção "ao vivo": carimbo relativo "há Xs" (tiquetaqueia 10s) + **flash no placar** quando muda entre renders (gol). Sem re-render só do placar — render global + classe `.score.flash`.
+- Percepção "ao vivo": carimbo relativo "há Xs" (tiquetaqueia 10s) + **flash no placar** quando muda entre renders (gol). Render global + classe `.score.flash`.
 
 ## Resultados (automático)
 - Workflow roda `update-resultados.mjs`. **Finais**: football-data.org (primário, competição `WC`) com fallback API-Football (`league=1, season=2026`).

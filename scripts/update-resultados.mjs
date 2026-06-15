@@ -264,10 +264,47 @@ async function liveApiFootball(dados, resolve, afFetch) {
     if (casa == null || fora == null) continue;
     const sh = f.fixture?.status?.short, el = f.fixture?.status?.elapsed;
     const min = sh === "HT" ? "Intervalo" : el != null ? `${el}'` : "ao vivo";
-    arr.push({ id: j.id, casa, fora, min });
+    arr.push({ id: j.id, casa, fora, min, _fxId: f.fixture?.id }); // _fxId p/ buscar os gols
   }
   console.log(`live AF: ${arr.length} jogo(s)`);
   return arr;
+}
+
+/* ---------- gols ao vivo (autor + minuto) ----------
+   Enriquece cada item do live com `gols: [{nome, min}]`. Só chama a API de eventos
+   quando o placar do jogo MUDOU vs o ciclo anterior (gol) — economiza cota. Usa o
+   fixture id da fonte AF; em ciclo Highlightly (sem _fxId) reaproveita o que tem.
+   Estado por-run em state.liveGols = { [id]: { total, gols } }. */
+async function enrichGols(arr, state, afFetch) {
+  if (!Array.isArray(arr)) return;
+  state.liveGols = state.liveGols || {};
+  for (const e of arr) {
+    const total = (e.casa || 0) + (e.fora || 0);
+    const prev = state.liveGols[e.id];
+    if (total === 0) { delete e._fxId; continue; }                 // 0x0: sem gol
+    if (prev && prev.total === total && Array.isArray(prev.gols)) { // sem mudança → reusa
+      e.gols = prev.gols; delete e._fxId; continue;
+    }
+    if (e._fxId == null) {                                          // fonte sem fixture id (HL)
+      if (prev && prev.gols) e.gols = prev.gols;                    // mantém até um ciclo AF
+      continue;
+    }
+    const fx = e._fxId; delete e._fxId;
+    const r = await afFetch(`https://v3.football.api-sports.io/fixtures/events?fixture=${fx}`);
+    if (!r) { console.log(`gols: eventos ${fx} sem cota`); if (prev?.gols) e.gols = prev.gols; continue; }
+    if (!r.ok) { console.log(`gols: eventos ${fx} http ${r.status}`); if (prev?.gols) e.gols = prev.gols; continue; }
+    const data = await r.json();
+    const gols = (data.response || [])
+      .filter((x) => x.type === "Goal" && x.detail !== "Own Goal" && x.detail !== "Missed Penalty")
+      .map((x) => ({ nome: x.player?.name || "—", min: x.time?.elapsed != null ? x.time.elapsed : null }))
+      .filter((g) => g.nome && g.nome !== "—");
+    e.gols = gols;
+    state.liveGols[e.id] = { total, gols };
+    console.log(`gols ${e.id}: ${gols.map((g) => g.nome + (g.min != null ? " " + g.min + "'" : "")).join(", ") || "(?)"}`);
+  }
+  // limpa estado de jogos que não estão mais ao vivo
+  const ids = new Set(arr.map((e) => String(e.id)));
+  for (const k of Object.keys(state.liveGols)) if (!ids.has(String(k))) delete state.liveGols[k];
 }
 
 /* ---------- ao vivo: fonte 2 = Highlightly (/matches por data) ----------
@@ -361,6 +398,7 @@ async function tickLive(dados, resolve, state, afFetch, hlFetch) {
     ? await liveHighlightly(dados, resolve, hlFetch, state)
     : await liveApiFootball(dados, resolve, afFetch);
   if (arr === undefined) return undefined; // falhou -> mantém atual
+  await enrichGols(arr, state, afFetch); // autor dos gols (só quando o placar muda)
   state.lastLive = now;
   console.log(`live: fonte=${useHL ? "highlightly" : "api-football"} intervalo=${intervalo}s`);
   return arr;

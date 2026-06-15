@@ -156,17 +156,26 @@ function secPrompt() {
    o jogo ao vivo vira card destacado no topo de Hoje, com placar em tempo real
    + palpites + voto + escalações no MESMO card. Sem redundância. */
 
+/* ---------- live: helpers de gols ---------- */
+const liveEntry = (id) => (Array.isArray(S.dados.live) ? S.dados.live : []).find((l) => String(l.id) === String(id));
+const liveGolsNomes = (id) => { const e = liveEntry(id); return e && Array.isArray(e.gols) ? e.gols.map((g) => g.nome).filter(Boolean) : []; };
+
 /* ---------- chips de palpite ---------- */
 function chips(j, comPts) {
+  // num jogo AO VIVO, destaca o palpite de artilheiro que já marcou (autor do gol live)
+  const liveNomes = !apurado(j) ? liveGolsNomes(j.id) : [];
   const cells = S.dados.ias.map((ia) => {
     const p = j.palpites && j.palpites[ia.id];
     if (!p) return `<div class="chip miss" style="--cor:${ia.cor}">
       ${kit(ia, "sm")}<span class="who">${esc(ia.nome)}</span><span class="gv">—</span></div>`;
     const pts = comPts ? pontosJogo(j, p) : null;
-    const marc = p.marcador
-      ? `<span class="marc${apurado(j) ? (cravouMarcador(p, j.real) ? " ok" : " no") : ""}">⚽ ${esc(p.marcador)}</span>`
-      : "";
-    return `<div class="chip" style="--cor:${ia.cor}">
+    let marcCls = "", hitLive = false;
+    if (p.marcador) {
+      if (apurado(j)) marcCls = cravouMarcador(p, j.real) ? " ok" : " no";
+      else if (liveNomes.length && cravouMarcador(p, { marcadores: liveNomes })) { marcCls = " ok hit"; hitLive = true; }
+    }
+    const marc = p.marcador ? `<span class="marc${marcCls}">⚽ ${esc(p.marcador)}</span>` : "";
+    return `<div class="chip${hitLive ? " hit" : ""}" style="--cor:${ia.cor}">
       ${kit(ia, "sm")}<span class="who">${esc(ia.nome)}</span>
       <span class="gv">${placar(p)}</span>
       ${pts == null ? "" : `<span class="pts">+${fmt(pts)}</span>`}
@@ -331,6 +340,9 @@ function cardHoje(j, liveData, prevScores, newScores) {
         <div class="score ${scoreCls}">${score}</div>
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
+      ${isLive && Array.isArray(liveData.gols) && liveData.gols.length
+        ? `<div class="live-gols">${liveData.gols.map((g) => `<span class="lg">⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}</span>`).join("")}</div>`
+        : ""}
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
       ${chips(j, fim)}
