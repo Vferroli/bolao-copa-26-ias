@@ -151,6 +151,58 @@ async function buscar(dates, resolve) {
   return [];
 }
 
+/* ---------- ao vivo via API-Football (live=all) ----------
+   football-data free não dá placar ao vivo; o live=all do API-Football dá (gols+minuto).
+   Throttle adaptativo p/ caber em 100 req/dia: ~3min normal, ~10min quando a cota cai.
+   Retorna: array (novo live[]) | [] (sem jogo em andamento) | null (sem chave) |
+            undefined (throttled -> manter live atual). */
+const AF_STATE = join(__dir, "..", ".af-live.json");
+
+async function liveApiFootball(dados, resolve) {
+  if (!AF_KEY) return null;
+  const agora = Date.now();
+  const emJogo = dados.jogos.some((j) => {
+    if (apurado(j)) return false;
+    const k = new Date(j.kickoff).getTime();
+    return k <= agora + 60000 && k > agora - 3.5 * 3600 * 1000; // iniciado há até 3.5h
+  });
+  if (!emJogo) return [];
+
+  let st = { t: 0, rem: null };
+  try { st = JSON.parse(await readFile(AF_STATE, "utf8")); } catch {}
+  const intervalo = st.rem != null && st.rem < 30 ? 600000 : 180000; // 10min se cota baixa, senão 3min
+  if (agora - st.t < intervalo) return undefined;
+
+  let r;
+  try {
+    r = await fetch("https://v3.football.api-sports.io/fixtures?live=all", { headers: { "x-apisports-key": AF_KEY } });
+  } catch (e) { console.log("api-football live falhou:", e.message); return undefined; }
+  if (!r.ok) { console.log("api-football live http", r.status); return undefined; }
+  const rem = r.headers.get("x-ratelimit-requests-remaining");
+  const data = await r.json();
+  await writeFile(AF_STATE, JSON.stringify({ t: agora, rem: rem != null ? Number(rem) : null }));
+
+  const byPair = {};
+  dados.jogos.forEach((j) => { byPair[`${j.casa}|${j.fora}`] = j; byPair[`${j.fora}|${j.casa}`] = j; });
+  const arr = [];
+  for (const f of data.response || []) {
+    if (String(f.league && f.league.id) !== "1") continue; // só Copa
+    const homeId = resolve(f.teams && f.teams.home && f.teams.home.name);
+    const awayId = resolve(f.teams && f.teams.away && f.teams.away.name);
+    const j = byPair[`${homeId}|${awayId}`];
+    if (!j || apurado(j)) continue;
+    const casa = homeId === j.casa ? f.goals.home : f.goals.away;
+    const fora = homeId === j.casa ? f.goals.away : f.goals.home;
+    if (casa == null || fora == null) continue;
+    const sh = f.fixture && f.fixture.status && f.fixture.status.short;
+    const el = f.fixture && f.fixture.status && f.fixture.status.elapsed;
+    const min = sh === "HT" ? "Intervalo" : el != null ? `${el}'` : "ao vivo";
+    arr.push({ id: j.id, casa, fora, min });
+  }
+  console.log(`ao vivo (api-football): ${arr.length} jogo(s) | cota restante: ${rem}`);
+  return arr;
+}
+
 /* ---------- main ---------- */
 const apurado = (j) => j.real && j.real.casa != null && j.real.fora != null;
 
@@ -192,30 +244,30 @@ async function main() {
     idx[`${p.awayId}|${p.homeId}`] = { ...p, _rev: true };
   }
 
-  const live = [];
   let mudou = false;
 
+  // FINAIS: football-data (placar exato quando encerra)
   for (const j of alvos) {
     const p = idx[`${j.casa}|${j.fora}`];
     if (!p) continue;
-    // placar na orientação do MEU jogo (casa/fora do dados.json)
-    const h = p._rev ? p.a : p.h;
+    const h = p._rev ? p.a : p.h; // orientação do MEU jogo (casa/fora do dados.json)
     const a = p._rev ? p.h : p.a;
-
     if (p.status === "FINISHED" && h != null && a != null) {
       j.real.casa = h; j.real.fora = a;
       if (fases[j.fase]?.mata) j.real.avancou = p.winnerId || (h > a ? j.casa : a > h ? j.fora : null);
       console.log(`FT ${j.casa} ${h}-${a} ${j.fora}`);
       mudou = true;
-    } else if (p.status === "LIVE" && h != null && a != null) {
-      live.push({ id: j.id, casa: h, fora: a, min: p.min || "ao vivo" });
     }
   }
 
-  // live[] sempre reflete o estado atual (some quando jogo encerra)
-  const liveAntes = JSON.stringify(dados.live || []);
-  const liveAgora = JSON.stringify(live);
-  if (liveAntes !== liveAgora) { dados.live = live; mudou = true; }
+  // AO VIVO: API-Football (football-data free não dá placar ao vivo)
+  const liveNovo = await liveApiFootball(dados, resolve);
+  const limpo = (arr) => (arr || []).filter((l) => {
+    const j = dados.jogos.find((x) => x.id === l.id);
+    return j && !apurado(j); // tira jogos que já encerraram
+  });
+  const liveFinal = liveNovo === undefined ? limpo(dados.live) : limpo(liveNovo);
+  if (JSON.stringify(dados.live || []) !== JSON.stringify(liveFinal)) { dados.live = liveFinal; mudou = true; }
 
   if (!mudou) { console.log("Sem mudanças."); process.exit(0); }
 
