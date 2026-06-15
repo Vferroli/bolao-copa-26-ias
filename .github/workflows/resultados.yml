@@ -9,10 +9,11 @@ permissions:
   contents: write
   actions: write
 
-# novo run substitui o loop anterior -> cobertura contínua sem empilhar
+# serializa: runs não se cancelam (a corrente re-dispara no fim de cada run).
+# GitHub mantém só 1 pendente por grupo -> sem pilha, sem storm.
 concurrency:
   group: resultados
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -47,13 +48,19 @@ jobs:
           done
 
       # Auto-corrente: re-dispara o próprio workflow para rodar de forma contínua
-      # sem depender do schedule do GitHub. Requer secret DISPATCH_PAT (fine-grained,
-      # Actions: read+write neste repo). Sem o PAT, cai no schedule/manual.
+      # sem depender do schedule do GitHub. Só em SUCESSO (run cancelado não
+      # re-dispara -> sem storm). Requer secret DISPATCH_PAT (fine-grained,
+      # Actions: read+write). Sem o PAT, cai no schedule/manual. Para após a Copa.
       - name: Re-dispara (corrente contínua)
-        if: ${{ always() }}
+        if: ${{ success() }}
         env:
           PAT: ${{ secrets.DISPATCH_PAT }}
         run: |
+          hoje=$(date -u +%Y-%m-%d)
+          if [ "$hoje" \> "2026-07-20" ]; then
+            echo "Copa encerrada ($hoje) — corrente desligada."
+            exit 0
+          fi
           if [ -n "$PAT" ]; then
             curl -sf -X POST \
               -H "Authorization: Bearer $PAT" \
