@@ -595,6 +595,13 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .game:hover { transform: translateY(-2px); border-color: var(--line-2); }
+/* jogo ao vivo destacado dentro de "Hoje" (mescla da antiga seção "ao vivo") */
+.game.live {
+  background: linear-gradient(160deg, #1a1430, var(--panel));
+  border-color: rgba(255, 77, 87, 0.34);
+  box-shadow: 0 0 0 1px rgba(255, 77, 87, 0.12), var(--shadow);
+}
+.game.next-card { background: linear-gradient(160deg, var(--panel-2), var(--panel)); }
 .game-top {
   display: flex; align-items: center; gap: 8px;
   margin-bottom: 14px;
@@ -1162,6 +1169,7 @@ details.day[open] .day-chev { transform: rotate(180deg); }
   .live-grid { grid-template-columns: repeat(2, 1fr); }
   .groups-grid { grid-template-columns: 1fr 1fr; }
   .today-grid { grid-template-columns: 1fr 1fr; }
+  .today-grid .game.live.featured { grid-column: 1 / -1; } /* ao vivo ocupa a linha toda */
   .stamp .lbl { display: inline; }
   .hrow { grid-template-columns: minmax(220px, 1fr) auto; align-items: center; }
   .hrow .hpts { padding-top: 0; border-top: none; border-left: 1px solid var(--line); padding-left: 14px; }
