@@ -1008,17 +1008,20 @@
         "gpt": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Romelu Lukaku"
         },
         "gemini": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Romelu Lukaku"
         },
         "grok": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Kevin De Bruyne"
         }
       }
     },
@@ -1043,17 +1046,20 @@
         "gpt": {
           "casa": 2,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Mehdi Taremi"
         },
         "gemini": {
           "casa": 2,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Mehdi Taremi"
         },
         "grok": {
           "casa": 1,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Mehdi Taremi"
         }
       }
     },
@@ -1134,17 +1140,20 @@
         "gpt": {
           "casa": 3,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Mikel Oyarzabal"
         },
         "gemini": {
           "casa": 3,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Lamine Yamal"
         },
         "grok": {
           "casa": 3,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Lamine Yamal"
         }
       }
     },
@@ -1169,17 +1178,20 @@
         "gpt": {
           "casa": 0,
           "fora": 2,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Darwin Núñez"
         },
         "gemini": {
           "casa": 0,
           "fora": 2,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Darwin Núñez"
         },
         "grok": {
           "casa": 0,
           "fora": 2,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Darwin Núñez"
         }
       }
     },
@@ -1260,17 +1272,20 @@
         "gpt": {
           "casa": 3,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
         },
         "gemini": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
         },
         "grok": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
         }
       }
     },
@@ -1295,17 +1310,20 @@
         "gpt": {
           "casa": 0,
           "fora": 3,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Erling Haaland"
         },
         "gemini": {
           "casa": 0,
           "fora": 3,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Erling Haaland"
         },
         "grok": {
           "casa": 1,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Erling Haaland"
         }
       }
     },
@@ -1386,17 +1404,20 @@
         "gpt": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Lionel Messi"
         },
         "gemini": {
           "casa": 3,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Lionel Messi"
         },
         "grok": {
           "casa": 3,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Lionel Messi"
         }
       }
     },
@@ -1416,17 +1437,20 @@
         "grok": {
           "casa": 2,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Marcel Sabitzer"
         },
         "gemini": {
           "casa": 2,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Marcel Sabitzer"
         },
         "gpt": {
           "casa": 2,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Marko Arnautović"
         }
       }
     },
@@ -1502,17 +1526,20 @@
         "grok": {
           "casa": 2,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
         },
         "gemini": {
           "casa": 3,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
         },
         "gpt": {
           "casa": 2,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
         }
       }
     },
@@ -1532,17 +1559,20 @@
         "grok": {
           "casa": 0,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Luis Díaz"
         },
         "gemini": {
           "casa": 0,
           "fora": 2,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Luis Díaz"
         },
         "gpt": {
           "casa": 0,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Luis Díaz"
         }
       }
     },
@@ -1618,17 +1648,20 @@
         "grok": {
           "casa": 1,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Harry Kane"
         },
         "gemini": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Harry Kane"
         },
         "gpt": {
           "casa": 1,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Harry Kane"
         }
       }
     },
@@ -1648,17 +1681,20 @@
         "grok": {
           "casa": 1,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Mohammed Kudus"
         },
         "gemini": {
           "casa": 2,
           "fora": 1,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Mohammed Kudus"
         },
         "gpt": {
           "casa": 1,
           "fora": 0,
-          "avanca": null
+          "avanca": null,
+          "marcador": "Antoine Semenyo"
         }
       }
     },
