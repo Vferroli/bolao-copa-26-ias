@@ -146,6 +146,7 @@ function secAoVivo() {
         <div class="score">${casa}<em>:</em>${fora}</div>
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
+      ${escalacoes(j, "live")}
     </article>`;
   }).join("");
   const proxCards = prox.map((j) => {
@@ -160,6 +161,7 @@ function secAoVivo() {
         <div class="score tbd">vs</div>
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(b.nome)}</span></div>
       </div>
+      ${escalacoes(j, "next")}
     </article>`;
   }).join("");
   const headPill = live.length ? "tempo real" : "em breve";
@@ -195,6 +197,123 @@ function chips(j, comPts) {
   return `<div class="preds">${cells.join("")}</div>`;
 }
 
+/* ---------- ESCALAÇÕES (lineups) ---------- */
+const POS_ORDER = { G: 0, D: 1, M: 2, F: 3 };
+const POS_LABEL = { G: "Goleiro", D: "Defesa", M: "Meio-campo", F: "Ataque" };
+const POS_COR = { G: "var(--gold)", D: "var(--gemini)", M: "var(--ok)", F: "var(--claude)" };
+
+function plRow(p) {
+  const pos = p && p.pos in POS_ORDER ? p.pos : "";
+  return `<li class="pl" style="--pc:${POS_COR[pos] || "var(--faint)"}">
+    <span class="num">${p.num != null ? esc(String(p.num)) : "–"}</span>
+    <span class="nm">${esc(p.nome || "—")}</span>
+  </li>`;
+}
+function plGrouped(players) {
+  const arr = (players || []).slice();
+  let out = "";
+  ["G", "D", "M", "F"].forEach((g) => {
+    const list = arr.filter((p) => p.pos === g).sort((a, b) => (a.num || 0) - (b.num || 0));
+    if (!list.length) return;
+    out += `<li class="pl-grp">${POS_LABEL[g]}</li>` + list.map(plRow).join("");
+  });
+  const rest = arr.filter((p) => !(p.pos in POS_ORDER));
+  if (rest.length) out += rest.map(plRow).join("");
+  return out;
+}
+function lnCol(teamId, side, formacao, tecnico) {
+  if (!side) return "";
+  const t = time(teamId);
+  const tit = side.titulares || [];
+  const res = side.reservas || [];
+  const coach = tecnico ? `<div class="ln-coach">Téc. <b>${esc(tecnico)}</b></div>` : "";
+  const form = formacao ? `<span class="ln-form">${esc(formacao)}</span>` : "";
+  const subs = res.length
+    ? `<details class="ln-subs"><summary>Reservas <b>${res.length}</b></summary>
+        <ul class="ln-list">${plGrouped(res)}</ul></details>`
+    : "";
+  const lista = tit.length
+    ? `<ul class="ln-list">${plGrouped(tit)}</ul>`
+    : `<p class="ln-empty">Titulares ainda não divulgados.</p>`;
+  return `<div class="ln-col">
+    <div class="ln-head">${bandeira(teamId)}<span class="ln-team">${esc(t.nome)}</span>${form}</div>
+    ${coach}
+    ${lista}
+    ${subs}
+  </div>`;
+}
+function pitchRows(titulares, formacao) {
+  const tit = (titulares || []).slice();
+  const gk = tit.filter((p) => p.pos === "G");
+  const others = tit
+    .filter((p) => p.pos !== "G")
+    .sort((a, b) => (POS_ORDER[a.pos] ?? 9) - (POS_ORDER[b.pos] ?? 9) || (a.num || 0) - (b.num || 0));
+  const lines = String(formacao || "").split(/[^0-9]+/).map((n) => parseInt(n, 10)).filter((n) => n > 0);
+  const sum = lines.reduce((a, b) => a + b, 0);
+  let rows;
+  if (lines.length && sum === others.length) {
+    rows = []; let i = 0;
+    lines.forEach((n) => { rows.push(others.slice(i, i + n)); i += n; });
+  } else {
+    rows = ["D", "M", "F"].map((g) => others.filter((p) => p.pos === g)).filter((r) => r.length);
+    const unk = others.filter((p) => !(p.pos in POS_ORDER));
+    if (unk.length) rows.push(unk);
+  }
+  return { gk, rows };
+}
+function pitchDot(p) {
+  return `<div class="pf-dot"><span class="pf-num">${p.num != null ? esc(String(p.num)) : ""}</span>
+    <span class="pf-name">${esc(p.nome || "")}</span></div>`;
+}
+function pitch(teamId, side, formacao) {
+  if (!side || !(side.titulares && side.titulares.length)) return "";
+  const t = time(teamId);
+  const { gk, rows } = pitchRows(side.titulares, formacao);
+  const body =
+    rows.slice().reverse().map((r) => `<div class="pf-row">${r.map(pitchDot).join("")}</div>`).join("") +
+    (gk.length ? `<div class="pf-row pf-gk">${gk.map(pitchDot).join("")}</div>` : "");
+  return `<div class="pf-team">
+    <div class="pf-head">${bandeira(teamId)}<span class="ln-team">${esc(t.nome)}</span>${formacao ? `<span class="ln-form">${esc(formacao)}</span>` : ""}</div>
+    <div class="pitch">${body}</div>
+  </div>`;
+}
+function escalacoes(j, ctx) {
+  const e = j && j.escalacoes;
+  if (!e || !e.casa || !e.fora) return "";
+  const fc = (e.formacao && e.formacao.casa) || "";
+  const ff = (e.formacao && e.formacao.fora) || "";
+  const tc = (e.tecnico && e.tecnico.casa) || "";
+  const tf = (e.tecnico && e.tecnico.fora) || "";
+  const uid = `${ctx}-${j.id}`;
+  const meta = [fc, ff].filter(Boolean).join(" · ");
+  const hasField =
+    (e.casa.titulares && e.casa.titulares.length) || (e.fora.titulares && e.fora.titulares.length);
+  const seg = hasField
+    ? `<div class="lv-seg" role="group" aria-label="Modo de visualização">
+        <button type="button" data-view="lista" aria-pressed="true">Lista</button>
+        <button type="button" data-view="campo" aria-pressed="false">Campo</button>
+      </div>`
+    : "";
+  return `<div class="lineup">
+    <button class="lineup-toggle" type="button" aria-expanded="false" aria-controls="lineup-${uid}" data-lineup="${uid}">
+      <span class="lt-ico" aria-hidden="true"></span>
+      <span class="lt-lbl">Escalações</span>
+      ${meta ? `<span class="lt-meta">${esc(meta)}</span>` : ""}
+      <span class="lt-chev" aria-hidden="true">▾</span>
+    </button>
+    <div class="lineup-body" id="lineup-${uid}" data-view="lista">
+      <div class="lb-inner"><div class="lb-pad">
+        <div class="lb-top"><span class="lb-src">Escalações${e.fonte ? " · " + esc(e.fonte) : ""}</span>${seg}</div>
+        <div class="lv-lista lineup-cols">
+          ${lnCol(j.casa, e.casa, fc, tc)}
+          ${lnCol(j.fora, e.fora, ff, tf)}
+        </div>
+        ${hasField ? `<div class="lv-campo"><div class="pitch-pair">${pitch(j.casa, e.casa, fc)}${pitch(j.fora, e.fora, ff)}</div></div>` : ""}
+      </div></div>
+    </div>
+  </div>`;
+}
+
 /* ---------- JOGOS DE HOJE ---------- */
 function secHoje() {
   const hoje = S.dados.jogos
@@ -221,6 +340,7 @@ function secHoje() {
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
       ${chips(j, fim)}
+      ${escalacoes(j, "hoje")}
     </article>`;
   }).join("");
   return `<section class="reveal" id="hoje">
@@ -425,6 +545,30 @@ function secHistorico() {
    ============================================================ */
 function wireInteractions() {
   setupPromptModal();
+  wireLineups();
+}
+
+/* ---------- escalações: toggle do acordeão + Lista/Campo ---------- */
+function wireLineups() {
+  document.querySelectorAll(".lineup-toggle").forEach((btn) => {
+    const wrap = btn.closest(".lineup");
+    const inner = wrap && wrap.querySelector(".lb-inner");
+    if (inner) inner.inert = true; // colapsado por padrão (fora do tab order)
+    btn.addEventListener("click", () => {
+      const open = wrap.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", String(open));
+      if (inner) inner.inert = !open;
+    });
+  });
+  document.querySelectorAll(".lineup-body .lv-seg button[data-view]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const body = b.closest(".lineup-body");
+      body.dataset.view = b.dataset.view;
+      body.querySelectorAll(".lv-seg button[data-view]").forEach((x) =>
+        x.setAttribute("aria-pressed", String(x === b))
+      );
+    });
+  });
 }
 
 /* ---------- modal: o que foi pedido às IAs ---------- */
