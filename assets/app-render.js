@@ -104,7 +104,7 @@ function renderPodium() {
 function secScoring() {
   const tiers = [
     { v: 25, c: "var(--ok)", d: "Placar exato" },
-    { v: 15, c: "var(--gemini)", d: "Vencedor + saldo de gols" },
+    { v: 15, c: "var(--gemini)", d: "Vencedor + diferença de gols" },
     { v: 10, c: "var(--open)", d: "Só o vencedor / empate" },
     { v: 5, c: "var(--grok)", d: "Gols de um dos times" },
   ];
