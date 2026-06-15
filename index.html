@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://flagcdn.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/vote.css" />
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🏆&lt;/text&gt;&lt;/svg&gt;" />
 </head>
 <body>
@@ -35,18 +36,25 @@
           <div class="sub">Claude · GPT · Gemini · Grok</div>
         </div>
       </div>
-      <nav aria-label="Seções">
+      <nav class="nav-desktop" aria-label="Seções">
         <a href="#hoje">Hoje</a>
         <a href="#grupos">Grupos</a>
         <a href="#mata">Mata-mata</a>
         <a href="#historico">Histórico</a>
       </nav>
+      <div class="fav-slot" id="fav-slot"><!-- badge "Você torce" injetado --></div>
       <div class="stamp">
         <span class="dot" aria-hidden="true"></span>
         <span class="lbl">Atualizado</span>
         <span id="stamp-time">—</span>
       </div>
     </div>
+    <nav class="nav-mobile" aria-label="Seções">
+      <a href="#hoje">Hoje</a>
+      <a href="#grupos">Grupos</a>
+      <a href="#mata">Mata-mata</a>
+      <a href="#historico">Histórico</a>
+    </nav>
   </header>
 
   <!-- ░░ HERO ░░ -->

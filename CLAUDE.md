@@ -19,9 +19,17 @@ One-page (SPA estática) que acompanha um bolão da Copa 2026 entre 4 IAs (Claud
 - Mudanças de dados/placar/palpite: commitar com **`[skip ci]`** + push (sem deploy).
 - Mudanças de código (index/assets): só após "ok" do usuário (gera deploy).
 
+## ⚠️ Teste real do front (OBRIGATÓRIO antes de commitar mudança em `index.html`/`assets/**`)
+- **Toda alteração de front exige teste real meu**, não só syntax-check/leitura. Abrir o site internamente, **olhar o que foi feito e validar o comportamento** antes de propor commit/deploy.
+- Como (headless, sem deps): server estático local (`node` http simples na raiz) → **Chrome headless** (`--headless=new --remote-debugging-port`) dirigido via **DevTools Protocol** (Node 22 tem `WebSocket` nativo). Validar: render dos componentes, **0 erros de console**, e o **caminho real** (ex.: clicar/disparar a ação e confirmar efeito — voto → RPC Supabase → view → UI).
+- O front lê `dados.json` do GitHub raw e fala com o Supabase real → teste local exercita backend de verdade. **Limpar dados de teste** (via MCP Supabase) e encerrar chrome/server ao fim.
+- Só depois de validado, reportar resultado e pedir o "ok" de deploy.
+
 ## Fluxo de dados (live)
-- O front lê `dados.json` do **GitHub raw/CDN** (`raw.githubusercontent.com/.../main/dados.json?ts=`), não do Netlify → atualizar dado = só `git push`, sem deploy. Fallback: cópia same-origin.
-- Poll adaptativo: 60s com jogo, 5min ocioso.
+- O front lê `dados.json` de **CDN** (não do Netlify) → atualizar dado = só `git push`, sem deploy. Cascata de fontes (`fetchDados`): **jsDelivr** (primário) → **raw.githubusercontent** → cópia same-origin.
+- **jsDelivr é primário porque o workflow PURGA o cache dele após cada push** (`purge.jsdelivr.net/gh/...`, 2 tentativas) → placar novo em ~segundos. ⚠️ `raw` cacheia ~300s e **ignora `?ts=`** (testado: X-Cache HIT); jsDelivr tem `s-maxage` 12h, então **o purge é essencial** — sem ele o front serve velho.
+- Poll adaptativo: **30s** com jogo, 5min ocioso. Pausa em aba oculta; `visibilitychange` força tick ao voltar.
+- Percepção "ao vivo": carimbo relativo "há Xs" (tiquetaqueia 10s) + **flash no placar** quando muda entre renders (gol). Sem re-render só do placar — render global + classe `.score.flash`.
 
 ## Resultados (automático)
 - Workflow roda `update-resultados.mjs`. **Finais**: football-data.org (primário, competição `WC`) com fallback API-Football (`league=1, season=2026`).

@@ -1,2 +1,7 @@
 .af-live.json
 .live-state.json
+.env
+.env.local
+.env.*.local
+supabase/.temp
+supabase/.branches

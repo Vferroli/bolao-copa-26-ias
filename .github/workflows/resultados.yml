@@ -47,7 +47,20 @@ jobs:
               git add dados.json
               git commit -m "chore: atualiza resultados (auto) [skip ci]"
               git pull --rebase --autostash origin main || true
-              git push || echo "push falhou (tenta no próximo ciclo)"
+              if git push; then
+                # Purga o cache do jsDelivr p/ o front pegar o placar novo em segundos
+                # (raw cacheia ~300s e ignora cache-bust; jsDelivr tem s-maxage 12h →
+                # purgar é essencial). 2 tentativas p/ cobrir falha transitória.
+                for try in 1 2; do
+                  if curl -sf "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/dados.json" >/dev/null 2>&1; then
+                    echo "jsdelivr purgado"; break
+                  else
+                    echo "purge tentativa $try falhou"; sleep 2
+                  fi
+                done
+              else
+                echo "push falhou (tenta no próximo ciclo)"
+              fi
             fi
             sleep 55
           done

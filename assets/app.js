@@ -137,16 +137,34 @@ function cravouMarcador(p, r) {
   }
   return false;
 }
-function ranking() {
+function ranking(excludeId) {
   const tot = {};
   S.dados.ias.forEach((i) => (tot[i.id] = 0));
   S.dados.jogos.forEach((j) => {
+    if (excludeId && j.id === excludeId) return; // p/ calcular o ranking ANTES de um jogo
     S.dados.ias.forEach((i) => {
       const p = pontosJogo(j, j.palpites && j.palpites[i.id]);
       if (p != null) tot[i.id] += p;
     });
   });
   return S.dados.ias.map((i) => ({ ...i, total: tot[i.id] })).sort((a, b) => b.total - a.total);
+}
+
+/* o último jogo já apurado — define o "antes/depois" do movimento no ranking */
+function ultimoApurado() {
+  return S.dados.jogos
+    .filter(apurado)
+    .sort((a, b) => b.kickoff.localeCompare(a.kickoff))[0] || null;
+}
+
+/* posições do ranking ANTES do último jogo apurado (para comparar com o atual) */
+function posicoesAnteriores() {
+  const last = ultimoApurado();
+  if (!last) return null;
+  const prev = ranking(last.id);
+  const map = {};
+  prev.forEach((r, i) => (map[r.id] = i + 1));
+  return map;
 }
 
 /* ---------- group standings ---------- */
@@ -172,20 +190,25 @@ function standings(grupo) {
 
 document.addEventListener("DOMContentLoaded", carregar);
 
-/* dados.json servido pelo GitHub raw (CDN) — assim atualizar placar é só git push,
-   sem deploy no Netlify (que cobra ~15 créditos/deploy). Cache-bust mantém o live
-   fresco (raw cacheia 300s, mas a query fura o cache). Fallback: cópia same-origin. */
-const DATA_RAW = "https://raw.githubusercontent.com/Vferroli/bolao-copa-26-ias/main/dados.json";
+/* dados.json servido por CDN — atualizar placar é só git push, sem deploy no
+   Netlify (~15 créditos). Primário: jsDelivr (o workflow PURGA o cache após o
+   push → placar novo em segundos). raw.githubusercontent cacheia ~300s e IGNORA
+   cache-bust, então é só fallback. Último fallback: cópia same-origin. */
+const DATA_CDNS = [
+  "https://cdn.jsdelivr.net/gh/Vferroli/bolao-copa-26-ias@main/dados.json",
+  "https://raw.githubusercontent.com/Vferroli/bolao-copa-26-ias/main/dados.json",
+  "dados.json",
+];
 async function fetchDados() {
-  try {
-    const r = await fetch(DATA_RAW + "?ts=" + Date.now(), { cache: "no-store" });
-    if (r.ok) return await r.json();
-    throw new Error("raw HTTP " + r.status);
-  } catch (_) {
-    const r = await fetch("dados.json?ts=" + Date.now(), { cache: "no-store" }); // fallback local
-    if (!r.ok) throw new Error("HTTP " + r.status);
-    return await r.json();
+  let lastErr;
+  for (const u of DATA_CDNS) {
+    try {
+      const r = await fetch(u + "?ts=" + Date.now(), { cache: "no-store" });
+      if (r.ok) return await r.json();
+      lastErr = new Error(u.split("/")[2] + " HTTP " + r.status);
+    } catch (e) { lastErr = e; }
   }
+  throw lastErr || new Error("falha ao buscar dados.json");
 }
 
 async function carregar() {
@@ -201,7 +224,9 @@ async function carregar() {
   S.HOJE = S.dados.atualizado || dataTZ(new Date());
   indexar();
   S._stamp = S.dados.atualizado_em || "";
+  loadVoteLocal();   // identidade + meus votos (localStorage) antes do 1º render
   render();
+  initVotesRemote(); // busca tallies do Supabase e atualiza a UI (async, não bloqueia)
   iniciarPoll();
 }
 
@@ -214,7 +239,7 @@ function indexar() {
 /* auto-atualização adaptativa: repolla dados.json e re-renderiza só quando muda.
    Rápido (60s) só quando há jogo ao vivo ou prestes a começar; lento (5min)
    o resto do tempo. Pausa em aba oculta. Economiza requisições (e crédito). */
-const POLL_VIVO = 60000;    // 1 min: jogo rolando / janela de jogo
+const POLL_VIVO = 30000;    // 30s: jogo rolando / janela de jogo (jsDelivr purgado → fresco)
 const POLL_OCIOSO = 300000; // 5 min: sem jogo por perto
 
 function temJogoPorPerto() {
@@ -251,4 +276,87 @@ function iniciarPoll() {
   }
   agendar();
   document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
+}
+
+/* ============================================================
+   VOTO DO PÚBLICO (sem login) — cliente Supabase via REST/fetch
+   Identidade = anon_id (UUID no localStorage). "Meu voto" mora no
+   cliente; o backend só agrega (views *_tallies). Sem dependências:
+   PostgREST direto com a anon key (pública). Upsert com merge-duplicates.
+   ============================================================ */
+const SB_URL = "https://lnwjafoycccjapxmyumt.supabase.co";
+// anon/publishable key — PÚBLICA por design (RLS protege escrita; leitura só agregada).
+const SB_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxud2phZm95Y2NjamFweG15dW10Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1MzY0OTEsImV4cCI6MjA5NzExMjQ5MX0.b28k8mli9fCVzOzq8yGrj0sbIhWYwz7L9lsKbbSGcV4";
+const SB_REST = SB_URL + "/rest/v1";
+const VOTE_MIN = 5; // só mostra % a partir de 5 votos (antes: contagem crua)
+const sbHeaders = (extra) => Object.assign(
+  { apikey: SB_ANON, Authorization: "Bearer " + SB_ANON, "Content-Type": "application/json" },
+  extra || {}
+);
+
+function uuid() {
+  if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0, v = c === "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
+
+/* lê identidade + meus votos do localStorage (síncrono, antes do 1º render) */
+function loadVoteLocal() {
+  let anon = "";
+  try { anon = localStorage.getItem("bolao_anon") || ""; } catch (_) {}
+  if (!anon) { anon = uuid(); try { localStorage.setItem("bolao_anon", anon); } catch (_) {} }
+  let mine = { games: {}, champ: null };
+  try {
+    const raw = localStorage.getItem("bolao_mine");
+    if (raw) { const m = JSON.parse(raw); mine = { games: m.games || {}, champ: m.champ || null }; }
+  } catch (_) {}
+  S.vote = { anon, mine, tallies: { games: {}, champ: {} }, busy: false };
+}
+function saveMine() {
+  try { localStorage.setItem("bolao_mine", JSON.stringify(S.vote.mine)); } catch (_) {}
+}
+
+/* busca contagens agregadas (views) e indexa por jogo / por IA */
+async function sbFetchTallies() {
+  const opt = { headers: sbHeaders(), cache: "no-store" };
+  const [gr, cr] = await Promise.all([
+    fetch(`${SB_REST}/game_vote_tallies?select=game_id,ia,votes`, opt),
+    fetch(`${SB_REST}/champion_vote_tallies?select=ia,votes`, opt),
+  ]);
+  const games = {}, champ = {};
+  if (gr.ok) (await gr.json()).forEach((r) => {
+    (games[r.game_id] = games[r.game_id] || {})[r.ia] = r.votes;
+  });
+  if (cr.ok) (await cr.json()).forEach((r) => { champ[r.ia] = r.votes; });
+  return { games, champ };
+}
+
+/* upsert do voto por jogo (1 por anon_id+jogo) via RPC SECURITY DEFINER */
+function sbVoteGame(gameId, ia) {
+  return fetch(`${SB_REST}/rpc/cast_game_vote`, {
+    method: "POST",
+    headers: sbHeaders(),
+    body: JSON.stringify({ p_anon: S.vote.anon, p_game_id: String(gameId), p_ia: ia }),
+  });
+}
+/* upsert da IA favorita pro título (1 por anon_id) via RPC SECURITY DEFINER */
+function sbVoteChamp(ia) {
+  return fetch(`${SB_REST}/rpc/cast_champion_vote`, {
+    method: "POST",
+    headers: sbHeaders(),
+    body: JSON.stringify({ p_anon: S.vote.anon, p_ia: ia }),
+  });
+}
+
+/* carga inicial das contagens + reconciliação em background */
+async function initVotesRemote() {
+  await refreshTallies();
+}
+async function refreshTallies() {
+  try {
+    S.vote.tallies = await sbFetchTallies();
+    if (typeof refreshAllVotes === "function") refreshAllVotes();
+  } catch (_) { /* offline / cota: mantém o que tem, UI degrada graciosa */ }
 }

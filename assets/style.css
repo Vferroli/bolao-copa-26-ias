@@ -102,7 +102,7 @@ img.flag {
 /* ---------- layout ---------- */
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
 main { display: flex; flex-direction: column; gap: 40px; padding-bottom: 64px; }
-section { scroll-margin-top: 76px; }
+section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
 
 .sec-head {
   display: flex;
@@ -185,7 +185,7 @@ section { scroll-margin-top: 76px; }
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.topbar nav { display: none; }
+.nav-desktop { display: none; }
 .topbar nav a {
   text-decoration: none;
   white-space: nowrap;
@@ -196,6 +196,39 @@ section { scroll-margin-top: 76px; }
   transition: color 0.15s, background 0.15s;
 }
 .topbar nav a:hover { color: var(--txt); background: var(--glass); }
+
+/* mobile anchor bar — segunda linha sticky, escondida no desktop */
+.nav-mobile {
+  display: flex;
+  gap: 4px;
+  padding: 6px 10px;
+  border-top: 1px solid var(--line);
+  background: rgba(8, 11, 22, 0.55);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-mobile::-webkit-scrollbar { display: none; }
+.nav-mobile a {
+  flex: 1 1 0;
+  min-width: max-content;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.84rem;
+  color: var(--dim);
+  padding: 8px 12px;
+  border-radius: 9px;
+  transition: color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.nav-mobile a:hover { color: var(--txt); }
+.nav-mobile a.active {
+  color: var(--txt);
+  background: var(--glass);
+  box-shadow: inset 0 0 0 1px var(--line-2);
+}
 .stamp {
   margin-left: auto;
   display: flex;
@@ -310,19 +343,34 @@ section { scroll-margin-top: 76px; }
 }
 .rank-card.leader {
   border-left-width: 4px;
+  border-color: color-mix(in oklab, var(--cor) 34%, var(--line));
   background:
     radial-gradient(220px 160px at 100% -10%, color-mix(in oklab, var(--cor) 34%, transparent), transparent 70%),
     linear-gradient(150deg, #1a2342, var(--panel));
+  box-shadow:
+    var(--shadow),
+    inset 0 0 0 1px color-mix(in oklab, var(--cor) 22%, transparent),
+    0 0 46px -18px color-mix(in oklab, var(--cor) 85%, transparent);
 }
-.rank-card.leader::before {
-  content: "";
-  position: absolute;
-  top: -40%; left: -30%;
-  width: 60%; height: 180%;
-  background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.14), transparent);
-  transform: skewX(-18deg);
-  animation: sheen 5.5s ease-in-out infinite;
+.rank-card.leader .kit.lg {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 0 24px -6px color-mix(in oklab, var(--cor) 78%, transparent);
 }
+/* selo "LÍDER" estático — substitui o confete + sheen animados */
+.rank-id .meta.meta-leader {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #2a1d05;
+  background: linear-gradient(135deg, #ffe49a, var(--gold));
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  box-shadow: 0 5px 14px -5px color-mix(in oklab, var(--gold) 85%, black);
+}
+.meta-leader .crown { font-size: 0.82rem; line-height: 1; }
 .rank-pos {
   display: grid;
   place-items: center;
@@ -338,6 +386,47 @@ section { scroll-margin-top: 76px; }
   font-weight: 800;
   font-size: 1.1rem;
   color: var(--faint);
+}
+/* movimento no ranking (subiu / caiu / manteve) */
+.rank-move {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  margin-top: 6px;
+  padding: 2px 6px;
+  border-radius: 7px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.62rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid transparent;
+}
+.rank-move .arr { font-size: 0.66rem; line-height: 1; }
+.rank-move.up {
+  color: var(--ok);
+  background: color-mix(in oklab, var(--ok) 16%, transparent);
+  border-color: color-mix(in oklab, var(--ok) 30%, transparent);
+}
+.rank-move.down {
+  color: var(--live);
+  background: color-mix(in oklab, var(--live) 16%, transparent);
+  border-color: color-mix(in oklab, var(--live) 30%, transparent);
+}
+.rank-move.same {
+  color: var(--faint);
+  background: var(--glass);
+  border-color: var(--line);
+}
+.rank-move .sr {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+.is-in .rank-move {
+  animation: moveIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
 }
 .rank-id { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .rank-id .name {
@@ -490,6 +579,10 @@ section { scroll-margin-top: 76px; }
 .match.big .tn { font-size: 1rem; }
 .match.big .score { font-size: 1.75rem; min-width: 86px; }
 .score.bump { animation: bump 0.45s cubic-bezier(0.22, 1, 0.36, 1); }
+/* flash quando o placar ao vivo muda (gol) */
+.score.flash { animation: scoreflash 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
+/* carimbo relativo "há Xs" no topbar */
+.stamp #stamp-time.rel { color: var(--ok); }
 
 /* ---------- JOGOS DE HOJE ---------- */
 .today-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
@@ -1024,10 +1117,16 @@ details.day[open] .day-chev { transform: rotate(180deg); }
 
 /* ---------- keyframes ---------- */
 @keyframes rise { to { opacity: 1; transform: none; } }
+@keyframes moveIn { from { opacity: 0; transform: translateY(4px) scale(0.8); } to { opacity: 1; transform: none; } }
 @keyframes chipin { to { opacity: 1; transform: none; } }
 @keyframes bump { 0% { transform: scale(1); } 40% { transform: scale(1.18); } 100% { transform: scale(1); } }
 @keyframes sheen { 0%, 70% { left: -30%; } 100% { left: 130%; } }
 @keyframes blink { 50% { opacity: 0.15; } }
+@keyframes scoreflash {
+  0%   { transform: scale(1); box-shadow: 0 0 0 0 transparent; }
+  30%  { transform: scale(1.14); box-shadow: 0 0 22px -4px var(--ok); color: var(--ok); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 transparent; }
+}
 @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5); } 70%, 100% { box-shadow: 0 0 0 7px rgba(52, 211, 153, 0); } }
 @keyframes confetti-fall {
   0% { transform: translateY(-10px) rotate(0deg); opacity: 0; }
@@ -1082,7 +1181,9 @@ details.day[open] .day-chev { transform: rotate(180deg); }
 }
 
 @media (min-width: 900px) {
-  .topbar nav { display: flex; gap: 2px; margin-left: 8px; }
+  .nav-desktop { display: flex; gap: 2px; margin-left: 8px; }
+  .nav-mobile { display: none; }
+  section { scroll-margin-top: 76px; }
   .podium {
     grid-template-columns: repeat(4, 1fr);
     align-items: end;

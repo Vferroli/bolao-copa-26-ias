@@ -7,6 +7,7 @@ function render() {
   renderPodium();
   const app = document.getElementById("app");
   app.innerHTML = [
+    secTorcida(),
     secScoring(),
     secPrompt(),
     secAoVivo(),
@@ -17,23 +18,64 @@ function render() {
     secHistorico(),
   ].join("");
   wireInteractions();
+  renderFavBadge();
+  wireNavSpy();
   observeReveal();
   countUp();
   // podium is above the fold — reveal on load (don't wait for scroll observer)
   requestAnimationFrame(() => document.getElementById("podium").classList.add("is-in"));
 }
 
-function renderStamp() {
+/* carimbo relativo que tiquetaqueia ("há Xs / há X min") → sensação de vivo
+   mesmo entre atualizações de dados. Acima de 1h, cai pra data/hora. */
+function fmtRel(ms) {
+  const s = Math.max(0, Math.round((Date.now() - ms) / 1000));
+  if (s < 5) return "agora mesmo";
+  if (s < 60) return "há " + s + "s";
+  const m = Math.floor(s / 60);
+  if (m < 60) return "há " + m + " min";
+  return null;
+}
+function paintStamp() {
   const el = document.getElementById("stamp-time");
-  if (!el) return;
-  const d = S.dados.atualizado_em ? new Date(S.dados.atualizado_em) : new Date();
-  el.textContent = `${dataTZ(d).split("-").reverse().join("/").slice(0, 5)} · ${horaTZ(d)}`;
+  if (!el || !S._stampTs) return;
+  const rel = fmtRel(S._stampTs);
+  if (rel) { el.textContent = rel; el.classList.add("rel"); }
+  else {
+    const d = new Date(S._stampTs);
+    el.textContent = `${dataTZ(d).split("-").reverse().join("/").slice(0, 5)} · ${horaTZ(d)}`;
+    el.classList.remove("rel");
+  }
+}
+function renderStamp() {
+  S._stampTs = S.dados.atualizado_em ? new Date(S.dados.atualizado_em).getTime() : Date.now();
+  paintStamp();
+  if (!S._stampTicker) S._stampTicker = setInterval(paintStamp, 10000);
 }
 
 /* ---------- PÓDIO / ranking ---------- */
+
+/* indicador de movimento no ranking após o último jogo apurado */
+function rankMove(prevPos, id, pos) {
+  if (!prevPos) return ""; // nenhum jogo apurado ainda — nada a comparar
+  const delta = (prevPos[id] || pos) - pos; // > 0 = subiu posições
+  if (delta > 0) {
+    return `<span class="rank-move up" title="Subiu ${delta} ${delta > 1 ? "posições" : "posição"} no último jogo">
+      <span class="arr" aria-hidden="true">▲</span>${delta}<span class="sr">subiu ${delta}</span></span>`;
+  }
+  if (delta < 0) {
+    const n = -delta;
+    return `<span class="rank-move down" title="Caiu ${n} ${n > 1 ? "posições" : "posição"} no último jogo">
+      <span class="arr" aria-hidden="true">▼</span>${n}<span class="sr">caiu ${n}</span></span>`;
+  }
+  return `<span class="rank-move same" title="Manteve a posição no último jogo">
+    <span class="arr" aria-hidden="true">–</span><span class="sr">manteve</span></span>`;
+}
+
 function renderPodium() {
   const rk = ranking();
   const max = Math.max(1, ...rk.map((r) => r.total));
+  const prevPos = posicoesAnteriores();
   const medals = ["🥇", "🥈", "🥉"];
   const host = document.getElementById("podium");
   host.innerHTML = rk
@@ -41,14 +83,16 @@ function renderPodium() {
       const w = Math.round((ia.total / max) * 100);
       const pos = i + 1;
       const head = i < 3 ? `<span class="medal">${medals[i]}</span>` : `<span class="num">${pos}º</span>`;
+      const meta = pos === 1
+        ? `<div class="meta meta-leader"><span class="crown" aria-hidden="true">👑</span> Líder</div>`
+        : `<div class="meta">${pos}º lugar</div>`;
       return `<article class="rank-card ${i === 0 ? "leader" : ""}" data-pos="${pos}" style="--cor:${ia.cor}">
-        ${i === 0 ? '<span class="confetti-host" aria-hidden="true"></span>' : ""}
-        <div class="rank-pos">${head}</div>
+        <div class="rank-pos">${head}${rankMove(prevPos, ia.id, pos)}</div>
         <div class="rank-id">
           ${kit(ia, "lg")}
           <div>
             <div class="name">${esc(ia.nome)}</div>
-            <div class="meta">${pos === 1 ? "líder" : pos + "º lugar"}</div>
+            ${meta}
           </div>
         </div>
         <div class="rank-pts">
@@ -134,8 +178,14 @@ function secAoVivo() {
   const { live, prox } = liveModel();
   if (!live.length && !prox.length) return "";
   const faseLbl = (j) => (j.fase === "grupos" ? "Grupo " + j.grupo : (S.fases[j.fase] && S.fases[j.fase].nome) || "Mata-mata");
+  // flash no placar quando muda entre renders (gol!) — compara com o render anterior
+  const prevScores = S._liveScores || {};
+  const newScores = {};
   const liveCards = live.map(({ j, casa, fora, min }) => {
     const c = time(j.casa), f = time(j.fora);
+    const key = `${casa}-${fora}`;
+    newScores[j.id] = key;
+    const changed = (j.id in prevScores) && prevScores[j.id] !== key;
     return `<article class="live-card featured" data-live="${j.id}">
       <div class="live-head">
         <span class="live-tag"><span class="blink"></span> Ao vivo</span>
@@ -143,12 +193,14 @@ function secAoVivo() {
       </div>
       <div class="match big">
         <div class="team home"><span class="tn">${esc(c.nome)}</span>${bandeira(j.casa)}</div>
-        <div class="score">${casa}<em>:</em>${fora}</div>
+        <div class="score${changed ? " flash" : ""}">${casa}<em>:</em>${fora}</div>
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
+      ${voteMatch(j, "live")}
       ${escalacoes(j, "live")}
     </article>`;
   }).join("");
+  S._liveScores = newScores;
   const proxCards = prox.map((j) => {
     const a = time(j.casa), b = time(j.fora);
     return `<article class="live-card next">
@@ -161,6 +213,7 @@ function secAoVivo() {
         <div class="score tbd">vs</div>
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(b.nome)}</span></div>
       </div>
+      ${voteMatch(j, "next")}
       ${escalacoes(j, "next")}
     </article>`;
   }).join("");
@@ -340,6 +393,7 @@ function secHoje() {
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
       ${chips(j, fim)}
+      ${voteMatch(j, "hoje")}
       ${escalacoes(j, "hoje")}
     </article>`;
   }).join("");
@@ -541,11 +595,267 @@ function secHistorico() {
 }
 
 /* ============================================================
+   VOTO DO PÚBLICO (sem login) — render dos componentes
+   A) voto por jogo (.vote-match, dentro dos cards)
+   B) IA favorita pro título (badge na topbar + seção #torcida)
+   Estado vem de S.vote (app.js): mine (localStorage) + tallies (Supabase).
+   ============================================================ */
+const jogoById = (id) => S.dados.jogos.find((j) => String(j.id) === String(id));
+
+/* estado do voto por jogo: open → votável; live/locked → resultado; resolved → resultado+selo */
+function voteState(j) {
+  if (apurado(j)) return "resolved";
+  const liveIds = new Set((Array.isArray(S.dados.live) ? S.dados.live : []).map((l) => l.id));
+  if (liveIds.has(j.id)) return "live";
+  if (Date.now() >= new Date(j.kickoff).getTime()) return "locked"; // trava no apito
+  return "open";
+}
+const vTally = (id) => (S.vote && S.vote.tallies.games[id]) || {};
+const vTotal = (t) => S.dados.ias.reduce((a, ia) => a + (t[ia.id] || 0), 0);
+const vShow = (total) => total >= VOTE_MIN;
+
+/* ---------- Componente A: voto por jogo ---------- */
+function voteMatch(j, ctx) {
+  if (!S.vote) return "";
+  const st = voteState(j);
+  const mine = S.vote.mine.games[j.id] || null;
+  const t = vTally(j.id);
+  const total = vTotal(t);
+  if (st === "open") {
+    const head = total === 0
+      ? `<div class="vote-empty"><span class="vote-spark" aria-hidden="true"></span><span>Ninguém cravou ainda. <b>Seja o primeiro!</b></span></div>`
+      : `<div class="vote-head"><span class="vote-q">Qual IA crava esse jogo?</span><span class="vote-meta">${total} voto${total === 1 ? "" : "s"}</span></div>`;
+    const foot = mine
+      ? `<div class="vote-foot"><span>Seu palpite: <b style="color:#fff">${esc(S.ia[mine].nome)}</b></span><span class="vote-edit-hint">toque pra trocar</span></div>`
+      : `<div class="vote-foot"><span class="vote-cta">Toque pra cravar sua aposta</span></div>`;
+    return `<div class="vote-match" data-game="${esc(j.id)}" data-ctx="${ctx}">${head}${voteOpts(j, mine)}${foot}</div>`;
+  }
+  // travado / ao vivo / encerrado → modo resultado
+  const seal = st === "resolved" ? voteSeal(j, t, total) : "";
+  const head = st === "resolved" ? ""
+    : `<div class="vote-head"><span class="vote-q">O público cravou</span><span class="vote-lock">Votação fechada</span></div>`;
+  const body = total === 0
+    ? `<p class="vote-note">Ninguém votou neste jogo.</p>`
+    : voteResults(j, mine, vShow(total)) + (vShow(total) ? "" : `<div class="vote-note">Percentuais liberam a partir de ${VOTE_MIN} votos</div>`);
+  return `<div class="vote-match" data-game="${esc(j.id)}" data-ctx="${ctx}" data-state="${st}">${seal}${head}${body}</div>`;
+}
+
+function voteOpts(j, mine) {
+  return `<div class="vote-opts" role="radiogroup" aria-label="Qual IA crava esse jogo?">
+    ${S.dados.ias.map((ia) => {
+      const m = ia.id === mine;
+      return `<button class="vote-opt ${m ? "is-mine" : ""}" type="button" role="radio" aria-checked="${m}" data-ia="${ia.id}" style="--cor:${ia.cor}">
+        ${m ? `<span class="vote-you">Você</span>` : ""}
+        ${kit(ia)}
+        <span class="vote-opt-name">${esc(ia.nome)}</span>
+        <span class="vote-dot" aria-hidden="true"></span>
+      </button>`;
+    }).join("")}
+  </div>`;
+}
+
+function voteResults(j, mine, showPct) {
+  const t = vTally(j.id);
+  const total = vTotal(t);
+  const max = Math.max(1, ...S.dados.ias.map((ia) => t[ia.id] || 0));
+  return `<div class="vote-results">
+    ${S.dados.ias.map((ia) => {
+      const v = t[ia.id] || 0;
+      const pct = total ? Math.round((v / total) * 100) : 0;
+      const fill = showPct ? pct : Math.round((v / max) * 100);
+      const m = ia.id === mine;
+      const val = showPct ? `${pct}<small>%</small>` : `${v}<small>voto${v === 1 ? "" : "s"}</small>`;
+      return `<div class="vote-bar ${m ? "is-mine" : ""}" style="--cor:${ia.cor};--pct:${fill}%">
+        ${kit(ia)}
+        <span class="vote-bar-name">${esc(ia.nome)}${m ? `<span class="vote-mine-tag">Você</span>` : ""}</span>
+        <span class="vote-bar-track"><span class="vote-bar-fill"></span></span>
+        <span class="vote-bar-val">${val}</span>
+      </div>`;
+    }).join("")}
+  </div>`;
+}
+
+/* selo "público acertou?": IA mais votada × IA que mais pontuou no jogo */
+function crowdLeader(t) {
+  let best = null, bv = 0;
+  S.dados.ias.forEach((ia) => { const v = t[ia.id] || 0; if (v > bv) { bv = v; best = ia.id; } });
+  return best;
+}
+function topScorerIa(j) {
+  let best = null, bp = -1;
+  S.dados.ias.forEach((ia) => {
+    const p = pontosJogo(j, j.palpites && j.palpites[ia.id]);
+    if (p != null && p > bp) { bp = p; best = ia.id; }
+  });
+  return bp > 0 ? best : null;
+}
+function voteSeal(j, t, total) {
+  if (!total) return "";
+  const leader = crowdLeader(t), top = topScorerIa(j);
+  if (!leader || !top) return "";
+  const nome = esc(S.ia[leader].nome);
+  if (leader === top) {
+    return `<div class="vote-seal vote-seal--hit"><span class="vote-seal-ico">✓</span><span>O público acertou — <b>${nome}</b> foi a mais cravada e a que mais pontuou.</span></div>`;
+  }
+  return `<div class="vote-seal vote-seal--miss"><span class="vote-seal-ico">✕</span><span>O público errou — a mais votada (<b>${nome}</b>) não foi quem mais pontuou.</span></div>`;
+}
+
+/* ---------- Componente B: IA favorita pro título ---------- */
+function secTorcida() {
+  if (!S.vote) return "";
+  return `<section class="reveal" id="torcida">
+    <div class="sec-head">
+      <span class="kicker">Torcida das IAs</span>
+      <h2>Quem leva o título?</h2>
+      <span class="pill">voto do público</span>
+    </div>
+    <div class="card vote-fav" style="padding:18px">
+      <div id="fav-chooser">${favChooserHtml()}</div>
+      <div id="fav-board">${favBoardHtml()}</div>
+    </div>
+  </section>`;
+}
+function favChooserHtml() {
+  const mine = S.vote.mine.champ;
+  return `<div class="fav-choose">
+    <div class="fav-q">Em quem você torce pro título?</div>
+    <div class="vote-fav-pick" role="radiogroup" aria-label="Escolha sua IA favorita pro título">
+      ${S.dados.ias.map((ia) => {
+        const m = ia.id === mine;
+        return `<button class="vote-fav-opt ${m ? "is-mine" : ""}" type="button" role="radio" aria-checked="${m}" data-champ="${ia.id}" style="--cor:${ia.cor}">${kit(ia)}<span class="vote-fav-opt-name">${esc(ia.nome)}</span></button>`;
+      }).join("")}
+    </div>
+  </div>`;
+}
+function favBoardHtml() {
+  const champ = (S.vote.tallies.champ) || {};
+  const total = S.dados.ias.reduce((a, ia) => a + (champ[ia.id] || 0), 0);
+  const showPct = total >= VOTE_MIN;
+  const mine = S.vote.mine.champ;
+  const max = Math.max(1, ...S.dados.ias.map((ia) => champ[ia.id] || 0));
+  const sorted = S.dados.ias.slice().sort((a, b) => (champ[b.id] || 0) - (champ[a.id] || 0));
+  const rows = sorted.map((ia, i) => {
+    const v = champ[ia.id] || 0;
+    const pct = total ? Math.round((v / total) * 100) : 0;
+    const fill = showPct ? pct : Math.round((v / max) * 100);
+    const leader = i === 0 && v > 0;
+    const m = ia.id === mine;
+    const val = showPct ? `${pct}` : `${v}`;
+    const unit = showPct ? "do público" : `voto${v === 1 ? "" : "s"}`;
+    return `<div class="vote-board-row ${leader ? "leader" : ""} ${m ? "is-mine" : ""}" style="--cor:${ia.cor}">
+      <span class="vote-board-pos">${i + 1}</span>
+      ${kit(ia)}
+      <div class="vote-board-id">
+        <div class="vote-board-name">${esc(ia.nome)}${leader ? `<span class="vote-board-crown">👑</span>` : ""}${m ? `<span class="vote-mine-tag">Sua torcida</span>` : ""}</div>
+        <div class="vote-board-track"><span class="vote-board-fill" style="--pct:${fill}%"></span></div>
+      </div>
+      <div class="vote-board-val"><span class="v">${val}${showPct ? "<small style='font-size:0.6em'>%</small>" : ""}</span><span class="u">${unit}</span></div>
+    </div>`;
+  }).join("");
+  const head = `<div class="fav-board-head"><span class="fav-board-ttl">Torcida do público</span><span class="pill">${total} voto${total === 1 ? "" : "s"}</span></div>`;
+  const note = showPct ? "" : `<div class="vote-note">Percentuais liberam a partir de ${VOTE_MIN} votos</div>`;
+  return `${head}<div class="vote-board">${rows}</div>${note}`;
+}
+function favBadgeHtml() {
+  if (!S.vote) return "";
+  const id = S.vote.mine.champ;
+  if (!id) {
+    return `<button class="vote-fav-badge is-empty" type="button" id="fav-badge" aria-label="Escolher IA favorita pro título">
+      <span class="kit" style="--cor:var(--faint)" aria-hidden="true">★</span>
+      <span><span class="vote-fav-lbl">Sua torcida</span><br><span class="vote-fav-name">Escolher IA</span></span>
+    </button>`;
+  }
+  const ia = S.ia[id];
+  return `<button class="vote-fav-badge" type="button" id="fav-badge" style="--cor:${ia.cor}" aria-label="Você torce: ${esc(ia.nome)}. Toque para trocar.">
+    ${kit(ia)}
+    <span><span class="vote-fav-lbl">Você torce</span><br><span class="vote-fav-name">${esc(ia.nome)}</span></span>
+    <span class="vote-fav-edit">trocar</span>
+  </button>`;
+}
+function renderFavBadge() {
+  const slot = document.getElementById("fav-slot");
+  if (slot) slot.innerHTML = favBadgeHtml();
+}
+
+/* ---------- re-render dirigido por estado (sem re-render global) ---------- */
+function refreshGameVotes(gameId) {
+  document.querySelectorAll(".vote-match").forEach((el) => {
+    if (el.dataset.game !== String(gameId)) return;
+    const j = jogoById(gameId);
+    if (j) el.outerHTML = voteMatch(j, el.dataset.ctx);
+  });
+}
+function refreshChampUI() {
+  const ch = document.getElementById("fav-chooser"); if (ch) ch.innerHTML = favChooserHtml();
+  const bd = document.getElementById("fav-board"); if (bd) bd.innerHTML = favBoardHtml();
+  renderFavBadge();
+}
+/* chamado pelo app.js quando as tallies chegam/atualizam */
+function refreshAllVotes() {
+  document.querySelectorAll(".vote-match").forEach((el) => {
+    const j = jogoById(el.dataset.game);
+    if (j) el.outerHTML = voteMatch(j, el.dataset.ctx);
+  });
+  refreshChampUI();
+}
+
+/* ---------- ações (otimista + reconcília com o servidor) ---------- */
+async function onVoteGame(gameId, ia) {
+  if (!S.vote) return;
+  const j = jogoById(gameId);
+  if (!j || voteState(j) !== "open") return; // travado: ignora
+  const prev = S.vote.mine.games[gameId] || null;
+  if (prev === ia) return;
+  const t = S.vote.tallies.games[gameId] = S.vote.tallies.games[gameId] || {};
+  if (prev) t[prev] = Math.max(0, (t[prev] || 0) - 1);
+  t[ia] = (t[ia] || 0) + 1;
+  S.vote.mine.games[gameId] = ia;
+  saveMine();
+  refreshGameVotes(gameId);
+  try { const r = await sbVoteGame(gameId, ia); if (!r.ok) throw new Error(r.status); } catch (_) {}
+  refreshTallies();
+}
+async function onVoteChamp(ia) {
+  if (!S.vote) return;
+  const prev = S.vote.mine.champ;
+  if (prev === ia) return;
+  const c = S.vote.tallies.champ;
+  if (prev) c[prev] = Math.max(0, (c[prev] || 0) - 1);
+  c[ia] = (c[ia] || 0) + 1;
+  S.vote.mine.champ = ia;
+  saveMine();
+  refreshChampUI();
+  try { const r = await sbVoteChamp(ia); if (!r.ok) throw new Error(r.status); } catch (_) {}
+  refreshTallies();
+}
+
+/* ---------- wiring (delegação no document, uma vez só) ---------- */
+function wireVotes() {
+  if (S._voteWired) return;
+  S._voteWired = true;
+  document.addEventListener("click", (e) => {
+    const opt = e.target.closest(".vote-opt");
+    if (opt) { const m = opt.closest(".vote-match"); if (m) onVoteGame(m.dataset.game, opt.dataset.ia); return; }
+    const fav = e.target.closest(".vote-fav-opt");
+    if (fav) { onVoteChamp(fav.dataset.champ); return; }
+    const badge = e.target.closest("#fav-badge");
+    if (badge) {
+      const sec = document.getElementById("torcida");
+      if (sec) sec.scrollIntoView({
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start",
+      });
+    }
+  });
+}
+
+/* ============================================================
    INTERACTIONS & ANIMATIONS
    ============================================================ */
 function wireInteractions() {
   setupPromptModal();
   wireLineups();
+  wireVotes();
 }
 
 /* ---------- escalações: toggle do acordeão + Lista/Campo ---------- */
@@ -631,7 +941,25 @@ function countUp() {
     // fallback: guarantee final value even if rAF is throttled (background tab)
     setTimeout(() => { el.textContent = fmt(target); }, dur + 300);
   });
-  spawnConfetti();
+}
+
+/* scrollspy do menu de âncoras (mobile): destaca a seção visível */
+function wireNavSpy() {
+  const links = [...document.querySelectorAll(".nav-mobile a")];
+  if (!links.length || !("IntersectionObserver" in window)) return;
+  const map = {};
+  links.forEach((a) => { map[a.getAttribute("href").slice(1)] = a; });
+  const targets = Object.keys(map).map((id) => document.getElementById(id)).filter(Boolean);
+  if (!targets.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      links.forEach((l) => l.classList.remove("active"));
+      const a = map[en.target.id];
+      if (a) a.classList.add("active");
+    });
+  }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+  targets.forEach((t) => io.observe(t));
 }
 
 /* scroll reveal */
@@ -648,18 +976,6 @@ function observeReveal() {
   setTimeout(() => els.forEach((e) => e.classList.add("is-in")), 2600);
 }
 
-/* confetti behind the leader */
-function spawnConfetti() {
-  const host = document.querySelector(".confetti-host");
-  if (!host || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  const cols = ["#ffce5c", "#d97757", "#10a37f", "#4285f4", "#a78bfa"];
-  for (let i = 0; i < 14; i++) {
-    const s = document.createElement("i");
-    const sz = 4 + Math.random() * 5;
-    s.style.cssText = `position:absolute;top:0;left:${Math.random() * 100}%;width:${sz}px;height:${sz * 1.6}px;
-      background:${cols[i % cols.length]};border-radius:1px;opacity:0;
-      animation:confetti-fall ${1.6 + Math.random() * 1.6}s ease-in ${Math.random() * 1.2}s infinite;`;
-    host.appendChild(s);
-  }
-}
+/* destaque da IA líder é estático agora (CSS: glow + selo "👑 Líder") —
+   confete/sheen infinitos removidos por peso no mobile. */
 

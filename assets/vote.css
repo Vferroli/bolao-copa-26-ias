@@ -1,0 +1,621 @@
+/* ============================================================
+   Bolão Copa 2026 · IAs — VOTO DO PÚBLICO (sem login)
+   Componentes portáveis, vanilla. Prefixo: .vote-
+   Usa os tokens existentes (var(--…)). Sem JS de lógica.
+   Cada opção recebe a cor da IA via style="--cor:#…".
+   ============================================================ */
+
+/* ============================================================
+   COMPONENTE A — Voto por jogo  (.vote-match)
+   Vai dentro do card de cada jogo (.game / .live-card).
+   ============================================================ */
+.vote-match {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+/* cabeçalho: pergunta + contagem/CTA */
+.vote-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 11px;
+}
+.vote-q {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.92rem;
+  letter-spacing: -0.01em;
+  color: var(--txt);
+}
+.vote-meta {
+  margin-left: auto;
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.vote-cta {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--open) 80%, var(--txt));
+}
+
+/* ---------- estado: opções tocáveis (2×2) ---------- */
+.vote-opts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.vote-opt {
+  --cor: var(--faint);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 52px;
+  padding: 8px 11px 8px 8px;
+  text-align: left;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--txt);
+  font-family: inherit;
+  transition: background 0.16s, border-color 0.16s, transform 0.1s, box-shadow 0.2s;
+}
+.vote-opt:hover {
+  background: color-mix(in oklab, var(--cor) 9%, var(--glass));
+  border-color: color-mix(in oklab, var(--cor) 45%, var(--line));
+}
+.vote-opt:active { transform: scale(0.98); }
+
+.vote-opt .kit { width: 34px; height: 34px; border-radius: 10px; }
+.vote-opt .kit svg { width: 17px; height: 17px; }
+
+.vote-opt-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  color: color-mix(in oklab, var(--cor) 60%, var(--txt));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* radio-dot à direita */
+.vote-dot {
+  margin-left: auto;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--line-2);
+  position: relative;
+  transition: border-color 0.16s, background 0.16s;
+}
+.vote-opt:hover .vote-dot { border-color: color-mix(in oklab, var(--cor) 60%, var(--line-2)); }
+
+/* ---------- estado: MEU VOTO (o coração da feature) ---------- */
+.vote-opt.is-mine {
+  background:
+    radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--cor) 26%, transparent), transparent 60%),
+    color-mix(in oklab, var(--cor) 13%, var(--panel-2));
+  border-color: var(--cor);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, var(--cor) 30%, transparent),
+    0 0 0 1px var(--cor),
+    0 0 26px -6px color-mix(in oklab, var(--cor) 75%, transparent);
+  animation: vote-pop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.vote-opt.is-mine .vote-opt-name { color: #fff; }
+.vote-opt.is-mine .kit {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 4px 14px -4px color-mix(in oklab, var(--cor) 80%, black);
+}
+/* dot vira "check" preenchido */
+.vote-opt.is-mine .vote-dot {
+  border-color: var(--cor);
+  background: var(--cor);
+}
+.vote-opt.is-mine .vote-dot::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(42deg);
+}
+/* selo "VOCÊ" flutuante */
+.vote-opt.is-mine .vote-you {
+  position: absolute;
+  top: -8px;
+  right: 9px;
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #fff;
+  background: var(--cor);
+  padding: 2px 7px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px -4px color-mix(in oklab, var(--cor) 80%, black);
+}
+.vote-opt { position: relative; }
+.vote-you { display: none; }
+
+/* rodapé "dá pra trocar até o apito" */
+.vote-foot {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+.vote-foot .vote-edit {
+  margin-left: auto;
+  color: var(--dim);
+  background: none;
+  border: none;
+  font: inherit;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.vote-foot .vote-edit:hover { color: var(--txt); }
+
+/* ---------- estado: empty (n=0) ---------- */
+.vote-empty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 11px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in oklab, var(--open) 8%, var(--glass));
+  border: 1px dashed color-mix(in oklab, var(--open) 36%, var(--line));
+  font-size: 0.82rem;
+  color: var(--dim);
+}
+.vote-empty b { color: color-mix(in oklab, var(--open) 75%, var(--txt)); }
+.vote-empty .vote-spark {
+  flex: none;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--open);
+  box-shadow: 0 0 0 0 color-mix(in oklab, var(--open) 60%, transparent);
+  animation: vote-ping 2.4s ease-out infinite;
+}
+
+/* ============================================================
+   MODO RESULTADO — barras de % do público (.vote-results)
+   Travado / ao vivo / encerrado.
+   ============================================================ */
+.vote-results {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.vote-bar {
+  --cor: var(--faint);
+  --pct: 0%;
+  display: grid;
+  grid-template-columns: 26px max-content 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+.vote-bar .kit { width: 26px; height: 26px; border-radius: 8px; }
+.vote-bar .kit svg { width: 13px; height: 13px; }
+.vote-bar-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.84rem;
+  color: var(--dim);
+  white-space: nowrap;
+}
+.vote-bar-track {
+  min-width: 0;
+  position: relative;
+  height: 9px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.34);
+  overflow: hidden;
+}
+.vote-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--pct);
+  border-radius: 999px;
+  background: linear-gradient(90deg, color-mix(in oklab, var(--cor) 70%, #000 10%), var(--cor));
+  box-shadow: 0 0 14px -3px color-mix(in oklab, var(--cor) 80%, transparent);
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.vote-bar-val {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--txt);
+  text-align: right;
+  min-width: 40px;
+}
+.vote-bar-val small {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.5rem;
+  letter-spacing: 0.08em;
+  color: var(--faint);
+  text-transform: uppercase;
+}
+
+/* a barra do meu voto em destaque */
+.vote-bar.is-mine .vote-bar-name { color: #fff; }
+.vote-bar.is-mine .vote-bar-track {
+  box-shadow:
+    0 0 0 1px var(--cor),
+    0 0 18px -5px color-mix(in oklab, var(--cor) 70%, transparent);
+}
+.vote-bar.is-mine .vote-bar-val { color: var(--cor); }
+.vote-mine-tag {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--cor);
+  border: 1px solid color-mix(in oklab, var(--cor) 45%, var(--line));
+  padding: 1px 6px;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+/* nota: % libera com 5 votos */
+.vote-note {
+  margin-top: 11px;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+  text-align: center;
+}
+
+/* selo "público acertou?" (quando o jogo resolve) */
+.vote-seal {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.vote-seal .vote-seal-ico {
+  flex: none;
+  width: 22px; height: 22px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+.vote-seal b { font-weight: 800; }
+.vote-seal--hit {
+  background: color-mix(in oklab, var(--ok) 12%, transparent);
+  border: 1px solid color-mix(in oklab, var(--ok) 40%, var(--line));
+  color: color-mix(in oklab, var(--ok) 70%, var(--txt));
+}
+.vote-seal--hit .vote-seal-ico { background: var(--ok); color: #06281c; }
+.vote-seal--miss {
+  background: color-mix(in oklab, var(--live) 11%, transparent);
+  border: 1px solid color-mix(in oklab, var(--live) 38%, var(--line));
+  color: color-mix(in oklab, var(--live) 72%, var(--txt));
+}
+.vote-seal--miss .vote-seal-ico { background: var(--live); color: #2a0508; }
+
+/* lock pill quando travado */
+.vote-lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.vote-lock::before { content: "🔒"; font-size: 0.7rem; filter: grayscale(0.3); }
+
+/* ============================================================
+   COMPONENTE B — IA favorita pro título (.vote-fav)
+   Global, topo da página.
+   ============================================================ */
+
+/* badge persistente "Você torce: [IA]" */
+.vote-fav-badge {
+  --cor: var(--faint);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 13px 6px 7px;
+  border-radius: 999px;
+  background:
+    radial-gradient(120% 140% at 0% 0%, color-mix(in oklab, var(--cor) 30%, transparent), transparent 65%),
+    color-mix(in oklab, var(--cor) 14%, var(--panel-2));
+  border: 1px solid color-mix(in oklab, var(--cor) 55%, var(--line));
+  box-shadow: 0 0 20px -8px color-mix(in oklab, var(--cor) 70%, transparent);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: filter 0.15s, box-shadow 0.2s;
+}
+.vote-fav-badge:hover { filter: brightness(1.1); box-shadow: 0 0 26px -6px color-mix(in oklab, var(--cor) 80%, transparent); }
+.vote-fav-badge .kit { width: 28px; height: 28px; border-radius: 9px; }
+.vote-fav-badge .kit svg { width: 14px; height: 14px; }
+.vote-fav-badge .vote-fav-lbl {
+  font-family: var(--font-mono);
+  font-size: 0.54rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, #fff 70%, var(--cor));
+}
+.vote-fav-badge .vote-fav-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.92rem;
+  letter-spacing: -0.01em;
+}
+.vote-fav-badge .vote-fav-edit {
+  margin-left: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.06em;
+  color: color-mix(in oklab, #fff 55%, var(--cor));
+  border-left: 1px solid color-mix(in oklab, var(--cor) 45%, transparent);
+  padding-left: 9px;
+}
+
+/* estado sem favorita */
+.vote-fav-badge.is-empty {
+  background: var(--glass);
+  border: 1px dashed var(--line-2);
+  border-radius: 999px;
+  box-shadow: none;
+  color: var(--dim);
+}
+.vote-fav-badge.is-empty .vote-fav-name { color: var(--txt); }
+
+/* chooser (editável) — 4 IAs */
+.vote-fav-pick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.vote-fav-opt {
+  --cor: var(--faint);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 8px;
+  min-height: 44px;
+  border-radius: 999px;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  color: var(--txt);
+  font-family: inherit;
+  transition: background 0.16s, border-color 0.16s, transform 0.1s, box-shadow 0.2s;
+}
+.vote-fav-opt:hover {
+  background: color-mix(in oklab, var(--cor) 10%, var(--glass));
+  border-color: color-mix(in oklab, var(--cor) 50%, var(--line));
+}
+.vote-fav-opt:active { transform: scale(0.97); }
+.vote-fav-opt .kit { width: 28px; height: 28px; border-radius: 9px; }
+.vote-fav-opt .kit svg { width: 14px; height: 14px; }
+.vote-fav-opt-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: color-mix(in oklab, var(--cor) 55%, var(--txt));
+}
+.vote-fav-opt.is-mine {
+  background:
+    radial-gradient(120% 140% at 0% 0%, color-mix(in oklab, var(--cor) 30%, transparent), transparent 62%),
+    color-mix(in oklab, var(--cor) 15%, var(--panel-2));
+  border-color: var(--cor);
+  box-shadow: 0 0 0 1px var(--cor), 0 0 24px -7px color-mix(in oklab, var(--cor) 75%, transparent);
+  animation: vote-pop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.vote-fav-opt.is-mine .vote-fav-opt-name { color: #fff; }
+
+/* ---------- leaderboard do público ---------- */
+.vote-board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.vote-board-row {
+  --cor: var(--faint);
+  display: grid;
+  grid-template-columns: 20px 34px 1fr auto;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-left: 3px solid color-mix(in oklab, var(--cor) 70%, var(--line));
+  transition: border-color 0.18s, background 0.18s;
+}
+.vote-board-pos {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--faint);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.vote-board-row .kit { width: 34px; height: 34px; border-radius: 10px; }
+.vote-board-row .kit svg { width: 17px; height: 17px; }
+.vote-board-id { min-width: 0; }
+.vote-board-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.96rem;
+  letter-spacing: -0.01em;
+  color: var(--txt);
+}
+.vote-board-track {
+  margin-top: 5px;
+  position: relative;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.34);
+  overflow: hidden;
+}
+.vote-board-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--pct, 0%);
+  border-radius: 999px;
+  background: linear-gradient(90deg, color-mix(in oklab, var(--cor) 68%, #000 12%), var(--cor));
+  box-shadow: 0 0 12px -3px color-mix(in oklab, var(--cor) 75%, transparent);
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.vote-board-val {
+  text-align: right;
+}
+.vote-board-val .v {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--txt);
+}
+.vote-board-val .u {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* pódio: líder com ouro sutil */
+.vote-board-row.leader {
+  --cor: var(--cor);
+  background:
+    radial-gradient(180px 120px at 100% -20%, color-mix(in oklab, var(--gold) 16%, transparent), transparent 70%),
+    color-mix(in oklab, var(--cor) 8%, var(--glass));
+  border-color: color-mix(in oklab, var(--gold) 32%, var(--line));
+  border-left-color: var(--gold);
+}
+.vote-board-row.leader .vote-board-pos { color: var(--gold); }
+.vote-board-crown {
+  margin-left: 6px;
+  font-size: 0.72rem;
+  vertical-align: middle;
+}
+/* a IA que EU torço, marcada no board */
+.vote-board-row.is-mine { box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--cor) 45%, transparent); }
+.vote-board-row.is-mine .vote-mine-tag { margin-left: 7px; }
+
+/* ============================================================
+   animações + acessibilidade
+   ============================================================ */
+@keyframes vote-pop {
+  0%   { transform: scale(0.92); }
+  55%  { transform: scale(1.035); }
+  100% { transform: scale(1); }
+}
+@keyframes vote-ping {
+  0%   { box-shadow: 0 0 0 0 color-mix(in oklab, var(--open) 55%, transparent); }
+  70%  { box-shadow: 0 0 0 7px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+.vote-match :focus-visible,
+.vote-fav :focus-visible,
+.vote-fav-badge:focus-visible {
+  outline: 2px solid var(--silver);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vote-opt.is-mine,
+  .vote-fav-opt.is-mine { animation: none; }
+  .vote-bar-fill,
+  .vote-board-fill { transition: none; }
+  .vote-empty .vote-spark { animation: none; }
+}
+
+/* >=520px: opções do voto podem respirar um pouco mais */
+@media (min-width: 520px) {
+  .vote-opt { min-height: 56px; }
+}
+
+/* ============================================================
+   COLA DE INTEGRAÇÃO (badge na topbar + seção #torcida)
+   ============================================================ */
+
+/* badge "Você torce" na topbar — agrupa à direita junto do carimbo */
+.fav-slot { margin-left: auto; display: inline-flex; align-items: center; }
+.fav-slot + .stamp { margin-left: 12px; }      /* sobrepõe o margin-left:auto do .stamp */
+.vote-fav-badge.is-empty .kit { font-size: 0.9rem; color: var(--dim); }
+@media (max-width: 600px) {
+  .fav-slot .vote-fav-lbl,
+  .fav-slot .vote-fav-edit { display: none; }
+  .fav-slot .vote-fav-badge { padding: 5px 11px 5px 6px; gap: 7px; }
+}
+@media (max-width: 430px) {
+  .fav-slot .vote-fav-name { display: none; }
+  .fav-slot .vote-fav-badge { padding: 5px; }
+}
+
+/* nota "toque pra trocar" no rodapé do voto */
+.vote-edit-hint {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* seção #torcida (componente B) */
+.vote-fav .fav-choose { margin-bottom: 18px; }
+.fav-q {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 11px;
+  color: var(--txt);
+}
+.fav-board-head { display: flex; align-items: center; gap: 10px; margin-bottom: 13px; }
+.fav-board-ttl {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  color: var(--txt);
+}
+.fav-board-head .pill { margin-left: auto; }

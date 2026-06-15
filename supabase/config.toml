@@ -1,0 +1,7 @@
+project_id = "bolao-copa-26-ias"
+
+[db]
+major_version = 17
+
+[db.migrations]
+enabled = true
