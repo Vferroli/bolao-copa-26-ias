@@ -90,6 +90,7 @@ function secScoring() {
         <span class="mult">Semi <b>×3</b></span>
         <span class="mult">Final <b>×4</b></span>
         <span class="mult bonus">Cravou quem avança <b>+8</b></span>
+        <span class="mult bonus">Cravou o artilheiro <b>+3</b></span>
       </div>
     </div>
   </section>`;
