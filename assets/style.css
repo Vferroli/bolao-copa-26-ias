@@ -581,6 +581,8 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
 .score.bump { animation: bump 0.45s cubic-bezier(0.22, 1, 0.36, 1); }
 /* flash quando o placar ao vivo muda (gol) */
 .score.flash { animation: scoreflash 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
+/* placar "último conhecido" (feed live sumiu, mas o jogo ainda rola) */
+.score.stale { opacity: 0.72; }
 /* carimbo relativo "há Xs" no topbar */
 .stamp #stamp-time.rel { color: var(--ok); }
 

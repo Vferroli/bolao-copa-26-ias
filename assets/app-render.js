@@ -6,9 +6,11 @@ function render() {
   renderStamp();
   renderPodium();
   const app = document.getElementById("app");
-  // com jogo ao vivo (e ainda não apurado), "Hoje" sobe pro topo do conteúdo
-  const temLive = (Array.isArray(S.dados.live) ? S.dados.live : [])
-    .some((l) => { const j = S.dados.jogos.find((x) => String(x.id) === String(l.id)); return j && !apurado(j); });
+  // com jogo EM ANDAMENTO (começou e não apurado), "Hoje" sobe pro topo — independe
+  // do feed live (cobre o buraco em que dados.live some mas o jogo ainda rola)
+  const agora = Date.now();
+  const temLive = (S.dados.jogos || []).some((j) =>
+    kickData(j) === S.HOJE && agora >= new Date(j.kickoff).getTime() && !apurado(j));
   const secs = temLive
     ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secGrupos(), secMata(), secHistorico()]
     : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secGrupos(), secMata(), secHistorico()];
@@ -310,40 +312,57 @@ const faseLbl = (j) => (j.fase === "grupos" ? "Grupo " + j.grupo : (S.fases[j.fa
 
 /* card de jogo de hoje. liveData != null → destacado, placar em tempo real.
    prevScores/newScores: detecção de gol p/ o flash (comparado ao render anterior). */
-function cardHoje(j, liveData, prevScores, newScores) {
+function cardHoje(j, liveData, prevScores, newScores, opts) {
+  opts = opts || {};
   const c = time(j.casa), f = time(j.fora);
   const fim = apurado(j);
-  const isLive = !!liveData;
+  const emJogo = !!opts.emJogo && !fim;   // começou e não acabou (com ou sem feed live)
+  const stale = !!opts.stale;             // liveData é o último conhecido (feed sumiu)
   let top, score, scoreCls;
-  if (isLive) {
-    const key = `${liveData.casa}-${liveData.fora}`;
-    newScores[j.id] = key;
-    const changed = (j.id in prevScores) && prevScores[j.id] !== key;
+  if (emJogo) {
+    // bola rolando: badge "Ao vivo" mesmo se o feed sumiu — nunca volta pra "Aberto"
+    const minTxt = liveData && liveData.min ? esc(liveData.min) : "em andamento";
     top = `<div class="game-top live">
         <span class="live-tag"><span class="blink"></span> Ao vivo</span>
-        <span class="time">${esc(liveData.min || "ao vivo")} · ${faseLbl(j)}</span>
+        <span class="time">${minTxt} · ${faseLbl(j)}</span>
       </div>`;
-    score = `${liveData.casa}<em>:</em>${liveData.fora}`;
-    scoreCls = changed ? "flash" : "";
+    if (liveData && liveData.casa != null) {
+      const key = `${liveData.casa}-${liveData.fora}`;
+      if (!stale) newScores[j.id] = key;
+      const changed = !stale && (j.id in prevScores) && prevScores[j.id] !== key;
+      score = `${liveData.casa}<em>:</em>${liveData.fora}`;
+      scoreCls = (changed ? "flash " : "") + (stale ? "stale" : "");
+    } else {
+      score = "–"; scoreCls = "tbd"; // começou mas sem placar (feed indisponível)
+    }
+  } else if (fim) {
+    top = `<div class="game-top">
+        <span class="tag">${faseLbl(j)}</span>
+        <span class="status done">Apurado</span>
+        <span class="time">Encerrado</span>
+      </div>`;
+    score = `${j.real.casa}<em>:</em>${j.real.fora}`;
+    scoreCls = "";
   } else {
     top = `<div class="game-top">
         <span class="tag">${faseLbl(j)}</span>
-        ${fim ? '<span class="status done">Apurado</span>' : '<span class="status open">Aberto</span>'}
-        <span class="time">${fim ? "Encerrado" : "Hoje · " + kickHora(j)}</span>
+        <span class="status open">Aberto</span>
+        <span class="time">Hoje · ${kickHora(j)}</span>
       </div>`;
-    score = fim ? `${j.real.casa}<em>:</em>${j.real.fora}` : kickHora(j);
-    scoreCls = fim ? "" : "tbd";
+    score = kickHora(j);
+    scoreCls = "tbd";
   }
-  return `<article class="game${isLive ? " live featured" : ""}"${isLive ? ` data-live="${j.id}"` : ""}>
+  const gols = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
+    ? `<div class="live-gols">${liveData.gols.map((g) => `<span class="lg">⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}</span>`).join("")}</div>`
+    : "";
+  return `<article class="game${emJogo ? " live featured" : ""}"${emJogo ? ` data-live="${j.id}"` : ""}>
       ${top}
       <div class="match big">
         <div class="team home"><span class="tn">${esc(c.nome)}</span>${bandeira(j.casa)}</div>
         <div class="score ${scoreCls}">${score}</div>
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
-      ${isLive && Array.isArray(liveData.gols) && liveData.gols.length
-        ? `<div class="live-gols">${liveData.gols.map((g) => `<span class="lg">⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}</span>`).join("")}</div>`
-        : ""}
+      ${gols}
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
       ${chips(j, fim)}
@@ -375,30 +394,38 @@ function cardProximo(j) {
 }
 
 function secHoje() {
+  const now = Date.now();
   const liveById = {};
   (Array.isArray(S.dados.live) ? S.dados.live : []).forEach((l) => { liveById[l.id] = l; });
-  const liveIds = new Set(Object.keys(liveById).map((k) => String(k)));
-  // jogo apurado NUNCA é "ao vivo", mesmo que ainda conste em dados.live (latência
-  // de limpeza/CDN): o placar final manda. Desacopla o front do timing do script.
-  const isLive = (j) => liveIds.has(String(j.id)) && !apurado(j);
+  // memória do último placar ao vivo conhecido — sobrevive a buracos do feed
+  S._liveLast = S._liveLast || {};
+  Object.values(liveById).forEach((l) => { if (l && l.casa != null) S._liveLast[l.id] = { casa: l.casa, fora: l.fora, min: l.min, gols: l.gols }; });
+
+  // "em jogo" = começou (relógio passou do kickoff) e NÃO apurado — independe do feed
+  const emJogo = (j) => now >= new Date(j.kickoff).getTime() && !apurado(j);
   const byKick = (a, b) => a.kickoff.localeCompare(b.kickoff);
-  // jogos de hoje (todas as fases) ∪ qualquer jogo ao vivo; dedup
+  // jogos de hoje (todas as fases) ∪ qualquer jogo em andamento; dedup
   const seen = new Set();
-  const todayU = S.dados.jogos.filter((j) => (kickData(j) === S.HOJE || isLive(j)) && (seen.has(j.id) ? false : seen.add(j.id)));
-  // grupos na ordem pedida:
-  const liveG = todayU.filter(isLive).sort(byKick);                          // 1) ao vivo
-  const upG = todayU.filter((j) => !isLive(j) && !apurado(j)).sort(byKick);  // 2) próximos de hoje (por horário)
-  const doneG = todayU.filter((j) => !isLive(j) && apurado(j)).sort(byKick); // 4) encerrados de hoje (mais antigo→novo)
-  // 3) primeiro jogo de amanhã (próximo dia com jogo, ainda não apurado)
+  const todayU = S.dados.jogos.filter((j) => (kickData(j) === S.HOJE || emJogo(j)) && (seen.has(j.id) ? false : seen.add(j.id)));
+  // grupos na ordem: em jogo → próximos de hoje → (amanhã) → encerrados de hoje
+  const liveG = todayU.filter(emJogo).sort(byKick);
+  const upG = todayU.filter((j) => !emJogo(j) && !apurado(j)).sort(byKick);
+  const doneG = todayU.filter(apurado).sort(byKick);
   const prox = S.dados.jogos
-    .filter((j) => !apurado(j) && !isLive(j) && kickData(j) > S.HOJE)
+    .filter((j) => !apurado(j) && !emJogo(j) && kickData(j) > S.HOJE)
     .sort(byKick)[0];
   if (!liveG.length && !upG.length && !doneG.length && !prox) return "";
 
   // flash de gol: compara placares ao vivo com o render anterior
   const prevScores = S._liveScores || {};
   const newScores = {};
-  const card = (j) => cardHoje(j, isLive(j) ? liveById[j.id] : null, prevScores, newScores);
+  const card = (j) => {
+    if (!emJogo(j)) return cardHoje(j, null, prevScores, newScores, { emJogo: false });
+    const cur = liveById[j.id], last = S._liveLast[j.id];
+    const live = cur || last || null;            // placar atual, senão o último conhecido
+    const stale = !cur && !!last;                // feed sumiu → mostra último (sem flash)
+    return cardHoje(j, live, prevScores, newScores, { emJogo: true, stale });
+  };
   const cards = [
     ...liveG.map(card),
     ...upG.map(card),
@@ -407,7 +434,7 @@ function secHoje() {
   ].join("");
   S._liveScores = newScores;
 
-  const hasLive = liveIds.size > 0;
+  const hasLive = liveG.length > 0;
   return `<section class="reveal" id="hoje">
     <div class="sec-head">
       <span class="kicker">Rodada de hoje</span>
