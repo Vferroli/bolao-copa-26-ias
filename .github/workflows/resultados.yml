@@ -48,13 +48,18 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           fim=$((SECONDS + 3000))
           while [ $SECONDS -lt $fim ]; do
+            # Sincroniza DURO com origin/main no início de cada ciclo. O script
+            # recomputa todo o estado das APIs + main atual, então descartar o
+            # working tree local é seguro e ELIMINA o conflito de rebase que
+            # corrompia dados.json (marcadores de conflito -> crash no JSON.parse).
+            git fetch -q origin main && git reset -q --hard origin/main
             node scripts/update-resultados.mjs || true
             if [ -n "$(git status --porcelain dados.json)" ]; then
               git add dados.json
               git commit -m "chore: atualiza resultados (auto) [skip ci]"
-              git pull --rebase --autostash origin main || true
-              git push || echo "push falhou (tenta no próximo ciclo)"
-              # (jsDelivr removido: cacheia @main por 12h; o front lê do raw direto.)
+              # sem rebase: se o push for rejeitado (outro run pushou), o reset
+              # do próximo ciclo pega o commit alheio e o script recomputa.
+              git push || echo "push rejeitado (reset --hard no próximo ciclo)"
             fi
             sleep 30
           done

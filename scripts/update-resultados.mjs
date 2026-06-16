@@ -25,6 +25,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { execSync } from "node:child_process";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const DADOS = join(__dir, "..", "dados.json");
@@ -603,7 +604,21 @@ async function main() {
     console.log("Nenhuma chave configurada. Nada a fazer.");
     return;
   }
-  const dados = JSON.parse(await readFile(DADOS, "utf8"));
+  // self-heal: se o dados.json local estiver inválido (ex.: marcadores de
+  // conflito de um rebase), restaura do HEAD em vez de crashar o loop inteiro.
+  let dados;
+  try {
+    dados = JSON.parse(await readFile(DADOS, "utf8"));
+  } catch (e) {
+    console.log(`dados.json local inválido (${e.message}) — restaurando do HEAD`);
+    try {
+      execSync(`git checkout HEAD -- "${DADOS}"`, { stdio: "ignore" });
+      dados = JSON.parse(await readFile(DADOS, "utf8"));
+    } catch (e2) {
+      console.error("ERRO: não consegui restaurar dados.json:", e2.message);
+      return;
+    }
+  }
   const resolve = buildResolver(dados.times);
   const fases = {};
   dados.fases.forEach((f) => (fases[f.id] = f));
