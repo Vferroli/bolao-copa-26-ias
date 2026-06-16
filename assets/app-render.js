@@ -352,8 +352,14 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
     score = kickHora(j);
     scoreCls = "tbd";
   }
-  const gols = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
-    ? `<div class="live-gols">${liveData.gols.map((g) => `<span class="lg">⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}</span>`).join("")}</div>`
+  // goleadores: ao vivo (autor + minuto) ou encerrado (lista de real.marcadores, só nomes)
+  const golItens = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
+    ? liveData.gols.map((g) => `⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}`)
+    : fim && Array.isArray(j.real.marcadores) && j.real.marcadores.length
+    ? j.real.marcadores.map((n) => `⚽ ${esc(n)}`)
+    : [];
+  const gols = golItens.length
+    ? `<div class="live-gols">${golItens.map((g) => `<span class="lg">${g}</span>`).join("")}</div>`
     : "";
   return `<article class="game${emJogo ? " live featured" : ""}"${emJogo ? ` data-live="${j.id}"` : ""}>
       ${top}
@@ -613,6 +619,9 @@ function secHistorico() {
       return `<span class="ppill" style="--cor:${ia.cor}">${kit(ia, "sm")}<b>${placar(p)}</b>
         <span class="pp ${pts ? "" : "zero"}">+${fmt(pts || 0)}</span></span>`;
     }).join("");
+    const gols = Array.isArray(j.real.marcadores) && j.real.marcadores.length
+      ? `<div class="hgols">${j.real.marcadores.map((n) => `<span>⚽ ${esc(n)}</span>`).join("")}</div>`
+      : "";
     return `<div class="hrow">
       <div class="hmatch">
         <div class="t home"><span>${esc(c.nome)}</span>${bandeira(j.casa)}</div>
@@ -620,6 +629,7 @@ function secHistorico() {
         <div class="t away">${bandeira(j.fora)}<span>${esc(f.nome)}</span></div>
       </div>
       <div class="hpts">${pills}</div>
+      ${gols}
     </div>`;
   }).join("");
   return `<section class="reveal" id="historico">

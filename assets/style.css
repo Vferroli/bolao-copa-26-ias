@@ -1108,6 +1108,15 @@ details.day[open] .day-chev { transform: rotate(180deg); }
   border-radius: 9px; padding: 1px 8px;
 }
 .hrow .hpts { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 10px; border-top: 1px solid var(--line); }
+.hrow .hgols {
+  grid-column: 1 / -1;
+  display: flex; flex-wrap: wrap; gap: 4px 8px;
+  padding-top: 9px; margin-top: 1px; border-top: 1px dashed var(--line);
+}
+.hrow .hgols span {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-family: var(--font-mono); font-size: 0.62rem; color: var(--dim);
+}
 .ppill {
   display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--font-mono); font-size: 0.64rem;
