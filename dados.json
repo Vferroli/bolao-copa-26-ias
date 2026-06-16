@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T20:54:27.211Z",
+  "atualizado_em": "2026-06-16T21:00:43.729Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2983,7 +2983,7 @@
     {
       "id": 49,
       "casa": 2,
-      "fora": 0,
+      "fora": 1,
       "min": "90'",
       "gols": [
         {
@@ -2993,6 +2993,10 @@
         {
           "nome": "B. Barcola",
           "min": 82
+        },
+        {
+          "nome": "I. Mbaye",
+          "min": 90
         }
       ],
       "subs": [
@@ -3012,13 +3016,13 @@
           "min": 80
         },
         {
-          "entrou": "B. Dieng",
-          "saiu": "N. Jackson",
+          "entrou": "C. Ndiaye",
+          "saiu": "P. Gueye",
           "min": 83
         },
         {
-          "entrou": "C. Ndiaye",
-          "saiu": "P. Gueye",
+          "entrou": "B. Dieng",
+          "saiu": "N. Jackson",
           "min": 83
         },
         {
