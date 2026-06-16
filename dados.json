@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T21:10:59.089Z",
+  "atualizado_em": "2026-06-16T21:45:37.181Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2523,6 +2523,289 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Erling Haaland"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-2",
+          "fora": "4-3-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 12,
+              "nome": "Jalal Hassan",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Merchas Doski",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Akam Hashem",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Zaid Tahseen",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Hussein Ali",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Ali Jasim",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Zaid Ismail",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Amir Al-Ammari",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Ibrahim Bayesh",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Ali Al-Hamadi",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Aymen Hussein",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Ahmed Basil",
+              "pos": "G"
+            },
+            {
+              "num": 1,
+              "nome": "Fahad Talib",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Rebin Sulaka",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Frans Putros",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ahmed Hasan Maknazi",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Mustafa Saadoon",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Munaf Younus",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Youssef Amyn",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Marko Farji",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ahmed Qasem",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Zidane Iqbal",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Kevin Yakob",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Aimar Sher",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Mohanad Ali",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Ali Yousif",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Ørjan Nyland",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "David Møller Wolfe",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Torbjørn Heggem",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Kristoffer Ajer",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Julian Ryerson",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Fredrik Aursnes",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Sander Berge",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Martin Ødegaard",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Antonio Nusa",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Erling Haaland",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Alexander Sørloth",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Sander Tangvik",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Egil Selvik",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Henrik Sælebakke Falchener",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Leo Østigård",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Fredrik André Bjørkan",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Sondre Langås",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Andreas Schjelderup",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Thelo Aasgaard",
+              "pos": "M"
+            },
+            {
+              "num": 2,
+              "nome": "Morten Thorsby",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Marcus Pedersen",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Patrick Berg",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Oscar Bobb",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Kristian Thorstvedt",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Jørgen Strand Larsen",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Jens Petter Hauge",
+              "pos": "M"
+            }
+          ]
         }
       }
     },
