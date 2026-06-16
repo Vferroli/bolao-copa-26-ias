@@ -404,25 +404,14 @@ async function tickLive(dados, resolve, state, afFetch, hlFetch) {
    marcadores/gols passou a ser a Highlightly, que já provê live+escalações.
    Extrai os autores de gol; gol contra e pênalti perdido NÃO entram. Tolerante
    ao shape de player/time; loga 1 evento cru se não conseguir extrair (ajuste). */
-const evMin = (t) => {
-  if (t == null) return null;
-  if (typeof t === "number") return t;
-  const s = typeof t === "object" ? (t.elapsed ?? t.minute ?? t.value ?? "") : t;
-  const m = String(s).match(/\d+/);
-  return m ? parseInt(m[0], 10) : null;
-};
-const evPlayer = (e) => {
-  const p = e.player ?? e.scorer ?? e.mainPlayer ?? e.playerName ?? e.name;
-  if (!p) return "";
-  return (typeof p === "string" ? p : (p.name || p.fullName || p.displayName || "")).trim();
-};
+/* eventos da Highlightly = array de { team:{name}, time:"7"|"90+1", type:"Goal"|
+   "Yellow Card"|"Substitution"|..., player:"Nome" (autor), assist, ... }. Conta
+   só type "Goal"; "Own Goal" e "Missed Penalty" não entram (este nem casa "goal"). */
+const evMin = (t) => { const m = String(t ?? "").match(/\d+/); return m ? parseInt(m[0], 10) : null; };
+const evPlayer = (e) => String(e.player ?? "").trim();
 const evIsGoal = (e) => {
-  const t = String(e.type ?? e.eventType ?? "").toLowerCase();
-  if (!t.includes("goal")) return false;                 // só gols
-  if (t.includes("own")) return false;                   // gol contra não conta
-  const d = String(e.detail ?? e.variation ?? e.subType ?? "").toLowerCase();
-  if (d.includes("own") || d.includes("missed")) return false; // contra/pênalti perdido
-  return true;
+  const t = String(e.type ?? "").toLowerCase();
+  return t.includes("goal") && !t.includes("own"); // "Goal" sim; "Own Goal" não
 };
 
 async function hlGoals(mid, hlFetch) {
@@ -433,7 +422,7 @@ async function hlGoals(mid, hlFetch) {
   const list = Array.isArray(data) ? data : (data.data || data.events || []);
   const goals = list
     .filter(evIsGoal)
-    .map((e) => ({ nome: evPlayer(e), min: evMin(e.time ?? e.minute) }))
+    .map((e) => ({ nome: evPlayer(e), min: evMin(e.time) }))
     .filter((g) => g.nome);
   if (!goals.length && list.length) // shape inesperado → 1 evento cru pro log corrigir
     console.log(`gols HL DEBUG ${mid}: ${JSON.stringify(list[0]).slice(0, 320)}`);
