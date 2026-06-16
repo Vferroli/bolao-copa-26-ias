@@ -39,6 +39,8 @@ jobs:
           HIGHLIGHTLY_KEY_3: ${{ secrets.HIGHLIGHTLY_KEY_3 }}
           HIGHLIGHTLY_KEY_4: ${{ secrets.HIGHLIGHTLY_KEY_4 }}
           HIGHLIGHTLY_KEY_5: ${{ secrets.HIGHLIGHTLY_KEY_5 }}
+          HIGHLIGHTLY_KEY_6: ${{ secrets.HIGHLIGHTLY_KEY_6 }}
+          HIGHLIGHTLY_KEY_7: ${{ secrets.HIGHLIGHTLY_KEY_7 }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
