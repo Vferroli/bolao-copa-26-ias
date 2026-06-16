@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T23:22:16.508Z",
+  "atualizado_em": "2026-06-16T23:23:19.548Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3273,7 +3273,7 @@
       "id": 50,
       "casa": 1,
       "fora": 2,
-      "min": "59'",
+      "min": "60'",
       "gols": [
         {
           "nome": "E. Haaland",
@@ -3289,6 +3289,20 @@
           "nome": "E. Haaland",
           "min": 43,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "Z. Iqbal",
+          "saiu": "Z. Ismaeel",
+          "min": 59,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Farji",
+          "saiu": "A. Al Hamadi",
+          "min": 59,
+          "lado": "casa"
         }
       ]
     }
