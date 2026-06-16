@@ -45,8 +45,9 @@ const HL_ALL = [
   process.env.HIGHLIGHTLY_KEY_4,
   process.env.HIGHLIGHTLY_KEY_5,
   process.env.HIGHLIGHTLY_KEY_6,
+  process.env.HIGHLIGHTLY_KEY_7,
 ].filter(Boolean);
-// KEY → escalações + marcadores (baixa freq, idempotente); KEY_2.._6 → live
+// KEY → escalações + marcadores (baixa freq, idempotente); KEY_2.._7 → live
 // (placar + gols + substituições). Se faltar chave dedicada, cai no pool inteiro.
 const HL_LINEUP_KEYS = [process.env.HIGHLIGHTLY_KEY].filter(Boolean);
 const HL_LIVE_KEYS = [
@@ -55,6 +56,7 @@ const HL_LIVE_KEYS = [
   process.env.HIGHLIGHTLY_KEY_4,
   process.env.HIGHLIGHTLY_KEY_5,
   process.env.HIGHLIGHTLY_KEY_6,
+  process.env.HIGHLIGHTLY_KEY_7,
 ].filter(Boolean);
 const hlLineupKeys = HL_LINEUP_KEYS.length ? HL_LINEUP_KEYS : HL_ALL;
 const hlLiveKeys = HL_LIVE_KEYS.length ? HL_LIVE_KEYS : HL_ALL;
