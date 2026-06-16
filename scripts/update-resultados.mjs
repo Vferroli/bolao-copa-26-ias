@@ -264,43 +264,38 @@ async function liveApiFootball(dados, resolve, afFetch) {
     if (casa == null || fora == null) continue;
     const sh = f.fixture?.status?.short, el = f.fixture?.status?.elapsed;
     const min = sh === "HT" ? "Intervalo" : el != null ? `${el}'` : "ao vivo";
-    arr.push({ id: j.id, casa, fora, min, _fxId: f.fixture?.id }); // _fxId p/ buscar os gols
+    arr.push({ id: j.id, casa, fora, min }); // gols enriquecidos via Highlightly (enrichGols)
   }
   console.log(`live AF: ${arr.length} jogo(s)`);
   return arr;
 }
 
-/* ---------- gols ao vivo (autor + minuto) ----------
+/* ---------- gols ao vivo (autor + minuto, via Highlightly) ----------
    Enriquece cada item do live com `gols: [{nome, min}]`. Só chama a API de eventos
-   quando o placar do jogo MUDOU vs o ciclo anterior (gol) — economiza cota. Usa o
-   fixture id da fonte AF; em ciclo Highlightly (sem _fxId) reaproveita o que tem.
-   Estado por-run em state.liveGols = { [id]: { total, gols } }. */
-async function enrichGols(arr, state, afFetch) {
+   quando o placar do jogo MUDOU vs o ciclo anterior (gol) — economiza cota. Mapeia
+   o jogo -> matchId da Highlightly pela lista por data (cacheada), valendo tanto em
+   ciclo AF quanto HL. Estado por-run em state.liveGols = { [id]: { total, gols } }. */
+async function enrichGols(arr, dados, resolve, state, hlFetch) {
   if (!Array.isArray(arr)) return;
   state.liveGols = state.liveGols || {};
   for (const e of arr) {
     const total = (e.casa || 0) + (e.fora || 0);
     const prev = state.liveGols[e.id];
-    if (total === 0) { delete e._fxId; continue; }                 // 0x0: sem gol
+    if (total === 0) continue;                                      // 0x0: sem gol
     if (prev && prev.total === total && Array.isArray(prev.gols)) { // sem mudança → reusa
-      e.gols = prev.gols; delete e._fxId; continue;
+      e.gols = prev.gols; continue;
     }
-    if (e._fxId == null) {                                          // fonte sem fixture id (HL)
-      if (prev && prev.gols) e.gols = prev.gols;                    // mantém até um ciclo AF
-      continue;
-    }
-    const fx = e._fxId; delete e._fxId;
-    const r = await afFetch(`https://v3.football.api-sports.io/fixtures/events?fixture=${fx}`);
-    if (!r) { console.log(`gols: eventos ${fx} sem cota`); if (prev?.gols) e.gols = prev.gols; continue; }
-    if (!r.ok) { console.log(`gols: eventos ${fx} http ${r.status}`); if (prev?.gols) e.gols = prev.gols; continue; }
-    const data = await r.json();
-    const gols = (data.response || [])
-      .filter((x) => x.type === "Goal" && x.detail !== "Own Goal" && x.detail !== "Missed Penalty")
-      .map((x) => ({ nome: x.player?.name || "—", min: x.time?.elapsed != null ? x.time.elapsed : null }))
-      .filter((g) => g.nome && g.nome !== "—");
-    e.gols = gols;
-    state.liveGols[e.id] = { total, gols };
-    console.log(`gols ${e.id}: ${gols.map((g) => g.nome + (g.min != null ? " " + g.min + "'" : "")).join(", ") || "(?)"}`);
+    const j = dados.jogos.find((x) => x.id === e.id);
+    if (!j) { if (prev?.gols) e.gols = prev.gols; continue; }
+    const list = await hlDateList(j.kickoff.slice(0, 10), hlFetch, state);
+    if (!list) { if (prev?.gols) e.gols = prev.gols; continue; }    // sem cota → mantém último
+    const mid = hlMatchId(j, list, resolve);
+    if (mid == null) { if (prev?.gols) e.gols = prev.gols; continue; }
+    const { ok, goals } = await hlGoals(mid, hlFetch);
+    if (!ok) { if (prev?.gols) e.gols = prev.gols; continue; }      // sem cota/erro → mantém
+    e.gols = goals;
+    state.liveGols[e.id] = { total, gols: goals };
+    console.log(`gols ${e.id}: ${goals.map((g) => g.nome + (g.min != null ? " " + g.min + "'" : "")).join(", ") || "(?)"}`);
   }
   // limpa estado de jogos que não estão mais ao vivo
   const ids = new Set(arr.map((e) => String(e.id)));
@@ -398,55 +393,87 @@ async function tickLive(dados, resolve, state, afFetch, hlFetch) {
     ? await liveHighlightly(dados, resolve, hlFetch, state)
     : await liveApiFootball(dados, resolve, afFetch);
   if (arr === undefined) return undefined; // falhou -> mantém atual
-  await enrichGols(arr, state, afFetch); // autor dos gols (só quando o placar muda)
+  await enrichGols(arr, dados, resolve, state, hlFetch); // autor dos gols (Highlightly, só quando o placar muda)
   state.lastLive = now;
   console.log(`live: fonte=${useHL ? "highlightly" : "api-football"} intervalo=${intervalo}s`);
   return arr;
 }
 
-/* ---------- artilheiros (API-Football, rotação) ----------
+/* ---------- gols via Highlightly (/events/{matchId}) ----------
+   A API-Football não cobre os eventos da Copa 2026 (plano) → a fonte dos
+   marcadores/gols passou a ser a Highlightly, que já provê live+escalações.
+   Extrai os autores de gol; gol contra e pênalti perdido NÃO entram. Tolerante
+   ao shape de player/time; loga 1 evento cru se não conseguir extrair (ajuste). */
+const evMin = (t) => {
+  if (t == null) return null;
+  if (typeof t === "number") return t;
+  const s = typeof t === "object" ? (t.elapsed ?? t.minute ?? t.value ?? "") : t;
+  const m = String(s).match(/\d+/);
+  return m ? parseInt(m[0], 10) : null;
+};
+const evPlayer = (e) => {
+  const p = e.player ?? e.scorer ?? e.mainPlayer ?? e.playerName ?? e.name;
+  if (!p) return "";
+  return (typeof p === "string" ? p : (p.name || p.fullName || p.displayName || "")).trim();
+};
+const evIsGoal = (e) => {
+  const t = String(e.type ?? e.eventType ?? "").toLowerCase();
+  if (!t.includes("goal")) return false;                 // só gols
+  if (t.includes("own")) return false;                   // gol contra não conta
+  const d = String(e.detail ?? e.variation ?? e.subType ?? "").toLowerCase();
+  if (d.includes("own") || d.includes("missed")) return false; // contra/pênalti perdido
+  return true;
+};
+
+async function hlGoals(mid, hlFetch) {
+  const r = await hlFetch(`${HL_BASE}/events/${mid}`);
+  if (!r) return { ok: false, goals: [] };               // sem cota
+  if (!r.ok) { console.log(`gols HL: events ${mid} http ${r.status}`); return { ok: false, goals: [] }; }
+  const data = await r.json();
+  const list = Array.isArray(data) ? data : (data.data || data.events || []);
+  const goals = list
+    .filter(evIsGoal)
+    .map((e) => ({ nome: evPlayer(e), min: evMin(e.time ?? e.minute) }))
+    .filter((g) => g.nome);
+  if (!goals.length && list.length) // shape inesperado → 1 evento cru pro log corrigir
+    console.log(`gols HL DEBUG ${mid}: ${JSON.stringify(list[0]).slice(0, 320)}`);
+  return { ok: true, goals };
+}
+
+// par de times do MEU jogo -> matchId da Highlightly (na lista já cacheada por data)
+function hlMatchId(j, list, resolve) {
+  for (const m of list) {
+    const h = resolve(m.homeTeam?.name), a = resolve(m.awayTeam?.name);
+    if ((h === j.casa && a === j.fora) || (h === j.fora && a === j.casa)) return m.id;
+  }
+  return null;
+}
+
+/* ---------- artilheiros (Highlightly, rotação) ----------
    Grava em jogos[].real.marcadores a lista de quem fez gol (p/ bônus de palpite
-   de marcador). Gol contra e pênalti perdido NÃO entram. Idempotente. */
-async function marcadores(dados, resolve, afFetch) {
-  if (!AF_KEYS.length) return false;
+   de marcador). Idempotente: só busca jogo encerrado sem a lista. */
+async function marcadores(dados, resolve, hlFetch, state) {
+  if (!hlLineupKeys.length) return false;
   const pend = dados.jogos.filter((j) => apurado(j) && !Array.isArray(j.real.marcadores));
   if (!pend.length) return false;
 
-  // 1) mapeia par de times -> fixture.id (por data)
-  const dates = [...new Set(pend.map((j) => j.kickoff.slice(0, 10)))].sort();
-  const fxId = {};
-  for (const date of dates) {
-    const r = await afFetch(`https://v3.football.api-sports.io/fixtures?date=${date}&league=1&season=2026`);
-    if (!r) { console.log(`marcadores: fixtures ${date} sem cota`); continue; }
-    if (!r.ok) { console.log(`marcadores: fixtures ${date} http ${r.status}`); continue; }
-    const data = await r.json();
-    for (const fx of data.response || []) {
-      const hId = resolve(fx.teams?.home?.name), aId = resolve(fx.teams?.away?.name);
-      const id = fx.fixture?.id;
-      if (hId && aId && id != null) { fxId[`${hId}|${aId}`] = id; fxId[`${aId}|${hId}`] = id; }
-    }
-  }
-
-  // 2) eventos de gol por jogo encerrado
   let mudou = false;
   for (const j of pend) {
-    const id = fxId[`${j.casa}|${j.fora}`];
-    if (id == null) { console.log(`marcadores: sem fixture p/ ${j.casa} x ${j.fora}`); continue; }
-    const r = await afFetch(`https://v3.football.api-sports.io/fixtures/events?fixture=${id}`);
-    if (!r) { console.log(`marcadores: eventos ${id} sem cota`); continue; }
-    if (!r.ok) { console.log(`marcadores: eventos ${id} http ${r.status}`); continue; }
-    const data = await r.json();
-    const ev = data.response || [];
-    const nomes = ev
-      .filter((e) => e.type === "Goal" && e.detail !== "Own Goal" && e.detail !== "Missed Penalty")
-      .map((e) => e.player?.name)
-      .filter(Boolean);
-    const totalGols = j.real.casa + j.real.fora;
-    // só grava se a API já tem eventos do jogo (evita lista vazia prematura)
-    if (totalGols === 0 || ev.length) {
-      j.real.marcadores = nomes;
-      console.log(`marcadores ${j.casa} x ${j.fora}: ${nomes.join(", ") || "(nenhum)"}`);
+    if ((j.real.casa + j.real.fora) === 0) { // 0x0: lista vazia, sem chamada de API
+      j.real.marcadores = []; mudou = true; continue;
+    }
+    const list = await hlDateList(j.kickoff.slice(0, 10), hlFetch, state);
+    if (!list) break; // sem cota -> tenta no próximo ciclo
+    const mid = hlMatchId(j, list, resolve);
+    if (mid == null) { console.log(`marcadores: sem matchId p/ ${j.casa} x ${j.fora}`); continue; }
+    const { ok, goals } = await hlGoals(mid, hlFetch);
+    if (!ok) break; // sem cota/erro -> próximo ciclo
+    if (goals.length) {
+      j.real.marcadores = goals.map((g) => g.nome);
+      console.log(`marcadores ${j.casa} x ${j.fora}: ${j.real.marcadores.join(", ")}`);
       mudou = true;
+    } else {
+      console.log(`marcadores ${j.casa} x ${j.fora}: eventos ainda indisponíveis`);
     }
   }
   return mudou;
@@ -493,11 +520,7 @@ async function escalacoes(dados, resolve, hlFetch, state) {
     state.lineupTry[j.id] = agora;
     const list = await hlDateList(j.kickoff.slice(0, 10), hlFetch, state);
     if (!list) break; // sem cota -> tenta no próximo ciclo
-    let mid = null;
-    for (const m of list) {
-      const h = resolve(m.homeTeam?.name), a = resolve(m.awayTeam?.name);
-      if ((h === j.casa && a === j.fora) || (h === j.fora && a === j.casa)) { mid = m.id; break; }
-    }
+    const mid = hlMatchId(j, list, resolve);
     if (mid == null) { console.log(`escalação: sem matchId p/ ${j.casa} x ${j.fora}`); continue; }
 
     const r = await hlFetch(`${HL_BASE}/lineups/${mid}`);
@@ -580,7 +603,7 @@ async function main() {
       }
     }
 
-    if (await marcadores(dados, resolve, afFetch)) mudou = true;
+    if (await marcadores(dados, resolve, hlLineupFetch, state)) mudou = true;
   } else {
     console.log("Sem jogos na janela p/ finais.");
   }
