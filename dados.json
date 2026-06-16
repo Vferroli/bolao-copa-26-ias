@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T03:09:43.090Z",
+  "atualizado_em": "2026-06-16T18:30:17.765Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -346,7 +346,11 @@
       "real": {
         "casa": 2,
         "fora": 0,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "J. Quinones",
+          "R. Jimenez"
+        ]
       },
       "palpites": {}
     },
@@ -360,7 +364,13 @@
       "real": {
         "casa": 2,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "L. Krejci",
+          "Hwang In-Beom",
+          "T. Soucek",
+          "Oh Hyeon-Gyu"
+        ]
       },
       "palpites": {}
     },
@@ -430,7 +440,11 @@
       "real": {
         "casa": 1,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "J. Lukic",
+          "C. Larin"
+        ]
       },
       "palpites": {}
     },
@@ -444,7 +458,10 @@
       "real": {
         "casa": 1,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "B. Khoukhi"
+        ]
       },
       "palpites": {}
     },
@@ -514,7 +531,11 @@
       "real": {
         "casa": 1,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "I. Saibari",
+          "Vinicius Junior"
+        ]
       },
       "palpites": {
         "claude": {
@@ -549,7 +570,10 @@
       "real": {
         "casa": 0,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "J. McGinn"
+        ]
       },
       "palpites": {
         "claude": {
@@ -640,7 +664,14 @@
       "real": {
         "casa": 4,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "F. Balogun",
+          "F. Balogun",
+          "F. Balogun",
+          "Mauricio",
+          "G. Reyna"
+        ]
       },
       "palpites": {}
     },
@@ -654,7 +685,11 @@
       "real": {
         "casa": 2,
         "fora": 0,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "N. Irankunda",
+          "C. Metcalfe"
+        ]
       },
       "palpites": {
         "claude": {
@@ -745,7 +780,16 @@
       "real": {
         "casa": 7,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "F. Nmecha",
+          "L. Comenencia",
+          "N. Schlotterbeck",
+          "J. Musiala",
+          "N. Brown",
+          "D. Undav",
+          "K. Havertz"
+        ]
       },
       "palpites": {
         "claude": {
@@ -780,7 +824,10 @@
       "real": {
         "casa": 1,
         "fora": 0,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "A. Diallo"
+        ]
       },
       "palpites": {
         "claude": {
@@ -871,7 +918,13 @@
       "real": {
         "casa": 2,
         "fora": 2,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "V. van Dijk",
+          "K. Nakamura",
+          "C. Summerville",
+          "D. Kamada"
+        ]
       },
       "palpites": {
         "claude": {
@@ -906,7 +959,15 @@
       "real": {
         "casa": 5,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "Y. Ayari",
+          "A. Isak",
+          "O. Rekik",
+          "V. Gyokeres",
+          "M. Svanberg",
+          "Y. Ayari"
+        ]
       },
       "palpites": {
         "claude": {
@@ -997,7 +1058,10 @@
       "real": {
         "casa": 1,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "E. Ashour"
+        ]
       },
       "palpites": {
         "claude": {
@@ -1314,7 +1378,13 @@
       "real": {
         "casa": 2,
         "fora": 2,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "E. Just",
+          "R. Rezaeian",
+          "E. Just",
+          "M. Mohebi"
+        ]
       },
       "palpites": {
         "claude": {
@@ -1687,7 +1757,8 @@
       "real": {
         "casa": 0,
         "fora": 0,
-        "avancou": null
+        "avancou": null,
+        "marcadores": []
       },
       "palpites": {
         "claude": {
@@ -1726,7 +1797,11 @@
       "real": {
         "casa": 1,
         "fora": 1,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "A. Al Amri",
+          "M. Araujo"
+        ]
       },
       "palpites": {
         "claude": {
@@ -2120,6 +2195,289 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Kylian Mbappé"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-3-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "Mike Maignan",
+              "pos": "G"
+            },
+            {
+              "num": 19,
+              "nome": "Theo Hernández",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Dayot Upamecano",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "William Saliba",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Jules Koundé",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Adrien Rabiot",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Aurélien Tchouaméni",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Désiré Doué",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Ousmane Dembélé",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Michael Olise",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Kylian Mbappé",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Brice Samba",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Robin Risser",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Maxence Lacroix",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Lucas Hernández",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Lucas Digne",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ibrahima Konaté",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Malo Gusto",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Manu Koné",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "N'Golo Kanté",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Rayan Cherki",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Warren Zaïre-Emery",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Maghnes Akliouche",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Marcus Thuram",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Jean-Philippe Mateta",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Bradley Barcola",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "Edouard Mendy",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "El Hadji Malick Diouf",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Moussa Niakhaté",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Kalidou Koulibaly",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Krépin Diatta",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Pape Gueye",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Idrissa Gana Gueye",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Lamine Camara",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Sadio Mané",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Nicolas Jackson",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Ismaïla Sarr",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Yehvann Diouf",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Mory Diaw",
+              "pos": "G"
+            },
+            {
+              "num": 14,
+              "nome": "Ismail Jakobs",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Antoine Mendy",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Mamadou Sarr",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Abdoulaye Seck",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Pape Matar Sarr",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Pathé Ismaël Ciss",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Iliman Ndiaye",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Habib Diarra",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Bara Sapoko Ndiaye",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Cherif Ndiaye",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Assane Diao",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Ibrahim Mbaye",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Ahmadou Bamba Dieng",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
