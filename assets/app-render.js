@@ -800,13 +800,13 @@ function favBadgeHtml() {
   if (!id) {
     return `<button class="vote-fav-badge is-empty" type="button" id="fav-badge" aria-label="Escolher IA favorita pro título">
       <span class="kit" style="--cor:var(--faint)" aria-hidden="true">★</span>
-      <span><span class="vote-fav-lbl">Sua torcida</span><br><span class="vote-fav-name">Escolher IA</span></span>
+      <span class="vote-fav-txt"><span class="vote-fav-lbl">Sua torcida</span><span class="vote-fav-name">Escolher IA</span></span>
     </button>`;
   }
   const ia = S.ia[id];
   return `<button class="vote-fav-badge" type="button" id="fav-badge" style="--cor:${ia.cor}" aria-label="Você torce: ${esc(ia.nome)}. Toque para trocar.">
     ${kit(ia)}
-    <span><span class="vote-fav-lbl">Você torce</span><br><span class="vote-fav-name">${esc(ia.nome)}</span></span>
+    <span class="vote-fav-txt"><span class="vote-fav-lbl">Você torce</span><span class="vote-fav-name">${esc(ia.nome)}</span></span>
     <span class="vote-fav-edit">trocar</span>
   </button>`;
 }

@@ -367,8 +367,10 @@
   transition: filter 0.15s, box-shadow 0.2s;
 }
 .vote-fav-badge:hover { filter: brightness(1.1); box-shadow: 0 0 26px -6px color-mix(in oklab, var(--cor) 80%, transparent); }
-.vote-fav-badge .kit { width: 28px; height: 28px; border-radius: 9px; }
+.vote-fav-badge .kit { width: 28px; height: 28px; border-radius: 9px; flex: none; }
 .vote-fav-badge .kit svg { width: 14px; height: 14px; }
+/* bloco de texto em coluna (substitui o <br> — sem linha-fantasma ao esconder o rótulo) */
+.vote-fav-badge .vote-fav-txt { display: flex; flex-direction: column; line-height: 1.12; min-width: 0; }
 .vote-fav-badge .vote-fav-lbl {
   font-family: var(--font-mono);
   font-size: 0.54rem;
@@ -586,8 +588,8 @@
   .fav-slot .vote-fav-badge { padding: 5px 11px 5px 6px; gap: 7px; }
 }
 @media (max-width: 430px) {
-  .fav-slot .vote-fav-name { display: none; }
-  .fav-slot .vote-fav-badge { padding: 5px; }
+  .fav-slot .vote-fav-txt { display: none; } /* badge vira só o ícone, centrado */
+  .fav-slot .vote-fav-badge { padding: 5px; gap: 0; }
 }
 
 /* nota "toque pra trocar" no rodapé do voto */
