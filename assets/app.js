@@ -226,8 +226,9 @@ async function carregar() {
   S._stamp = S.dados.atualizado_em || "";
   loadVoteLocal();   // identidade + meus votos (localStorage) antes do 1º render
   render();
-  initVotesRemote(); // busca tallies do Supabase e atualiza a UI (async, não bloqueia)
-  iniciarPoll();
+  initVotesRemote();   // busca tallies do Supabase e atualiza a UI (async, não bloqueia)
+  initLiveRealtime();  // push do live via Supabase Realtime (substitui o atraso do raw)
+  iniciarPoll();       // fallback durável: re-lê o raw (estado completo) periodicamente
 }
 
 function indexar() {
@@ -260,6 +261,7 @@ function iniciarPoll() {
         const novo = await fetchDados();
         if ((novo.atualizado_em || "") !== S._stamp) {
           S._stamp = novo.atualizado_em || "";
+          if (Array.isArray(S._rtLive)) novo.live = S._rtLive; // realtime manda no live; raw traz o resto
           S.dados = novo;
           S.TZ = novo.fuso || S.TZ;
           S.HOJE = novo.atualizado || S.HOJE;
@@ -359,4 +361,37 @@ async function refreshTallies() {
     S.vote.tallies = await sbFetchTallies();
     if (typeof refreshAllVotes === "function") refreshAllVotes();
   } catch (_) { /* offline / cota: mantém o que tem, UI degrada graciosa */ }
+}
+
+/* ============================================================
+   AO VIVO em tempo real (Supabase Realtime). O backend espelha o live[]
+   na tabela live_state; aqui assinamos os UPDATEs e aplicamos na hora —
+   sem o cache de ~5min do raw, sem depender do poll. O dados.json (raw)
+   segue como fallback durável p/ o boot e p/ o resto do estado.
+   ============================================================ */
+let sbClient = null;
+function applyLive(payload) {
+  if (!Array.isArray(payload) || !S.dados) return;
+  S._rtLive = payload;        // verdade do live: o poll do raw NÃO sobrescreve isto
+  S.dados.live = payload;
+  render();
+}
+async function initLiveRealtime() {
+  // 1) carga inicial fresca do live (não espera um evento p/ já pintar atualizado)
+  try {
+    const r = await fetch(`${SB_REST}/live_state?id=eq.1&select=payload`, { headers: sbHeaders(), cache: "no-store" });
+    if (r.ok) { const rows = await r.json(); if (rows[0] && Array.isArray(rows[0].payload)) applyLive(rows[0].payload); }
+  } catch (_) { /* sem rede/cota → mantém o live vindo do raw */ }
+  // 2) push: assina mudanças na linha (websocket; reconecta sozinho)
+  if (!window.supabase || !window.supabase.createClient) return; // SDK não carregou → fica no fallback (poll)
+  try {
+    sbClient = sbClient || window.supabase.createClient(SB_URL, SB_ANON);
+    sbClient
+      .channel("live_state")
+      .on("postgres_changes", { event: "*", schema: "public", table: "live_state" }, (msg) => {
+        const p = msg && msg.new && msg.new.payload;
+        if (Array.isArray(p)) applyLive(p);
+      })
+      .subscribe();
+  } catch (_) { /* sem realtime → o poll cobre */ }
 }
