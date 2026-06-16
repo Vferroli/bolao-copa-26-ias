@@ -25,9 +25,10 @@ jobs:
         with:
           node-version: "20"
 
-      # Repo público = Actions grátis. Cada run faz auto-poll por ~50min (a cada 55s)
-      # -> ao vivo com granularidade ~1min. Commits levam [skip ci] (não deploya;
-      # site lê dados via raw/CDN). O script só chama a API quando há jogo na janela.
+      # Repo público = Actions grátis. Cada run faz auto-poll por ~50min (a cada 30s)
+      # -> ao vivo com granularidade ~30s (7 chaves Highlightly dão orçamento). O live
+      # vai pro Supabase (push Realtime, sem cache) E pro dados.json (commit [skip ci],
+      # fallback durável). O script só chama a API quando há jogo na janela.
       - name: Auto-poll de placares (~50 min)
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
@@ -41,6 +42,7 @@ jobs:
           HIGHLIGHTLY_KEY_5: ${{ secrets.HIGHLIGHTLY_KEY_5 }}
           HIGHLIGHTLY_KEY_6: ${{ secrets.HIGHLIGHTLY_KEY_6 }}
           HIGHLIGHTLY_KEY_7: ${{ secrets.HIGHLIGHTLY_KEY_7 }}
+          SUPABASE_SERVICE_KEY_BOLAO: ${{ secrets.SUPABASE_SERVICE_KEY_BOLAO }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -54,7 +56,7 @@ jobs:
               git push || echo "push falhou (tenta no próximo ciclo)"
               # (jsDelivr removido: cacheia @main por 12h; o front lê do raw direto.)
             fi
-            sleep 55
+            sleep 30
           done
 
       # Auto-corrente: re-dispara o próprio workflow para rodar de forma contínua

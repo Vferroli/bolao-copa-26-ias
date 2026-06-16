@@ -64,6 +64,28 @@ const hlLiveKeys = HL_LIVE_KEYS.length ? HL_LIVE_KEYS : HL_ALL;
 const HL_BASE = "https://soccer.highlightly.net";
 const WC_LEAGUE_HL = 1635; // FIFA World Cup 2026 (Highlightly)
 
+// Supabase: espelha o live[] numa linha (id=1) p/ entrega via Realtime ao front
+// (push, sem cache do raw). service_role escreve; anon só lê. Degrada sem a key.
+const SB_URL = "https://lnwjafoycccjapxmyumt.supabase.co";
+const SB_SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY_BOLAO || "";
+async function pushLiveSupabase(live) {
+  if (!SB_SERVICE_KEY) return;
+  try {
+    const r = await fetch(`${SB_URL}/rest/v1/live_state?id=eq.1`, {
+      method: "PATCH",
+      headers: {
+        apikey: SB_SERVICE_KEY,
+        Authorization: "Bearer " + SB_SERVICE_KEY,
+        "Content-Type": "application/json",
+        Prefer: "return=minimal",
+      },
+      body: JSON.stringify({ payload: live, updated_at: new Date().toISOString() }),
+    });
+    if (!r.ok) console.log(`supabase live push: HTTP ${r.status} ${(await r.text()).slice(0, 140)}`);
+    else console.log(`supabase live push: ${live.length} jogo(s)`);
+  } catch (e) { console.log("supabase live push erro:", e.message); }
+}
+
 /* janela: só consulta jogos sem placar com kickoff entre -ATRAS e +30min.
    JANELA_ATRAS_H sobrescreve o padrão (ex.: 240 p/ backfill inicial). */
 const ATRAS_MS = (Number(process.env.JANELA_ATRAS_H) || 48) * 3600 * 1000;
@@ -665,7 +687,10 @@ async function main() {
     return j && !apurado(j); // tira jogos já encerrados
   });
   const liveFinal = limpo(merged);
-  if (JSON.stringify(dados.live || []) !== JSON.stringify(liveFinal)) { dados.live = liveFinal; mudou = true; }
+  if (JSON.stringify(dados.live || []) !== JSON.stringify(liveFinal)) {
+    dados.live = liveFinal; mudou = true;
+    await pushLiveSupabase(liveFinal); // push imediato p/ o Realtime (antes do commit git)
+  }
 
   // ESCALAÇÕES (Highlightly, baixa frequência)
   if (await escalacoes(dados, resolve, hlLineupFetch, state)) mudou = true;
