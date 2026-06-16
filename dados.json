@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T20:39:35.553Z",
+  "atualizado_em": "2026-06-16T20:40:07.877Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2984,7 +2984,7 @@
       "id": 49,
       "casa": 1,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "K. Mbappe",
