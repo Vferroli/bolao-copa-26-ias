@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
-  "atualizado": "2026-06-15",
-  "atualizado_em": "2026-06-16T00:09:52.423Z",
+  "atualizado": "2026-06-16",
+  "atualizado_em": "2026-06-16T00:47:56.494Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1340,6 +1340,284 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Mehdi Taremi"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-2",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Alireza Beiranvand",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Milad Mohammadi",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Shoja Khalilzadeh",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Ali Nemati",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Ramin Rezaeian",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Mohammad Mohebi",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Saeid Ezatolahi",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Saman Ghoddos",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Aria Yousefi",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Mehdi Taremi",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Shahriar Moghanlou",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Payam Niazmand",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Hossein Hosseini",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Saleh Hardani",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Hossein Kanaani",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Ehsan Hajsafi",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Roozbeh Cheshmi",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Danial Eiri",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Amirmohammad Razzaghinia",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Mehdi Ghayedi",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Mohammad Ghorbani",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Mahdi Torabi",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ali Alipour",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Amirhossein Hosseinzadeh",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Alireza Jahanbakhsh",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Dennis Eckert Ayensa",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Max Crocombe",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Liberato Cacace",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Michael Boxall",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Finn Surman",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Tim Payne",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Marko Stamenić",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Joe Bell",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Elijah Just",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Sarpreet Singh",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Callum McCowatt",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Chris Wood",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Alex Paulsen",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Michael Woud",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Tommy Smith",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Francis De Vries",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Nando Pijnaker",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Callan Elliot",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Tyler Bindon",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Jesse Randall",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Benjamin Old",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Ryan Thomas",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Lachlan Bayliss",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Alex Rufer",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Ben Waine",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Kosta Barbarouses",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
