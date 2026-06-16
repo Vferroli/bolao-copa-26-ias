@@ -691,6 +691,20 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
   padding: 3px 9px; border-radius: 999px;
 }
 .live-gols .lg b { color: var(--txt); font-weight: 700; }
+/* substituições do jogo ao vivo (entrou ▲ / saiu ▼) */
+.live-subs {
+  display: flex; flex-wrap: wrap; gap: 6px 10px;
+  margin-top: 8px;
+}
+.live-subs .sub {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--font-mono); font-size: 0.64rem;
+  background: var(--glass); border: 1px solid var(--line);
+  padding: 3px 9px; border-radius: 999px;
+}
+.live-subs .sub b { color: var(--dim); font-weight: 700; }
+.live-subs .in { color: var(--ok); }
+.live-subs .out { color: var(--faint); }
 .is-in .chip { animation: chipin 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
 .chip .who {
   font-family: var(--font-mono);

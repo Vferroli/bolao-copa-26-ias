@@ -363,6 +363,10 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
   const gols = golItens.length
     ? `<div class="live-gols">${golItens.map((g) => `<span class="lg">${g}</span>`).join("")}</div>`
     : "";
+  // substituições (só ao vivo): entrou ⬆ / saiu ⬇
+  const subs = emJogo && liveData && Array.isArray(liveData.subs) && liveData.subs.length
+    ? `<div class="live-subs">${liveData.subs.map((s) => `<span class="sub">${s.min != null ? `<b>${s.min}'</b>` : ""}<span class="in">▲ ${esc(s.entrou || "—")}</span><span class="out">▼ ${esc(s.saiu || "—")}</span></span>`).join("")}</div>`
+    : "";
   return `<article class="game${emJogo ? " live featured" : ""}"${emJogo ? ` data-live="${j.id}"` : ""}>
       ${top}
       <div class="match big">
@@ -371,6 +375,7 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
       ${gols}
+      ${subs}
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
       ${chips(j, fim)}
@@ -407,7 +412,7 @@ function secHoje() {
   (Array.isArray(S.dados.live) ? S.dados.live : []).forEach((l) => { liveById[l.id] = l; });
   // memória do último placar ao vivo conhecido — sobrevive a buracos do feed
   S._liveLast = S._liveLast || {};
-  Object.values(liveById).forEach((l) => { if (l && l.casa != null) S._liveLast[l.id] = { casa: l.casa, fora: l.fora, min: l.min, gols: l.gols }; });
+  Object.values(liveById).forEach((l) => { if (l && l.casa != null) S._liveLast[l.id] = { casa: l.casa, fora: l.fora, min: l.min, gols: l.gols, subs: l.subs }; });
 
   // "em jogo" = começou (relógio passou do kickoff) e NÃO apurado — independe do feed
   const emJogo = (j) => now >= new Date(j.kickoff).getTime() && !apurado(j);
