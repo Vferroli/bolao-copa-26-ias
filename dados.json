@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T21:01:16.726Z",
+  "atualizado_em": "2026-06-16T21:02:51.843Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2995,11 +2995,11 @@
           "min": 82
         },
         {
-          "nome": "I. Mbaye",
+          "nome": "K. Mbappe",
           "min": 90
         },
         {
-          "nome": "K. Mbappe",
+          "nome": "I. Mbaye",
           "min": 90
         }
       ],
@@ -3025,7 +3025,7 @@
           "min": 83
         },
         {
-          "entrou": "C. Ndiaye",
+          "entrou": "I. Ndiaye",
           "saiu": "P. Gueye",
           "min": 83
         },
