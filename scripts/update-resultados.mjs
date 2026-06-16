@@ -328,7 +328,7 @@ async function enrichEventos(arr, dados, resolve, state, hlFetch) {
     if (!list) { keep(e, prev); continue; }                          // sem cota → mantém
     const mid = hlMatchId(j, list, resolve);
     if (mid == null) { keep(e, prev); continue; }
-    const { ok, goals, subs, cards } = await hlEvents(mid, hlFetch);
+    const { ok, goals, subs, cards } = await hlEvents(mid, hlFetch, resolve, j);
     if (!ok) { keep(e, prev); continue; }                            // sem cota/erro → mantém
     e.gols = goals;
     if (subs.length) e.subs = subs;
@@ -463,7 +463,14 @@ const evCardColor = (e) => {
   return null;
 };
 
-async function hlEvents(mid, hlFetch) {
+// lado do evento relativo ao MEU jogo ("casa"|"fora"|null) via team.name -> resolve
+const evSide = (e, resolve, j) => {
+  if (!resolve || !j) return null;
+  const t = resolve(e.team?.name);
+  return t === j.casa ? "casa" : t === j.fora ? "fora" : null;
+};
+
+async function hlEvents(mid, hlFetch, resolve, j) {
   const r = await hlFetch(`${HL_BASE}/events/${mid}`);
   if (!r) return { ok: false, goals: [], subs: [] };     // sem cota
   if (!r.ok) { console.log(`eventos HL: ${mid} http ${r.status}`); return { ok: false, goals: [], subs: [] }; }
@@ -471,14 +478,14 @@ async function hlEvents(mid, hlFetch) {
   const list = Array.isArray(data) ? data : (data.data || data.events || []);
   const goals = list
     .filter(evIsGoal)
-    .map((e) => ({ nome: evPlayer(e), min: evMin(e.time) }))
+    .map((e) => ({ nome: evPlayer(e), min: evMin(e.time), lado: evSide(e, resolve, j) }))
     .filter((g) => g.nome);
   const subs = list
     .filter(evIsSub)
-    .map((e) => ({ entrou: String(e.substituted ?? "").trim(), saiu: evPlayer(e), min: evMin(e.time) }))
+    .map((e) => ({ entrou: String(e.substituted ?? "").trim(), saiu: evPlayer(e), min: evMin(e.time), lado: evSide(e, resolve, j) }))
     .filter((s) => s.entrou || s.saiu);
   const cards = list
-    .map((e) => ({ nome: evPlayer(e), cor: evCardColor(e), min: evMin(e.time) }))
+    .map((e) => ({ nome: evPlayer(e), cor: evCardColor(e), min: evMin(e.time), lado: evSide(e, resolve, j) }))
     .filter((c) => c.cor && c.nome);
   if (!goals.length && !subs.length && !cards.length && list.length) // shape inesperado → 1 evento cru pro log
     console.log(`eventos HL DEBUG ${mid}: ${JSON.stringify(list[0]).slice(0, 320)}`);

@@ -683,6 +683,37 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
    filhos fluem como se fossem irmãos diretos do card. Permite patch cirúrgico
    (trocar innerHTML de um nó só) sem alterar o layout. */
 .live-extra { display: contents; }
+
+/* eventos ao vivo em 2 colunas por time (casa | fora) — estilo placar */
+.live-teams {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px;
+  margin-top: 12px;
+}
+.lt { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.lt.fora { align-items: flex-end; }
+.lt-head {
+  display: flex; align-items: center; gap: 6px; font-size: 0.74rem;
+  font-weight: 700; color: var(--dim); letter-spacing: 0.02em; margin-bottom: 2px;
+}
+.lt.fora .lt-head { flex-direction: row-reverse; text-align: right; }
+.lt-head span { font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; }
+.lt .ev {
+  display: inline-flex; align-items: center; gap: 6px; max-width: 100%;
+  font-family: var(--font-mono); font-size: 0.64rem; color: var(--dim);
+  background: var(--glass); border: 1px solid var(--line);
+  padding: 3px 9px; border-radius: 999px;
+}
+.lt.fora .ev { flex-direction: row-reverse; }
+.lt .ev b { color: var(--txt); font-weight: 700; }
+.lt .ev.sub .in { color: var(--ok); }
+.lt .ev.sub .out { color: var(--faint); }
+.lt .ev.card .cd {
+  width: 9px; height: 12px; border-radius: 2px; flex: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+.lt .ev.card.yellow .cd { background: #facc15; }
+.lt .ev.card.red .cd { background: #ef4444; }
+.lt-neutro { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-top: 8px; }
 .live-gols {
   display: flex; flex-wrap: wrap; gap: 6px 10px;
   margin-top: 12px;

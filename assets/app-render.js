@@ -315,22 +315,60 @@ const faseLbl = (j) => (j.fase === "grupos" ? "Grupo " + j.grupo : (S.fases[j.fa
 /* HTML dos blocos dinâmicos do jogo ao vivo (gols + cartões + subs). Extraído
    p/ ser reusado tanto no render completo quanto no patch cirúrgico (patchLive),
    garantindo markup idêntico. emJogo → ao vivo; fim → goleadores do encerrado. */
+// layout antigo (chips planos) — usado p/ jogo encerrado e dado legado sem `lado`
+function liveFlatHtml(gols, cards, subs) {
+  const g = gols.length
+    ? `<div class="live-gols">${gols.map((x) => `<span class="lg">⚽ ${esc(x.nome)}${x.min != null ? ` <b>${x.min}'</b>` : ""}</span>`).join("")}</div>`
+    : "";
+  const c = cards.length
+    ? `<div class="live-cards">${cards.map((x) => `<span class="lc ${x.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(x.nome)}${x.min != null ? ` <b>${x.min}'</b>` : ""}</span>`).join("")}</div>`
+    : "";
+  const s = subs.length
+    ? `<div class="live-subs">${subs.map((x) => `<span class="sub">${x.min != null ? `<b>${x.min}'</b>` : ""}<span class="in">▲ ${esc(x.entrou || "—")}</span><span class="out">▼ ${esc(x.saiu || "—")}</span></span>`).join("")}</div>`
+    : "";
+  return g + c + s;
+}
+
 function liveExtraHtml(liveData, j, emJogo, fim) {
-  const golItens = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
-    ? liveData.gols.map((g) => `⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}`)
-    : fim && Array.isArray(j.real.marcadores) && j.real.marcadores.length
-    ? j.real.marcadores.map((n) => `⚽ ${esc(n)}`)
-    : [];
-  const gols = golItens.length
-    ? `<div class="live-gols">${golItens.map((g) => `<span class="lg">${g}</span>`).join("")}</div>`
-    : "";
-  const cartoes = emJogo && liveData && Array.isArray(liveData.cartoes) && liveData.cartoes.length
-    ? `<div class="live-cards">${liveData.cartoes.map((c) => `<span class="lc ${c.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(c.nome)}${c.min != null ? ` <b>${c.min}'</b>` : ""}</span>`).join("")}</div>`
-    : "";
-  const subs = emJogo && liveData && Array.isArray(liveData.subs) && liveData.subs.length
-    ? `<div class="live-subs">${liveData.subs.map((s) => `<span class="sub">${s.min != null ? `<b>${s.min}'</b>` : ""}<span class="in">▲ ${esc(s.entrou || "—")}</span><span class="out">▼ ${esc(s.saiu || "—")}</span></span>`).join("")}</div>`
-    : "";
-  return gols + cartoes + subs;
+  // encerrado: goleadores (só nomes em real.marcadores) — chips planos
+  if (fim) {
+    const ns = Array.isArray(j.real.marcadores) ? j.real.marcadores : [];
+    return ns.length
+      ? `<div class="live-gols">${ns.map((n) => `<span class="lg">⚽ ${esc(n)}</span>`).join("")}</div>`
+      : "";
+  }
+  if (!emJogo || !liveData) return "";
+  const gols = Array.isArray(liveData.gols) ? liveData.gols : [];
+  const cards = Array.isArray(liveData.cartoes) ? liveData.cartoes : [];
+  const subs = Array.isArray(liveData.subs) ? liveData.subs : [];
+  if (!gols.length && !cards.length && !subs.length) return "";
+
+  // eventos unificados (tipo + lado + min) p/ agrupar por time em 2 colunas
+  const evs = [
+    ...gols.map((g) => ({ t: "gol", lado: g.lado, min: g.min, nome: g.nome })),
+    ...cards.map((c) => ({ t: "card", lado: c.lado, min: c.min, nome: c.nome, cor: c.cor })),
+    ...subs.map((s) => ({ t: "sub", lado: s.lado, min: s.min, entrou: s.entrou, saiu: s.saiu })),
+  ];
+  const hasLado = evs.some((e) => e.lado === "casa" || e.lado === "fora");
+  if (!hasLado) return liveFlatHtml(gols, cards, subs); // sem lado (legado) → flat
+
+  const chip = (e) =>
+    e.t === "gol"
+      ? `<span class="ev gol">⚽ ${esc(e.nome)}${e.min != null ? ` <b>${e.min}'</b>` : ""}</span>`
+      : e.t === "card"
+      ? `<span class="ev card ${e.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(e.nome)}${e.min != null ? ` <b>${e.min}'</b>` : ""}</span>`
+      : `<span class="ev sub">${e.min != null ? `<b>${e.min}'</b> ` : ""}<span class="in">▲ ${esc(e.entrou || "—")}</span> <span class="out">▼ ${esc(e.saiu || "—")}</span></span>`;
+  const byMin = (a, b) => (a.min ?? 999) - (b.min ?? 999);
+  const col = (lado) => {
+    const items = evs.filter((e) => e.lado === lado).sort(byMin);
+    return `<div class="lt ${lado}">
+      <div class="lt-head">${bandeira(j[lado])}<span>${esc(time(j[lado]).nome)}</span></div>
+      ${items.map(chip).join("")}
+    </div>`;
+  };
+  const neutros = evs.filter((e) => e.lado !== "casa" && e.lado !== "fora").sort(byMin);
+  const neutro = neutros.length ? `<div class="lt-neutro">${neutros.map(chip).join("")}</div>` : "";
+  return `<div class="live-teams">${col("casa")}${col("fora")}</div>${neutro}`;
 }
 
 /* card de jogo de hoje. liveData != null → destacado, placar em tempo real.
