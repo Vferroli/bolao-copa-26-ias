@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T23:44:34.666Z",
+  "atualizado_em": "2026-06-16T23:45:38.965Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3273,7 +3273,7 @@
       "id": 50,
       "casa": 1,
       "fora": 3,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "E. Haaland",
@@ -3350,6 +3350,12 @@
           "saiu": "I. Bayesh",
           "min": 78,
           "lado": "casa"
+        },
+        {
+          "entrou": "P. Berg",
+          "saiu": "M. Odegaard",
+          "min": 81,
+          "lado": "fora"
         }
       ]
     }
