@@ -587,11 +587,31 @@ async function main() {
 
   // AO VIVO (AF + Highlightly alternados, throttle adaptativo)
   const liveNovo = await tickLive(dados, resolve, state, afFetch, hlLiveFetch);
+  // As fontes ALTERNAM e às vezes uma não reporta um jogo em andamento → não pode
+  // ZERAR o placar nesse ciclo (causava o placar "piscar"/sumir). Mantém o último
+  // placar conhecido de jogos ainda na janela de jogo (kickoff até +3.5h, !apurado).
+  const agoraTs = Date.now();
+  const naJanela = (j) => {
+    const k = new Date(j.kickoff).getTime();
+    return agoraTs >= k && agoraTs <= k + 3.5 * 3600 * 1000;
+  };
+  let merged;
+  if (liveNovo === undefined) {
+    merged = Array.isArray(dados.live) ? dados.live : []; // fetch falhou → mantém atual
+  } else {
+    const novoIds = new Set(liveNovo.map((l) => l.id));
+    merged = [...liveNovo];
+    for (const l of (dados.live || [])) {
+      if (novoIds.has(l.id)) continue; // veio no ciclo novo → já está
+      const j = dados.jogos.find((x) => x.id === l.id);
+      if (j && !apurado(j) && naJanela(j)) merged.push(l); // segura o último conhecido
+    }
+  }
   const limpo = (arr) => (arr || []).filter((l) => {
     const j = dados.jogos.find((x) => x.id === l.id);
     return j && !apurado(j); // tira jogos já encerrados
   });
-  const liveFinal = liveNovo === undefined ? limpo(dados.live) : limpo(liveNovo);
+  const liveFinal = limpo(merged);
   if (JSON.stringify(dados.live || []) !== JSON.stringify(liveFinal)) { dados.live = liveFinal; mudou = true; }
 
   // ESCALAÇÕES (Highlightly, baixa frequência)
