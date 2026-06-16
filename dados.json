@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T20:48:05.184Z",
+  "atualizado_em": "2026-06-16T20:49:08.763Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2984,7 +2984,7 @@
       "id": 49,
       "casa": 2,
       "fora": 0,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "K. Mbappe",
@@ -3010,6 +3010,16 @@
           "entrou": "B. Barcola",
           "saiu": "O. Dembele",
           "min": 80
+        },
+        {
+          "entrou": "B. Dieng",
+          "saiu": "N. Jackson",
+          "min": 83
+        },
+        {
+          "entrou": "C. Ndiaye",
+          "saiu": "I. Gueye",
+          "min": 83
         }
       ]
     }
