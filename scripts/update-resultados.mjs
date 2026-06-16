@@ -44,8 +44,9 @@ const HL_ALL = [
   process.env.HIGHLIGHTLY_KEY_3,
   process.env.HIGHLIGHTLY_KEY_4,
   process.env.HIGHLIGHTLY_KEY_5,
+  process.env.HIGHLIGHTLY_KEY_6,
 ].filter(Boolean);
-// KEY → escalações + marcadores (baixa freq, idempotente); KEY_2.._5 → live
+// KEY → escalações + marcadores (baixa freq, idempotente); KEY_2.._6 → live
 // (placar + gols + substituições). Se faltar chave dedicada, cai no pool inteiro.
 const HL_LINEUP_KEYS = [process.env.HIGHLIGHTLY_KEY].filter(Boolean);
 const HL_LIVE_KEYS = [
@@ -53,6 +54,7 @@ const HL_LIVE_KEYS = [
   process.env.HIGHLIGHTLY_KEY_3,
   process.env.HIGHLIGHTLY_KEY_4,
   process.env.HIGHLIGHTLY_KEY_5,
+  process.env.HIGHLIGHTLY_KEY_6,
 ].filter(Boolean);
 const hlLineupKeys = HL_LINEUP_KEYS.length ? HL_LINEUP_KEYS : HL_ALL;
 const hlLiveKeys = HL_LIVE_KEYS.length ? HL_LIVE_KEYS : HL_ALL;
@@ -288,7 +290,7 @@ async function enrichEventos(arr, dados, resolve, state, hlFetch) {
   if (!Array.isArray(arr)) return;
   state.liveEv = state.liveEv || {};
   const agora = Date.now();
-  const keep = (e, prev) => { if (prev) { e.gols = prev.gols; if (prev.subs?.length) e.subs = prev.subs; } };
+  const keep = (e, prev) => { if (prev) { e.gols = prev.gols; if (prev.subs?.length) e.subs = prev.subs; if (prev.cartoes?.length) e.cartoes = prev.cartoes; } };
   for (const e of arr) {
     const total = (e.casa || 0) + (e.fora || 0);
     const prev = state.liveEv[e.id];
@@ -301,12 +303,13 @@ async function enrichEventos(arr, dados, resolve, state, hlFetch) {
     if (!list) { keep(e, prev); continue; }                          // sem cota → mantém
     const mid = hlMatchId(j, list, resolve);
     if (mid == null) { keep(e, prev); continue; }
-    const { ok, goals, subs } = await hlEvents(mid, hlFetch);
+    const { ok, goals, subs, cards } = await hlEvents(mid, hlFetch);
     if (!ok) { keep(e, prev); continue; }                            // sem cota/erro → mantém
     e.gols = goals;
     if (subs.length) e.subs = subs;
-    state.liveEv[e.id] = { total, gols: goals, subs, at: agora };
-    console.log(`eventos ${e.id}: ${goals.length} gol(s), ${subs.length} sub(s)`);
+    if (cards.length) e.cartoes = cards;
+    state.liveEv[e.id] = { total, gols: goals, subs, cartoes: cards, at: agora };
+    console.log(`eventos ${e.id}: ${goals.length} gol(s), ${subs.length} sub(s), ${cards.length} cartão(ões)`);
   }
   // limpa estado de jogos que não estão mais ao vivo
   const ids = new Set(arr.map((e) => String(e.id)));
@@ -426,6 +429,14 @@ const evIsGoal = (e) => {
   return t.includes("goal") && !t.includes("own"); // "Goal" sim; "Own Goal" não
 };
 const evIsSub = (e) => String(e.type ?? "").toLowerCase().includes("substitution");
+// cartão: "Yellow Card" → amarelo; "Red Card" e "Second Yellow card" (= expulsão) → vermelho
+const evCardColor = (e) => {
+  const t = String(e.type ?? "").toLowerCase();
+  if (!t.includes("card")) return null;
+  if (t.includes("red") || t.includes("second yellow")) return "vermelho";
+  if (t.includes("yellow")) return "amarelo";
+  return null;
+};
 
 async function hlEvents(mid, hlFetch) {
   const r = await hlFetch(`${HL_BASE}/events/${mid}`);
@@ -441,9 +452,12 @@ async function hlEvents(mid, hlFetch) {
     .filter(evIsSub)
     .map((e) => ({ entrou: String(e.substituted ?? "").trim(), saiu: evPlayer(e), min: evMin(e.time) }))
     .filter((s) => s.entrou || s.saiu);
-  if (!goals.length && !subs.length && list.length) // shape inesperado → 1 evento cru pro log
+  const cards = list
+    .map((e) => ({ nome: evPlayer(e), cor: evCardColor(e), min: evMin(e.time) }))
+    .filter((c) => c.cor && c.nome);
+  if (!goals.length && !subs.length && !cards.length && list.length) // shape inesperado → 1 evento cru pro log
     console.log(`eventos HL DEBUG ${mid}: ${JSON.stringify(list[0]).slice(0, 320)}`);
-  return { ok: true, goals, subs };
+  return { ok: true, goals, subs, cards };
 }
 
 // par de times do MEU jogo -> matchId da Highlightly (na lista já cacheada por data)

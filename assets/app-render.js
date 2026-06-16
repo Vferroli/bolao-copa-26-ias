@@ -363,6 +363,10 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
   const gols = golItens.length
     ? `<div class="live-gols">${golItens.map((g) => `<span class="lg">${g}</span>`).join("")}</div>`
     : "";
+  // cartões (só ao vivo): 🟨 amarelo / 🟥 vermelho + jogador + minuto
+  const cartoes = emJogo && liveData && Array.isArray(liveData.cartoes) && liveData.cartoes.length
+    ? `<div class="live-cards">${liveData.cartoes.map((c) => `<span class="lc ${c.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(c.nome)}${c.min != null ? ` <b>${c.min}'</b>` : ""}</span>`).join("")}</div>`
+    : "";
   // substituições (só ao vivo): entrou ⬆ / saiu ⬇
   const subs = emJogo && liveData && Array.isArray(liveData.subs) && liveData.subs.length
     ? `<div class="live-subs">${liveData.subs.map((s) => `<span class="sub">${s.min != null ? `<b>${s.min}'</b>` : ""}<span class="in">▲ ${esc(s.entrou || "—")}</span><span class="out">▼ ${esc(s.saiu || "—")}</span></span>`).join("")}</div>`
@@ -375,6 +379,7 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
       ${gols}
+      ${cartoes}
       ${subs}
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
@@ -412,7 +417,7 @@ function secHoje() {
   (Array.isArray(S.dados.live) ? S.dados.live : []).forEach((l) => { liveById[l.id] = l; });
   // memória do último placar ao vivo conhecido — sobrevive a buracos do feed
   S._liveLast = S._liveLast || {};
-  Object.values(liveById).forEach((l) => { if (l && l.casa != null) S._liveLast[l.id] = { casa: l.casa, fora: l.fora, min: l.min, gols: l.gols, subs: l.subs }; });
+  Object.values(liveById).forEach((l) => { if (l && l.casa != null) S._liveLast[l.id] = { casa: l.casa, fora: l.fora, min: l.min, gols: l.gols, subs: l.subs, cartoes: l.cartoes }; });
 
   // "em jogo" = começou (relógio passou do kickoff) e NÃO apurado — independe do feed
   const emJogo = (j) => now >= new Date(j.kickoff).getTime() && !apurado(j);
