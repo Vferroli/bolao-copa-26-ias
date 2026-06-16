@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T03:02:11.814Z",
+  "atualizado_em": "2026-06-16T03:09:43.090Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1312,8 +1312,8 @@
       "fora": "new-zealand",
       "kickoff": "2026-06-16T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 2,
+        "fora": 2,
         "avancou": null
       },
       "palpites": {
@@ -2621,12 +2621,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 38,
-      "casa": 2,
-      "fora": 2,
-      "min": "90'"
-    }
-  ]
+  "live": []
 }
