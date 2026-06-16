@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T20:46:30.054Z",
+  "atualizado_em": "2026-06-16T20:48:05.184Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2984,11 +2984,15 @@
       "id": 49,
       "casa": 2,
       "fora": 0,
-      "min": "83'",
+      "min": "84'",
       "gols": [
         {
           "nome": "K. Mbappe",
           "min": 66
+        },
+        {
+          "nome": "B. Barcola",
+          "min": 82
         }
       ],
       "subs": [
@@ -3003,7 +3007,7 @@
           "min": 76
         },
         {
-          "entrou": "L. Hernandez",
+          "entrou": "B. Barcola",
           "saiu": "O. Dembele",
           "min": 80
         }
