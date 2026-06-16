@@ -357,6 +357,24 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
     inset 0 1px 0 rgba(255, 255, 255, 0.14),
     0 0 24px -6px color-mix(in oklab, var(--cor) 78%, transparent);
 }
+/* IA escolhida pelo usuário (torcida) — mesma borda do voto no jogo */
+.rank-card.torcendo {
+  border-color: var(--cor);
+  box-shadow:
+    var(--shadow),
+    0 0 0 1px var(--cor),
+    0 0 24px -7px color-mix(in oklab, var(--cor) 75%, transparent);
+}
+.rank-torce {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin-top: 7px;
+  font-family: var(--font-mono); font-size: 0.56rem;
+  letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700;
+  color: color-mix(in oklab, var(--cor) 72%, var(--txt));
+  background: color-mix(in oklab, var(--cor) 15%, transparent);
+  border: 1px solid color-mix(in oklab, var(--cor) 45%, transparent);
+  padding: 2px 9px; border-radius: 999px;
+}
 /* selo "LÍDER" estático — substitui o confete + sheen animados */
 .rank-id .meta.meta-leader {
   display: inline-flex;

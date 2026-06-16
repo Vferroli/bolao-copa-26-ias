@@ -84,13 +84,15 @@ function renderPodium() {
       const meta = pos === 1
         ? `<div class="meta meta-leader"><span class="crown" aria-hidden="true">👑</span> Líder</div>`
         : `<div class="meta">${pos}º lugar</div>`;
-      return `<article class="rank-card ${i === 0 ? "leader" : ""}" data-pos="${pos}" style="--cor:${ia.cor}">
+      const torce = !!(S.vote && S.vote.mine && S.vote.mine.champ === ia.id);
+      return `<article class="rank-card ${i === 0 ? "leader" : ""}${torce ? " torcendo" : ""}" data-pos="${pos}" data-ia="${ia.id}" style="--cor:${ia.cor}">
         <div class="rank-pos">${head}${rankMove(prevPos, ia.id, pos)}</div>
         <div class="rank-id">
           ${kit(ia, "lg")}
           <div>
             <div class="name">${esc(ia.nome)}</div>
             ${meta}
+            ${torce ? `<span class="rank-torce">♥ Torcendo</span>` : ""}
           </div>
         </div>
         <div class="rank-pts">
@@ -837,6 +839,23 @@ function refreshChampUI() {
   const ch = document.getElementById("fav-chooser"); if (ch) ch.innerHTML = favChooserHtml();
   const bd = document.getElementById("fav-board"); if (bd) bd.innerHTML = favBoardHtml();
   renderFavBadge();
+  refreshPodiumTorcendo();
+}
+/* destaca no placar geral a IA que o usuário escolheu torcer (borda + tag),
+   sem re-renderizar o pódio (evita replay do count-up). */
+function refreshPodiumTorcendo() {
+  const champ = S.vote && S.vote.mine ? S.vote.mine.champ : null;
+  document.querySelectorAll("#podium .rank-card").forEach((el) => {
+    const on = el.dataset.ia === champ;
+    el.classList.toggle("torcendo", on);
+    const has = el.querySelector(".rank-torce");
+    if (on && !has) {
+      const holder = el.querySelector(".rank-id > div");
+      if (holder) holder.insertAdjacentHTML("beforeend", `<span class="rank-torce">♥ Torcendo</span>`);
+    } else if (!on && has) {
+      has.remove();
+    }
+  });
 }
 /* chamado pelo app.js quando as tallies chegam/atualizam */
 function refreshAllVotes() {
