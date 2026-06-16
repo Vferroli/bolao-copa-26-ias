@@ -42,11 +42,18 @@ const HL_ALL = [
   process.env.HIGHLIGHTLY_KEY,
   process.env.HIGHLIGHTLY_KEY_2,
   process.env.HIGHLIGHTLY_KEY_3,
+  process.env.HIGHLIGHTLY_KEY_4,
+  process.env.HIGHLIGHTLY_KEY_5,
 ].filter(Boolean);
-// KEY → escalações (baixa frequência); KEY_2/_3 → 2ª fonte live.
-// Se faltar chave dedicada, cai p/ o pool inteiro.
+// KEY → escalações + marcadores (baixa freq, idempotente); KEY_2.._5 → live
+// (placar + gols + substituições). Se faltar chave dedicada, cai no pool inteiro.
 const HL_LINEUP_KEYS = [process.env.HIGHLIGHTLY_KEY].filter(Boolean);
-const HL_LIVE_KEYS = [process.env.HIGHLIGHTLY_KEY_2, process.env.HIGHLIGHTLY_KEY_3].filter(Boolean);
+const HL_LIVE_KEYS = [
+  process.env.HIGHLIGHTLY_KEY_2,
+  process.env.HIGHLIGHTLY_KEY_3,
+  process.env.HIGHLIGHTLY_KEY_4,
+  process.env.HIGHLIGHTLY_KEY_5,
+].filter(Boolean);
 const hlLineupKeys = HL_LINEUP_KEYS.length ? HL_LINEUP_KEYS : HL_ALL;
 const hlLiveKeys = HL_LIVE_KEYS.length ? HL_LIVE_KEYS : HL_ALL;
 
@@ -264,42 +271,46 @@ async function liveApiFootball(dados, resolve, afFetch) {
     if (casa == null || fora == null) continue;
     const sh = f.fixture?.status?.short, el = f.fixture?.status?.elapsed;
     const min = sh === "HT" ? "Intervalo" : el != null ? `${el}'` : "ao vivo";
-    arr.push({ id: j.id, casa, fora, min }); // gols enriquecidos via Highlightly (enrichGols)
+    arr.push({ id: j.id, casa, fora, min }); // gols/subs enriquecidos via Highlightly (enrichEventos)
   }
   console.log(`live AF: ${arr.length} jogo(s)`);
   return arr;
 }
 
-/* ---------- gols ao vivo (autor + minuto, via Highlightly) ----------
-   Enriquece cada item do live com `gols: [{nome, min}]`. Só chama a API de eventos
-   quando o placar do jogo MUDOU vs o ciclo anterior (gol) — economiza cota. Mapeia
-   o jogo -> matchId da Highlightly pela lista por data (cacheada), valendo tanto em
-   ciclo AF quanto HL. Estado por-run em state.liveGols = { [id]: { total, gols } }. */
-async function enrichGols(arr, dados, resolve, state, hlFetch) {
+/* ---------- eventos ao vivo (gols + substituições, via Highlightly) ----------
+   Enriquece cada item do live com `gols:[{nome,min}]` e `subs:[{entrou,saiu,min}]`.
+   Chama /events quando o placar MUDOU (gol) OU passou EVENTS_TTL desde a última
+   busca (p/ pegar substituições, que não mexem no placar). Mapeia jogo->matchId
+   pela lista por data (cacheada), valendo em ciclo AF ou HL. Sem cota → mantém o
+   último conhecido. Estado por-run em state.liveEv = { [id]: { total, gols, subs, at } }. */
+const EVENTS_TTL = 90 * 1000; // no máx 1 /events a cada 90s por jogo em andamento
+async function enrichEventos(arr, dados, resolve, state, hlFetch) {
   if (!Array.isArray(arr)) return;
-  state.liveGols = state.liveGols || {};
+  state.liveEv = state.liveEv || {};
+  const agora = Date.now();
+  const keep = (e, prev) => { if (prev) { e.gols = prev.gols; if (prev.subs?.length) e.subs = prev.subs; } };
   for (const e of arr) {
     const total = (e.casa || 0) + (e.fora || 0);
-    const prev = state.liveGols[e.id];
-    if (total === 0) continue;                                      // 0x0: sem gol
-    if (prev && prev.total === total && Array.isArray(prev.gols)) { // sem mudança → reusa
-      e.gols = prev.gols; continue;
-    }
+    const prev = state.liveEv[e.id];
+    const mudouPlacar = !prev || prev.total !== total;
+    const expirou = !prev || (agora - (prev.at || 0)) > EVENTS_TTL;
+    if (prev && !mudouPlacar && !expirou) { keep(e, prev); continue; } // recente → reusa
     const j = dados.jogos.find((x) => x.id === e.id);
-    if (!j) { if (prev?.gols) e.gols = prev.gols; continue; }
+    if (!j) { keep(e, prev); continue; }
     const list = await hlDateList(j.kickoff.slice(0, 10), hlFetch, state);
-    if (!list) { if (prev?.gols) e.gols = prev.gols; continue; }    // sem cota → mantém último
+    if (!list) { keep(e, prev); continue; }                          // sem cota → mantém
     const mid = hlMatchId(j, list, resolve);
-    if (mid == null) { if (prev?.gols) e.gols = prev.gols; continue; }
-    const { ok, goals } = await hlGoals(mid, hlFetch);
-    if (!ok) { if (prev?.gols) e.gols = prev.gols; continue; }      // sem cota/erro → mantém
+    if (mid == null) { keep(e, prev); continue; }
+    const { ok, goals, subs } = await hlEvents(mid, hlFetch);
+    if (!ok) { keep(e, prev); continue; }                            // sem cota/erro → mantém
     e.gols = goals;
-    state.liveGols[e.id] = { total, gols: goals };
-    console.log(`gols ${e.id}: ${goals.map((g) => g.nome + (g.min != null ? " " + g.min + "'" : "")).join(", ") || "(?)"}`);
+    if (subs.length) e.subs = subs;
+    state.liveEv[e.id] = { total, gols: goals, subs, at: agora };
+    console.log(`eventos ${e.id}: ${goals.length} gol(s), ${subs.length} sub(s)`);
   }
   // limpa estado de jogos que não estão mais ao vivo
   const ids = new Set(arr.map((e) => String(e.id)));
-  for (const k of Object.keys(state.liveGols)) if (!ids.has(String(k))) delete state.liveGols[k];
+  for (const k of Object.keys(state.liveEv)) if (!ids.has(String(k))) delete state.liveEv[k];
 }
 
 /* ---------- ao vivo: fonte 2 = Highlightly (/matches por data) ----------
@@ -393,7 +404,7 @@ async function tickLive(dados, resolve, state, afFetch, hlFetch) {
     ? await liveHighlightly(dados, resolve, hlFetch, state)
     : await liveApiFootball(dados, resolve, afFetch);
   if (arr === undefined) return undefined; // falhou -> mantém atual
-  await enrichGols(arr, dados, resolve, state, hlFetch); // autor dos gols (Highlightly, só quando o placar muda)
+  await enrichEventos(arr, dados, resolve, state, hlFetch); // gols + substituições (Highlightly)
   state.lastLive = now;
   console.log(`live: fonte=${useHL ? "highlightly" : "api-football"} intervalo=${intervalo}s`);
   return arr;
@@ -405,28 +416,34 @@ async function tickLive(dados, resolve, state, afFetch, hlFetch) {
    Extrai os autores de gol; gol contra e pênalti perdido NÃO entram. Tolerante
    ao shape de player/time; loga 1 evento cru se não conseguir extrair (ajuste). */
 /* eventos da Highlightly = array de { team:{name}, time:"7"|"90+1", type:"Goal"|
-   "Yellow Card"|"Substitution"|..., player:"Nome" (autor), assist, ... }. Conta
-   só type "Goal"; "Own Goal" e "Missed Penalty" não entram (este nem casa "goal"). */
+   "Yellow Card"|"Substitution"|..., player:"Nome", substituted:"Nome"|null, ... }.
+   Gol: type "Goal" (autor = player); "Own Goal"/"Missed Penalty" fora.
+   Sub: type "Substitution" — pela doc, player = quem SAIU, substituted = quem ENTROU. */
 const evMin = (t) => { const m = String(t ?? "").match(/\d+/); return m ? parseInt(m[0], 10) : null; };
 const evPlayer = (e) => String(e.player ?? "").trim();
 const evIsGoal = (e) => {
   const t = String(e.type ?? "").toLowerCase();
   return t.includes("goal") && !t.includes("own"); // "Goal" sim; "Own Goal" não
 };
+const evIsSub = (e) => String(e.type ?? "").toLowerCase().includes("substitution");
 
-async function hlGoals(mid, hlFetch) {
+async function hlEvents(mid, hlFetch) {
   const r = await hlFetch(`${HL_BASE}/events/${mid}`);
-  if (!r) return { ok: false, goals: [] };               // sem cota
-  if (!r.ok) { console.log(`gols HL: events ${mid} http ${r.status}`); return { ok: false, goals: [] }; }
+  if (!r) return { ok: false, goals: [], subs: [] };     // sem cota
+  if (!r.ok) { console.log(`eventos HL: ${mid} http ${r.status}`); return { ok: false, goals: [], subs: [] }; }
   const data = await r.json();
   const list = Array.isArray(data) ? data : (data.data || data.events || []);
   const goals = list
     .filter(evIsGoal)
     .map((e) => ({ nome: evPlayer(e), min: evMin(e.time) }))
     .filter((g) => g.nome);
-  if (!goals.length && list.length) // shape inesperado → 1 evento cru pro log corrigir
-    console.log(`gols HL DEBUG ${mid}: ${JSON.stringify(list[0]).slice(0, 320)}`);
-  return { ok: true, goals };
+  const subs = list
+    .filter(evIsSub)
+    .map((e) => ({ entrou: String(e.substituted ?? "").trim(), saiu: evPlayer(e), min: evMin(e.time) }))
+    .filter((s) => s.entrou || s.saiu);
+  if (!goals.length && !subs.length && list.length) // shape inesperado → 1 evento cru pro log
+    console.log(`eventos HL DEBUG ${mid}: ${JSON.stringify(list[0]).slice(0, 320)}`);
+  return { ok: true, goals, subs };
 }
 
 // par de times do MEU jogo -> matchId da Highlightly (na lista já cacheada por data)
@@ -463,7 +480,7 @@ async function marcadores(dados, resolve, hlFetch, state) {
     const mid = hlMatchId(j, list, resolve);
     if (mid == null) { state.marcTry[j.id] = agora; console.log(`marcadores: sem matchId p/ ${j.casa} x ${j.fora}`); continue; }
     state.marcTry[j.id] = agora; // registra a tentativa (backoff 10min)
-    const { ok, goals } = await hlGoals(mid, hlFetch);
+    const { ok, goals } = await hlEvents(mid, hlFetch);
     if (!ok) break; // sem cota/erro -> próximo ciclo
     if (goals.length) {
       j.real.marcadores = goals.map((g) => g.nome);
