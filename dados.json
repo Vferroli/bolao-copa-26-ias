@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-15",
-  "atualizado_em": "2026-06-16T00:06:06.081Z",
+  "atualizado_em": "2026-06-16T00:09:52.423Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1446,8 +1446,8 @@
       "fora": "uruguay",
       "kickoff": "2026-06-15T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
+        "casa": 1,
+        "fora": 1,
         "avancou": null
       },
       "palpites": {
