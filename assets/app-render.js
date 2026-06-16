@@ -312,6 +312,27 @@ function escalacoes(j, ctx) {
 /* ---------- JOGOS DE HOJE (inclui o ao vivo destacado) ---------- */
 const faseLbl = (j) => (j.fase === "grupos" ? "Grupo " + j.grupo : (S.fases[j.fase] && S.fases[j.fase].nome) || "Mata-mata");
 
+/* HTML dos blocos dinâmicos do jogo ao vivo (gols + cartões + subs). Extraído
+   p/ ser reusado tanto no render completo quanto no patch cirúrgico (patchLive),
+   garantindo markup idêntico. emJogo → ao vivo; fim → goleadores do encerrado. */
+function liveExtraHtml(liveData, j, emJogo, fim) {
+  const golItens = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
+    ? liveData.gols.map((g) => `⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}`)
+    : fim && Array.isArray(j.real.marcadores) && j.real.marcadores.length
+    ? j.real.marcadores.map((n) => `⚽ ${esc(n)}`)
+    : [];
+  const gols = golItens.length
+    ? `<div class="live-gols">${golItens.map((g) => `<span class="lg">${g}</span>`).join("")}</div>`
+    : "";
+  const cartoes = emJogo && liveData && Array.isArray(liveData.cartoes) && liveData.cartoes.length
+    ? `<div class="live-cards">${liveData.cartoes.map((c) => `<span class="lc ${c.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(c.nome)}${c.min != null ? ` <b>${c.min}'</b>` : ""}</span>`).join("")}</div>`
+    : "";
+  const subs = emJogo && liveData && Array.isArray(liveData.subs) && liveData.subs.length
+    ? `<div class="live-subs">${liveData.subs.map((s) => `<span class="sub">${s.min != null ? `<b>${s.min}'</b>` : ""}<span class="in">▲ ${esc(s.entrou || "—")}</span><span class="out">▼ ${esc(s.saiu || "—")}</span></span>`).join("")}</div>`
+    : "";
+  return gols + cartoes + subs;
+}
+
 /* card de jogo de hoje. liveData != null → destacado, placar em tempo real.
    prevScores/newScores: detecção de gol p/ o flash (comparado ao render anterior). */
 function cardHoje(j, liveData, prevScores, newScores, opts) {
@@ -326,7 +347,7 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
     const minTxt = liveData && liveData.min ? esc(liveData.min) : "em andamento";
     top = `<div class="game-top live">
         <span class="live-tag"><span class="blink"></span> Ao vivo</span>
-        <span class="time">${minTxt} · ${faseLbl(j)}</span>
+        <span class="time" data-live-time>${minTxt} · ${faseLbl(j)}</span>
       </div>`;
     if (liveData && liveData.casa != null) {
       const key = `${liveData.casa}-${liveData.fora}`;
@@ -354,33 +375,16 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
     score = kickHora(j);
     scoreCls = "tbd";
   }
-  // goleadores: ao vivo (autor + minuto) ou encerrado (lista de real.marcadores, só nomes)
-  const golItens = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
-    ? liveData.gols.map((g) => `⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}`)
-    : fim && Array.isArray(j.real.marcadores) && j.real.marcadores.length
-    ? j.real.marcadores.map((n) => `⚽ ${esc(n)}`)
-    : [];
-  const gols = golItens.length
-    ? `<div class="live-gols">${golItens.map((g) => `<span class="lg">${g}</span>`).join("")}</div>`
-    : "";
-  // cartões (só ao vivo): 🟨 amarelo / 🟥 vermelho + jogador + minuto
-  const cartoes = emJogo && liveData && Array.isArray(liveData.cartoes) && liveData.cartoes.length
-    ? `<div class="live-cards">${liveData.cartoes.map((c) => `<span class="lc ${c.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(c.nome)}${c.min != null ? ` <b>${c.min}'</b>` : ""}</span>`).join("")}</div>`
-    : "";
-  // substituições (só ao vivo): entrou ⬆ / saiu ⬇
-  const subs = emJogo && liveData && Array.isArray(liveData.subs) && liveData.subs.length
-    ? `<div class="live-subs">${liveData.subs.map((s) => `<span class="sub">${s.min != null ? `<b>${s.min}'</b>` : ""}<span class="in">▲ ${esc(s.entrou || "—")}</span><span class="out">▼ ${esc(s.saiu || "—")}</span></span>`).join("")}</div>`
-    : "";
+  // blocos dinâmicos (gols/cartões/subs) — wrapper data-live-extra p/ patch cirúrgico
+  const extra = liveExtraHtml(liveData, j, emJogo, fim);
   return `<article class="game${emJogo ? " live featured" : ""}"${emJogo ? ` data-live="${j.id}"` : ""}>
       ${top}
       <div class="match big">
         <div class="team home"><span class="tn">${esc(c.nome)}</span>${bandeira(j.casa)}</div>
-        <div class="score ${scoreCls}">${score}</div>
+        <div class="score ${scoreCls}"${emJogo ? " data-live-score" : ""}>${score}</div>
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
-      ${gols}
-      ${cartoes}
-      ${subs}
+      <div class="live-extra" data-live-extra>${extra}</div>
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
       ${chips(j, fim)}
@@ -409,6 +413,37 @@ function cardProximo(j) {
       ${voteMatch(j, "next")}
       ${escalacoes(j, "next")}
     </article>`;
+}
+
+/* patch cirúrgico do(s) card(s) ao vivo: atualiza SÓ placar/minuto/gols/cartões/
+   subs nos nós existentes — sem repintar a tela (sem flash/scroll-jump). Retorna
+   false se algum jogo do payload não tem card live no DOM → o chamador faz
+   render() completo (mudança estrutural: jogo entrou/saiu do ao vivo). */
+function patchLive(payload) {
+  if (!Array.isArray(payload)) return true;
+  let ok = true;
+  for (const ld of payload) {
+    const art = document.querySelector(`.game.live[data-live="${String(ld.id)}"]`);
+    const j = S.dados.jogos.find((x) => x.id === ld.id);
+    if (!art || !j) { ok = false; continue; }
+    const t = art.querySelector("[data-live-time]");
+    if (t) t.textContent = `${ld.min ? ld.min : "em andamento"} · ${faseLbl(j)}`;
+    const sc = art.querySelector("[data-live-score]");
+    if (sc) {
+      if (ld.casa != null) {
+        const novo = `${ld.casa}<em>:</em>${ld.fora}`;
+        if (sc.innerHTML !== novo) {       // placar mudou → atualiza + reanima o flash
+          sc.innerHTML = novo;
+          sc.classList.remove("tbd", "flash");
+          void sc.offsetWidth;             // reflow força o restart da animação
+          sc.classList.add("flash");
+        }
+      } else if (sc.innerHTML !== "–") { sc.innerHTML = "–"; sc.classList.add("tbd"); }
+    }
+    const ex = art.querySelector("[data-live-extra]");
+    if (ex) { const html = liveExtraHtml(ld, j, true, false); if (ex.innerHTML !== html) ex.innerHTML = html; }
+  }
+  return ok;
 }
 
 function secHoje() {

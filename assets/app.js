@@ -262,11 +262,13 @@ function iniciarPoll() {
         if ((novo.atualizado_em || "") !== S._stamp) {
           S._stamp = novo.atualizado_em || "";
           if (Array.isArray(S._rtLive)) novo.live = S._rtLive; // realtime manda no live; raw traz o resto
+          const estrutural = !sameStructure(novo, S.dados);
           S.dados = novo;
           S.TZ = novo.fuso || S.TZ;
           S.HOJE = novo.atualizado || S.HOJE;
           indexar();
-          render();
+          if (estrutural) render();           // jogo encerrou/escalação chegou/virou o dia
+          else applyLive(novo.live || []);     // só o live mudou → patch cirúrgico (sem flash)
         }
       } catch (_) { /* silencioso: tenta de novo no próximo tick */ }
     }
@@ -372,9 +374,22 @@ async function refreshTallies() {
 let sbClient = null;
 function applyLive(payload) {
   if (!Array.isArray(payload) || !S.dados) return;
+  const prevIds = (S._rtLive || []).map((l) => l.id).sort().join(",");
+  const newIds = payload.map((l) => l.id).sort().join(",");
   S._rtLive = payload;        // verdade do live: o poll do raw NÃO sobrescreve isto
   S.dados.live = payload;
-  render();
+  // mudou o CONJUNTO de jogos ao vivo (entrou/saiu/encerrou) → render estrutural;
+  // mesmo conjunto → patch cirúrgico (só os nós que mudaram, sem repintar a tela).
+  if (prevIds !== newIds || !patchLive(payload)) { render(); return; }
+  S._stampTs = Date.now(); paintStamp(); // "há Xs" reseta → sensação de vivo
+}
+
+/* duas cargas têm a MESMA estrutura se só o live[] (e timestamps) diferem — aí o
+   update é cirúrgico. Se jogos/real/escalações/palpites/dia mudam → render completo. */
+function sameStructure(a, b) {
+  if (!a || !b) return false;
+  const sig = (d) => JSON.stringify({ j: d.jogos, f: d.fases, t: d.times, i: d.ias, hoje: d.atualizado });
+  return sig(a) === sig(b);
 }
 async function initLiveRealtime() {
   // 1) carga inicial fresca do live (não espera um evento p/ já pintar atualizado)

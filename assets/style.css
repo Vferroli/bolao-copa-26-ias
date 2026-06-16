@@ -679,6 +679,10 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
 .chip.hit .who { color: var(--txt); }
 
 /* gols do jogo ao vivo (autor + minuto) */
+/* wrapper dos blocos live (gols/cartões/subs): display:contents = não gera caixa,
+   filhos fluem como se fossem irmãos diretos do card. Permite patch cirúrgico
+   (trocar innerHTML de um nó só) sem alterar o layout. */
+.live-extra { display: contents; }
 .live-gols {
   display: flex; flex-wrap: wrap; gap: 6px 10px;
   margin-top: 12px;
