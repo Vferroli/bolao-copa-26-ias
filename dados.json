@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T23:36:56.830Z",
+  "atualizado_em": "2026-06-16T23:37:59.994Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3273,7 +3273,7 @@
       "id": 50,
       "casa": 1,
       "fora": 2,
-      "min": "73'",
+      "min": "74'",
       "gols": [
         {
           "nome": "E. Haaland",
@@ -3315,6 +3315,30 @@
           "saiu": "F. Aursnes",
           "min": 73,
           "lado": "fora"
+        },
+        {
+          "entrou": "L. Ostigard",
+          "saiu": "D. Wolfe",
+          "min": 73,
+          "lado": "fora"
+        },
+        {
+          "entrou": "O. Bobb",
+          "saiu": "A. Sorloth",
+          "min": 73,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Saadoon",
+          "saiu": "H. Ali",
+          "min": 73,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Qasem",
+          "saiu": "A. Jasim",
+          "min": 73,
+          "lado": "casa"
         }
       ]
     }
