@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T22:38:41.932Z",
+  "atualizado_em": "2026-06-16T22:40:16.203Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3271,14 +3271,19 @@
   "live": [
     {
       "id": 50,
-      "casa": 0,
+      "casa": 1,
       "fora": 1,
-      "min": "38'",
+      "min": "39'",
       "gols": [
         {
           "nome": "E. Haaland",
           "min": 29,
           "lado": "fora"
+        },
+        {
+          "nome": "A. Hussein",
+          "min": 39,
+          "lado": "casa"
         }
       ]
     }
