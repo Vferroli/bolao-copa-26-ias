@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T21:02:51.843Z",
+  "atualizado_em": "2026-06-16T21:10:59.089Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2167,9 +2167,15 @@
       "fora": "senegal",
       "kickoff": "2026-06-16T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "K. Mbappe",
+          "B. Barcola",
+          "I. Mbaye",
+          "K. Mbappe"
+        ]
       },
       "palpites": {
         "claude": {
@@ -2979,67 +2985,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 49,
-      "casa": 3,
-      "fora": 1,
-      "min": "90'",
-      "gols": [
-        {
-          "nome": "K. Mbappe",
-          "min": 66
-        },
-        {
-          "nome": "B. Barcola",
-          "min": 82
-        },
-        {
-          "nome": "K. Mbappe",
-          "min": 90
-        },
-        {
-          "nome": "I. Mbaye",
-          "min": 90
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "I. Mbaye",
-          "saiu": "I. Sarr",
-          "min": 75
-        },
-        {
-          "entrou": "H. Diarra",
-          "saiu": "L. Camara",
-          "min": 76
-        },
-        {
-          "entrou": "B. Barcola",
-          "saiu": "O. Dembele",
-          "min": 80
-        },
-        {
-          "entrou": "B. Dieng",
-          "saiu": "N. Jackson",
-          "min": 83
-        },
-        {
-          "entrou": "I. Ndiaye",
-          "saiu": "P. Gueye",
-          "min": 83
-        },
-        {
-          "entrou": "R. Cherki",
-          "saiu": "D. Doue",
-          "min": 87
-        },
-        {
-          "entrou": "P. Ciss",
-          "saiu": "I. Gueye",
-          "min": 88
-        }
-      ]
-    }
-  ]
+  "live": []
 }
