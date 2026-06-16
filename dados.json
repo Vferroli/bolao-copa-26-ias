@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T20:40:07.877Z",
+  "atualizado_em": "2026-06-16T20:41:42.810Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2984,11 +2984,23 @@
       "id": 49,
       "casa": 1,
       "fora": 0,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "K. Mbappe",
           "min": 66
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "I. Mbaye",
+          "saiu": "I. Sarr",
+          "min": 75
+        },
+        {
+          "entrou": "H. Diarra",
+          "saiu": "L. Camara",
+          "min": 76
         }
       ]
     }
