@@ -600,15 +600,20 @@ async function main() {
   // persiste cotas/timers (efêmero por-run; não commitado)
   try { await writeFile(STATE, JSON.stringify(state)); } catch {}
 
-  if (!mudou) { console.log("Sem mudanças."); return; }
-
   // "hoje" no FUSO do bolão (Brasília), não em UTC — senão às 21h BRT (00h UTC) o
   // site "vira o dia" 3h antes e os jogos tardios de hoje somem de "Jogos de hoje".
+  // Feito ANTES do early-return: o rollover de dia precisa commitar mesmo sem outra
+  // mudança (senão 'atualizado' fica preso na data UTC até um jogo mexer).
   const TZ = dados.fuso || "America/Sao_Paulo";
   const hoje = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
-  if (dates.length && dates[dates.length - 1] >= hoje) dados.atualizado = hoje;
-  dados.atualizado_em = new Date().toISOString();
+  if (dates.length && dates[dates.length - 1] >= hoje && dados.atualizado !== hoje) {
+    dados.atualizado = hoje;
+    mudou = true;
+  }
 
+  if (!mudou) { console.log("Sem mudanças."); return; }
+
+  dados.atualizado_em = new Date().toISOString();
   await writeFile(DADOS, JSON.stringify(dados, null, 2) + "\n", "utf8");
   console.log(`✓ dados.json atualizado (${liveFinal.length} ao vivo).`);
 }
