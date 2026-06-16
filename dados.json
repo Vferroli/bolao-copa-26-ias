@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T21:00:43.729Z",
+  "atualizado_em": "2026-06-16T21:01:16.726Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2982,7 +2982,7 @@
   "live": [
     {
       "id": 49,
-      "casa": 2,
+      "casa": 3,
       "fora": 1,
       "min": "90'",
       "gols": [
@@ -2996,6 +2996,10 @@
         },
         {
           "nome": "I. Mbaye",
+          "min": 90
+        },
+        {
+          "nome": "K. Mbappe",
           "min": 90
         }
       ],
@@ -3016,13 +3020,13 @@
           "min": 80
         },
         {
-          "entrou": "C. Ndiaye",
-          "saiu": "P. Gueye",
+          "entrou": "B. Dieng",
+          "saiu": "N. Jackson",
           "min": 83
         },
         {
-          "entrou": "B. Dieng",
-          "saiu": "N. Jackson",
+          "entrou": "C. Ndiaye",
+          "saiu": "P. Gueye",
           "min": 83
         },
         {
