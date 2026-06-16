@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T20:51:48.510Z",
+  "atualizado_em": "2026-06-16T20:53:23.581Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2984,7 +2984,7 @@
       "id": 49,
       "casa": 2,
       "fora": 0,
-      "min": "88'",
+      "min": "89'",
       "gols": [
         {
           "nome": "K. Mbappe",
@@ -3018,8 +3018,18 @@
         },
         {
           "entrou": "C. Ndiaye",
-          "saiu": "I. Gueye",
+          "saiu": "P. Gueye",
           "min": 83
+        },
+        {
+          "entrou": "R. Cherki",
+          "saiu": "D. Doue",
+          "min": 87
+        },
+        {
+          "entrou": "P. Ciss",
+          "saiu": "I. Gueye",
+          "min": 89
         }
       ]
     }
