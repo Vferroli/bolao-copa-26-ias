@@ -602,7 +602,10 @@ async function main() {
 
   if (!mudou) { console.log("Sem mudanças."); return; }
 
-  const hoje = new Date().toISOString().slice(0, 10);
+  // "hoje" no FUSO do bolão (Brasília), não em UTC — senão às 21h BRT (00h UTC) o
+  // site "vira o dia" 3h antes e os jogos tardios de hoje somem de "Jogos de hoje".
+  const TZ = dados.fuso || "America/Sao_Paulo";
+  const hoje = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
   if (dates.length && dates[dates.length - 1] >= hoje) dados.atualizado = hoje;
   dados.atualizado_em = new Date().toISOString();
 
