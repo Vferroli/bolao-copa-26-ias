@@ -166,13 +166,30 @@ const liveEntry = (id) => (Array.isArray(S.dados.live) ? S.dados.live : []).find
 const liveGolsNomes = (id) => { const e = liveEntry(id); return e && Array.isArray(e.gols) ? e.gols.map((g) => g.nome).filter(Boolean) : []; };
 
 /* ---------- chips de palpite ---------- */
-function chips(j, comPts) {
-  // num jogo AO VIVO, destaca o palpite de artilheiro que já marcou (autor do gol live)
+/* rótulo "Palpites das IAs" + dica de voto quando o jogo está aberto p/ votação */
+function predsLbl(j) {
+  const votavel = !!(S.vote && voteState(j) === "open");
+  return `<div class="preds-lbl">Palpites das IAs${votavel ? `<span class="preds-vote-hint">toque na IA que você crava</span>` : ""}</div>`;
+}
+
+/* chips de palpite das IAs. Em jogo ABERTO, cada chip É o botão de voto (clicar =
+   votar naquela IA) — unifica palpite + votação, sem bloco redundante. Travado/
+   ao vivo/encerrado: chips estáticos (o resultado agregado fica no voteMatch). */
+function chips(j, comPts, ctx) {
+  const votavel = !!(S.vote && voteState(j) === "open");
+  const mine = votavel ? (S.vote.mine.games[j.id] || null) : null;
   const liveNomes = !apurado(j) ? liveGolsNomes(j.id) : [];
+  const el = votavel ? "button" : "div";
   const cells = S.dados.ias.map((ia) => {
     const p = j.palpites && j.palpites[ia.id];
-    if (!p) return `<div class="chip miss" style="--cor:${ia.cor}">
-      ${kit(ia, "sm")}<span class="who">${esc(ia.nome)}</span><span class="gv">—</span></div>`;
+    const isMine = votavel && ia.id === mine;
+    const va = votavel ? ` type="button" data-ia="${ia.id}" aria-pressed="${isMine}"` : "";
+    const pick = votavel ? `<span class="chip-pick" aria-hidden="true"></span>` : "";
+    const cls = (extra) => `chip${extra}${votavel ? " votable" : ""}${isMine ? " is-mine" : ""}`;
+    if (!p) {
+      return `<${el} class="${cls(" miss")}"${va} style="--cor:${ia.cor}">
+        ${kit(ia, "sm")}<span class="who">${esc(ia.nome)}</span><span class="gv">—</span>${pick}</${el}>`;
+    }
     const pts = comPts ? pontosJogo(j, p) : null;
     let marcCls = "", hitLive = false;
     if (p.marcador) {
@@ -180,16 +197,17 @@ function chips(j, comPts) {
       else if (liveNomes.length && cravouMarcador(p, { marcadores: liveNomes })) { marcCls = " ok hit"; hitLive = true; }
     }
     const marc = p.marcador ? `<span class="marc${marcCls}">⚽ ${esc(p.marcador)}</span>` : "";
-    return `<div class="chip${hitLive ? " hit" : ""}" style="--cor:${ia.cor}">
+    return `<${el} class="${cls(hitLive ? " hit" : "")}"${va} style="--cor:${ia.cor}">
       ${kit(ia, "sm")}<span class="who">${esc(ia.nome)}</span>
       <span class="gv">${placar(p)}</span>
       ${pts == null ? "" : `<span class="pts">+${fmt(pts)}</span>`}
-      ${marc}
-    </div>`;
+      ${marc}${pick}
+    </${el}>`;
   });
   const any = S.dados.ias.some((ia) => j.palpites && j.palpites[ia.id]);
-  if (!any) return `<div class="preds"><span class="sem-pal">As IAs ainda não cravaram este jogo.</span></div>`;
-  return `<div class="preds">${cells.join("")}</div>`;
+  if (!any && !votavel) return `<div class="preds"><span class="sem-pal">As IAs ainda não cravaram este jogo.</span></div>`;
+  const attrs = votavel ? ` data-game="${esc(j.id)}" data-ctx="${esc(ctx || "")}"` : "";
+  return `<div class="preds${votavel ? " votable" : ""}"${attrs}>${cells.join("")}</div>`;
 }
 
 /* ---------- ESCALAÇÕES (lineups) ---------- */
@@ -424,8 +442,8 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
       </div>
       <div class="live-extra" data-live-extra>${extra}</div>
       <div class="game-sep"></div>
-      <div class="preds-lbl">Palpites das IAs</div>
-      ${chips(j, fim)}
+      ${predsLbl(j)}
+      ${chips(j, fim, "hoje")}
       ${voteMatch(j, "hoje")}
       ${escalacoes(j, "hoje")}
     </article>`;
@@ -446,8 +464,8 @@ function cardProximo(j) {
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(b.nome)}</span></div>
       </div>
       <div class="game-sep"></div>
-      <div class="preds-lbl">Palpites das IAs</div>
-      ${chips(j, false)}
+      ${predsLbl(j)}
+      ${chips(j, false, "next")}
       ${voteMatch(j, "next")}
       ${escalacoes(j, "next")}
     </article>`;
@@ -754,15 +772,9 @@ function voteMatch(j, ctx) {
   const mine = S.vote.mine.games[j.id] || null;
   const t = vTally(j.id);
   const total = vTotal(t);
-  if (st === "open") {
-    const head = total === 0
-      ? `<div class="vote-empty"><span class="vote-spark" aria-hidden="true"></span><span>Ninguém cravou ainda. <b>Seja o primeiro!</b></span></div>`
-      : `<div class="vote-head"><span class="vote-q">Qual IA crava esse jogo?</span><span class="vote-meta">${total} voto${total === 1 ? "" : "s"}</span></div>`;
-    const foot = mine
-      ? `<div class="vote-foot"><span>Seu palpite: <b style="color:#fff">${esc(S.ia[mine].nome)}</b></span><span class="vote-edit-hint">toque pra trocar</span></div>`
-      : `<div class="vote-foot"><span class="vote-cta">Toque pra cravar sua aposta</span></div>`;
-    return `<div class="vote-match" data-game="${esc(j.id)}" data-ctx="${ctx}">${head}${voteOpts(j, mine)}${foot}</div>`;
-  }
+  // ABERTO: a votação acontece nos próprios chips de palpite (clicáveis) — sem
+  // bloco redundante aqui. O voteMatch só renderiza o resultado agregado depois.
+  if (st === "open") return "";
   // travado / ao vivo / encerrado → modo resultado
   const seal = st === "resolved" ? voteSeal(j, t, total) : "";
   const head = st === "resolved" ? ""
@@ -918,6 +930,14 @@ function refreshGameVotes(gameId) {
     if (j) el.outerHTML = voteMatch(j, el.dataset.ctx);
   });
 }
+/* re-render dos chips de palpite votáveis (jogo aberto) após o usuário votar */
+function refreshGameChips(gameId) {
+  document.querySelectorAll(".preds.votable").forEach((el) => {
+    if (el.dataset.game !== String(gameId)) return;
+    const j = jogoById(gameId);
+    if (j) el.outerHTML = chips(j, false, el.dataset.ctx);
+  });
+}
 function refreshChampUI() {
   const ch = document.getElementById("fav-chooser"); if (ch) ch.innerHTML = favChooserHtml();
   const bd = document.getElementById("fav-board"); if (bd) bd.innerHTML = favBoardHtml();
@@ -961,7 +981,8 @@ async function onVoteGame(gameId, ia) {
   t[ia] = (t[ia] || 0) + 1;
   S.vote.mine.games[gameId] = ia;
   saveMine();
-  refreshGameVotes(gameId);
+  refreshGameChips(gameId);  // chips abertos (mostra a IA escolhida)
+  refreshGameVotes(gameId);  // bloco de resultado (se existir)
   try { const r = await sbVoteGame(gameId, ia); if (!r.ok) throw new Error(r.status); } catch (_) {}
   refreshTallies();
 }
@@ -984,6 +1005,8 @@ function wireVotes() {
   if (S._voteWired) return;
   S._voteWired = true;
   document.addEventListener("click", (e) => {
+    const chipVote = e.target.closest(".preds.votable .chip[data-ia]");
+    if (chipVote) { const w = chipVote.closest(".preds.votable"); if (w) onVoteGame(w.dataset.game, chipVote.dataset.ia); return; }
     const opt = e.target.closest(".vote-opt");
     if (opt) { const m = opt.closest(".vote-match"); if (m) onVoteGame(m.dataset.game, opt.dataset.ia); return; }
     const fav = e.target.closest(".vote-fav-opt");
