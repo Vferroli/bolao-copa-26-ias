@@ -84,13 +84,15 @@ function renderPodium() {
       const meta = pos === 1
         ? `<div class="meta meta-leader"><span class="crown" aria-hidden="true">👑</span> Líder</div>`
         : `<div class="meta">${pos}º lugar</div>`;
-      return `<article class="rank-card ${i === 0 ? "leader" : ""}" data-pos="${pos}" style="--cor:${ia.cor}">
+      const torce = !!(S.vote && S.vote.mine && S.vote.mine.champ === ia.id);
+      return `<article class="rank-card ${i === 0 ? "leader" : ""}${torce ? " torcendo" : ""}" data-pos="${pos}" data-ia="${ia.id}" style="--cor:${ia.cor}">
         <div class="rank-pos">${head}${rankMove(prevPos, ia.id, pos)}</div>
         <div class="rank-id">
           ${kit(ia, "lg")}
           <div>
             <div class="name">${esc(ia.nome)}</div>
             ${meta}
+            ${torce ? `<span class="rank-torce">♥ Torcendo</span>` : ""}
           </div>
         </div>
         <div class="rank-pts">
@@ -352,8 +354,22 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
     score = kickHora(j);
     scoreCls = "tbd";
   }
-  const gols = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
-    ? `<div class="live-gols">${liveData.gols.map((g) => `<span class="lg">⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}</span>`).join("")}</div>`
+  // goleadores: ao vivo (autor + minuto) ou encerrado (lista de real.marcadores, só nomes)
+  const golItens = emJogo && liveData && Array.isArray(liveData.gols) && liveData.gols.length
+    ? liveData.gols.map((g) => `⚽ ${esc(g.nome)}${g.min != null ? ` <b>${g.min}'</b>` : ""}`)
+    : fim && Array.isArray(j.real.marcadores) && j.real.marcadores.length
+    ? j.real.marcadores.map((n) => `⚽ ${esc(n)}`)
+    : [];
+  const gols = golItens.length
+    ? `<div class="live-gols">${golItens.map((g) => `<span class="lg">${g}</span>`).join("")}</div>`
+    : "";
+  // cartões (só ao vivo): 🟨 amarelo / 🟥 vermelho + jogador + minuto
+  const cartoes = emJogo && liveData && Array.isArray(liveData.cartoes) && liveData.cartoes.length
+    ? `<div class="live-cards">${liveData.cartoes.map((c) => `<span class="lc ${c.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(c.nome)}${c.min != null ? ` <b>${c.min}'</b>` : ""}</span>`).join("")}</div>`
+    : "";
+  // substituições (só ao vivo): entrou ⬆ / saiu ⬇
+  const subs = emJogo && liveData && Array.isArray(liveData.subs) && liveData.subs.length
+    ? `<div class="live-subs">${liveData.subs.map((s) => `<span class="sub">${s.min != null ? `<b>${s.min}'</b>` : ""}<span class="in">▲ ${esc(s.entrou || "—")}</span><span class="out">▼ ${esc(s.saiu || "—")}</span></span>`).join("")}</div>`
     : "";
   return `<article class="game${emJogo ? " live featured" : ""}"${emJogo ? ` data-live="${j.id}"` : ""}>
       ${top}
@@ -363,6 +379,8 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
         <div class="team away">${bandeira(j.fora)}<span class="tn">${esc(f.nome)}</span></div>
       </div>
       ${gols}
+      ${cartoes}
+      ${subs}
       <div class="game-sep"></div>
       <div class="preds-lbl">Palpites das IAs</div>
       ${chips(j, fim)}
@@ -399,7 +417,7 @@ function secHoje() {
   (Array.isArray(S.dados.live) ? S.dados.live : []).forEach((l) => { liveById[l.id] = l; });
   // memória do último placar ao vivo conhecido — sobrevive a buracos do feed
   S._liveLast = S._liveLast || {};
-  Object.values(liveById).forEach((l) => { if (l && l.casa != null) S._liveLast[l.id] = { casa: l.casa, fora: l.fora, min: l.min, gols: l.gols }; });
+  Object.values(liveById).forEach((l) => { if (l && l.casa != null) S._liveLast[l.id] = { casa: l.casa, fora: l.fora, min: l.min, gols: l.gols, subs: l.subs, cartoes: l.cartoes }; });
 
   // "em jogo" = começou (relógio passou do kickoff) e NÃO apurado — independe do feed
   const emJogo = (j) => now >= new Date(j.kickoff).getTime() && !apurado(j);
@@ -613,6 +631,9 @@ function secHistorico() {
       return `<span class="ppill" style="--cor:${ia.cor}">${kit(ia, "sm")}<b>${placar(p)}</b>
         <span class="pp ${pts ? "" : "zero"}">+${fmt(pts || 0)}</span></span>`;
     }).join("");
+    const gols = Array.isArray(j.real.marcadores) && j.real.marcadores.length
+      ? `<div class="hgols">${j.real.marcadores.map((n) => `<span>⚽ ${esc(n)}</span>`).join("")}</div>`
+      : "";
     return `<div class="hrow">
       <div class="hmatch">
         <div class="t home"><span>${esc(c.nome)}</span>${bandeira(j.casa)}</div>
@@ -620,6 +641,7 @@ function secHistorico() {
         <div class="t away">${bandeira(j.fora)}<span>${esc(f.nome)}</span></div>
       </div>
       <div class="hpts">${pills}</div>
+      ${gols}
     </div>`;
   }).join("");
   return `<section class="reveal" id="historico">
@@ -827,6 +849,23 @@ function refreshChampUI() {
   const ch = document.getElementById("fav-chooser"); if (ch) ch.innerHTML = favChooserHtml();
   const bd = document.getElementById("fav-board"); if (bd) bd.innerHTML = favBoardHtml();
   renderFavBadge();
+  refreshPodiumTorcendo();
+}
+/* destaca no placar geral a IA que o usuário escolheu torcer (borda + tag),
+   sem re-renderizar o pódio (evita replay do count-up). */
+function refreshPodiumTorcendo() {
+  const champ = S.vote && S.vote.mine ? S.vote.mine.champ : null;
+  document.querySelectorAll("#podium .rank-card").forEach((el) => {
+    const on = el.dataset.ia === champ;
+    el.classList.toggle("torcendo", on);
+    const has = el.querySelector(".rank-torce");
+    if (on && !has) {
+      const holder = el.querySelector(".rank-id > div");
+      if (holder) holder.insertAdjacentHTML("beforeend", `<span class="rank-torce">♥ Torcendo</span>`);
+    } else if (!on && has) {
+      has.remove();
+    }
+  });
 }
 /* chamado pelo app.js quando as tallies chegam/atualizam */
 function refreshAllVotes() {

@@ -357,6 +357,24 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
     inset 0 1px 0 rgba(255, 255, 255, 0.14),
     0 0 24px -6px color-mix(in oklab, var(--cor) 78%, transparent);
 }
+/* IA escolhida pelo usuário (torcida) — mesma borda do voto no jogo */
+.rank-card.torcendo {
+  border-color: var(--cor);
+  box-shadow:
+    var(--shadow),
+    0 0 0 1px var(--cor),
+    0 0 24px -7px color-mix(in oklab, var(--cor) 75%, transparent);
+}
+.rank-torce {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin-top: 7px;
+  font-family: var(--font-mono); font-size: 0.56rem;
+  letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700;
+  color: color-mix(in oklab, var(--cor) 72%, var(--txt));
+  background: color-mix(in oklab, var(--cor) 15%, transparent);
+  border: 1px solid color-mix(in oklab, var(--cor) 45%, transparent);
+  padding: 2px 9px; border-radius: 999px;
+}
 /* selo "LÍDER" estático — substitui o confete + sheen animados */
 .rank-id .meta.meta-leader {
   display: inline-flex;
@@ -673,6 +691,39 @@ section { scroll-margin-top: 112px; } /* desktop reduz no @media 900 */
   padding: 3px 9px; border-radius: 999px;
 }
 .live-gols .lg b { color: var(--txt); font-weight: 700; }
+/* substituições do jogo ao vivo (entrou ▲ / saiu ▼) */
+.live-subs {
+  display: flex; flex-wrap: wrap; gap: 6px 10px;
+  margin-top: 8px;
+}
+.live-subs .sub {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--font-mono); font-size: 0.64rem;
+  background: var(--glass); border: 1px solid var(--line);
+  padding: 3px 9px; border-radius: 999px;
+}
+.live-subs .sub b { color: var(--dim); font-weight: 700; }
+.live-subs .in { color: var(--ok); }
+.live-subs .out { color: var(--faint); }
+/* cartões do jogo ao vivo (🟨 amarelo / 🟥 vermelho) */
+.live-cards {
+  display: flex; flex-wrap: wrap; gap: 6px 10px;
+  margin-top: 8px;
+}
+.live-cards .lc {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono); font-size: 0.66rem;
+  color: var(--dim);
+  background: var(--glass); border: 1px solid var(--line);
+  padding: 3px 9px; border-radius: 999px;
+}
+.live-cards .lc .cd {
+  width: 9px; height: 12px; border-radius: 2px; flex: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+.live-cards .lc.yellow .cd { background: #facc15; }
+.live-cards .lc.red .cd { background: #ef4444; }
+.live-cards .lc b { color: var(--txt); font-weight: 700; }
 .is-in .chip { animation: chipin 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
 .chip .who {
   font-family: var(--font-mono);
@@ -1108,6 +1159,15 @@ details.day[open] .day-chev { transform: rotate(180deg); }
   border-radius: 9px; padding: 1px 8px;
 }
 .hrow .hpts { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 10px; border-top: 1px solid var(--line); }
+.hrow .hgols {
+  grid-column: 1 / -1;
+  display: flex; flex-wrap: wrap; gap: 4px 8px;
+  padding-top: 9px; margin-top: 1px; border-top: 1px dashed var(--line);
+}
+.hrow .hgols span {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-family: var(--font-mono); font-size: 0.62rem; color: var(--dim);
+}
 .ppill {
   display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--font-mono); font-size: 0.64rem;
