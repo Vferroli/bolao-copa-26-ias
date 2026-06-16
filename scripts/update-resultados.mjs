@@ -457,15 +457,23 @@ async function marcadores(dados, resolve, hlFetch, state) {
   const pend = dados.jogos.filter((j) => apurado(j) && !Array.isArray(j.real.marcadores));
   if (!pend.length) return false;
 
+  // backoff por-jogo: se os eventos ainda não estão disponíveis, não re-tenta mais
+  // que a cada 10min (protege a cota da chave de lineup; o loop roda a cada ~55s).
+  state.marcTry ??= {};
+  const agora = Date.now();
+  const recente = (id) => agora - (state.marcTry[id] || 0) < 10 * 60000;
+
   let mudou = false;
   for (const j of pend) {
     if ((j.real.casa + j.real.fora) === 0) { // 0x0: lista vazia, sem chamada de API
       j.real.marcadores = []; mudou = true; continue;
     }
+    if (recente(j.id)) continue;
     const list = await hlDateList(j.kickoff.slice(0, 10), hlFetch, state);
-    if (!list) break; // sem cota -> tenta no próximo ciclo
+    if (!list) break; // sem cota -> tenta no próximo ciclo (sem marcar a tentativa)
     const mid = hlMatchId(j, list, resolve);
-    if (mid == null) { console.log(`marcadores: sem matchId p/ ${j.casa} x ${j.fora}`); continue; }
+    if (mid == null) { state.marcTry[j.id] = agora; console.log(`marcadores: sem matchId p/ ${j.casa} x ${j.fora}`); continue; }
+    state.marcTry[j.id] = agora; // registra a tentativa (backoff 10min)
     const { ok, goals } = await hlGoals(mid, hlFetch);
     if (!ok) break; // sem cota/erro -> próximo ciclo
     if (goals.length) {
