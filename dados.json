@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-17T00:08:26.937Z",
+  "atualizado_em": "2026-06-17T00:30:18.628Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2907,6 +2907,289 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Lionel Messi"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-3-3",
+          "fora": "4-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Emiliano Martínez",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Facundo Medina",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Lisandro Martínez",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Cristian Romero",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Gonzalo Montiel",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Rodrigo De Paul",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Enzo Fernández",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Alexis Mac Allister",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Thiago Almada",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Lautaro Martínez",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Lionel Messi",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Juan Musso",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Gerónimo Rulli",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Nicolás Tagliafico",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Nicolás Otamendi",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Nahuel Molina",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Marcos Senesi",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Leandro Paredes",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Valentín Barco",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Giovani Lo Celso",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Exequiel Palacios",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Nicolás González",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Giuliano Simeone",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Nico Paz",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Julián Alvarez",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "José Manuel López",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Luca Zidane",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Rayan Aït-Nouri",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Ramy Bensebaini",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Aïssa Mandi",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Rafik Belghali",
+              "pos": "D"
+            },
+            {
+              "num": 10,
+              "nome": "Farès Chaïbi",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Nabil Bentaleb",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Hicham Boudaoui",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Anis Hadj Moussa",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Amine Gouiri",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Ibrahim Maza",
+              "pos": "M"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Melvin Mastil",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Oussama Benbot",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Achref Abada",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Mohamed Tougai",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Zineddine Belaid",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Jaouen Hadjam",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Samir Sophian Chergui",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Ramiz Zerrouki",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Houssem Aouar",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Yassine Titraoui",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Riyad Mahrez",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Adil Boulbina",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Ahmed Nadhir Benbouali",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Mohamed Amoura",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Farès Ghedjemis",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
