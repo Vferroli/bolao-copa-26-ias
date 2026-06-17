@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T05:37:01.521Z",
+  "atualizado_em": "2026-06-17T05:38:04.650Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3851,7 +3851,7 @@
       "id": 56,
       "casa": 1,
       "fora": 1,
-      "min": "72'",
+      "min": "73'",
       "gols": [
         {
           "nome": "R. Schmid",
@@ -3865,7 +3865,7 @@
         },
         {
           "nome": "M. Arnautovic",
-          "min": 68,
+          "min": 67,
           "lado": "casa"
         }
       ],
@@ -3893,6 +3893,12 @@
           "saiu": "P. Mwene",
           "min": 59,
           "lado": "casa"
+        },
+        {
+          "entrou": "S. Obaid",
+          "saiu": "M. Abualnadi",
+          "min": 73,
+          "lado": "fora"
         }
       ]
     }
