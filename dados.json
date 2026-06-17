@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-17T02:44:34.093Z",
+  "atualizado_em": "2026-06-17T02:46:41.498Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3562,7 +3562,7 @@
       "id": 55,
       "casa": 3,
       "fora": 0,
-      "min": "81'",
+      "min": "83'",
       "gols": [
         {
           "nome": "F. Chaibi",
@@ -3633,6 +3633,18 @@
           "saiu": "C. Romero",
           "min": 80,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. Zerrouki",
+          "saiu": "N. Bentaleb",
+          "min": 81,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Boulbina",
+          "saiu": "I. Maza",
+          "min": 82,
+          "lado": "fora"
         }
       ]
     }
