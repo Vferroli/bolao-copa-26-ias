@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T18:32:28.606Z",
+  "atualizado_em": "2026-06-17T19:04:43.256Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3590,9 +3590,13 @@
       "fora": "dr-congo",
       "kickoff": "2026-06-17T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "J. Neves",
+          "Y. Wissa"
+        ]
       },
       "palpites": {
         "grok": {
@@ -4134,12 +4138,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 61,
-      "casa": 1,
-      "fora": 1,
-      "min": "68'"
-    }
-  ]
+  "live": []
 }
