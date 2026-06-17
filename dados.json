@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T05:22:06.040Z",
+  "atualizado_em": "2026-06-17T05:23:09.380Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3851,24 +3851,24 @@
       "id": 56,
       "casa": 1,
       "fora": 1,
-      "min": "57'",
+      "min": "58'",
       "gols": [
         {
-          "nome": "R. Schmid",
+          "nome": "Romano Schmid",
           "min": 20,
           "lado": "casa"
         },
         {
-          "nome": "A. Olwan",
+          "nome": "Ali Olwan",
           "min": 50,
           "lado": "fora"
         }
       ],
       "subs": [
         {
-          "entrou": "M. Arnautovic",
-          "saiu": "S. Kalajdzic",
-          "min": 46,
+          "entrou": "Marko Arnautović",
+          "saiu": "Sasa Kalajdzic",
+          "min": 45,
           "lado": "casa"
         }
       ]
