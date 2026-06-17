@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-17T02:20:27.103Z",
+  "atualizado_em": "2026-06-17T02:22:02.872Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3562,7 +3562,7 @@
       "id": 55,
       "casa": 1,
       "fora": 0,
-      "min": "57'",
+      "min": "59'",
       "gols": [
         {
           "nome": "F. Chaibi",
@@ -3585,6 +3585,12 @@
         {
           "entrou": "J. Alvarez",
           "saiu": "L. Martinez",
+          "min": 55,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Gonzalez",
+          "saiu": "T. Almada",
           "min": 55,
           "lado": "casa"
         }
