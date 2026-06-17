@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-17T01:15:14.053Z",
+  "atualizado_em": "2026-06-17T01:16:18.109Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3562,7 +3562,7 @@
       "id": 55,
       "casa": 0,
       "fora": 0,
-      "min": "13'",
+      "min": "14'",
       "gols": [
         {
           "nome": "F. Chaibi",
