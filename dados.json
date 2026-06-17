@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T19:04:43.256Z",
+  "atualizado_em": "2026-06-17T19:30:11.104Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4039,6 +4039,284 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Harry Kane"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "3-4-2-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Jordan Pickford",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Nico O'Reilly",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "John Stones",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Ezri Konsa",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Reece James",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Declan Rice",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Elliot Anderson",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Anthony Gordon",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Jude Bellingham",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Noni Madueke",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Harry Kane",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 13,
+              "nome": "Dean Henderson",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "James Trafford",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Dan Burn",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Djed Spence",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Jarell Quansah",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Marc Guéhi",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Eberechi Eze",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Jordan Henderson",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Kobbie Mainoo",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Morgan Rogers",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Bukayo Saka",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Ivan Toney",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Marcus Rashford",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Ollie Watkins",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Dominik Livaković",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "Joško Gvardiol",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Luka Vušković",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Josip Šutalo",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Ivan Perišić",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Petar Sučić",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Luka Modrić",
+              "pos": "M"
+            },
+            {
+              "num": 2,
+              "nome": "Josip Stanišić",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Martin Baturina",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Mario Pašalić",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Petar Musa",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 23,
+              "nome": "Dominik Kotarski",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Ivor Pandur",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Duje Ćaleta-Car",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Marin Pongračić",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Martin Erlić",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Mateo Kovačić",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Kristijan Jakić",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Luka Sučić",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Marco Pašalić",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Nikola Moro",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Nikola Vlašić",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Toni Fruk",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Andrej Kramarić",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Ante Budimir",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Igor Matanović",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
