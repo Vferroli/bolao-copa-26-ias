@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T05:43:51.400Z",
+  "atualizado_em": "2026-06-17T05:45:25.429Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3851,7 +3851,7 @@
       "id": 56,
       "casa": 2,
       "fora": 1,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "R. Schmid",
@@ -3899,6 +3899,14 @@
           "saiu": "M. Abualnadi",
           "min": 72,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "M. Sabitzer",
+          "cor": "amarelo",
+          "min": 77,
+          "lado": "casa"
         }
       ]
     }
