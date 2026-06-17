@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T17:35:06.276Z",
+  "atualizado_em": "2026-06-17T17:36:09.692Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4139,7 +4139,7 @@
       "id": 61,
       "casa": 1,
       "fora": 0,
-      "min": "34'",
+      "min": "35'",
       "gols": [
         {
           "nome": "J. Neves",
