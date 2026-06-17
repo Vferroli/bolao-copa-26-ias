@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T03:00:26.310Z",
+  "atualizado_em": "2026-06-17T03:06:25.463Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2879,9 +2879,15 @@
       "fora": "algeria",
       "kickoff": "2026-06-17T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "F. Chaibi",
+          "L. Messi",
+          "L. Messi",
+          "L. Messi"
+        ]
       },
       "palpites": {
         "claude": {
@@ -3557,96 +3563,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 55,
-      "casa": 3,
-      "fora": 0,
-      "min": "87'",
-      "gols": [
-        {
-          "nome": "F. Chaibi",
-          "min": 8,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Messi",
-          "min": 17,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Messi",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Messi",
-          "min": 76,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. Molina",
-          "saiu": "G. Montiel",
-          "min": 46,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Alvarez",
-          "saiu": "L. Martinez",
-          "min": 55,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Gonzalez",
-          "saiu": "T. Almada",
-          "min": 55,
-          "lado": "casa"
-        },
-        {
-          "entrou": "H. Aouar",
-          "saiu": "H. Boudaoui",
-          "min": 64,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Amoura",
-          "saiu": "A. Gouiri",
-          "min": 64,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Mahrez",
-          "saiu": "A. Hadj Moussa",
-          "min": 64,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Paz",
-          "saiu": "L. Messi",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Otamendi",
-          "saiu": "C. Romero",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Boulbina",
-          "saiu": "N. Bentaleb",
-          "min": 81,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Zerrouki",
-          "saiu": "I. Maza",
-          "min": 82,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
