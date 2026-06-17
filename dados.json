@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T04:23:21.388Z",
+  "atualizado_em": "2026-06-17T04:24:24.149Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3849,10 +3849,16 @@
   "live": [
     {
       "id": 56,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
-      "min": "20'",
-      "gols": []
+      "min": "21'",
+      "gols": [
+        {
+          "nome": "Romano Schmid",
+          "min": 20,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
