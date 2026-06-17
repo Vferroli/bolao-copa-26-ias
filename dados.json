@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T06:08:24.492Z",
+  "atualizado_em": "2026-06-17T06:15:08.142Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3207,9 +3207,14 @@
       "fora": "jordan",
       "kickoff": "2026-06-17T04:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "R. Schmid",
+          "A. Olwan",
+          "M. Arnautovic"
+        ]
       },
       "palpites": {
         "grok": {
@@ -3846,99 +3851,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 56,
-      "casa": 3,
-      "fora": 1,
-      "min": "90'",
-      "gols": [
-        {
-          "nome": "R. Schmid",
-          "min": 21,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Olwan",
-          "min": 50,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Arnautovic",
-          "min": 67,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "M. Arnautovic",
-          "saiu": "S. Kalajdzic",
-          "min": 46,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Chukwuemeka",
-          "saiu": "X. Schlager",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Danso",
-          "saiu": "D. Alaba",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Wanner",
-          "saiu": "P. Mwene",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Obaid",
-          "saiu": "M. Abualnadi",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Al Rosan",
-          "saiu": "A. Nasib",
-          "min": 81,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Al Mardi",
-          "saiu": "E. Haddad",
-          "min": 81,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Wimmer",
-          "saiu": "R. Schmid",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Al Daoud",
-          "saiu": "M. Tamari",
-          "min": 88,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Azaizeh",
-          "saiu": "O. Al Fakhouri",
-          "min": 89,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "M. Sabitzer",
-          "cor": "amarelo",
-          "min": 77,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
