@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T03:06:25.463Z",
+  "atualizado_em": "2026-06-17T03:30:11.504Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3235,6 +3235,289 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Marko Arnautović"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-4-2-1",
+          "fora": "5-4-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Alexander Schlager",
+              "pos": "G"
+            },
+            {
+              "num": 8,
+              "nome": "David Alaba",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Philipp Lienhart",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Stefan Posch",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Konrad Laimer",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Nicolas Seiwald",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Xaver Schlager",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Phillipp Mwene",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Marcel Sabitzer",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Romano Schmid",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Saša Kalajdžić",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Florian Wiegele",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Patrick Pentz",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "David Affengruber",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Kevin Danso",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Marco Friedl",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Michael Svoboda",
+              "pos": "D"
+            },
+            {
+              "num": 10,
+              "nome": "Florian Grillitsch",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Carney Chukwuemeka",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Dejan Ljubičić",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Alexander Prass",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Paul Wanner",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Alessandro Schöpf",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Patrick Wimmer",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Marko Arnautović",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Michael Gregoritsch",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Yazeed Abu Laila",
+              "pos": "G"
+            },
+            {
+              "num": 20,
+              "nome": "Mohannad Abu Taha",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Mo Abualnadi",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Yazan Al-Arab",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Abdallah Nasib",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Ehsan Haddad",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "Odeh Fakhoury",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Noor Al-Deen Al Rawabdeh",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Nizar Al-Rashdan",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Mousa Tamari",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Ali Olwan",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Abdallah Al-Fakhouri",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Noureddin Zaid",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "Husam Ali Mohammad Abudahab",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Saleem Obaid",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Saad Al Rousan",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Anas Badawi",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Mohammad Abu Ghoush",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Mohammad Ali Hasheesh",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Amer Jamous",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Rajaei Ayed",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Ibrahim Sadeh",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Mohammad Al Daoud",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Mohammad Abu Zrayq",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Mahmoud Al-Mardi",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Ali Al Azaizah",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
