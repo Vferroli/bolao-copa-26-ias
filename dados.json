@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T20:45:36.398Z",
+  "atualizado_em": "2026-06-17T20:46:40.642Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4421,19 +4421,7 @@
       "id": 67,
       "casa": 2,
       "fora": 1,
-      "min": "45'",
-      "gols": [
-        {
-          "nome": "M. Baturina",
-          "min": 36,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Kane",
-          "min": 42,
-          "lado": "casa"
-        }
-      ]
+      "min": "45'"
     }
   ]
 }
