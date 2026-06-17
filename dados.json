@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T17:46:45.153Z",
+  "atualizado_em": "2026-06-17T17:53:00.088Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4138,13 +4138,18 @@
     {
       "id": 61,
       "casa": 1,
-      "fora": 0,
+      "fora": 1,
       "min": "45'",
       "gols": [
         {
           "nome": "J. Neves",
           "min": 6,
           "lado": "casa"
+        },
+        {
+          "nome": "Y. Wissa",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
