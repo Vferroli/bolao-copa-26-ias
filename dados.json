@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T05:26:18.482Z",
+  "atualizado_em": "2026-06-17T05:27:21.771Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3851,41 +3851,41 @@
       "id": 56,
       "casa": 1,
       "fora": 1,
-      "min": "61'",
+      "min": "62'",
       "gols": [
         {
-          "nome": "Romano Schmid",
+          "nome": "R. Schmid",
           "min": 21,
           "lado": "casa"
         },
         {
-          "nome": "Ali Olwan",
+          "nome": "A. Olwan",
           "min": 50,
           "lado": "fora"
         }
       ],
       "subs": [
         {
-          "entrou": "Marko Arnautović",
-          "saiu": "Sasa Kalajdzic",
-          "min": 45,
+          "entrou": "M. Arnautovic",
+          "saiu": "S. Kalajdzic",
+          "min": 46,
           "lado": "casa"
         },
         {
-          "entrou": "Paul Wanner",
-          "saiu": "Phillipp Mwene",
+          "entrou": "C. Chukwuemeka",
+          "saiu": "X. Schlager",
           "min": 59,
           "lado": "casa"
         },
         {
-          "entrou": "Carney Chukwuemeka",
-          "saiu": "Xaver Schlager",
+          "entrou": "K. Danso",
+          "saiu": "D. Alaba",
           "min": 59,
           "lado": "casa"
         },
         {
-          "entrou": "Kevin Danso",
-          "saiu": "David Alaba",
+          "entrou": "P. Wanner",
+          "saiu": "P. Mwene",
           "min": 59,
           "lado": "casa"
         }
