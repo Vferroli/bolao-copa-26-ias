@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-17T02:47:45.548Z",
+  "atualizado_em": "2026-06-17T02:48:50.293Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3562,7 +3562,7 @@
       "id": 55,
       "casa": 3,
       "fora": 0,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "F. Chaibi",
@@ -3635,13 +3635,13 @@
           "lado": "casa"
         },
         {
-          "entrou": "R. Zerrouki",
-          "saiu": "I. Maza",
-          "min": 82,
+          "entrou": "A. Boulbina",
+          "saiu": "N. Bentaleb",
+          "min": 81,
           "lado": "fora"
         },
         {
-          "entrou": "A. Boulbina",
+          "entrou": "R. Zerrouki",
           "saiu": "I. Maza",
           "min": 82,
           "lado": "fora"
