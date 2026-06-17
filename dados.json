@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-16T23:53:09.798Z",
+  "atualizado_em": "2026-06-17T00:00:32.794Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3272,7 +3272,7 @@
     {
       "id": 50,
       "casa": 1,
-      "fora": 3,
+      "fora": 4,
       "min": "90'",
       "gols": [
         {
@@ -3293,6 +3293,11 @@
         {
           "nome": "L. Ostigard",
           "min": 76,
+          "lado": "fora"
+        },
+        {
+          "nome": "K. Thorstvedt",
+          "min": 90,
           "lado": "fora"
         }
       ],
