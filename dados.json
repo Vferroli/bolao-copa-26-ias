@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T20:46:40.642Z",
+  "atualizado_em": "2026-06-17T22:05:58.382Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4011,9 +4011,16 @@
       "fora": "croatia",
       "kickoff": "2026-06-17T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 4,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "M. Baturina",
+          "H. Kane",
+          "P. Musa",
+          "J. Bellingham",
+          "M. Rashford"
+        ]
       },
       "palpites": {
         "grok": {
@@ -4416,12 +4423,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 67,
-      "casa": 2,
-      "fora": 1,
-      "min": "45'"
-    }
-  ]
+  "live": []
 }
