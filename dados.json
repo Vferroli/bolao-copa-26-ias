@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T22:05:58.382Z",
+  "atualizado_em": "2026-06-17T22:30:39.601Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4363,6 +4363,284 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Antoine Semenyo"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-1-1",
+          "fora": "4-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Lawrence Ati Zigi",
+              "pos": "G"
+            },
+            {
+              "num": 14,
+              "nome": "Gideon Mensah",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Jerome Opoku",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Jonas Adjei Adjetey",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Marvin Senaya",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Ernest Nuamah",
+              "pos": "M"
+            },
+            {
+              "num": 3,
+              "nome": "Caleb Yirenkyi",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Elisha Owusu",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Antoine Semenyo",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Kamaldeen Sulemana",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Jordan Ayew",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Joseph Anang",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Benjamin Asare",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Alidu Seidu",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Abdul Mumin",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Rahman Baba",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Kojo Peprah Oppong",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Derrick Luckassen",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Kwasi Sibo",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Abdul Fatawu Issahaku",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Christopher Baah",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Iñaki Williams",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Augustine Boakye",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Brandon Thomas-Asante",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Prince Kwabena Adu",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 22,
+              "nome": "Orlando Mosquera",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Andrés Andrade",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "José Córdoba",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Jiovany Ramos",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "César Blackman",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "José Luis Rodríguez",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Cristian Martínez",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Carlos Harvey",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Amir Murillo",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Cecilio Waterman",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Yoel Bárcenas",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "César Samudio",
+              "pos": "G"
+            },
+            {
+              "num": 1,
+              "nome": "Luis Mejía",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "Fidel Escobar",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Edgardo Fariña",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Éric Davis",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Roderick Miller",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Jorge Gutiérrez",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Adalberto Carrasquilla",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Ismael Díaz",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Alberto Quintero",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Aníbal Godoy",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "César Yanis",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Azarias Londoño",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Tomás Rodríguez",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "José Fajardo",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
