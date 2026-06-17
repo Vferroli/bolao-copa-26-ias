@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-17T02:43:29.809Z",
+  "atualizado_em": "2026-06-17T02:44:34.093Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3562,7 +3562,7 @@
       "id": 55,
       "casa": 3,
       "fora": 0,
-      "min": "80'",
+      "min": "81'",
       "gols": [
         {
           "nome": "F. Chaibi",
@@ -3621,6 +3621,18 @@
           "saiu": "A. Hadj Moussa",
           "min": 64,
           "lado": "fora"
+        },
+        {
+          "entrou": "N. Paz",
+          "saiu": "L. Messi",
+          "min": 80,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Otamendi",
+          "saiu": "C. Romero",
+          "min": 80,
+          "lado": "casa"
         }
       ]
     }
