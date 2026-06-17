@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T05:41:14.048Z",
+  "atualizado_em": "2026-06-17T05:41:45.897Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3849,9 +3849,9 @@
   "live": [
     {
       "id": 56,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "R. Schmid",
