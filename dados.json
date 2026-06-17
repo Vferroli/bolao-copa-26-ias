@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T05:55:24.386Z",
+  "atualizado_em": "2026-06-17T06:03:13.104Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3927,7 +3927,7 @@
         {
           "entrou": "A. Azaizeh",
           "saiu": "O. Al Fakhouri",
-          "min": 88,
+          "min": 89,
           "lado": "fora"
         }
       ],
