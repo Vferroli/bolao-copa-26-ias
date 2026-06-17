@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T05:47:00.053Z",
+  "atualizado_em": "2026-06-17T05:48:35.360Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3851,7 +3851,7 @@
       "id": 56,
       "casa": 2,
       "fora": 1,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "R. Schmid",
@@ -3899,6 +3899,24 @@
           "saiu": "M. Abualnadi",
           "min": 72,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Al Rosan",
+          "saiu": "A. Nasib",
+          "min": 81,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Al Mardi",
+          "saiu": "E. Haddad",
+          "min": 82,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. Wimmer",
+          "saiu": "R. Schmid",
+          "min": 83,
+          "lado": "casa"
         }
       ],
       "cartoes": [
