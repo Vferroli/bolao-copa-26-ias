@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T17:54:04.914Z",
+  "atualizado_em": "2026-06-17T18:10:46.401Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4139,7 +4139,7 @@
       "id": 61,
       "casa": 1,
       "fora": 1,
-      "min": "Intervalo",
+      "min": "46'",
       "gols": [
         {
           "nome": "J. Neves",
@@ -4150,6 +4150,14 @@
           "nome": "Y. Wissa",
           "min": 45,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "F. Conceicao",
+          "saiu": "B. Silva",
+          "min": 46,
+          "lado": "casa"
         }
       ],
       "cartoes": [
