@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-17T04:53:53.263Z",
+  "atualizado_em": "2026-06-17T05:11:33.036Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3851,11 +3851,19 @@
       "id": 56,
       "casa": 1,
       "fora": 0,
-      "min": "Intervalo",
+      "min": "46'",
       "gols": [
         {
           "nome": "R. Schmid",
           "min": 20,
+          "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "M. Arnautovic",
+          "saiu": "S. Kalajdzic",
+          "min": 46,
           "lado": "casa"
         }
       ]
