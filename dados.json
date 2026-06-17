@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-16",
-  "atualizado_em": "2026-06-17T00:00:32.794Z",
+  "atualizado_em": "2026-06-17T00:08:26.937Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2495,9 +2495,15 @@
       "fora": "norway",
       "kickoff": "2026-06-16T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 4,
+        "avancou": null,
+        "marcadores": [
+          "E. Haaland",
+          "A. Hussein",
+          "E. Haaland",
+          "L. Ostigard"
+        ]
       },
       "palpites": {
         "claude": {
@@ -3268,109 +3274,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 50,
-      "casa": 1,
-      "fora": 4,
-      "min": "90'",
-      "gols": [
-        {
-          "nome": "E. Haaland",
-          "min": 29,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Hussein",
-          "min": 39,
-          "lado": "casa"
-        },
-        {
-          "nome": "E. Haaland",
-          "min": 43,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Ostigard",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. Thorstvedt",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "Z. Iqbal",
-          "saiu": "Z. Ismaeel",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Farji",
-          "saiu": "A. Al Hamadi",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Schjelderup",
-          "saiu": "A. Nusa",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Thorstvedt",
-          "saiu": "F. Aursnes",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Ostigard",
-          "saiu": "D. Wolfe",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Bobb",
-          "saiu": "A. Sorloth",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Saadoon",
-          "saiu": "H. Ali",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Qasem",
-          "saiu": "A. Jasim",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Meme",
-          "saiu": "I. Bayesh",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Berg",
-          "saiu": "M. Odegaard",
-          "min": 81,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "Z. Tahseen",
-          "cor": "amarelo",
-          "min": 86,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
