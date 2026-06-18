@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T23:23:59.436Z",
+  "atualizado_em": "2026-06-18T23:24:31.859Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6500,6 +6500,12 @@
           "nome": "A. Madibo",
           "cor": "vermelho",
           "min": 53,
+          "lado": "fora"
+        },
+        {
+          "nome": "A. Fathy",
+          "cor": "amarelo",
+          "min": 62,
           "lado": "fora"
         }
       ]
