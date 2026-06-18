@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T17:57:43.217Z",
+  "atualizado_em": "2026-06-18T17:58:46.747Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5860,7 +5860,7 @@
       "id": 3,
       "casa": 1,
       "fora": 1,
-      "min": "90'+6'",
+      "min": "90'+7'",
       "gols": [
         {
           "nome": "M. Sadílek",
