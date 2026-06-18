@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T23:33:04.856Z",
+  "atualizado_em": "2026-06-18T23:33:37.299Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6486,6 +6486,18 @@
           "saiu": "A. Afif",
           "min": 59,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Shaffelburg",
+          "saiu": "L. de Fougerolles",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Oluwaseyi",
+          "saiu": "A. Ahmed",
+          "min": 71,
+          "lado": "casa"
         }
       ],
       "cartoes": [
