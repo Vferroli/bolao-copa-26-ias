@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T23:43:55.764Z",
+  "atualizado_em": "2026-06-18T23:44:58.802Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6427,7 +6427,7 @@
       "id": 10,
       "casa": 5,
       "fora": 0,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "C. Larin",
@@ -6497,6 +6497,12 @@
           "entrou": "T. Oluwaseyi",
           "saiu": "A. Ahmed",
           "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Sigur",
+          "saiu": "T. Buchanan",
+          "min": 83,
           "lado": "casa"
         }
       ],
