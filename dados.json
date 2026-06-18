@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T22:33:52.512Z",
+  "atualizado_em": "2026-06-18T22:34:24.430Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6446,12 +6446,6 @@
           "cor": "amarelo",
           "min": 9,
           "lado": "casa"
-        },
-        {
-          "nome": "H. Ahmed",
-          "cor": "amarelo",
-          "min": 32,
-          "lado": "fora"
         }
       ]
     }
