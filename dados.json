@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T21:02:19.516Z",
+  "atualizado_em": "2026-06-18T21:30:27.584Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1147,6 +1147,284 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Jonathan David"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-2",
+          "fora": "4-3-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "Maxime Crépeau",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Richie Laryea",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Derek Cornelius",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Luc De Fougerolles",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Alistair Johnston",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Ali Ahmed",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Ismael Koné",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Stephen Eustaquio",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Tajon Buchanan",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Cyle Larin",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Jonathan David",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Dayne St. Clair",
+              "pos": "G"
+            },
+            {
+              "num": 18,
+              "nome": "Owen Goodman",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Joel Waterman",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Alphonso Davies",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Moise Bombito",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Niko Sigur",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Mathieu Choinière",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Liam Millar",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Jacob Shaffelburg",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Jonathan Osorio",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Nathan-Dylan Saliba",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Tani Oluwaseyi",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Promise David",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Jayden Nelson",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Mahmud Abunada",
+              "pos": "G"
+            },
+            {
+              "num": 14,
+              "nome": "Homam Al-Amin",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Boualem Khoukhi",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Pedro Miguel",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Ayoub Al Oui",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Issa Laye",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Assim Madibo",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Jassem Gaber Abdulsallam",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Akram Afif",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Yusuf Abdurisag",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Edmilson Junior",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 21,
+              "nome": "Salah Zakaria",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Meshaal Barsham",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Lucas Mendes",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Sultan Al-Brake",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Al-Hashmi Al-Hussain",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Abdelaziz Hatem",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Karim Boudiaf",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Ahmed Al-Ganehi",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Ahmed Fathi",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Almoez Ali",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Mohamed Naceur Almanai",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Ahmed Alaaeldin",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Mohammed Muntari",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Hassan Al Haydos",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Tahsin Mohammed Jamshid",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
