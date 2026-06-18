@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:38:49.256Z",
+  "atualizado_em": "2026-06-18T00:39:52.306Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4706,7 +4706,7 @@
       "id": 68,
       "casa": 0,
       "fora": 0,
-      "min": "77'",
+      "min": "78'",
       "subs": [
         {
           "entrou": "B. Asare",
@@ -4743,6 +4743,12 @@
           "saiu": "J. Luis Rodríguez",
           "min": 74,
           "lado": "fora"
+        },
+        {
+          "entrou": "K. Sibo",
+          "saiu": "E. Owusu",
+          "min": 78,
+          "lado": "casa"
         }
       ],
       "cartoes": [
