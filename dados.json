@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:39:10.580Z",
+  "atualizado_em": "2026-06-18T20:39:43.245Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6200,6 +6200,12 @@
           "cor": "amarelo",
           "min": 65,
           "lado": "casa"
+        },
+        {
+          "nome": "T. Muharemovic",
+          "cor": "vermelho",
+          "min": 80,
+          "lado": "fora"
         }
       ]
     }
