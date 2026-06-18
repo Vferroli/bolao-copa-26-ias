@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T17:27:56.084Z",
+  "atualizado_em": "2026-06-18T17:28:28.680Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5892,6 +5892,18 @@
           "saiu": "I. Rayners",
           "min": 66,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Soucek",
+          "saiu": "M. Sadílek",
+          "min": 67,
+          "lado": "casa"
+        },
+        {
+          "entrou": "L. Provod",
+          "saiu": "A. Hlozek",
+          "min": 67,
+          "lado": "casa"
         }
       ],
       "cartoes": [
