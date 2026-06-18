@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T22:48:41.221Z",
+  "atualizado_em": "2026-06-18T22:49:28.058Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6425,9 +6425,9 @@
   "live": [
     {
       "id": 10,
-      "casa": 2,
+      "casa": 3,
       "fora": 0,
-      "min": "45'+3'",
+      "min": "45'+4'",
       "gols": [
         {
           "nome": "C. Larin",
@@ -6437,6 +6437,11 @@
         {
           "nome": "J. David",
           "min": 29,
+          "lado": "casa"
+        },
+        {
+          "nome": "J. David",
+          "min": 45,
           "lado": "casa"
         }
       ],
