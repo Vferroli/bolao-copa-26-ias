@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:42:57.218Z",
+  "atualizado_em": "2026-06-18T20:44:02.514Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6140,13 +6140,18 @@
   "live": [
     {
       "id": 9,
-      "casa": 1,
+      "casa": 2,
       "fora": 0,
-      "min": "83'",
+      "min": "85'",
       "gols": [
         {
           "nome": "J. Manzambi",
           "min": 74,
+          "lado": "casa"
+        },
+        {
+          "nome": "R. Vargas",
+          "min": 84,
           "lado": "casa"
         }
       ],
