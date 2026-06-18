@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T22:14:19.279Z",
+  "atualizado_em": "2026-06-18T22:15:22.717Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6427,7 +6427,7 @@
       "id": 10,
       "casa": 0,
       "fora": 0,
-      "min": "13'",
+      "min": "14'",
       "cartoes": [
         {
           "nome": "D. Cornelius",
