@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:49:59.165Z",
+  "atualizado_em": "2026-06-18T20:50:31.704Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6214,6 +6214,12 @@
           "saiu": "B. Embolo",
           "min": 89,
           "lado": "casa"
+        },
+        {
+          "entrou": "E. Mahmic",
+          "saiu": "K. Alajbegovic",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
