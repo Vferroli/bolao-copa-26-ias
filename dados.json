@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:31:08.268Z",
+  "atualizado_em": "2026-06-18T20:31:40.825Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6142,7 +6142,7 @@
       "id": 9,
       "casa": 0,
       "fora": 0,
-      "min": "71'",
+      "min": "73'",
       "subs": [
         {
           "entrou": "I. Basic",
@@ -6157,20 +6157,20 @@
           "lado": "fora"
         },
         {
-          "entrou": "J. Manzambi",
-          "saiu": "D. Ndoye",
+          "entrou": "D. Sow",
+          "saiu": "M. Aebischer",
           "min": 71,
           "lado": "casa"
         },
         {
           "entrou": "R. Vargas",
           "saiu": "F. Rieder",
-          "min": 72,
+          "min": 71,
           "lado": "casa"
         },
         {
-          "entrou": "D. Sow",
-          "saiu": "M. Aebischer",
+          "entrou": "J. Manzambi",
+          "saiu": "D. Ndoye",
           "min": 72,
           "lado": "casa"
         }
