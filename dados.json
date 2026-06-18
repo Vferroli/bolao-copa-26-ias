@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:45:07.990Z",
+  "atualizado_em": "2026-06-18T20:45:41.550Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6142,7 +6142,7 @@
       "id": 9,
       "casa": 2,
       "fora": 0,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "J. Manzambi",
@@ -6191,6 +6191,18 @@
           "saiu": "I. Sunjic",
           "min": 86,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Lukic",
+          "saiu": "E. Demirovic",
+          "min": 86,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. Jaquez",
+          "saiu": "S. Widmer",
+          "min": 86,
+          "lado": "casa"
         }
       ],
       "cartoes": [
