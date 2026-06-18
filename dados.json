@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:48:19.005Z",
+  "atualizado_em": "2026-06-18T00:49:22.032Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4706,7 +4706,7 @@
       "id": 68,
       "casa": 0,
       "fora": 0,
-      "min": "87'",
+      "min": "88'",
       "subs": [
         {
           "entrou": "B. Asare",
@@ -4748,6 +4748,12 @@
           "entrou": "K. Sibo",
           "saiu": "E. Owusu",
           "min": 78,
+          "lado": "casa"
+        },
+        {
+          "entrou": "P. Adu",
+          "saiu": "J. Ayew",
+          "min": 87,
           "lado": "casa"
         }
       ],
