@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:24:12.015Z",
+  "atualizado_em": "2026-06-18T20:24:44.493Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6142,7 +6142,7 @@
       "id": 9,
       "casa": 0,
       "fora": 0,
-      "min": "65'",
+      "min": "66'",
       "subs": [
         {
           "entrou": "I. Basic",
@@ -6169,6 +6169,12 @@
           "cor": "amarelo",
           "min": 61,
           "lado": "fora"
+        },
+        {
+          "nome": "N. Elvedi",
+          "cor": "amarelo",
+          "min": 65,
+          "lado": "casa"
         }
       ]
     }
