@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:06:12.549Z",
+  "atualizado_em": "2026-06-18T00:11:24.827Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4706,8 +4706,16 @@
       "id": 68,
       "casa": 0,
       "fora": 0,
-      "min": "Intervalo",
+      "min": "49'",
       "gols": [],
+      "subs": [
+        {
+          "entrou": "B. Asare",
+          "saiu": "L. Ati Zigi",
+          "min": 46,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "C. Yirenkyi",
