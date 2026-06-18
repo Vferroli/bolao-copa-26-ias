@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:44:02.514Z",
+  "atualizado_em": "2026-06-18T20:45:07.990Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6185,6 +6185,12 @@
           "saiu": "F. Rieder",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Hadziahmetovic",
+          "saiu": "I. Sunjic",
+          "min": 86,
+          "lado": "fora"
         }
       ],
       "cartoes": [
