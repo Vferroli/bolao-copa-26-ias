@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T16:33:35.985Z",
+  "atualizado_em": "2026-06-18T16:34:07.771Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5860,12 +5860,20 @@
       "id": 3,
       "casa": 1,
       "fora": 0,
-      "min": "33'",
+      "min": "34'",
       "gols": [
         {
           "nome": "M. Sadílek",
           "min": 6,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "T. Mokoena",
+          "cor": "amarelo",
+          "min": 33,
+          "lado": "fora"
         }
       ]
     }
