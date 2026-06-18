@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:24:03.184Z",
+  "atualizado_em": "2026-06-18T00:24:35.221Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4706,7 +4706,7 @@
       "id": 68,
       "casa": 0,
       "fora": 0,
-      "min": "62'",
+      "min": "63'",
       "subs": [
         {
           "entrou": "B. Asare",
@@ -4725,6 +4725,18 @@
           "saiu": "E. Nuamah",
           "min": 58,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Fajardo",
+          "saiu": "C. Waterman",
+          "min": 63,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Londoño",
+          "saiu": "C. Martínez",
+          "min": 63,
+          "lado": "fora"
         }
       ],
       "cartoes": [
