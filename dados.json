@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:33:48.744Z",
+  "atualizado_em": "2026-06-18T20:34:21.500Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6140,9 +6140,16 @@
   "live": [
     {
       "id": 9,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
       "min": "75'",
+      "gols": [
+        {
+          "nome": "J. Manzambi",
+          "min": 74,
+          "lado": "casa"
+        }
+      ],
       "subs": [
         {
           "entrou": "I. Basic",
