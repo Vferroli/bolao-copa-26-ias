@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:18:50.406Z",
+  "atualizado_em": "2026-06-18T20:19:23.076Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6142,7 +6142,7 @@
       "id": 9,
       "casa": 0,
       "fora": 0,
-      "min": "59'",
+      "min": "60'",
       "cartoes": [
         {
           "nome": "A. Dedic",
