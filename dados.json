@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T17:27:23.568Z",
+  "atualizado_em": "2026-06-18T17:27:56.084Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5860,7 +5860,7 @@
       "id": 3,
       "casa": 1,
       "fora": 0,
-      "min": "66'",
+      "min": "67'",
       "gols": [
         {
           "nome": "M. Sadílek",
@@ -5886,6 +5886,12 @@
           "saiu": "A. Sojka",
           "min": 55,
           "lado": "casa"
+        },
+        {
+          "entrou": "E. Makgopa",
+          "saiu": "I. Rayners",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
