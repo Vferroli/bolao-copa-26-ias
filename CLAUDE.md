@@ -8,7 +8,7 @@ One-page (SPA estática) que acompanha um bolão da Copa 2026 entre 4 IAs (Claud
 - `assets/app-render.js` — render das seções + interações (modal, count-up, poll).
 - `assets/style.css` — design dark "scoreboard", mobile-first.
 - `dados.json` — TODO o estado (times, fases, jogos, palpites, real, live, **escalacoes**).
-- `scripts/update-resultados.mjs` — busca placares/escalações nas APIs e atualiza `dados.json`. Helpers `rotor()` (round-robin de chaves c/ leitura de cota), live de 2 fontes alternadas, throttle adaptativo. Estado efêmero em `.live-state.json` (gitignored).
+- `scripts/update-resultados.mjs` — busca placares/escalações nas APIs e atualiza `dados.json`. Live + gols/cartões/subs + marcadores via **ESPN** (grátis, sem cota); finais via football-data.org; escalações via Highlightly (`rotor()` = round-robin de chaves c/ leitura de cota, só usado nas escalações agora). Estado efêmero em `.live-state.json` (gitignored).
 - `.github/workflows/resultados.yml` — roda o script (auto-corrente).
 - `REGRAS.md` (pontuação), `PROMPT.md` (briefing enviado às IAs).
 
@@ -33,13 +33,14 @@ One-page (SPA estática) que acompanha um bolão da Copa 2026 entre 4 IAs (Claud
 
 ## Resultados (automático)
 - Workflow roda `update-resultados.mjs`. **Finais**: football-data.org (primário, competição `WC`) com fallback API-Football (`league=1, season=2026`).
-- **Ao vivo (2 fontes alternadas)**: API-Football `fixtures?live=all` (1 req cobre todos os jogos) **+** Highlightly `/matches?leagueId=1635&date=` (host direto `soccer.highlightly.net`, header `X-RapidAPI-Key`). A cada poll alterna a fonte; se uma esgota a cota, usa a outra.
-- **Rotação de chaves**: `rotor()` faz round-robin entre as 3 chaves API-Football e as 3 Highlightly, lê a cota do header (`x-ratelimit-requests-remaining`) e pula chave esgotada. Throttle do live é **adaptativo ao orçamento**: `intervalo = seg_até_fim / cota_total_restante`, clamp **30–240s** (cobre dias de 8 jogos sem estourar). Estado por-run em `.live-state.json`.
-- Preenche `jogos[].real` (placar final), `jogos[].real.avancou` (mata-mata), **`jogos[].real.marcadores`** (lista de quem marcou, via API-Football `/fixtures/events`, p/ o bônus de artilheiro), **`jogos[].escalacoes`** (ver abaixo) e `live[]` (em jogo). Commits com `[skip ci]`.
+- **Ao vivo + gols/cartões/subs + marcadores = ESPN** (`site.api.espn.com/apis/site/v2/sports/soccer/fifa.world`, liga `fifa.world`): API pública **grátis, sem chave, sem cota**. `scoreboard?dates=YYYYMMDD` dá placar/minuto/status (`status.type.state === "in"` = ao vivo); `summary?event=ID` dá `keyEvents[]` (gol = `scoringPlay:true`, exceto `Own Goal`; cartão/substituição por `type.text`). 1 scoreboard/data + 1 summary/jogo-ao-vivo por run. Cache por-run em `cache={sb,sum}`; **nada persiste entre runs** (live precisa de dado fresco). Funções: `liveEspn`, `espnEventos`, `marcadoresEspn`.
+- **Por que ESPN**: API-Football não cobre live da WC2026 (retornava 0 jogos) e as 6 chaves Highlightly estouravam a cota diária em dias de vários jogos. ESPN ilimitado resolve de vez. **Highlightly ficou só nas escalações.**
+- Nomes saem normalizados p/ **`"I. Sobrenome"`** (`abbrevNome`, ex.: "Lionel Messi" → "L. Messi"); de-para de seleções via `resolve()`/`ALIAS` (cobre "Congo DR", "Korea Republic" etc.; só placeholders TBD de chaveamento ficam fora).
+- Preenche `jogos[].real` (placar final), `jogos[].real.avancou` (mata-mata), **`jogos[].real.marcadores`** (lista de quem marcou, via ESPN `summary.keyEvents`, p/ o bônus de artilheiro — gol contra não credita autor), **`jogos[].escalacoes`** (ver abaixo) e `live[]` (em jogo, com `gols/cartoes/subs`). Commits com `[skip ci]`.
 - O schedule do GitHub é instável → o workflow faz loop ~50min e **se redispara** (auto-corrente) via secret `DISPATCH_PAT`. Para após 2026-07-20.
 - Reiniciar corrente se parar: `gh workflow run "Atualizar resultados" --repo Vferroli/bolao-copa-26-ias`.
-- Atualização manual sob demanda: `FOOTBALL_DATA_KEY=... node scripts/update-resultados.mjs` → commit `[skip ci]` → push.
-- **Verificar mapeamento de times**: num dia de jogo, ler o log do Actions. `live: fonte=… intervalo=…` confirma alternância+throttle; `escalação … ok` confirma lineup salvo; **`? time não mapeado: ?(Nome)`** = nome de seleção que não casou → adicionar entrada no mapa `ALIAS` do script (ex.: `"korea-republic": "south-korea"`).
+- Atualização manual sob demanda: `FOOTBALL_DATA_KEY=... node scripts/update-resultados.mjs` → commit `[skip ci]` → push. (Live/marcadores via ESPN rodam sem nenhuma chave.)
+- **Verificar mapeamento de times**: num dia de jogo, ler o log do Actions. `live ESPN: N jogo(s)` confirma o live; `escalação … ok` confirma lineup salvo; **`? time não mapeado: ?(Nome)`** (finais) ou um jogo que não aparece no live = nome de seleção que não casou → adicionar entrada no mapa `ALIAS` do script (ex.: `"korea-republic": "south-korea"`).
 
 ## Escalações (automático)
 - `jogos[].escalacoes` (opcional; só existe perto/depois do kickoff): `{ fonte, formacao:{casa,fora}, tecnico:{casa,fora}, casa:{titulares,reservas}, fora:{...} }`. Jogador = `{ num, nome, pos }`, `pos ∈ {G,D,M,F}`. **`tecnico` vem `null`** (endpoint Highlightly `/lineups` não expõe técnico).
@@ -54,9 +55,10 @@ One-page (SPA estática) que acompanha um bolão da Copa 2026 entre 4 IAs (Claud
 
 ## Secrets (GitHub Actions)
 - `FOOTBALL_DATA_KEY` (obrigatório; finais), `DISPATCH_PAT` (corrente; fine-grained, Actions read+write).
-- **API-Football** (ao vivo + `real.marcadores` do artilheiro): `API_FOOTBALL_KEY`, `API_FOOTBALL_KEY_2`, `API_FOOTBALL_KEY_3` (rotação ~300 req/dia; contas com e-mails distintos).
-- **Highlightly** (2ª fonte live + escalações, host direto, ~300 req/dia): `HIGHLIGHTLY_KEY` (lineups), `HIGHLIGHTLY_KEY_2` + `HIGHLIGHTLY_KEY_3` (live). Faltando chave dedicada, `rotor` cai pro pool inteiro.
-- Todas opcionais exceto `FOOTBALL_DATA_KEY` — o código lê via `.filter(Boolean)` e degrada (sem chave AF → +3 dormente; sem Highlightly → sem escalações/2ª fonte live).
+- **Live + marcadores = ESPN, sem chave** (não precisa de secret nenhum).
+- **API-Football** (só fallback dos finais): `API_FOOTBALL_KEY`, `API_FOOTBALL_KEY_2`, `API_FOOTBALL_KEY_3` (rotação; contas c/ e-mails distintos). Não usado mais p/ live.
+- **Highlightly** (só escalações agora): `HIGHLIGHTLY_KEY` (lineups). `HIGHLIGHTLY_KEY_2..7` **ficaram redundantes** (live migrou p/ ESPN) — podem ser removidos. Faltando chave dedicada, `rotor` cai pro pool inteiro.
+- Todas opcionais exceto `FOOTBALL_DATA_KEY` — o código lê via `.filter(Boolean)` e degrada (sem Highlightly → sem escalações; live/finais/marcadores seguem via ESPN+football-data).
 
 ## Notas
 - IDs de times = slugs em inglês (ex.: `ivory-coast`, `south-korea`). Bandeiras via flagcdn (mapa `ISO` em app.js; Inglaterra/Escócia = `gb-eng`/`gb-sct`).
