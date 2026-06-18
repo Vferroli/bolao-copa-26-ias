@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:22:35.256Z",
+  "atualizado_em": "2026-06-18T20:23:07.858Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6142,7 +6142,21 @@
       "id": 9,
       "casa": 0,
       "fora": 0,
-      "min": "63'",
+      "min": "64'",
+      "subs": [
+        {
+          "entrou": "I. Basic",
+          "saiu": "B. Tahirovic",
+          "min": 63,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Bajraktarevic",
+          "saiu": "E. Dzeko",
+          "min": 64,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "A. Dedic",
