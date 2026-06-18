@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T23:20:45.598Z",
+  "atualizado_em": "2026-06-18T23:21:18.272Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6475,6 +6475,12 @@
           "saiu": "I. Koné",
           "min": 57,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Al-Hussain",
+          "saiu": "A. Afif",
+          "min": 59,
+          "lado": "fora"
         }
       ],
       "cartoes": [
