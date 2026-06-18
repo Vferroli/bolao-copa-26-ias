@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:51:28.917Z",
+  "atualizado_em": "2026-06-18T00:52:02.363Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4706,7 +4706,7 @@
       "id": 68,
       "casa": 0,
       "fora": 0,
-      "min": "90'",
+      "min": "90'+1'",
       "subs": [
         {
           "entrou": "B. Asare",
@@ -4755,6 +4755,12 @@
           "saiu": "J. Ayew",
           "min": 87,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Godoy",
+          "saiu": "C. Blackman",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
