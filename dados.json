@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:56:58.389Z",
+  "atualizado_em": "2026-06-18T21:02:19.516Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -795,9 +795,16 @@
       "fora": "bosnia-herzegovina",
       "kickoff": "2026-06-18T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 4,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "J. Manzambi",
+          "R. Vargas",
+          "J. Manzambi",
+          "E. Mahmic",
+          "G. Xhaka"
+        ]
       },
       "palpites": {
         "claude": {
@@ -6137,122 +6144,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 9,
-      "casa": 3,
-      "fora": 1,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "J. Manzambi",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "nome": "R. Vargas",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Manzambi",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "nome": "E. Mahmic",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "I. Basic",
-          "saiu": "B. Tahirovic",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Bajraktarevic",
-          "saiu": "E. Dzeko",
-          "min": 64,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Sow",
-          "saiu": "M. Aebischer",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Manzambi",
-          "saiu": "D. Ndoye",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Vargas",
-          "saiu": "F. Rieder",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Lukic",
-          "saiu": "E. Demirovic",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Hadziahmetovic",
-          "saiu": "I. Sunjic",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Jaquez",
-          "saiu": "S. Widmer",
-          "min": 86,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Itten",
-          "saiu": "B. Embolo",
-          "min": 89,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Mahmic",
-          "saiu": "K. Alajbegovic",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Dedic",
-          "cor": "amarelo",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Dzeko",
-          "cor": "amarelo",
-          "min": 61,
-          "lado": "fora"
-        },
-        {
-          "nome": "N. Elvedi",
-          "cor": "amarelo",
-          "min": 65,
-          "lado": "casa"
-        },
-        {
-          "nome": "T. Muharemovic",
-          "cor": "vermelho",
-          "min": 80,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
