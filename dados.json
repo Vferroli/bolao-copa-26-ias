@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T23:28:48.834Z",
+  "atualizado_em": "2026-06-18T23:30:24.209Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6427,7 +6427,7 @@
       "id": 10,
       "casa": 4,
       "fora": 0,
-      "min": "67'",
+      "min": "68'",
       "gols": [
         {
           "nome": "C. Larin",
