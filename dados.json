@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T01:00:41.831Z",
+  "atualizado_em": "2026-06-18T01:01:13.823Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5306,7 +5306,7 @@
       "id": 68,
       "casa": 1,
       "fora": 0,
-      "min": "90'+8'",
+      "min": "90'+9'",
       "gols": [
         {
           "nome": "C. Yirenkyi",
@@ -5381,6 +5381,12 @@
           "nome": "C. Blackman",
           "cor": "amarelo",
           "min": 72,
+          "lado": "fora"
+        },
+        {
+          "nome": "C. Harvey",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "fora"
         }
       ]
