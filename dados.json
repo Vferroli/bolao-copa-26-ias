@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T17:58:46.747Z",
+  "atualizado_em": "2026-06-18T18:04:00.690Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -382,9 +382,13 @@
       "fora": "south-africa",
       "kickoff": "2026-06-18T16:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "M. Sadílek",
+          "T. Mokoena"
+        ]
       },
       "palpites": {
         "claude": {
@@ -5855,94 +5859,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 3,
-      "casa": 1,
-      "fora": 1,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "M. Sadílek",
-          "min": 6,
-          "lado": "casa"
-        },
-        {
-          "nome": "T. Mokoena",
-          "min": 83,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "R. Mofokeng",
-          "saiu": "J. Adams",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Sulc",
-          "saiu": "V. Darida",
-          "min": 55,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Zelený",
-          "saiu": "A. Sojka",
-          "min": 55,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Makgopa",
-          "saiu": "I. Rayners",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Soucek",
-          "saiu": "M. Sadílek",
-          "min": 67,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Provod",
-          "saiu": "A. Hlozek",
-          "min": 67,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Zima",
-          "saiu": "L. Cerv",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Sebelebele",
-          "saiu": "T. Maseko",
-          "min": 84,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "T. Mokoena",
-          "cor": "amarelo",
-          "min": 33,
-          "lado": "fora"
-        },
-        {
-          "nome": "T. Mbatha",
-          "cor": "amarelo",
-          "min": 40,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Krejcí",
-          "cor": "amarelo",
-          "min": 75,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
