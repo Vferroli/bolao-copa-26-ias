@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:55:41.623Z",
+  "atualizado_em": "2026-06-18T00:56:26.010Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4706,7 +4706,14 @@
       "id": 68,
       "casa": 0,
       "fora": 0,
-      "min": "90'+3'",
+      "min": "90'+4'",
+      "gols": [
+        {
+          "nome": "C. Yirenkyi",
+          "min": 90,
+          "lado": "casa"
+        }
+      ],
       "subs": [
         {
           "entrou": "B. Asare",
