@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:30:35.701Z",
+  "atualizado_em": "2026-06-18T20:31:08.268Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6155,6 +6155,24 @@
           "saiu": "E. Dzeko",
           "min": 64,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Manzambi",
+          "saiu": "D. Ndoye",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Vargas",
+          "saiu": "F. Rieder",
+          "min": 72,
+          "lado": "casa"
+        },
+        {
+          "entrou": "D. Sow",
+          "saiu": "M. Aebischer",
+          "min": 72,
+          "lado": "casa"
         }
       ],
       "cartoes": [
