@@ -48,19 +48,11 @@ const HL_ALL = [
   process.env.HIGHLIGHTLY_KEY_6,
   process.env.HIGHLIGHTLY_KEY_7,
 ].filter(Boolean);
-// KEY → escalações + marcadores (baixa freq, idempotente); KEY_2.._7 → live
-// (placar + gols + substituições). Se faltar chave dedicada, cai no pool inteiro.
+// Highlightly agora SÓ p/ escalações (live + marcadores migraram p/ ESPN, sem
+// cota). KEY → lineups; se ausente, cai no pool inteiro. KEY_2.._7 ficaram
+// redundantes (não mais consumidas pelo código).
 const HL_LINEUP_KEYS = [process.env.HIGHLIGHTLY_KEY].filter(Boolean);
-const HL_LIVE_KEYS = [
-  process.env.HIGHLIGHTLY_KEY_2,
-  process.env.HIGHLIGHTLY_KEY_3,
-  process.env.HIGHLIGHTLY_KEY_4,
-  process.env.HIGHLIGHTLY_KEY_5,
-  process.env.HIGHLIGHTLY_KEY_6,
-  process.env.HIGHLIGHTLY_KEY_7,
-].filter(Boolean);
 const hlLineupKeys = HL_LINEUP_KEYS.length ? HL_LINEUP_KEYS : HL_ALL;
-const hlLiveKeys = HL_LIVE_KEYS.length ? HL_LIVE_KEYS : HL_ALL;
 
 const HL_BASE = "https://soccer.highlightly.net";
 const WC_LEAGUE_HL = 1635; // FIFA World Cup 2026 (Highlightly)
@@ -186,13 +178,6 @@ function rotor(keys, headerName, slot, state) {
   };
 }
 
-const sumRem = (slot, n, state) => {
-  const s = state[slot];
-  let t = 0;
-  for (let i = 0; i < n; i++) t += s && s.rem[i] != null ? s.rem[i] : 100;
-  return t;
-};
-
 /* ---------- finais: football-data.org (primário) ----------
    normaliza p/ {homeId, awayId, status, h, a, winnerId, min}
    status: "LIVE" | "FINISHED" | "OTHER" */
@@ -277,257 +262,127 @@ async function buscar(dates, resolve, afFetch) {
   return [];
 }
 
-/* ---------- ao vivo: fonte 1 = API-Football (live=all) ----------
-   1 request cobre TODOS os jogos simultâneos. Retorna array | undefined (falhou) */
-async function liveApiFootball(dados, resolve, afFetch) {
-  const r = await afFetch("https://v3.football.api-sports.io/fixtures?live=all");
-  if (!r) { console.log("AF live: sem cota"); return undefined; }
-  if (!r.ok) { console.log("AF live http", r.status); return undefined; }
-  const data = await r.json();
-  const byPair = {};
-  dados.jogos.forEach((j) => { byPair[`${j.casa}|${j.fora}`] = j; byPair[`${j.fora}|${j.casa}`] = j; });
-  const arr = [];
-  for (const f of data.response || []) {
-    if (String(f.league && f.league.id) !== "1") continue; // só Copa
-    const homeId = resolve(f.teams?.home?.name);
-    const awayId = resolve(f.teams?.away?.name);
-    const j = byPair[`${homeId}|${awayId}`];
-    if (!j || apurado(j)) continue;
-    const casa = homeId === j.casa ? f.goals.home : f.goals.away;
-    const fora = homeId === j.casa ? f.goals.away : f.goals.home;
-    if (casa == null || fora == null) continue;
-    const sh = f.fixture?.status?.short, el = f.fixture?.status?.elapsed;
-    const min = sh === "HT" ? "Intervalo" : el != null ? `${el}'` : "ao vivo";
-    arr.push({ id: j.id, casa, fora, min }); // gols/subs enriquecidos via Highlightly (enrichEventos)
-  }
-  console.log(`live AF: ${arr.length} jogo(s)`);
-  return arr;
+/* ===================== ESPN: ao vivo + eventos + marcadores =====================
+   API pública do ESPN (site.api.espn.com), liga `fifa.world`. Gratuita, SEM chave
+   e SEM cota — substitui API-Football/Highlightly no caminho de live e marcadores
+   (a Highlightly fica só nas escalações). Cobre placar ao vivo + minuto, gols (com
+   autor), cartões e substituições. `keyEvents[].scoringPlay` marca os gols; gol
+   contra (type "Own Goal") NÃO credita autor. Nome -> "I. Sobrenome" (formato do
+   dados.json). Cache por-run em `cache = { sb, sum }` (live precisa de dado fresco
+   a cada run; nada persiste entre runs). */
+const ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world";
+const espnDay = (iso) => iso.slice(0, 10).replace(/-/g, ""); // "2026-06-17" -> "20260617"
+
+async function espnFetch(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) { console.log(`espn http ${r.status} ${url.slice(-40)}`); return null; }
+    return await r.json();
+  } catch (e) { console.log("espn fetch erro:", e.message); return null; }
 }
 
-/* ---------- eventos ao vivo (gols + substituições, via Highlightly) ----------
-   Enriquece cada item do live com `gols:[{nome,min}]` e `subs:[{entrou,saiu,min}]`.
-   Chama /events quando o placar MUDOU (gol) OU passou EVENTS_TTL desde a última
-   busca (p/ pegar substituições, que não mexem no placar). Mapeia jogo->matchId
-   pela lista por data (cacheada), valendo em ciclo AF ou HL. Sem cota → mantém o
-   último conhecido. Estado por-run em state.liveEv = { [id]: { total, gols, subs, at } }. */
-const EVENTS_TTL = 90 * 1000; // no máx 1 /events a cada 90s por jogo em andamento
-async function enrichEventos(arr, dados, resolve, state, hlFetch) {
-  if (!Array.isArray(arr)) return;
-  state.liveEv = state.liveEv || {};
-  const agora = Date.now();
-  const keep = (e, prev) => { if (prev) { e.gols = prev.gols; if (prev.subs?.length) e.subs = prev.subs; if (prev.cartoes?.length) e.cartoes = prev.cartoes; } };
-  for (const e of arr) {
-    const total = (e.casa || 0) + (e.fora || 0);
-    const prev = state.liveEv[e.id];
-    const mudouPlacar = !prev || prev.total !== total;
-    const expirou = !prev || (agora - (prev.at || 0)) > EVENTS_TTL;
-    if (prev && !mudouPlacar && !expirou) { keep(e, prev); continue; } // recente → reusa
-    const j = dados.jogos.find((x) => x.id === e.id);
-    if (!j) { keep(e, prev); continue; }
-    const list = await hlDateList(j.kickoff.slice(0, 10), hlFetch, state);
-    if (!list) { keep(e, prev); continue; }                          // sem cota → mantém
-    const mid = hlMatchId(j, list, resolve);
-    if (mid == null) { keep(e, prev); continue; }
-    const { ok, goals, subs, cards } = await hlEvents(mid, hlFetch, resolve, j);
-    if (!ok) { keep(e, prev); continue; }                            // sem cota/erro → mantém
-    e.gols = goals;
-    if (subs.length) e.subs = subs;
-    if (cards.length) e.cartoes = cards;
-    state.liveEv[e.id] = { total, gols: goals, subs, cartoes: cards, at: agora };
-    console.log(`eventos ${e.id}: ${goals.length} gol(s), ${subs.length} sub(s), ${cards.length} cartão(ões)`);
-  }
-  // limpa estado de jogos que não estão mais ao vivo
-  const ids = new Set(arr.map((e) => String(e.id)));
-  for (const k of Object.keys(state.liveEv)) if (!ids.has(String(k))) delete state.liveEv[k];
+// lista de events do scoreboard por data (YYYYMMDD); null = falha de rede
+async function espnScoreboard(date, cache) {
+  if (date in cache.sb) return cache.sb[date];
+  const j = await espnFetch(`${ESPN_BASE}/scoreboard?dates=${date}`);
+  return (cache.sb[date] = j ? (j.events || []) : null);
 }
 
-/* ---------- ao vivo: fonte 2 = Highlightly (/matches por data) ----------
-   1 request por data cobre todos os jogos. score.current = "H - A" (string). */
-const HL_LIVE = new Set([
-  "First half", "Half time", "Second half", "Extra time",
-  "Break time", "Penalties", "In progress",
-]);
-const parseScore = (s) => {
-  if (!s) return null;
-  const p = String(s).split(/\s*-\s*/).map((x) => parseInt(x, 10));
-  return p.length === 2 && p.every(Number.isFinite) ? p : null;
+async function espnSummary(eventId, cache) {
+  if (eventId in cache.sum) return cache.sum[eventId];
+  return (cache.sum[eventId] = await espnFetch(`${ESPN_BASE}/summary?event=${eventId}`));
+}
+
+// "Lionel Messi" -> "L. Messi"; mono-nome fica como está
+const abbrevNome = (full) => {
+  const p = String(full || "").trim().split(/\s+/);
+  return p.length < 2 ? (p[0] || "") : `${p[0][0]}. ${p.slice(1).join(" ")}`;
 };
 
-async function liveHighlightly(dados, resolve, hlFetch, state) {
+// acha o ESPN event do MEU jogo (par de times, em qualquer orientação)
+function espnEventOf(j, events, resolve) {
+  for (const e of events || []) {
+    const cs = e.competitions?.[0]?.competitors || [];
+    const home = cs.find((c) => c.homeAway === "home");
+    const away = cs.find((c) => c.homeAway === "away");
+    const h = resolve(home?.team?.displayName), a = resolve(away?.team?.displayName);
+    if ((h === j.casa && a === j.fora) || (h === j.fora && a === j.casa)) return { e, home, away, hId: h };
+  }
+  return null;
+}
+
+// extrai gols/subs/cartoes do summary.keyEvents, orientado ao MEU jogo
+function espnEventos(sum, j, resolve) {
+  const lado = (k) => { const t = resolve(k.team?.displayName); return t === j.casa ? "casa" : t === j.fora ? "fora" : null; };
+  const minOf = (k) => { const m = String(k.clock?.displayValue ?? "").match(/\d+/); return m ? parseInt(m[0], 10) : null; };
+  const goals = [], subs = [], cards = [];
+  for (const k of (sum?.keyEvents || [])) {
+    const type = String(k.type?.text || "");
+    const nomes = (k.participants || []).map((p) => p.athlete?.displayName).filter(Boolean);
+    if (k.scoringPlay && !/own goal/i.test(type) && !/own goal/i.test(k.text || "")) {
+      if (nomes[0]) goals.push({ nome: abbrevNome(nomes[0]), min: minOf(k), lado: lado(k) });
+    } else if (/card/i.test(type)) {
+      const cor = /red|second yellow/i.test(type) ? "vermelho" : /yellow/i.test(type) ? "amarelo" : null;
+      if (cor && nomes[0]) cards.push({ nome: abbrevNome(nomes[0]), cor, min: minOf(k), lado: lado(k) });
+    } else if (/substitution/i.test(type)) {
+      // texto "X replaces Y" -> participants[0] entrou, [1] saiu
+      if (nomes[0] || nomes[1]) subs.push({ entrou: abbrevNome(nomes[0] || ""), saiu: abbrevNome(nomes[1] || ""), min: minOf(k), lado: lado(k) });
+    }
+  }
+  return { goals, subs, cards };
+}
+
+const ESPN_LIVE = new Set(["in"]); // status.type.state
+
+/* ao vivo: 1 scoreboard por data + 1 summary por jogo ao vivo (enriquece gols/
+   cartões/subs). Retorna array (novo live[]) | [] (sem jogo) | undefined (falhou). */
+async function liveEspn(dados, resolve, cache) {
   const agora = Date.now();
-  const dates = [...new Set(dados.jogos.filter((j) => {
+  const janela = dados.jogos.filter((j) => {
     if (apurado(j)) return false;
     const k = new Date(j.kickoff).getTime();
     return k <= agora + 60000 && k > agora - 3.5 * 3600 * 1000;
-  }).map((j) => j.kickoff.slice(0, 10)))];
-  if (!dates.length) return [];
-  const byPair = {};
-  dados.jogos.forEach((j) => { byPair[`${j.casa}|${j.fora}`] = j; byPair[`${j.fora}|${j.casa}`] = j; });
+  });
+  if (!janela.length) return [];
   const arr = [];
-  let ok = false;
-  for (const date of dates) {
-    const r = await hlFetch(`${HL_BASE}/matches?leagueId=${WC_LEAGUE_HL}&date=${date}&limit=50`);
-    if (!r) { console.log("HL live: sem cota"); return ok ? arr : undefined; }
-    if (!r.ok) { console.log("HL live http", r.status); return ok ? arr : undefined; }
-    ok = true;
-    const data = await r.json();
-    const list = data.data || [];
-    (state.hlList ??= {})[date] = list; // reusa p/ mapear escalações
-    for (const m of list) {
-      const homeId = resolve(m.homeTeam?.name);
-      const awayId = resolve(m.awayTeam?.name);
-      const j = byPair[`${homeId}|${awayId}`];
-      if (!j || apurado(j)) continue;
-      const st = m.state?.description;
-      if (!HL_LIVE.has(st)) continue;
-      const sc = parseScore(m.state?.score?.current);
-      if (!sc) continue;
-      const casa = homeId === j.casa ? sc[0] : sc[1];
-      const fora = homeId === j.casa ? sc[1] : sc[0];
-      const clock = m.state?.clock;
-      const min = st === "Half time" ? "Intervalo" : clock != null ? `${clock}'` : "ao vivo";
-      arr.push({ id: j.id, casa, fora, min });
+  for (const j of janela) {
+    const events = await espnScoreboard(espnDay(j.kickoff), cache);
+    if (events == null) return undefined; // falha de rede -> mantém live atual
+    const hit = espnEventOf(j, events, resolve);
+    if (!hit || !ESPN_LIVE.has(hit.e.status?.type?.state)) continue;
+    const hs = parseInt(hit.home?.score, 10), as = parseInt(hit.away?.score, 10);
+    if (!Number.isFinite(hs) || !Number.isFinite(as)) continue;
+    const casa = hit.hId === j.casa ? hs : as;
+    const fora = hit.hId === j.casa ? as : hs;
+    const det = String(hit.e.status?.type?.detail || hit.e.status?.displayClock || "ao vivo");
+    const min = /^ht\b|half ?time|intervalo/i.test(det) ? "Intervalo" : det;
+    const item = { id: j.id, casa, fora, min };
+    const sum = await espnSummary(hit.e.id, cache);
+    if (sum) {
+      const { goals, subs, cards } = espnEventos(sum, j, resolve);
+      if (goals.length) item.gols = goals;
+      if (subs.length) item.subs = subs;
+      if (cards.length) item.cartoes = cards;
     }
+    arr.push(item);
   }
-  console.log(`live HL: ${arr.length} jogo(s)`);
+  console.log(`live ESPN: ${arr.length} jogo(s)`);
   return arr;
 }
 
-/* ---------- orquestração do ao vivo (throttle adaptativo + alternância) ----------
-   intervalo = segundos_até_fim / cota_total_restante (clamp 30..240s).
-   Alterna AF/Highlightly a cada poll; se uma fonte esgota, usa a outra.
-   Retorna: array (novo live[]) | [] (sem jogo) | undefined (throttled/falhou). */
-function liveInterval(dados, state) {
-  const now = Date.now();
-  let endMax = 0;
-  for (const j of dados.jogos) {
-    if (apurado(j)) continue;
-    const k = new Date(j.kickoff).getTime();
-    if (k <= now + 60000 && k > now - 3.5 * 3600 * 1000) endMax = Math.max(endMax, k + 8100 * 1000); // +2h15
-  }
-  if (!endMax) return null; // nenhum jogo em janela ao vivo
-  const segLeft = Math.max((endMax - now) / 1000, 60);
-  const budget = Math.max(
-    sumRem("af", AF_KEYS.length, state) + sumRem("hll", hlLiveKeys.length, state) - 20, // reserva marcadores
-    1,
-  );
-  return Math.min(240, Math.max(30, Math.round(segLeft / budget)));
-}
-
-async function tickLive(dados, resolve, state, afFetch, hlFetch) {
-  const intervalo = liveInterval(dados, state);
-  if (intervalo == null) return []; // sem jogo agora
-  const now = Date.now();
-  if (now - (state.lastLive || 0) < intervalo * 1000) return undefined; // ainda não
-
-  const afOk = AF_KEYS.length && sumRem("af", AF_KEYS.length, state) > 2;
-  const hlOk = hlLiveKeys.length && sumRem("hll", hlLiveKeys.length, state) > 2;
-  let useHL;
-  if (afOk && hlOk) useHL = (state.liveSrc = (state.liveSrc || 0) ^ 1) === 1; // alterna
-  else if (hlOk) useHL = true;
-  else if (afOk) useHL = false;
-  else return undefined; // ambas esgotadas -> mantém live atual
-
-  const arr = useHL
-    ? await liveHighlightly(dados, resolve, hlFetch, state)
-    : await liveApiFootball(dados, resolve, afFetch);
-  if (arr === undefined) return undefined; // falhou -> mantém atual
-  await enrichEventos(arr, dados, resolve, state, hlFetch); // gols + substituições (Highlightly)
-  state.lastLive = now;
-  console.log(`live: fonte=${useHL ? "highlightly" : "api-football"} intervalo=${intervalo}s`);
-  return arr;
-}
-
-/* ---------- gols via Highlightly (/events/{matchId}) ----------
-   A API-Football não cobre os eventos da Copa 2026 (plano) → a fonte dos
-   marcadores/gols passou a ser a Highlightly, que já provê live+escalações.
-   Extrai os autores de gol; gol contra e pênalti perdido NÃO entram. Tolerante
-   ao shape de player/time; loga 1 evento cru se não conseguir extrair (ajuste). */
-/* eventos da Highlightly = array de { team:{name}, time:"7"|"90+1", type:"Goal"|
-   "Yellow Card"|"Substitution"|..., player:"Nome", substituted:"Nome"|null, ... }.
-   Gol: type "Goal" (autor = player); "Own Goal"/"Missed Penalty" fora.
-   Sub: type "Substitution" — pela doc, player = quem SAIU, substituted = quem ENTROU. */
-const evMin = (t) => { const m = String(t ?? "").match(/\d+/); return m ? parseInt(m[0], 10) : null; };
-const evPlayer = (e) => String(e.player ?? "").trim();
-const evIsGoal = (e) => {
-  const t = String(e.type ?? "").toLowerCase();
-  return t.includes("goal") && !t.includes("own"); // "Goal" sim; "Own Goal" não
-};
-const evIsSub = (e) => String(e.type ?? "").toLowerCase().includes("substitution");
-// cartão: "Yellow Card" → amarelo; "Red Card" e "Second Yellow card" (= expulsão) → vermelho
-const evCardColor = (e) => {
-  const t = String(e.type ?? "").toLowerCase();
-  if (!t.includes("card")) return null;
-  if (t.includes("red") || t.includes("second yellow")) return "vermelho";
-  if (t.includes("yellow")) return "amarelo";
-  return null;
-};
-
-// lado do evento relativo ao MEU jogo ("casa"|"fora"|null) via team.name -> resolve
-const evSide = (e, resolve, j) => {
-  if (!resolve || !j) return null;
-  const t = resolve(e.team?.name);
-  return t === j.casa ? "casa" : t === j.fora ? "fora" : null;
-};
-
-async function hlEvents(mid, hlFetch, resolve, j) {
-  const r = await hlFetch(`${HL_BASE}/events/${mid}`);
-  if (!r) return { ok: false, goals: [], subs: [] };     // sem cota
-  if (!r.ok) { console.log(`eventos HL: ${mid} http ${r.status}`); return { ok: false, goals: [], subs: [] }; }
-  const data = await r.json();
-  const list = Array.isArray(data) ? data : (data.data || data.events || []);
-  const goals = list
-    .filter(evIsGoal)
-    .map((e) => ({ nome: evPlayer(e), min: evMin(e.time), lado: evSide(e, resolve, j) }))
-    .filter((g) => g.nome);
-  const subs = list
-    .filter(evIsSub)
-    .map((e) => ({ entrou: String(e.substituted ?? "").trim(), saiu: evPlayer(e), min: evMin(e.time), lado: evSide(e, resolve, j) }))
-    .filter((s) => s.entrou || s.saiu);
-  const cards = list
-    .map((e) => ({ nome: evPlayer(e), cor: evCardColor(e), min: evMin(e.time), lado: evSide(e, resolve, j) }))
-    .filter((c) => c.cor && c.nome);
-  if (!goals.length && !subs.length && !cards.length && list.length) // shape inesperado → 1 evento cru pro log
-    console.log(`eventos HL DEBUG ${mid}: ${JSON.stringify(list[0]).slice(0, 320)}`);
-  return { ok: true, goals, subs, cards };
-}
-
-// par de times do MEU jogo -> matchId da Highlightly (na lista já cacheada por data)
-function hlMatchId(j, list, resolve) {
-  for (const m of list) {
-    const h = resolve(m.homeTeam?.name), a = resolve(m.awayTeam?.name);
-    if ((h === j.casa && a === j.fora) || (h === j.fora && a === j.casa)) return m.id;
-  }
-  return null;
-}
-
-/* ---------- artilheiros (Highlightly, rotação) ----------
-   Grava em jogos[].real.marcadores a lista de quem fez gol (p/ bônus de palpite
-   de marcador). Idempotente: só busca jogo encerrado sem a lista. */
-async function marcadores(dados, resolve, hlFetch, state) {
-  if (!hlLineupKeys.length) return false;
+/* marcadores finais (bônus de artilheiro). Idempotente: só jogo encerrado sem a
+   lista. 0x0 -> lista vazia sem chamada. ESPN é ilimitado -> sem backoff/cota. */
+async function marcadoresEspn(dados, resolve, cache) {
   const pend = dados.jogos.filter((j) => apurado(j) && !Array.isArray(j.real.marcadores));
   if (!pend.length) return false;
-
-  // backoff por-jogo: se os eventos ainda não estão disponíveis, não re-tenta mais
-  // que a cada 10min (protege a cota da chave de lineup; o loop roda a cada ~55s).
-  state.marcTry ??= {};
-  const agora = Date.now();
-  const recente = (id) => agora - (state.marcTry[id] || 0) < 10 * 60000;
-
   let mudou = false;
   for (const j of pend) {
-    if ((j.real.casa + j.real.fora) === 0) { // 0x0: lista vazia, sem chamada de API
-      j.real.marcadores = []; mudou = true; continue;
-    }
-    if (recente(j.id)) continue;
-    const list = await hlDateList(j.kickoff.slice(0, 10), hlFetch, state);
-    if (!list) break; // sem cota -> tenta no próximo ciclo (sem marcar a tentativa)
-    const mid = hlMatchId(j, list, resolve);
-    if (mid == null) { state.marcTry[j.id] = agora; console.log(`marcadores: sem matchId p/ ${j.casa} x ${j.fora}`); continue; }
-    state.marcTry[j.id] = agora; // registra a tentativa (backoff 10min)
-    const { ok, goals } = await hlEvents(mid, hlFetch);
-    if (!ok) break; // sem cota/erro -> próximo ciclo
+    if ((j.real.casa + j.real.fora) === 0) { j.real.marcadores = []; mudou = true; continue; }
+    const events = await espnScoreboard(espnDay(j.kickoff), cache);
+    const hit = espnEventOf(j, events, resolve);
+    if (!hit) { console.log(`marcadores ESPN: sem evento p/ ${j.casa} x ${j.fora}`); continue; }
+    const sum = await espnSummary(hit.e.id, cache);
+    const { goals } = sum ? espnEventos(sum, j, resolve) : { goals: [] };
     if (goals.length) {
       j.real.marcadores = goals.map((g) => g.nome);
       console.log(`marcadores ${j.casa} x ${j.fora}: ${j.real.marcadores.join(", ")}`);
@@ -537,6 +392,21 @@ async function marcadores(dados, resolve, hlFetch, state) {
     }
   }
   return mudou;
+}
+
+/* orquestração do ao vivo: ESPN é gratuito/ilimitado -> poll a cada run (a malha
+   externa já espaça ~30s). Retorna array | [] (sem jogo) | undefined (falhou). */
+async function tickLive(dados, resolve, cache) {
+  return await liveEspn(dados, resolve, cache);
+}
+
+// par de times do MEU jogo -> matchId da Highlightly (na lista já cacheada por data)
+function hlMatchId(j, list, resolve) {
+  for (const m of list) {
+    const h = resolve(m.homeTeam?.name), a = resolve(m.awayTeam?.name);
+    if ((h === j.casa && a === j.fora) || (h === j.fora && a === j.casa)) return m.id;
+  }
+  return null;
 }
 
 /* ---------- escalações (Highlightly) ----------
@@ -633,8 +503,8 @@ async function main() {
   let state = {};
   try { state = JSON.parse(await readFile(STATE, "utf8")); } catch {}
   const afFetch = rotor(AF_KEYS, "x-apisports-key", "af", state);
-  const hlLiveFetch = rotor(hlLiveKeys, "X-RapidAPI-Key", "hll", state);
   const hlLineupFetch = rotor(hlLineupKeys, "X-RapidAPI-Key", "hln", state);
+  const cache = { sb: {}, sum: {} }; // ESPN: scoreboard/summary por-run (live + marcadores)
 
   const agora = Date.now();
   const alvos = dados.jogos.filter((j) => {
@@ -677,13 +547,13 @@ async function main() {
       }
     }
 
-    if (await marcadores(dados, resolve, hlLineupFetch, state)) mudou = true;
+    if (await marcadoresEspn(dados, resolve, cache)) mudou = true;
   } else {
     console.log("Sem jogos na janela p/ finais.");
   }
 
-  // AO VIVO (AF + Highlightly alternados, throttle adaptativo)
-  const liveNovo = await tickLive(dados, resolve, state, afFetch, hlLiveFetch);
+  // AO VIVO (ESPN, gratuito/ilimitado — sem cota/rotação)
+  const liveNovo = await tickLive(dados, resolve, cache);
   // As fontes ALTERNAM e às vezes uma não reporta um jogo em andamento → não pode
   // ZERAR o placar nesse ciclo (causava o placar "piscar"/sumir). Mantém o último
   // placar conhecido de jogos ainda na janela de jogo (kickoff até +3.5h, !apurado).
