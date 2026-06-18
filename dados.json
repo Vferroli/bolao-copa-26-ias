@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:35:07.975Z",
+  "atualizado_em": "2026-06-18T00:36:11.172Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4706,7 +4706,7 @@
       "id": 68,
       "casa": 0,
       "fora": 0,
-      "min": "73'",
+      "min": "74'",
       "subs": [
         {
           "entrou": "B. Asare",
@@ -4736,6 +4736,12 @@
           "entrou": "A. Londoño",
           "saiu": "C. Martínez",
           "min": 63,
+          "lado": "fora"
+        },
+        {
+          "entrou": "I. Díaz",
+          "saiu": "J. Luis Rodríguez",
+          "min": 74,
           "lado": "fora"
         }
       ],
