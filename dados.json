@@ -4885,9 +4885,12 @@
       "fora": "panama",
       "kickoff": "2026-06-17T23:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "C. Yirenkyi"
+        ]
       },
       "palpites": {
         "grok": {
@@ -5301,95 +5304,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 68,
-      "casa": 1,
-      "fora": 0,
-      "min": "90'+11'",
-      "gols": [
-        {
-          "nome": "C. Yirenkyi",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "B. Asare",
-          "saiu": "L. Ati Zigi",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Thomas-Asante",
-          "saiu": "K. Sulemana",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Issahaku",
-          "saiu": "E. Nuamah",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Fajardo",
-          "saiu": "C. Waterman",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Londoño",
-          "saiu": "C. Martínez",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Díaz",
-          "saiu": "J. Luis Rodríguez",
-          "min": 74,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Sibo",
-          "saiu": "E. Owusu",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Adu",
-          "saiu": "J. Ayew",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Godoy",
-          "saiu": "C. Blackman",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "C. Yirenkyi",
-          "cor": "amarelo",
-          "min": 16,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Blackman",
-          "cor": "amarelo",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "nome": "C. Harvey",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
