@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T23:48:39.222Z",
+  "atualizado_em": "2026-06-18T23:49:11.104Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6504,6 +6504,12 @@
           "saiu": "T. Buchanan",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "entrou": "L. Mendes",
+          "saiu": "A. Fathy",
+          "min": 87,
+          "lado": "fora"
         }
       ],
       "cartoes": [
