@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T22:17:29.881Z",
+  "atualizado_em": "2026-06-18T22:18:02.031Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6425,9 +6425,16 @@
   "live": [
     {
       "id": 10,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
       "min": "17'",
+      "gols": [
+        {
+          "nome": "C. Larin",
+          "min": 16,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "D. Cornelius",
