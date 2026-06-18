@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:19:23.076Z",
+  "atualizado_em": "2026-06-18T20:20:27.232Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6142,12 +6142,18 @@
       "id": 9,
       "casa": 0,
       "fora": 0,
-      "min": "60'",
+      "min": "61'",
       "cartoes": [
         {
           "nome": "A. Dedic",
           "cor": "amarelo",
           "min": 59,
+          "lado": "fora"
+        },
+        {
+          "nome": "E. Dzeko",
+          "cor": "amarelo",
+          "min": 61,
           "lado": "fora"
         }
       ]
