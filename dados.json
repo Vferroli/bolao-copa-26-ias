@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T17:15:35.885Z",
+  "atualizado_em": "2026-06-18T17:16:08.386Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5874,6 +5874,18 @@
           "saiu": "J. Adams",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "P. Sulc",
+          "saiu": "V. Darida",
+          "min": 55,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Zelený",
+          "saiu": "A. Sojka",
+          "min": 55,
+          "lado": "casa"
         }
       ],
       "cartoes": [
