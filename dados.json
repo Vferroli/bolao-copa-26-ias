@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:52:41.888Z",
+  "atualizado_em": "2026-06-18T20:53:14.410Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6141,8 +6141,8 @@
     {
       "id": 9,
       "casa": 3,
-      "fora": 0,
-      "min": "90'+3'",
+      "fora": 1,
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "J. Manzambi",
@@ -6158,6 +6158,11 @@
           "nome": "J. Manzambi",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "nome": "E. Mahmic",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "subs": [
