@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T00:18:45.902Z",
+  "atualizado_em": "2026-06-18T00:19:49.185Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4712,6 +4712,18 @@
           "entrou": "B. Asare",
           "saiu": "L. Ati Zigi",
           "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "B. Thomas-Asante",
+          "saiu": "K. Sulemana",
+          "min": 58,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. Issahaku",
+          "saiu": "E. Nuamah",
+          "min": 58,
           "lado": "casa"
         }
       ],
