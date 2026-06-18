@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-17",
-  "atualizado_em": "2026-06-18T01:01:45.690Z",
+  "atualizado_em": "2026-06-18T01:02:49.255Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5306,7 +5306,7 @@
       "id": 68,
       "casa": 1,
       "fora": 0,
-      "min": "90'+10'",
+      "min": "90'+11'",
       "gols": [
         {
           "nome": "C. Yirenkyi",
