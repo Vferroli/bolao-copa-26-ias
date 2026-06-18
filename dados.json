@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T04:10:05.222Z",
+  "atualizado_em": "2026-06-18T15:30:21.003Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -410,6 +410,274 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Patrik Schick"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-4-2-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Matěj Kovář",
+              "pos": "G"
+            },
+            {
+              "num": 7,
+              "nome": "Ladislav Krejčí",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Robin Hranáč",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Tomáš Holeš",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Alexandr Sojka",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Lukáš Červ",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Michal Sadílek",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Vladimír Coufal",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Vladimír Darida",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Adam Hložek",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Patrik Schick",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 16,
+              "nome": "Jindřich Staněk",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Lukáš Horníček",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "David Zima",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Štěpán Chaloupek",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Jaroslav Zelený",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "David Douděra",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Tomáš Souček",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Hugo Sochurek",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Denis Višinský",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Lukáš Provod",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Jan Kuchta",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Mojmír Chytil",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Pavel Šulc",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Tomáš Chorý",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Ronwen Williams",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Aubrey Modiba",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Mbekezeli Mbokazi",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Ime Okon",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Khuliso Mudau",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Teboho Mokoena",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Thalente Mbatha",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Thapelo Maseko",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Jayden Adams",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Oswin Appollis",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Iqraam Rayners",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 16,
+              "nome": "Sipho Chaine",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Ricardo Goss",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Tholo Thabang Matuludi",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Khulumani Ndamane",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Samukelo Kabini",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Nkosinathi Sibisi",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Olwethu Makhanya",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Bradley Cross",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Tshepang Moremi",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Relebohile Mofokeng",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Kamogelo Sebelebele",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Lyle Foster",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Evidence Makgopa",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
