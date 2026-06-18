@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T22:52:39.850Z",
+  "atualizado_em": "2026-06-18T23:06:17.120Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6450,6 +6450,18 @@
           "entrou": "S. Al-Brake",
           "saiu": "Y. Abdurisag",
           "min": 40,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Fathy",
+          "saiu": "E. Junior",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Manai",
+          "saiu": "J. Gaber",
+          "min": 45,
           "lado": "fora"
         }
       ],
