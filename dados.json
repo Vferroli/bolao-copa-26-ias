@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T17:45:10.769Z",
+  "atualizado_em": "2026-06-18T17:45:43.310Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5915,6 +5915,12 @@
           "saiu": "L. Cerv",
           "min": 78,
           "lado": "casa"
+        },
+        {
+          "entrou": "K. Sebelebele",
+          "saiu": "T. Maseko",
+          "min": 84,
+          "lado": "fora"
         }
       ],
       "cartoes": [
