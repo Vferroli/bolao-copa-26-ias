@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:47:50.266Z",
+  "atualizado_em": "2026-06-18T20:48:22.760Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6202,6 +6202,12 @@
           "entrou": "L. Jaquez",
           "saiu": "S. Widmer",
           "min": 86,
+          "lado": "casa"
+        },
+        {
+          "entrou": "C. Itten",
+          "saiu": "B. Embolo",
+          "min": 89,
           "lado": "casa"
         }
       ],
