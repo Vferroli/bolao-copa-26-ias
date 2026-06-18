@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-18T20:48:22.760Z",
+  "atualizado_em": "2026-06-18T20:49:26.551Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6142,7 +6142,7 @@
       "id": 9,
       "casa": 2,
       "fora": 0,
-      "min": "89'",
+      "min": "90'",
       "gols": [
         {
           "nome": "J. Manzambi",
