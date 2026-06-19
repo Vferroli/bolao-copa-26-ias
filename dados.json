@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:43:07.013Z",
+  "atualizado_em": "2026-06-19T20:43:39.514Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 2,
       "fora": 0,
-      "min": "77'",
+      "min": "78'",
       "gols": [
         {
           "nome": "A. Freeman",
@@ -7037,6 +7037,12 @@
           "saiu": "R. Pepi",
           "min": 74,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Irvine",
+          "saiu": "P. Okon-Engstler",
+          "min": 78,
+          "lado": "fora"
         }
       ],
       "cartoes": [
