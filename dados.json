@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T21:10:41.582Z",
+  "atualizado_em": "2026-06-19T21:33:17.268Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1857,6 +1857,289 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Scott McTominay"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-4-2-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Angus Gunn",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Kieran Tierney",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Jack Hendry",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Grant Hanley",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Andy Robertson",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Lewis Ferguson",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Scott McTominay",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Nathan Patterson",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ryan Christie",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "John McGinn",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Che Adams",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Liam Kelly",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "Craig Gordon",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Aaron Hickey",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "John Souttar",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Dominic Hyam",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Tony Ralston",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Scott McKenna",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Tyler Fletcher",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Kenny McLean",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Ben Gannon-Doak",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Findlay Curtis",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Lyndon Dykes",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Ross Stewart",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "George Hirst",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Lawrence Shankland",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Bono",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Noussair Mazraoui",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Chadi Riad",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Issa Diop",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Achraf Hakimi",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Ayyoub Bouaddi",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Neil El Aynaoui",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Bilal El Khannouss",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Azzedine Ounahi",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Brahim Díaz",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ismael Saibari",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Ahmed Reda Tagnaouti",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Munir El Kajoui",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Anass Salah-Eddine",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Marwane Saadane",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Redouane Halhal",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Youssef Belammari",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Zakaria El Ouahdi",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Amine Sbai",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Chemsdine Talbi",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "Gessime Yassine",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Samir El Mourabet",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Sofyan Amrabat",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Ayoub El Kaabi",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Ayoube Amaimouni Echghouyab",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Soufiane Rahimi",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
