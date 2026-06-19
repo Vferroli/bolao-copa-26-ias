@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T02:10:14.467Z",
+  "atualizado_em": "2026-06-19T02:10:46.898Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6718,7 +6718,14 @@
       "id": 4,
       "casa": 0,
       "fora": 0,
-      "min": "50'",
+      "min": "51'",
+      "gols": [
+        {
+          "nome": "L. Romo",
+          "min": 50,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "L. Kang-In",
