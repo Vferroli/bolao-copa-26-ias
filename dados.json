@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T00:30:23.560Z",
+  "atualizado_em": "2026-06-19T01:15:22.940Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5537,7 +5537,13 @@
       "real": {
         "casa": 1,
         "fora": 3,
-        "avancou": null
+        "avancou": null,
+        "marcadores": [
+          "D. Muñoz",
+          "A. Fayzullaev",
+          "L. Díaz",
+          "J. Campaz"
+        ]
       },
       "palpites": {
         "grok": {
@@ -6707,5 +6713,20 @@
       "palpites": {}
     }
   ],
-  "live": []
+  "live": [
+    {
+      "id": 4,
+      "casa": 0,
+      "fora": 0,
+      "min": "14'",
+      "cartoes": [
+        {
+          "nome": "L. Kang-In",
+          "cor": "amarelo",
+          "min": 4,
+          "lado": "fora"
+        }
+      ]
+    }
+  ]
 }
