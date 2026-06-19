@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T02:29:34.198Z",
+  "atualizado_em": "2026-06-19T02:30:39.366Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6718,7 +6718,7 @@
       "id": 4,
       "casa": 1,
       "fora": 0,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "L. Romo",
