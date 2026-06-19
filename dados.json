@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T23:27:38.916Z",
+  "atualizado_em": "2026-06-19T23:28:42.968Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7285,7 +7285,7 @@
       "id": 15,
       "casa": 0,
       "fora": 1,
-      "min": "65'",
+      "min": "66'",
       "gols": [
         {
           "nome": "I. Saibari",
@@ -7307,6 +7307,12 @@
           "cor": "amarelo",
           "min": 23,
           "lado": "fora"
+        },
+        {
+          "nome": "A. Robertson",
+          "cor": "amarelo",
+          "min": 65,
+          "lado": "casa"
         }
       ]
     }
