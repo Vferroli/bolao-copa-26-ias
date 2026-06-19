@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:39:20.564Z",
+  "atualizado_em": "2026-06-19T20:39:53.122Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7031,6 +7031,12 @@
           "saiu": "M. Leckie",
           "min": 61,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Berhalter",
+          "saiu": "R. Pepi",
+          "min": 74,
+          "lado": "casa"
         }
       ],
       "cartoes": [
