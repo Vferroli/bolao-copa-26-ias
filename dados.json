@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:57:42.901Z",
+  "atualizado_em": "2026-06-19T20:58:50.874Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 2,
       "fora": 0,
-      "min": "90'+2'",
+      "min": "90'+3'",
       "gols": [
         {
           "nome": "A. Freeman",
@@ -7093,6 +7093,12 @@
           "cor": "amarelo",
           "min": 89,
           "lado": "fora"
+        },
+        {
+          "nome": "C. Richards",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "casa"
         }
       ]
     }
