@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T19:53:29.419Z",
+  "atualizado_em": "2026-06-19T20:10:09.312Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7005,6 +7005,20 @@
           "nome": "A. Freeman",
           "min": 43,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "J. Geria",
+          "saiu": "C. Burgess",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "C. Metcalfe",
+          "saiu": "N. Velupillay",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
