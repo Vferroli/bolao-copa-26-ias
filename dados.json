@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T19:28:53.444Z",
+  "atualizado_em": "2026-06-19T19:29:57.430Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 1,
       "fora": 0,
-      "min": "29'",
+      "min": "30'",
       "cartoes": [
         {
           "nome": "J. Bos",
