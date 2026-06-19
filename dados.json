@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:25:26.558Z",
+  "atualizado_em": "2026-06-19T20:27:01.263Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 2,
       "fora": 0,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "A. Freeman",
@@ -7024,6 +7024,12 @@
           "entrou": "N. Irankunda",
           "saiu": "M. Toure",
           "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "C. Volpato",
+          "saiu": "M. Leckie",
+          "min": 61,
           "lado": "fora"
         }
       ],
