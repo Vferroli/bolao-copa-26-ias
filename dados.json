@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:10:09.312Z",
+  "atualizado_em": "2026-06-19T20:10:41.299Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7017,6 +7017,12 @@
         {
           "entrou": "C. Metcalfe",
           "saiu": "N. Velupillay",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. Irankunda",
+          "saiu": "M. Toure",
           "min": 45,
           "lado": "fora"
         }
