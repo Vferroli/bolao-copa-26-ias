@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T00:01:47.303Z",
+  "atualizado_em": "2026-06-19T00:07:59.903Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1119,9 +1119,16 @@
       "fora": "qatar",
       "kickoff": "2026-06-18T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 6,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "C. Larin",
+          "J. David",
+          "J. David",
+          "N. Saliba",
+          "J. David"
+        ]
       },
       "palpites": {
         "claude": {
@@ -6422,127 +6429,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 10,
-      "casa": 6,
-      "fora": 0,
-      "min": "90'+10'",
-      "gols": [
-        {
-          "nome": "C. Larin",
-          "min": 16,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. David",
-          "min": 29,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. David",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "nome": "N. Saliba",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. David",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "S. Al-Brake",
-          "saiu": "Y. Abdurisag",
-          "min": 40,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Fathy",
-          "saiu": "E. Junior",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Manai",
-          "saiu": "J. Gaber",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Bombito",
-          "saiu": "D. Cornelius",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Saliba",
-          "saiu": "I. Koné",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Al-Hussain",
-          "saiu": "A. Afif",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Shaffelburg",
-          "saiu": "L. de Fougerolles",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Oluwaseyi",
-          "saiu": "A. Ahmed",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Sigur",
-          "saiu": "T. Buchanan",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Mendes",
-          "saiu": "A. Fathy",
-          "min": 87,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "D. Cornelius",
-          "cor": "amarelo",
-          "min": 9,
-          "lado": "casa"
-        },
-        {
-          "nome": "H. Ahmed",
-          "cor": "vermelho",
-          "min": 33,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Madibo",
-          "cor": "vermelho",
-          "min": 53,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Fathy",
-          "cor": "amarelo",
-          "min": 62,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
