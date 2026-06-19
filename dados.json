@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:56:06.509Z",
+  "atualizado_em": "2026-06-19T20:56:38.942Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 2,
       "fora": 0,
-      "min": "90'",
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "A. Freeman",
@@ -7085,7 +7085,7 @@
         {
           "nome": "F. Balogun",
           "cor": "amarelo",
-          "min": 88,
+          "min": 89,
           "lado": "casa"
         },
         {
