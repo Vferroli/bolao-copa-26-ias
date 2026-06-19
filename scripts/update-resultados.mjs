@@ -297,6 +297,27 @@ async function espnScoreboard(date, cache) {
   return (cache.sb[date] = j ? (j.events || []) : null);
 }
 
+// datas candidatas p/ o bucket do ESPN. ESPN agrupa pela data LOCAL da SEDE:
+// jogo noturno na América (kickoff UTC já no dia seguinte) cai no bucket do dia
+// ANTERIOR. Tenta dia(UTC), dia-1 e dia+1 p/ não perder o live (off-by-one TZ).
+const espnDaysFor = (iso) => {
+  const t = new Date(iso).getTime();
+  return [0, -1, 1].map((off) => espnDay(new Date(t + off * 86400000).toISOString()));
+};
+
+// acha o event ESPN do MEU jogo varrendo as datas candidatas (cache por-data).
+// -> { hit, events } achou | { hit:null } sem jogo | { netFail:true } rede caiu.
+async function espnLocate(j, resolve, cache) {
+  let netFail = false;
+  for (const date of espnDaysFor(j.kickoff)) {
+    const events = await espnScoreboard(date, cache);
+    if (events == null) { netFail = true; continue; }
+    const hit = espnEventOf(j, events, resolve);
+    if (hit) return { hit, events };
+  }
+  return netFail ? { netFail: true } : { hit: null };
+}
+
 async function espnSummary(eventId, cache) {
   if (eventId in cache.sum) return cache.sum[eventId];
   return (cache.sum[eventId] = await espnFetch(`${ESPN_BASE}/summary?event=${eventId}`));
@@ -355,9 +376,9 @@ async function liveEspn(dados, resolve, cache) {
   if (!janela.length) return [];
   const arr = [];
   for (const j of janela) {
-    const events = await espnScoreboard(espnDay(j.kickoff), cache);
-    if (events == null) return undefined; // falha de rede -> mantém live atual
-    const hit = espnEventOf(j, events, resolve);
+    const loc = await espnLocate(j, resolve, cache);
+    if (loc.netFail) return undefined; // falha de rede -> mantém live atual
+    const hit = loc.hit;
     if (!hit || !ESPN_LIVE.has(hit.e.status?.type?.state)) continue;
     const hs = parseInt(hit.home?.score, 10), as = parseInt(hit.away?.score, 10);
     if (!Number.isFinite(hs) || !Number.isFinite(as)) continue;
@@ -387,8 +408,7 @@ async function marcadoresEspn(dados, resolve, cache) {
   let mudou = false;
   for (const j of pend) {
     if ((j.real.casa + j.real.fora) === 0) { j.real.marcadores = []; mudou = true; continue; }
-    const events = await espnScoreboard(espnDay(j.kickoff), cache);
-    const hit = espnEventOf(j, events, resolve);
+    const hit = (await espnLocate(j, resolve, cache)).hit;
     if (!hit) { console.log(`marcadores ESPN: sem evento p/ ${j.casa} x ${j.fora}`); continue; }
     const sum = await espnSummary(hit.e.id, cache);
     const { goals } = sum ? espnEventos(sum, j, resolve) : { goals: [] };
