@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:45:48.944Z",
+  "atualizado_em": "2026-06-19T20:46:21.615Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 2,
       "fora": 0,
-      "min": "80'",
+      "min": "81'",
       "gols": [
         {
           "nome": "A. Freeman",
@@ -7043,6 +7043,18 @@
           "saiu": "P. Okon-Engstler",
           "min": 78,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Scally",
+          "saiu": "S. Dest",
+          "min": 80,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Trusty",
+          "saiu": "A. Robinson",
+          "min": 80,
+          "lado": "casa"
         }
       ],
       "cartoes": [
