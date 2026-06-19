@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:21:14.975Z",
+  "atualizado_em": "2026-06-19T20:21:46.880Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7039,6 +7039,12 @@
           "cor": "amarelo",
           "min": 32,
           "lado": "fora"
+        },
+        {
+          "nome": "A. Robinson",
+          "cor": "amarelo",
+          "min": 56,
+          "lado": "casa"
         }
       ]
     }
