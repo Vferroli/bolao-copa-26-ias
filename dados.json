@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T02:30:39.366Z",
+  "atualizado_em": "2026-06-19T02:31:11.729Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6738,6 +6738,18 @@
           "saiu": "S. Heung-Min",
           "min": 57,
           "lado": "fora"
+        },
+        {
+          "entrou": "O. Pineda",
+          "saiu": "B. Gutiérrez",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "O. Vargas",
+          "saiu": "L. Romo",
+          "min": 71,
+          "lado": "casa"
         }
       ],
       "cartoes": [
