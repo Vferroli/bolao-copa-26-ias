@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T02:40:19.089Z",
+  "atualizado_em": "2026-06-19T02:40:51.639Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6718,7 +6718,7 @@
       "id": 4,
       "casa": 1,
       "fora": 0,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "L. Romo",
@@ -6772,6 +6772,12 @@
         {
           "entrou": "S. Gimenez",
           "saiu": "R. Jiménez",
+          "min": 80,
+          "lado": "casa"
+        },
+        {
+          "entrou": "I. Reyes",
+          "saiu": "R. Alvarado",
           "min": 80,
           "lado": "casa"
         }
