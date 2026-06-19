@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:53:55.666Z",
+  "atualizado_em": "2026-06-19T20:54:28.236Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7075,6 +7075,24 @@
           "cor": "amarelo",
           "min": 56,
           "lado": "casa"
+        },
+        {
+          "nome": "F. Balogun",
+          "cor": "amarelo",
+          "min": 89,
+          "lado": "casa"
+        },
+        {
+          "nome": "H. Souttar",
+          "cor": "amarelo",
+          "min": 89,
+          "lado": "fora"
+        },
+        {
+          "nome": "J. Italiano",
+          "cor": "amarelo",
+          "min": 89,
+          "lado": "fora"
         }
       ]
     }
