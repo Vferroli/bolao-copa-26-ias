@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T21:01:01.481Z",
+  "atualizado_em": "2026-06-19T21:02:07.095Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 2,
       "fora": 0,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "A. Freeman",
@@ -7054,6 +7054,18 @@
           "entrou": "A. Trusty",
           "saiu": "A. Robinson",
           "min": 80,
+          "lado": "casa"
+        },
+        {
+          "entrou": "H. Wright",
+          "saiu": "F. Balogun",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Reyna",
+          "saiu": "W. McKennie",
+          "min": 90,
           "lado": "casa"
         }
       ],
