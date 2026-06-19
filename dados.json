@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T02:31:11.729Z",
+  "atualizado_em": "2026-06-19T02:31:44.495Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6718,7 +6718,7 @@
       "id": 4,
       "casa": 1,
       "fora": 0,
-      "min": "71'",
+      "min": "72'",
       "gols": [
         {
           "nome": "L. Romo",
@@ -6750,6 +6750,18 @@
           "saiu": "L. Romo",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "E. Ji-Sung",
+          "saiu": "K. Moon-Hwan",
+          "min": 71,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Y. Hyun-Jun",
+          "saiu": "S. Young-Woo",
+          "min": 71,
+          "lado": "fora"
         }
       ],
       "cartoes": [
