@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T21:03:14.377Z",
+  "atualizado_em": "2026-06-19T21:10:41.582Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1995,9 +1995,12 @@
       "fora": "australia",
       "kickoff": "2026-06-19T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "A. Freeman"
+        ]
       },
       "palpites": {
         "claude": {
@@ -6994,125 +6997,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 21,
-      "casa": 2,
-      "fora": 0,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "A. Freeman",
-          "min": 43,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "J. Geria",
-          "saiu": "C. Burgess",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Metcalfe",
-          "saiu": "N. Velupillay",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Irankunda",
-          "saiu": "M. Toure",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Volpato",
-          "saiu": "M. Leckie",
-          "min": 61,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Berhalter",
-          "saiu": "R. Pepi",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Irvine",
-          "saiu": "P. Okon-Engstler",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Scally",
-          "saiu": "S. Dest",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Trusty",
-          "saiu": "A. Robinson",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "H. Wright",
-          "saiu": "F. Balogun",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Reyna",
-          "saiu": "W. McKennie",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Bos",
-          "cor": "amarelo",
-          "min": 16,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Circati",
-          "cor": "amarelo",
-          "min": 32,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Robinson",
-          "cor": "amarelo",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "nome": "H. Souttar",
-          "cor": "amarelo",
-          "min": 88,
-          "lado": "fora"
-        },
-        {
-          "nome": "F. Balogun",
-          "cor": "amarelo",
-          "min": 89,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Italiano",
-          "cor": "amarelo",
-          "min": 89,
-          "lado": "fora"
-        },
-        {
-          "nome": "C. Richards",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
