@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T00:07:59.903Z",
+  "atualizado_em": "2026-06-19T00:30:23.560Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -721,6 +721,284 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Julián Quiñones"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-3-3",
+          "fora": "3-4-2-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Raúl Rangel",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Jesús Gallardo",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Johan Vásquez",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Edson Álvarez",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Jorge Sánchez",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Brian Gutiérrez",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Erik Lira",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Luis Romo",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Julián Quiñones",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Raúl Jiménez",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Roberto Alvarado",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Carlos Acevedo",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Guillermo Ochoa",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Israel Reyes",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Mateo Chávez",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Álvaro Fidalgo",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Orbelín Pineda",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Obed Vargas",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Gilberto Mora",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Luis Chávez",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Alexis Vega",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "César Huerta",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Santiago Giménez",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Armando González",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Guillermo Martínez",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Kim Seung-gyu",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Gi-Hyuk Lee",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Kim Min-jae",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Han-Beom Lee",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Kim Moon-hwan",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Seung Ho Paik",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Hwang In-beom",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Young-woo Seol",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Jae-sung Lee",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Kang-in Lee",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Son Heung-min",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Song Bum-keun",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "Jo Hyeonwoo",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Kim Tae-hyeon",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Wi-je Cho",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Lee Tae-seok",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Jin-seob Park",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Jens Castrop",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Jun-Ho Bae",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Jin-gyu Kim",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Ji-sung Eom",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Dong-gyeong Lee",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Hwang Hee-chan",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Yang Hyun-Jun",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Gue-sung Cho",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Hyeon-gyu Oh",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
