@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T03:00:13.725Z",
+  "atualizado_em": "2026-06-19T03:03:21.816Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -693,9 +693,12 @@
       "fora": "south-korea",
       "kickoff": "2026-06-19T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "L. Romo"
+        ]
       },
       "palpites": {
         "claude": {
@@ -6713,95 +6716,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 4,
-      "casa": 1,
-      "fora": 0,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "L. Romo",
-          "min": 50,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "H. Hee-Chan",
-          "saiu": "L. Jae-Sung",
-          "min": 57,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Hyeon-Gyu",
-          "saiu": "S. Heung-Min",
-          "min": 57,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Pineda",
-          "saiu": "B. Gutiérrez",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "O. Vargas",
-          "saiu": "L. Romo",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Ji-Sung",
-          "saiu": "K. Moon-Hwan",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Hyun-Jun",
-          "saiu": "S. Young-Woo",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Gue-Sung",
-          "saiu": "P. Seung-Ho",
-          "min": 77,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Reyes",
-          "saiu": "R. Alvarado",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Gimenez",
-          "saiu": "R. Jiménez",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Huerta",
-          "saiu": "J. Quiñones",
-          "min": 84,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "L. Kang-In",
-          "cor": "amarelo",
-          "min": 4,
-          "lado": "fora"
-        },
-        {
-          "nome": "P. Seung-Ho",
-          "cor": "amarelo",
-          "min": 58,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
