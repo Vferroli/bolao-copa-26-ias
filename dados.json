@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T03:03:21.816Z",
+  "atualizado_em": "2026-06-19T18:30:37.232Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2023,6 +2023,284 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Christian Pulisic"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "5-4-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 24,
+              "nome": "Matthew Freese",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Antonee Robinson",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Tim Ream",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Chris Richards",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Alexander Freeman",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Tyler Adams",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Malik Tillman",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Ricardo Pepi",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Weston McKennie",
+              "pos": "M"
+            },
+            {
+              "num": 2,
+              "nome": "Sergiño Dest",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Folarin Balogun",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Matt Turner",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Chris Brady",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Auston Trusty",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Miles Robinson",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Mark McKenzie",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Joe Scally",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Maximilian Arfsten",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Giovanni Reyna",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Sebastian Berhalter",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Cristian Roldán",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Brenden Aaronson",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Tim Weah",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Alex Zendejas",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Haji Wright",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 18,
+              "nome": "Patrick Beach",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Jordan Bos",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Cameron Burgess",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Harry Souttar",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Alessandro Circati",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Jacob Italiano",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Nishan Velupillay",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Paul Okon-Engstler",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Aiden O'Neill",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Mathew Leckie",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Mohamed Touré",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Mathew Ryan",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Paul Izzo",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Miloš Degenek",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Jason Geria",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Aziz Behich",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Lucas Herrington",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Kai Trewin",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Connor Metcalfe",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Cameron Devlin",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Jackson Irvine",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Ajdin Hrustić",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Awer Mabil",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Cristian Volpato",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Nestory Irankunda",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Tete Yengi",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
