@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T02:39:46.275Z",
+  "atualizado_em": "2026-06-19T02:40:19.089Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6768,6 +6768,12 @@
           "saiu": "P. Seung-Ho",
           "min": 77,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Gimenez",
+          "saiu": "R. Jiménez",
+          "min": 80,
+          "lado": "casa"
         }
       ],
       "cartoes": [
