@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T23:46:23.502Z",
+  "atualizado_em": "2026-06-19T23:46:56.068Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7315,6 +7315,18 @@
         {
           "entrou": "S. Rahimi",
           "saiu": "I. Saibari",
+          "min": 84,
+          "lado": "fora"
+        },
+        {
+          "entrou": "C. Talbi",
+          "saiu": "B. El Khannouss",
+          "min": 84,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Amaimouni",
+          "saiu": "B. Díaz",
           "min": 84,
           "lado": "fora"
         }
