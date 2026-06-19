@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T20:18:35.125Z",
+  "atualizado_em": "2026-06-19T20:19:38.122Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6999,7 +6999,7 @@
       "id": 21,
       "casa": 2,
       "fora": 0,
-      "min": "53'",
+      "min": "54'",
       "gols": [
         {
           "nome": "A. Freeman",
