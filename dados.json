@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T02:17:12.679Z",
+  "atualizado_em": "2026-06-19T02:17:45.129Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6718,7 +6718,7 @@
       "id": 4,
       "casa": 1,
       "fora": 0,
-      "min": "57'",
+      "min": "58'",
       "gols": [
         {
           "nome": "L. Romo",
@@ -6730,6 +6730,12 @@
         {
           "entrou": "H. Hee-Chan",
           "saiu": "L. Jae-Sung",
+          "min": 57,
+          "lado": "fora"
+        },
+        {
+          "entrou": "O. Hyeon-Gyu",
+          "saiu": "S. Heung-Min",
           "min": 57,
           "lado": "fora"
         }
