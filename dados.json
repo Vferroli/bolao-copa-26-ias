@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-18",
-  "atualizado_em": "2026-06-19T01:24:55.807Z",
+  "atualizado_em": "2026-06-19T01:25:59.684Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6718,7 +6718,7 @@
       "id": 4,
       "casa": 0,
       "fora": 0,
-      "min": "24'",
+      "min": "25'",
       "cartoes": [
         {
           "nome": "L. Kang-In",
