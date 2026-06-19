@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T19:45:51.270Z",
+  "atualizado_em": "2026-06-19T19:46:23.873Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6997,9 +6997,16 @@
   "live": [
     {
       "id": 21,
-      "casa": 1,
+      "casa": 2,
       "fora": 0,
       "min": "45'+1'",
+      "gols": [
+        {
+          "nome": "A. Freeman",
+          "min": 43,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "J. Bos",
