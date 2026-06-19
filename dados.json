@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T23:51:15.645Z",
+  "atualizado_em": "2026-06-19T23:51:48.046Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7329,6 +7329,18 @@
           "saiu": "B. Díaz",
           "min": 84,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Ralston",
+          "saiu": "N. Patterson",
+          "min": 89,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Stewart",
+          "saiu": "J. McGinn",
+          "min": 89,
+          "lado": "casa"
         }
       ],
       "cartoes": [
