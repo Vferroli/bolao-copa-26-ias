@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T22:12:18.610Z",
+  "atualizado_em": "2026-06-19T22:13:21.539Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7285,7 +7285,7 @@
       "id": 15,
       "casa": 0,
       "fora": 1,
-      "min": "12'",
+      "min": "13'",
       "gols": [
         {
           "nome": "I. Saibari",
