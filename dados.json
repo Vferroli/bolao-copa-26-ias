@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T01:59:25.007Z",
+  "atualizado_em": "2026-06-20T01:59:58.151Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7612,6 +7612,12 @@
         {
           "entrou": "G. Martinelli",
           "saiu": "L. Paquetá",
+          "min": 64,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Endrick",
+          "saiu": "M. Cunha",
           "min": 64,
           "lado": "casa"
         }
