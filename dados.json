@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T03:13:37.151Z",
+  "atualizado_em": "2026-06-20T03:14:40.216Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7854,7 +7854,7 @@
       "id": 22,
       "casa": 0,
       "fora": 1,
-      "min": "13'",
+      "min": "14'",
       "gols": [
         {
           "nome": "M. Galarza",
