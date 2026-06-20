@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T05:14:05.506Z",
+  "atualizado_em": "2026-06-20T16:30:36.536Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3537,6 +3537,284 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Cody Gakpo"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-3-3",
+          "fora": "3-1-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Bart Verbruggen",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Micky van de Ven",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Jan Paul van Hecke",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Virgil van Dijk",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Denzel Dumfries",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Tijjani Reijnders",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Frenkie de Jong",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Ryan Gravenberch",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Cody Gakpo",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Brian Brobbey",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Donyell Malen",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 23,
+              "nome": "Mark Flekken",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Robin Roefs",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Jorrel Hato",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Nathan Aké",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Lutsharel Geertruida",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Mats Wieffer",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Guus Til",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Justin Kluivert",
+              "pos": "F"
+            },
+            {
+              "num": 3,
+              "nome": "Marten de Roon",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Teun Koopmeiners",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Crysencio Summerville",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Memphis Depay",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Noa Lang",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Wout Weghorst",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Kristoffer Nordfeldt",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Victor Lindelöf",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Isak Hien",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Gustaf Lagerbielke",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Jesper Karlström",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Gabriel Gudmundsson",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Yasin Ayari",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Benjamin Nygren",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Alexander Bernhardsson",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Alexander Isak",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Viktor Gyökeres",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Jacob Widell Zetterström",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Viktor Johansson",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Carl Starfelt",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Hjalmar Ekdal",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Eric Smith",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Besfort Zeneli",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Daniel Svensson",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Elliot Stroud",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Herman Johansson",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Ken Sema",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Lucas Bergvall",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Mattias Svanberg",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Taha Abdi Ali",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Anthony Elanga",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Gustaf Nilsson",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
