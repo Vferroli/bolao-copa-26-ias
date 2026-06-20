@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T03:03:39.433Z",
+  "atualizado_em": "2026-06-20T03:04:11.306Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7859,6 +7859,14 @@
         {
           "nome": "M. Galarza",
           "min": 2,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "M. Galarza",
+          "cor": "amarelo",
+          "min": 4,
           "lado": "fora"
         }
       ]
