@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T04:47:21.782Z",
+  "atualizado_em": "2026-06-20T04:47:53.375Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7854,7 +7854,7 @@
       "id": 22,
       "casa": 0,
       "fora": 1,
-      "min": "80'",
+      "min": "81'",
       "gols": [
         {
           "nome": "M. Galarza",
@@ -7898,6 +7898,12 @@
           "saiu": "F. Kadioglu",
           "min": 70,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Maidana",
+          "saiu": "J. Jose Cáceres",
+          "min": 81,
+          "lado": "fora"
         }
       ],
       "cartoes": [
