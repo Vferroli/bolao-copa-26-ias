@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:30:42.457Z",
+  "atualizado_em": "2026-06-20T02:37:16.079Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2154,9 +2154,14 @@
       "fora": "haiti",
       "kickoff": "2026-06-20T00:30:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "M. Cunha",
+          "M. Cunha",
+          "V. Júnior"
+        ]
       },
       "palpites": {
         "claude": {
@@ -7561,117 +7566,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 16,
-      "casa": 3,
-      "fora": 0,
-      "min": "90'+5'",
-      "gols": [
-        {
-          "nome": "M. Cunha",
-          "min": 23,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Cunha",
-          "min": 36,
-          "lado": "casa"
-        },
-        {
-          "nome": "V. Júnior",
-          "min": 45,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "Rayan",
-          "saiu": "Raphinha",
-          "min": 40,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Simon",
-          "saiu": "C. Arcus",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "W. Isidor",
-          "saiu": "F. Pierrot",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Deedson",
-          "saiu": "J. Casimir",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Martinelli",
-          "saiu": "L. Paquetá",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Endrick",
-          "saiu": "M. Cunha",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Joseph",
-          "saiu": "R. Providence",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Santos",
-          "saiu": "V. Júnior",
-          "min": 81,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Éderson",
-          "saiu": "B. Guimarães",
-          "min": 81,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Etienne Jr.",
-          "saiu": "J. Bellegarde",
-          "min": 81,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "C. Arcus",
-          "cor": "amarelo",
-          "min": 4,
-          "lado": "fora"
-        },
-        {
-          "nome": "F. Pierrot",
-          "cor": "amarelo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "D. Santos",
-          "cor": "amarelo",
-          "min": 65,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Jean Jacques",
-          "cor": "amarelo",
-          "min": 72,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
