@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-19T23:58:15.799Z",
+  "atualizado_em": "2026-06-20T00:08:54.089Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1829,9 +1829,12 @@
       "fora": "morocco",
       "kickoff": "2026-06-19T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "I. Saibari"
+        ]
       },
       "palpites": {
         "claude": {
@@ -7280,89 +7283,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 15,
-      "casa": 0,
-      "fora": 1,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "I. Saibari",
-          "min": 2,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "B. Gannon-Doak",
-          "saiu": "K. Tierney",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Dykes",
-          "saiu": "C. Adams",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. McLean",
-          "saiu": "R. Christie",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Rahimi",
-          "saiu": "I. Saibari",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Talbi",
-          "saiu": "B. El Khannouss",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Amaimouni",
-          "saiu": "B. Díaz",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Ralston",
-          "saiu": "N. Patterson",
-          "min": 89,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Stewart",
-          "saiu": "J. McGinn",
-          "min": 89,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. El Mourabet",
-          "saiu": "A. Ounahi",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "I. Diop",
-          "cor": "amarelo",
-          "min": 23,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Robertson",
-          "cor": "amarelo",
-          "min": 65,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
