@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:15:52.296Z",
+  "atualizado_em": "2026-06-20T02:16:24.090Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7626,6 +7626,12 @@
           "saiu": "R. Providence",
           "min": 71,
           "lado": "fora"
+        },
+        {
+          "entrou": "D. Santos",
+          "saiu": "V. Júnior",
+          "min": 81,
+          "lado": "casa"
         }
       ],
       "cartoes": [
