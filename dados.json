@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T01:59:58.151Z",
+  "atualizado_em": "2026-06-20T02:00:30.207Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7566,7 +7566,7 @@
       "id": 16,
       "casa": 3,
       "fora": 0,
-      "min": "64'",
+      "min": "65'",
       "gols": [
         {
           "nome": "M. Cunha",
