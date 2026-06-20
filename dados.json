@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T01:20:59.442Z",
+  "atualizado_em": "2026-06-20T01:22:02.667Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7566,7 +7566,7 @@
       "id": 16,
       "casa": 3,
       "fora": 0,
-      "min": "45'+4'",
+      "min": "45'+5'",
       "gols": [
         {
           "nome": "M. Cunha",
@@ -7597,6 +7597,12 @@
           "nome": "C. Arcus",
           "cor": "amarelo",
           "min": 4,
+          "lado": "fora"
+        },
+        {
+          "nome": "F. Pierrot",
+          "cor": "amarelo",
+          "min": 45,
           "lado": "fora"
         }
       ]
