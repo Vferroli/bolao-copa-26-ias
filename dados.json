@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T01:24:40.410Z",
+  "atualizado_em": "2026-06-20T01:39:14.535Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7590,6 +7590,12 @@
           "saiu": "Raphinha",
           "min": 40,
           "lado": "casa"
+        },
+        {
+          "entrou": "D. Simon",
+          "saiu": "C. Arcus",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
