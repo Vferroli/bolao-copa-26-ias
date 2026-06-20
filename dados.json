@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T00:35:17.169Z",
+  "atualizado_em": "2026-06-20T00:36:51.786Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7566,7 +7566,15 @@
       "id": 16,
       "casa": 0,
       "fora": 0,
-      "min": "3'"
+      "min": "4'",
+      "cartoes": [
+        {
+          "nome": "C. Arcus",
+          "cor": "amarelo",
+          "min": 4,
+          "lado": "fora"
+        }
+      ]
     }
   ]
 }
