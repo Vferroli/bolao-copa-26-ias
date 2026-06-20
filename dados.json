@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T01:39:14.535Z",
+  "atualizado_em": "2026-06-20T01:39:46.377Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7594,6 +7594,12 @@
         {
           "entrou": "D. Simon",
           "saiu": "C. Arcus",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "W. Isidor",
+          "saiu": "F. Pierrot",
           "min": 45,
           "lado": "fora"
         }
