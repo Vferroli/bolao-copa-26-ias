@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:01:34.757Z",
+  "atualizado_em": "2026-06-20T02:02:07.124Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7634,6 +7634,12 @@
           "cor": "amarelo",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "nome": "D. Santos",
+          "cor": "amarelo",
+          "min": 66,
+          "lado": "casa"
         }
       ]
     }
