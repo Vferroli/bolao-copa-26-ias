@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T01:58:22.072Z",
+  "atualizado_em": "2026-06-20T01:59:25.007Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7566,7 +7566,7 @@
       "id": 16,
       "casa": 3,
       "fora": 0,
-      "min": "63'",
+      "min": "64'",
       "gols": [
         {
           "nome": "M. Cunha",
@@ -7606,8 +7606,14 @@
         {
           "entrou": "L. Deedson",
           "saiu": "J. Casimir",
-          "min": 63,
+          "min": 62,
           "lado": "fora"
+        },
+        {
+          "entrou": "G. Martinelli",
+          "saiu": "L. Paquetá",
+          "min": 64,
+          "lado": "casa"
         }
       ],
       "cartoes": [
