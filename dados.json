@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T04:52:07.593Z",
+  "atualizado_em": "2026-06-20T04:52:39.435Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7904,6 +7904,12 @@
           "saiu": "J. Jose Cáceres",
           "min": 81,
           "lado": "fora"
+        },
+        {
+          "entrou": "O. Kökçü",
+          "saiu": "A. Bardakçi",
+          "min": 86,
+          "lado": "casa"
         }
       ],
       "cartoes": [
