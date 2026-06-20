@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T20:52:44.503Z",
+  "atualizado_em": "2026-06-20T21:06:52.808Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8432,6 +8432,14 @@
           "nome": "F. Kessié",
           "min": 30,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "A. Rüdiger",
+          "saiu": "N. Schlotterbeck",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     }
