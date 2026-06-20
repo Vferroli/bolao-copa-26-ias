@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T04:33:04.723Z",
+  "atualizado_em": "2026-06-20T04:33:36.950Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7886,6 +7886,12 @@
           "saiu": "Y. Akgün",
           "min": 60,
           "lado": "casa"
+        },
+        {
+          "entrou": "G. Velázquez",
+          "saiu": "D. Gómez",
+          "min": 67,
+          "lado": "fora"
         }
       ],
       "cartoes": [
