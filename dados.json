@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T22:00:19.413Z",
+  "atualizado_em": "2026-06-20T22:05:32.747Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3319,9 +3319,14 @@
       "fora": "ivory-coast",
       "kickoff": "2026-06-20T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "F. Kessié",
+          "D. Undav",
+          "D. Undav"
+        ]
       },
       "palpites": {
         "claude": {
@@ -8421,91 +8426,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 27,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "F. Kessié",
-          "min": 30,
-          "lado": "fora"
-        },
-        {
-          "nome": "D. Undav",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Undav",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "A. Rüdiger",
-          "saiu": "N. Schlotterbeck",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Leweling",
-          "saiu": "L. Sané",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Undav",
-          "saiu": "J. Musiala",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Amiri",
-          "saiu": "A. Pavlovic",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Guessand",
-          "saiu": "A. Bonny",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Fofana",
-          "saiu": "I. Sangaré",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Adingra",
-          "saiu": "A. Diallo",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Doué",
-          "saiu": "W. Singo",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Pépé",
-          "saiu": "Y. Diomande",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Goretzka",
-          "saiu": "K. Havertz",
-          "min": 85,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
