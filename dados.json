@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:37:16.079Z",
+  "atualizado_em": "2026-06-20T02:47:03.814Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2912,6 +2912,289 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Hakan Çalhanoğlu"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Uğurcan Çakır",
+              "pos": "G"
+            },
+            {
+              "num": 20,
+              "nome": "Ferdi Kadıoğlu",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Abdülkerim Bardakcı",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Merih Demiral",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Mert Müldür",
+              "pos": "D"
+            },
+            {
+              "num": 10,
+              "nome": "Hakan Çalhanoğlu",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "İsmail Yüksek",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Kenan Yıldız",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Arda Güler",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Yunus Akgün",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Kerem Aktürkoğlu",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Altay Bayındır",
+              "pos": "G"
+            },
+            {
+              "num": 1,
+              "nome": "Mert Günok",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Eren Elmalı",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Kaan Ayhan",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ozan Kabak",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Samet Akaydın",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Zeki Çelik",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Çağlar Söyüncü",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Barış Alper Yılmaz",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Can Uzun",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Orkun Kökçü",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Oğuz Aydın",
+              "pos": "F"
+            },
+            {
+              "num": 5,
+              "nome": "Salih Özcan",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "İrfan Can Kahveci",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Deniz Gül",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 12,
+              "nome": "Orlando Gill",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Junior Alonso",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Omar Alderete",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Gustavo Gómez",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Juan Cáceres",
+              "pos": "D"
+            },
+            {
+              "num": 10,
+              "nome": "Miguel Almirón",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Matías Galarza",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Andrés Cubas",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Diego Gómez",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Julio Enciso",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Isidro Pitta",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Gastón Olveira",
+              "pos": "G"
+            },
+            {
+              "num": 1,
+              "nome": "Roberto Fernández",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Gustavo Velázquez",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Fabián Balbuena",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "José Canale",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Alexandro Maidana",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "Mauricio",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Damián Bobadilla",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Braian Ojeda",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Gustavo Caballero",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Alejandro Romero",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Ramón Sosa",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Antonio Sanabria",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Alex Arce",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Gabriel Ávalos",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
