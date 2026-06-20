@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T04:58:56.690Z",
+  "atualizado_em": "2026-06-20T04:59:28.409Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7854,7 +7854,7 @@
       "id": 22,
       "casa": 0,
       "fora": 1,
-      "min": "90'+2'",
+      "min": "90'+3'",
       "gols": [
         {
           "nome": "M. Galarza",
@@ -7914,6 +7914,12 @@
         {
           "entrou": "G. Ávalos",
           "saiu": "J. Enciso",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Canale",
+          "saiu": "M. Galarza",
           "min": 90,
           "lado": "fora"
         }
