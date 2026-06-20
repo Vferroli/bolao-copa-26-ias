@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T00:57:39.272Z",
+  "atualizado_em": "2026-06-20T00:58:11.800Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7567,13 +7567,6 @@
       "casa": 1,
       "fora": 0,
       "min": "25'",
-      "gols": [
-        {
-          "nome": "M. Cunha",
-          "min": 23,
-          "lado": "casa"
-        }
-      ],
       "cartoes": [
         {
           "nome": "C. Arcus",
