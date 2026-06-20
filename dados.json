@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:41:15.876Z",
+  "atualizado_em": "2026-06-20T18:41:48.109Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8135,7 +8135,7 @@
       "id": 33,
       "casa": 4,
       "fora": 1,
-      "min": "80'",
+      "min": "81'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -8224,6 +8224,12 @@
           "nome": "Y. Ayari",
           "cor": "amarelo",
           "min": 75,
+          "lado": "fora"
+        },
+        {
+          "nome": "L. Bergvall",
+          "cor": "amarelo",
+          "min": 80,
           "lado": "fora"
         }
       ]
