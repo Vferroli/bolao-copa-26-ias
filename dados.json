@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T21:46:17.087Z",
+  "atualizado_em": "2026-06-20T21:47:51.905Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8426,7 +8426,7 @@
       "id": 27,
       "casa": 1,
       "fora": 1,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "F. Kessié",
@@ -8487,6 +8487,18 @@
           "saiu": "W. Singo",
           "min": 82,
           "lado": "fora"
+        },
+        {
+          "entrou": "N. Pépé",
+          "saiu": "Y. Diomande",
+          "min": 85,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. Goretzka",
+          "saiu": "K. Havertz",
+          "min": 85,
+          "lado": "casa"
         }
       ]
     }
