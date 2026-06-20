@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T21:37:10.796Z",
+  "atualizado_em": "2026-06-20T21:37:42.975Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8426,7 +8426,7 @@
       "id": 27,
       "casa": 1,
       "fora": 1,
-      "min": "74'",
+      "min": "75'",
       "gols": [
         {
           "nome": "F. Kessié",
@@ -8463,6 +8463,24 @@
           "saiu": "A. Pavlovic",
           "min": 60,
           "lado": "casa"
+        },
+        {
+          "entrou": "E. Guessand",
+          "saiu": "A. Bonny",
+          "min": 75,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Fofana",
+          "saiu": "I. Sangaré",
+          "min": 75,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Adingra",
+          "saiu": "A. Diallo",
+          "min": 75,
+          "lado": "fora"
         }
       ]
     }
