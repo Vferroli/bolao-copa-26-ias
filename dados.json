@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:20:19.242Z",
+  "atualizado_em": "2026-06-20T18:20:52.210Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8134,8 +8134,8 @@
     {
       "id": 33,
       "casa": 4,
-      "fora": 0,
-      "min": "59'",
+      "fora": 1,
+      "min": "60'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -8187,6 +8187,18 @@
           "saiu": "B. Nygren",
           "min": 56,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Koopmeiners",
+          "saiu": "F. de Jong",
+          "min": 59,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Til",
+          "saiu": "T. Reijnders",
+          "min": 59,
+          "lado": "casa"
         }
       ],
       "cartoes": [
