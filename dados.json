@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:07:24.595Z",
+  "atualizado_em": "2026-06-20T02:07:56.418Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7646,6 +7646,12 @@
           "cor": "amarelo",
           "min": 65,
           "lado": "casa"
+        },
+        {
+          "nome": "D. Jean Jacques",
+          "cor": "amarelo",
+          "min": 72,
+          "lado": "fora"
         }
       ]
     }
