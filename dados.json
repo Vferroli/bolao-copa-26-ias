@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:17:37.890Z",
+  "atualizado_em": "2026-06-20T18:18:10.605Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8166,6 +8166,12 @@
           "lado": "casa"
         },
         {
+          "entrou": "A. Elanga",
+          "saiu": "A. Bernhardsson",
+          "min": 55,
+          "lado": "fora"
+        },
+        {
           "entrou": "B. Zeneli",
           "saiu": "J. Karlström",
           "min": 56,
@@ -8174,12 +8180,6 @@
         {
           "entrou": "L. Bergvall",
           "saiu": "B. Nygren",
-          "min": 56,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Elanga",
-          "saiu": "A. Bernhardsson",
           "min": 56,
           "lado": "fora"
         }
