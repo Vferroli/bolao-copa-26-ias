@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T05:05:41.230Z",
+  "atualizado_em": "2026-06-20T05:14:05.506Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -2884,9 +2884,12 @@
       "fora": "paraguay",
       "kickoff": "2026-06-20T03:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "M. Galarza"
+        ]
       },
       "palpites": {
         "claude": {
@@ -7849,101 +7852,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 22,
-      "casa": 0,
-      "fora": 1,
-      "min": "90'+9'",
-      "gols": [
-        {
-          "nome": "M. Galarza",
-          "min": 2,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "D. Bobadilla",
-          "saiu": "I. Pitta",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Alper Yilmaz",
-          "saiu": "K. Aktürkoglu",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Uzun",
-          "saiu": "I. Yüksek",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Gül",
-          "saiu": "Y. Akgün",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Velázquez",
-          "saiu": "D. Gómez",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Elmali",
-          "saiu": "F. Kadioglu",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Maidana",
-          "saiu": "J. Jose Cáceres",
-          "min": 81,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Kökçü",
-          "saiu": "A. Bardakçi",
-          "min": 86,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Ávalos",
-          "saiu": "J. Enciso",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Canale",
-          "saiu": "M. Galarza",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "M. Galarza",
-          "cor": "amarelo",
-          "min": 4,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Almirón",
-          "cor": "vermelho",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Elmali",
-          "cor": "amarelo",
-          "min": 71,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
