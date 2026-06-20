@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T20:29:15.594Z",
+  "atualizado_em": "2026-06-20T20:30:17.991Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8426,7 +8426,14 @@
       "id": 27,
       "casa": 0,
       "fora": 0,
-      "min": "29'"
+      "min": "30'",
+      "gols": [
+        {
+          "nome": "F. Kessié",
+          "min": 30,
+          "lado": "fora"
+        }
+      ]
     }
   ]
 }
