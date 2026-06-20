@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T21:44:41.213Z",
+  "atualizado_em": "2026-06-20T21:45:13.569Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8426,7 +8426,7 @@
       "id": 27,
       "casa": 1,
       "fora": 1,
-      "min": "81'",
+      "min": "83'",
       "gols": [
         {
           "nome": "F. Kessié",
@@ -8480,6 +8480,12 @@
           "entrou": "S. Adingra",
           "saiu": "A. Diallo",
           "min": 75,
+          "lado": "fora"
+        },
+        {
+          "entrou": "G. Doué",
+          "saiu": "W. Singo",
+          "min": 82,
           "lado": "fora"
         }
       ]
