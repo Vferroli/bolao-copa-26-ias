@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T19:02:30.955Z",
+  "atualizado_em": "2026-06-20T19:30:30.156Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3347,6 +3347,289 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Jamal Musiala"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Manuel Neuer",
+              "pos": "G"
+            },
+            {
+              "num": 18,
+              "nome": "Nathaniel Brown",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Nico Schlotterbeck",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Jonathan Tah",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Joshua Kimmich",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Aleksandar Pavlović",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Felix Nmecha",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Florian Wirtz",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Jamal Musiala",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Leroy Sané",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Kai Havertz",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 21,
+              "nome": "Alexander Nübel",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Oliver Baumann",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Malick Thiaw",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Waldemar Anton",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Antonio Rüdiger",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "David Raum",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Assan Ouédraogo",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Jamie Leweling",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Nadiem Amiri",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Pascal Groß",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Leon Goretzka",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Angelo Stiller",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Maximilian Beier",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Nick Woltemade",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Deniz Undav",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Yahia Fofana",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Ghislain Konan",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Emmanuel Agbadou",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Odilon Kossounou",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Wilfried Singo",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "Yan Diomande",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Ibrahim Sangaré",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Franck Kessié",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Amad Diallo",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Christ Inao Oulaï",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Ange-Yoan Bonny",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 23,
+              "nome": "Alban Lafont",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Mohamed Koné",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Christopher Operi",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Ousmane Diomande",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Guéla Doué",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Evan Ndicka",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Bazoumana Touré",
+              "pos": "F"
+            },
+            {
+              "num": 4,
+              "nome": "Jean Michaël Seri",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Parfait Guiagon",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Seko Fofana",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Simon Adingra",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Oumar Diakité",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Elye Wahi",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Nicolas Pépé",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Evann Guessand",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
