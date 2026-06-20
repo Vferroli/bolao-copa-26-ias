@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:16:55.937Z",
+  "atualizado_em": "2026-06-20T02:17:27.692Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7638,6 +7638,12 @@
           "saiu": "B. Guimarães",
           "min": 81,
           "lado": "casa"
+        },
+        {
+          "entrou": "D. Etienne Jr.",
+          "saiu": "J. Bellegarde",
+          "min": 81,
+          "lado": "fora"
         }
       ],
       "cartoes": [
