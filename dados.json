@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:16:32.499Z",
+  "atualizado_em": "2026-06-20T18:17:05.346Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8135,7 +8135,7 @@
       "id": 33,
       "casa": 4,
       "fora": 0,
-      "min": "55'",
+      "min": "56'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -8164,6 +8164,18 @@
           "saiu": "D. Malen",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "B. Zeneli",
+          "saiu": "J. Karlström",
+          "min": 56,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. Bergvall",
+          "saiu": "B. Nygren",
+          "min": 56,
+          "lado": "fora"
         }
       ],
       "cartoes": [
