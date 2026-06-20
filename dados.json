@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:39:07.259Z",
+  "atualizado_em": "2026-06-20T18:40:11.621Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8135,7 +8135,7 @@
       "id": 33,
       "casa": 4,
       "fora": 1,
-      "min": "77'",
+      "min": "78'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -8205,6 +8205,12 @@
           "saiu": "B. Brobbey",
           "min": 72,
           "lado": "casa"
+        },
+        {
+          "entrou": "T. Ali",
+          "saiu": "Y. Ayari",
+          "min": 79,
+          "lado": "fora"
         }
       ],
       "cartoes": [
