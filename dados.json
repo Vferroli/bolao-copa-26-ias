@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:05:49.587Z",
+  "atualizado_em": "2026-06-20T02:06:52.571Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7566,7 +7566,7 @@
       "id": 16,
       "casa": 3,
       "fora": 0,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "M. Cunha",
@@ -7620,6 +7620,12 @@
           "saiu": "M. Cunha",
           "min": 64,
           "lado": "casa"
+        },
+        {
+          "entrou": "L. Joseph",
+          "saiu": "R. Providence",
+          "min": 71,
+          "lado": "fora"
         }
       ],
       "cartoes": [
