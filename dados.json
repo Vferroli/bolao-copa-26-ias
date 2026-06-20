@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T04:36:51.357Z",
+  "atualizado_em": "2026-06-20T04:37:53.975Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7854,7 +7854,7 @@
       "id": 22,
       "casa": 0,
       "fora": 1,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "M. Galarza",
@@ -7892,6 +7892,12 @@
           "saiu": "D. Gómez",
           "min": 67,
           "lado": "fora"
+        },
+        {
+          "entrou": "E. Elmali",
+          "saiu": "F. Kadioglu",
+          "min": 71,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -7906,6 +7912,12 @@
           "cor": "vermelho",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "nome": "E. Elmali",
+          "cor": "amarelo",
+          "min": 71,
+          "lado": "casa"
         }
       ]
     }
