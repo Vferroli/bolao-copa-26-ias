@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-19",
-  "atualizado_em": "2026-06-20T02:16:24.090Z",
+  "atualizado_em": "2026-06-20T02:16:55.937Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7566,7 +7566,7 @@
       "id": 16,
       "casa": 3,
       "fora": 0,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "M. Cunha",
@@ -7630,6 +7630,12 @@
         {
           "entrou": "D. Santos",
           "saiu": "V. Júnior",
+          "min": 81,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Éderson",
+          "saiu": "B. Guimarães",
           "min": 81,
           "lado": "casa"
         }
