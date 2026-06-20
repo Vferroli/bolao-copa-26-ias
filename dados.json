@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:32:07.610Z",
+  "atualizado_em": "2026-06-20T18:33:44.204Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8135,7 +8135,7 @@
       "id": 33,
       "casa": 4,
       "fora": 1,
-      "min": "71'",
+      "min": "72'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -8198,6 +8198,12 @@
           "entrou": "G. Til",
           "saiu": "T. Reijnders",
           "min": 59,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Depay",
+          "saiu": "B. Brobbey",
+          "min": 72,
           "lado": "casa"
         }
       ],
