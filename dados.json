@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:56:45.203Z",
+  "atualizado_em": "2026-06-20T19:02:30.955Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3509,9 +3509,17 @@
       "fora": "sweden",
       "kickoff": "2026-06-20T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 5,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "B. Brobbey",
+          "B. Brobbey",
+          "C. Gakpo",
+          "C. Gakpo",
+          "A. Elanga",
+          "C. Summerville"
+        ]
       },
       "palpites": {
         "claude": {
@@ -8130,126 +8138,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 33,
-      "casa": 5,
-      "fora": 1,
-      "min": "90'+5'",
-      "gols": [
-        {
-          "nome": "B. Brobbey",
-          "min": 5,
-          "lado": "casa"
-        },
-        {
-          "nome": "B. Brobbey",
-          "min": 17,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Gakpo",
-          "min": 47,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Gakpo",
-          "min": 54,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Elanga",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "nome": "C. Summerville",
-          "min": 89,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "C. Summerville",
-          "saiu": "D. Malen",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Elanga",
-          "saiu": "A. Bernhardsson",
-          "min": 55,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Zeneli",
-          "saiu": "J. Karlström",
-          "min": 56,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Bergvall",
-          "saiu": "B. Nygren",
-          "min": 56,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Koopmeiners",
-          "saiu": "F. de Jong",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Til",
-          "saiu": "T. Reijnders",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Depay",
-          "saiu": "B. Brobbey",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Ali",
-          "saiu": "Y. Ayari",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Lang",
-          "saiu": "C. Gakpo",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Stroud",
-          "saiu": "G. Gudmundsson",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "G. Gudmundsson",
-          "cor": "amarelo",
-          "min": 53,
-          "lado": "fora"
-        },
-        {
-          "nome": "Y. Ayari",
-          "cor": "amarelo",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Bergvall",
-          "cor": "amarelo",
-          "min": 80,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
