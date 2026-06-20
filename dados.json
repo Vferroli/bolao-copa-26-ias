@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-20T18:08:14.267Z",
+  "atualizado_em": "2026-06-20T18:09:20.269Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8135,7 +8135,7 @@
       "id": 33,
       "casa": 2,
       "fora": 0,
-      "min": "47'",
+      "min": "48'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -8145,6 +8145,11 @@
         {
           "nome": "B. Brobbey",
           "min": 17,
+          "lado": "casa"
+        },
+        {
+          "nome": "C. Gakpo",
+          "min": 47,
           "lado": "casa"
         }
       ],
