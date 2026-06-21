@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T22:54:45.109Z",
+  "atualizado_em": "2026-06-21T23:10:29.766Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9845,6 +9845,14 @@
           "nome": "A. Cano",
           "min": 45,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "D. Duarte",
+          "saiu": "T. Arcanjo",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
