@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:36:04.955Z",
+  "atualizado_em": "2026-06-21T23:36:37.328Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,7 +9829,7 @@
       "id": 46,
       "casa": 2,
       "fora": 2,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "K. Pina",
@@ -9882,6 +9882,12 @@
           "saiu": "M. Ugarte",
           "min": 70,
           "lado": "casa"
+        },
+        {
+          "entrou": "L. Duarte",
+          "saiu": "K. Pina",
+          "min": 71,
+          "lado": "fora"
         }
       ],
       "cartoes": [
