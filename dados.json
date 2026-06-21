@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T18:08:14.580Z",
+  "atualizado_em": "2026-06-21T18:30:31.101Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5423,6 +5423,279 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Kevin De Bruyne"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "5-4-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Thibaut Courtois",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Maxim De Cuyper",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Brandon Mechele",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Nathan Ngoy",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Thomas Meunier",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Youri Tielemans",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Nicolas Raskin",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Leandro Trossard",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Kevin De Bruyne",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Alexis Saelemaekers",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Romelu Lukaku",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Senne Lammens",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Mike Penders",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Koni De Winter",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Arthur Theate",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Joaquin Seys",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Timothy Castagne",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Axel Witsel",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Diego Moreira",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Hans Vanaken",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Amadou Onana",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Dodi Lukebakio",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Charles De Ketelaere",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Matías Fernández-Pardo",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Alireza Beiranvand",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Ehsan Hajsafi",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Ali Nemati",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Shoja Khalilzadeh",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Hossein Kanaani",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Saleh Hardani",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Mohammad Mohebi",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Saeid Ezatolahi",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Saman Ghoddos",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Ramin Rezaeian",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Mehdi Taremi",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Payam Niazmand",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Hossein Hosseini",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Milad Mohammadi",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Danial Eiri",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Roozbeh Cheshmi",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Aria Yousefi",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Mohammad Ghorbani",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Amirmohammad Razzaghinia",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Mehdi Ghayedi",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Alireza Jahanbakhsh",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "Mahdi Torabi",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ali Alipour",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Amirhossein Hosseinzadeh",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Shahriar Moghanlou",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Dennis Eckert Ayensa",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
