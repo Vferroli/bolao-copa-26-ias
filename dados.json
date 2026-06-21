@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T00:38:06.707Z",
+  "atualizado_em": "2026-06-21T00:38:38.959Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8714,7 +8714,15 @@
       "id": 28,
       "casa": 0,
       "fora": 0,
-      "min": "37'"
+      "min": "39'",
+      "cartoes": [
+        {
+          "nome": "J. Alcívar",
+          "cor": "amarelo",
+          "min": 38,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
