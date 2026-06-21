@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:47:15.621Z",
+  "atualizado_em": "2026-06-21T23:47:47.972Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9898,7 +9898,7 @@
         {
           "entrou": "B. Rodríguez",
           "saiu": "M. Araújo",
-          "min": 82,
+          "min": 81,
           "lado": "casa"
         }
       ],
