@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T06:03:25.799Z",
+  "atualizado_em": "2026-06-21T15:30:23.264Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5885,6 +5885,289 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Lamine Yamal"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "5-3-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Unai Simón",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Marc Cucurella",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Aymeric Laporte",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Pau Cubarsí",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Pedro Porro",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Rodri",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Pedri",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Alex Baena",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Dani Olmo",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Lamine Yamal",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Mikel Oyarzabal",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "David Raya",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Joan García",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Marc Pubill",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Eric García",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Marcos Llorente",
+              "pos": "M"
+            },
+            {
+              "num": 3,
+              "nome": "Alejandro Grimaldo",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Mikel Merino",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Fabián Ruiz",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Pablo Gavi",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Martín Zubimendi",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Nico Williams",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Ferran Torres",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Yéremy Pino",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Víctor Muñoz",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Borja Iglesias",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 21,
+              "nome": "Mohammed Al-Owais",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Moteb Al-Harbi",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Abdulelah Al-Amri",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Ali Lajami",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Hassan Altambakti",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Saud Abdulhamid",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Musab Al Juwayr",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Abdullah Al-Khaibari",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Nasser Al-Dawsari",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Salem Al-Dawsari",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Firas Al-Buraikan",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Nawaf Al-Aqidi",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Ahmed Al-Kassar",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Ali Majrashi",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Nawaf Boushal",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Hassan Kadesh",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Jehad Thakri",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Mohammed Abu Al-Shamat",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Ziyad Aljohani",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Ala'a Al-Hejji",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Mohamed Kanno",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Ayman Yahya",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Saleh Al-Shehri",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Khalid Al-Ghannam",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Abdullah Al-Hamdan",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Sultan Mandash",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
