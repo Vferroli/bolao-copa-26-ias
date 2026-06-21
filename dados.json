@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:25:25.385Z",
+  "atualizado_em": "2026-06-21T23:26:29.044Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,7 +9829,7 @@
       "id": 46,
       "casa": 2,
       "fora": 1,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "K. Pina",
@@ -9863,7 +9863,7 @@
         {
           "entrou": "H. Varela",
           "saiu": "G. Rodrigues",
-          "min": 59,
+          "min": 58,
           "lado": "fora"
         }
       ],
