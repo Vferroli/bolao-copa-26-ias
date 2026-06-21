@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T16:29:57.264Z",
+  "atualizado_em": "2026-06-21T16:30:59.456Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9277,7 +9277,7 @@
       "id": 45,
       "casa": 3,
       "fora": 0,
-      "min": "29'",
+      "min": "30'",
       "gols": [
         {
           "nome": "L. Yamal",
@@ -9293,6 +9293,14 @@
           "nome": "M. Oyarzabal",
           "min": 24,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "S. Al-Dawsari",
+          "cor": "amarelo",
+          "min": 30,
+          "lado": "fora"
         }
       ]
     }
