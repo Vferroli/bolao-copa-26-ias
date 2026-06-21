@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T21:00:52.268Z",
+  "atualizado_em": "2026-06-21T21:07:03.834Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5395,9 +5395,10 @@
       "fora": "iran",
       "kickoff": "2026-06-21T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": []
       },
       "palpites": {
         "claude": {
@@ -9550,94 +9551,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 39,
-      "casa": 0,
-      "fora": 0,
-      "min": "90'+5'",
-      "subs": [
-        {
-          "entrou": "A. Jahanbakhsh",
-          "saiu": "S. Hardani",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Castagne",
-          "saiu": "T. Meunier",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "H. Vanaken",
-          "saiu": "N. Raskin",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Lukébakio",
-          "saiu": "A. Saelemaekers",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Torabi",
-          "saiu": "M. Mohebbi",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Mohammadi",
-          "saiu": "E. Hajsafi",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Theate",
-          "saiu": "R. Lukaku",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Moghanloo",
-          "saiu": "S. Ghoddos",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Hosseinzadeh",
-          "saiu": "S. Ezatolahi",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Fernandez-Pardo",
-          "saiu": "K. De Bruyne",
-          "min": 87,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "R. Lukaku",
-          "cor": "amarelo",
-          "min": 3,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Ezatolahi",
-          "cor": "amarelo",
-          "min": 33,
-          "lado": "fora"
-        },
-        {
-          "nome": "N. Ngoy",
-          "cor": "vermelho",
-          "min": 66,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
