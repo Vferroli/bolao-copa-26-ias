@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:35:32.433Z",
+  "atualizado_em": "2026-06-21T23:36:04.955Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,7 +9829,7 @@
       "id": 46,
       "casa": 2,
       "fora": 2,
-      "min": "69'",
+      "min": "70'",
       "gols": [
         {
           "nome": "K. Pina",
@@ -9874,6 +9874,12 @@
         {
           "entrou": "D. Núñez",
           "saiu": "F. Viñas",
+          "min": 70,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. de la Cruz",
+          "saiu": "M. Ugarte",
           "min": 70,
           "lado": "casa"
         }
