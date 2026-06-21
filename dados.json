@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T01:29:52.307Z",
+  "atualizado_em": "2026-06-21T01:30:24.065Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8714,12 +8714,18 @@
       "id": 28,
       "casa": 0,
       "fora": 0,
-      "min": "70'",
+      "min": "71'",
       "subs": [
         {
           "entrou": "K. Rodríguez",
           "saiu": "J. Alcívar",
           "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Angulo",
+          "saiu": "P. Estupiñán",
+          "min": 71,
           "lado": "casa"
         }
       ],
