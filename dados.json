@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T18:01:50.104Z",
+  "atualizado_em": "2026-06-21T18:08:14.580Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5857,9 +5857,14 @@
       "fora": "saudi-arabia",
       "kickoff": "2026-06-21T16:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 5,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "L. Yamal",
+          "M. Oyarzabal",
+          "M. Oyarzabal"
+        ]
       },
       "palpites": {
         "claude": {
@@ -9272,105 +9277,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 45,
-      "casa": 4,
-      "fora": 0,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "L. Yamal",
-          "min": 10,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Oyarzabal",
-          "min": 21,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Oyarzabal",
-          "min": 24,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "Y. Pino",
-          "saiu": "L. Yamal",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Torres",
-          "saiu": "M. Oyarzabal",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Kanno",
-          "saiu": "A. Al-Khaibari",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Al-Hamdan",
-          "saiu": "M. Al-Juwayr",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Abu Al-Shamat",
-          "saiu": "F. Al-Brikan",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Al-Hajji",
-          "saiu": "A. Al-Amri",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Merino",
-          "saiu": "D. Olmo",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Williams",
-          "saiu": "Á. Baena",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Ruiz",
-          "saiu": "Pedri",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Al-Ghannam",
-          "saiu": "N. Al-Dawsari",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "S. Al-Dawsari",
-          "cor": "amarelo",
-          "min": 30,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Kanno",
-          "cor": "amarelo",
-          "min": 60,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
