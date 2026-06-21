@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T01:55:31.724Z",
+  "atualizado_em": "2026-06-21T02:00:40.909Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3646,9 +3646,10 @@
       "fora": "curacao",
       "kickoff": "2026-06-21T00:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": []
       },
       "palpites": {
         "claude": {
@@ -8709,106 +8710,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 28,
-      "casa": 0,
-      "fora": 0,
-      "min": "90'+6'",
-      "subs": [
-        {
-          "entrou": "K. Rodríguez",
-          "saiu": "J. Alcívar",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Angulo",
-          "saiu": "P. Estupiñán",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Gorré",
-          "saiu": "J. Bacuna",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. van Eijma",
-          "saiu": "D. Fonville",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Margaritha",
-          "saiu": "T. Chong",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Á. Preciado",
-          "saiu": "A. Franco",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Kastaneer",
-          "saiu": "J. Locadia",
-          "min": 83,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Roemeratoe",
-          "saiu": "L. Comenencia",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Caicedo",
-          "saiu": "J. Yeboah",
-          "min": 89,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Alcívar",
-          "cor": "amarelo",
-          "min": 38,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Bacuna",
-          "cor": "amarelo",
-          "min": 39,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Bacuna",
-          "cor": "amarelo",
-          "min": 53,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Comenencia",
-          "cor": "amarelo",
-          "min": 56,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Gaari",
-          "cor": "amarelo",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "nome": "G. Kastaneer",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
