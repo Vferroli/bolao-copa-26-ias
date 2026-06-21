@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:22:44.014Z",
+  "atualizado_em": "2026-06-21T23:23:48.030Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,7 +9829,7 @@
       "id": 46,
       "casa": 2,
       "fora": 1,
-      "min": "57'",
+      "min": "58'",
       "gols": [
         {
           "nome": "K. Pina",
@@ -9866,6 +9866,12 @@
           "nome": "R. Bentancur",
           "cor": "amarelo",
           "min": 20,
+          "lado": "casa"
+        },
+        {
+          "nome": "M. Olivera",
+          "cor": "amarelo",
+          "min": 58,
           "lado": "casa"
         }
       ]
