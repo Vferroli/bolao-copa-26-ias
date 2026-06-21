@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:49:16.337Z",
+  "atualizado_em": "2026-06-21T05:50:50.876Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8988,7 +8988,7 @@
       "id": 34,
       "casa": 0,
       "fora": 4,
-      "min": "90'",
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "D. Kamada",
@@ -9059,6 +9059,18 @@
           "saiu": "A. Ueda",
           "min": 84,
           "lado": "fora"
+        },
+        {
+          "entrou": "R. Khedira",
+          "saiu": "E. Skhiri",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "E. Achouri",
+          "saiu": "A. Abdi",
+          "min": 90,
+          "lado": "casa"
         }
       ]
     }
