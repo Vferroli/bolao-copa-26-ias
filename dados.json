@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:04:44.025Z",
+  "atualizado_em": "2026-06-21T05:05:15.788Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9005,6 +9005,12 @@
         {
           "entrou": "I. Gharbi",
           "saiu": "E. Saad",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Amine Ben Hamida",
+          "saiu": "D. Bronn",
           "min": 45,
           "lado": "casa"
         }
