@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T20:43:59.632Z",
+  "atualizado_em": "2026-06-21T20:44:31.812Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9598,6 +9598,12 @@
           "saiu": "R. Lukaku",
           "min": 73,
           "lado": "casa"
+        },
+        {
+          "entrou": "S. Moghanloo",
+          "saiu": "S. Ghoddos",
+          "min": 79,
+          "lado": "fora"
         }
       ],
       "cartoes": [
