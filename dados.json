@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T22:52:08.337Z",
+  "atualizado_em": "2026-06-21T22:53:11.341Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,7 +9829,7 @@
       "id": 46,
       "casa": 2,
       "fora": 1,
-      "min": "45'+7'",
+      "min": "45'+8'",
       "gols": [
         {
           "nome": "K. Pina",
