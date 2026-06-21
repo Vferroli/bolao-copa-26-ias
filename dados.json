@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T00:15:36.341Z",
+  "atualizado_em": "2026-06-21T00:16:40.144Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3674,6 +3674,289 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Enner Valencia"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-1-4-2",
+          "fora": "5-4-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Hernán Galíndez",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Piero Hincapié",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Willian Pacho",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Alan Franco",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Jordy Alcivar",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Pervis Estupiñán",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Moisés Caicedo",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Pedro Vite",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "John Yeboah",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Enner Valencia",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Gonzalo Plata",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Moisés Ramírez",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Gonzalo Valle",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Yaimar Medina",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Joel Ordóñez",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Jackson Porozo",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Félix Torres",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Ángelo Preciado",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Nilson Angulo",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Kendry Páez",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Denil Castillo",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Kevin Rodriguez",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "Jordy Caicedo",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Jeremy Arevalo",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Anthony Valencia",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Alan Minda",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Eloy Room",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Deveron Fonville",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Sherel Constancio Floranus",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Armando Obispo",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Jurien Gaari",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Joshua Brenet",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Juninho Bacuna",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Leandro Bacuna",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Livano Comenencia",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Tahith Chong",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Jürgen Locadia",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 25,
+              "nome": "Tyrick Bodak",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Trevor Iriving Doornbusch",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Shurandy Sambo",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Roshon van Eijma",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Riechedly Bazoer",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ar'Jany Martha",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Jearl Margaritha",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Kenji Gorré",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Tyrese Noslin",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Jeremy Antonisse",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Kevin Felida",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Godfried Roemeratoe",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Gervane Kastaneer",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Brandley Kuwas",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Sontje Hansen",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
@@ -8431,7 +8714,7 @@
       "id": 28,
       "casa": 0,
       "fora": 0,
-      "min": "15'"
+      "min": "16'"
     }
   ]
 }
