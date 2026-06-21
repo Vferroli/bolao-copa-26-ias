@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:34:59.721Z",
+  "atualizado_em": "2026-06-21T23:35:32.433Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9870,6 +9870,12 @@
           "saiu": "G. Rodrigues",
           "min": 58,
           "lado": "fora"
+        },
+        {
+          "entrou": "D. Núñez",
+          "saiu": "F. Viñas",
+          "min": 70,
+          "lado": "casa"
         }
       ],
       "cartoes": [
