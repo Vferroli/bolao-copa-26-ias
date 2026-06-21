@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T22:20:35.674Z",
+  "atualizado_em": "2026-06-21T22:21:38.558Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,7 +9829,14 @@
       "id": 46,
       "casa": 0,
       "fora": 0,
-      "min": "20'",
+      "min": "21'",
+      "gols": [
+        {
+          "nome": "K. Pina",
+          "min": 21,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "S. Lopes Cabral",
