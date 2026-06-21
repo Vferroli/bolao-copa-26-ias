@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T22:51:36.405Z",
+  "atualizado_em": "2026-06-21T22:52:08.337Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9827,9 +9827,9 @@
   "live": [
     {
       "id": 46,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
-      "min": "45'+6'",
+      "min": "45'+7'",
       "gols": [
         {
           "nome": "K. Pina",
@@ -9839,6 +9839,11 @@
         {
           "nome": "M. Araújo",
           "min": 44,
+          "lado": "casa"
+        },
+        {
+          "nome": "A. Cano",
+          "min": 45,
           "lado": "casa"
         }
       ],
