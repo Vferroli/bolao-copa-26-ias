@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T04:46:41.543Z",
+  "atualizado_em": "2026-06-21T04:48:14.744Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8988,7 +8988,7 @@
       "id": 34,
       "casa": 0,
       "fora": 2,
-      "min": "45'+2'",
+      "min": "45'+3'",
       "gols": [
         {
           "nome": "D. Kamada",
