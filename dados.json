@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T20:32:04.318Z",
+  "atualizado_em": "2026-06-21T20:32:36.718Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9606,6 +9606,12 @@
           "cor": "amarelo",
           "min": 33,
           "lado": "fora"
+        },
+        {
+          "nome": "N. Ngoy",
+          "cor": "vermelho",
+          "min": 66,
+          "lado": "casa"
         }
       ]
     }
