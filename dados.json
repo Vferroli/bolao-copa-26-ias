@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T20:31:31.537Z",
+  "atualizado_em": "2026-06-21T20:32:04.318Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9555,7 +9555,7 @@
       "id": 39,
       "casa": 0,
       "fora": 0,
-      "min": "66'",
+      "min": "67'",
       "subs": [
         {
           "entrou": "A. Jahanbakhsh",
@@ -9580,6 +9580,18 @@
           "saiu": "A. Saelemaekers",
           "min": 58,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Torabi",
+          "saiu": "M. Mohebbi",
+          "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Mohammadi",
+          "saiu": "E. Hajsafi",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
