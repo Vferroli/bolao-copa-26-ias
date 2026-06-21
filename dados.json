@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:45:00.719Z",
+  "atualizado_em": "2026-06-21T05:45:33.062Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9052,6 +9052,12 @@
           "entrou": "A. Seko",
           "saiu": "T. Tomiyasu",
           "min": 79,
+          "lado": "fora"
+        },
+        {
+          "entrou": "K. Goto",
+          "saiu": "A. Ueda",
+          "min": 84,
           "lado": "fora"
         }
       ]
