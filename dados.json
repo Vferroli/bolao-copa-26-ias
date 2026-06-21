@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T04:49:49.288Z",
+  "atualizado_em": "2026-06-21T05:04:44.025Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8999,6 +8999,14 @@
           "nome": "A. Ueda",
           "min": 31,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "I. Gharbi",
+          "saiu": "E. Saad",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     }
