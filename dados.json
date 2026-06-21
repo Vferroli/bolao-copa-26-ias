@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:33:50.056Z",
+  "atualizado_em": "2026-06-21T05:34:22.252Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9024,6 +9024,18 @@
           "saiu": "S. Tounekti",
           "min": 64,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Suzuki",
+          "saiu": "D. Kamada",
+          "min": 74,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Y. Sugawara",
+          "saiu": "R. Doan",
+          "min": 74,
+          "lado": "fora"
         }
       ]
     }
