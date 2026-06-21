@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T19:54:06.773Z",
+  "atualizado_em": "2026-06-21T20:10:48.230Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9556,6 +9556,14 @@
       "casa": 0,
       "fora": 0,
       "min": "Intervalo",
+      "subs": [
+        {
+          "entrou": "A. Jahanbakhsh",
+          "saiu": "S. Hardani",
+          "min": 45,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "R. Lukaku",
