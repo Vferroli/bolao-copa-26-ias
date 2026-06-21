@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T17:25:43.565Z",
+  "atualizado_em": "2026-06-21T17:26:15.276Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9321,15 +9321,15 @@
           "lado": "fora"
         },
         {
-          "entrou": "A. Al-Hajji",
-          "saiu": "A. Al-Amri",
+          "entrou": "M. Abu Al-Shamat",
+          "saiu": "F. Al-Brikan",
           "min": 60,
           "lado": "fora"
         },
         {
-          "entrou": "M. Abu Al-Shamat",
-          "saiu": "F. Al-Brikan",
-          "min": 61,
+          "entrou": "A. Al-Hajji",
+          "saiu": "A. Al-Amri",
+          "min": 60,
           "lado": "fora"
         },
         {
