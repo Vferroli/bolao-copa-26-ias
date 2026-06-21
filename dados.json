@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T20:51:54.405Z",
+  "atualizado_em": "2026-06-21T20:52:26.453Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9610,6 +9610,12 @@
           "saiu": "S. Ezatolahi",
           "min": 85,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Fernandez-Pardo",
+          "saiu": "K. De Bruyne",
+          "min": 87,
+          "lado": "casa"
         }
       ],
       "cartoes": [
