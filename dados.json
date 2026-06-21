@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T16:22:23.391Z",
+  "atualizado_em": "2026-06-21T16:22:55.809Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9282,6 +9282,11 @@
         {
           "nome": "L. Yamal",
           "min": 10,
+          "lado": "casa"
+        },
+        {
+          "nome": "M. Oyarzabal",
+          "min": 21,
           "lado": "casa"
         }
       ]
