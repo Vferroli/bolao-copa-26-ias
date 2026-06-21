@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T20:37:37.294Z",
+  "atualizado_em": "2026-06-21T20:38:40.331Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9555,7 +9555,7 @@
       "id": 39,
       "casa": 0,
       "fora": 0,
-      "min": "72'",
+      "min": "73'",
       "subs": [
         {
           "entrou": "A. Jahanbakhsh",
@@ -9592,6 +9592,12 @@
           "saiu": "E. Hajsafi",
           "min": 66,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Theate",
+          "saiu": "R. Lukaku",
+          "min": 73,
+          "lado": "casa"
         }
       ],
       "cartoes": [
