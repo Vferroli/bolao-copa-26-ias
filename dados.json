@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T16:51:49.302Z",
+  "atualizado_em": "2026-06-21T17:06:13.000Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9293,6 +9293,32 @@
           "nome": "M. Oyarzabal",
           "min": 24,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "Y. Pino",
+          "saiu": "L. Yamal",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. Torres",
+          "saiu": "M. Oyarzabal",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Kanno",
+          "saiu": "A. Al-Khaibari",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Al-Hamdan",
+          "saiu": "M. Al-Juwayr",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
