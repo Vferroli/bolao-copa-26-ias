@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T01:35:06.873Z",
+  "atualizado_em": "2026-06-21T01:35:38.548Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8714,7 +8714,7 @@
       "id": 28,
       "casa": 0,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "subs": [
         {
           "entrou": "K. Rodríguez",
@@ -8727,6 +8727,24 @@
           "saiu": "P. Estupiñán",
           "min": 70,
           "lado": "casa"
+        },
+        {
+          "entrou": "K. Gorré",
+          "saiu": "J. Bacuna",
+          "min": 75,
+          "lado": "fora"
+        },
+        {
+          "entrou": "R. van Eijma",
+          "saiu": "D. Fonville",
+          "min": 76,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Margaritha",
+          "saiu": "T. Chong",
+          "min": 76,
+          "lado": "fora"
         }
       ],
       "cartoes": [
