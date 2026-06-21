@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
-  "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T02:00:40.909Z",
+  "atualizado": "2026-06-21",
+  "atualizado_em": "2026-06-21T03:30:24.493Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4434,6 +4434,279 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Takumi Minamino"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-4-2-1",
+          "fora": "3-4-2-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "Aymen Dahmen",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Dylan Bronn",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Montassar Talbi",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Omar Rekik",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Ali Abdi",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Hannibal Mejbri",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Ellyes Skhiri",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Yan Valery",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Sebastian Tounekti",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Elias Saad",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Anis Ben Slimane",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Abdelmouhib Chamakh",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Sabri Ben Hessen",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Adem Arous",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Amine Ben Hmida",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Moataz Nefati",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Raed Chikhaoui",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Elias Achouri",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ismael Gharbi",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Mohamed Belhadj Mahmoud",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Mortadha Ben Ouanes",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Rani Khedira",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Hazem Mastouri",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Firas Chaouat",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Khalil Ayari",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Rayan Elloumi",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Zion Suzuki",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "Hiroki Itō",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Ko Itakura",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Takehiro Tomiyasu",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Keito Nakamura",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Daichi Kamada",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Kaishu Sano",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Ritsu Doan",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Ao Tanaka",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Junya Ito",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Ayase Ueda",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Keisuke Osako",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Tomoki Hayakawa",
+              "pos": "G"
+            },
+            {
+              "num": 20,
+              "nome": "Ayumu Seko",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Junnosuke Suzuki",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Shogo Taniguchi",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Tsuyoshi Watanabe",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Yukinari Sugawara",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Yuto Nagatomo",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Yuito Suzuki",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Daizen Maeda",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Keisuke Goto",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Kento Shiogai",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Koki Ogawa",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
