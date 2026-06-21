@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:56:39.569Z",
+  "atualizado_em": "2026-06-21T06:03:25.799Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -4406,9 +4406,15 @@
       "fora": "japan",
       "kickoff": "2026-06-21T04:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 4,
+        "avancou": null,
+        "marcadores": [
+          "D. Kamada",
+          "A. Ueda",
+          "J. Ito",
+          "A. Ueda"
+        ]
       },
       "palpites": {
         "claude": {
@@ -8983,96 +8989,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 34,
-      "casa": 0,
-      "fora": 4,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "D. Kamada",
-          "min": 4,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Ueda",
-          "min": 31,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Ito",
-          "min": 69,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Ueda",
-          "min": 83,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "I. Gharbi",
-          "saiu": "E. Saad",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Amine Ben Hamida",
-          "saiu": "D. Bronn",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Chaouat",
-          "saiu": "S. Tounekti",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Suzuki",
-          "saiu": "D. Kamada",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Sugawara",
-          "saiu": "R. Doan",
-          "min": 74,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Suzuki",
-          "saiu": "K. Nakamura",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Seko",
-          "saiu": "T. Tomiyasu",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Goto",
-          "saiu": "A. Ueda",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Khedira",
-          "saiu": "E. Skhiri",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Achouri",
-          "saiu": "A. Abdi",
-          "min": 90,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
