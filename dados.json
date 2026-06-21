@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T19:32:54.021Z",
+  "atualizado_em": "2026-06-21T19:33:25.938Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9562,6 +9562,12 @@
           "cor": "amarelo",
           "min": 3,
           "lado": "casa"
+        },
+        {
+          "nome": "S. Ezatolahi",
+          "cor": "amarelo",
+          "min": 33,
+          "lado": "fora"
         }
       ]
     }
