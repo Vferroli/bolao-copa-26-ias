@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:24:36.599Z",
+  "atualizado_em": "2026-06-21T05:25:08.387Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8988,7 +8988,7 @@
       "id": 34,
       "casa": 0,
       "fora": 2,
-      "min": "64'",
+      "min": "65'",
       "gols": [
         {
           "nome": "D. Kamada",
@@ -9017,7 +9017,7 @@
         {
           "entrou": "F. Chaouat",
           "saiu": "S. Tounekti",
-          "min": 65,
+          "min": 64,
           "lado": "casa"
         }
       ]
