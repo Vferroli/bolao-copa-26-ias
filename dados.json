@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T00:50:18.953Z",
+  "atualizado_em": "2026-06-21T01:04:21.653Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8715,6 +8715,14 @@
       "casa": 0,
       "fora": 0,
       "min": "Intervalo",
+      "subs": [
+        {
+          "entrou": "K. Rodríguez",
+          "saiu": "J. Alcívar",
+          "min": 45,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "J. Alcívar",
