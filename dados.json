@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T16:21:51.162Z",
+  "atualizado_em": "2026-06-21T16:22:23.391Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9275,9 +9275,9 @@
   "live": [
     {
       "id": 45,
-      "casa": 1,
+      "casa": 2,
       "fora": 0,
-      "min": "21'",
+      "min": "22'",
       "gols": [
         {
           "nome": "L. Yamal",
