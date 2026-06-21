@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T20:22:30.038Z",
+  "atualizado_em": "2026-06-21T20:23:33.445Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9555,13 +9555,31 @@
       "id": 39,
       "casa": 0,
       "fora": 0,
-      "min": "57'",
+      "min": "58'",
       "subs": [
         {
           "entrou": "A. Jahanbakhsh",
           "saiu": "S. Hardani",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Castagne",
+          "saiu": "T. Meunier",
+          "min": 58,
+          "lado": "casa"
+        },
+        {
+          "entrou": "H. Vanaken",
+          "saiu": "N. Raskin",
+          "min": 58,
+          "lado": "casa"
+        },
+        {
+          "entrou": "D. Lukébakio",
+          "saiu": "A. Saelemaekers",
+          "min": 58,
+          "lado": "casa"
         }
       ],
       "cartoes": [
