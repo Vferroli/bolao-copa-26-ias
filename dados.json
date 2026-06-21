@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T17:57:07.557Z",
+  "atualizado_em": "2026-06-21T17:58:10.123Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9277,7 +9277,7 @@
       "id": 45,
       "casa": 5,
       "fora": 0,
-      "min": "90'+4'",
+      "min": "90'+5'",
       "gols": [
         {
           "nome": "L. Yamal",
@@ -9292,11 +9292,6 @@
         {
           "nome": "M. Oyarzabal",
           "min": 24,
-          "lado": "casa"
-        },
-        {
-          "nome": "F. Torres",
-          "min": 90,
           "lado": "casa"
         }
       ],
