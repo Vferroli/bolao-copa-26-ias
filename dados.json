@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T20:49:47.221Z",
+  "atualizado_em": "2026-06-21T20:50:19.299Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9603,6 +9603,12 @@
           "entrou": "S. Moghanloo",
           "saiu": "S. Ghoddos",
           "min": 79,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Hosseinzadeh",
+          "saiu": "S. Ezatolahi",
+          "min": 85,
           "lado": "fora"
         }
       ],
