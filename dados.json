@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T22:19:32.604Z",
+  "atualizado_em": "2026-06-21T22:20:35.674Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,13 +9829,19 @@
       "id": 46,
       "casa": 0,
       "fora": 0,
-      "min": "19'",
+      "min": "20'",
       "cartoes": [
         {
           "nome": "S. Lopes Cabral",
           "cor": "amarelo",
           "min": 5,
           "lado": "fora"
+        },
+        {
+          "nome": "R. Bentancur",
+          "cor": "amarelo",
+          "min": 20,
+          "lado": "casa"
         }
       ]
     }
