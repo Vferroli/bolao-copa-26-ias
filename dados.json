@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T19:25:36.677Z",
+  "atualizado_em": "2026-06-21T19:26:08.241Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9554,8 +9554,8 @@
     {
       "id": 39,
       "casa": 0,
-      "fora": 0,
-      "min": "25'",
+      "fora": 1,
+      "min": "26'",
       "gols": [
         {
           "nome": "M. Taremi",
