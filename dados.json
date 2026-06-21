@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T19:22:28.647Z",
+  "atualizado_em": "2026-06-21T19:23:31.173Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9555,7 +9555,7 @@
       "id": 39,
       "casa": 0,
       "fora": 0,
-      "min": "23'",
+      "min": "24'",
       "cartoes": [
         {
           "nome": "R. Lukaku",
