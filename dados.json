@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:43:56.158Z",
+  "atualizado_em": "2026-06-21T05:44:28.516Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8987,7 +8987,7 @@
     {
       "id": 34,
       "casa": 0,
-      "fora": 3,
+      "fora": 4,
       "min": "84'",
       "gols": [
         {
@@ -9003,6 +9003,11 @@
         {
           "nome": "J. Ito",
           "min": 69,
+          "lado": "fora"
+        },
+        {
+          "nome": "A. Ueda",
+          "min": 83,
           "lado": "fora"
         }
       ],
