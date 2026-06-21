@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:58:38.528Z",
+  "atualizado_em": "2026-06-21T23:59:41.298Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9829,7 +9829,7 @@
       "id": 46,
       "casa": 2,
       "fora": 2,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "K. Pina",
@@ -9920,6 +9920,12 @@
           "cor": "amarelo",
           "min": 58,
           "lado": "casa"
+        },
+        {
+          "nome": "D. Borges",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
         }
       ]
     }
