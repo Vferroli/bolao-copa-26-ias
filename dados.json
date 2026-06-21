@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:29:01.939Z",
+  "atualizado_em": "2026-06-21T05:29:34.260Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8998,6 +8998,11 @@
         {
           "nome": "A. Ueda",
           "min": 31,
+          "lado": "fora"
+        },
+        {
+          "nome": "J. Ito",
+          "min": 69,
           "lado": "fora"
         }
       ],
