@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T01:42:57.684Z",
+  "atualizado_em": "2026-06-21T01:43:29.449Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8714,7 +8714,7 @@
       "id": 28,
       "casa": 0,
       "fora": 0,
-      "min": "83'",
+      "min": "84'",
       "subs": [
         {
           "entrou": "K. Rodríguez",
@@ -8751,6 +8751,18 @@
           "saiu": "A. Franco",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "entrou": "G. Kastaneer",
+          "saiu": "J. Locadia",
+          "min": 83,
+          "lado": "fora"
+        },
+        {
+          "entrou": "G. Roemeratoe",
+          "saiu": "L. Comenencia",
+          "min": 84,
+          "lado": "fora"
         }
       ],
       "cartoes": [
