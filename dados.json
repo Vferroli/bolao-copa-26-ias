@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T01:42:26.004Z",
+  "atualizado_em": "2026-06-21T01:42:57.684Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8745,6 +8745,12 @@
           "saiu": "T. Chong",
           "min": 76,
           "lado": "fora"
+        },
+        {
+          "entrou": "Á. Preciado",
+          "saiu": "A. Franco",
+          "min": 83,
+          "lado": "casa"
         }
       ],
       "cartoes": [
