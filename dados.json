@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T01:15:43.349Z",
+  "atualizado_em": "2026-06-21T01:16:15.118Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8740,6 +8740,12 @@
           "nome": "J. Bacuna",
           "cor": "amarelo",
           "min": 53,
+          "lado": "fora"
+        },
+        {
+          "nome": "L. Comenencia",
+          "cor": "amarelo",
+          "min": 56,
           "lado": "fora"
         }
       ]
