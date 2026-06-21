@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-20",
-  "atualizado_em": "2026-06-21T01:34:04.240Z",
+  "atualizado_em": "2026-06-21T01:35:06.873Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8714,7 +8714,7 @@
       "id": 28,
       "casa": 0,
       "fora": 0,
-      "min": "74'",
+      "min": "75'",
       "subs": [
         {
           "entrou": "K. Rodríguez",
@@ -8752,6 +8752,12 @@
           "nome": "L. Comenencia",
           "cor": "amarelo",
           "min": 56,
+          "lado": "fora"
+        },
+        {
+          "nome": "J. Gaari",
+          "cor": "amarelo",
+          "min": 75,
           "lado": "fora"
         }
       ]
