@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T17:52:55.311Z",
+  "atualizado_em": "2026-06-21T17:53:26.977Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9349,6 +9349,12 @@
           "saiu": "Pedri",
           "min": 70,
           "lado": "casa"
+        },
+        {
+          "entrou": "K. Al-Ghannam",
+          "saiu": "N. Al-Dawsari",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
