@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:38:35.809Z",
+  "atualizado_em": "2026-06-21T05:39:07.987Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9035,6 +9035,18 @@
           "entrou": "Y. Sugawara",
           "saiu": "R. Doan",
           "min": 74,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Y. Suzuki",
+          "saiu": "K. Nakamura",
+          "min": 79,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Seko",
+          "saiu": "T. Tomiyasu",
+          "min": 79,
           "lado": "fora"
         }
       ]
