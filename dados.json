@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T17:24:08.597Z",
+  "atualizado_em": "2026-06-21T17:24:40.324Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9331,6 +9331,18 @@
           "saiu": "F. Al-Brikan",
           "min": 61,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Merino",
+          "saiu": "D. Olmo",
+          "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Williams",
+          "saiu": "Á. Baena",
+          "min": 61,
+          "lado": "casa"
         }
       ],
       "cartoes": [
