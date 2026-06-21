@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T05:34:22.252Z",
+  "atualizado_em": "2026-06-21T05:34:54.558Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8988,7 +8988,7 @@
       "id": 34,
       "casa": 0,
       "fora": 3,
-      "min": "74'",
+      "min": "75'",
       "gols": [
         {
           "nome": "D. Kamada",
@@ -9028,7 +9028,7 @@
         {
           "entrou": "J. Suzuki",
           "saiu": "D. Kamada",
-          "min": 74,
+          "min": 73,
           "lado": "fora"
         },
         {
