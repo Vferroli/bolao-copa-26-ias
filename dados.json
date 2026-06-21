@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T17:33:33.912Z",
+  "atualizado_em": "2026-06-21T17:34:05.585Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9277,7 +9277,7 @@
       "id": 45,
       "casa": 4,
       "fora": 0,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "L. Yamal",
@@ -9342,6 +9342,12 @@
           "entrou": "N. Williams",
           "saiu": "Á. Baena",
           "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. Ruiz",
+          "saiu": "Pedri",
+          "min": 70,
           "lado": "casa"
         }
       ],
