@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-21T23:23:48.030Z",
+  "atualizado_em": "2026-06-21T23:24:20.539Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9852,6 +9852,18 @@
           "entrou": "D. Duarte",
           "saiu": "T. Arcanjo",
           "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. da Costa",
+          "saiu": "G. Benchimol",
+          "min": 58,
+          "lado": "fora"
+        },
+        {
+          "entrou": "H. Varela",
+          "saiu": "G. Rodrigues",
+          "min": 59,
           "lado": "fora"
         }
       ],
