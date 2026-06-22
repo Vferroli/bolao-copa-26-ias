@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T17:42:22.870Z",
+  "atualizado_em": "2026-06-22T17:42:55.565Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10407,7 +10407,7 @@
       "id": 57,
       "casa": 1,
       "fora": 0,
-      "min": "41'",
+      "min": "42'",
       "gols": [
         {
           "nome": "L. Messi",
@@ -10419,7 +10419,7 @@
         {
           "nome": "S. Posch",
           "cor": "amarelo",
-          "min": 40,
+          "min": 41,
           "lado": "fora"
         }
       ]
