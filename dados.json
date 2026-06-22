@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:45:58.733Z",
+  "atualizado_em": "2026-06-22T18:46:30.524Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10461,6 +10461,12 @@
         {
           "entrou": "L. Paredes",
           "saiu": "R. De Paul",
+          "min": 82,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Tagliafico",
+          "saiu": "F. Medina",
           "min": 82,
           "lado": "casa"
         }
