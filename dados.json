@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T19:07:20.780Z",
+  "atualizado_em": "2026-06-22T20:30:18.166Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7777,6 +7777,289 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Kylian Mbappé"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "Mike Maignan",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Lucas Digne",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "William Saliba",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Dayot Upamecano",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Jules Koundé",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Adrien Rabiot",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Manu Koné",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Bradley Barcola",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Ousmane Dembélé",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Michael Olise",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Kylian Mbappé",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Brice Samba",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Robin Risser",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Malo Gusto",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ibrahima Konaté",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Lucas Hernández",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Theo Hernández",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Maxence Lacroix",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Aurélien Tchouaméni",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "N'Golo Kanté",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Warren Zaïre-Emery",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Maghnes Akliouche",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Rayan Cherki",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Jean-Philippe Mateta",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Marcus Thuram",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Désiré Doué",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 22,
+              "nome": "Ahmed Basil",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Merchas Doski",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Akam Hashem",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Zaid Tahseen",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Hussein Ali",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Zaid Ismail",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Amir Al-Ammari",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ahmed Qasem",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Zidane Iqbal",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Ibrahim Bayesh",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Aymen Hussein",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Fahad Talib",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Jalal Hassan",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Munaf Younus",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ahmed Hasan Maknazi",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Frans Putros",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Mustafa Saadoon",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Rebin Sulaka",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Ali Jasim",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Aimar Sher",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Kevin Yakob",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Marko Farji",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Youssef Amyn",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Ali Yousif",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Ali Al-Hamadi",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Mohanad Ali",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
