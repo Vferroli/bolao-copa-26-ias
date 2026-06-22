@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:44:19.683Z",
+  "atualizado_em": "2026-06-22T02:44:51.831Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10176,6 +10176,12 @@
           "entrou": "H. Abdelkarim",
           "saiu": "M. Zico",
           "min": 76,
+          "lado": "fora"
+        },
+        {
+          "entrou": "H. Abdelmaguid",
+          "saiu": "M. Salah",
+          "min": 85,
           "lado": "fora"
         }
       ],
