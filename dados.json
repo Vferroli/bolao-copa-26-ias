@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:31:48.132Z",
+  "atualizado_em": "2026-06-22T18:32:20.383Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10407,7 +10407,7 @@
       "id": 57,
       "casa": 1,
       "fora": 0,
-      "min": "67'",
+      "min": "68'",
       "gols": [
         {
           "nome": "L. Messi",
@@ -10433,6 +10433,24 @@
           "saiu": "L. Martínez",
           "min": 65,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Friedl",
+          "saiu": "D. Alaba",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Prass",
+          "saiu": "S. Posch",
+          "min": 68,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Arnautovic",
+          "saiu": "P. Wanner",
+          "min": 68,
+          "lado": "fora"
         }
       ],
       "cartoes": [
