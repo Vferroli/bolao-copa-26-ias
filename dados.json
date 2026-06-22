@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T21:14:30.034Z",
+  "atualizado_em": "2026-06-22T21:15:34.010Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10692,9 +10692,16 @@
   "live": [
     {
       "id": 51,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
-      "min": "14'",
+      "min": "15'",
+      "gols": [
+        {
+          "nome": "K. Mbappé",
+          "min": 14,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "A. Al-Ammari",
