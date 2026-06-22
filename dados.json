@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:48:35.816Z",
+  "atualizado_em": "2026-06-22T18:49:38.181Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10407,7 +10407,7 @@
       "id": 57,
       "casa": 1,
       "fora": 0,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "L. Messi",
@@ -10469,6 +10469,12 @@
           "saiu": "F. Medina",
           "min": 82,
           "lado": "casa"
+        },
+        {
+          "entrou": "C. Chukwuemeka",
+          "saiu": "M. Gregoritsch",
+          "min": 85,
+          "lado": "fora"
         }
       ],
       "cartoes": [
