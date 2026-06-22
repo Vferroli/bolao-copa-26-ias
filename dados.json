@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:21:27.426Z",
+  "atualizado_em": "2026-06-22T18:22:00.298Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10412,6 +10412,14 @@
         {
           "nome": "L. Messi",
           "min": 38,
+          "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "N. Otamendi",
+          "saiu": "C. Romero",
+          "min": 57,
           "lado": "casa"
         }
       ],
