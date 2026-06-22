@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T03:00:39.887Z",
+  "atualizado_em": "2026-06-22T03:07:52.597Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5708,9 +5708,15 @@
       "fora": "egypt",
       "kickoff": "2026-06-22T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 3,
+        "avancou": null,
+        "marcadores": [
+          "F. Surman",
+          "M. Zico",
+          "M. Salah",
+          "Trézéguet"
+        ]
       },
       "palpites": {
         "claude": {
@@ -10113,122 +10119,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 40,
-      "casa": 1,
-      "fora": 3,
-      "min": "90'+10'",
-      "gols": [
-        {
-          "nome": "F. Surman",
-          "min": 15,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Zico",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Salah",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "nome": "Trézéguet",
-          "min": 82,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "R. Rabia",
-          "saiu": "H. Fathy",
-          "min": 41,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Old",
-          "saiu": "C. McCowatt",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Randall",
-          "saiu": "L. Cacace",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Thomas",
-          "saiu": "S. Singh",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Trézéguet",
-          "saiu": "O. Marmoush",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Abdelkarim",
-          "saiu": "M. Zico",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Zizo",
-          "saiu": "E. Ashour",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Abdelmaguid",
-          "saiu": "M. Salah",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Bindon",
-          "saiu": "T. Payne",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. de Vries",
-          "saiu": "E. Just",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Abdelmoneim",
-          "saiu": "H. Abdelmaguid",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "M. Lashin",
-          "cor": "amarelo",
-          "min": 17,
-          "lado": "fora"
-        },
-        {
-          "nome": "S. Singh",
-          "cor": "amarelo",
-          "min": 20,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. McCowatt",
-          "cor": "amarelo",
-          "min": 34,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
