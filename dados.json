@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T01:17:06.540Z",
+  "atualizado_em": "2026-06-22T01:17:38.508Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10124,6 +10124,14 @@
           "nome": "F. Surman",
           "min": 15,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "M. Lashin",
+          "cor": "amarelo",
+          "min": 17,
+          "lado": "fora"
         }
       ]
     }
