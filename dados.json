@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T19:02:11.292Z",
+  "atualizado_em": "2026-06-22T19:07:20.780Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8509,9 +8509,13 @@
       "fora": "austria",
       "kickoff": "2026-06-22T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "L. Messi",
+          "L. Messi"
+        ]
       },
       "palpites": {
         "claude": {
@@ -10402,112 +10406,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 57,
-      "casa": 2,
-      "fora": 0,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "L. Messi",
-          "min": 38,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Messi",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. Otamendi",
-          "saiu": "C. Romero",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Álvarez",
-          "saiu": "T. Almada",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. González",
-          "saiu": "L. Martínez",
-          "min": 65,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Friedl",
-          "saiu": "D. Alaba",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Prass",
-          "saiu": "S. Posch",
-          "min": 68,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Arnautovic",
-          "saiu": "P. Wanner",
-          "min": 68,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Wimmer",
-          "saiu": "R. Schmid",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Paredes",
-          "saiu": "R. De Paul",
-          "min": 82,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Tagliafico",
-          "saiu": "F. Medina",
-          "min": 82,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Chukwuemeka",
-          "saiu": "M. Gregoritsch",
-          "min": 85,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "S. Posch",
-          "cor": "amarelo",
-          "min": 40,
-          "lado": "fora"
-        },
-        {
-          "nome": "F. Medina",
-          "cor": "amarelo",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "nome": "K. Laimer",
-          "cor": "amarelo",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Paredes",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
