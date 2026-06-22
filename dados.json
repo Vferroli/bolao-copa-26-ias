@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:28:24.186Z",
+  "atualizado_em": "2026-06-22T18:28:57.256Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10420,6 +10420,12 @@
           "entrou": "N. Otamendi",
           "saiu": "C. Romero",
           "min": 57,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Álvarez",
+          "saiu": "T. Almada",
+          "min": 64,
           "lado": "casa"
         }
       ],
