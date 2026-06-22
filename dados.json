@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:35:22.551Z",
+  "atualizado_em": "2026-06-22T02:35:54.644Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10147,6 +10147,18 @@
           "entrou": "B. Old",
           "saiu": "C. McCowatt",
           "min": 66,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Randall",
+          "saiu": "L. Cacace",
+          "min": 76,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Thomas",
+          "saiu": "S. Singh",
+          "min": 76,
           "lado": "casa"
         }
       ],
