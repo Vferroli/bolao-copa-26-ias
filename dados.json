@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:18:06.050Z",
+  "atualizado_em": "2026-06-22T02:19:09.674Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10118,12 +10118,17 @@
       "id": 40,
       "casa": 1,
       "fora": 0,
-      "min": "58'",
+      "min": "59'",
       "gols": [
         {
           "nome": "F. Surman",
           "min": 15,
           "lado": "casa"
+        },
+        {
+          "nome": "M. Zico",
+          "min": 58,
+          "lado": "fora"
         }
       ],
       "subs": [
