@@ -62,5 +62,6 @@ One-page (SPA estática) que acompanha um bolão da Copa 2026 entre 4 IAs (Claud
 
 ## Notas
 - IDs de times = slugs em inglês (ex.: `ivory-coast`, `south-korea`). Bandeiras via flagcdn (mapa `ISO` em app.js; Inglaterra/Escócia = `gb-eng`/`gb-sct`).
-- Mata-mata: datas em `fases[].inicio/.fim`; chaveamento (`secMata`) é placeholder até existir jogo de mata-mata no JSON.
+- Mata-mata: datas em `fases[].inicio/.fim`. Roadmap de datas+multiplicadores = `secMataDatas()` (dentro de Próximos).
+- **Próxima fase** (`secProximaFase`/`renderProximaFase`, prefixo CSS `pfx-`, seção `#mata`, logo abaixo de Grupos): mostra os **confrontos previstos da próxima fase de mata-mata** derivados da **classificação AO VIVO** (`standings()`), não de `dados.json`. Modelo do bracket oficial FIFA 2026 embutido (`PF_R32`/`PF_LATER`, jogos 73→104) + **Annex C comprimida** `PF_THIRDS` (495 combos, valida quais 8 melhores 3ºs e quem cada um pega — parseada do regulamento, nenhum 3º reencontra o próprio grupo). Slot vira `tbd` se indefinível; time em jogo agora ganha selo "ao vivo"; nota provisória até os grupos fecharem (aí trava). Generaliza p/ oitavas+ via `{w:n}` quando jogos de mata-mata existirem no JSON.
 - Formato 48 times: 2 primeiros + 8 melhores 3os avançam (marcação amarela nas tabelas).

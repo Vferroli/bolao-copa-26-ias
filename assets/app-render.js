@@ -12,8 +12,8 @@ function render() {
   const temLive = (S.dados.jogos || []).some((j) =>
     kickData(j) === S.HOJE && agora >= new Date(j.kickoff).getTime() && !apurado(j));
   const secs = temLive
-    ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secGrupos(), secMata(), secHistorico()]
-    : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secGrupos(), secMata(), secHistorico()];
+    ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secGrupos(), secProximaFase(), secHistorico()]
+    : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secGrupos(), secProximaFase(), secHistorico()];
   app.innerHTML = secs.join("");
   wireInteractions();
   renderFavBadge();
@@ -676,36 +676,250 @@ function melhoresTerceiros(grupos) {
   return new Set(terceiros.slice(0, 8).map((t) => t.id));
 }
 
-/* ---------- MATA-MATA (chaveamento) ---------- */
-function secMata() {
-  const tbd = (txt) => `<div class="slot tbd"><span class="flag">⚽</span><span class="nm">${txt}</span><span class="sc">–</span></div>`;
-  const tie = (a, b, cls) => `<div class="tie ${cls || ""}">${a}${b}</div>`;
-  const rounds = [
-    { lbl: "16-avos", mx: "×1.5", ties: [["1º A", "2º B"], ["1º C", "2º D"], ["1º E", "2º F"], ["1º G", "2º H"]] },
-    { lbl: "Oitavas", mx: "×2", ties: [["Venc. 1", "Venc. 2"], ["Venc. 3", "Venc. 4"]] },
-    { lbl: "Quartas", mx: "×2.5", ties: [["Venc. A", "Venc. B"]] },
-    { lbl: "Semi", mx: "×3", ties: [["Finalista 1", "Finalista 2"]] },
-  ];
-  const cols = rounds.map((r) => `<div class="round">
-    <div class="round-lbl">${r.lbl} <span class="mx">${r.mx}</span></div>
-    ${r.ties.map(([x, y]) => tie(tbd(x), tbd(y))).join("")}
-  </div>`).join("");
-  const finalCol = `<div class="round">
-    <div class="round-lbl">Final <span class="mx">×4</span></div>
-    ${tie(tbd("Campeão A"), tbd("Campeão B"), "final-tie")}
+/* ============================================================
+   PRÓXIMA FASE — chaveamento previsto pela classificação AO VIVO
+   ------------------------------------------------------------
+   Modelo do bracket oficial FIFA 2026 (nºs de jogo 73–104). Cada slot é uma
+   referência: {g,pos} = posição de grupo (1=vencedor, 2=vice); {thirdFor:V} =
+   o 3º colocado alocado p/ enfrentar o vencedor do grupo V; {w:n}/{l:n} =
+   vencedor/perdedor do jogo n. A alocação dos 8 melhores 3ºs segue a Annex C
+   (495 combinações) — lookup por QUAIS grupos classificaram 3º. Tudo derivado
+   de standings() ao vivo; nada disso vive no dados.json.
+   ============================================================ */
+const PF_R32 = {
+  73: [{ g: "A", pos: 2 }, { g: "B", pos: 2 }],
+  74: [{ g: "E", pos: 1 }, { thirdFor: "E" }],
+  75: [{ g: "F", pos: 1 }, { g: "C", pos: 2 }],
+  76: [{ g: "C", pos: 1 }, { g: "F", pos: 2 }],
+  77: [{ g: "I", pos: 1 }, { thirdFor: "I" }],
+  78: [{ g: "E", pos: 2 }, { g: "I", pos: 2 }],
+  79: [{ g: "A", pos: 1 }, { thirdFor: "A" }],
+  80: [{ g: "L", pos: 1 }, { thirdFor: "L" }],
+  81: [{ g: "D", pos: 1 }, { thirdFor: "D" }],
+  82: [{ g: "G", pos: 1 }, { thirdFor: "G" }],
+  83: [{ g: "K", pos: 2 }, { g: "L", pos: 2 }],
+  84: [{ g: "H", pos: 1 }, { g: "J", pos: 2 }],
+  85: [{ g: "B", pos: 1 }, { thirdFor: "B" }],
+  86: [{ g: "J", pos: 1 }, { g: "H", pos: 2 }],
+  87: [{ g: "K", pos: 1 }, { thirdFor: "K" }],
+  88: [{ g: "D", pos: 2 }, { g: "G", pos: 2 }],
+};
+const PF_LATER = {
+  89: [{ w: 74 }, { w: 77 }], 90: [{ w: 73 }, { w: 75 }], 91: [{ w: 76 }, { w: 78 }], 92: [{ w: 79 }, { w: 80 }],
+  93: [{ w: 83 }, { w: 84 }], 94: [{ w: 81 }, { w: 82 }], 95: [{ w: 86 }, { w: 88 }], 96: [{ w: 85 }, { w: 87 }],
+  97: [{ w: 89 }, { w: 90 }], 98: [{ w: 93 }, { w: 94 }], 99: [{ w: 91 }, { w: 92 }], 100: [{ w: 95 }, { w: 96 }],
+  101: [{ w: 97 }, { w: 98 }], 102: [{ w: 99 }, { w: 100 }],
+  103: [{ l: 101 }, { l: 102 }], 104: [{ w: 101 }, { w: 102 }],
+};
+const PF_MATCHES = Object.assign({}, PF_R32, PF_LATER);
+const PF_FASE_JOGOS = {
+  "16avos": [73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88],
+  oitavas: [89, 90, 91, 92, 93, 94, 95, 96],
+  quartas: [97, 98, 99, 100],
+  semi: [101, 102],
+  final: [104],
+};
+const PF_NOME = {
+  "16avos": "16-avos de final", oitavas: "Oitavas de final", quartas: "Quartas de final",
+  semi: "Semifinal", terceiro: "Disputa de 3º", final: "Final",
+};
+// vencedores de grupo que pegam 3º (ordem das colunas da Annex C) + grupos permitidos por slot
+const PF_WINCOLS = ["A", "B", "D", "E", "G", "I", "K", "L"];
+const PF_ALLOWED = {
+  A: "C/E/F/H/I", B: "E/F/G/I/J", D: "B/E/F/I/J", E: "A/B/C/D/F",
+  G: "A/E/H/I/J", I: "C/D/F/G/H", K: "D/E/I/J/L", L: "E/H/I/J/K",
+};
+/* Annex C comprimida: combinação dos 8 grupos que classificam 3º (chave ordenada
+   A–L) → 8 grupos-dos-3º na ordem de PF_WINCOLS. 495 linhas, parseadas do
+   regulamento oficial (Template Wikipedia) e validadas (nenhum 3º reencontra o
+   próprio grupo; todas batem com os grupos permitidos). */
+const PF_THIRDS = {ABCDEFGH:"HGBCAFDE",ABCDEFGI:"CGBDAFEI",ABCDEFGJ:"CGBDAFEJ",ABCDEFGK:"CGBDAFEK",ABCDEFGL:"CGBDAFLE",ABCDEFHI:"HEBCAFDI",ABCDEFHJ:"HJBCAFDE",ABCDEFHK:"HEBCAFDK",ABCDEFHL:"HFBCADLE",ABCDEFIJ:"CJBDAFEI",ABCDEFIK:"CEBDAFIK",ABCDEFIL:"CEBDAFLI",ABCDEFJK:"CJBDAFEK",ABCDEFJL:"CJBDAFLE",ABCDEFKL:"CEBDAFLK",ABCDEGHI:"HGBCADEI",ABCDEGHJ:"HGBCADEJ",ABCDEGHK:"HGBCADEK",ABCDEGHL:"HGBCADLE",ABCDEGIJ:"EGBCADIJ",ABCDEGIK:"EGBCADIK",ABCDEGIL:"EGBCADLI",ABCDEGJK:"EGBCADJK",ABCDEGJL:"EGBCADLJ",ABCDEGKL:"EGBCADLK",ABCDEHIJ:"HJBCADEI",ABCDEHIK:"HEBCADIK",ABCDEHIL:"HEBCADLI",ABCDEHJK:"HJBCADEK",ABCDEHJL:"HJBCADLE",ABCDEHKL:"HEBCADLK",ABCDEIJK:"EJBCADIK",ABCDEIJL:"EJBCADLI",ABCDEIKL:"EIBCADLK",ABCDEJKL:"EJBCADLK",ABCDFGHI:"HGBCAFDI",ABCDFGHJ:"HGBCAFDJ",ABCDFGHK:"HGBCAFDK",ABCDFGHL:"CGBDAFLH",ABCDFGIJ:"CGBDAFIJ",ABCDFGIK:"CGBDAFIK",ABCDFGIL:"CGBDAFLI",ABCDFGJK:"CGBDAFJK",ABCDFGJL:"CGBDAFLJ",ABCDFGKL:"CGBDAFLK",ABCDFHIJ:"HJBCAFDI",ABCDFHIK:"HFBCADIK",ABCDFHIL:"HFBCADLI",ABCDFHJK:"HJBCAFDK",ABCDFHJL:"CJBDAFLH",ABCDFHKL:"HFBCADLK",ABCDFIJK:"CJBDAFIK",ABCDFIJL:"CJBDAFLI",ABCDFIKL:"CIBDAFLK",ABCDFJKL:"CJBDAFLK",ABCDGHIJ:"HGBCADIJ",ABCDGHIK:"HGBCADIK",ABCDGHIL:"HGBCADLI",ABCDGHJK:"HGBCADJK",ABCDGHJL:"HGBCADLJ",ABCDGHKL:"HGBCADLK",ABCDGIJK:"CJBDAGIK",ABCDGIJL:"CJBDAGLI",ABCDGIKL:"IGBCADLK",ABCDGJKL:"CJBDAGLK",ABCDHIJK:"HJBCADIK",ABCDHIJL:"HJBCADLI",ABCDHIKL:"HIBCADLK",ABCDHJKL:"HJBCADLK",ABCDIJKL:"IJBCADLK",ABCEFGHI:"HGBCAFEI",ABCEFGHJ:"HGBCAFEJ",ABCEFGHK:"HGBCAFEK",ABCEFGHL:"HGBCAFLE",ABCEFGIJ:"EGBCAFIJ",ABCEFGIK:"EGBCAFIK",ABCEFGIL:"EGBCAFLI",ABCEFGJK:"EGBCAFJK",ABCEFGJL:"EGBCAFLJ",ABCEFGKL:"EGBCAFLK",ABCEFHIJ:"HJBCAFEI",ABCEFHIK:"HEBCAFIK",ABCEFHIL:"HEBCAFLI",ABCEFHJK:"HJBCAFEK",ABCEFHJL:"HJBCAFLE",ABCEFHKL:"HEBCAFLK",ABCEFIJK:"EJBCAFIK",ABCEFIJL:"EJBCAFLI",ABCEFIKL:"EIBCAFLK",ABCEFJKL:"EJBCAFLK",ABCEGHIJ:"HJBCAGEI",ABCEGHIK:"EGBCAHIK",ABCEGHIL:"EGBCAHLI",ABCEGHJK:"HJBCAGEK",ABCEGHJL:"HJBCAGLE",ABCEGHKL:"EGBCAHLK",ABCEGIJK:"EJBCAGIK",ABCEGIJL:"EJBCAGLI",ABCEGIKL:"EGBAICLK",ABCEGJKL:"EJBCAGLK",ABCEHIJK:"EJBCAHIK",ABCEHIJL:"EJBCAHLI",ABCEHIKL:"EIBCAHLK",ABCEHJKL:"EJBCAHLK",ABCEIJKL:"EJBAICLK",ABCFGHIJ:"HGBCAFIJ",ABCFGHIK:"HGBCAFIK",ABCFGHIL:"HGBCAFLI",ABCFGHJK:"HGBCAFJK",ABCFGHJL:"HGBCAFLJ",ABCFGHKL:"HGBCAFLK",ABCFGIJK:"CJBFAGIK",ABCFGIJL:"CJBFAGLI",ABCFGIKL:"IGBCAFLK",ABCFGJKL:"CJBFAGLK",ABCFHIJK:"HJBCAFIK",ABCFHIJL:"HJBCAFLI",ABCFHIKL:"HIBCAFLK",ABCFHJKL:"HJBCAFLK",ABCFIJKL:"IJBCAFLK",ABCGHIJK:"HJBCAGIK",ABCGHIJL:"HJBCAGLI",ABCGHIKL:"IGBCAHLK",ABCGHJKL:"HJBCAGLK",ABCGIJKL:"IJBCAGLK",ABCHIJKL:"IJBCAHLK",ABDEFGHI:"HGBDAFEI",ABDEFGHJ:"HGBDAFEJ",ABDEFGHK:"HGBDAFEK",ABDEFGHL:"HGBDAFLE",ABDEFGIJ:"EGBDAFIJ",ABDEFGIK:"EGBDAFIK",ABDEFGIL:"EGBDAFLI",ABDEFGJK:"EGBDAFJK",ABDEFGJL:"EGBDAFLJ",ABDEFGKL:"EGBDAFLK",ABDEFHIJ:"HJBDAFEI",ABDEFHIK:"HEBDAFIK",ABDEFHIL:"HEBDAFLI",ABDEFHJK:"HJBDAFEK",ABDEFHJL:"HJBDAFLE",ABDEFHKL:"HEBDAFLK",ABDEFIJK:"EJBDAFIK",ABDEFIJL:"EJBDAFLI",ABDEFIKL:"EIBDAFLK",ABDEFJKL:"EJBDAFLK",ABDEGHIJ:"HJBDAGEI",ABDEGHIK:"EGBDAHIK",ABDEGHIL:"EGBDAHLI",ABDEGHJK:"HJBDAGEK",ABDEGHJL:"HJBDAGLE",ABDEGHKL:"EGBDAHLK",ABDEGIJK:"EJBDAGIK",ABDEGIJL:"EJBDAGLI",ABDEGIKL:"EGBAIDLK",ABDEGJKL:"EJBDAGLK",ABDEHIJK:"EJBDAHIK",ABDEHIJL:"EJBDAHLI",ABDEHIKL:"EIBDAHLK",ABDEHJKL:"EJBDAHLK",ABDEIJKL:"EJBAIDLK",ABDFGHIJ:"HGBDAFIJ",ABDFGHIK:"HGBDAFIK",ABDFGHIL:"HGBDAFLI",ABDFGHJK:"HGBDAFJK",ABDFGHJL:"HGBDAFLJ",ABDFGHKL:"HGBDAFLK",ABDFGIJK:"FJBDAGIK",ABDFGIJL:"FJBDAGLI",ABDFGIKL:"IGBDAFLK",ABDFGJKL:"FJBDAGLK",ABDFHIJK:"HJBDAFIK",ABDFHIJL:"HJBDAFLI",ABDFHIKL:"HIBDAFLK",ABDFHJKL:"HJBDAFLK",ABDFIJKL:"IJBDAFLK",ABDGHIJK:"HJBDAGIK",ABDGHIJL:"HJBDAGLI",ABDGHIKL:"IGBDAHLK",ABDGHJKL:"HJBDAGLK",ABDGIJKL:"IJBDAGLK",ABDHIJKL:"IJBDAHLK",ABEFGHIJ:"HJBFAGEI",ABEFGHIK:"EGBFAHIK",ABEFGHIL:"EGBFAHLI",ABEFGHJK:"HJBFAGEK",ABEFGHJL:"HJBFAGLE",ABEFGHKL:"EGBFAHLK",ABEFGIJK:"EJBFAGIK",ABEFGIJL:"EJBFAGLI",ABEFGIKL:"EGBAIFLK",ABEFGJKL:"EJBFAGLK",ABEFHIJK:"EJBFAHIK",ABEFHIJL:"EJBFAHLI",ABEFHIKL:"EIBFAHLK",ABEFHJKL:"EJBFAHLK",ABEFIJKL:"EJBAIFLK",ABEGHIJK:"EJBAHGIK",ABEGHIJL:"EJBAHGLI",ABEGHIKL:"EGBAIHLK",ABEGHJKL:"EJBAHGLK",ABEGIJKL:"EJBAIGLK",ABEHIJKL:"EJBAIHLK",ABFGHIJK:"HJBFAGIK",ABFGHIJL:"HJBFAGLI",ABFGHIKL:"HGBAIFLK",ABFGHJKL:"HJBFAGLK",ABFGIJKL:"IJBFAGLK",ABFHIJKL:"HJBAIFLK",ABGHIJKL:"HJBAIGLK",ACDEFGHI:"HGECAFDI",ACDEFGHJ:"HGJCAFDE",ACDEFGHK:"HGECAFDK",ACDEFGHL:"HGFCADLE",ACDEFGIJ:"CGJDAFEI",ACDEFGIK:"CGEDAFIK",ACDEFGIL:"CGEDAFLI",ACDEFGJK:"CGJDAFEK",ACDEFGJL:"CGJDAFLE",ACDEFGKL:"CGEDAFLK",ACDEFHIJ:"HJECAFDI",ACDEFHIK:"HEFCADIK",ACDEFHIL:"HEFCADLI",ACDEFHJK:"HJECAFDK",ACDEFHJL:"HJFCADLE",ACDEFHKL:"HEFCADLK",ACDEFIJK:"CJEDAFIK",ACDEFIJL:"CJEDAFLI",ACDEFIKL:"CEIDAFLK",ACDEFJKL:"CJEDAFLK",ACDEGHIJ:"HGJCADEI",ACDEGHIK:"HGECADIK",ACDEGHIL:"HGECADLI",ACDEGHJK:"HGJCADEK",ACDEGHJL:"HGJCADLE",ACDEGHKL:"HGECADLK",ACDEGIJK:"EGJCADIK",ACDEGIJL:"EGJCADLI",ACDEGIKL:"EGICADLK",ACDEGJKL:"EGJCADLK",ACDEHIJK:"HJECADIK",ACDEHIJL:"HJECADLI",ACDEHIKL:"HEICADLK",ACDEHJKL:"HJECADLK",ACDEIJKL:"EJICADLK",ACDFGHIJ:"HGJCAFDI",ACDFGHIK:"HGFCADIK",ACDFGHIL:"HGFCADLI",ACDFGHJK:"HGJCAFDK",ACDFGHJL:"CGJDAFLH",ACDFGHKL:"HGFCADLK",ACDFGIJK:"CGJDAFIK",ACDFGIJL:"CGJDAFLI",ACDFGIKL:"CGIDAFLK",ACDFGJKL:"CGJDAFLK",ACDFHIJK:"HJFCADIK",ACDFHIJL:"HJFCADLI",ACDFHIKL:"HFICADLK",ACDFHJKL:"HJFCADLK",ACDFIJKL:"CJIDAFLK",ACDGHIJK:"HGJCADIK",ACDGHIJL:"HGJCADLI",ACDGHIKL:"HGICADLK",ACDGHJKL:"HGJCADLK",ACDGIJKL:"IGJCADLK",ACDHIJKL:"HJICADLK",ACEFGHIJ:"HGJCAFEI",ACEFGHIK:"HGECAFIK",ACEFGHIL:"HGECAFLI",ACEFGHJK:"HGJCAFEK",ACEFGHJL:"HGJCAFLE",ACEFGHKL:"HGECAFLK",ACEFGIJK:"EGJCAFIK",ACEFGIJL:"EGJCAFLI",ACEFGIKL:"EGICAFLK",ACEFGJKL:"EGJCAFLK",ACEFHIJK:"HJECAFIK",ACEFHIJL:"HJECAFLI",ACEFHIKL:"HEICAFLK",ACEFHJKL:"HJECAFLK",ACEFIJKL:"EJICAFLK",ACEGHIJK:"EGJCAHIK",ACEGHIJL:"EGJCAHLI",ACEGHIKL:"EGICAHLK",ACEGHJKL:"EGJCAHLK",ACEGIJKL:"EJICAGLK",ACEHIJKL:"EJICAHLK",ACFGHIJK:"HGJCAFIK",ACFGHIJL:"HGJCAFLI",ACFGHIKL:"HGICAFLK",ACFGHJKL:"HGJCAFLK",ACFGIJKL:"IGJCAFLK",ACFHIJKL:"HJICAFLK",ACGHIJKL:"HJICAGLK",ADEFGHIJ:"HGJDAFEI",ADEFGHIK:"HGEDAFIK",ADEFGHIL:"HGEDAFLI",ADEFGHJK:"HGJDAFEK",ADEFGHJL:"HGJDAFLE",ADEFGHKL:"HGEDAFLK",ADEFGIJK:"EGJDAFIK",ADEFGIJL:"EGJDAFLI",ADEFGIKL:"EGIDAFLK",ADEFGJKL:"EGJDAFLK",ADEFHIJK:"HJEDAFIK",ADEFHIJL:"HJEDAFLI",ADEFHIKL:"HEIDAFLK",ADEFHJKL:"HJEDAFLK",ADEFIJKL:"EJIDAFLK",ADEGHIJK:"EGJDAHIK",ADEGHIJL:"EGJDAHLI",ADEGHIKL:"EGIDAHLK",ADEGHJKL:"EGJDAHLK",ADEGIJKL:"EJIDAGLK",ADEHIJKL:"EJIDAHLK",ADFGHIJK:"HGJDAFIK",ADFGHIJL:"HGJDAFLI",ADFGHIKL:"HGIDAFLK",ADFGHJKL:"HGJDAFLK",ADFGIJKL:"IGJDAFLK",ADFHIJKL:"HJIDAFLK",ADGHIJKL:"HJIDAGLK",AEFGHIJK:"EGJFAHIK",AEFGHIJL:"EGJFAHLI",AEFGHIKL:"EGIFAHLK",AEFGHJKL:"EGJFAHLK",AEFGIJKL:"EJIFAGLK",AEFHIJKL:"EJIFAHLK",AEGHIJKL:"EJIAHGLK",AFGHIJKL:"HJIFAGLK",BCDEFGHI:"CGBDHFEI",BCDEFGHJ:"HGBCJFDE",BCDEFGHK:"CGBDHFEK",BCDEFGHL:"CGBDHFLE",BCDEFGIJ:"CGBDJFEI",BCDEFGIK:"CGBDEFIK",BCDEFGIL:"CGBDEFLI",BCDEFGJK:"CGBDJFEK",BCDEFGJL:"CGBDJFLE",BCDEFGKL:"CGBDEFLK",BCDEFHIJ:"CJBDHFEI",BCDEFHIK:"CEBDHFIK",BCDEFHIL:"CEBDHFLI",BCDEFHJK:"CJBDHFEK",BCDEFHJL:"CJBDHFLE",BCDEFHKL:"CEBDHFLK",BCDEFIJK:"CJBDEFIK",BCDEFIJL:"CJBDEFLI",BCDEFIKL:"CEBDIFLK",BCDEFJKL:"CJBDEFLK",BCDEGHIJ:"HGBCJDEI",BCDEGHIK:"EGBCHDIK",BCDEGHIL:"EGBCHDLI",BCDEGHJK:"HGBCJDEK",BCDEGHJL:"HGBCJDLE",BCDEGHKL:"EGBCHDLK",BCDEGIJK:"EGBCJDIK",BCDEGIJL:"EGBCJDLI",BCDEGIKL:"EGBCIDLK",BCDEGJKL:"EGBCJDLK",BCDEHIJK:"EJBCHDIK",BCDEHIJL:"EJBCHDLI",BCDEHIKL:"EIBCHDLK",BCDEHJKL:"EJBCHDLK",BCDEIJKL:"EJBCIDLK",BCDFGHIJ:"HGBCJFDI",BCDFGHIK:"CGBDHFIK",BCDFGHIL:"CGBDHFLI",BCDFGHJK:"HGBCJFDK",BCDFGHJL:"CGBDHFLJ",BCDFGHKL:"CGBDHFLK",BCDFGIJK:"CGBDJFIK",BCDFGIJL:"CGBDJFLI",BCDFGIKL:"CGBDIFLK",BCDFGJKL:"CGBDJFLK",BCDFHIJK:"CJBDHFIK",BCDFHIJL:"CJBDHFLI",BCDFHIKL:"CIBDHFLK",BCDFHJKL:"CJBDHFLK",BCDFIJKL:"CJBDIFLK",BCDGHIJK:"HGBCJDIK",BCDGHIJL:"HGBCJDLI",BCDGHIKL:"HGBCIDLK",BCDGHJKL:"HGBCJDLK",BCDGIJKL:"IGBCJDLK",BCDHIJKL:"HJBCIDLK",BCEFGHIJ:"HGBCJFEI",BCEFGHIK:"EGBCHFIK",BCEFGHIL:"EGBCHFLI",BCEFGHJK:"HGBCJFEK",BCEFGHJL:"HGBCJFLE",BCEFGHKL:"EGBCHFLK",BCEFGIJK:"EGBCJFIK",BCEFGIJL:"EGBCJFLI",BCEFGIKL:"EGBCIFLK",BCEFGJKL:"EGBCJFLK",BCEFHIJK:"EJBCHFIK",BCEFHIJL:"EJBCHFLI",BCEFHIKL:"EIBCHFLK",BCEFHJKL:"EJBCHFLK",BCEFIJKL:"EJBCIFLK",BCEGHIJK:"EJBCHGIK",BCEGHIJL:"EJBCHGLI",BCEGHIKL:"EGBCIHLK",BCEGHJKL:"EJBCHGLK",BCEGIJKL:"EJBCIGLK",BCEHIJKL:"EJBCIHLK",BCFGHIJK:"HGBCJFIK",BCFGHIJL:"HGBCJFLI",BCFGHIKL:"HGBCIFLK",BCFGHJKL:"HGBCJFLK",BCFGIJKL:"IGBCJFLK",BCFHIJKL:"HJBCIFLK",BCGHIJKL:"HJBCIGLK",BDEFGHIJ:"HGBDJFEI",BDEFGHIK:"EGBDHFIK",BDEFGHIL:"EGBDHFLI",BDEFGHJK:"HGBDJFEK",BDEFGHJL:"HGBDJFLE",BDEFGHKL:"EGBDHFLK",BDEFGIJK:"EGBDJFIK",BDEFGIJL:"EGBDJFLI",BDEFGIKL:"EGBDIFLK",BDEFGJKL:"EGBDJFLK",BDEFHIJK:"EJBDHFIK",BDEFHIJL:"EJBDHFLI",BDEFHIKL:"EIBDHFLK",BDEFHJKL:"EJBDHFLK",BDEFIJKL:"EJBDIFLK",BDEGHIJK:"EJBDHGIK",BDEGHIJL:"EJBDHGLI",BDEGHIKL:"EGBDIHLK",BDEGHJKL:"EJBDHGLK",BDEGIJKL:"EJBDIGLK",BDEHIJKL:"EJBDIHLK",BDFGHIJK:"HGBDJFIK",BDFGHIJL:"HGBDJFLI",BDFGHIKL:"HGBDIFLK",BDFGHJKL:"HGBDJFLK",BDFGIJKL:"IGBDJFLK",BDFHIJKL:"HJBDIFLK",BDGHIJKL:"HJBDIGLK",BEFGHIJK:"EJBFHGIK",BEFGHIJL:"EJBFHGLI",BEFGHIKL:"EGBFIHLK",BEFGHJKL:"EJBFHGLK",BEFGIJKL:"EJBFIGLK",BEFHIJKL:"EJBFIHLK",BEGHIJKL:"EJIBHGLK",BFGHIJKL:"HJBFIGLK",CDEFGHIJ:"CGJDHFEI",CDEFGHIK:"CGEDHFIK",CDEFGHIL:"CGEDHFLI",CDEFGHJK:"CGJDHFEK",CDEFGHJL:"CGJDHFLE",CDEFGHKL:"CGEDHFLK",CDEFGIJK:"CGEDJFIK",CDEFGIJL:"CGEDJFLI",CDEFGIKL:"CGEDIFLK",CDEFGJKL:"CGEDJFLK",CDEFHIJK:"CJEDHFIK",CDEFHIJL:"CJEDHFLI",CDEFHIKL:"CEIDHFLK",CDEFHJKL:"CJEDHFLK",CDEFIJKL:"CJEDIFLK",CDEGHIJK:"EGJCHDIK",CDEGHIJL:"EGJCHDLI",CDEGHIKL:"EGICHDLK",CDEGHJKL:"EGJCHDLK",CDEGIJKL:"EGICJDLK",CDEHIJKL:"EJICHDLK",CDFGHIJK:"CGJDHFIK",CDFGHIJL:"CGJDHFLI",CDFGHIKL:"CGIDHFLK",CDFGHJKL:"CGJDHFLK",CDFGIJKL:"CGIDJFLK",CDFHIJKL:"CJIDHFLK",CDGHIJKL:"HGICJDLK",CEFGHIJK:"EGJCHFIK",CEFGHIJL:"EGJCHFLI",CEFGHIKL:"EGICHFLK",CEFGHJKL:"EGJCHFLK",CEFGIJKL:"EGICJFLK",CEFHIJKL:"EJICHFLK",CEGHIJKL:"EJICHGLK",CFGHIJKL:"HGICJFLK",DEFGHIJK:"EGJDHFIK",DEFGHIJL:"EGJDHFLI",DEFGHIKL:"EGIDHFLK",DEFGHJKL:"EGJDHFLK",DEFGIJKL:"EGIDJFLK",DEFHIJKL:"EJIDHFLK",DEGHIJKL:"EJIDHGLK",DFGHIJKL:"HGIDJFLK",EFGHIJKL:"EJIFHGLK"};
+
+const PF_GRUPOS = () => [...new Set(Object.values(S.dados.times).map((t) => t.grupo))].sort();
+
+/* times que estão jogando AGORA (p/ o selo "ao vivo" nos slots) */
+function pfLiveTeams() {
+  const set = new Set();
+  (Array.isArray(S.dados.live) ? S.dados.live : []).forEach((l) => {
+    const j = S.dados.jogos.find((x) => String(x.id) === String(l.id));
+    if (j) { set.add(j.casa); set.add(j.fora); }
+  });
+  return set;
+}
+
+/* mapa vencedor→grupo-do-3º via Annex C, a partir dos 8 melhores 3ºs ATUAIS.
+   null se ainda não dá p/ determinar 8 terceiros (poucos grupos jogaram). */
+function pfThirdsMap() {
+  const thirds = PF_GRUPOS()
+    .map((g) => ({ g, t: standings(g)[2] }))
+    .filter((x) => x.t && x.t.j > 0)
+    .sort((a, b) =>
+      b.t.pts - a.t.pts || (b.t.gp - b.t.gc) - (a.t.gp - a.t.gc) || b.t.gp - a.t.gp || a.t.nome.localeCompare(b.t.nome));
+  if (thirds.length < 8) return null;
+  const key = thirds.slice(0, 8).map((x) => x.g).sort().join("");
+  const str = PF_THIRDS[key];
+  if (!str) return null;
+  const map = {};
+  PF_WINCOLS.forEach((w, i) => (map[w] = str[i]));
+  return map;
+}
+
+/* jogo de mata-mata por nº FIFA (quando existirem no dados.json); hoje → null */
+const pfJogoNum = (n) => S.dados.jogos.find((j) => j.fase !== "grupos" && (j.num === n || j.id === n)) || null;
+function pfVencedor(j) {
+  if (!j || !apurado(j)) return null;
+  if (j.real.avancou) return j.real.avancou;
+  if (j.real.casa > j.real.fora) return j.casa;
+  if (j.real.fora > j.real.casa) return j.fora;
+  return null;
+}
+
+/* resolve uma referência de slot → objeto do contrato do render */
+function pfSlot(ref, liveSet, thirdsMap) {
+  if (ref.g) {
+    const tab = standings(ref.g);
+    const seed = `${ref.pos}º ${ref.g}`;
+    const jogados = tab.reduce((a, t) => a + t.j, 0);
+    if (!jogados) return { tipo: "tbd", seed, rotulo: `${ref.pos}º do Grupo ${ref.g}` };
+    const t = tab[ref.pos - 1];
+    return { tipo: "time", id: t.id, nome: t.nome, seed, terceiro: false, aoVivo: liveSet.has(t.id) };
+  }
+  if (ref.thirdFor) {
+    const w = ref.thirdFor;
+    const tbd = { tipo: "tbd", seed: "3º", rotulo: `3º melhor · ${PF_ALLOWED[w]}`, terceiro: true };
+    if (!thirdsMap) return tbd;
+    const g3 = thirdsMap[w];
+    const t = standings(g3)[2];
+    if (!t || t.j === 0) return tbd;
+    return { tipo: "time", id: t.id, nome: t.nome, seed: `3º ${g3}`, terceiro: true, aoVivo: liveSet.has(t.id) };
+  }
+  if (ref.w != null) {
+    const id = pfVencedor(pfJogoNum(ref.w));
+    if (id) return { tipo: "time", id, nome: time(id).nome, seed: `Venc. ${ref.w}`, terceiro: false, aoVivo: liveSet.has(id) };
+    return { tipo: "tbd", seed: `Venc. ${ref.w}`, rotulo: `Vencedor do Jogo ${ref.w}` };
+  }
+  if (ref.l != null) {
+    const j = pfJogoNum(ref.l), v = pfVencedor(j);
+    const id = j && v ? (v === j.casa ? j.fora : j.casa) : null;
+    if (id) return { tipo: "time", id, nome: time(id).nome, seed: `Perd. ${ref.l}`, terceiro: false, aoVivo: liveSet.has(id) };
+    return { tipo: "tbd", seed: `Perd. ${ref.l}`, rotulo: `Perdedor do Jogo ${ref.l}` };
+  }
+  return { tipo: "tbd", seed: "", rotulo: "A definir" };
+}
+
+/* próxima fase de mata-mata = 1ª cujos jogos NÃO estão todos apurados. Sem jogos
+   de mata-mata no JSON ainda → 16avos (derivados dos grupos). */
+function pfProximaFaseId() {
+  for (const fid of ["16avos", "oitavas", "quartas", "semi", "final"]) {
+    const todos = PF_FASE_JOGOS[fid].every((n) => { const j = pfJogoNum(n); return j && apurado(j); });
+    if (!todos) return fid;
+  }
+  return "final";
+}
+/* quantos jogos que alimentam essa fase ainda faltam (p/ o aviso provisório) */
+function pfFeedersPendentes(fid) {
+  if (fid === "16avos") return S.dados.jogos.filter((j) => j.fase === "grupos" && !apurado(j)).length;
+  const refs = new Set();
+  PF_FASE_JOGOS[fid].forEach((n) => PF_MATCHES[n].forEach((s) => {
+    if (s.w != null) refs.add(s.w);
+    if (s.l != null) refs.add(s.l);
+  }));
+  let pend = 0;
+  refs.forEach((n) => { const j = pfJogoNum(n); if (!(j && apurado(j))) pend++; });
+  return pend;
+}
+
+function secProximaFase() {
+  if (!S.dados || !Array.isArray(S.dados.jogos) || !S.dados.jogos.length) return "";
+  const fid = pfProximaFaseId();
+  const f = S.fases[fid] || {};
+  const liveSet = pfLiveTeams();
+  const thirdsMap = fid === "16avos" ? pfThirdsMap() : null;
+  const confrontos = PF_FASE_JOGOS[fid].map((n) => {
+    const [a, b] = PF_MATCHES[n];
+    return { id: String(n), casa: pfSlot(a, liveSet, thirdsMap), fora: pfSlot(b, liveSet, thirdsMap) };
+  });
+  const faltam = pfFeedersPendentes(fid);
+  const datas = f.inicio
+    ? (f.fim && f.fim !== f.inicio ? `${fmtDiaCurto(f.inicio)} – ${fmtDiaCurto(f.fim)}` : fmtDiaCurto(f.inicio))
+    : "";
+  return renderProximaFase({
+    fase: { id: fid, nome: PF_NOME[fid] || f.nome || fid, mult: f.mult != null ? f.mult : 1, datas },
+    provisorio: faltam > 0,
+    faltam,
+    confrontos,
+  });
+}
+
+/* classe do badge de seed: 3º → âmbar; 1º/2º → verde; resto neutro */
+function pfxSeedClass(slot) {
+  if (slot.terceiro) return "t3";
+  if (/^[12]º/.test(slot.seed || "")) return "q12";
+  return "";
+}
+function pfxSlot(slot, side) {
+  const homeCls = side === "home" ? " home" : "";
+  if (slot.tipo === "tbd") {
+    return `<div class="pfx-side${homeCls} tbd">
+      <div class="pfx-slot">
+        <span class="pfx-tbd-mark" aria-hidden="true">?</span>
+        <span class="pfx-tbd-txt">
+          <span class="pfx-tbd-rot">${esc(slot.rotulo || "A definir")}</span>
+          <span class="pfx-seed t3">${esc(slot.seed || "3º")}</span>
+        </span>
+      </div>
+    </div>`;
+  }
+  const seedCls = pfxSeedClass(slot);
+  const live = slot.aoVivo ? `<span class="pfx-live" title="Jogando agora — pode mudar">ao vivo</span>` : "";
+  const chip = `<span class="pfx-seed ${seedCls}">${esc(slot.seed || "")}</span>`;
+  const seedRow = side === "home" ? `${live}${chip}` : `${chip}${live}`;
+  return `<div class="pfx-side${homeCls}">
+    ${bandeira(slot.id)}
+    <span class="pfx-info">
+      <span class="pfx-name">${esc(slot.nome || "")}</span>
+      <span class="pfx-seedrow">${seedRow}</span>
+    </span>
   </div>`;
-  const trophy = `<div class="trophy-final"><div class="cup">🏆</div><div class="cap">Campeão 2026</div></div>`;
-  return `<section class="reveal" id="mata">
-    <div class="sec-head">
-      <span class="kicker">Eliminatórias</span>
-      <h2>Mata-mata</h2>
-      <span class="pill">fases valem mais</span>
+}
+function renderProximaFase(data) {
+  const { fase, provisorio, faltam, confrontos } = data;
+  const noteCls = provisorio ? "" : "ok";
+  const noteTxt = provisorio
+    ? `<b>Confrontos previstos</b> pela classificação ao vivo — faltam <b>${faltam}</b> ${faltam === 1 ? "jogo" : "jogos"}, pode mudar.`
+    : `<b>Confrontos confirmados.</b> Classificação encerrada.`;
+  const cards = confrontos.map((c, i) => {
+    const hasLive = (c.casa && c.casa.aoVivo) || (c.fora && c.fora.aoVivo);
+    return `<div class="pfx-card${hasLive ? " has-live" : ""}" style="animation-delay:${Math.min(i * 32, 420)}ms">
+      <span class="pfx-game">Jogo ${esc(c.id)}</span>
+      ${pfxSlot(c.casa, "home")}
+      <span class="pfx-vs" aria-hidden="true">×</span>
+      ${pfxSlot(c.fora, "fora")}
+    </div>`;
+  }).join("");
+  return `<section class="reveal pfx" id="mata" aria-label="Próxima fase — ${esc(fase.nome)}">
+    <div class="pfx-head">
+      <div>
+        <div class="pfx-kicker">Caminho até o título</div>
+        <h2>Próxima fase · ${esc(fase.nome)}</h2>
+      </div>
+      <span class="pfx-pill"><span class="mx">×</span>${String(fase.mult).replace(".", ",")} pontos</span>
     </div>
-    <div class="card" style="padding:16px">
-      <div class="bracket-scroll"><div class="bracket">${cols}${finalCol}${trophy}</div></div>
+    <div class="pfx-note ${noteCls}">
+      <span class="ic" aria-hidden="true"></span>
+      <span>${noteTxt}</span>
+      ${datas_(fase)}
     </div>
+    <div class="pfx-legend" aria-hidden="true">
+      <span><i class="l-ok"></i>1º / 2º do grupo</span>
+      <span><i class="l-open"></i>3º colocado</span>
+      <span><i class="l-tbd"></i>a definir</span>
+      <span><i class="l-live"></i>jogando agora</span>
+    </div>
+    <div class="pfx-grid">${cards}</div>
   </section>`;
 }
+const datas_ = (fase) => (fase.datas ? `<span class="datas">${esc(fase.datas)}</span>` : "");
 
 /* ---------- HISTÓRICO ---------- */
 function secHistorico() {
