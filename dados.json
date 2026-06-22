@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:45:23.749Z",
+  "atualizado_em": "2026-06-22T02:45:55.624Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10118,7 +10118,7 @@
       "id": 40,
       "casa": 1,
       "fora": 3,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "F. Surman",
@@ -10189,6 +10189,12 @@
           "saiu": "E. Ashour",
           "min": 85,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Bindon",
+          "saiu": "T. Payne",
+          "min": 85,
+          "lado": "casa"
         }
       ],
       "cartoes": [
