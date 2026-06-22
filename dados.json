@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:40:43.284Z",
+  "atualizado_em": "2026-06-22T18:41:15.296Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10407,7 +10407,7 @@
       "id": 57,
       "casa": 1,
       "fora": 0,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "L. Messi",
@@ -10465,6 +10465,12 @@
           "cor": "amarelo",
           "min": 76,
           "lado": "casa"
+        },
+        {
+          "nome": "K. Laimer",
+          "cor": "amarelo",
+          "min": 76,
+          "lado": "fora"
         }
       ]
     }
