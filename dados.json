@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:42:17.702Z",
+  "atualizado_em": "2026-06-22T18:42:49.532Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10450,6 +10450,12 @@
           "entrou": "M. Arnautovic",
           "saiu": "P. Wanner",
           "min": 68,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. Wimmer",
+          "saiu": "R. Schmid",
+          "min": 78,
           "lado": "fora"
         }
       ],
