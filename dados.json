@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T00:03:53.278Z",
+  "atualizado_em": "2026-06-22T00:11:06.547Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6458,9 +6458,15 @@
       "fora": "cape-verde",
       "kickoff": "2026-06-21T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "K. Pina",
+          "M. Araújo",
+          "A. Cano",
+          "H. Varela"
+        ]
       },
       "palpites": {
         "claude": {
@@ -9824,110 +9830,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 46,
-      "casa": 2,
-      "fora": 2,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "K. Pina",
-          "min": 21,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Araújo",
-          "min": 44,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Cano",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "nome": "H. Varela",
-          "min": 61,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "D. Duarte",
-          "saiu": "T. Arcanjo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. da Costa",
-          "saiu": "G. Benchimol",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Varela",
-          "saiu": "G. Rodrigues",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Núñez",
-          "saiu": "F. Viñas",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. de la Cruz",
-          "saiu": "M. Ugarte",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Duarte",
-          "saiu": "K. Pina",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Semedo",
-          "saiu": "J. Monteiro",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Rodríguez",
-          "saiu": "M. Araújo",
-          "min": 81,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "S. Lopes Cabral",
-          "cor": "amarelo",
-          "min": 5,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Bentancur",
-          "cor": "amarelo",
-          "min": 20,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Olivera",
-          "cor": "amarelo",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Borges",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
