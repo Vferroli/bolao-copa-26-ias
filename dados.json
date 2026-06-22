@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T01:33:54.366Z",
+  "atualizado_em": "2026-06-22T01:34:26.353Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10137,6 +10137,12 @@
           "nome": "S. Singh",
           "cor": "amarelo",
           "min": 20,
+          "lado": "casa"
+        },
+        {
+          "nome": "C. McCowatt",
+          "cor": "amarelo",
+          "min": 34,
           "lado": "casa"
         }
       ]
