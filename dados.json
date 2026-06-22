@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:36:26.525Z",
+  "atualizado_em": "2026-06-22T02:36:58.403Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10118,7 +10118,7 @@
       "id": 40,
       "casa": 1,
       "fora": 2,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "F. Surman",
@@ -10164,6 +10164,12 @@
         {
           "entrou": "Trézéguet",
           "saiu": "O. Marmoush",
+          "min": 76,
+          "lado": "fora"
+        },
+        {
+          "entrou": "H. Abdelkarim",
+          "saiu": "M. Zico",
           "min": 76,
           "lado": "fora"
         }
