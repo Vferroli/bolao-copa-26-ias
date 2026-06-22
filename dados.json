@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T18:40:11.342Z",
+  "atualizado_em": "2026-06-22T18:40:43.284Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10459,6 +10459,12 @@
           "cor": "amarelo",
           "min": 40,
           "lado": "fora"
+        },
+        {
+          "nome": "F. Medina",
+          "cor": "amarelo",
+          "min": 76,
+          "lado": "casa"
         }
       ]
     }
