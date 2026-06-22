@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-22T17:51:58.348Z",
+  "atualizado_em": "2026-06-22T17:53:02.482Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10407,7 +10407,7 @@
       "id": 57,
       "casa": 1,
       "fora": 0,
-      "min": "45'+6'",
+      "min": "45'+7'",
       "gols": [
         {
           "nome": "L. Messi",
