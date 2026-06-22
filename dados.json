@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:25:36.556Z",
+  "atualizado_em": "2026-06-22T02:26:09.595Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10137,6 +10137,12 @@
           "saiu": "H. Fathy",
           "min": 41,
           "lado": "fora"
+        },
+        {
+          "entrou": "B. Old",
+          "saiu": "C. McCowatt",
+          "min": 66,
+          "lado": "casa"
         }
       ],
       "cartoes": [
