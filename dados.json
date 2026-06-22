@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:44:51.831Z",
+  "atualizado_em": "2026-06-22T02:45:23.749Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10118,7 +10118,7 @@
       "id": 40,
       "casa": 1,
       "fora": 3,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "F. Surman",
@@ -10181,6 +10181,12 @@
         {
           "entrou": "H. Abdelmaguid",
           "saiu": "M. Salah",
+          "min": 85,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Zizo",
+          "saiu": "E. Ashour",
           "min": 85,
           "lado": "fora"
         }
