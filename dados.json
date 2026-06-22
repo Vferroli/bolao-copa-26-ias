@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T01:18:41.800Z",
+  "atualizado_em": "2026-06-22T01:19:44.965Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10118,7 +10118,7 @@
       "id": 40,
       "casa": 1,
       "fora": 0,
-      "min": "18'",
+      "min": "19'",
       "gols": [
         {
           "nome": "F. Surman",
@@ -10132,6 +10132,12 @@
           "cor": "amarelo",
           "min": 17,
           "lado": "fora"
+        },
+        {
+          "nome": "S. Singh",
+          "cor": "amarelo",
+          "min": 20,
+          "lado": "casa"
         }
       ]
     }
