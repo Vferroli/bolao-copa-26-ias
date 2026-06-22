@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T01:41:00.281Z",
+  "atualizado_em": "2026-06-22T01:41:32.887Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10124,6 +10124,14 @@
           "nome": "F. Surman",
           "min": 15,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "R. Rabia",
+          "saiu": "H. Fathy",
+          "min": 41,
+          "lado": "fora"
         }
       ],
       "cartoes": [
