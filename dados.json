@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:43:47.584Z",
+  "atualizado_em": "2026-06-22T02:44:19.683Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10118,7 +10118,7 @@
       "id": 40,
       "casa": 1,
       "fora": 3,
-      "min": "83'",
+      "min": "84'",
       "gols": [
         {
           "nome": "F. Surman",
