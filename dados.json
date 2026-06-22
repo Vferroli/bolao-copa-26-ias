@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:58:31.618Z",
+  "atualizado_em": "2026-06-22T02:59:03.411Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10201,6 +10201,12 @@
           "saiu": "E. Just",
           "min": 85,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Abdelmoneim",
+          "saiu": "H. Abdelmaguid",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
