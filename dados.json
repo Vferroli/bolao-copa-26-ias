@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-21",
-  "atualizado_em": "2026-06-22T02:45:55.624Z",
+  "atualizado_em": "2026-06-22T02:46:27.570Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10179,20 +10179,26 @@
           "lado": "fora"
         },
         {
-          "entrou": "H. Abdelmaguid",
-          "saiu": "M. Salah",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
           "entrou": "Zizo",
           "saiu": "E. Ashour",
           "min": 85,
           "lado": "fora"
         },
         {
+          "entrou": "H. Abdelmaguid",
+          "saiu": "M. Salah",
+          "min": 85,
+          "lado": "fora"
+        },
+        {
           "entrou": "T. Bindon",
           "saiu": "T. Payne",
+          "min": 85,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. de Vries",
+          "saiu": "E. Just",
           "min": 85,
           "lado": "casa"
         }
