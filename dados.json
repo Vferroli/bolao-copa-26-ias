@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:43:27.352Z",
+  "atualizado_em": "2026-06-23T00:43:59.358Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10975,9 +10975,9 @@
   "live": [
     {
       "id": 52,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
-      "min": "43'",
+      "min": "44'",
       "gols": [
         {
           "nome": "M. Holmgren Pedersen",
