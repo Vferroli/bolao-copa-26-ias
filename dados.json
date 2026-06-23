@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:29:47.488Z",
+  "atualizado_em": "2026-06-23T00:30:19.618Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10973,81 +10973,6 @@
     }
   ],
   "live": [
-    {
-      "id": 51,
-      "casa": 3,
-      "fora": 0,
-      "min": "74'",
-      "gols": [
-        {
-          "nome": "K. Mbappé",
-          "min": 14,
-          "lado": "casa"
-        },
-        {
-          "nome": "K. Mbappé",
-          "min": 54,
-          "lado": "casa"
-        },
-        {
-          "nome": "O. Dembélé",
-          "min": 66,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "A. Al-Hamadi",
-          "saiu": "A. Hussein",
-          "min": 26,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Sulaka",
-          "saiu": "Z. Tahseen",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Amyn",
-          "saiu": "Z. Ismael",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Doué",
-          "saiu": "O. Dembélé",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Cherki",
-          "saiu": "M. Olise",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Sher",
-          "saiu": "A. Al-Ammari",
-          "min": 68,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Farji",
-          "saiu": "I. Bayesh",
-          "min": 69,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Al-Ammari",
-          "cor": "amarelo",
-          "min": 6,
-          "lado": "fora"
-        }
-      ]
-    },
     {
       "id": 52,
       "casa": 0,
