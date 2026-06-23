@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T18:55:35.822Z",
+  "atualizado_em": "2026-06-23T18:56:07.657Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11555,7 +11555,7 @@
       "id": 63,
       "casa": 5,
       "fora": 0,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "gols": [
         {
           "nome": "C. Ronaldo",
@@ -11626,6 +11626,18 @@
           "saiu": "Vitinha",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. Jiyanov",
+          "saiu": "B. Karimov",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Esanov",
+          "saiu": "O. Shukurov",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
