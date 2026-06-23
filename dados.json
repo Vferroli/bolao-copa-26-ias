@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:21:16.261Z",
+  "atualizado_em": "2026-06-23T01:22:19.428Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10982,7 +10982,7 @@
       "id": 52,
       "casa": 3,
       "fora": 1,
-      "min": "62'",
+      "min": "63'",
       "gols": [
         {
           "nome": "M. Holmgren Pedersen",
@@ -11028,6 +11028,12 @@
           "entrou": "I. Mbaye",
           "saiu": "P. Gueye",
           "min": 54,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Diaw",
+          "saiu": "É. Mendy",
+          "min": 63,
           "lado": "fora"
         }
       ]
