@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:23:39.539Z",
+  "atualizado_em": "2026-06-23T21:24:53.191Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11844,7 +11844,7 @@
       "id": 69,
       "casa": 0,
       "fora": 0,
-      "min": "60'",
+      "min": "61'",
       "cartoes": [
         {
           "nome": "D. Rice",
