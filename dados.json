@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:58:57.243Z",
+  "atualizado_em": "2026-06-23T21:59:29.194Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11892,6 +11892,12 @@
           "entrou": "K. Peprah Oppong",
           "saiu": "M. Senaya",
           "min": 87,
+          "lado": "fora"
+        },
+        {
+          "entrou": "B. Rahman",
+          "saiu": "P. Adu",
+          "min": 90,
           "lado": "fora"
         }
       ],
