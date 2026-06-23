@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:13:20.453Z",
+  "atualizado_em": "2026-06-23T01:13:52.720Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11012,6 +11012,18 @@
           "saiu": "F. Aursnes",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "I. Jakobs",
+          "saiu": "E. Hadji Malick Diouf",
+          "min": 54,
+          "lado": "fora"
+        },
+        {
+          "entrou": "I. Mbaye",
+          "saiu": "P. Gueye",
+          "min": 54,
+          "lado": "fora"
         }
       ]
     }
