@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T03:37:13.212Z",
+  "atualizado_em": "2026-06-23T03:37:45.736Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11267,7 +11267,14 @@
       "id": 58,
       "casa": 1,
       "fora": 0,
-      "min": "37'"
+      "min": "37'",
+      "gols": [
+        {
+          "nome": "N. Al-Rashdan",
+          "min": 36,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
