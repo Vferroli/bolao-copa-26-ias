@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:50:33.660Z",
+  "atualizado_em": "2026-06-23T21:51:36.337Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11844,7 +11844,7 @@
       "id": 69,
       "casa": 0,
       "fora": 0,
-      "min": "87'",
+      "min": "88'",
       "subs": [
         {
           "entrou": "B. Saka",
@@ -11887,6 +11887,12 @@
           "saiu": "N. Madueke",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "entrou": "K. Peprah Oppong",
+          "saiu": "M. Senaya",
+          "min": 87,
+          "lado": "fora"
         }
       ],
       "cartoes": [
