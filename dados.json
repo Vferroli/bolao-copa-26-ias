@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T05:00:05.164Z",
+  "atualizado_em": "2026-06-23T05:06:53.099Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9413,9 +9413,14 @@
       "fora": "algeria",
       "kickoff": "2026-06-23T03:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "N. Al-Rashdan",
+          "N. Benbouali",
+          "A. Gouiri"
+        ]
       },
       "palpites": {
         "claude": {
@@ -11262,105 +11267,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 58,
-      "casa": 1,
-      "fora": 2,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "N. Al-Rashdan",
-          "min": 36,
-          "lado": "casa"
-        },
-        {
-          "nome": "N. Benbouali",
-          "min": 69,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Gouiri",
-          "min": 82,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. Bentaleb",
-          "saiu": "R. Zerrouki",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Benbouali",
-          "saiu": "H. Boudaoui",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Hadj Moussa",
-          "saiu": "R. Mahrez",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Fakhoury",
-          "saiu": "M. Al-Mardi",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Azaizeh",
-          "saiu": "M. Al-Tamari",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Abu Hasheesh",
-          "saiu": "M. Abu Taha",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Hadjam",
-          "saiu": "R. Aït-Nouri",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Z. Belaïd",
-          "saiu": "A. Gouiri",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Obaid",
-          "saiu": "H. Abu Dahab",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Abu Zraiq",
-          "saiu": "A. Olwan",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "R. Zerrouki",
-          "cor": "amarelo",
-          "min": 44,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Abu Dahab",
-          "cor": "amarelo",
-          "min": 64,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
