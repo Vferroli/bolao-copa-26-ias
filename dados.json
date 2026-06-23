@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T18:59:47.420Z",
+  "atualizado_em": "2026-06-23T19:04:57.005Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10417,9 +10417,15 @@
       "fora": "uzbekistan",
       "kickoff": "2026-06-23T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 5,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "C. Ronaldo",
+          "N. Mendes",
+          "C. Ronaldo",
+          "R. Leão"
+        ]
       },
       "palpites": {
         "claude": {
@@ -11550,110 +11556,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 63,
-      "casa": 5,
-      "fora": 0,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "C. Ronaldo",
-          "min": 6,
-          "lado": "casa"
-        },
-        {
-          "nome": "N. Mendes",
-          "min": 17,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Ronaldo",
-          "min": 39,
-          "lado": "casa"
-        },
-        {
-          "nome": "R. Leão",
-          "min": 87,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "K. Alijonov",
-          "saiu": "S. Nasrullaev",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Mozgovoy",
-          "saiu": "O. Xamrobekov",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Semedo",
-          "saiu": "J. Cancelo",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Conceição",
-          "saiu": "P. Neto",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Trincão",
-          "saiu": "J. Félix",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "I. Sergeev",
-          "saiu": "A. Fayzullaev",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Silva",
-          "saiu": "J. Neves",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Leão",
-          "saiu": "Vitinha",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Jiyanov",
-          "saiu": "B. Karimov",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Esanov",
-          "saiu": "O. Shukurov",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "O. Xamrobekov",
-          "cor": "amarelo",
-          "min": 14,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Veiga",
-          "cor": "amarelo",
-          "min": 68,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
