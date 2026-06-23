@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:22:19.428Z",
+  "atualizado_em": "2026-06-23T01:22:51.459Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11033,6 +11033,12 @@
         {
           "entrou": "M. Diaw",
           "saiu": "É. Mendy",
+          "min": 63,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. Ciss",
+          "saiu": "L. Camara",
           "min": 63,
           "lado": "fora"
         }
