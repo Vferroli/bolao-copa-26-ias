@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:29:04.051Z",
+  "atualizado_em": "2026-06-23T21:29:35.753Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11844,7 +11844,21 @@
       "id": 69,
       "casa": 0,
       "fora": 0,
-      "min": "65'",
+      "min": "66'",
+      "subs": [
+        {
+          "entrou": "B. Saka",
+          "saiu": "A. Gordon",
+          "min": 65,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. O'Reilly",
+          "saiu": "D. Spence",
+          "min": 66,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "D. Rice",
