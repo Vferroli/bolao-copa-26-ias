@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:06:49.403Z",
+  "atualizado_em": "2026-06-23T01:07:52.769Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10987,6 +10987,11 @@
         {
           "nome": "M. Holmgren Pedersen",
           "min": 43,
+          "lado": "casa"
+        },
+        {
+          "nome": "E. Haaland",
+          "min": 48,
           "lado": "casa"
         }
       ],
