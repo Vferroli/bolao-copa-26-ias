@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:14:45.395Z",
+  "atualizado_em": "2026-06-23T00:15:17.533Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10712,6 +10712,12 @@
           "entrou": "A. Al-Hamadi",
           "saiu": "A. Hussein",
           "min": 26,
+          "lado": "fora"
+        },
+        {
+          "entrou": "R. Sulaka",
+          "saiu": "Z. Tahseen",
+          "min": 60,
           "lado": "fora"
         }
       ],
