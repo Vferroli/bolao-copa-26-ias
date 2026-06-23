@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T18:52:11.432Z",
+  "atualizado_em": "2026-06-23T18:52:43.888Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11580,6 +11580,12 @@
       ],
       "subs": [
         {
+          "entrou": "K. Alijonov",
+          "saiu": "S. Nasrullaev",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
           "entrou": "A. Mozgovoy",
           "saiu": "O. Xamrobekov",
           "min": 45,
@@ -11590,12 +11596,6 @@
           "saiu": "J. Cancelo",
           "min": 45,
           "lado": "casa"
-        },
-        {
-          "entrou": "K. Alijonov",
-          "saiu": "S. Nasrullaev",
-          "min": 45,
-          "lado": "fora"
         },
         {
           "entrou": "F. Conceição",
