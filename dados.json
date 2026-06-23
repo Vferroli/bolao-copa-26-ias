@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T22:00:01.325Z",
+  "atualizado_em": "2026-06-23T22:05:41.763Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11457,9 +11457,10 @@
       "fora": "ghana",
       "kickoff": "2026-06-23T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": []
       },
       "palpites": {
         "claude": {
@@ -11839,82 +11840,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 69,
-      "casa": 0,
-      "fora": 0,
-      "min": "90'+6'",
-      "subs": [
-        {
-          "entrou": "B. Saka",
-          "saiu": "A. Gordon",
-          "min": 65,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. O'Reilly",
-          "saiu": "D. Spence",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Issahaku",
-          "saiu": "I. Williams",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Adu",
-          "saiu": "J. Ayew",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Rogers",
-          "saiu": "J. Bellingham",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Eze",
-          "saiu": "E. Anderson",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Rashford",
-          "saiu": "N. Madueke",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Peprah Oppong",
-          "saiu": "M. Senaya",
-          "min": 87,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Rahman",
-          "saiu": "P. Adu",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "D. Rice",
-          "cor": "amarelo",
-          "min": 41,
-          "lado": "casa"
-        },
-        {
-          "nome": "I. Williams",
-          "cor": "amarelo",
-          "min": 60,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
