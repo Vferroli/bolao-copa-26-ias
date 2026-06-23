@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:50:47.215Z",
+  "atualizado_em": "2026-06-23T00:54:55.295Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7749,9 +7749,14 @@
       "fora": "iraq",
       "kickoff": "2026-06-22T21:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "K. Mbappé",
+          "K. Mbappé",
+          "O. Dembélé"
+        ]
       },
       "palpites": {
         "claude": {
