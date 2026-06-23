@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T04:30:25.627Z",
+  "atualizado_em": "2026-06-23T04:31:29.349Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11266,13 +11266,18 @@
     {
       "id": 58,
       "casa": 1,
-      "fora": 0,
-      "min": "68'",
+      "fora": 1,
+      "min": "69'",
       "gols": [
         {
           "nome": "N. Al-Rashdan",
           "min": 36,
           "lado": "casa"
+        },
+        {
+          "nome": "N. Benbouali",
+          "min": 69,
+          "lado": "fora"
         }
       ],
       "subs": [
