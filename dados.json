@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:59:41.474Z",
+  "atualizado_em": "2026-06-23T02:06:04.506Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -8076,9 +8076,16 @@
       "fora": "senegal",
       "kickoff": "2026-06-23T00:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "M. Holmgren Pedersen",
+          "E. Haaland",
+          "I. Sarr",
+          "E. Haaland",
+          "I. Sarr"
+        ]
       },
       "palpites": {
         "claude": {
@@ -10977,101 +10984,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 52,
-      "casa": 3,
-      "fora": 2,
-      "min": "90'+10'",
-      "gols": [
-        {
-          "nome": "M. Holmgren Pedersen",
-          "min": 43,
-          "lado": "casa"
-        },
-        {
-          "nome": "E. Haaland",
-          "min": 48,
-          "lado": "casa"
-        },
-        {
-          "nome": "I. Sarr",
-          "min": 53,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Haaland",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "nome": "I. Sarr",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "M. Holmgren Pedersen",
-          "saiu": "J. Ryerson",
-          "min": 13,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Berg",
-          "saiu": "F. Aursnes",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "I. Jakobs",
-          "saiu": "E. Hadji Malick Diouf",
-          "min": 54,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Mbaye",
-          "saiu": "P. Gueye",
-          "min": 54,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Diaw",
-          "saiu": "É. Mendy",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Ciss",
-          "saiu": "L. Camara",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Schjelderup",
-          "saiu": "A. Nusa",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Matar Sarr",
-          "saiu": "K. Koulibaly",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Bobb",
-          "saiu": "A. Sørloth",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Østigard",
-          "saiu": "T. Heggem",
-          "min": 84,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
