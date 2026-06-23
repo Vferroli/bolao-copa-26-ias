@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T05:06:53.099Z",
+  "atualizado_em": "2026-06-23T16:30:16.470Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10445,6 +10445,289 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Cristiano Ronaldo"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "3-4-2-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Diogo Costa",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Nuno Mendes",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Renato Veiga",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Rúben Dias",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "João Cancelo",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Vitinha",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "João Neves",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "João Félix",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Bruno Fernandes",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Pedro Neto",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Cristiano Ronaldo",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "José Sá",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Rui Silva",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Nélson Semedo",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Tomás Araújo",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Diogo Dalot",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Gonçalo Inácio",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Matheus Nunes",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Samú Costa",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Bernardo Silva",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Rúben Neves",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Gonçalo Guedes",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "Francisco Trincão",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Gonçalo Ramos",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Rafael Leão",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Francisco Conceição",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 12,
+              "nome": "Abduvokhid Nematov",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Rustam Ashurmatov",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Abdulla Abdullaev",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Abdukodir Khusanov",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Sherzod Nasrullaev",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Otabek Shukurov",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Odiljon Khamrobekov",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Bekhruz Karimov",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Azizjon Ganiev",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Abbosbek Fayzullaev",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Eldor Shomurodov",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 16,
+              "nome": "Botirali Ergashev",
+              "pos": "G"
+            },
+            {
+              "num": 1,
+              "nome": "Utkir Yusupov",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Avazbek Ulmasaliyev",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Farrukh Sayfiev",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Khozhiakbar Alizhonov",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Jakhongir Urozov",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Umarbek Eshmuradov",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Akmal Mozgovoy",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Azizbek Amanov",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Jamshid Iskandarov",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Dostonbek Khamdamov",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Oston Urunov",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Ruslanbek Jiyanov",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Sherzod Esanov",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Igor Sergeev",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
