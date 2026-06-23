@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T03:51:21.608Z",
+  "atualizado_em": "2026-06-23T04:08:01.748Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11273,6 +11273,20 @@
           "nome": "N. Al-Rashdan",
           "min": 36,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "N. Bentaleb",
+          "saiu": "R. Zerrouki",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. Benbouali",
+          "saiu": "H. Boudaoui",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
