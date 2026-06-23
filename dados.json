@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:51:17.222Z",
+  "atualizado_em": "2026-06-23T01:52:20.124Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10982,7 +10982,7 @@
       "id": 52,
       "casa": 3,
       "fora": 1,
-      "min": "90'+2'",
+      "min": "90'+3'",
       "gols": [
         {
           "nome": "M. Holmgren Pedersen",
@@ -11003,6 +11003,11 @@
           "nome": "E. Haaland",
           "min": 58,
           "lado": "casa"
+        },
+        {
+          "nome": "I. Sarr",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "subs": [
