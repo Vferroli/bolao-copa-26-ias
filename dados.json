@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T17:07:21.503Z",
+  "atualizado_em": "2026-06-23T17:07:53.276Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11555,7 +11555,7 @@
       "id": 63,
       "casa": 1,
       "fora": 0,
-      "min": "7'",
+      "min": "8'",
       "gols": [
         {
           "nome": "C. Ronaldo",
