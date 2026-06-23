@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T04:46:41.966Z",
+  "atualizado_em": "2026-06-23T04:47:14.389Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11308,6 +11308,18 @@
           "entrou": "O. Fakhoury",
           "saiu": "M. Al-Mardi",
           "min": 76,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Azaizeh",
+          "saiu": "M. Al-Tamari",
+          "min": 85,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Abu Hasheesh",
+          "saiu": "M. Abu Taha",
+          "min": 85,
           "lado": "casa"
         }
       ],
