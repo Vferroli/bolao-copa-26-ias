@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:30:07.726Z",
+  "atualizado_em": "2026-06-23T21:30:39.809Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11844,7 +11844,7 @@
       "id": 69,
       "casa": 0,
       "fora": 0,
-      "min": "66'",
+      "min": "67'",
       "subs": [
         {
           "entrou": "B. Saka",
@@ -11862,6 +11862,12 @@
           "entrou": "F. Issahaku",
           "saiu": "I. Williams",
           "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. Adu",
+          "saiu": "J. Ayew",
+          "min": 67,
           "lado": "fora"
         }
       ],
