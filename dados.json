@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:42:55.623Z",
+  "atualizado_em": "2026-06-23T00:43:27.352Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10978,6 +10978,13 @@
       "casa": 0,
       "fora": 0,
       "min": "43'",
+      "gols": [
+        {
+          "nome": "M. Holmgren Pedersen",
+          "min": 43,
+          "lado": "casa"
+        }
+      ],
       "subs": [
         {
           "entrou": "M. Holmgren Pedersen",
