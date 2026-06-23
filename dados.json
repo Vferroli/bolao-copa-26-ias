@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T17:29:09.844Z",
+  "atualizado_em": "2026-06-23T17:29:42.551Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11554,7 +11554,7 @@
     {
       "id": 63,
       "casa": 2,
-      "fora": 0,
+      "fora": 1,
       "min": "29'",
       "gols": [
         {
@@ -11566,6 +11566,11 @@
           "nome": "N. Mendes",
           "min": 17,
           "lado": "casa"
+        },
+        {
+          "nome": "A. Ganiev",
+          "min": 29,
+          "lado": "fora"
         }
       ],
       "cartoes": [
