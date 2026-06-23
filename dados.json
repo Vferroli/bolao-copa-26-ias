@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:29:35.753Z",
+  "atualizado_em": "2026-06-23T21:30:07.726Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11857,6 +11857,12 @@
           "saiu": "D. Spence",
           "min": 66,
           "lado": "casa"
+        },
+        {
+          "entrou": "F. Issahaku",
+          "saiu": "I. Williams",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
