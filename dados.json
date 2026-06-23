@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:17:03.009Z",
+  "atualizado_em": "2026-06-23T01:17:34.954Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10980,7 +10980,7 @@
   "live": [
     {
       "id": 52,
-      "casa": 2,
+      "casa": 3,
       "fora": 1,
       "min": "58'",
       "gols": [
@@ -10998,6 +10998,11 @@
           "nome": "I. Sarr",
           "min": 53,
           "lado": "fora"
+        },
+        {
+          "nome": "E. Haaland",
+          "min": 58,
+          "lado": "casa"
         }
       ],
       "subs": [
