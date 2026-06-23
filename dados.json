@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:22:52.758Z",
+  "atualizado_em": "2026-06-23T00:23:24.739Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10977,7 +10977,7 @@
       "id": 51,
       "casa": 3,
       "fora": 0,
-      "min": "67'",
+      "min": "68'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -11013,6 +11013,12 @@
           "saiu": "Z. Ismael",
           "min": 60,
           "lado": "fora"
+        },
+        {
+          "entrou": "D. Doué",
+          "saiu": "O. Dembélé",
+          "min": 68,
+          "lado": "casa"
         }
       ],
       "cartoes": [
