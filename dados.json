@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T18:08:42.920Z",
+  "atualizado_em": "2026-06-23T18:09:15.515Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11585,6 +11585,18 @@
           "saiu": "O. Xamrobekov",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "N. Semedo",
+          "saiu": "J. Cancelo",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. Conceição",
+          "saiu": "P. Neto",
+          "min": 45,
+          "lado": "casa"
         }
       ],
       "cartoes": [
