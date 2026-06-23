@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:39:32.931Z",
+  "atualizado_em": "2026-06-23T21:40:36.017Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11844,7 +11844,7 @@
       "id": 69,
       "casa": 0,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "subs": [
         {
           "entrou": "B. Saka",
