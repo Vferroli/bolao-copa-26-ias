@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T04:38:09.614Z",
+  "atualizado_em": "2026-06-23T04:39:13.664Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11267,7 +11267,7 @@
       "id": 58,
       "casa": 1,
       "fora": 1,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "N. Al-Rashdan",
@@ -11292,6 +11292,18 @@
           "saiu": "H. Boudaoui",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Hadj Moussa",
+          "saiu": "R. Mahrez",
+          "min": 76,
+          "lado": "fora"
+        },
+        {
+          "entrou": "O. Fakhoury",
+          "saiu": "M. Al-Mardi",
+          "min": 76,
+          "lado": "casa"
         }
       ],
       "cartoes": [
