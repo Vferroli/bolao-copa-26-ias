@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:37:27.410Z",
+  "atualizado_em": "2026-06-23T21:37:59.067Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11871,14 +11871,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "E. Eze",
-          "saiu": "E. Anderson",
-          "min": 74,
+          "entrou": "M. Rogers",
+          "saiu": "J. Bellingham",
+          "min": 73,
           "lado": "casa"
         },
         {
-          "entrou": "M. Rogers",
-          "saiu": "J. Bellingham",
+          "entrou": "E. Eze",
+          "saiu": "E. Anderson",
           "min": 74,
           "lado": "casa"
         }
