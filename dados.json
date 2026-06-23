@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:54:55.295Z",
+  "atualizado_em": "2026-06-23T01:03:41.311Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10995,6 +10995,12 @@
           "entrou": "M. Holmgren Pedersen",
           "saiu": "J. Ryerson",
           "min": 13,
+          "lado": "casa"
+        },
+        {
+          "entrou": "P. Berg",
+          "saiu": "F. Aursnes",
+          "min": 45,
           "lado": "casa"
         }
       ]
