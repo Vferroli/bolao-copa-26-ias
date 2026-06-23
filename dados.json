@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:42:50.270Z",
+  "atualizado_em": "2026-06-23T01:43:22.276Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11053,6 +11053,18 @@
           "saiu": "K. Koulibaly",
           "min": 72,
           "lado": "fora"
+        },
+        {
+          "entrou": "L. Østigard",
+          "saiu": "T. Heggem",
+          "min": 84,
+          "lado": "casa"
+        },
+        {
+          "entrou": "O. Bobb",
+          "saiu": "A. Sørloth",
+          "min": 84,
+          "lado": "casa"
         }
       ]
     }
