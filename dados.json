@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T18:46:20.060Z",
+  "atualizado_em": "2026-06-23T18:47:23.975Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11555,7 +11555,7 @@
       "id": 63,
       "casa": 4,
       "fora": 0,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "C. Ronaldo",
@@ -11614,6 +11614,12 @@
           "entrou": "B. Silva",
           "saiu": "J. Neves",
           "min": 76,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Leão",
+          "saiu": "Vitinha",
+          "min": 83,
           "lado": "casa"
         }
       ],
