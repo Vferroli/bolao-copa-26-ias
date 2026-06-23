@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T21:22:36.956Z",
+  "atualizado_em": "2026-06-23T21:23:39.539Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11844,13 +11844,19 @@
       "id": 69,
       "casa": 0,
       "fora": 0,
-      "min": "59'",
+      "min": "60'",
       "cartoes": [
         {
           "nome": "D. Rice",
           "cor": "amarelo",
           "min": 41,
           "lado": "casa"
+        },
+        {
+          "nome": "I. Williams",
+          "cor": "amarelo",
+          "min": 60,
+          "lado": "fora"
         }
       ]
     }
