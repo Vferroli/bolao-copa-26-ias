@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:20:03.156Z",
+  "atualizado_em": "2026-06-23T00:21:06.384Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10977,7 +10977,7 @@
       "id": 51,
       "casa": 2,
       "fora": 0,
-      "min": "64'",
+      "min": "65'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -11023,7 +11023,7 @@
       "id": 52,
       "casa": 0,
       "fora": 0,
-      "min": "20'",
+      "min": "21'",
       "subs": [
         {
           "entrou": "M. Holmgren Pedersen",
