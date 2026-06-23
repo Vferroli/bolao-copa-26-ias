@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T03:43:37.382Z",
+  "atualizado_em": "2026-06-23T03:44:09.844Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11273,6 +11273,14 @@
           "nome": "N. Al-Rashdan",
           "min": 36,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "R. Zerrouki",
+          "cor": "amarelo",
+          "min": 44,
+          "lado": "fora"
         }
       ]
     }
