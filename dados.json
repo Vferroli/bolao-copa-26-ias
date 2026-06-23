@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T01:30:45.200Z",
+  "atualizado_em": "2026-06-23T01:31:17.131Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10982,7 +10982,7 @@
       "id": 52,
       "casa": 3,
       "fora": 1,
-      "min": "71'",
+      "min": "72'",
       "gols": [
         {
           "nome": "M. Holmgren Pedersen",
@@ -11047,6 +11047,12 @@
           "saiu": "A. Nusa",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "P. Matar Sarr",
+          "saiu": "K. Koulibaly",
+          "min": 72,
+          "lado": "fora"
         }
       ]
     }
