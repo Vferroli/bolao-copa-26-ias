@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-22",
-  "atualizado_em": "2026-06-23T00:23:24.739Z",
+  "atualizado_em": "2026-06-23T00:23:57.177Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11019,6 +11019,18 @@
           "saiu": "O. Dembélé",
           "min": 68,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. Cherki",
+          "saiu": "M. Olise",
+          "min": 68,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Sher",
+          "saiu": "A. Al-Ammari",
+          "min": 68,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -11034,7 +11046,7 @@
       "id": 52,
       "casa": 0,
       "fora": 0,
-      "min": "23'",
+      "min": "24'",
       "subs": [
         {
           "entrou": "M. Holmgren Pedersen",
