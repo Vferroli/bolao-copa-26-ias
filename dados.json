@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-23T04:53:38.847Z",
+  "atualizado_em": "2026-06-23T04:54:11.677Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11267,7 +11267,7 @@
       "id": 58,
       "casa": 1,
       "fora": 2,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "gols": [
         {
           "nome": "N. Al-Rashdan",
@@ -11333,6 +11333,18 @@
           "saiu": "A. Gouiri",
           "min": 86,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Abu Zraiq",
+          "saiu": "A. Olwan",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "S. Obaid",
+          "saiu": "H. Abu Dahab",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
