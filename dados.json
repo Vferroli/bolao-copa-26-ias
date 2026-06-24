@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:40:21.913Z",
+  "atualizado_em": "2026-06-24T20:40:54.184Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13629,7 +13629,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "77'",
+      "min": "78'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
@@ -13683,6 +13683,14 @@
           "entrou": "A. Ali",
           "saiu": "K. Boudiaf",
           "min": 72,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "A. Fathy",
+          "cor": "amarelo",
+          "min": 78,
           "lado": "fora"
         }
       ]
