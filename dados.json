@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:06:25.196Z",
+  "atualizado_em": "2026-06-24T03:07:27.964Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13009,7 +13009,7 @@
       "id": 64,
       "casa": 0,
       "fora": 0,
-      "min": "Intervalo",
+      "min": "46'",
       "subs": [
         {
           "entrou": "N. Sadiki",
