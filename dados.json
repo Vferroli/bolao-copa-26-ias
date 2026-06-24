@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:10:19.000Z",
+  "atualizado_em": "2026-06-24T23:10:51.410Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14145,7 +14145,7 @@
       "id": 18,
       "casa": 2,
       "fora": 2,
-      "min": "47'",
+      "min": "48'",
       "gols": [
         {
           "nome": "A. Hakimi",
