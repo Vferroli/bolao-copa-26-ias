@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:46:17.696Z",
+  "atualizado_em": "2026-06-24T23:46:49.492Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14119,7 +14119,7 @@
       "id": 17,
       "casa": 0,
       "fora": 3,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "V. Júnior",
@@ -14161,6 +14161,12 @@
           "saiu": "M. Cunha",
           "min": 76,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Ralston",
+          "saiu": "N. Patterson",
+          "min": 82,
+          "lado": "casa"
         }
       ],
       "cartoes": [
