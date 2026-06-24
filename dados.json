@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:49:49.824Z",
+  "atualizado_em": "2026-06-24T00:50:21.587Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12180,14 +12180,14 @@
           "lado": "casa"
         },
         {
-          "entrou": "T. Rodríguez",
-          "saiu": "É. Yoel Bárcenas",
+          "entrou": "É. Davis",
+          "saiu": "C. Blackman",
           "min": 90,
           "lado": "casa"
         },
         {
-          "entrou": "É. Davis",
-          "saiu": "C. Blackman",
+          "entrou": "T. Rodríguez",
+          "saiu": "É. Yoel Bárcenas",
           "min": 90,
           "lado": "casa"
         }
