@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:09:46.627Z",
+  "atualizado_em": "2026-06-24T23:10:19.000Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14130,6 +14130,14 @@
           "nome": "V. Júnior",
           "min": 45,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "K. Tierney",
+          "saiu": "A. Robertson",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     },
