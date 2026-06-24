@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:19:11.737Z",
+  "atualizado_em": "2026-06-24T03:19:43.446Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13009,7 +13009,7 @@
       "id": 64,
       "casa": 0,
       "fora": 0,
-      "min": "57'",
+      "min": "59'",
       "subs": [
         {
           "entrou": "N. Sadiki",
@@ -13026,6 +13026,12 @@
         {
           "entrou": "J. Córdoba",
           "saiu": "L. Suárez",
+          "min": 58,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Fernando Quintero",
+          "saiu": "J. Rodríguez",
           "min": 58,
           "lado": "casa"
         }
