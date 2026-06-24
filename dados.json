@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:33:29.039Z",
+  "atualizado_em": "2026-06-24T20:34:00.861Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13581,10 +13581,22 @@
           "lado": "fora"
         },
         {
+          "entrou": "M. Aebischer",
+          "saiu": "D. Sow",
+          "min": 74,
+          "lado": "casa"
+        },
+        {
           "entrou": "S. Widmer",
           "saiu": "L. Jaquez",
           "min": 74,
           "lado": "casa"
+        },
+        {
+          "entrou": "P. David",
+          "saiu": "T. Buchanan",
+          "min": 75,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -13606,7 +13618,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
