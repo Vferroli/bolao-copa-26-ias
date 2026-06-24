@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T19:31:23.017Z",
+  "atualizado_em": "2026-06-24T19:31:55.308Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,21 @@
       "id": 11,
       "casa": 0,
       "fora": 0,
-      "min": "31'"
+      "min": "32'",
+      "cartoes": [
+        {
+          "nome": "C. Larin",
+          "cor": "amarelo",
+          "min": 32,
+          "lado": "fora"
+        },
+        {
+          "nome": "G. Xhaka",
+          "cor": "amarelo",
+          "min": 32,
+          "lado": "casa"
+        }
+      ]
     },
     {
       "id": 12,
