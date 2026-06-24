@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:06:54.083Z",
+  "atualizado_em": "2026-06-24T20:07:38.740Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13585,6 +13585,26 @@
         {
           "nome": "H. Al-Haydos",
           "min": 42,
+          "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "B. Tahirovic",
+          "saiu": "I. Sunjic",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Memic",
+          "saiu": "A. Malic",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Hatem",
+          "saiu": "J. Gaber",
+          "min": 45,
           "lado": "fora"
         }
       ]
