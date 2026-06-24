@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T22:43:59.014Z",
+  "atualizado_em": "2026-06-24T22:44:31.602Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14131,13 +14131,18 @@
     {
       "id": 18,
       "casa": 1,
-      "fora": 1,
-      "min": "43'",
+      "fora": 2,
+      "min": "44'",
       "gols": [
         {
           "nome": "A. Hakimi",
           "min": 39,
           "lado": "casa"
+        },
+        {
+          "nome": "W. Isidor",
+          "min": 43,
+          "lado": "fora"
         }
       ]
     }
