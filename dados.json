@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T21:30:17.367Z",
+  "atualizado_em": "2026-06-24T21:45:54.697Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3467,6 +3467,289 @@
           "fora": 0,
           "avanca": null,
           "marcador": "Youssef En-Nesyri"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Yassine Bounou",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Anass Salah-Eddine",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Chadi Riad",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Redouane Halhal",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Achraf Hakimi",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Neil El Aynaoui",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Sofyan Amrabat",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Bilal El Khannouss",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ismael Saibari",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Brahim Díaz",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Ayoub El Kaabi",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Munir El Kajoui",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Ahmed Reda Tagnaouti",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Noussair Mazraoui",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Marwane Saadane",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Zakaria El Ouahdi",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Issa Diop",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Youssef Belammari",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Ayyoub Bouaddi",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Chemsdine Talbi",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Azzedine Ounahi",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Samir El Mourabet",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Gessime Yassine",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Amine Sbai",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Soufiane Rahimi",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Ayoube Amaimouni Echghouyab",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Johny Placide",
+              "pos": "G"
+            },
+            {
+              "num": 8,
+              "nome": "Martin Expérience",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Hannes Delcroix",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Ricardo Adé",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Jean-Kévin Duverne",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ruben Providence",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Jean-Ricner Bellegarde",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Danley Jean Jacques",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Josué Casimir",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Lenny Joseph",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Wilson Isidor",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Alexandre Pierre",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Josué Duverger",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Carlens Arcus",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Keeto Thermoncy",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Garven-Michee Metusala",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Duke Lacroix",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Carl Fred Sainté",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Wilguens Paugain",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Woodensky Pierre",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Dominique Simon",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Derrick Etienne",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Frantzdy Pierrot",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Louicius Don Deedson",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Yassin Fortune",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Duckens Nazon",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
