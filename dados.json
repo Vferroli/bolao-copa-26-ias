@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T18:31:31.542Z",
+  "atualizado_em": "2026-06-24T18:47:06.794Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1802,6 +1802,274 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Jonathan David"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Gregor Kobel",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Ricardo Rodríguez",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Manuel Akanji",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Nico Elvedi",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Luca Jaquez",
+              "pos": "D"
+            },
+            {
+              "num": 10,
+              "nome": "Granit Xhaka",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Remo Freuler",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Rubén Vargas",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Djibril Sow",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Johan Manzambi",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Breel Embolo",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 21,
+              "nome": "Marvin Keller",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Yvon Mvogo",
+              "pos": "G"
+            },
+            {
+              "num": 18,
+              "nome": "Eray Cömert",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Aurèle Amenda",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Silvan Widmer",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Denis Zakaria",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Dan Ndoye",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Michel Aebischer",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Christian Fassnacht",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Ardon Jashari",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Fabian Rieder",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Noah Okafor",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Zeki Amdouni",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Cédric Itten",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "Maxime Crépeau",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Richie Laryea",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Derek Cornelius",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Luc De Fougerolles",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Alistair Johnston",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Ali Ahmed",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Nathan-Dylan Saliba",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Mathieu Choinière",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Tajon Buchanan",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Cyle Larin",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Jonathan David",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Dayne St. Clair",
+              "pos": "G"
+            },
+            {
+              "num": 18,
+              "nome": "Owen Goodman",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Joel Waterman",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Niko Sigur",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Moise Bombito",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Alphonso Davies",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Stephen Eustaquio",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Liam Millar",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Jonathan Osorio",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Jacob Shaffelburg",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Tani Oluwaseyi",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Promise David",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Jayden Nelson",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
