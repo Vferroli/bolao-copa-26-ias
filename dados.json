@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:30:27.279Z",
+  "atualizado_em": "2026-06-24T23:30:59.038Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14143,6 +14143,18 @@
           "saiu": "A. Robertson",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "Fabinho",
+          "saiu": "Casemiro",
+          "min": 65,
+          "lado": "fora"
+        },
+        {
+          "entrou": "G. Martinelli",
+          "saiu": "L. Paquetá",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
