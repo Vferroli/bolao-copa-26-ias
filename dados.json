@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:19:26.760Z",
+  "atualizado_em": "2026-06-24T00:19:58.979Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12148,6 +12148,14 @@
           "saiu": "J. Gvardiol",
           "min": 45,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "É. Yoel Bárcenas",
+          "cor": "amarelo",
+          "min": 61,
+          "lado": "casa"
         }
       ]
     }
