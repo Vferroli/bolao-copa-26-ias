@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:46:49.492Z",
+  "atualizado_em": "2026-06-24T23:47:21.178Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14167,6 +14167,24 @@
           "saiu": "N. Patterson",
           "min": 82,
           "lado": "casa"
+        },
+        {
+          "entrou": "Endrick",
+          "saiu": "Rayan",
+          "min": 82,
+          "lado": "fora"
+        },
+        {
+          "entrou": "R. Christie",
+          "saiu": "B. Gannon-Doak",
+          "min": 82,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Sandro",
+          "saiu": "D. Santos",
+          "min": 82,
+          "lado": "fora"
         }
       ],
       "cartoes": [
