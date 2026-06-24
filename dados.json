@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:42:10.199Z",
+  "atualizado_em": "2026-06-24T03:43:12.777Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13009,7 +13009,7 @@
       "id": 64,
       "casa": 1,
       "fora": 0,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "D. Muñoz",
@@ -13059,6 +13059,12 @@
           "saiu": "J. Arias",
           "min": 78,
           "lado": "casa"
+        },
+        {
+          "entrou": "N. Mbuku",
+          "saiu": "S. Moutoussamy",
+          "min": 82,
+          "lado": "fora"
         }
       ],
       "cartoes": [
