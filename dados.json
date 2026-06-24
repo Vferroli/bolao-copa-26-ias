@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:56:15.943Z",
+  "atualizado_em": "2026-06-24T03:56:47.826Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13009,7 +13009,7 @@
       "id": 64,
       "casa": 1,
       "fora": 0,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "D. Muñoz",
