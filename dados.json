@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:35:20.259Z",
+  "atualizado_em": "2026-06-24T00:36:23.826Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12128,7 +12128,7 @@
       "id": 70,
       "casa": 0,
       "fora": 1,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "A. Budimir",
@@ -12160,6 +12160,12 @@
           "saiu": "M. Kovacic",
           "min": 72,
           "lado": "fora"
+        },
+        {
+          "entrou": "C. Waterman",
+          "saiu": "J. Ramos",
+          "min": 77,
+          "lado": "casa"
         }
       ],
       "cartoes": [
