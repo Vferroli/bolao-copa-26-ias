@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:32:45.364Z",
+  "atualizado_em": "2026-06-24T03:33:17.126Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13034,6 +13034,18 @@
           "saiu": "J. Rodríguez",
           "min": 58,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Kayembe",
+          "saiu": "A. Masuaku",
+          "min": 72,
+          "lado": "fora"
+        },
+        {
+          "entrou": "C. Pickel",
+          "saiu": "E. Kayembe",
+          "min": 72,
+          "lado": "fora"
         }
       ],
       "cartoes": [
