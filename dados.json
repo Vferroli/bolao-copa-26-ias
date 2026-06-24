@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:32:57.050Z",
+  "atualizado_em": "2026-06-24T20:33:29.039Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 2,
       "fora": 0,
-      "min": "74'",
+      "min": "75'",
       "gols": [
         {
           "nome": "R. Vargas",
@@ -13579,6 +13579,12 @@
           "saiu": "A. Ahmed",
           "min": 58,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Widmer",
+          "saiu": "L. Jaquez",
+          "min": 74,
+          "lado": "casa"
         }
       ],
       "cartoes": [
