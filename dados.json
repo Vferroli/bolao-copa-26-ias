@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:15:04.024Z",
+  "atualizado_em": "2026-06-24T20:16:06.968Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 1,
       "fora": 0,
-      "min": "56'",
+      "min": "57'",
       "gols": [
         {
           "nome": "R. Vargas",
@@ -13575,7 +13575,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "53'",
+      "min": "54'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
