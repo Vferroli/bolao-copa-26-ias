@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:50:21.587Z",
+  "atualizado_em": "2026-06-24T00:50:53.467Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12128,7 +12128,7 @@
       "id": 70,
       "casa": 0,
       "fora": 1,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "gols": [
         {
           "nome": "A. Budimir",
@@ -12198,6 +12198,12 @@
           "cor": "amarelo",
           "min": 61,
           "lado": "casa"
+        },
+        {
+          "nome": "P. Sucic",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
         }
       ]
     }
