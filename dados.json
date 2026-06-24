@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:36:25.467Z",
+  "atualizado_em": "2026-06-24T03:37:27.899Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13007,9 +13007,16 @@
   "live": [
     {
       "id": 64,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
+      "gols": [
+        {
+          "nome": "D. Muñoz",
+          "min": 76,
+          "lado": "casa"
+        }
+      ],
       "subs": [
         {
           "entrou": "N. Sadiki",
