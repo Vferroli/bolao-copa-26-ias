@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:49:18.081Z",
+  "atualizado_em": "2026-06-24T00:49:49.824Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12128,7 +12128,7 @@
       "id": 70,
       "casa": 0,
       "fora": 1,
-      "min": "90'",
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "A. Budimir",
@@ -12182,6 +12182,12 @@
         {
           "entrou": "T. Rodríguez",
           "saiu": "É. Yoel Bárcenas",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "É. Davis",
+          "saiu": "C. Blackman",
           "min": 90,
           "lado": "casa"
         }
