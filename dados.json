@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T21:04:21.832Z",
+  "atualizado_em": "2026-06-24T21:30:17.367Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3150,6 +3150,284 @@
           "fora": 2,
           "avanca": null,
           "marcador": "Vinícius Júnior"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-1-1",
+          "fora": "4-3-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Angus Gunn",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Andy Robertson",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Jack Hendry",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Scott McKenna",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Nathan Patterson",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "John McGinn",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Lewis Ferguson",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Kenny McLean",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Ben Gannon-Doak",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Scott McTominay",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Lawrence Shankland",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Liam Kelly",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "Craig Gordon",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Aaron Hickey",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Grant Hanley",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Kieran Tierney",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "John Souttar",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Dominic Hyam",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Tony Ralston",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Tyler Fletcher",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ryan Christie",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Findlay Curtis",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Lyndon Dykes",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Che Adams",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Ross Stewart",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "George Hirst",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Alisson",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Douglas Santos",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Gabriel Magalhães",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Marquinhos",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Danilo",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Lucas Paquetá",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Casemiro",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Bruno Guimarães",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Vinícius Júnior",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Matheus Cunha",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Rayan",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Weverton",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Ederson",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Alex Sandro",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Bremer",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Léo Pereira",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Roger Ibañez",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Éderson",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Fabinho",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Danilo Santos",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Luiz Henrique",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Neymar",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Endrick",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Gabriel Martinelli",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Igor Thiago",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
