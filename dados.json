@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:57:21.205Z",
+  "atualizado_em": "2026-06-24T23:57:52.899Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14119,7 +14119,7 @@
       "id": 17,
       "casa": 0,
       "fora": 3,
-      "min": "90'+2'",
+      "min": "90'+3'",
       "gols": [
         {
           "nome": "V. Júnior",
@@ -14187,14 +14187,14 @@
           "lado": "casa"
         },
         {
-          "entrou": "C. Adams",
-          "saiu": "L. Shankland",
+          "entrou": "F. Curtis",
+          "saiu": "J. McGinn",
           "min": 90,
           "lado": "casa"
         },
         {
-          "entrou": "F. Curtis",
-          "saiu": "J. McGinn",
+          "entrou": "C. Adams",
+          "saiu": "L. Shankland",
           "min": 90,
           "lado": "casa"
         }
