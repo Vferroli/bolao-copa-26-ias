@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:47:52.855Z",
+  "atualizado_em": "2026-06-24T23:48:55.477Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14206,7 +14206,7 @@
       "id": 18,
       "casa": 3,
       "fora": 2,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "A. Hakimi",
@@ -14292,6 +14292,12 @@
         }
       ],
       "cartoes": [
+        {
+          "nome": "J. Placide",
+          "cor": "amarelo",
+          "min": 78,
+          "lado": "fora"
+        },
         {
           "nome": "D. Nazon",
           "cor": "amarelo",
