@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T04:02:58.235Z",
+  "atualizado_em": "2026-06-24T18:31:31.542Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1841,6 +1841,274 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Edin Džeko"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-2",
+          "fora": "4-3-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Nikola Vasilj",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Sead Kolašinac",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Stjepan Radeljić",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Nikola Katić",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Arjan Malić",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Kerim Alajbegović",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Ivan Bašić",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Ivan Šunjić",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Esmir Bajraktarević",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Edin Džeko",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Ermedin Demirović",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Martin Zlomislić",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Mladen Jurkas",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Nihad Mujakić",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Dennis Hadžikadunić",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Amar Dedić",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Amir Hadžiahmetović",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Armin Gigović",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Benjamin Tahirović",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Dženis Burnić",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Ermin Mahmić",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Amar Memić",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Jovo Lukić",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Samed Baždar",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Haris Tabaković",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Mahmud Abunada",
+              "pos": "G"
+            },
+            {
+              "num": 18,
+              "nome": "Sultan Al-Brake",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Issa Laye",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Boualem Khoukhi",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Pedro Miguel",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Karim Boudiaf",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Ahmed Fathi",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Jassem Gaber Abdulsallam",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Edmilson Junior",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Akram Afif",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Hassan Al Haydos",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Meshaal Barsham",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "Salah Zakaria",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Lucas Mendes",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Al-Hashmi Al-Hussain",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Ayoub Al Oui",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Almoez Ali",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Mohamed Naceur Almanai",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Abdelaziz Hatem",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Ahmed Al-Ganehi",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Tahsin Mohammed Jamshid",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Mohammed Muntari",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Ahmed Alaaeldin",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Yusuf Abdurisag",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
