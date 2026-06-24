@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:57:50.041Z",
+  "atualizado_em": "2026-06-24T04:02:58.235Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11245,9 +11245,12 @@
       "fora": "dr-congo",
       "kickoff": "2026-06-24T02:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "D. Muñoz"
+        ]
       },
       "palpites": {
         "claude": {
@@ -13004,89 +13007,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 64,
-      "casa": 1,
-      "fora": 0,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "D. Muñoz",
-          "min": 76,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. Sadiki",
-          "saiu": "N. Mukau",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Banza",
-          "saiu": "C. Bakambu",
-          "min": 57,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Córdoba",
-          "saiu": "L. Suárez",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Fernando Quintero",
-          "saiu": "J. Rodríguez",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Kayembe",
-          "saiu": "A. Masuaku",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Pickel",
-          "saiu": "E. Kayembe",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Ríos",
-          "saiu": "J. Arias",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Mbuku",
-          "saiu": "S. Moutoussamy",
-          "min": 82,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Lucumí",
-          "cor": "amarelo",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Pickel",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Lerma",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
