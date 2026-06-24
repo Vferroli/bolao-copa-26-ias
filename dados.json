@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:41:25.718Z",
+  "atualizado_em": "2026-06-24T20:42:28.603Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 2,
       "fora": 1,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "R. Vargas",
@@ -13608,6 +13608,12 @@
           "saiu": "R. Vargas",
           "min": 80,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Shaffelburg",
+          "saiu": "R. Laryea",
+          "min": 83,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -13629,7 +13635,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
