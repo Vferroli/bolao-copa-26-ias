@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:29:23.876Z",
+  "atualizado_em": "2026-06-24T23:29:55.601Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14158,7 +14158,7 @@
       "id": 18,
       "casa": 2,
       "fora": 2,
-      "min": "66'",
+      "min": "67'",
       "gols": [
         {
           "nome": "A. Hakimi",
@@ -14174,6 +14174,20 @@
           "nome": "I. Saibari",
           "min": 45,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "D. Nazon",
+          "saiu": "R. Providence",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. Deedson",
+          "saiu": "W. Isidor",
+          "min": 67,
+          "lado": "fora"
         }
       ]
     }
