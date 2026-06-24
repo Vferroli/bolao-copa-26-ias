@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:34:00.861Z",
+  "atualizado_em": "2026-06-24T20:34:32.580Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13667,6 +13667,12 @@
           "saiu": "E. Dzeko",
           "min": 64,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Ali",
+          "saiu": "K. Boudiaf",
+          "min": 72,
+          "lado": "fora"
         }
       ]
     }
