@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T22:49:53.058Z",
+  "atualizado_em": "2026-06-24T22:50:25.373Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14118,12 +14118,17 @@
     {
       "id": 17,
       "casa": 0,
-      "fora": 1,
+      "fora": 2,
       "min": "45'+4'",
       "gols": [
         {
           "nome": "V. Júnior",
           "min": 7,
+          "lado": "fora"
+        },
+        {
+          "nome": "V. Júnior",
+          "min": 45,
           "lado": "fora"
         }
       ]
@@ -14132,7 +14137,7 @@
       "id": 18,
       "casa": 2,
       "fora": 2,
-      "min": "45'+3'",
+      "min": "45'+4'",
       "gols": [
         {
           "nome": "A. Hakimi",
