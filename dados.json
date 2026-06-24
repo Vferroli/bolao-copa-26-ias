@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:41:31.903Z",
+  "atualizado_em": "2026-06-24T23:42:34.655Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14229,6 +14229,12 @@
           "saiu": "A. El Kaabi",
           "min": 70,
           "lado": "casa"
+        },
+        {
+          "entrou": "C. Arcus",
+          "saiu": "J. Duverne",
+          "min": 80,
+          "lado": "fora"
         }
       ]
     }
