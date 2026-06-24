@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:54:32.725Z",
+  "atualizado_em": "2026-06-24T00:59:41.338Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11780,9 +11780,12 @@
       "fora": "croatia",
       "kickoff": "2026-06-23T23:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "A. Budimir"
+        ]
       },
       "palpites": {
         "claude": {
@@ -12123,89 +12126,5 @@
       "palpites": {}
     }
   ],
-  "live": [
-    {
-      "id": 70,
-      "casa": 0,
-      "fora": 1,
-      "min": "90'+5'",
-      "gols": [
-        {
-          "nome": "A. Budimir",
-          "min": 54,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "A. Budimir",
-          "saiu": "P. Musa",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Kramaric",
-          "saiu": "J. Gvardiol",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Sucic",
-          "saiu": "M. Pasalic",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Sucic",
-          "saiu": "M. Kovacic",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Waterman",
-          "saiu": "J. Ramos",
-          "min": 77,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Pasalic",
-          "saiu": "L. Modric",
-          "min": 81,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Londoño",
-          "saiu": "J. Fajardo",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "É. Davis",
-          "saiu": "C. Blackman",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Rodríguez",
-          "saiu": "É. Yoel Bárcenas",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "É. Yoel Bárcenas",
-          "cor": "amarelo",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "nome": "P. Sucic",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
