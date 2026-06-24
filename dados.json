@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:17:42.555Z",
+  "atualizado_em": "2026-06-24T20:18:14.499Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 2,
       "fora": 0,
-      "min": "58'",
+      "min": "59'",
       "gols": [
         {
           "nome": "R. Vargas",
@@ -13569,14 +13569,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "L. Millar",
-          "saiu": "A. Ahmed",
+          "entrou": "T. Oluwaseyi",
+          "saiu": "C. Larin",
           "min": 58,
           "lado": "fora"
         },
         {
-          "entrou": "T. Oluwaseyi",
-          "saiu": "C. Larin",
+          "entrou": "L. Millar",
+          "saiu": "A. Ahmed",
           "min": 58,
           "lado": "fora"
         }
@@ -13600,7 +13600,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "55'",
+      "min": "56'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
@@ -13630,6 +13630,12 @@
           "entrou": "A. Hatem",
           "saiu": "J. Gaber",
           "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Al-Ganehi",
+          "saiu": "H. Al-Haydos",
+          "min": 56,
           "lado": "fora"
         }
       ]
