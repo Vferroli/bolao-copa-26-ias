@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:48:46.331Z",
+  "atualizado_em": "2026-06-24T00:49:18.081Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12177,6 +12177,12 @@
           "entrou": "A. Londoño",
           "saiu": "J. Fajardo",
           "min": 83,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Rodríguez",
+          "saiu": "É. Yoel Bárcenas",
+          "min": 90,
           "lado": "casa"
         }
       ],
