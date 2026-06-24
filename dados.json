@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:04:04.497Z",
+  "atualizado_em": "2026-06-24T00:04:36.504Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12128,11 +12128,17 @@
       "id": 70,
       "casa": 0,
       "fora": 0,
-      "min": "Intervalo",
+      "min": "46'",
       "subs": [
         {
           "entrou": "A. Budimir",
           "saiu": "P. Musa",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Kramaric",
+          "saiu": "J. Gvardiol",
           "min": 45,
           "lado": "fora"
         }
