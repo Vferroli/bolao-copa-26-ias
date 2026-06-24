@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:49:21.157Z",
+  "atualizado_em": "2026-06-24T20:49:52.948Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13653,7 +13653,7 @@
       "id": 12,
       "casa": 3,
       "fora": 1,
-      "min": "87'",
+      "min": "88'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
