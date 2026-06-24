@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:25:34.990Z",
+  "atualizado_em": "2026-06-24T20:26:07.194Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13637,6 +13637,12 @@
           "saiu": "H. Al-Haydos",
           "min": 56,
           "lado": "fora"
+        },
+        {
+          "entrou": "D. Hadzikadunic",
+          "saiu": "N. Katic",
+          "min": 63,
+          "lado": "casa"
         }
       ]
     }
