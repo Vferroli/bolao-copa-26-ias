@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:52:32.548Z",
+  "atualizado_em": "2026-06-24T20:53:04.295Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 2,
       "fora": 1,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "R. Vargas",
