@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:58:35.854Z",
+  "atualizado_em": "2026-06-24T21:01:13.425Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1774,9 +1774,14 @@
       "fora": "canada",
       "kickoff": "2026-06-24T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "R. Vargas",
+          "J. Manzambi",
+          "P. David"
+        ]
       },
       "palpites": {
         "claude": {
@@ -13640,111 +13645,6 @@
           "cor": "amarelo",
           "min": 82,
           "lado": "casa"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "R. Vargas",
-          "min": 46,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Manzambi",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "nome": "P. David",
-          "min": 76,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "S. Eustáquio",
-          "saiu": "M. Choinière",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Oluwaseyi",
-          "saiu": "C. Larin",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Millar",
-          "saiu": "A. Ahmed",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Aebischer",
-          "saiu": "D. Sow",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Widmer",
-          "saiu": "L. Jaquez",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. David",
-          "saiu": "T. Buchanan",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Ndoye",
-          "saiu": "R. Vargas",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Shaffelburg",
-          "saiu": "R. Laryea",
-          "min": 83,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Fassnacht",
-          "saiu": "J. Manzambi",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Itten",
-          "saiu": "B. Embolo",
-          "min": 85,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "C. Larin",
-          "cor": "amarelo",
-          "min": 32,
-          "lado": "fora"
-        },
-        {
-          "nome": "G. Xhaka",
-          "cor": "amarelo",
-          "min": 32,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Millar",
-          "cor": "amarelo",
-          "min": 87,
-          "lado": "fora"
         }
       ]
     }
