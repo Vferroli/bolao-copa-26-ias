@@ -1017,7 +1017,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Raúl Jiménez"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Edinson Cavani"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Santiago Giménez"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Edinson Cavani"
+        }
+      }
     },
     {
       "id": 6,
@@ -1031,7 +1056,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Son Heung-min"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Son Heung-min"
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Son Heung-min"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Son Heung-min"
+        }
+      }
     },
     {
       "id": 7,
@@ -1728,7 +1778,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Jonathan David"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Jonathan David"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Breel Embolo"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Jonathan David"
+        }
+      }
     },
     {
       "id": 12,
@@ -1742,7 +1817,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Ermedin Demirović"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Edin Džeko"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Ermedin Demirović"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Edin Džeko"
+        }
+      }
     },
     {
       "id": 13,
@@ -2480,7 +2580,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Vinícius Júnior"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Vinícius Júnior"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Vinícius Júnior"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Vinícius Júnior"
+        }
+      }
     },
     {
       "id": 18,
@@ -2494,7 +2619,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Ismael Saibari"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Youssef En-Nesyri"
+        },
+        "gemini": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Youssef En-Nesyri"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Youssef En-Nesyri"
+        }
+      }
     },
     {
       "id": 19,
@@ -3213,7 +3363,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Christian Pulisic"
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Christian Pulisic"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Christian Pulisic"
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Christian Pulisic"
+        }
+      }
     },
     {
       "id": 24,
@@ -3227,7 +3402,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Antonio Sanabria"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Lionel Messi"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Julio Enciso"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Lionel Messi"
+        }
+      }
     },
     {
       "id": 25,
@@ -3973,7 +4173,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Amad Diallo"
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Sébastien Haller"
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Sébastien Haller"
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Sébastien Haller"
+        }
+      }
     },
     {
       "id": 30,
@@ -3987,7 +4212,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Kai Havertz"
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Jamal Musiala"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Florian Wirtz"
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Jamal Musiala"
+        }
+      }
     },
     {
       "id": 31,
@@ -4728,7 +4978,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Viktor Gyökeres"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Takefusa Kubo"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Viktor Gyökeres"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Takefusa Kubo"
+        }
+      }
     },
     {
       "id": 36,
@@ -4742,7 +5017,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Memphis Depay"
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Cody Gakpo"
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Cody Gakpo"
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Cody Gakpo"
+        }
+      }
     },
     {
       "id": 37,
@@ -6040,7 +6340,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Mohamed Salah"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Mohamed Salah"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Mohamed Salah"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Mohamed Salah"
+        }
+      }
     },
     {
       "id": 42,
@@ -6054,7 +6379,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Romelu Lukaku"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Romelu Lukaku"
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 4,
+          "avanca": null,
+          "marcador": "Romelu Lukaku"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Romelu Lukaku"
+        }
+      }
     },
     {
       "id": 43,
@@ -7069,7 +7419,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Dailon Livramento"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Ryan Mendes"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Salem Al-Dawsari"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Ryan Mendes"
+        }
+      }
     },
     {
       "id": 48,
@@ -7083,7 +7458,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Mikel Oyarzabal"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Federico Valverde"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Lamine Yamal"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Federico Valverde"
+        }
+      }
     },
     {
       "id": 49,
@@ -8409,7 +8809,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Kylian Mbappé"
+        }
+      }
     },
     {
       "id": 54,
@@ -8423,7 +8848,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Nicolas Jackson"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Sadio Mané"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Sadio Mané"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Sadio Mané"
+        }
+      }
     },
     {
       "id": 55,
@@ -9739,7 +10189,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Amine Gouiri"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Riyad Mahrez"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Marcel Sabitzer"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Riyad Mahrez"
+        }
+      }
     },
     {
       "id": 60,
@@ -9753,7 +10228,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Julián Álvarez"
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Lionel Messi"
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 4,
+          "avanca": null,
+          "marcador": "Lionel Messi"
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Lionel Messi"
+        }
+      }
     },
     {
       "id": 61,
@@ -11066,7 +11566,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Cristiano Ronaldo"
+        }
+      }
     },
     {
       "id": 66,
@@ -11080,7 +11605,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Yoane Wissa"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Cédric Bakambu"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Yoane Wissa"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": null,
+          "marcador": "Cédric Bakambu"
+        }
+      }
     },
     {
       "id": 67,
@@ -12387,7 +12937,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Harry Kane"
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Harry Kane"
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 3,
+          "avanca": null,
+          "marcador": "Harry Kane"
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": null,
+          "marcador": "Harry Kane"
+        }
+      }
     },
     {
       "id": 72,
@@ -12401,7 +12976,32 @@
         "fora": null,
         "avancou": null
       },
-      "palpites": {}
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Petar Musa"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Luka Modrić"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Andrej Kramarić"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": null,
+          "marcador": "Luka Modrić"
+        }
+      }
     }
   ],
   "live": [
