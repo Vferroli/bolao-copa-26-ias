@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:34:32.580Z",
+  "atualizado_em": "2026-06-24T20:35:05.461Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 2,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "R. Vargas",
@@ -13559,6 +13559,11 @@
           "nome": "J. Manzambi",
           "min": 57,
           "lado": "casa"
+        },
+        {
+          "nome": "P. David",
+          "min": 76,
+          "lado": "fora"
         }
       ],
       "subs": [
@@ -13618,7 +13623,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "71'",
+      "min": "72'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
