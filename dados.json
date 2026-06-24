@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:12:32.975Z",
+  "atualizado_em": "2026-06-24T00:13:36.990Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12127,8 +12127,15 @@
     {
       "id": 70,
       "casa": 0,
-      "fora": 0,
-      "min": "54'",
+      "fora": 1,
+      "min": "55'",
+      "gols": [
+        {
+          "nome": "A. Budimir",
+          "min": 54,
+          "lado": "fora"
+        }
+      ],
       "subs": [
         {
           "entrou": "A. Budimir",
