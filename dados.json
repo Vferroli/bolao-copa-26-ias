@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:56:14.923Z",
+  "atualizado_em": "2026-06-24T20:56:46.542Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13545,6 +13545,105 @@
   ],
   "live": [
     {
+      "id": 12,
+      "casa": 3,
+      "fora": 1,
+      "min": "90'+4'",
+      "gols": [
+        {
+          "nome": "K. Alajbegovic",
+          "min": 29,
+          "lado": "casa"
+        },
+        {
+          "nome": "H. Al-Haydos",
+          "min": 42,
+          "lado": "fora"
+        },
+        {
+          "nome": "E. Mahmic",
+          "min": 80,
+          "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "B. Tahirovic",
+          "saiu": "I. Sunjic",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Memic",
+          "saiu": "A. Malic",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Hatem",
+          "saiu": "J. Gaber",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Al-Ganehi",
+          "saiu": "H. Al-Haydos",
+          "min": 56,
+          "lado": "fora"
+        },
+        {
+          "entrou": "D. Hadzikadunic",
+          "saiu": "N. Katic",
+          "min": 63,
+          "lado": "casa"
+        },
+        {
+          "entrou": "E. Mahmic",
+          "saiu": "E. Dzeko",
+          "min": 64,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Ali",
+          "saiu": "K. Boudiaf",
+          "min": 72,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Alaaeldin",
+          "saiu": "E. Junior",
+          "min": 79,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Manai",
+          "saiu": "A. Fathy",
+          "min": 79,
+          "lado": "fora"
+        },
+        {
+          "entrou": "D. Burnic",
+          "saiu": "K. Alajbegovic",
+          "min": 82,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "A. Fathy",
+          "cor": "amarelo",
+          "min": 78,
+          "lado": "fora"
+        },
+        {
+          "nome": "E. Mahmic",
+          "cor": "amarelo",
+          "min": 82,
+          "lado": "casa"
+        }
+      ]
+    },
+    {
       "id": 11,
       "casa": 2,
       "fora": 1,
@@ -13646,105 +13745,6 @@
           "cor": "amarelo",
           "min": 87,
           "lado": "fora"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "casa": 3,
-      "fora": 1,
-      "min": "90'+3'",
-      "gols": [
-        {
-          "nome": "K. Alajbegovic",
-          "min": 29,
-          "lado": "casa"
-        },
-        {
-          "nome": "H. Al-Haydos",
-          "min": 42,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Mahmic",
-          "min": 80,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "B. Tahirovic",
-          "saiu": "I. Sunjic",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Memic",
-          "saiu": "A. Malic",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Hatem",
-          "saiu": "J. Gaber",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Al-Ganehi",
-          "saiu": "H. Al-Haydos",
-          "min": 56,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Hadzikadunic",
-          "saiu": "N. Katic",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Mahmic",
-          "saiu": "E. Dzeko",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Ali",
-          "saiu": "K. Boudiaf",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Alaaeldin",
-          "saiu": "E. Junior",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Manai",
-          "saiu": "A. Fathy",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Burnic",
-          "saiu": "K. Alajbegovic",
-          "min": 82,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Fathy",
-          "cor": "amarelo",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Mahmic",
-          "cor": "amarelo",
-          "min": 82,
-          "lado": "casa"
         }
       ]
     }
