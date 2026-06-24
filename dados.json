@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:37:59.957Z",
+  "atualizado_em": "2026-06-24T03:39:02.641Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13009,7 +13009,7 @@
       "id": 64,
       "casa": 1,
       "fora": 0,
-      "min": "77'",
+      "min": "78'",
       "gols": [
         {
           "nome": "D. Muñoz",
@@ -13053,6 +13053,12 @@
           "saiu": "E. Kayembe",
           "min": 72,
           "lado": "fora"
+        },
+        {
+          "entrou": "R. Ríos",
+          "saiu": "J. Arias",
+          "min": 78,
+          "lado": "casa"
         }
       ],
       "cartoes": [
