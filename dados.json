@@ -1028,7 +1028,7 @@
           "casa": 1,
           "fora": 1,
           "avanca": null,
-          "marcador": "Edinson Cavani"
+          "marcador": "Patrik Schick"
         },
         "gemini": {
           "casa": 1,
@@ -1787,7 +1787,7 @@
         },
         "gpt": {
           "casa": 1,
-          "fora": 1,
+          "fora": 2,
           "avanca": null,
           "marcador": "Jonathan David"
         },
@@ -1825,7 +1825,7 @@
           "marcador": "Ermedin Demirović"
         },
         "gpt": {
-          "casa": 2,
+          "casa": 1,
           "fora": 1,
           "avanca": null,
           "marcador": "Edin Džeko"
@@ -2589,7 +2589,7 @@
         },
         "gpt": {
           "casa": 1,
-          "fora": 2,
+          "fora": 1,
           "avanca": null,
           "marcador": "Vinícius Júnior"
         },
@@ -2627,7 +2627,7 @@
           "marcador": "Ismael Saibari"
         },
         "gpt": {
-          "casa": 2,
+          "casa": 3,
           "fora": 0,
           "avanca": null,
           "marcador": "Youssef En-Nesyri"
@@ -3371,7 +3371,7 @@
           "marcador": "Christian Pulisic"
         },
         "gpt": {
-          "casa": 0,
+          "casa": 1,
           "fora": 2,
           "avanca": null,
           "marcador": "Christian Pulisic"
@@ -3410,10 +3410,10 @@
           "marcador": "Antonio Sanabria"
         },
         "gpt": {
-          "casa": 1,
+          "casa": 2,
           "fora": 1,
           "avanca": null,
-          "marcador": "Lionel Messi"
+          "marcador": "Miguel Almirón"
         },
         "gemini": {
           "casa": 1,
@@ -4220,10 +4220,10 @@
           "marcador": "Kai Havertz"
         },
         "gpt": {
-          "casa": 0,
+          "casa": 1,
           "fora": 2,
           "avanca": null,
-          "marcador": "Jamal Musiala"
+          "marcador": "Florian Wirtz"
         },
         "gemini": {
           "casa": 1,
@@ -4989,7 +4989,7 @@
           "casa": 1,
           "fora": 1,
           "avanca": null,
-          "marcador": "Takefusa Kubo"
+          "marcador": "Alexander Isak"
         },
         "gemini": {
           "casa": 2,
@@ -7428,9 +7428,9 @@
         },
         "gpt": {
           "casa": 1,
-          "fora": 0,
+          "fora": 1,
           "avanca": null,
-          "marcador": "Ryan Mendes"
+          "marcador": "Salem Al-Dawsari"
         },
         "gemini": {
           "casa": 1,
@@ -7467,9 +7467,9 @@
         },
         "gpt": {
           "casa": 1,
-          "fora": 1,
+          "fora": 2,
           "avanca": null,
-          "marcador": "Federico Valverde"
+          "marcador": "Lamine Yamal"
         },
         "gemini": {
           "casa": 1,
@@ -8818,9 +8818,9 @@
         },
         "gpt": {
           "casa": 1,
-          "fora": 2,
+          "fora": 1,
           "avanca": null,
-          "marcador": "Kylian Mbappé"
+          "marcador": "Erling Haaland"
         },
         "gemini": {
           "casa": 1,
@@ -8857,7 +8857,7 @@
         },
         "gpt": {
           "casa": 2,
-          "fora": 1,
+          "fora": 0,
           "avanca": null,
           "marcador": "Sadio Mané"
         },
@@ -10197,10 +10197,10 @@
           "marcador": "Amine Gouiri"
         },
         "gpt": {
-          "casa": 2,
+          "casa": 1,
           "fora": 1,
           "avanca": null,
-          "marcador": "Riyad Mahrez"
+          "marcador": "Marcel Sabitzer"
         },
         "gemini": {
           "casa": 1,
@@ -10239,7 +10239,7 @@
           "casa": 0,
           "fora": 3,
           "avanca": null,
-          "marcador": "Lionel Messi"
+          "marcador": "Julián Álvarez"
         },
         "gemini": {
           "casa": 0,
@@ -11580,7 +11580,7 @@
           "casa": 1,
           "fora": 1,
           "avanca": null,
-          "marcador": "Cristiano Ronaldo"
+          "marcador": "Luis Díaz"
         },
         "gemini": {
           "casa": 1,
@@ -11616,8 +11616,8 @@
           "marcador": "Yoane Wissa"
         },
         "gpt": {
-          "casa": 1,
-          "fora": 0,
+          "casa": 2,
+          "fora": 1,
           "avanca": null,
           "marcador": "Cédric Bakambu"
         },
@@ -12990,7 +12990,7 @@
           "casa": 2,
           "fora": 1,
           "avanca": null,
-          "marcador": "Luka Modrić"
+          "marcador": "Andrej Kramarić"
         },
         "gemini": {
           "casa": 2,
