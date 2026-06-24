@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:45:45.959Z",
+  "atualizado_em": "2026-06-24T23:46:17.696Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14176,7 +14176,7 @@
       "id": 18,
       "casa": 3,
       "fora": 2,
-      "min": "83'",
+      "min": "84'",
       "gols": [
         {
           "nome": "A. Hakimi",
@@ -14253,6 +14253,12 @@
           "saiu": "N. El Aynaoui",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "entrou": "F. Pierrot",
+          "saiu": "L. Joseph",
+          "min": 83,
+          "lado": "fora"
         }
       ],
       "cartoes": [
