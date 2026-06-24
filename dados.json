@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:17:25.571Z",
+  "atualizado_em": "2026-06-24T03:18:08.395Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13016,6 +13016,14 @@
           "saiu": "N. Mukau",
           "min": 45,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "J. Lucumí",
+          "cor": "amarelo",
+          "min": 56,
+          "lado": "casa"
         }
       ]
     }
