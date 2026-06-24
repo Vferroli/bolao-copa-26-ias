@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:33:05.294Z",
+  "atualizado_em": "2026-06-24T23:33:37.093Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14211,6 +14211,12 @@
           "entrou": "G. Yassine",
           "saiu": "A. El Kaabi",
           "min": 70,
+          "lado": "casa"
+        },
+        {
+          "entrou": "S. Rahimi",
+          "saiu": "I. Saibari",
+          "min": 71,
           "lado": "casa"
         }
       ]
