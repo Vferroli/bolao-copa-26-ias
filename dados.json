@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T19:42:37.114Z",
+  "atualizado_em": "2026-06-24T19:43:09.475Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13567,13 +13567,18 @@
     {
       "id": 12,
       "casa": 2,
-      "fora": 0,
+      "fora": 1,
       "min": "42'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
           "min": 29,
           "lado": "casa"
+        },
+        {
+          "nome": "H. Al-Haydos",
+          "min": 42,
+          "lado": "fora"
         }
       ]
     }
