@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:52:05.198Z",
+  "atualizado_em": "2026-06-24T23:52:36.984Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14206,7 +14206,7 @@
       "id": 18,
       "casa": 4,
       "fora": 2,
-      "min": "89'",
+      "min": "90'",
       "gols": [
         {
           "nome": "A. Hakimi",
@@ -14226,6 +14226,11 @@
         {
           "nome": "S. Rahimi",
           "min": 78,
+          "lado": "casa"
+        },
+        {
+          "nome": "G. Yassine",
+          "min": 89,
           "lado": "casa"
         }
       ],
