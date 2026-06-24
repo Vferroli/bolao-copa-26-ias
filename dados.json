@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-23",
-  "atualizado_em": "2026-06-24T00:59:41.338Z",
+  "atualizado_em": "2026-06-24T01:30:29.511Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10773,6 +10773,284 @@
           "fora": 1,
           "avanca": null,
           "marcador": "James Rodríguez"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "5-3-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 12,
+              "nome": "Camilo Vargas",
+              "pos": "G"
+            },
+            {
+              "num": 17,
+              "nome": "Johan Mojica",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Jhon Lucumí",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Davinson Sánchez",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Daniel Muñoz",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Gustavo Puerta",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Jefferson Lerma",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Luis Díaz",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "James Rodríguez",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Jhon Arias",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Luis Javier Suárez",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 24,
+              "nome": "Álvaro Montero",
+              "pos": "G"
+            },
+            {
+              "num": 1,
+              "nome": "David Ospina",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Yerry Mina",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Willer Ditta",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Deiver Machado",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Santiago Arias",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Jaminton Campaz",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Richard Ríos",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Jorge Carrascal",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Andrés Gómez",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Juan Portilla",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Juan Fernando Quintero",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Kevin Castaño",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Cucho Hernández",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Jhon Córdoba",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Lionel Mpasi Nzau",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Arthur Masuaku",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Steve Kapuadi",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Axel Tuanzebe",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Chancel Mbemba",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Aaron Wan-Bissaka",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Edo Kayembe",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Samuel Moutoussamy",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Ngal'ayel Mukau",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Yoane Wissa",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Cédric Bakambu",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 21,
+              "nome": "Matthieu Epolo",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Timothy Fayulu",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Gedeon Kalulu",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Joris Kayembe",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Dylan Batubinsika",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Aaron Tshibola",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Gaël Kakuta",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Charles Pickel",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Brian Cipenga",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Noah Sadiki",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Nathanaël Mbuku",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Simon Banza",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Meschak Elia",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Fiston Mayele",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
