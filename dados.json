@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T22:35:41.210Z",
+  "atualizado_em": "2026-06-24T22:36:13.526Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14119,7 +14119,7 @@
       "id": 17,
       "casa": 0,
       "fora": 1,
-      "min": "34'",
+      "min": "35'",
       "gols": [
         {
           "nome": "V. Júnior",
