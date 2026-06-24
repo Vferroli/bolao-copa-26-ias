@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T03:54:42.059Z",
+  "atualizado_em": "2026-06-24T03:55:44.408Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13009,7 +13009,7 @@
       "id": 64,
       "casa": 1,
       "fora": 0,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "D. Muñoz",
@@ -13072,6 +13072,18 @@
           "nome": "J. Lucumí",
           "cor": "amarelo",
           "min": 56,
+          "lado": "casa"
+        },
+        {
+          "nome": "C. Pickel",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "nome": "J. Lerma",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "casa"
         }
       ]
