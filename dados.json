@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:45:40.673Z",
+  "atualizado_em": "2026-06-24T20:46:12.356Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13616,14 +13616,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "C. Itten",
-          "saiu": "B. Embolo",
+          "entrou": "C. Fassnacht",
+          "saiu": "J. Manzambi",
           "min": 85,
           "lado": "casa"
         },
         {
-          "entrou": "C. Fassnacht",
-          "saiu": "J. Manzambi",
+          "entrou": "C. Itten",
+          "saiu": "B. Embolo",
           "min": 85,
           "lado": "casa"
         }
@@ -13647,7 +13647,7 @@
       "id": 12,
       "casa": 3,
       "fora": 1,
-      "min": "83'",
+      "min": "84'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
