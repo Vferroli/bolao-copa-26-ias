@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:38:47.684Z",
+  "atualizado_em": "2026-06-24T20:39:19.389Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13602,6 +13602,12 @@
           "saiu": "T. Buchanan",
           "min": 75,
           "lado": "fora"
+        },
+        {
+          "entrou": "D. Ndoye",
+          "saiu": "R. Vargas",
+          "min": 80,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -13623,7 +13629,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
