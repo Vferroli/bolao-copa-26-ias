@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:17:10.930Z",
+  "atualizado_em": "2026-06-24T20:17:42.555Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13559,6 +13559,26 @@
           "nome": "J. Manzambi",
           "min": 57,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "S. Eustáquio",
+          "saiu": "M. Choinière",
+          "min": 58,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. Millar",
+          "saiu": "A. Ahmed",
+          "min": 58,
+          "lado": "fora"
+        },
+        {
+          "entrou": "T. Oluwaseyi",
+          "saiu": "C. Larin",
+          "min": 58,
+          "lado": "fora"
         }
       ],
       "cartoes": [
