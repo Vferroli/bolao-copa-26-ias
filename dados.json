@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T19:49:37.849Z",
+  "atualizado_em": "2026-06-24T19:50:10.457Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 0,
       "fora": 0,
-      "min": "45'+4'",
+      "min": "Intervalo",
       "cartoes": [
         {
           "nome": "C. Larin",
@@ -13568,7 +13568,7 @@
       "id": 12,
       "casa": 2,
       "fora": 1,
-      "min": "45'+4'",
+      "min": "45'+5'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
