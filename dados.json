@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T23:44:10.113Z",
+  "atualizado_em": "2026-06-24T23:44:42.099Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14119,7 +14119,7 @@
       "id": 17,
       "casa": 0,
       "fora": 3,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "V. Júnior",
@@ -14240,6 +14240,14 @@
           "entrou": "D. Simon",
           "saiu": "D. Jean Jacques",
           "min": 80,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "D. Nazon",
+          "cor": "amarelo",
+          "min": 79,
           "lado": "fora"
         }
       ]
