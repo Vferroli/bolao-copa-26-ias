@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-24T20:44:37.108Z",
+  "atualizado_em": "2026-06-24T20:45:08.996Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -13548,7 +13548,7 @@
       "id": 11,
       "casa": 2,
       "fora": 1,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "R. Vargas",
@@ -13616,14 +13616,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "C. Fassnacht",
-          "saiu": "J. Manzambi",
+          "entrou": "C. Itten",
+          "saiu": "B. Embolo",
           "min": 85,
           "lado": "casa"
         },
         {
-          "entrou": "C. Itten",
-          "saiu": "B. Embolo",
+          "entrou": "C. Fassnacht",
+          "saiu": "J. Manzambi",
           "min": 85,
           "lado": "casa"
         }
@@ -13647,7 +13647,7 @@
       "id": 12,
       "casa": 3,
       "fora": 1,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "K. Alajbegovic",
