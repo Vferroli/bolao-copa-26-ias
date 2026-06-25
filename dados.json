@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T23:31:12.035Z",
+  "atualizado_em": "2026-06-25T23:31:43.890Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,15 @@
       "id": 35,
       "casa": 0,
       "fora": 0,
-      "min": "31'"
+      "min": "32'",
+      "cartoes": [
+        {
+          "nome": "I. Hien",
+          "cor": "amarelo",
+          "min": 32,
+          "lado": "fora"
+        }
+      ]
     },
     {
       "id": 36,
