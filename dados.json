@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:23:38.741Z",
+  "atualizado_em": "2026-06-25T02:24:10.376Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14712,6 +14712,14 @@
           "entrou": "O. Vargas",
           "saiu": "L. Romo",
           "min": 63,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "E. Álvarez",
+          "cor": "amarelo",
+          "min": 64,
           "lado": "fora"
         }
       ]
