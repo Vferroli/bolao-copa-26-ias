@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:50:35.525Z",
+  "atualizado_em": "2026-06-25T21:51:08.090Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15334,7 +15334,7 @@
       "id": 30,
       "casa": 2,
       "fora": 1,
-      "min": "89'",
+      "min": "90'",
       "gols": [
         {
           "nome": "L. Sané",
