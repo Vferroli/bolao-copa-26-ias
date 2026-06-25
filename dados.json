@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:51:08.090Z",
+  "atualizado_em": "2026-06-25T21:51:40.805Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15246,7 +15246,7 @@
       "id": 29,
       "casa": 0,
       "fora": 2,
-      "min": "89'",
+      "min": "90'",
       "gols": [
         {
           "nome": "N. Pépé",
@@ -15307,6 +15307,12 @@
           "saiu": "F. Kessié",
           "min": 77,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Sambo",
+          "saiu": "J. Brenet",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -15334,7 +15340,7 @@
       "id": 30,
       "casa": 2,
       "fora": 1,
-      "min": "90'",
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "L. Sané",
