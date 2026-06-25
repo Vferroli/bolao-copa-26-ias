@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:27:27.956Z",
+  "atualizado_em": "2026-06-25T21:28:31.623Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15246,7 +15246,7 @@
       "id": 29,
       "casa": 0,
       "fora": 2,
-      "min": "66'",
+      "min": "67'",
       "gols": [
         {
           "nome": "N. Pépé",
@@ -15271,6 +15271,18 @@
           "saiu": "L. Comenencia",
           "min": 61,
           "lado": "casa"
+        },
+        {
+          "entrou": "E. Wahi",
+          "saiu": "N. Pépé",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "O. Diakité",
+          "saiu": "A. Bonny",
+          "min": 67,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -15286,7 +15298,7 @@
       "id": 30,
       "casa": 1,
       "fora": 1,
-      "min": "67'",
+      "min": "68'",
       "gols": [
         {
           "nome": "L. Sané",
