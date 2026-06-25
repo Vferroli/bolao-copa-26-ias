@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:35:45.280Z",
+  "atualizado_em": "2026-06-25T02:36:16.900Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14790,6 +14790,12 @@
           "saiu": "O. Hyeon-Gyu",
           "min": 74,
           "lado": "fora"
+        },
+        {
+          "entrou": "I. Rayners",
+          "saiu": "T. Maseko",
+          "min": 75,
+          "lado": "casa"
         }
       ],
       "cartoes": [
