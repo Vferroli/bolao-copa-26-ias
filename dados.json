@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:46:17.407Z",
+  "atualizado_em": "2026-06-25T21:46:49.803Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15246,7 +15246,7 @@
       "id": 29,
       "casa": 0,
       "fora": 2,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "N. Pépé",
@@ -15325,7 +15325,7 @@
         {
           "nome": "G. Kastaneer",
           "cor": "amarelo",
-          "min": 84,
+          "min": 83,
           "lado": "casa"
         }
       ]
@@ -15334,7 +15334,7 @@
       "id": 30,
       "casa": 2,
       "fora": 1,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "L. Sané",
