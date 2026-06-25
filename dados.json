@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T00:01:32.688Z",
+  "atualizado_em": "2026-06-25T00:06:11.853Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3439,9 +3439,16 @@
       "fora": "haiti",
       "kickoff": "2026-06-24T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 4,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "A. Hakimi",
+          "W. Isidor",
+          "I. Saibari",
+          "S. Rahimi",
+          "G. Yassine"
+        ]
       },
       "palpites": {
         "claude": {
@@ -14217,121 +14224,6 @@
           "cor": "amarelo",
           "min": 89,
           "lado": "casa"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "casa": 4,
-      "fora": 2,
-      "min": "90'+9'",
-      "gols": [
-        {
-          "nome": "A. Hakimi",
-          "min": 39,
-          "lado": "casa"
-        },
-        {
-          "nome": "W. Isidor",
-          "min": 43,
-          "lado": "fora"
-        },
-        {
-          "nome": "I. Saibari",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Rahimi",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "nome": "G. Yassine",
-          "min": 89,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "D. Nazon",
-          "saiu": "R. Providence",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Deedson",
-          "saiu": "W. Isidor",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Rahimi",
-          "saiu": "I. Saibari",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Ounahi",
-          "saiu": "B. Díaz",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Yassine",
-          "saiu": "A. El Kaabi",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Arcus",
-          "saiu": "J. Duverne",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Simon",
-          "saiu": "D. Jean Jacques",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Mazraoui",
-          "saiu": "A. Salah-Eddine",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. El Mourabet",
-          "saiu": "N. El Aynaoui",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Pierrot",
-          "saiu": "L. Joseph",
-          "min": 83,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Placide",
-          "cor": "amarelo",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "nome": "D. Nazon",
-          "cor": "amarelo",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Casimir",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
         }
       ]
     }
