@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T19:45:47.544Z",
+  "atualizado_em": "2026-06-25T20:01:14.243Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5875,6 +5875,289 @@
           "fora": 3,
           "avanca": null,
           "marcador": "Sébastien Haller"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "5-3-2",
+          "fora": "4-4-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "E. Room",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Deveron Fonville",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "S. Floranus",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "A. Obispo",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "J. Gaari",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "J. Brenet",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "L. Comenencia",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "L. Bacuna",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "T. Chong",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "J. Bacuna",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "J. Locadia",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 23,
+              "nome": "R. Bazoer",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "B. Kuwas",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "G. Kastaneer",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "K. Gorré",
+              "pos": "F"
+            },
+            {
+              "num": 4,
+              "nome": "R. van Eijma",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "G. Roemeratoe",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "T. Doornbusch",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "S. Sambo",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "J. Antonisse",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "K. Felida",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "S. Hansen",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "A. Martha",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "J. Margaritha",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "T. Bodak",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "T. Noslin",
+              "pos": "D"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Y. Fofana",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "C. Operi",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "O. Diomande",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "O. Kossounou",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "G. Doué",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "Y. Diomande",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "F. Kessié",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "I. Sangaré",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "A. Diallo",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "A. Bonny",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "N. Pépé",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 26,
+              "nome": "C. Inao OulaÃ¯",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "B. Touré",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "O. Diakité",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "M. Koné",
+              "pos": "G"
+            },
+            {
+              "num": 10,
+              "nome": "S. Adingra",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "E. Wahi",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "E. Agbadou",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "P. Guiagon",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "E. Guessand",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "E. Ndicka",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "G. Konan",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "A. Lafont",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "J. Seri",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "S. Fofana",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "W. Singo",
+              "pos": "D"
+            }
+          ]
         }
       }
     },
@@ -14958,5 +15241,12 @@
       }
     }
   ],
-  "live": []
+  "live": [
+    {
+      "id": 30,
+      "casa": 0,
+      "fora": 0,
+      "min": "1'"
+    }
+  ]
 }
