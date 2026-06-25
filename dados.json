@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:51:03.866Z",
+  "atualizado_em": "2026-06-25T02:51:48.667Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14770,7 +14770,7 @@
       "id": 6,
       "casa": 1,
       "fora": 0,
-      "min": "90'",
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "T. Maseko",
