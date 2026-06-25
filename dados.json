@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:17:18.419Z",
+  "atualizado_em": "2026-06-25T02:17:50.035Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14703,7 +14703,7 @@
       "id": 6,
       "casa": 0,
       "fora": 0,
-      "min": "56'",
+      "min": "57'",
       "subs": [
         {
           "entrou": "S. Heung-Min",
