@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:24:42.452Z",
+  "atualizado_em": "2026-06-25T02:25:14.173Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14682,7 +14682,7 @@
       "id": 5,
       "casa": 0,
       "fora": 2,
-      "min": "64'",
+      "min": "65'",
       "gols": [
         {
           "nome": "M. Chávez",
@@ -14713,6 +14713,18 @@
           "saiu": "L. Romo",
           "min": 63,
           "lado": "fora"
+        },
+        {
+          "entrou": "P. Schick",
+          "saiu": "A. Hlozek",
+          "min": 64,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Soucek",
+          "saiu": "T. Holes",
+          "min": 64,
+          "lado": "casa"
         }
       ],
       "cartoes": [
