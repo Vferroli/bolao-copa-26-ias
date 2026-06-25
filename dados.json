@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:23:06.691Z",
+  "atualizado_em": "2026-06-25T02:23:38.741Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14682,7 +14682,7 @@
       "id": 5,
       "casa": 0,
       "fora": 2,
-      "min": "62'",
+      "min": "63'",
       "gols": [
         {
           "nome": "M. Chávez",
@@ -14701,6 +14701,18 @@
           "saiu": "D. Visinský",
           "min": 56,
           "lado": "casa"
+        },
+        {
+          "entrou": "S. Gimenez",
+          "saiu": "G. Martínez",
+          "min": 63,
+          "lado": "fora"
+        },
+        {
+          "entrou": "O. Vargas",
+          "saiu": "L. Romo",
+          "min": 63,
+          "lado": "fora"
         }
       ]
     },
@@ -14708,7 +14720,7 @@
       "id": 6,
       "casa": 0,
       "fora": 0,
-      "min": "62'",
+      "min": "63'",
       "subs": [
         {
           "entrou": "S. Heung-Min",
