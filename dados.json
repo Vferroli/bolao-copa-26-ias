@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:22:38.001Z",
+  "atualizado_em": "2026-06-25T21:23:10.530Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15260,6 +15260,12 @@
           "saiu": "A. Diallo",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Antonisse",
+          "saiu": "L. Comenencia",
+          "min": 61,
+          "lado": "casa"
         }
       ],
       "cartoes": [
