@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:38:13.222Z",
+  "atualizado_em": "2026-06-25T21:38:45.984Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15288,6 +15288,24 @@
           "entrou": "B. Touré",
           "saiu": "Y. Diomande",
           "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "G. Kastaneer",
+          "saiu": "J. Gaari",
+          "min": 77,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Noslin",
+          "saiu": "D. Fonville",
+          "min": 77,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Michaël Seri",
+          "saiu": "F. Kessié",
+          "min": 77,
           "lado": "fora"
         }
       ],
