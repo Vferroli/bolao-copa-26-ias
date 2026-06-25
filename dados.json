@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:33:06.294Z",
+  "atualizado_em": "2026-06-25T02:33:38.287Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14682,7 +14682,7 @@
       "id": 5,
       "casa": 0,
       "fora": 2,
-      "min": "72'",
+      "min": "73'",
       "gols": [
         {
           "nome": "M. Chávez",
@@ -14784,6 +14784,14 @@
           "saiu": "K. Min-Jae",
           "min": 66,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "A. Modiba",
+          "cor": "amarelo",
+          "min": 73,
+          "lado": "casa"
         }
       ]
     }
