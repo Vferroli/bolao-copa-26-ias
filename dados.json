@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:22:34.982Z",
+  "atualizado_em": "2026-06-25T02:23:06.691Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14727,6 +14727,12 @@
           "saiu": "L. Tae-Seok",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Moremi",
+          "saiu": "O. Appollis",
+          "min": 62,
+          "lado": "casa"
         }
       ]
     }
