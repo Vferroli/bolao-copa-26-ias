@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:45:12.277Z",
+  "atualizado_em": "2026-06-25T21:45:44.858Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15321,6 +15321,12 @@
           "cor": "amarelo",
           "min": 75,
           "lado": "casa"
+        },
+        {
+          "nome": "G. Kastaneer",
+          "cor": "amarelo",
+          "min": 84,
+          "lado": "casa"
         }
       ]
     },
@@ -15394,6 +15400,18 @@
           "saiu": "F. Wirtz",
           "min": 73,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Caicedo",
+          "saiu": "N. Angulo",
+          "min": 85,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. Torres",
+          "saiu": "J. Yeboah",
+          "min": 85,
+          "lado": "casa"
         }
       ],
       "cartoes": [
