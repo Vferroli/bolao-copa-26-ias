@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T20:51:07.897Z",
+  "atualizado_em": "2026-06-25T21:05:02.272Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15278,6 +15278,14 @@
           "nome": "N. Angulo",
           "min": 9,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "A. Stiller",
+          "saiu": "A. Pavlovic",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
