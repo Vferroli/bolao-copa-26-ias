@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T20:43:42.167Z",
+  "atualizado_em": "2026-06-25T20:44:13.896Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15286,6 +15286,12 @@
           "cor": "amarelo",
           "min": 43,
           "lado": "casa"
+        },
+        {
+          "nome": "A. Pavlovic",
+          "cor": "amarelo",
+          "min": 44,
+          "lado": "fora"
         }
       ]
     }
