@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:49:30.014Z",
+  "atualizado_em": "2026-06-25T21:50:03.097Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15431,6 +15431,12 @@
           "nome": "A. Franco",
           "cor": "amarelo",
           "min": 50,
+          "lado": "casa"
+        },
+        {
+          "nome": "G. Plata",
+          "cor": "amarelo",
+          "min": 89,
           "lado": "casa"
         }
       ]
