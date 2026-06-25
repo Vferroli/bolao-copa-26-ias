@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:05:02.272Z",
+  "atualizado_em": "2026-06-25T21:06:36.784Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15251,6 +15251,14 @@
         {
           "nome": "N. Pépé",
           "min": 7,
+          "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "C. Inao Oulaï",
+          "saiu": "A. Diallo",
+          "min": 45,
           "lado": "fora"
         }
       ],
