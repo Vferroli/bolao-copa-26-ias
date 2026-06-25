@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:36:35.974Z",
+  "atualizado_em": "2026-06-25T21:37:08.414Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15297,6 +15297,12 @@
           "cor": "amarelo",
           "min": 35,
           "lado": "fora"
+        },
+        {
+          "nome": "J. Bacuna",
+          "cor": "amarelo",
+          "min": 75,
+          "lado": "casa"
         }
       ]
     },
