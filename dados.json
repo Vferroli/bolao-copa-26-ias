@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:41:02.816Z",
+  "atualizado_em": "2026-06-25T02:41:34.884Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14682,7 +14682,7 @@
       "id": 5,
       "casa": 0,
       "fora": 2,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "M. Chávez",
@@ -14758,7 +14758,7 @@
       "id": 6,
       "casa": 1,
       "fora": 0,
-      "min": "80'",
+      "min": "81'",
       "gols": [
         {
           "nome": "T. Maseko",
@@ -14807,6 +14807,12 @@
           "entrou": "I. Rayners",
           "saiu": "T. Maseko",
           "min": 75,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Adams",
+          "saiu": "R. Mofokeng",
+          "min": 80,
           "lado": "casa"
         }
       ],
