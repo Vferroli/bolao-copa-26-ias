@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:57:37.355Z",
+  "atualizado_em": "2026-06-25T21:58:09.892Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15243,106 +15243,6 @@
   ],
   "live": [
     {
-      "id": 29,
-      "casa": 0,
-      "fora": 2,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "N. Pépé",
-          "min": 7,
-          "lado": "fora"
-        },
-        {
-          "nome": "N. Pépé",
-          "min": 64,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "C. Inao Oulaï",
-          "saiu": "A. Diallo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Antonisse",
-          "saiu": "L. Comenencia",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "O. Diakité",
-          "saiu": "A. Bonny",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Wahi",
-          "saiu": "N. Pépé",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Touré",
-          "saiu": "Y. Diomande",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Kastaneer",
-          "saiu": "J. Gaari",
-          "min": 77,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Noslin",
-          "saiu": "D. Fonville",
-          "min": 77,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Michaël Seri",
-          "saiu": "F. Kessié",
-          "min": 77,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Sambo",
-          "saiu": "J. Brenet",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Kuwas",
-          "saiu": "J. Locadia",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "N. Pépé",
-          "cor": "amarelo",
-          "min": 35,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Bacuna",
-          "cor": "amarelo",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "nome": "G. Kastaneer",
-          "cor": "amarelo",
-          "min": 83,
-          "lado": "casa"
-        }
-      ]
-    },
-    {
       "id": 30,
       "casa": 2,
       "fora": 1,
@@ -15449,6 +15349,106 @@
           "nome": "G. Plata",
           "cor": "amarelo",
           "min": 89,
+          "lado": "casa"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "casa": 0,
+      "fora": 2,
+      "min": "90'+6'",
+      "gols": [
+        {
+          "nome": "N. Pépé",
+          "min": 7,
+          "lado": "fora"
+        },
+        {
+          "nome": "N. Pépé",
+          "min": 64,
+          "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "C. Inao Oulaï",
+          "saiu": "A. Diallo",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Antonisse",
+          "saiu": "L. Comenencia",
+          "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "O. Diakité",
+          "saiu": "A. Bonny",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Wahi",
+          "saiu": "N. Pépé",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "B. Touré",
+          "saiu": "Y. Diomande",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "G. Kastaneer",
+          "saiu": "J. Gaari",
+          "min": 77,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Noslin",
+          "saiu": "D. Fonville",
+          "min": 77,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Michaël Seri",
+          "saiu": "F. Kessié",
+          "min": 77,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Sambo",
+          "saiu": "J. Brenet",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "B. Kuwas",
+          "saiu": "J. Locadia",
+          "min": 90,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "N. Pépé",
+          "cor": "amarelo",
+          "min": 35,
+          "lado": "fora"
+        },
+        {
+          "nome": "J. Bacuna",
+          "cor": "amarelo",
+          "min": 75,
+          "lado": "casa"
+        },
+        {
+          "nome": "G. Kastaneer",
+          "cor": "amarelo",
+          "min": 83,
           "lado": "casa"
         }
       ]
