@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T22:02:51.658Z",
+  "atualizado_em": "2026-06-25T22:03:24.145Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -6173,9 +6173,14 @@
       "fora": "germany",
       "kickoff": "2026-06-25T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "L. Sané",
+          "N. Angulo",
+          "G. Plata"
+        ]
       },
       "palpites": {
         "claude": {
@@ -15245,117 +15250,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 30,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "L. Sané",
-          "min": 2,
-          "lado": "fora"
-        },
-        {
-          "nome": "N. Angulo",
-          "min": 9,
-          "lado": "casa"
-        },
-        {
-          "nome": "G. Plata",
-          "min": 77,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "A. Stiller",
-          "saiu": "A. Pavlovic",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Undav",
-          "saiu": "K. Havertz",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Thiaw",
-          "saiu": "J. Kimmich",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Rodríguez",
-          "saiu": "E. Valencia",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Á. Preciado",
-          "saiu": "A. Franco",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Beier",
-          "saiu": "F. Nmecha",
-          "min": 64,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Estupiñán",
-          "saiu": "P. Hincapié",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Gross",
-          "saiu": "F. Wirtz",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Torres",
-          "saiu": "J. Yeboah",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Caicedo",
-          "saiu": "N. Angulo",
-          "min": 85,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "P. Hincapié",
-          "cor": "amarelo",
-          "min": 43,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Pavlovic",
-          "cor": "amarelo",
-          "min": 44,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Franco",
-          "cor": "amarelo",
-          "min": 50,
-          "lado": "casa"
-        },
-        {
-          "nome": "G. Plata",
-          "cor": "amarelo",
-          "min": 89,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
