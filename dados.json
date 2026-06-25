@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T03:02:25.550Z",
+  "atualizado_em": "2026-06-25T19:45:47.544Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5914,6 +5914,279 @@
           "fora": 2,
           "avanca": null,
           "marcador": "Jamal Musiala"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-2",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "H. Galíndez",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "P. Hincapié",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "W. Pacho",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "J. Ordoñez",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "A. Franco",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "N. Angulo",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "P. Vite",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "M. Caicedo",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "J. Yeboah",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "E. Valencia",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "G. Plata",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 2,
+              "nome": "F. Torres",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "P. Estupiñán",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "J. Caicedo",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "M. Ramírez",
+              "pos": "G"
+            },
+            {
+              "num": 17,
+              "nome": "A. Preciado",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "J. Alcívar",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "G. Valle",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "J. Porozo",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "D. Castillo",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Y. Medina",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "A. Minda",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Jeremy Arévalo",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "A. Valencia",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "K. Rodríguez",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "K. Páez",
+              "pos": "M"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "M. Neuer",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "D. Raum",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "A. Rüdiger",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "J. Tah",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "J. Kimmich",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "A. Pavlović",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "F. Nmecha",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "F. Wirtz",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "J. Musiala",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "L. Sané",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "K. Havertz",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 25,
+              "nome": "A. Ouédraogo",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "M. Thiaw",
+              "pos": "D"
+            },
+            {
+              "num": 9,
+              "nome": "J. Leweling",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "N. Woltemade",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "M. Beier",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "A. Stiller",
+              "pos": "M"
+            },
+            {
+              "num": 3,
+              "nome": "W. Anton",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "D. Undav",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "A. Nübel",
+              "pos": "G"
+            },
+            {
+              "num": 20,
+              "nome": "N. Amiri",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "L. Goretzka",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "P. Groß",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "O. Baumann",
+              "pos": "G"
+            }
+          ]
         }
       }
     },
