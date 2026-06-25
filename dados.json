@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:53:56.293Z",
+  "atualizado_em": "2026-06-25T02:55:00.244Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14682,7 +14682,7 @@
       "id": 5,
       "casa": 0,
       "fora": 2,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "M. Chávez",
@@ -14692,6 +14692,11 @@
         {
           "nome": "J. Quiñones",
           "min": 61,
+          "lado": "fora"
+        },
+        {
+          "nome": "Á. Fidalgo",
+          "min": 90,
           "lado": "fora"
         }
       ],
@@ -14770,7 +14775,7 @@
       "id": 6,
       "casa": 1,
       "fora": 0,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "T. Maseko",
