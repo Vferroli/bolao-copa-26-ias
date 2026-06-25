@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T22:30:27.219Z",
+  "atualizado_em": "2026-06-25T22:45:53.426Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7245,6 +7245,284 @@
           "fora": 1,
           "avanca": null,
           "marcador": "Takefusa Kubo"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-4-3",
+          "fora": "3-4-1-2"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Z. Suzuki",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "H. Ito",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "K. Itakura",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "A. Seko",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Keito Nakamura",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "A. Tanaka",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "D. Kamada",
+              "pos": "M"
+            },
+            {
+              "num": 2,
+              "nome": "Y. Sugawara",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "D. Maeda",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "A. Ueda",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "R. Dōan",
+              "pos": "M"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 3,
+              "nome": "S. Taniguchi",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Y. Nagatomo",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "J. Ito",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "T. Tomiyasu",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Koki Ogawa",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "K. Osako",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "K. Sano",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "T. Watanabe",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Y. Suzuki",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "T. Hayakawa",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "J. Suzuki",
+              "pos": "D"
+            },
+            {
+              "num": 9,
+              "nome": "K. Goto",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "K. Shiogai",
+              "pos": "F"
+            },
+            {
+              "num": 6,
+              "nome": "S. Machino",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "J. Widell Zetterström",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "V. Lindelöf",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "I. Hien",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "G. Lagerbielke",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "G. Gudmundsson",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Y. Ayari",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "E. Stroud",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "A. Bernhardsson",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "A. Elanga",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "A. Isak",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "V. Gyökeres",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "B. Zeneli",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "L. Bergvall",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "D. Svensson",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "H. Johansson",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "T. Ali",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "B. Nygren",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "V. Johansson",
+              "pos": "G"
+            },
+            {
+              "num": 14,
+              "nome": "H. Ekdal",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "M. Svanberg",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "G. Nilsson",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "E. Smith",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "C. Starfelt",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "K. Sema",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "J. Karlström",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "K. Nordfeldt",
+              "pos": "G"
+            }
+          ]
         }
       }
     },
