@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T03:00:19.156Z",
+  "atualizado_em": "2026-06-25T03:02:25.550Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -1013,9 +1013,14 @@
       "fora": "mexico",
       "kickoff": "2026-06-25T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 3,
+        "avancou": null,
+        "marcadores": [
+          "M. Chávez",
+          "J. Quiñones",
+          "Á. Fidalgo"
+        ]
       },
       "palpites": {
         "claude": {
@@ -1330,9 +1335,12 @@
       "fora": "south-korea",
       "kickoff": "2026-06-25T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "T. Maseko"
+        ]
       },
       "palpites": {
         "claude": {
@@ -14677,176 +14685,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 5,
-      "casa": 0,
-      "fora": 3,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "M. Chávez",
-          "min": 55,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Quiñones",
-          "min": 61,
-          "lado": "fora"
-        },
-        {
-          "nome": "Á. Fidalgo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "L. Provod",
-          "saiu": "D. Visinský",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Gimenez",
-          "saiu": "G. Martínez",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Vargas",
-          "saiu": "L. Romo",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Schick",
-          "saiu": "A. Hlozek",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Soucek",
-          "saiu": "T. Holes",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Á. Fidalgo",
-          "saiu": "G. Mora",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Ochoa",
-          "saiu": "R. Rangel",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Gallardo",
-          "saiu": "M. Chávez",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Chorý",
-          "saiu": "L. Cerv",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Sojka",
-          "saiu": "T. Soucek",
-          "min": 87,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "E. Álvarez",
-          "cor": "amarelo",
-          "min": 64,
-          "lado": "fora"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "casa": 1,
-      "fora": 0,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "T. Maseko",
-          "min": 63,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "S. Heung-Min",
-          "saiu": "H. Hee-Chan",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Jin-Gyu",
-          "saiu": "P. Seung-Ho",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Castrop",
-          "saiu": "L. Tae-Seok",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Moremi",
-          "saiu": "O. Appollis",
-          "min": 62,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Jin-Seop",
-          "saiu": "K. Min-Jae",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Gue-Sung",
-          "saiu": "O. Hyeon-Gyu",
-          "min": 74,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Rayners",
-          "saiu": "T. Maseko",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Adams",
-          "saiu": "R. Mofokeng",
-          "min": 80,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Modiba",
-          "cor": "amarelo",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Gue-Sung",
-          "cor": "amarelo",
-          "min": 79,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
