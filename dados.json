@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T00:06:11.853Z",
+  "atualizado_em": "2026-06-25T00:07:14.275Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -3122,9 +3122,14 @@
       "fora": "brazil",
       "kickoff": "2026-06-24T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 3,
+        "avancou": null,
+        "marcadores": [
+          "V. Júnior",
+          "V. Júnior",
+          "M. Cunha"
+        ]
       },
       "palpites": {
         "claude": {
@@ -14121,111 +14126,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 17,
-      "casa": 0,
-      "fora": 3,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "V. Júnior",
-          "min": 7,
-          "lado": "fora"
-        },
-        {
-          "nome": "V. Júnior",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Cunha",
-          "min": 60,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "K. Tierney",
-          "saiu": "A. Robertson",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Fabinho",
-          "saiu": "Casemiro",
-          "min": 65,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Martinelli",
-          "saiu": "L. Paquetá",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Neymar",
-          "saiu": "M. Cunha",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Ralston",
-          "saiu": "N. Patterson",
-          "min": 82,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Endrick",
-          "saiu": "Rayan",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Sandro",
-          "saiu": "D. Santos",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Christie",
-          "saiu": "B. Gannon-Doak",
-          "min": 82,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Curtis",
-          "saiu": "J. McGinn",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Adams",
-          "saiu": "L. Shankland",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "Danilo",
-          "cor": "amarelo",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "nome": "Fabinho",
-          "cor": "amarelo",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Christie",
-          "cor": "amarelo",
-          "min": 89,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
