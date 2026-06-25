@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:14:39.995Z",
+  "atualizado_em": "2026-06-25T02:15:42.455Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14681,14 +14681,21 @@
     {
       "id": 5,
       "casa": 0,
-      "fora": 0,
-      "min": "54'"
+      "fora": 1,
+      "min": "55'",
+      "gols": [
+        {
+          "nome": "M. Chávez",
+          "min": 55,
+          "lado": "fora"
+        }
+      ]
     },
     {
       "id": 6,
       "casa": 0,
       "fora": 0,
-      "min": "54'",
+      "min": "55'",
       "subs": [
         {
           "entrou": "S. Heung-Min",
