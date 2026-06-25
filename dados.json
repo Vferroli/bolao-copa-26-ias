@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T23:47:32.595Z",
+  "atualizado_em": "2026-06-25T23:48:04.588Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 0,
       "fora": 0,
-      "min": "45'+2'",
+      "min": "45'+3'",
       "subs": [
         {
           "entrou": "L. Bergvall",
@@ -15834,7 +15834,7 @@
       "id": 36,
       "casa": 0,
       "fora": 2,
-      "min": "45'+2'",
+      "min": "45'+3'",
       "gols": [
         {
           "nome": "B. Brobbey",
