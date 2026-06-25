@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:39:27.458Z",
+  "atualizado_em": "2026-06-25T02:39:59.033Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14816,6 +14816,12 @@
           "cor": "amarelo",
           "min": 73,
           "lado": "casa"
+        },
+        {
+          "nome": "C. Gue-Sung",
+          "cor": "amarelo",
+          "min": 79,
+          "lado": "fora"
         }
       ]
     }
