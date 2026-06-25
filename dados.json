@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:45:44.858Z",
+  "atualizado_em": "2026-06-25T21:46:17.407Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15334,7 +15334,7 @@
       "id": 30,
       "casa": 2,
       "fora": 1,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "L. Sané",
@@ -15402,14 +15402,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "J. Caicedo",
-          "saiu": "N. Angulo",
+          "entrou": "F. Torres",
+          "saiu": "J. Yeboah",
           "min": 85,
           "lado": "casa"
         },
         {
-          "entrou": "F. Torres",
-          "saiu": "J. Yeboah",
+          "entrou": "J. Caicedo",
+          "saiu": "N. Angulo",
           "min": 85,
           "lado": "casa"
         }
