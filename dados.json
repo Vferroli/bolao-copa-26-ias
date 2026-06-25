@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T23:32:15.721Z",
+  "atualizado_em": "2026-06-25T23:33:18.693Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 0,
       "fora": 0,
-      "min": "32'",
+      "min": "33'",
       "cartoes": [
         {
           "nome": "I. Hien",
@@ -15820,7 +15820,7 @@
       "id": 36,
       "casa": 0,
       "fora": 2,
-      "min": "32'",
+      "min": "33'",
       "gols": [
         {
           "nome": "B. Brobbey",
