@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:38:23.884Z",
+  "atualizado_em": "2026-06-25T02:38:55.739Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14682,7 +14682,7 @@
       "id": 5,
       "casa": 0,
       "fora": 2,
-      "min": "77'",
+      "min": "78'",
       "gols": [
         {
           "nome": "M. Chávez",
@@ -14730,6 +14730,18 @@
           "entrou": "Á. Fidalgo",
           "saiu": "G. Mora",
           "min": 72,
+          "lado": "fora"
+        },
+        {
+          "entrou": "G. Ochoa",
+          "saiu": "R. Rangel",
+          "min": 78,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Gallardo",
+          "saiu": "M. Chávez",
+          "min": 78,
           "lado": "fora"
         }
       ],
