@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T21:20:49.701Z",
+  "atualizado_em": "2026-06-25T21:21:34.087Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15246,7 +15246,7 @@
       "id": 29,
       "casa": 0,
       "fora": 1,
-      "min": "59'",
+      "min": "60'",
       "gols": [
         {
           "nome": "N. Pépé",
@@ -15275,7 +15275,7 @@
       "id": 30,
       "casa": 1,
       "fora": 1,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "L. Sané",
@@ -15298,6 +15298,12 @@
         {
           "entrou": "D. Undav",
           "saiu": "K. Havertz",
+          "min": 60,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Thiaw",
+          "saiu": "J. Kimmich",
           "min": 60,
           "lado": "fora"
         }
