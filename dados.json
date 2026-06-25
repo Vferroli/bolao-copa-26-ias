@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:16:14.484Z",
+  "atualizado_em": "2026-06-25T02:16:46.508Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14689,13 +14689,21 @@
           "min": 55,
           "lado": "fora"
         }
+      ],
+      "subs": [
+        {
+          "entrou": "L. Provod",
+          "saiu": "D. Visinský",
+          "min": 56,
+          "lado": "casa"
+        }
       ]
     },
     {
       "id": 6,
       "casa": 0,
       "fora": 0,
-      "min": "55'",
+      "min": "56'",
       "subs": [
         {
           "entrou": "S. Heung-Min",
