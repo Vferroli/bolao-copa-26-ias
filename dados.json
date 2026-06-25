@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-25T22:03:24.145Z",
+  "atualizado_em": "2026-06-25T22:30:27.219Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7284,6 +7284,279 @@
           "fora": 2,
           "avanca": null,
           "marcador": "Cody Gakpo"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-3-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "A. Dahmen",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "A. Ben Hmida",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "A. Abdi",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "M. Talbi",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Y. Valery",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "R. Khedira",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "E. Skhiri",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ismaël Gharbi",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "H. Mejbri",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "A. Ben Slimane",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "H. Mastouri",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "S. Ben Hsan",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "D. Bronn",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "M. Ben Ouanes",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "F. Chaouat",
+              "pos": "F"
+            },
+            {
+              "num": 4,
+              "nome": "O. Rekik",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "E. Achouri",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "S. Tounekti",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "H. Mahmoud",
+              "pos": "M"
+            },
+            {
+              "num": 1,
+              "nome": "C. Abdelmouhib",
+              "pos": "G"
+            },
+            {
+              "num": 8,
+              "nome": "E. Saad",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "R. Chikhaoui",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "K. Ayari",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "R. Elloumi",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "B. Verbruggen",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "N. Aké",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "V. van Dijk",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "J. van Hecke",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "D. Dumfries",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "T. Reijnders",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "F. de Jong",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "R. Gravenberch",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "C. Gakpo",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "B. Brobbey",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "D. Malen",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 25,
+              "nome": "J. Hato",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "R. Roefs",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "M. van de Ven",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Q. Timber",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "M. Wieffer",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "C. Summerville",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "N. Lang",
+              "pos": "F"
+            },
+            {
+              "num": 2,
+              "nome": "L. Geertruida",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "J. Kluivert",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "G. Til",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "T. Koopmeiners",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "W. Weghorst",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "M. Flekken",
+              "pos": "G"
+            },
+            {
+              "num": 10,
+              "nome": "M. Depay",
+              "pos": "F"
+            },
+            {
+              "num": 3,
+              "nome": "M. de Roon",
+              "pos": "M"
+            }
+          ]
         }
       }
     },
