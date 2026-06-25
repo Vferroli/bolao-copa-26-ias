@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:21:31.173Z",
+  "atualizado_em": "2026-06-25T02:22:03.071Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14682,7 +14682,7 @@
       "id": 5,
       "casa": 0,
       "fora": 1,
-      "min": "61'",
+      "min": "62'",
       "gols": [
         {
           "nome": "M. Chávez",
