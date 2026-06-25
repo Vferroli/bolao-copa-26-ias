@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-24",
-  "atualizado_em": "2026-06-25T02:34:41.758Z",
+  "atualizado_em": "2026-06-25T02:35:13.452Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -14746,7 +14746,7 @@
       "id": 6,
       "casa": 1,
       "fora": 0,
-      "min": "73'",
+      "min": "74'",
       "gols": [
         {
           "nome": "T. Maseko",
@@ -14783,6 +14783,12 @@
           "entrou": "P. Jin-Seop",
           "saiu": "K. Min-Jae",
           "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "C. Gue-Sung",
+          "saiu": "O. Hyeon-Gyu",
+          "min": 74,
           "lado": "fora"
         }
       ],
