@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:39:45.007Z",
+  "atualizado_em": "2026-06-26T20:40:16.759Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16983,6 +16983,12 @@
           "saiu": "H. Falchener",
           "min": 66,
           "lado": "casa"
+        },
+        {
+          "entrou": "I. Konaté",
+          "saiu": "D. Upamecano",
+          "min": 76,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -17004,7 +17010,7 @@
       "id": 54,
       "casa": 4,
       "fora": 0,
-      "min": "71'",
+      "min": "72'",
       "gols": [
         {
           "nome": "H. Diarra",
@@ -17019,6 +17025,11 @@
         {
           "nome": "P. Gueye",
           "min": 59,
+          "lado": "casa"
+        },
+        {
+          "nome": "P. Gueye",
+          "min": 71,
           "lado": "casa"
         }
       ],
