@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:36:07.391Z",
+  "atualizado_em": "2026-06-26T00:36:39.410Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15861,6 +15861,12 @@
           "saiu": "K. Nakamura",
           "min": 75,
           "lado": "casa"
+        },
+        {
+          "entrou": "T. Watanabe",
+          "saiu": "A. Seko",
+          "min": 75,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -15876,7 +15882,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "B. Brobbey",
