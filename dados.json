@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:34:59.520Z",
+  "atualizado_em": "2026-06-26T20:35:31.128Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17064,6 +17064,12 @@
           "saiu": "A. Seck",
           "min": 58,
           "lado": "casa"
+        },
+        {
+          "entrou": "K. Yakob",
+          "saiu": "Z. Iqbal",
+          "min": 67,
+          "lado": "fora"
         }
       ],
       "cartoes": [
