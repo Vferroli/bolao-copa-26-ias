@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T21:04:37.854Z",
+  "atualizado_em": "2026-06-26T21:09:46.521Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12491,9 +12491,16 @@
       "fora": "iraq",
       "kickoff": "2026-06-26T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 5,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": [
+          "H. Diarra",
+          "I. Sarr",
+          "P. Gueye",
+          "P. Gueye",
+          "I. Ndiaye"
+        ]
       },
       "palpites": {
         "claude": {
@@ -16932,133 +16939,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 54,
-      "casa": 5,
-      "fora": 0,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "H. Diarra",
-          "min": 4,
-          "lado": "casa"
-        },
-        {
-          "nome": "I. Sarr",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "nome": "P. Gueye",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "nome": "P. Gueye",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "nome": "I. Ndiaye",
-          "min": 82,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "M. Younus",
-          "saiu": "A. Qasim",
-          "min": 16,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Hassan",
-          "saiu": "A. Basil",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Ndiaye",
-          "saiu": "I. Mbaye",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Jackson",
-          "saiu": "L. Camara",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Gueye",
-          "saiu": "H. Diarra",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Maknazi",
-          "saiu": "A. Jasim",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Yousif",
-          "saiu": "A. Al-Hamadi",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Ciss",
-          "saiu": "A. Seck",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Yakob",
-          "saiu": "Z. Iqbal",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Diao",
-          "saiu": "I. Sarr",
-          "min": 81,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "R. Sulaka",
-          "cor": "vermelho",
-          "min": 13,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Seck",
-          "cor": "amarelo",
-          "min": 18,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Al-Ammari",
-          "cor": "amarelo",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "nome": "P. Gueye",
-          "cor": "amarelo",
-          "min": 81,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Doski",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
