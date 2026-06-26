@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T04:01:42.529Z",
+  "atualizado_em": "2026-06-26T04:02:15.006Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16359,7 +16359,7 @@
   "live": [
     {
       "id": 23,
-      "casa": 2,
+      "casa": 3,
       "fora": 2,
       "min": "90'+9'",
       "gols": [
@@ -16382,6 +16382,11 @@
           "nome": "S. Berhalter",
           "min": 49,
           "lado": "fora"
+        },
+        {
+          "nome": "K. Ayhan",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "subs": [
