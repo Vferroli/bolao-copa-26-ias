@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T19:11:13.883Z",
+  "atualizado_em": "2026-06-26T19:11:45.598Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16936,6 +16936,14 @@
           "nome": "O. Dembélé",
           "min": 7,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "P. Berg",
+          "cor": "amarelo",
+          "min": 10,
+          "lado": "casa"
         }
       ]
     },
