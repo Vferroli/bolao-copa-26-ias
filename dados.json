@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:49:50.475Z",
+  "atualizado_em": "2026-06-26T03:50:54.554Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16361,7 +16361,7 @@
       "id": 23,
       "casa": 2,
       "fora": 2,
-      "min": "87'",
+      "min": "88'",
       "gols": [
         {
           "nome": "A. Trusty",
@@ -16426,6 +16426,12 @@
           "saiu": "W. McKennie",
           "min": 86,
           "lado": "fora"
+        },
+        {
+          "entrou": "K. Ayhan",
+          "saiu": "O. Kökçü",
+          "min": 88,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -16441,7 +16447,7 @@
       "id": 24,
       "casa": 0,
       "fora": 0,
-      "min": "87'",
+      "min": "88'",
       "subs": [
         {
           "entrou": "Maurício",
