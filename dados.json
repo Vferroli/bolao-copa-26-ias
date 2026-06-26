@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T19:20:25.156Z",
+  "atualizado_em": "2026-06-26T19:20:56.993Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16951,7 +16951,7 @@
       "id": 54,
       "casa": 1,
       "fora": 0,
-      "min": "18'",
+      "min": "19'",
       "gols": [
         {
           "nome": "H. Diarra",
@@ -16973,6 +16973,12 @@
           "cor": "vermelho",
           "min": 13,
           "lado": "fora"
+        },
+        {
+          "nome": "A. Seck",
+          "cor": "amarelo",
+          "min": 18,
+          "lado": "casa"
         }
       ]
     }
