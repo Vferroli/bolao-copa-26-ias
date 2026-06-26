@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T19:57:13.633Z",
+  "atualizado_em": "2026-06-26T20:08:12.939Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16951,6 +16951,14 @@
           "nome": "O. Dembélé",
           "min": 32,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "M. Thorsby",
+          "saiu": "K. Thorstvedt",
+          "min": 45,
+          "lado": "casa"
         }
       ],
       "cartoes": [
