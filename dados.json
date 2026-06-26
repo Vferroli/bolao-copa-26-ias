@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:59:49.545Z",
+  "atualizado_em": "2026-06-26T01:03:29.736Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7217,9 +7217,13 @@
       "fora": "sweden",
       "kickoff": "2026-06-25T23:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "D. Maeda",
+          "A. Elanga"
+        ]
       },
       "palpites": {
         "claude": {
@@ -15806,106 +15810,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 35,
-      "casa": 1,
-      "fora": 1,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "D. Maeda",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Elanga",
-          "min": 62,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "L. Bergvall",
-          "saiu": "I. Hien",
-          "min": 37,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Taniguchi",
-          "saiu": "K. Itakura",
-          "min": 39,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Ogawa",
-          "saiu": "A. Ueda",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Ito",
-          "saiu": "R. Doan",
-          "min": 67,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Svensson",
-          "saiu": "A. Bernhardsson",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Sema",
-          "saiu": "E. Stroud",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Nagatomo",
-          "saiu": "K. Nakamura",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Watanabe",
-          "saiu": "A. Seko",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Starfelt",
-          "saiu": "V. Lindelöf",
-          "min": 87,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Nygren",
-          "saiu": "G. Gudmundsson",
-          "min": 88,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "I. Hien",
-          "cor": "amarelo",
-          "min": 32,
-          "lado": "fora"
-        },
-        {
-          "nome": "S. Taniguchi",
-          "cor": "amarelo",
-          "min": 77,
-          "lado": "casa"
-        },
-        {
-          "nome": "V. Gyökeres",
-          "cor": "amarelo",
-          "min": 85,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
