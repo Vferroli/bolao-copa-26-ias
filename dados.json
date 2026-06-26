@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:50:48.102Z",
+  "atualizado_em": "2026-06-26T20:51:20.093Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16930,7 +16930,7 @@
       "id": 53,
       "casa": 1,
       "fora": 3,
-      "min": "86'",
+      "min": "87'",
       "gols": [
         {
           "nome": "O. Dembélé",
@@ -17001,6 +17001,18 @@
           "saiu": "A. Schjelderup",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Gusto",
+          "saiu": "J. Koundé",
+          "min": 87,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Mateta",
+          "saiu": "K. Mbappé",
+          "min": 87,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -17042,6 +17054,11 @@
         {
           "nome": "P. Gueye",
           "min": 71,
+          "lado": "casa"
+        },
+        {
+          "nome": "I. Ndiaye",
+          "min": 82,
           "lado": "casa"
         }
       ],
