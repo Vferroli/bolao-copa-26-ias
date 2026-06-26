@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:49:13.182Z",
+  "atualizado_em": "2026-06-26T20:49:44.804Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16930,7 +16930,7 @@
       "id": 53,
       "casa": 1,
       "fora": 3,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "O. Dembélé",
@@ -17125,6 +17125,12 @@
           "cor": "amarelo",
           "min": 75,
           "lado": "fora"
+        },
+        {
+          "nome": "P. Gueye",
+          "cor": "amarelo",
+          "min": 81,
+          "lado": "casa"
         }
       ]
     }
