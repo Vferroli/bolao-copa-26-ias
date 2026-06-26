@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T02:31:32.150Z",
+  "atualizado_em": "2026-06-26T02:32:04.499Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16359,9 +16359,9 @@
   "live": [
     {
       "id": 23,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
-      "min": "31'",
+      "min": "32'",
       "gols": [
         {
           "nome": "A. Trusty",
@@ -16371,6 +16371,11 @@
         {
           "nome": "A. Güler",
           "min": 10,
+          "lado": "casa"
+        },
+        {
+          "nome": "O. Kökçü",
+          "min": 31,
           "lado": "casa"
         }
       ],
