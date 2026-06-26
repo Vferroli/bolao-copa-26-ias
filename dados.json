@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:33:59.302Z",
+  "atualizado_em": "2026-06-26T00:34:31.196Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15858,7 +15858,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "74'",
+      "min": "75'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -15912,6 +15912,12 @@
           "saiu": "D. Malen",
           "min": 72,
           "lado": "fora"
+        },
+        {
+          "entrou": "F. Chaouat",
+          "saiu": "I. Gharbi",
+          "min": 75,
+          "lado": "casa"
         }
       ]
     }
