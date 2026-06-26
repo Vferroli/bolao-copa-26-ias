@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:58:52.264Z",
+  "atualizado_em": "2026-06-26T21:00:25.854Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16927,119 +16927,10 @@
   ],
   "live": [
     {
-      "id": 53,
-      "casa": 1,
-      "fora": 4,
-      "min": "90'+5'",
-      "gols": [
-        {
-          "nome": "O. Dembélé",
-          "min": 7,
-          "lado": "fora"
-        },
-        {
-          "nome": "O. Dembélé",
-          "min": 20,
-          "lado": "fora"
-        },
-        {
-          "nome": "T. Aasgaard",
-          "min": 21,
-          "lado": "casa"
-        },
-        {
-          "nome": "O. Dembélé",
-          "min": 32,
-          "lado": "fora"
-        },
-        {
-          "nome": "D. Doué",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "M. Thorsby",
-          "saiu": "K. Thorstvedt",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Holmgren Pedersen",
-          "saiu": "F. André Bjørkan",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Cherki",
-          "saiu": "M. Olise",
-          "min": 65,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Barcola",
-          "saiu": "O. Dembélé",
-          "min": 65,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Langas",
-          "saiu": "H. Falchener",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "I. Konaté",
-          "saiu": "D. Upamecano",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Petter Hauge",
-          "saiu": "O. Bobb",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Nusa",
-          "saiu": "A. Schjelderup",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Gusto",
-          "saiu": "J. Koundé",
-          "min": 87,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Mateta",
-          "saiu": "K. Mbappé",
-          "min": 87,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "P. Berg",
-          "cor": "amarelo",
-          "min": 10,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Tchouaméni",
-          "cor": "amarelo",
-          "min": 74,
-          "lado": "fora"
-        }
-      ]
-    },
-    {
       "id": 54,
       "casa": 5,
       "fora": 0,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "gols": [
         {
           "nome": "H. Diarra",
@@ -17158,6 +17049,115 @@
           "nome": "M. Doski",
           "cor": "amarelo",
           "min": 90,
+          "lado": "fora"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "casa": 1,
+      "fora": 4,
+      "min": "90'+5'",
+      "gols": [
+        {
+          "nome": "O. Dembélé",
+          "min": 7,
+          "lado": "fora"
+        },
+        {
+          "nome": "O. Dembélé",
+          "min": 20,
+          "lado": "fora"
+        },
+        {
+          "nome": "T. Aasgaard",
+          "min": 21,
+          "lado": "casa"
+        },
+        {
+          "nome": "O. Dembélé",
+          "min": 32,
+          "lado": "fora"
+        },
+        {
+          "nome": "D. Doué",
+          "min": 90,
+          "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "M. Thorsby",
+          "saiu": "K. Thorstvedt",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Holmgren Pedersen",
+          "saiu": "F. André Bjørkan",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Cherki",
+          "saiu": "M. Olise",
+          "min": 65,
+          "lado": "fora"
+        },
+        {
+          "entrou": "B. Barcola",
+          "saiu": "O. Dembélé",
+          "min": 65,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Langas",
+          "saiu": "H. Falchener",
+          "min": 66,
+          "lado": "casa"
+        },
+        {
+          "entrou": "I. Konaté",
+          "saiu": "D. Upamecano",
+          "min": 76,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Petter Hauge",
+          "saiu": "O. Bobb",
+          "min": 83,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Nusa",
+          "saiu": "A. Schjelderup",
+          "min": 83,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Gusto",
+          "saiu": "J. Koundé",
+          "min": 87,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Mateta",
+          "saiu": "K. Mbappé",
+          "min": 87,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "P. Berg",
+          "cor": "amarelo",
+          "min": 10,
+          "lado": "casa"
+        },
+        {
+          "nome": "A. Tchouaméni",
+          "cor": "amarelo",
+          "min": 74,
           "lado": "fora"
         }
       ]
