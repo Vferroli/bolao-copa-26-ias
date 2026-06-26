@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:20:44.288Z",
+  "atualizado_em": "2026-06-26T03:21:17.052Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16384,6 +16384,14 @@
           "lado": "fora"
         }
       ],
+      "subs": [
+        {
+          "entrou": "C. Pulisic",
+          "saiu": "T. Weah",
+          "min": 58,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "S. Berhalter",
@@ -16404,6 +16412,12 @@
           "saiu": "A. Maidana",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Hrustic",
+          "saiu": "C. Volpato",
+          "min": 58,
+          "lado": "fora"
         }
       ],
       "cartoes": [
