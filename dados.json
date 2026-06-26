@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T02:18:35.568Z",
+  "atualizado_em": "2026-06-26T02:19:07.352Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16361,7 +16361,7 @@
       "id": 23,
       "casa": 1,
       "fora": 1,
-      "min": "18'",
+      "min": "19'",
       "gols": [
         {
           "nome": "A. Trusty",
@@ -16372,6 +16372,14 @@
           "nome": "A. Güler",
           "min": 10,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "S. Berhalter",
+          "cor": "amarelo",
+          "min": 19,
+          "lado": "fora"
         }
       ]
     },
