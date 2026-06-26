@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:52:23.352Z",
+  "atualizado_em": "2026-06-26T00:52:55.713Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15906,7 +15906,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "B. Brobbey",
