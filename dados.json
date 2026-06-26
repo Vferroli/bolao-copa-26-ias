@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:37:11.315Z",
+  "atualizado_em": "2026-06-26T00:37:43.142Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15875,6 +15875,12 @@
           "cor": "amarelo",
           "min": 32,
           "lado": "fora"
+        },
+        {
+          "nome": "S. Taniguchi",
+          "cor": "amarelo",
+          "min": 77,
+          "lado": "casa"
         }
       ]
     },
