@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T19:11:45.598Z",
+  "atualizado_em": "2026-06-26T19:12:17.547Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16951,12 +16951,20 @@
       "id": 54,
       "casa": 1,
       "fora": 0,
-      "min": "9'",
+      "min": "10'",
       "gols": [
         {
           "nome": "H. Diarra",
           "min": 4,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "R. Sulaka",
+          "cor": "amarelo",
+          "min": 10,
+          "lado": "fora"
         }
       ]
     }
