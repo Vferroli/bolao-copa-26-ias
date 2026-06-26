@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:21:17.278Z",
+  "atualizado_em": "2026-06-26T00:21:49.092Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15840,8 +15840,8 @@
     {
       "id": 36,
       "casa": 1,
-      "fora": 2,
-      "min": "61'",
+      "fora": 3,
+      "min": "62'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -15852,6 +15852,11 @@
           "nome": "H. Mastouri",
           "min": 54,
           "lado": "casa"
+        },
+        {
+          "nome": "J. Paul van Hecke",
+          "min": 62,
+          "lado": "fora"
         }
       ]
     }
