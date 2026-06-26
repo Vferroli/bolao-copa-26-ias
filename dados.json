@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:13:51.376Z",
+  "atualizado_em": "2026-06-26T00:14:23.224Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15840,6 +15840,11 @@
           "nome": "B. Brobbey",
           "min": 7,
           "lado": "fora"
+        },
+        {
+          "nome": "H. Mastouri",
+          "min": 54,
+          "lado": "casa"
         }
       ]
     }
