@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:25:00.684Z",
+  "atualizado_em": "2026-06-26T20:25:32.654Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17009,6 +17009,18 @@
         {
           "entrou": "I. Ndiaye",
           "saiu": "I. Mbaye",
+          "min": 57,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Jackson",
+          "saiu": "L. Camara",
+          "min": 57,
+          "lado": "casa"
+        },
+        {
+          "entrou": "P. Gueye",
+          "saiu": "H. Diarra",
           "min": 57,
           "lado": "casa"
         }
