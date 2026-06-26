@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:26:34.024Z",
+  "atualizado_em": "2026-06-26T00:27:05.872Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "65'",
+      "min": "66'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15846,7 +15846,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "67'",
+      "min": "68'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -15869,6 +15869,18 @@
           "entrou": "M. Hadj Mahmoud",
           "saiu": "R. Khedira",
           "min": 67,
+          "lado": "casa"
+        },
+        {
+          "entrou": "E. Achouri",
+          "saiu": "A. Slimane",
+          "min": 68,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Ben Ouanes",
+          "saiu": "M. Amine Ben Hamida",
+          "min": 68,
           "lado": "casa"
         }
       ]
