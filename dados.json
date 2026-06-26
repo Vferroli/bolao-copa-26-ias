@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T04:03:50.168Z",
+  "atualizado_em": "2026-06-26T04:07:08.317Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5037,9 +5037,16 @@
       "fora": "usa",
       "kickoff": "2026-06-26T02:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "A. Trusty",
+          "A. Güler",
+          "B. Alper Yilmaz",
+          "S. Berhalter",
+          "K. Ayhan"
+        ]
       },
       "palpites": {
         "claude": {
@@ -16357,109 +16364,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 23,
-      "casa": 3,
-      "fora": 2,
-      "min": "90'+9'",
-      "gols": [
-        {
-          "nome": "A. Trusty",
-          "min": 3,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Güler",
-          "min": 10,
-          "lado": "casa"
-        },
-        {
-          "nome": "B. Alper Yilmaz",
-          "min": 31,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Berhalter",
-          "min": 49,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. Ayhan",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "C. Pulisic",
-          "saiu": "T. Weah",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Dest",
-          "saiu": "G. Reyna",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Zendejas",
-          "saiu": "B. Aaronson",
-          "min": 77,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Freeman",
-          "saiu": "J. Scally",
-          "min": 77,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Ç. Söyüncü",
-          "saiu": "Z. Çelik",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Uzun",
-          "saiu": "K. Yildiz",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Tillman",
-          "saiu": "W. McKennie",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Ayhan",
-          "saiu": "O. Kökçü",
-          "min": 88,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Müldür",
-          "saiu": "O. Aydin",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "I. Can Kahveci",
-          "saiu": "B. Alper Yilmaz",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "S. Berhalter",
-          "cor": "amarelo",
-          "min": 19,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
