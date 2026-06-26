@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:34:44.571Z",
+  "atualizado_em": "2026-06-26T03:35:17.495Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16361,7 +16361,7 @@
       "id": 23,
       "casa": 2,
       "fora": 2,
-      "min": "71'",
+      "min": "72'",
       "gols": [
         {
           "nome": "A. Trusty",
@@ -16421,7 +16421,7 @@
         },
         {
           "entrou": "A. Arce",
-          "saiu": "J. Enciso",
+          "saiu": "G. Ávalos",
           "min": 67,
           "lado": "casa"
         }
