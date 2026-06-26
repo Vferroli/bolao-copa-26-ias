@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:57:20.668Z",
+  "atualizado_em": "2026-06-26T03:57:53.139Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16361,7 +16361,7 @@
       "id": 23,
       "casa": 2,
       "fora": 2,
-      "min": "90'+4'",
+      "min": "90'+5'",
       "gols": [
         {
           "nome": "A. Trusty",
