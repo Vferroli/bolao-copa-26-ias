@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:12:55.110Z",
+  "atualizado_em": "2026-06-26T20:13:26.820Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16993,6 +16993,12 @@
           "entrou": "M. Younus",
           "saiu": "A. Qasim",
           "min": 16,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Hassan",
+          "saiu": "A. Basil",
+          "min": 45,
           "lado": "fora"
         }
       ],
