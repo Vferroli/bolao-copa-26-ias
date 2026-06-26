@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:27:05.872Z",
+  "atualizado_em": "2026-06-26T00:27:37.835Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "66'",
+      "min": "67'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15830,6 +15830,18 @@
           "entrou": "S. Taniguchi",
           "saiu": "K. Itakura",
           "min": 39,
+          "lado": "casa"
+        },
+        {
+          "entrou": "K. Ogawa",
+          "saiu": "A. Ueda",
+          "min": 66,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Ito",
+          "saiu": "R. Doan",
+          "min": 67,
           "lado": "casa"
         }
       ],
