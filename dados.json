@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:45:22.590Z",
+  "atualizado_em": "2026-06-26T00:45:55.051Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15881,6 +15881,12 @@
           "cor": "amarelo",
           "min": 77,
           "lado": "casa"
+        },
+        {
+          "nome": "V. Gyökeres",
+          "cor": "amarelo",
+          "min": 85,
+          "lado": "fora"
         }
       ]
     },
@@ -15888,7 +15894,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "B. Brobbey",
