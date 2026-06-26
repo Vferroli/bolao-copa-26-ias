@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:20:45.449Z",
+  "atualizado_em": "2026-06-26T00:21:17.278Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 0,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "D. Maeda",
