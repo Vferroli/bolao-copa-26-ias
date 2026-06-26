@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T19:10:11.194Z",
+  "atualizado_em": "2026-06-26T19:11:13.883Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16930,7 +16930,7 @@
       "id": 53,
       "casa": 0,
       "fora": 1,
-      "min": "9'",
+      "min": "10'",
       "gols": [
         {
           "nome": "O. Dembélé",
@@ -16943,7 +16943,7 @@
       "id": 54,
       "casa": 1,
       "fora": 0,
-      "min": "8'",
+      "min": "9'",
       "gols": [
         {
           "nome": "H. Diarra",
