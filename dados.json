@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:42:27.979Z",
+  "atualizado_em": "2026-06-26T00:43:13.661Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15888,7 +15888,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "83'",
+      "min": "84'",
       "gols": [
         {
           "nome": "B. Brobbey",
@@ -15953,6 +15953,12 @@
           "entrou": "M. Depay",
           "saiu": "B. Brobbey",
           "min": 77,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. Lang",
+          "saiu": "C. Gakpo",
+          "min": 84,
           "lado": "fora"
         }
       ]
