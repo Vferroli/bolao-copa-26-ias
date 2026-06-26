@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:10:46.382Z",
+  "atualizado_em": "2026-06-26T03:11:50.123Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16360,8 +16360,8 @@
     {
       "id": 23,
       "casa": 2,
-      "fora": 1,
-      "min": "48'",
+      "fora": 2,
+      "min": "49'",
       "gols": [
         {
           "nome": "A. Trusty",
@@ -16377,6 +16377,11 @@
           "nome": "O. Kökçü",
           "min": 31,
           "lado": "casa"
+        },
+        {
+          "nome": "S. Berhalter",
+          "min": 49,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -16392,7 +16397,7 @@
       "id": 24,
       "casa": 0,
       "fora": 0,
-      "min": "48'",
+      "min": "49'",
       "subs": [
         {
           "entrou": "Maurício",
