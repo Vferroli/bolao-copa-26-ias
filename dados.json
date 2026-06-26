@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:09:03.733Z",
+  "atualizado_em": "2026-06-26T00:09:35.748Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15834,7 +15834,7 @@
       "id": 36,
       "casa": 0,
       "fora": 2,
-      "min": "49'",
+      "min": "50'",
       "gols": [
         {
           "nome": "B. Brobbey",
