@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T18:30:23.915Z",
+  "atualizado_em": "2026-06-26T18:45:48.314Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -12190,6 +12190,289 @@
           "fora": 2,
           "avanca": null,
           "marcador": "Kylian Mbappé"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 13,
+              "nome": "Egil Selvik",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Fredrik André Bjørkan",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Leo Østigård",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Henrik Sælebakke Falchener",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Fredrik Aursnes",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Patrick Berg",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Kristian Thorstvedt",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Andreas Schjelderup",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Thelo Aasgaard",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Oscar Bobb",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Jørgen Strand Larsen",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Ørjan Nyland",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Sander Tangvik",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Kristoffer Ajer",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "David Møller Wolfe",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Torbjørn Heggem",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Sondre Langås",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Marcus Pedersen",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Morten Thorsby",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Sander Berge",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Martin Ødegaard",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Julian Ryerson",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Jens Petter Hauge",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Alexander Sørloth",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Erling Haaland",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Antonio Nusa",
+              "pos": "M"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 16,
+              "nome": "Mike Maignan",
+              "pos": "G"
+            },
+            {
+              "num": 19,
+              "nome": "Theo Hernández",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Maxence Lacroix",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Dayot Upamecano",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Jules Koundé",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Manu Koné",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Aurélien Tchouaméni",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Désiré Doué",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Michael Olise",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Ousmane Dembélé",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Kylian Mbappé",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Brice Samba",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Robin Risser",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Malo Gusto",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Lucas Digne",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Ibrahima Konaté",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "William Saliba",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Lucas Hernández",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "N'Golo Kanté",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Adrien Rabiot",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Warren Zaïre-Emery",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Rayan Cherki",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Maghnes Akliouche",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Marcus Thuram",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Bradley Barcola",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Jean-Philippe Mateta",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
