@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T04:02:15.006Z",
+  "atualizado_em": "2026-06-26T04:03:50.168Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -5354,9 +5354,10 @@
       "fora": "australia",
       "kickoff": "2026-06-26T02:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": []
       },
       "palpites": {
         "claude": {
@@ -16457,76 +16458,6 @@
           "cor": "amarelo",
           "min": 19,
           "lado": "fora"
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "casa": 0,
-      "fora": 0,
-      "min": "90'+5'",
-      "subs": [
-        {
-          "entrou": "Maurício",
-          "saiu": "A. Maidana",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Hrustic",
-          "saiu": "C. Volpato",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Arce",
-          "saiu": "G. Ávalos",
-          "min": 67,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Canale",
-          "saiu": "O. Alderete",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. Okon-Engstler",
-          "saiu": "J. Irvine",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Yengi",
-          "saiu": "N. Irankunda",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Bobadilla",
-          "saiu": "D. Gómez",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Alonso",
-          "saiu": "M. Galarza",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Irvine",
-          "cor": "amarelo",
-          "min": 46,
-          "lado": "fora"
-        },
-        {
-          "nome": "D. Gómez",
-          "cor": "amarelo",
-          "min": 77,
-          "lado": "casa"
         }
       ]
     }
