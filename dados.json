@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:35:35.186Z",
+  "atualizado_em": "2026-06-26T00:36:07.391Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "74'",
+      "min": "75'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15849,6 +15849,18 @@
           "saiu": "A. Bernhardsson",
           "min": 75,
           "lado": "fora"
+        },
+        {
+          "entrou": "K. Sema",
+          "saiu": "E. Stroud",
+          "min": 75,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Y. Nagatomo",
+          "saiu": "K. Nakamura",
+          "min": 75,
+          "lado": "casa"
         }
       ],
       "cartoes": [
