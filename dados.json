@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:48:09.707Z",
+  "atualizado_em": "2026-06-26T20:48:41.454Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17022,7 +17022,7 @@
       "id": 54,
       "casa": 4,
       "fora": 0,
-      "min": "80'",
+      "min": "81'",
       "gols": [
         {
           "nome": "H. Diarra",
@@ -17099,6 +17099,12 @@
           "saiu": "Z. Iqbal",
           "min": 67,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Diao",
+          "saiu": "I. Sarr",
+          "min": 81,
+          "lado": "casa"
         }
       ],
       "cartoes": [
