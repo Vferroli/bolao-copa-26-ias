@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:38:10.189Z",
+  "atualizado_em": "2026-06-26T20:38:41.738Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16991,6 +16991,12 @@
           "cor": "amarelo",
           "min": 10,
           "lado": "casa"
+        },
+        {
+          "nome": "A. Tchouaméni",
+          "cor": "amarelo",
+          "min": 74,
+          "lado": "fora"
         }
       ]
     },
@@ -16998,7 +17004,7 @@
       "id": 54,
       "casa": 3,
       "fora": 0,
-      "min": "69'",
+      "min": "70'",
       "gols": [
         {
           "nome": "H. Diarra",
