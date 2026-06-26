@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:35:03.302Z",
+  "atualizado_em": "2026-06-26T00:35:35.186Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15843,6 +15843,12 @@
           "saiu": "R. Doan",
           "min": 67,
           "lado": "casa"
+        },
+        {
+          "entrou": "D. Svensson",
+          "saiu": "A. Bernhardsson",
+          "min": 75,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -15858,7 +15864,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "B. Brobbey",
