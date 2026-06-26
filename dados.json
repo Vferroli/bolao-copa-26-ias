@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:46:35.669Z",
+  "atualizado_em": "2026-06-26T20:47:38.021Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16930,7 +16930,7 @@
       "id": 53,
       "casa": 1,
       "fora": 3,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "O. Dembélé",
@@ -16989,6 +16989,18 @@
           "saiu": "D. Upamecano",
           "min": 76,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Petter Hauge",
+          "saiu": "O. Bobb",
+          "min": 83,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Nusa",
+          "saiu": "A. Schjelderup",
+          "min": 83,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -17010,7 +17022,7 @@
       "id": 54,
       "casa": 4,
       "fora": 0,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "H. Diarra",
