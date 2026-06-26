@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:39:37.803Z",
+  "atualizado_em": "2026-06-26T03:40:10.194Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16402,6 +16402,12 @@
           "saiu": "B. Aaronson",
           "min": 77,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Freeman",
+          "saiu": "J. Scally",
+          "min": 77,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -16444,6 +16450,12 @@
           "cor": "amarelo",
           "min": 46,
           "lado": "fora"
+        },
+        {
+          "nome": "D. Gómez",
+          "cor": "amarelo",
+          "min": 77,
+          "lado": "casa"
         }
       ]
     }
