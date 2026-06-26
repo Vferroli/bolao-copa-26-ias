@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:54:40.262Z",
+  "atualizado_em": "2026-06-26T03:55:12.820Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16438,6 +16438,12 @@
           "saiu": "O. Aydin",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "entrou": "I. Can Kahveci",
+          "saiu": "B. Alper Yilmaz",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -16490,6 +16496,18 @@
           "saiu": "N. Irankunda",
           "min": 84,
           "lado": "fora"
+        },
+        {
+          "entrou": "D. Bobadilla",
+          "saiu": "D. Gómez",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Alonso",
+          "saiu": "M. Galarza",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
