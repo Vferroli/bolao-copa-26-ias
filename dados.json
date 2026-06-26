@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:46:36.948Z",
+  "atualizado_em": "2026-06-26T03:47:09.293Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16361,7 +16361,7 @@
       "id": 23,
       "casa": 2,
       "fora": 2,
-      "min": "83'",
+      "min": "84'",
       "gols": [
         {
           "nome": "A. Trusty",
@@ -16414,6 +16414,12 @@
           "saiu": "Z. Çelik",
           "min": 84,
           "lado": "casa"
+        },
+        {
+          "entrou": "C. Uzun",
+          "saiu": "K. Yildiz",
+          "min": 84,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -16447,6 +16453,12 @@
           "entrou": "A. Arce",
           "saiu": "G. Ávalos",
           "min": 67,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Canale",
+          "saiu": "O. Alderete",
+          "min": 84,
           "lado": "casa"
         }
       ],
