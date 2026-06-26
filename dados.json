@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:26:04.352Z",
+  "atualizado_em": "2026-06-26T20:26:36.006Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17035,6 +17035,12 @@
           "saiu": "A. Al-Hamadi",
           "min": 58,
           "lado": "fora"
+        },
+        {
+          "entrou": "P. Ciss",
+          "saiu": "A. Seck",
+          "min": 58,
+          "lado": "casa"
         }
       ],
       "cartoes": [
