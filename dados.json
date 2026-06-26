@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T19:08:35.583Z",
+  "atualizado_em": "2026-06-26T19:09:07.364Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16930,7 +16930,14 @@
       "id": 53,
       "casa": 0,
       "fora": 1,
-      "min": "7'"
+      "min": "8'",
+      "gols": [
+        {
+          "nome": "O. Dembélé",
+          "min": 7,
+          "lado": "fora"
+        }
+      ]
     },
     {
       "id": 54,
