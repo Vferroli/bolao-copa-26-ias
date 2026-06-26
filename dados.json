@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T03:39:05.169Z",
+  "atualizado_em": "2026-06-26T03:39:37.803Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16361,7 +16361,7 @@
       "id": 23,
       "casa": 2,
       "fora": 2,
-      "min": "76'",
+      "min": "77'",
       "gols": [
         {
           "nome": "A. Trusty",
@@ -16390,6 +16390,18 @@
           "saiu": "T. Weah",
           "min": 58,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Dest",
+          "saiu": "G. Reyna",
+          "min": 76,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Zendejas",
+          "saiu": "B. Aaronson",
+          "min": 77,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -16405,7 +16417,7 @@
       "id": 24,
       "casa": 0,
       "fora": 0,
-      "min": "76'",
+      "min": "77'",
       "subs": [
         {
           "entrou": "Maurício",
