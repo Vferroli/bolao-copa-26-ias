@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:57:43.553Z",
+  "atualizado_em": "2026-06-26T00:59:49.545Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -7534,9 +7534,14 @@
       "fora": "netherlands",
       "kickoff": "2026-06-25T23:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 3,
+        "avancou": null,
+        "marcadores": [
+          "B. Brobbey",
+          "H. Mastouri",
+          "J. Paul van Hecke"
+        ]
       },
       "palpites": {
         "claude": {
@@ -15899,91 +15904,6 @@
           "cor": "amarelo",
           "min": 85,
           "lado": "fora"
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "casa": 1,
-      "fora": 3,
-      "min": "90'+5'",
-      "gols": [
-        {
-          "nome": "B. Brobbey",
-          "min": 7,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Mastouri",
-          "min": 54,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Paul van Hecke",
-          "min": 62,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "M. Hadj Mahmoud",
-          "saiu": "R. Khedira",
-          "min": 67,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Achouri",
-          "saiu": "A. Slimane",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Ben Ouanes",
-          "saiu": "M. Amine Ben Hamida",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Koopmeiners",
-          "saiu": "F. de Jong",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Kluivert",
-          "saiu": "T. Reijnders",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Summerville",
-          "saiu": "D. Malen",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Chaouat",
-          "saiu": "I. Gharbi",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Depay",
-          "saiu": "B. Brobbey",
-          "min": 77,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Lang",
-          "saiu": "C. Gakpo",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Tounekti",
-          "saiu": "H. Mastouri",
-          "min": 90,
-          "lado": "casa"
         }
       ]
     }
