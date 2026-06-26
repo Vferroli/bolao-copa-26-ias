@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:26:02.183Z",
+  "atualizado_em": "2026-06-26T00:26:34.024Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15862,6 +15862,14 @@
           "nome": "J. Paul van Hecke",
           "min": 62,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "M. Hadj Mahmoud",
+          "saiu": "R. Khedira",
+          "min": 67,
+          "lado": "casa"
         }
       ]
     }
