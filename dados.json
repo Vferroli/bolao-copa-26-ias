@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-26T20:43:26.464Z",
+  "atualizado_em": "2026-06-26T20:43:58.190Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17010,7 +17010,7 @@
       "id": 54,
       "casa": 4,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "H. Diarra",
@@ -17101,6 +17101,12 @@
           "cor": "amarelo",
           "min": 18,
           "lado": "casa"
+        },
+        {
+          "nome": "A. Al-Ammari",
+          "cor": "amarelo",
+          "min": 76,
+          "lado": "fora"
         }
       ]
     }
