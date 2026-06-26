@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-25",
-  "atualizado_em": "2026-06-26T00:48:05.462Z",
+  "atualizado_em": "2026-06-26T00:48:38.014Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15806,7 +15806,7 @@
       "id": 35,
       "casa": 1,
       "fora": 1,
-      "min": "87'",
+      "min": "88'",
       "gols": [
         {
           "nome": "D. Maeda",
@@ -15867,6 +15867,18 @@
           "saiu": "A. Seko",
           "min": 75,
           "lado": "casa"
+        },
+        {
+          "entrou": "C. Starfelt",
+          "saiu": "V. Lindelöf",
+          "min": 87,
+          "lado": "fora"
+        },
+        {
+          "entrou": "B. Nygren",
+          "saiu": "G. Gudmundsson",
+          "min": 88,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -15894,7 +15906,7 @@
       "id": 36,
       "casa": 1,
       "fora": 3,
-      "min": "88'",
+      "min": "89'",
       "gols": [
         {
           "nome": "B. Brobbey",
