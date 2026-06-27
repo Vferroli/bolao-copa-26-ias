@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:26:50.715Z",
+  "atualizado_em": "2026-06-27T04:27:22.839Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18157,6 +18157,18 @@
           "saiu": "J. Doku",
           "min": 56,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Boxall",
+          "saiu": "T. Payne",
+          "min": 64,
+          "lado": "casa"
+        },
+        {
+          "entrou": "C. McCowatt",
+          "saiu": "J. Bell",
+          "min": 64,
+          "lado": "casa"
         }
       ],
       "cartoes": [
