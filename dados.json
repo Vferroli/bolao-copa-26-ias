@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:46:09.897Z",
+  "atualizado_em": "2026-06-27T04:46:41.849Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18142,7 +18142,7 @@
     },
     {
       "id": 42,
-      "casa": 0,
+      "casa": 1,
       "fora": 3,
       "min": "84'",
       "gols": [
@@ -18160,6 +18160,11 @@
           "nome": "K. De Bruyne",
           "min": 66,
           "lado": "fora"
+        },
+        {
+          "nome": "E. Just",
+          "min": 84,
+          "lado": "casa"
         }
       ],
       "subs": [
