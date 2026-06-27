@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:05:45.295Z",
+  "atualizado_em": "2026-06-27T03:06:17.073Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18048,15 +18048,22 @@
   "live": [
     {
       "id": 41,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
-      "min": "5'"
+      "min": "5'",
+      "gols": [
+        {
+          "nome": "M. Saber",
+          "min": 5,
+          "lado": "casa"
+        }
+      ]
     },
     {
       "id": 42,
       "casa": 0,
       "fora": 0,
-      "min": "4'"
+      "min": "5'"
     }
   ]
 }
