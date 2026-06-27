@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:28:27.359Z",
+  "atualizado_em": "2026-06-27T04:29:30.633Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "64'",
+      "min": "65'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18125,8 +18125,8 @@
     {
       "id": 42,
       "casa": 0,
-      "fora": 2,
-      "min": "66'",
+      "fora": 3,
+      "min": "67'",
       "gols": [
         {
           "nome": "L. Trossard",
@@ -18136,6 +18136,11 @@
         {
           "nome": "L. Trossard",
           "min": 50,
+          "lado": "fora"
+        },
+        {
+          "nome": "K. De Bruyne",
+          "min": 66,
           "lado": "fora"
         }
       ],
