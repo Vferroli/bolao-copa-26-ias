@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T00:34:36.001Z",
+  "atualizado_em": "2026-06-27T00:35:08.266Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17500,7 +17500,15 @@
       "id": 47,
       "casa": 0,
       "fora": 0,
-      "min": "32'",
+      "min": "33'",
+      "subs": [
+        {
+          "entrou": "A. Lajami",
+          "saiu": "H. Al-Tambakti",
+          "min": 33,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "S. Abdulhamid",
@@ -17520,7 +17528,7 @@
       "id": 48,
       "casa": 0,
       "fora": 0,
-      "min": "33'"
+      "min": "34'"
     }
   ]
 }
