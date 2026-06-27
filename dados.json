@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:40:19.137Z",
+  "atualizado_em": "2026-06-27T04:40:51.263Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18099,6 +18099,12 @@
           "saiu": "S. Ghoddos",
           "min": 67,
           "lado": "fora"
+        },
+        {
+          "entrou": "H. Abdelkarim",
+          "saiu": "M. Zico",
+          "min": 76,
+          "lado": "casa"
         }
       ],
       "cartoes": [
