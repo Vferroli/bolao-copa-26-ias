@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:55:03.850Z",
+  "atualizado_em": "2026-06-27T22:55:36.087Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18723,7 +18723,7 @@
       "id": 72,
       "casa": 2,
       "fora": 1,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "P. Sucic",
@@ -18803,6 +18803,12 @@
           "cor": "amarelo",
           "min": 68,
           "lado": "casa"
+        },
+        {
+          "nome": "K. Peprah Oppong",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
         }
       ]
     }
