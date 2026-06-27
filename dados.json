@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:51:08.545Z",
+  "atualizado_em": "2026-06-27T22:51:41.281Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18785,14 +18785,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "M. Pasalic",
-          "saiu": "M. Baturina",
+          "entrou": "J. Gvardiol",
+          "saiu": "N. Vlasic",
           "min": 88,
           "lado": "casa"
         },
         {
-          "entrou": "J. Gvardiol",
-          "saiu": "N. Vlasic",
+          "entrou": "M. Pasalic",
+          "saiu": "M. Baturina",
           "min": 88,
           "lado": "casa"
         }
