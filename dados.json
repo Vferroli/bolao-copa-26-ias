@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:46:17.965Z",
+  "atualizado_em": "2026-06-27T22:46:50.355Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18684,6 +18684,18 @@
           "saiu": "H. Kane",
           "min": 84,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Quintero",
+          "saiu": "C. Harvey",
+          "min": 88,
+          "lado": "casa"
+        },
+        {
+          "entrou": "É. Davis",
+          "saiu": "J. Gutiérrez",
+          "min": 88,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -18711,7 +18723,7 @@
       "id": 72,
       "casa": 2,
       "fora": 1,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "P. Sucic",
