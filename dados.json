@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:42:59.635Z",
+  "atualizado_em": "2026-06-27T04:44:03.085Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18131,6 +18131,12 @@
           "cor": "amarelo",
           "min": 43,
           "lado": "fora"
+        },
+        {
+          "nome": "S. Ezatolahi",
+          "cor": "amarelo",
+          "min": 79,
+          "lado": "fora"
         }
       ]
     },
@@ -18138,7 +18144,7 @@
       "id": 42,
       "casa": 0,
       "fora": 3,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "L. Trossard",
