@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:29:19.415Z",
+  "atualizado_em": "2026-06-27T01:29:51.710Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17500,7 +17500,7 @@
       "id": 47,
       "casa": 0,
       "fora": 0,
-      "min": "65'",
+      "min": "66'",
       "subs": [
         {
           "entrou": "A. Lajami",
@@ -17525,6 +17525,18 @@
           "saiu": "W. Semedo",
           "min": 61,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Abu Al-Shamat",
+          "saiu": "S. Al-Dawsari",
+          "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Al-Hamdan",
+          "saiu": "S. Mandash",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -17546,7 +17558,7 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "65'",
+      "min": "66'",
       "gols": [
         {
           "nome": "Á. Baena",
