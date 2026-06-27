@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:20:53.516Z",
+  "atualizado_em": "2026-06-27T01:21:25.253Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17534,7 +17534,7 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "56'",
+      "min": "57'",
       "gols": [
         {
           "nome": "Á. Baena",
@@ -17553,6 +17553,12 @@
           "entrou": "S. Rochet",
           "saiu": "F. Muslera",
           "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. Viñas",
+          "saiu": "F. Valverde",
+          "min": 57,
           "lado": "casa"
         }
       ],
