@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:53:28.987Z",
+  "atualizado_em": "2026-06-27T04:07:38.606Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18108,6 +18108,20 @@
           "nome": "L. Trossard",
           "min": 28,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "B. Old",
+          "saiu": "R. Thomas",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Randall",
+          "saiu": "S. Singh",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     }
