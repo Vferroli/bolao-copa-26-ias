@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:48:18.075Z",
+  "atualizado_em": "2026-06-27T04:48:50.075Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18165,6 +18165,11 @@
           "nome": "E. Just",
           "min": 84,
           "lado": "casa"
+        },
+        {
+          "nome": "R. Lukaku",
+          "min": 86,
+          "lado": "fora"
         }
       ],
       "subs": [
