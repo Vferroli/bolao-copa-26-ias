@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:42:18.428Z",
+  "atualizado_em": "2026-06-27T03:42:50.579Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "41'",
+      "min": "42'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18082,6 +18082,12 @@
           "nome": "M. Saber",
           "cor": "amarelo",
           "min": 20,
+          "lado": "casa"
+        },
+        {
+          "nome": "Y. Ibrahim",
+          "cor": "amarelo",
+          "min": 42,
           "lado": "casa"
         }
       ]
