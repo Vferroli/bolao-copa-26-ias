@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:58:25.376Z",
+  "atualizado_em": "2026-06-27T04:58:57.154Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18154,6 +18154,12 @@
           "cor": "amarelo",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "nome": "S. Khalilzadeh",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
         }
       ]
     },
