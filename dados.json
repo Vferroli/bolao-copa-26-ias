@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:47:22.629Z",
+  "atualizado_em": "2026-06-27T22:47:54.994Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18723,7 +18723,7 @@
       "id": 72,
       "casa": 2,
       "fora": 1,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "P. Sucic",
