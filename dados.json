@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:30:54.583Z",
+  "atualizado_em": "2026-06-27T01:31:26.284Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17500,7 +17500,7 @@
       "id": 47,
       "casa": 0,
       "fora": 0,
-      "min": "66'",
+      "min": "68'",
       "subs": [
         {
           "entrou": "A. Lajami",
@@ -17551,6 +17551,12 @@
           "cor": "amarelo",
           "min": 9,
           "lado": "casa"
+        },
+        {
+          "nome": "N. Al-Dawsari",
+          "cor": "amarelo",
+          "min": 67,
+          "lado": "fora"
         }
       ]
     },
