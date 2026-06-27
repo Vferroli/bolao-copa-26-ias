@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:59:18.476Z",
+  "atualizado_em": "2026-06-27T23:00:36.146Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16683,6 +16683,289 @@
           "avanca": null,
           "marcador": "Cédric Bakambu"
         }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-4-2",
+          "fora": "3-4-2-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Lionel Mpasi Nzau",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Arthur Masuaku",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Axel Tuanzebe",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Chancel Mbemba",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Aaron Wan-Bissaka",
+              "pos": "D"
+            },
+            {
+              "num": 9,
+              "nome": "Brian Cipenga",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Noah Sadiki",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Samuel Moutoussamy",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Nathanaël Mbuku",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Cédric Bakambu",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Yoane Wissa",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 21,
+              "nome": "Matthieu Epolo",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Timothy Fayulu",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Dylan Batubinsika",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Gedeon Kalulu",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Joris Kayembe",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Steve Kapuadi",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Aaron Tshibola",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Charles Pickel",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Gaël Kakuta",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Théo Bongonda",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Edo Kayembe",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Ngal'ayel Mukau",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Fiston Mayele",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Meschak Elia",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Simon Banza",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 12,
+              "nome": "Abduvokhid Nematov",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Rustam Ashurmatov",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Jakhongir Urozov",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Abdukodir Khusanov",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Sherzod Nasrullaev",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Otabek Shukurov",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Akmal Mozgovoy",
+              "pos": "M"
+            },
+            {
+              "num": 3,
+              "nome": "Khozhiakbar Alizhonov",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Abbosbek Fayzullaev",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Dostonbek Khamdamov",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Eldor Shomurodov",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 16,
+              "nome": "Botirali Ergashev",
+              "pos": "G"
+            },
+            {
+              "num": 1,
+              "nome": "Utkir Yusupov",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Avazbek Ulmasaliyev",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Farrukh Sayfiev",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Umarbek Eshmuradov",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Bekhruz Karimov",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Azizbek Amanov",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Jamshid Iskandarov",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Oston Urunov",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Ruslanbek Jiyanov",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Sherzod Esanov",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Abdulla Abdullaev",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Azizjon Ganiev",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Odiljon Khamrobekov",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Igor Sergeev",
+              "pos": "F"
+            }
+          ]
+        }
       }
     },
     {
@@ -17986,9 +18269,13 @@
       "fora": "england",
       "kickoff": "2026-06-27T21:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "J. Bellingham",
+          "H. Kane"
+        ]
       },
       "palpites": {
         "claude": {
@@ -18709,106 +18996,6 @@
           "cor": "amarelo",
           "min": 90,
           "lado": "fora"
-        }
-      ]
-    },
-    {
-      "id": 71,
-      "casa": 0,
-      "fora": 2,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "J. Bellingham",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Kane",
-          "min": 67,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "J. Fajardo",
-          "saiu": "T. Rodríguez",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Spence",
-          "saiu": "J. Quansah",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Madueke",
-          "saiu": "B. Saka",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Díaz",
-          "saiu": "É. Yoel Bárcenas",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Eze",
-          "saiu": "J. Bellingham",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Londoño",
-          "saiu": "J. Luis Rodríguez",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Henderson",
-          "saiu": "E. Anderson",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Watkins",
-          "saiu": "H. Kane",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Quintero",
-          "saiu": "C. Harvey",
-          "min": 88,
-          "lado": "casa"
-        },
-        {
-          "entrou": "É. Davis",
-          "saiu": "J. Gutiérrez",
-          "min": 88,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Fajardo",
-          "cor": "amarelo",
-          "min": 53,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Quansah",
-          "cor": "amarelo",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Andrade",
-          "cor": "amarelo",
-          "min": 84,
-          "lado": "casa"
         }
       ]
     }
