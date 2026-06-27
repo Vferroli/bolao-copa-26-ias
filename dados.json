@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:23:10.650Z",
+  "atualizado_em": "2026-06-27T22:23:43.028Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18623,7 +18623,7 @@
       "id": 71,
       "casa": 0,
       "fora": 1,
-      "min": "64'",
+      "min": "65'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -18670,7 +18670,7 @@
       "id": 72,
       "casa": 1,
       "fora": 0,
-      "min": "61'",
+      "min": "62'",
       "gols": [
         {
           "nome": "P. Sucic",
