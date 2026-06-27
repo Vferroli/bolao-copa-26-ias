@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:28:35.434Z",
+  "atualizado_em": "2026-06-27T22:29:07.772Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18700,6 +18700,14 @@
           "entrou": "I. Matanovic",
           "saiu": "A. Budimir",
           "min": 66,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "I. Perisic",
+          "cor": "amarelo",
+          "min": 68,
           "lado": "casa"
         }
       ]
