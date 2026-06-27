@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T00:27:09.275Z",
+  "atualizado_em": "2026-06-27T00:28:13.094Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17500,7 +17500,7 @@
       "id": 47,
       "casa": 0,
       "fora": 0,
-      "min": "25'",
+      "min": "26'",
       "cartoes": [
         {
           "nome": "S. Abdulhamid",
@@ -17520,7 +17520,7 @@
       "id": 48,
       "casa": 0,
       "fora": 0,
-      "min": "26'"
+      "min": "27'"
     }
   ]
 }
