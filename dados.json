@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:57:46.689Z",
+  "atualizado_em": "2026-06-27T01:58:59.802Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17500,7 +17500,7 @@
       "id": 47,
       "casa": 0,
       "fora": 0,
-      "min": "90'+4'",
+      "min": "90'+5'",
       "subs": [
         {
           "entrou": "A. Lajami",
@@ -17594,7 +17594,7 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "Á. Baena",
