@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:17:45.996Z",
+  "atualizado_em": "2026-06-27T04:18:18.274Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18152,6 +18152,12 @@
           "nome": "M. Stamenic",
           "cor": "amarelo",
           "min": 46,
+          "lado": "casa"
+        },
+        {
+          "nome": "E. Just",
+          "cor": "amarelo",
+          "min": 56,
           "lado": "casa"
         }
       ]
