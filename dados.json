@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:47:13.923Z",
+  "atualizado_em": "2026-06-27T04:47:46.085Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18215,6 +18215,18 @@
           "saiu": "L. Cacace",
           "min": 79,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. Lukaku",
+          "saiu": "C. De Ketelaere",
+          "min": 85,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. Raskin",
+          "saiu": "Y. Tielemans",
+          "min": 85,
+          "lado": "fora"
         }
       ],
       "cartoes": [
