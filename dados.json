@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:43:04.023Z",
+  "atualizado_em": "2026-06-27T22:43:36.609Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18623,7 +18623,7 @@
       "id": 71,
       "casa": 0,
       "fora": 2,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -18672,6 +18672,18 @@
           "saiu": "J. Luis Rodríguez",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Henderson",
+          "saiu": "E. Anderson",
+          "min": 84,
+          "lado": "fora"
+        },
+        {
+          "entrou": "O. Watkins",
+          "saiu": "H. Kane",
+          "min": 84,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -18699,7 +18711,7 @@
       "id": 72,
       "casa": 1,
       "fora": 1,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "P. Sucic",
