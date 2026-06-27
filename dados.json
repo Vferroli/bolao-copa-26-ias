@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:25:07.070Z",
+  "atualizado_em": "2026-06-27T01:26:09.698Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17546,7 +17546,7 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "Á. Baena",
