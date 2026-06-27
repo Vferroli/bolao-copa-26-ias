@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:30:45.409Z",
+  "atualizado_em": "2026-06-27T04:31:17.472Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18093,6 +18093,12 @@
           "saiu": "M. Salah",
           "min": 57,
           "lado": "casa"
+        },
+        {
+          "entrou": "S. Moghanloo",
+          "saiu": "S. Ghoddos",
+          "min": 67,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -18126,7 +18132,7 @@
       "id": 42,
       "casa": 0,
       "fora": 3,
-      "min": "68'",
+      "min": "69'",
       "gols": [
         {
           "nome": "L. Trossard",
