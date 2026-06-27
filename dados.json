@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:56:49.270Z",
+  "atualizado_em": "2026-06-27T04:57:21.186Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18049,7 +18049,7 @@
     {
       "id": 41,
       "casa": 1,
-      "fora": 1,
+      "fora": 2,
       "min": "90'+2'",
       "gols": [
         {
@@ -18155,8 +18155,8 @@
     {
       "id": 42,
       "casa": 1,
-      "fora": 4,
-      "min": "90'+4'",
+      "fora": 5,
+      "min": "90'+5'",
       "gols": [
         {
           "nome": "L. Trossard",
@@ -18181,6 +18181,11 @@
         {
           "nome": "R. Lukaku",
           "min": 86,
+          "lado": "fora"
+        },
+        {
+          "nome": "A. Saelemaekers",
+          "min": 90,
           "lado": "fora"
         }
       ],
