@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:58:59.802Z",
+  "atualizado_em": "2026-06-27T01:59:31.478Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17594,7 +17594,7 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "90'+4'",
+      "min": "90'+5'",
       "gols": [
         {
           "nome": "Á. Baena",
@@ -17680,6 +17680,12 @@
         {
           "nome": "N. de la Cruz",
           "cor": "amarelo",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "nome": "A. Canobbio",
+          "cor": "vermelho",
           "min": 90,
           "lado": "casa"
         }
