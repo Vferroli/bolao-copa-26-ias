@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:41:55.728Z",
+  "atualizado_em": "2026-06-27T04:42:27.629Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18138,7 +18138,7 @@
       "id": 42,
       "casa": 0,
       "fora": 3,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "L. Trossard",
