@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:33:58.121Z",
+  "atualizado_em": "2026-06-27T04:34:30.014Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "69'",
+      "min": "70'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18180,6 +18180,18 @@
           "saiu": "J. Bell",
           "min": 64,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Saelemaekers",
+          "saiu": "L. Trossard",
+          "min": 72,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Onana",
+          "saiu": "K. De Bruyne",
+          "min": 72,
+          "lado": "fora"
         }
       ],
       "cartoes": [
