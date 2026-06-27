@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:07:38.606Z",
+  "atualizado_em": "2026-06-27T04:08:42.134Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18069,6 +18069,24 @@
           "saiu": "M. Abdelmoneim",
           "min": 14,
           "lado": "casa"
+        },
+        {
+          "entrou": "S. Hardani",
+          "saiu": "H. Kanani",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Attia",
+          "saiu": "M. Saber",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "O. Marmoush",
+          "saiu": "E. Ashour",
+          "min": 45,
+          "lado": "casa"
         }
       ],
       "cartoes": [
@@ -18102,7 +18120,7 @@
       "id": 42,
       "casa": 0,
       "fora": 1,
-      "min": "Intervalo",
+      "min": "46'",
       "gols": [
         {
           "nome": "L. Trossard",
@@ -18121,6 +18139,14 @@
           "entrou": "J. Randall",
           "saiu": "S. Singh",
           "min": 45,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "M. Stamenic",
+          "cor": "amarelo",
+          "min": 46,
           "lado": "casa"
         }
       ]
