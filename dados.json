@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T00:10:22.407Z",
+  "atualizado_em": "2026-06-27T00:10:54.839Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17500,13 +17500,19 @@
       "id": 47,
       "casa": 0,
       "fora": 0,
-      "min": "8'",
+      "min": "9'",
       "cartoes": [
         {
           "nome": "S. Abdulhamid",
           "cor": "amarelo",
           "min": 4,
           "lado": "fora"
+        },
+        {
+          "nome": "W. Pina",
+          "cor": "amarelo",
+          "min": 9,
+          "lado": "casa"
         }
       ]
     },
