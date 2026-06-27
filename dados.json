@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T00:45:56.248Z",
+  "atualizado_em": "2026-06-27T00:46:28.661Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17528,12 +17528,20 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "44'",
+      "min": "45'",
       "gols": [
         {
           "nome": "Á. Baena",
           "min": 42,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "N. de la Cruz",
+          "saiu": "M. Ugarte",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     }
