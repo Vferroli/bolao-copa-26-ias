@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:24:03.494Z",
+  "atualizado_em": "2026-06-27T01:24:35.188Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17534,7 +17534,7 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "59'",
+      "min": "60'",
       "gols": [
         {
           "nome": "Á. Baena",
@@ -17560,6 +17560,18 @@
           "saiu": "F. Valverde",
           "min": 57,
           "lado": "casa"
+        },
+        {
+          "entrou": "F. Ruiz",
+          "saiu": "Pedri",
+          "min": 60,
+          "lado": "fora"
+        },
+        {
+          "entrou": "D. Olmo",
+          "saiu": "M. Merino",
+          "min": 60,
+          "lado": "fora"
         }
       ],
       "cartoes": [
