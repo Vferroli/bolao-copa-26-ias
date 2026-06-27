@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:18:54.910Z",
+  "atualizado_em": "2026-06-27T03:19:57.421Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "18'",
+      "min": "19'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18069,6 +18069,14 @@
           "saiu": "M. Abdelmoneim",
           "min": 14,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "H. Kanani",
+          "cor": "amarelo",
+          "min": 19,
+          "lado": "fora"
         }
       ]
     },
