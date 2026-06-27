@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:45:40.534Z",
+  "atualizado_em": "2026-06-27T01:46:12.300Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17549,6 +17549,12 @@
           "saiu": "R. Mendes",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Al-Harbi",
+          "saiu": "N. Boushal",
+          "min": 82,
+          "lado": "fora"
         }
       ],
       "cartoes": [
