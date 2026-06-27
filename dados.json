@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:38:48.477Z",
+  "atualizado_em": "2026-06-27T22:39:20.882Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18623,7 +18623,7 @@
       "id": 71,
       "casa": 0,
       "fora": 2,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -18692,13 +18692,18 @@
     {
       "id": 72,
       "casa": 1,
-      "fora": 0,
-      "min": "77'",
+      "fora": 1,
+      "min": "78'",
       "gols": [
         {
           "nome": "P. Sucic",
           "min": 31,
           "lado": "casa"
+        },
+        {
+          "nome": "D. Luckassen",
+          "min": 73,
+          "lado": "fora"
         }
       ],
       "subs": [
@@ -18731,6 +18736,12 @@
           "saiu": "K. Sulemana",
           "min": 71,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Pasalic",
+          "saiu": "M. Kovacic",
+          "min": 78,
+          "lado": "casa"
         }
       ],
       "cartoes": [
