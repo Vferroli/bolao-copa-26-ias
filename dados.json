@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:19:57.421Z",
+  "atualizado_em": "2026-06-27T03:20:29.123Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18077,6 +18077,12 @@
           "cor": "amarelo",
           "min": 19,
           "lado": "fora"
+        },
+        {
+          "nome": "M. Saber",
+          "cor": "amarelo",
+          "min": 20,
+          "lado": "casa"
         }
       ]
     },
@@ -18084,7 +18090,7 @@
       "id": 42,
       "casa": 0,
       "fora": 0,
-      "min": "18'"
+      "min": "19'"
     }
   ]
 }
