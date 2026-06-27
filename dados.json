@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:43:22.675Z",
+  "atualizado_em": "2026-06-27T03:43:54.962Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "42'",
+      "min": "43'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18089,6 +18089,12 @@
           "cor": "amarelo",
           "min": 42,
           "lado": "casa"
+        },
+        {
+          "nome": "A. Nemati",
+          "cor": "amarelo",
+          "min": 43,
+          "lado": "fora"
         }
       ]
     },
