@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T23:49:26.640Z",
+  "atualizado_em": "2026-06-27T23:49:59.192Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,13 +19198,13 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "18'"
+      "min": "19'"
     },
     {
       "id": 66,
       "casa": 1,
       "fora": 1,
-      "min": "18'",
+      "min": "19'",
       "gols": [
         {
           "nome": "E. Shomurodov",
