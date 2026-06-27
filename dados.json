@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:46:33.965Z",
+  "atualizado_em": "2026-06-27T03:47:37.322Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18050,7 +18050,7 @@
       "id": 41,
       "casa": 1,
       "fora": 1,
-      "min": "45'+1'",
+      "min": "45'+2'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18102,7 +18102,7 @@
       "id": 42,
       "casa": 0,
       "fora": 1,
-      "min": "45'",
+      "min": "45'+1'",
       "gols": [
         {
           "nome": "L. Trossard",
