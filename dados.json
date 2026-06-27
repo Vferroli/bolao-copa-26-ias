@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T05:03:43.412Z",
+  "atualizado_em": "2026-06-27T05:08:23.722Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9693,9 +9693,13 @@
       "fora": "iran",
       "kickoff": "2026-06-27T03:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "M. Saber",
+          "R. Rezaeian"
+        ]
       },
       "palpites": {
         "claude": {
@@ -18053,118 +18057,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 41,
-      "casa": 1,
-      "fora": 1,
-      "min": "90'+9'",
-      "gols": [
-        {
-          "nome": "M. Saber",
-          "min": 5,
-          "lado": "casa"
-        },
-        {
-          "nome": "R. Rezaeian",
-          "min": 14,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "Y. Ibrahim",
-          "saiu": "M. Abdelmoneim",
-          "min": 14,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Hardani",
-          "saiu": "H. Kanani",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Attia",
-          "saiu": "M. Saber",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "O. Marmoush",
-          "saiu": "E. Ashour",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Zizo",
-          "saiu": "M. Salah",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Moghanloo",
-          "saiu": "S. Ghoddos",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Abdelkarim",
-          "saiu": "M. Zico",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Jahanbakhsh",
-          "saiu": "M. Mohebbi",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "H. Kanani",
-          "cor": "amarelo",
-          "min": 19,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Saber",
-          "cor": "amarelo",
-          "min": 20,
-          "lado": "casa"
-        },
-        {
-          "nome": "Y. Ibrahim",
-          "cor": "amarelo",
-          "min": 42,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Nemati",
-          "cor": "amarelo",
-          "min": 43,
-          "lado": "fora"
-        },
-        {
-          "nome": "S. Ezatolahi",
-          "cor": "amarelo",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Lashin",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Khalilzadeh",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
