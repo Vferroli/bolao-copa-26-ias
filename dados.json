@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:59:31.478Z",
+  "atualizado_em": "2026-06-27T02:00:03.367Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17497,100 +17497,6 @@
   ],
   "live": [
     {
-      "id": 47,
-      "casa": 0,
-      "fora": 0,
-      "min": "90'+5'",
-      "subs": [
-        {
-          "entrou": "A. Lajami",
-          "saiu": "H. Al-Tambakti",
-          "min": 33,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Al-Juwayr",
-          "saiu": "A. Al-Khaibari",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. da Costa",
-          "saiu": "D. Livramento",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "H. Varela",
-          "saiu": "W. Semedo",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Abu Al-Shamat",
-          "saiu": "S. Al-Dawsari",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Al-Hamdan",
-          "saiu": "S. Mandash",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Duarte",
-          "saiu": "J. Monteiro",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Rodrigues",
-          "saiu": "R. Mendes",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Al-Harbi",
-          "saiu": "N. Boushal",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Moreira",
-          "saiu": "W. Pina",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "S. Abdulhamid",
-          "cor": "amarelo",
-          "min": 4,
-          "lado": "fora"
-        },
-        {
-          "nome": "W. Pina",
-          "cor": "amarelo",
-          "min": 9,
-          "lado": "casa"
-        },
-        {
-          "nome": "N. Al-Dawsari",
-          "cor": "amarelo",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "nome": "F. Al-Brikan",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    },
-    {
       "id": 48,
       "casa": 0,
       "fora": 1,
@@ -17688,6 +17594,100 @@
           "cor": "vermelho",
           "min": 90,
           "lado": "casa"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "casa": 0,
+      "fora": 0,
+      "min": "90'+5'",
+      "subs": [
+        {
+          "entrou": "A. Lajami",
+          "saiu": "H. Al-Tambakti",
+          "min": 33,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Al-Juwayr",
+          "saiu": "A. Al-Khaibari",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. da Costa",
+          "saiu": "D. Livramento",
+          "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "H. Varela",
+          "saiu": "W. Semedo",
+          "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Abu Al-Shamat",
+          "saiu": "S. Al-Dawsari",
+          "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Al-Hamdan",
+          "saiu": "S. Mandash",
+          "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. Duarte",
+          "saiu": "J. Monteiro",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Rodrigues",
+          "saiu": "R. Mendes",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Al-Harbi",
+          "saiu": "N. Boushal",
+          "min": 82,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Moreira",
+          "saiu": "W. Pina",
+          "min": 90,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "S. Abdulhamid",
+          "cor": "amarelo",
+          "min": 4,
+          "lado": "fora"
+        },
+        {
+          "nome": "W. Pina",
+          "cor": "amarelo",
+          "min": 9,
+          "lado": "casa"
+        },
+        {
+          "nome": "N. Al-Dawsari",
+          "cor": "amarelo",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "nome": "F. Al-Brikan",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
         }
       ]
     }
