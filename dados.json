@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T02:04:46.192Z",
+  "atualizado_em": "2026-06-27T02:06:19.219Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -11085,9 +11085,12 @@
       "fora": "spain",
       "kickoff": "2026-06-27T00:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "Á. Baena"
+        ]
       },
       "palpites": {
         "claude": {
@@ -17496,107 +17499,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 48,
-      "casa": 0,
-      "fora": 1,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "Á. Baena",
-          "min": 42,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. de la Cruz",
-          "saiu": "M. Ugarte",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Rochet",
-          "saiu": "F. Muslera",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Viñas",
-          "saiu": "F. Valverde",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Ruiz",
-          "saiu": "Pedri",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Olmo",
-          "saiu": "M. Merino",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Pino",
-          "saiu": "Á. Baena",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Rodríguez",
-          "saiu": "J. Manuel Sanabria",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Williams",
-          "saiu": "L. Yamal",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Torres",
-          "saiu": "M. Oyarzabal",
-          "min": 76,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "Á. Baena",
-          "cor": "amarelo",
-          "min": 46,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Manuel Sanabria",
-          "cor": "amarelo",
-          "min": 54,
-          "lado": "casa"
-        },
-        {
-          "nome": "G. Varela",
-          "cor": "amarelo",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "nome": "N. de la Cruz",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Canobbio",
-          "cor": "vermelho",
-          "min": 90,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
