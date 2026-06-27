@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:55:36.087Z",
+  "atualizado_em": "2026-06-27T22:56:08.330Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18620,6 +18620,99 @@
   ],
   "live": [
     {
+      "id": 72,
+      "casa": 2,
+      "fora": 1,
+      "min": "90'+5'",
+      "gols": [
+        {
+          "nome": "P. Sucic",
+          "min": 31,
+          "lado": "casa"
+        },
+        {
+          "nome": "D. Luckassen",
+          "min": 73,
+          "lado": "fora"
+        },
+        {
+          "nome": "N. Vlasic",
+          "min": 83,
+          "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "K. Peprah Oppong",
+          "saiu": "J. Adjetey",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "F. Issahaku",
+          "saiu": "E. Owusu",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "I. Matanovic",
+          "saiu": "A. Budimir",
+          "min": 66,
+          "lado": "casa"
+        },
+        {
+          "entrou": "B. Thomas-Asante",
+          "saiu": "J. Ayew",
+          "min": 71,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Nuamah",
+          "saiu": "K. Sulemana",
+          "min": 71,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Pasalic",
+          "saiu": "M. Kovacic",
+          "min": 78,
+          "lado": "casa"
+        },
+        {
+          "entrou": "C. Yirenkyi",
+          "saiu": "K. Sibo",
+          "min": 85,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Gvardiol",
+          "saiu": "N. Vlasic",
+          "min": 88,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Pasalic",
+          "saiu": "M. Baturina",
+          "min": 88,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "I. Perisic",
+          "cor": "amarelo",
+          "min": 68,
+          "lado": "casa"
+        },
+        {
+          "nome": "K. Peprah Oppong",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
+        }
+      ]
+    },
+    {
       "id": 71,
       "casa": 0,
       "fora": 2,
@@ -18716,99 +18809,6 @@
           "cor": "amarelo",
           "min": 84,
           "lado": "casa"
-        }
-      ]
-    },
-    {
-      "id": 72,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+4'",
-      "gols": [
-        {
-          "nome": "P. Sucic",
-          "min": 31,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Luckassen",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "nome": "N. Vlasic",
-          "min": 83,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "K. Peprah Oppong",
-          "saiu": "J. Adjetey",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Issahaku",
-          "saiu": "E. Owusu",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Matanovic",
-          "saiu": "A. Budimir",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Thomas-Asante",
-          "saiu": "J. Ayew",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Nuamah",
-          "saiu": "K. Sulemana",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Pasalic",
-          "saiu": "M. Kovacic",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Yirenkyi",
-          "saiu": "K. Sibo",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Gvardiol",
-          "saiu": "N. Vlasic",
-          "min": 88,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Pasalic",
-          "saiu": "M. Baturina",
-          "min": 88,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "I. Perisic",
-          "cor": "amarelo",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "nome": "K. Peprah Oppong",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
         }
       ]
     }
