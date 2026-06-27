@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:11:52.946Z",
+  "atualizado_em": "2026-06-27T22:12:25.457Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18631,13 +18631,21 @@
           "min": 45,
           "lado": "casa"
         }
+      ],
+      "cartoes": [
+        {
+          "nome": "J. Fajardo",
+          "cor": "amarelo",
+          "min": 53,
+          "lado": "casa"
+        }
       ]
     },
     {
       "id": 72,
       "casa": 1,
       "fora": 0,
-      "min": "50'",
+      "min": "51'",
       "gols": [
         {
           "nome": "P. Sucic",
