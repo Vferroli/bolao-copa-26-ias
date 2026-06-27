@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:22:37.971Z",
+  "atualizado_em": "2026-06-27T22:23:10.650Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18647,7 +18647,7 @@
         {
           "entrou": "N. Madueke",
           "saiu": "B. Saka",
-          "min": 64,
+          "min": 63,
           "lado": "fora"
         }
       ],
