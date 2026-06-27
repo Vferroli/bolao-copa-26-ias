@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:59:29.282Z",
+  "atualizado_em": "2026-06-27T05:00:33.001Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18049,8 +18049,8 @@
     {
       "id": 41,
       "casa": 1,
-      "fora": 2,
-      "min": "90'+5'",
+      "fora": 1,
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "M. Saber",
@@ -18060,11 +18060,6 @@
         {
           "nome": "R. Rezaeian",
           "min": 14,
-          "lado": "fora"
-        },
-        {
-          "nome": "S. Khalilzadeh",
-          "min": 90,
           "lado": "fora"
         }
       ],
