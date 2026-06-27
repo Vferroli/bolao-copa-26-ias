@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:35:08.953Z",
+  "atualizado_em": "2026-06-27T01:35:40.709Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17500,7 +17500,7 @@
       "id": 47,
       "casa": 0,
       "fora": 0,
-      "min": "71'",
+      "min": "72'",
       "subs": [
         {
           "entrou": "A. Lajami",
@@ -17537,6 +17537,18 @@
           "saiu": "S. Mandash",
           "min": 66,
           "lado": "fora"
+        },
+        {
+          "entrou": "L. Duarte",
+          "saiu": "J. Monteiro",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Rodrigues",
+          "saiu": "R. Mendes",
+          "min": 72,
+          "lado": "casa"
         }
       ],
       "cartoes": [
