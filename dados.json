@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:05:48.083Z",
+  "atualizado_em": "2026-06-27T22:06:19.900Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18643,6 +18643,20 @@
           "nome": "P. Sucic",
           "min": 31,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "K. Peprah Oppong",
+          "saiu": "J. Adjetey",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "F. Issahaku",
+          "saiu": "E. Owusu",
+          "min": 45,
+          "lado": "fora"
         }
       ]
     }
