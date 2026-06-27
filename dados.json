@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T04:20:57.492Z",
+  "atualizado_em": "2026-06-27T04:21:29.596Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18086,6 +18086,12 @@
           "entrou": "O. Marmoush",
           "saiu": "E. Ashour",
           "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Zizo",
+          "saiu": "M. Salah",
+          "min": 57,
           "lado": "casa"
         }
       ],
