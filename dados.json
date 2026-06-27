@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T00:55:34.229Z",
+  "atualizado_em": "2026-06-27T01:09:18.886Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17506,6 +17506,12 @@
           "entrou": "A. Lajami",
           "saiu": "H. Al-Tambakti",
           "min": 33,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Al-Juwayr",
+          "saiu": "A. Al-Khaibari",
+          "min": 45,
           "lado": "fora"
         }
       ],
