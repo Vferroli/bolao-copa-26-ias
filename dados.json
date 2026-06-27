@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T02:06:19.219Z",
+  "atualizado_em": "2026-06-27T02:30:33.185Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -9760,6 +9760,279 @@
           "fora": 2,
           "avanca": null,
           "marcador": "Romelu Lukaku"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Max Crocombe",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Liberato Cacace",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Tyler Bindon",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Finn Surman",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Tim Payne",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Joe Bell",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Marko Stamenić",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Elijah Just",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Sarpreet Singh",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Ryan Thomas",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Chris Wood",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Michael Woud",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Alex Paulsen",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Nando Pijnaker",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Michael Boxall",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Francis De Vries",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Tommy Smith",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Callan Elliot",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Alex Rufer",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Callum McCowatt",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Jesse Randall",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Lachlan Bayliss",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Benjamin Old",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Logan Rogerson",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Kosta Barbarouses",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Ben Waine",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Thibaut Courtois",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Maxim De Cuyper",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Arthur Theate",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Brandon Mechele",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Timothy Castagne",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Youri Tielemans",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Hans Vanaken",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Jérémy Doku",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Kevin De Bruyne",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Leandro Trossard",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Charles De Ketelaere",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Senne Lammens",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Mike Penders",
+              "pos": "G"
+            },
+            {
+              "num": 18,
+              "nome": "Joaquin Seys",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Koni De Winter",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Thomas Meunier",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Amadou Onana",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Diego Moreira",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Dodi Lukebakio",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Nicolas Raskin",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Axel Witsel",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Alexis Saelemaekers",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Matías Fernández-Pardo",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Romelu Lukaku",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
