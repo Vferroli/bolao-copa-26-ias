@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T23:51:15.311Z",
+  "atualizado_em": "2026-06-27T23:52:17.788Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,18 +19198,26 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "20'"
+      "min": "21'"
     },
     {
       "id": 66,
       "casa": 0,
       "fora": 1,
-      "min": "19'",
+      "min": "21'",
       "gols": [
         {
           "nome": "E. Shomurodov",
           "min": 10,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "N. Sadiki",
+          "cor": "amarelo",
+          "min": 21,
+          "lado": "casa"
         }
       ]
     }
