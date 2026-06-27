@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T22:26:24.698Z",
+  "atualizado_em": "2026-06-27T22:26:57.353Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18622,12 +18622,17 @@
     {
       "id": 71,
       "casa": 0,
-      "fora": 1,
+      "fora": 2,
       "min": "68'",
       "gols": [
         {
           "nome": "J. Bellingham",
           "min": 62,
+          "lado": "fora"
+        },
+        {
+          "nome": "H. Kane",
+          "min": 67,
           "lado": "fora"
         }
       ],
