@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T03:16:47.994Z",
+  "atualizado_em": "2026-06-27T03:17:19.881Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -18067,7 +18067,7 @@
         {
           "entrou": "Y. Ibrahim",
           "saiu": "M. Abdelmoneim",
-          "min": 16,
+          "min": 14,
           "lado": "casa"
         }
       ]
@@ -18076,7 +18076,7 @@
       "id": 42,
       "casa": 0,
       "fora": 0,
-      "min": "15'"
+      "min": "16'"
     }
   ]
 }
