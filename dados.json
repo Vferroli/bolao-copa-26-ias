@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T23:48:21.698Z",
+  "atualizado_em": "2026-06-27T23:48:54.131Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19202,7 +19202,7 @@
     },
     {
       "id": 66,
-      "casa": 0,
+      "casa": 1,
       "fora": 1,
       "min": "17'",
       "gols": [
@@ -19210,6 +19210,11 @@
           "nome": "E. Shomurodov",
           "min": 10,
           "lado": "fora"
+        },
+        {
+          "nome": "N. Mbuku",
+          "min": 17,
+          "lado": "casa"
         }
       ]
     }
