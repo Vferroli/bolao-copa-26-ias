@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-26",
-  "atualizado_em": "2026-06-27T01:34:37.059Z",
+  "atualizado_em": "2026-06-27T01:35:08.953Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17564,7 +17564,7 @@
       "id": 48,
       "casa": 0,
       "fora": 1,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "Á. Baena",
@@ -17608,6 +17608,12 @@
           "saiu": "Á. Baena",
           "min": 66,
           "lado": "fora"
+        },
+        {
+          "entrou": "B. Rodríguez",
+          "saiu": "J. Manuel Sanabria",
+          "min": 70,
+          "lado": "casa"
         }
       ],
       "cartoes": [
