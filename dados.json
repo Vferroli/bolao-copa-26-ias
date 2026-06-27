@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-27T05:02:39.268Z",
+  "atualizado_em": "2026-06-27T05:03:11.364Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -10005,9 +10005,17 @@
       "fora": "belgium",
       "kickoff": "2026-06-27T03:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 5,
+        "avancou": null,
+        "marcadores": [
+          "L. Trossard",
+          "L. Trossard",
+          "K. De Bruyne",
+          "E. Just",
+          "R. Lukaku",
+          "A. Saelemaekers"
+        ]
       },
       "palpites": {
         "claude": {
@@ -18155,120 +18163,6 @@
           "cor": "amarelo",
           "min": 90,
           "lado": "fora"
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "casa": 1,
-      "fora": 5,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "L. Trossard",
-          "min": 28,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Trossard",
-          "min": 50,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. De Bruyne",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Just",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "nome": "R. Lukaku",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Saelemaekers",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "B. Old",
-          "saiu": "R. Thomas",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Randall",
-          "saiu": "S. Singh",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Fernandez-Pardo",
-          "saiu": "J. Doku",
-          "min": 56,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Boxall",
-          "saiu": "T. Payne",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. McCowatt",
-          "saiu": "J. Bell",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Saelemaekers",
-          "saiu": "L. Trossard",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Onana",
-          "saiu": "K. De Bruyne",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. de Vries",
-          "saiu": "L. Cacace",
-          "min": 79,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Lukaku",
-          "saiu": "C. De Ketelaere",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Raskin",
-          "saiu": "Y. Tielemans",
-          "min": 85,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "M. Stamenic",
-          "cor": "amarelo",
-          "min": 46,
-          "lado": "casa"
-        },
-        {
-          "nome": "E. Just",
-          "cor": "amarelo",
-          "min": 56,
-          "lado": "casa"
         }
       ]
     }
