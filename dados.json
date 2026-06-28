@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:06:50.127Z",
+  "atualizado_em": "2026-06-28T01:07:21.796Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,7 +19198,7 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "74'",
+      "min": "75'",
       "subs": [
         {
           "entrou": "D. Dalot",
@@ -19275,6 +19275,12 @@
           "lado": "fora"
         },
         {
+          "entrou": "M. Elia",
+          "saiu": "N. Mbuku",
+          "min": 72,
+          "lado": "casa"
+        },
+        {
           "entrou": "T. Bongonda",
           "saiu": "B. Cipenga",
           "min": 72,
@@ -19283,12 +19289,6 @@
         {
           "entrou": "N. Mukau",
           "saiu": "S. Moutoussamy",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Elia",
-          "saiu": "N. Mbuku",
           "min": 73,
           "lado": "casa"
         },
