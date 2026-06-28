@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:08:25.791Z",
+  "atualizado_em": "2026-06-28T01:08:57.461Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19241,6 +19241,12 @@
           "saiu": "J. Arias",
           "min": 76,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Fernando Quintero",
+          "saiu": "J. Rodríguez",
+          "min": 76,
+          "lado": "casa"
         }
       ]
     },
@@ -19248,7 +19254,7 @@
       "id": 66,
       "casa": 1,
       "fora": 1,
-      "min": "74'",
+      "min": "75'",
       "gols": [
         {
           "nome": "E. Shomurodov",
