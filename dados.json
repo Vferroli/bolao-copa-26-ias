@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:00:26.845Z",
+  "atualizado_em": "2026-06-28T03:06:38.058Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19779,6 +19779,20 @@
           "lado": "casa"
         }
       ],
+      "subs": [
+        {
+          "entrou": "M. Gregoritsch",
+          "saiu": "M. Arnautovic",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "F. Grillitsch",
+          "saiu": "X. Schlager",
+          "min": 45,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "M. Arnautovic",
@@ -19803,6 +19817,20 @@
           "nome": "L. Martínez",
           "min": 31,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "M. Al-Mardi",
+          "saiu": "O. Fakhoury",
+          "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Al-Tamari",
+          "saiu": "A. Azaizeh",
+          "min": 45,
+          "lado": "casa"
         }
       ],
       "cartoes": [
