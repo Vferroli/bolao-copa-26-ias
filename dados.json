@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:56:46.718Z",
+  "atualizado_em": "2026-06-28T21:02:26.000Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19817,9 +19817,12 @@
       "fora": "canada",
       "kickoff": "2026-06-28T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 1,
+        "avancou": "canada",
+        "marcadores": [
+          "S. Eustáquio"
+        ]
       },
       "palpites": {
         "claude": {
@@ -20707,83 +20710,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 73,
-      "casa": 0,
-      "fora": 1,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "S. Eustáquio",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "T. Mbatha",
-          "saiu": "R. Mofokeng",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Sigur",
-          "saiu": "N. Saliba",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. de Fougerolles",
-          "saiu": "M. Bombito",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. David",
-          "saiu": "T. Oluwaseyi",
-          "min": 70,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Shaffelburg",
-          "saiu": "L. Millar",
-          "min": 70,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Davies",
-          "saiu": "T. Buchanan",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Rayners",
-          "saiu": "E. Makgopa",
-          "min": 86,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Moremi",
-          "saiu": "T. Maseko",
-          "min": 86,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "N. Saliba",
-          "cor": "amarelo",
-          "min": 54,
-          "lado": "fora"
-        },
-        {
-          "nome": "N. Sigur",
-          "cor": "amarelo",
-          "min": 67,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
