@@ -1131,13 +1131,40 @@ function secChave() {
         <div class="bkt-kicker">Mata-mata</div><h2>Chave da Copa</h2>
         <div class="bkt-sub">linha tracejada divide a metade de cima (<b>chave esquerda</b>) da de baixo (<b>chave direita</b>)</div>
       </div>
-      <span class="bkt-hint" aria-hidden="true">arraste&nbsp;→</span>
+      <div class="bkt-tools">
+        <div class="bkt-zoom" role="group" aria-label="Zoom da chave">
+          <button type="button" class="bkt-zoom-btn" data-bktzoom="out" aria-label="Diminuir"${bktZoom() <= BKT_Z_MIN + 1e-9 ? " disabled" : ""}>−</button>
+          <span class="bkt-zoom-ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          </span>
+          <button type="button" class="bkt-zoom-btn" data-bktzoom="in" aria-label="Aumentar"${bktZoom() >= BKT_Z_MAX - 1e-9 ? " disabled" : ""}>+</button>
+        </div>
+        <span class="bkt-hint" aria-hidden="true">arraste&nbsp;→</span>
+      </div>
     </div>
-    <div class="bkt">${cols}</div>
+    <div class="bkt" style="--bkt-z:${bktZoom()}">${cols}</div>
     ${champ}
   </section>`;
 }
 const chunk2 = (arr) => arr.reduce((a, _, i) => (i % 2 ? a : a.concat([arr.slice(i, i + 2)])), []);
+
+/* zoom da chave (persistido). clamp 0.7–1.8, passo 0.15. */
+const BKT_Z_MIN = 0.7, BKT_Z_MAX = 1.8, BKT_Z_STEP = 0.15;
+function bktZoom() {
+  let z = parseFloat(localStorage.getItem("bolao_bkt_z"));
+  if (!Number.isFinite(z)) z = 1;
+  return Math.min(BKT_Z_MAX, Math.max(BKT_Z_MIN, z));
+}
+function setBktZoom(delta) {
+  const z = Math.min(BKT_Z_MAX, Math.max(BKT_Z_MIN, Math.round((bktZoom() + delta) * 100) / 100));
+  try { localStorage.setItem("bolao_bkt_z", String(z)); } catch (_) {}
+  const el = document.querySelector("#chave .bkt");
+  if (el) el.style.setProperty("--bkt-z", z);
+  // desabilita botões nos limites
+  const out = document.querySelector('[data-bktzoom="out"]'), inn = document.querySelector('[data-bktzoom="in"]');
+  if (out) out.disabled = z <= BKT_Z_MIN + 1e-9;
+  if (inn) inn.disabled = z >= BKT_Z_MAX - 1e-9;
+}
 
 /* ---------- HISTÓRICO ---------- */
 function secHistorico() {
@@ -1459,6 +1486,9 @@ function wireVotes() {
     if (chipVote) { const w = chipVote.closest(".preds.votable"); if (w) onVoteGame(w.dataset.game, chipVote.dataset.ia); return; }
     const opt = e.target.closest(".vote-opt");
     if (opt) { const m = opt.closest(".vote-match"); if (m) onVoteGame(m.dataset.game, opt.dataset.ia); return; }
+    // zoom da chave (lupa +/−)
+    const zb = e.target.closest("[data-bktzoom]");
+    if (zb) { setBktZoom(zb.dataset.bktzoom === "in" ? BKT_Z_STEP : -BKT_Z_STEP); return; }
     // header compacto: minimizar/expandir; chips abrem drawers; picker vota no campeão
     if (e.target.closest("[data-hxmin]")) { toggleHxMin(); return; }
     const tog = e.target.closest(".hx-chip[data-toggle]");
