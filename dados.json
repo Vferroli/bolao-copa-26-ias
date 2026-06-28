@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:56:42.881Z",
+  "atualizado_em": "2026-06-28T03:57:14.426Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19836,6 +19836,18 @@
           "saiu": "R. Belghali",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "F. Ghedjemis",
+          "saiu": "H. Aouar",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "S. Kalajdzic",
+          "saiu": "P. Mwene",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -19851,7 +19863,7 @@
       "id": 60,
       "casa": 1,
       "fora": 3,
-      "min": "90'+4'",
+      "min": "90'+5'",
       "gols": [
         {
           "nome": "G. Lo Celso",
@@ -19947,6 +19959,12 @@
           "nome": "Y. Al-Arab",
           "cor": "amarelo",
           "min": 64,
+          "lado": "casa"
+        },
+        {
+          "nome": "M. Abu Zraiq",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "casa"
         }
       ]
