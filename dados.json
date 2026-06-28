@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:18:55.155Z",
+  "atualizado_em": "2026-06-28T01:19:27.043Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19246,6 +19246,12 @@
           "entrou": "J. Fernando Quintero",
           "saiu": "J. Rodríguez",
           "min": 76,
+          "lado": "casa"
+        },
+        {
+          "entrou": "D. Muñoz",
+          "saiu": "S. Arias",
+          "min": 87,
           "lado": "casa"
         }
       ],
