@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:14:42.836Z",
+  "atualizado_em": "2026-06-28T01:15:45.472Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,7 +19198,7 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "83'",
+      "min": "84'",
       "subs": [
         {
           "entrou": "D. Dalot",
@@ -19254,7 +19254,7 @@
       "id": 66,
       "casa": 2,
       "fora": 1,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "E. Shomurodov",
