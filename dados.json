@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:18:23.292Z",
+  "atualizado_em": "2026-06-28T01:18:55.155Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,7 +19198,7 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "86'",
+      "min": "87'",
       "subs": [
         {
           "entrou": "D. Dalot",
@@ -19248,13 +19248,21 @@
           "min": 76,
           "lado": "casa"
         }
+      ],
+      "cartoes": [
+        {
+          "nome": "G. Puerta",
+          "cor": "amarelo",
+          "min": 86,
+          "lado": "casa"
+        }
       ]
     },
     {
       "id": 66,
       "casa": 2,
       "fora": 1,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "E. Shomurodov",
