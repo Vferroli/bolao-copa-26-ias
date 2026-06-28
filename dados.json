@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:22:00.936Z",
+  "atualizado_em": "2026-06-28T03:22:32.863Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19764,7 +19764,7 @@
   "live": [
     {
       "id": 59,
-      "casa": 1,
+      "casa": 2,
       "fora": 2,
       "min": "60'",
       "gols": [
@@ -19782,6 +19782,11 @@
           "nome": "M. Sabitzer",
           "min": 55,
           "lado": "fora"
+        },
+        {
+          "nome": "R. Mahrez",
+          "min": 60,
+          "lado": "casa"
         }
       ],
       "subs": [
@@ -19817,7 +19822,7 @@
       "id": 60,
       "casa": 1,
       "fora": 2,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "G. Lo Celso",
@@ -19847,6 +19852,18 @@
           "saiu": "A. Azaizeh",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "T. Almada",
+          "saiu": "G. Lo Celso",
+          "min": 60,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. Messi",
+          "saiu": "L. Martínez",
+          "min": 60,
+          "lado": "fora"
         }
       ],
       "cartoes": [
