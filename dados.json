@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T02:45:53.046Z",
+  "atualizado_em": "2026-06-28T02:46:24.659Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19764,14 +19764,19 @@
   "live": [
     {
       "id": 59,
-      "casa": 0,
+      "casa": 1,
       "fora": 1,
-      "min": "45'",
+      "min": "45'+1'",
       "gols": [
         {
           "nome": "M. Arnautovic",
           "min": 28,
           "lado": "fora"
+        },
+        {
+          "nome": "R. Belghali",
+          "min": 45,
+          "lado": "casa"
         }
       ],
       "cartoes": [
