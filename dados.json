@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:32:33.120Z",
+  "atualizado_em": "2026-06-28T03:33:04.619Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19875,6 +19875,12 @@
           "entrou": "A. Mac Allister",
           "saiu": "N. Paz",
           "min": 61,
+          "lado": "fora"
+        },
+        {
+          "entrou": "V. Barco",
+          "saiu": "G. Simeone",
+          "min": 71,
           "lado": "fora"
         }
       ],
