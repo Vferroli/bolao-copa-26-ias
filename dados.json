@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T02:18:12.763Z",
+  "atualizado_em": "2026-06-28T02:18:45.233Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19780,7 +19780,7 @@
       "id": 60,
       "casa": 0,
       "fora": 0,
-      "min": "17'",
+      "min": "18'",
       "cartoes": [
         {
           "nome": "M. Abu Taha",
