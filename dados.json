@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T00:40:47.386Z",
+  "atualizado_em": "2026-06-28T00:41:29.395Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19218,7 +19218,7 @@
       "id": 66,
       "casa": 0,
       "fora": 1,
-      "min": "47'",
+      "min": "48'",
       "gols": [
         {
           "nome": "E. Shomurodov",
@@ -19244,6 +19244,12 @@
           "cor": "amarelo",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "nome": "S. Nasrullaev",
+          "cor": "amarelo",
+          "min": 48,
+          "lado": "fora"
         }
       ]
     }
