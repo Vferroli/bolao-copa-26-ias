@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:27:05.372Z",
+  "atualizado_em": "2026-06-28T20:27:37.336Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20738,6 +20738,12 @@
           "nome": "N. Saliba",
           "cor": "amarelo",
           "min": 54,
+          "lado": "fora"
+        },
+        {
+          "nome": "N. Sigur",
+          "cor": "amarelo",
+          "min": 67,
           "lado": "fora"
         }
       ]
