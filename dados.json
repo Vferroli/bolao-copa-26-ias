@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:17:18.257Z",
+  "atualizado_em": "2026-06-28T03:17:50.141Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19766,7 +19766,7 @@
       "id": 59,
       "casa": 1,
       "fora": 2,
-      "min": "55'",
+      "min": "56'",
       "gols": [
         {
           "nome": "M. Arnautovic",
@@ -19777,6 +19777,11 @@
           "nome": "R. Belghali",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "nome": "M. Sabitzer",
+          "min": 55,
+          "lado": "fora"
         }
       ],
       "subs": [
@@ -19812,7 +19817,7 @@
       "id": 60,
       "casa": 1,
       "fora": 2,
-      "min": "55'",
+      "min": "56'",
       "gols": [
         {
           "nome": "G. Lo Celso",
@@ -19823,6 +19828,11 @@
           "nome": "L. Martínez",
           "min": 31,
           "lado": "fora"
+        },
+        {
+          "nome": "M. Al-Tamari",
+          "min": 55,
+          "lado": "casa"
         }
       ],
       "subs": [
