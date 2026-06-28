@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:02:39.157Z",
+  "atualizado_em": "2026-06-28T01:03:10.924Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,7 +19198,7 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "70'",
+      "min": "71'",
       "subs": [
         {
           "entrou": "D. Dalot",
@@ -19229,6 +19229,12 @@
           "saiu": "J. Félix",
           "min": 70,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Costa",
+          "saiu": "Vitinha",
+          "min": 70,
+          "lado": "fora"
         }
       ]
     },
@@ -19236,7 +19242,7 @@
       "id": 66,
       "casa": 1,
       "fora": 1,
-      "min": "69'",
+      "min": "70'",
       "gols": [
         {
           "nome": "E. Shomurodov",
