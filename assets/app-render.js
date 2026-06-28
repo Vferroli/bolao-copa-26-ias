@@ -73,8 +73,37 @@ const hxKit = (ia) => `<span class="hx-kit" style="--cor:${ia.cor}">${LOGOS[ia.i
 const hxMiniKit = (ia) => `<span class="mini-kit hx-kit" style="--cor:${ia.cor};box-shadow:none">${LOGOS[ia.id] || ""}</span>`;
 const HX_MEDAL = ["gold", "silver", "bronze"];
 
+/* minimizado? (persiste no localStorage) */
+function hxMinState() {
+  if (typeof S.hxMin === "boolean") return S.hxMin;
+  try { S.hxMin = localStorage.getItem("bolao_hx_min") === "1"; } catch (_) { S.hxMin = false; }
+  return S.hxMin;
+}
+function toggleHxMin() {
+  S.hxMin = !hxMinState();
+  try { localStorage.setItem("bolao_hx_min", S.hxMin ? "1" : "0"); } catch (_) {}
+  renderPlacarHeader(false);
+}
+const hxMinBtn = (min) => `<button class="hx-min-btn" type="button" data-hxmin aria-label="${min ? "Expandir placar" : "Minimizar placar"}" title="${min ? "Expandir" : "Minimizar"}">${min ? "▢" : "—"}</button>`;
+
+/* vista minimizada: 1 linha por IA (pos · logo · nome · pontos), em ordem de classificação */
+function placarMiniHtml(rk) {
+  const rows = rk.map((ia, i) => `<div class="hx-mini-row" style="--cor:${ia.cor}">
+    <span class="hx-mini-pos">${i + 1}</span>
+    ${hxMiniKit(ia)}
+    <span class="hx-mini-name">${esc(ia.nome)}</span>
+    <span class="hx-mini-pts">${fmt(ia.total)}<small>pts</small></span>
+  </div>`).join("");
+  return `<div class="hx is-min">
+    ${hxMinBtn(true)}
+    <div class="hx-mini-head"><span class="hx-mini-ttl">Placar das IAs</span></div>
+    <div class="hx-mini">${rows}</div>
+  </div>`;
+}
+
 function placarHeaderHtml() {
   const rk = ranking();
+  if (hxMinState()) return placarMiniHtml(rk);
   const prevPos = posicoesAnteriores();
   const favId = S.vote && S.vote.mine ? S.vote.mine.champ : null;
   const champ = (S.vote && S.vote.tallies && S.vote.tallies.champ) || {};
@@ -113,6 +142,7 @@ function placarHeaderHtml() {
     <div class="hx-drawer" data-drawer="score" id="dw-score"><div class="hx-drawer-in"><div class="hx-drawer-pad">${scoringInner()}</div></div></div>`;
 
   return `<div class="hx">
+    ${hxMinBtn(false)}
     <div class="hx-bar">
       <div class="hx-title">
         <span class="k">Placar das IAs</span>
@@ -1429,7 +1459,8 @@ function wireVotes() {
     if (chipVote) { const w = chipVote.closest(".preds.votable"); if (w) onVoteGame(w.dataset.game, chipVote.dataset.ia); return; }
     const opt = e.target.closest(".vote-opt");
     if (opt) { const m = opt.closest(".vote-match"); if (m) onVoteGame(m.dataset.game, opt.dataset.ia); return; }
-    // header compacto: chips abrem drawers; picker vota no campeão
+    // header compacto: minimizar/expandir; chips abrem drawers; picker vota no campeão
+    if (e.target.closest("[data-hxmin]")) { toggleHxMin(); return; }
     const tog = e.target.closest(".hx-chip[data-toggle]");
     if (tog) { toggleHeaderDrawer(tog.dataset.toggle); return; }
     const hxOpt = e.target.closest(".hx-opt[data-champ]");

@@ -2006,3 +2006,33 @@ details.day[open] .day-chev { transform: rotate(180deg); }
 .hist-collapse[open] .hist-toggle .hide { display: inline; }
 .hist-collapse[open] .hist-toggle { border-bottom: 1px solid var(--line); }
 .hist-collapse .hist { padding: 4px 4px 8px; }
+
+/* minimizar / vista compacta do placar */
+.hx-min-btn {
+  position: absolute; top: 11px; right: 11px; z-index: 6;
+  width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center;
+  background: var(--glass); border: 1px solid var(--line); color: var(--dim);
+  cursor: pointer; font-size: 0.8rem; line-height: 1; padding: 0;
+  transition: border-color .18s ease, color .18s ease, background .18s ease;
+}
+.hx-min-btn:hover { border-color: var(--line-2); color: var(--txt); background: rgba(255,255,255,.05); }
+@container (min-width: 780px) { .hx-actions { margin-right: 38px; } }
+
+.hx.is-min { padding: 9px 11px; }
+.hx-mini-head { padding: 1px 4px 9px; }
+.hx-mini-ttl { font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--faint); }
+.hx-mini { display: flex; flex-direction: column; gap: 6px; }
+.hx-mini-row {
+  display: flex; align-items: center; gap: 10px; padding: 7px 11px;
+  border-radius: 10px; background: var(--glass); border: 1px solid var(--line); border-left: 3px solid var(--cor);
+}
+.hx-mini-pos { font-family: var(--font-display); font-weight: 800; font-size: 0.78rem; color: var(--faint); width: 15px; text-align: center; flex: none; }
+.hx-mini-row .mini-kit { width: 22px; height: 22px; border-radius: 6px; flex: none; }
+.hx-mini-row .mini-kit svg { width: 12px; height: 12px; }
+.hx-mini-name { font-family: var(--font-display); font-weight: 800; font-size: 0.92rem; color: var(--cor); text-transform: uppercase; flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hx-mini-pts { font-family: var(--font-display); font-weight: 900; font-size: 1.12rem; color: var(--txt); font-variant-numeric: tabular-nums; flex: none; }
+.hx-mini-pts small { font-family: var(--font-mono); font-size: 0.46em; color: var(--dim); margin-left: 3px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; }
+@container (min-width: 780px) {
+  .hx-mini { flex-direction: row; }
+  .hx-mini-row { flex: 1; }
+}
