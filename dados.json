@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T02:28:27.415Z",
+  "atualizado_em": "2026-06-28T02:29:29.878Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19765,8 +19765,15 @@
     {
       "id": 59,
       "casa": 0,
-      "fora": 0,
-      "min": "28'",
+      "fora": 1,
+      "min": "29'",
+      "gols": [
+        {
+          "nome": "M. Arnautovic",
+          "min": 28,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "M. Arnautovic",
@@ -19780,7 +19787,7 @@
       "id": 60,
       "casa": 0,
       "fora": 1,
-      "min": "27'",
+      "min": "29'",
       "gols": [
         {
           "nome": "G. Lo Celso",
