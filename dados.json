@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:52:30.742Z",
+  "atualizado_em": "2026-06-28T03:53:02.571Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19846,7 +19846,7 @@
       "id": 60,
       "casa": 1,
       "fora": 3,
-      "min": "90'",
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "G. Lo Celso",
@@ -19921,6 +19921,12 @@
         {
           "entrou": "M. Abu Zraiq",
           "saiu": "A. Olwan",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "S. Obaid",
+          "saiu": "H. Abu Dahab",
           "min": 90,
           "lado": "casa"
         }
