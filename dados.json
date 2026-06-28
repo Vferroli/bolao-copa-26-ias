@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:29:22.966Z",
+  "atualizado_em": "2026-06-28T03:29:54.566Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19828,7 +19828,7 @@
       "id": 60,
       "casa": 1,
       "fora": 2,
-      "min": "66'",
+      "min": "67'",
       "gols": [
         {
           "nome": "G. Lo Celso",
