@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:07:21.796Z",
+  "atualizado_em": "2026-06-28T01:07:54.087Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19242,7 +19242,7 @@
       "id": 66,
       "casa": 1,
       "fora": 1,
-      "min": "73'",
+      "min": "74'",
       "gols": [
         {
           "nome": "E. Shomurodov",
@@ -19289,7 +19289,7 @@
         {
           "entrou": "N. Mukau",
           "saiu": "S. Moutoussamy",
-          "min": 73,
+          "min": 72,
           "lado": "casa"
         },
         {
