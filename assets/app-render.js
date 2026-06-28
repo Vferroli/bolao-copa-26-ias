@@ -1002,8 +1002,16 @@ function pfMatchData(num, liveSet, thirdsMap) {
   const fora = pfSlot(b, liveSet, thirdsMap);
   const j = pfJogoNum(num);
   const fim = !!j && apurado(j);
-  const emJogo = !!j && !fim && Date.now() >= new Date(j.kickoff).getTime();
-  const hoje = !!j && !fim && !emJogo && kickData(j) === S.HOJE; // hoje, ainda não começou
+  const k = j ? new Date(j.kickoff) : null;
+  const emJogo = !!j && !fim && Date.now() >= k.getTime();
+  // hoje/amanhã + horário no FUSO DO NAVEGADOR (dispositivo do usuário)
+  let hoje = false, amanha = false, hora = null;
+  if (j && !fim && !emJogo) {
+    const sod = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+    const diff = Math.round((sod(k) - sod(new Date())) / 86400000);
+    hoje = diff === 0; amanha = diff === 1;
+    if (hoje || amanha) hora = k.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+  }
   // placar: final (real) OU ao vivo (dados.live[]) durante o jogo
   let placar = fim ? { casa: j.real.casa, fora: j.real.fora } : null;
   let min = null;
@@ -1012,7 +1020,7 @@ function pfMatchData(num, liveSet, thirdsMap) {
     if (le && le.casa != null) { placar = { casa: le.casa, fora: le.fora }; min = le.min; }
   }
   const venc = j ? pfVencedor(j) : null;
-  return { num, casa, fora, placar, venc, emJogo, hoje, fim, min };
+  return { num, casa, fora, placar, venc, emJogo, hoje, amanha, hora, fim, min };
 }
 
 function bktTeam(slot, m, side) {
@@ -1030,11 +1038,13 @@ function bktTeam(slot, m, side) {
 }
 
 function bktMatch(m) {
-  const cls = m.fim ? "done" : m.emJogo ? "live" : m.hoje ? "today" : (m.casa.tipo === "tbd" || m.fora.tipo === "tbd") ? "tbd" : "set";
+  const cls = m.fim ? "done" : m.emJogo ? "live" : m.hoje ? "today" : m.amanha ? "tomorrow" : (m.casa.tipo === "tbd" || m.fora.tipo === "tbd") ? "tbd" : "set";
   const badge = m.emJogo
     ? `<span class="bkt-badge live"><span class="bkt-dot"></span>ao vivo${m.min ? ` · ${esc(m.min)}` : ""}</span>`
     : m.hoje
-    ? `<span class="bkt-badge today"><span class="bkt-dot"></span>hoje</span>`
+    ? `<span class="bkt-badge today"><span class="bkt-dot"></span>hoje${m.hora ? ` · ${esc(m.hora)}` : ""}</span>`
+    : m.amanha
+    ? `<span class="bkt-badge tomorrow"><span class="bkt-dot"></span>amanhã${m.hora ? ` · ${esc(m.hora)}` : ""}</span>`
     : "";
   return `<div class="bkt-match ${cls}">
     ${badge}
