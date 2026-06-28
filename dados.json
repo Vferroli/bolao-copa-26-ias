@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T00:45:10.801Z",
+  "atualizado_em": "2026-06-28T00:45:42.624Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19218,7 +19218,7 @@
       "id": 66,
       "casa": 0,
       "fora": 1,
-      "min": "51'",
+      "min": "52'",
       "gols": [
         {
           "nome": "E. Shomurodov",
@@ -19230,7 +19230,7 @@
         {
           "entrou": "F. Mayele",
           "saiu": "C. Bakambu",
-          "min": 52,
+          "min": 51,
           "lado": "casa"
         }
       ],
