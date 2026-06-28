@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:51:21.323Z",
+  "atualizado_em": "2026-06-28T20:52:24.290Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20711,8 +20711,15 @@
     {
       "id": 73,
       "casa": 0,
-      "fora": 0,
-      "min": "90'+1'",
+      "fora": 1,
+      "min": "90'+2'",
+      "gols": [
+        {
+          "nome": "S. Eustáquio",
+          "min": 90,
+          "lado": "fora"
+        }
+      ],
       "subs": [
         {
           "entrou": "T. Mbatha",
