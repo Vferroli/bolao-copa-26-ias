@@ -12,8 +12,8 @@ function render() {
   const temLive = (S.dados.jogos || []).some((j) =>
     kickData(j) === S.HOJE && agora >= new Date(j.kickoff).getTime() && !apurado(j));
   const secs = temLive
-    ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secGrupos(), secProximaFase(), secHistorico()]
-    : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secGrupos(), secProximaFase(), secHistorico()];
+    ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secGrupos(), secProximaFase(), secChave(), secHistorico()]
+    : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secGrupos(), secProximaFase(), secChave(), secHistorico()];
   app.innerHTML = secs.join("");
   wireInteractions();
   renderFavBadge();
@@ -935,6 +935,79 @@ function renderProximaFase(data) {
   </section>`;
 }
 const datas_ = (fase) => (fase.datas ? `<span class="datas">${esc(fase.datas)}</span>` : "");
+
+/* ---------- CHAVE (bracket dinâmico, scroll horizontal, mobile-first) ----------
+   Reusa a camada de dados do PF: pfSlot resolve cada vaga (grupo/3º/vencedor) e
+   pfJogoNum/pfVencedor dão placar+vencedor quando o jogo existe no JSON. Colunas
+   16avos→Final; cada par de jogos converge no próximo via conectores CSS. */
+const PF_CHAVE_FASES = ["16avos", "oitavas", "quartas", "semi", "final"];
+
+function pfMatchData(num, liveSet, thirdsMap) {
+  const [a, b] = PF_MATCHES[num] || [{}, {}];
+  const casa = pfSlot(a, liveSet, thirdsMap);
+  const fora = pfSlot(b, liveSet, thirdsMap);
+  const j = pfJogoNum(num);
+  const placar = j && apurado(j) ? { casa: j.real.casa, fora: j.real.fora } : null;
+  const venc = j ? pfVencedor(j) : null;
+  const emJogo = !!j && !apurado(j) && Date.now() >= new Date(j.kickoff).getTime();
+  return { num, casa, fora, placar, venc, emJogo };
+}
+
+function bktTeam(slot, m, side) {
+  if (!slot || slot.tipo === "tbd") {
+    return `<div class="bkt-team tbd"><span class="bkt-q">?</span><span class="bkt-nm">${esc(slot && slot.seed ? slot.seed : "A definir")}</span></div>`;
+  }
+  const win = m.venc && slot.id === m.venc;
+  const lose = m.venc && slot.id !== m.venc;
+  const sc = m.placar ? (side === "casa" ? m.placar.casa : m.placar.fora) : null;
+  const live = slot.aoVivo ? `<span class="bkt-dot" title="ao vivo"></span>` : "";
+  return `<div class="bkt-team${win ? " win" : ""}${lose ? " lose" : ""}">
+    ${bandeira(slot.id)}
+    <span class="bkt-nm">${esc(slot.nome || "")}</span>
+    ${live}
+    <span class="bkt-sc">${sc != null ? sc : ""}</span>
+  </div>`;
+}
+
+function bktMatch(m) {
+  const cls = m.placar ? "done" : m.emJogo ? "live" : (m.casa.tipo === "tbd" || m.fora.tipo === "tbd") ? "tbd" : "set";
+  return `<div class="bkt-match ${cls}">
+    ${bktTeam(m.casa, m, "casa")}
+    ${bktTeam(m.fora, m, "fora")}
+  </div>`;
+}
+
+function secChave() {
+  if (!S.dados || !Array.isArray(S.dados.jogos) || !S.dados.jogos.length) return "";
+  const liveSet = pfLiveTeams();
+  const thirdsMap = pfThirdsMap();
+  const cols = PF_CHAVE_FASES.map((fid) => {
+    const f = S.fases[fid] || {};
+    const nums = PF_FASE_JOGOS[fid];
+    const isFinal = fid === "final";
+    const inner = isFinal
+      ? `<div class="bkt-col">${bktMatch(pfMatchData(nums[0], liveSet, thirdsMap))}</div>`
+      : `<div class="bkt-col">${chunk2(nums).map((par) =>
+          `<div class="bkt-pair">${par.map((n) => bktMatch(pfMatchData(n, liveSet, thirdsMap))).join("")}</div>`).join("")}</div>`;
+    return `<div class="bkt-round${isFinal ? " bkt-final" : ""}" style="--n:${nums.length}">
+      <div class="bkt-rhead"><span>${esc(PF_NOME[fid] || fid)}</span><b class="bkt-mx">×${String(f.mult != null ? f.mult : 1).replace(".", ",")}</b></div>
+      ${inner}
+    </div>`;
+  }).join("");
+  const fin = pfMatchData(104, liveSet, thirdsMap);
+  const champ = fin.venc
+    ? `<div class="bkt-champ">${bandeira(fin.venc)}<span class="bkt-champ-nm">${esc(time(fin.venc).nome)}</span><span class="bkt-champ-lbl">Campeão</span></div>`
+    : `<div class="bkt-champ pend"><span class="bkt-q">?</span><span class="bkt-champ-lbl">Campeão</span></div>`;
+  return `<section class="reveal bkt-sec" id="chave" aria-label="Chave da Copa">
+    <div class="bkt-head">
+      <div><div class="bkt-kicker">Mata-mata</div><h2>Chave da Copa</h2></div>
+      <span class="bkt-hint" aria-hidden="true">arraste&nbsp;→</span>
+    </div>
+    <div class="bkt">${cols}</div>
+    ${champ}
+  </section>`;
+}
+const chunk2 = (arr) => arr.reduce((a, _, i) => (i % 2 ? a : a.concat([arr.slice(i, i + 2)])), []);
 
 /* ---------- HISTÓRICO ---------- */
 function secHistorico() {
