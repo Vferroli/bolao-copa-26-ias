@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T00:20:33.841Z",
+  "atualizado_em": "2026-06-28T00:21:05.539Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19224,6 +19224,12 @@
           "cor": "amarelo",
           "min": 43,
           "lado": "fora"
+        },
+        {
+          "nome": "N. Mbuku",
+          "cor": "amarelo",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     }
