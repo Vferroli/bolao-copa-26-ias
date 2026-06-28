@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:06:18.250Z",
+  "atualizado_em": "2026-06-28T01:06:50.127Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19291,6 +19291,12 @@
           "saiu": "N. Mbuku",
           "min": 73,
           "lado": "casa"
+        },
+        {
+          "entrou": "O. Urunov",
+          "saiu": "A. Fayzullaev",
+          "min": 73,
+          "lado": "fora"
         }
       ],
       "cartoes": [
