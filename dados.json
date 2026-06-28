@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T04:02:25.958Z",
+  "atualizado_em": "2026-06-28T04:04:10.797Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -15235,9 +15235,17 @@
       "fora": "austria",
       "kickoff": "2026-06-28T02:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 3,
+        "avancou": null,
+        "marcadores": [
+          "M. Arnautovic",
+          "R. Belghali",
+          "M. Sabitzer",
+          "R. Mahrez",
+          "R. Mahrez",
+          "S. Kalajdzic"
+        ]
       },
       "palpites": {
         "claude": {
@@ -19767,108 +19775,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 59,
-      "casa": 3,
-      "fora": 3,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "M. Arnautovic",
-          "min": 28,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Belghali",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Sabitzer",
-          "min": 55,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Mahrez",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "nome": "R. Mahrez",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Kalajdzic",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "M. Gregoritsch",
-          "saiu": "M. Arnautovic",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Grillitsch",
-          "saiu": "X. Schlager",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Wanner",
-          "saiu": "R. Schmid",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Danso",
-          "saiu": "D. Alaba",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Aït-Nouri",
-          "saiu": "J. Hadjam",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Z. Belaïd",
-          "saiu": "A. Gouiri",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Chergui",
-          "saiu": "R. Belghali",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Ghedjemis",
-          "saiu": "H. Aouar",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Kalajdzic",
-          "saiu": "P. Mwene",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "M. Arnautovic",
-          "cor": "amarelo",
-          "min": 11,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
