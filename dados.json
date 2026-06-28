@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:35:00.696Z",
+  "atualizado_em": "2026-06-28T20:35:32.698Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20742,6 +20742,12 @@
           "entrou": "J. Shaffelburg",
           "saiu": "L. Millar",
           "min": 70,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Davies",
+          "saiu": "T. Buchanan",
+          "min": 75,
           "lado": "fora"
         }
       ],
