@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T19:49:21.967Z",
+  "atualizado_em": "2026-06-28T20:05:30.813Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20712,7 +20712,15 @@
       "id": 73,
       "casa": 0,
       "fora": 0,
-      "min": "Intervalo"
+      "min": "Intervalo",
+      "subs": [
+        {
+          "entrou": "T. Mbatha",
+          "saiu": "R. Mofokeng",
+          "min": 45,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
