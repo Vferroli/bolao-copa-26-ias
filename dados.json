@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:15:45.472Z",
+  "atualizado_em": "2026-06-28T01:16:17.131Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19254,7 +19254,7 @@
       "id": 66,
       "casa": 2,
       "fora": 1,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "E. Shomurodov",
@@ -19314,6 +19314,24 @@
           "saiu": "A. Fayzullaev",
           "min": 73,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Iskanderov",
+          "saiu": "A. Mozgovoy",
+          "min": 82,
+          "lado": "fora"
+        },
+        {
+          "entrou": "I. Sergeev",
+          "saiu": "J. Urozov",
+          "min": 82,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Kayembe",
+          "saiu": "A. Masuaku",
+          "min": 83,
+          "lado": "casa"
         }
       ],
       "cartoes": [
