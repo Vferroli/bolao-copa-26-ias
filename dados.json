@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:24:07.294Z",
+  "atualizado_em": "2026-06-28T03:24:38.888Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19806,6 +19806,12 @@
           "entrou": "P. Wanner",
           "saiu": "R. Schmid",
           "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "K. Danso",
+          "saiu": "D. Alaba",
+          "min": 62,
           "lado": "fora"
         }
       ],
