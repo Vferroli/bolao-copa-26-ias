@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:02:07.447Z",
+  "atualizado_em": "2026-06-28T01:02:39.157Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19223,6 +19223,12 @@
           "saiu": "J. Córdoba",
           "min": 60,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. Leão",
+          "saiu": "J. Félix",
+          "min": 70,
+          "lado": "fora"
         }
       ]
     },
