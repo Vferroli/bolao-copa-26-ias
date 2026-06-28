@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:22:32.863Z",
+  "atualizado_em": "2026-06-28T03:23:04.859Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19766,7 +19766,7 @@
       "id": 59,
       "casa": 2,
       "fora": 2,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "M. Arnautovic",
@@ -19863,6 +19863,12 @@
           "entrou": "L. Messi",
           "saiu": "L. Martínez",
           "min": 60,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Mac Allister",
+          "saiu": "N. Paz",
+          "min": 61,
           "lado": "fora"
         }
       ],
