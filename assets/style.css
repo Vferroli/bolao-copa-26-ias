@@ -748,6 +748,8 @@ button.chip { appearance: none; -webkit-appearance: none; font: inherit; color: 
 .lt .ev.card.yellow .cd { background: #facc15; }
 .lt .ev.card.red .cd { background: #ef4444; }
 .lt-neutro { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-top: 8px; }
+.lt .ev.gol.gc { opacity: 0.85; }
+.gc-tag { font-size: 0.85em; color: var(--faint); font-style: italic; }
 .live-gols {
   display: flex; flex-wrap: wrap; gap: 6px 10px;
   margin-top: 12px;
@@ -760,6 +762,7 @@ button.chip { appearance: none; -webkit-appearance: none; font: inherit; color: 
   padding: 3px 9px; border-radius: 999px;
 }
 .live-gols .lg b { color: var(--txt); font-weight: 700; }
+.live-gols .lg.gc { opacity: 0.85; }
 /* substituições do jogo ao vivo (entrou ▲ / saiu ▼) */
 .live-subs {
   display: flex; flex-wrap: wrap; gap: 6px 10px;
@@ -1333,6 +1336,7 @@ details.day[open] .day-chev { transform: rotate(180deg); }
   display: inline-flex; align-items: center; gap: 3px;
   font-family: var(--font-mono); font-size: 0.62rem; color: var(--dim);
 }
+.hrow .hgols span.gc { color: var(--faint); }
 .ppill {
   display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--font-mono); font-size: 0.64rem;

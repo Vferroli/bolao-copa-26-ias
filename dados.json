@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T04:04:10.797Z",
+  "atualizado_em": "2026-06-28T11:42:27.590Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -348,8 +348,8 @@
         "fora": 0,
         "avancou": null,
         "marcadores": [
-          "J. Quinones",
-          "R. Jimenez"
+          "J. Quiñones",
+          "R. Jiménez"
         ]
       },
       "palpites": {}
@@ -366,10 +366,9 @@
         "fora": 1,
         "avancou": null,
         "marcadores": [
-          "L. Krejci",
-          "Hwang In-Beom",
-          "T. Soucek",
-          "Oh Hyeon-Gyu"
+          "L. Krejcí",
+          "H. In-Beom",
+          "O. Hyeon-Gyu"
         ]
       },
       "palpites": {}
@@ -1672,7 +1671,10 @@
         "fora": 1,
         "avancou": null,
         "marcadores": [
-          "B. Khoukhi"
+          "B. Embolo"
+        ],
+        "golsContra": [
+          "M. Muheim"
         ]
       },
       "palpites": {}
@@ -2018,6 +2020,9 @@
           "J. David",
           "N. Saliba",
           "J. David"
+        ],
+        "golsContra": [
+          "M. Manai"
         ]
       },
       "palpites": {
@@ -2652,6 +2657,9 @@
           "K. Alajbegovic",
           "H. Al-Haydos",
           "E. Mahmic"
+        ],
+        "golsContra": [
+          "M. Abunada"
         ]
       },
       "palpites": {
@@ -2962,7 +2970,7 @@
         "avancou": null,
         "marcadores": [
           "I. Saibari",
-          "Vinicius Junior"
+          "V. Júnior"
         ]
       },
       "palpites": {
@@ -4012,6 +4020,9 @@
           "I. Saibari",
           "S. Rahimi",
           "G. Yassine"
+        ],
+        "golsContra": [
+          "Y. Bounou"
         ]
       },
       "palpites": {
@@ -4338,9 +4349,11 @@
         "marcadores": [
           "F. Balogun",
           "F. Balogun",
-          "F. Balogun",
-          "Mauricio",
+          "Maurício",
           "G. Reyna"
+        ],
+        "golsContra": [
+          "D. Bobadilla"
         ]
       },
       "palpites": {}
@@ -4397,6 +4410,9 @@
         "avancou": null,
         "marcadores": [
           "A. Freeman"
+        ],
+        "golsContra": [
+          "C. Burgess"
         ]
       },
       "palpites": {
@@ -5676,6 +5692,7 @@
           "F. Nmecha",
           "L. Comenencia",
           "N. Schlotterbeck",
+          "K. Havertz",
           "J. Musiala",
           "N. Brown",
           "D. Undav",
@@ -7092,7 +7109,7 @@
           "Y. Ayari",
           "A. Isak",
           "O. Rekik",
-          "V. Gyokeres",
+          "V. Gyökeres",
           "M. Svanberg",
           "Y. Ayari"
         ]
@@ -8099,6 +8116,9 @@
           "B. Brobbey",
           "H. Mastouri",
           "J. Paul van Hecke"
+        ],
+        "golsContra": [
+          "E. Skhiri"
         ]
       },
       "palpites": {
@@ -8414,6 +8434,9 @@
         "avancou": null,
         "marcadores": [
           "E. Ashour"
+        ],
+        "golsContra": [
+          "M. Hany"
         ]
       },
       "palpites": {
@@ -8736,7 +8759,7 @@
           "E. Just",
           "R. Rezaeian",
           "E. Just",
-          "M. Mohebi"
+          "M. Mohebbi"
         ]
       },
       "palpites": {
@@ -10373,8 +10396,8 @@
         "fora": 1,
         "avancou": null,
         "marcadores": [
-          "A. Al Amri",
-          "M. Araujo"
+          "A. Al-Amri",
+          "M. Araújo"
         ]
       },
       "palpites": {
@@ -10692,6 +10715,9 @@
           "L. Yamal",
           "M. Oyarzabal",
           "M. Oyarzabal"
+        ],
+        "golsContra": [
+          "H. Al-Tambakti"
         ]
       },
       "palpites": {
@@ -11018,7 +11044,7 @@
         "marcadores": [
           "K. Pina",
           "M. Araújo",
-          "A. Cano",
+          "A. Canobbio",
           "H. Varela"
         ]
       },
@@ -11972,10 +11998,10 @@
         "fora": 1,
         "avancou": null,
         "marcadores": [
-          "K. Mbappe",
+          "K. Mbappé",
           "B. Barcola",
           "I. Mbaye",
-          "K. Mbappe"
+          "K. Mbappé"
         ]
       },
       "palpites": {
@@ -12303,7 +12329,10 @@
           "E. Haaland",
           "A. Hussein",
           "E. Haaland",
-          "L. Ostigard"
+          "L. Østigard"
+        ],
+        "golsContra": [
+          "A. Hussein"
         ]
       },
       "palpites": {
@@ -14267,6 +14296,9 @@
           "R. Schmid",
           "A. Olwan",
           "M. Arnautovic"
+        ],
+        "golsContra": [
+          "Y. Al-Arab"
         ]
       },
       "palpites": {
@@ -16550,6 +16582,9 @@
           "N. Mendes",
           "C. Ronaldo",
           "R. Leão"
+        ],
+        "golsContra": [
+          "A. Nematov"
         ]
       },
       "palpites": {

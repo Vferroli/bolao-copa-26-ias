@@ -163,7 +163,7 @@ function secPrompt() {
 
 /* ---------- live: helpers de gols ---------- */
 const liveEntry = (id) => (Array.isArray(S.dados.live) ? S.dados.live : []).find((l) => String(l.id) === String(id));
-const liveGolsNomes = (id) => { const e = liveEntry(id); return e && Array.isArray(e.gols) ? e.gols.map((g) => g.nome).filter(Boolean) : []; };
+const liveGolsNomes = (id) => { const e = liveEntry(id); return e && Array.isArray(e.gols) ? e.gols.filter((g) => !g.gc).map((g) => g.nome).filter(Boolean) : []; };
 
 /* ---------- chips de palpite ---------- */
 /* rótulo "Palpites das IAs" + dica de voto quando o jogo está aberto p/ votação */
@@ -348,12 +348,14 @@ function liveFlatHtml(gols, cards, subs) {
 }
 
 function liveExtraHtml(liveData, j, emJogo, fim) {
-  // encerrado: goleadores (só nomes em real.marcadores) — chips planos
+  // encerrado: goleadores (real.marcadores) + gols contra (real.golsContra) — chips planos
   if (fim) {
     const ns = Array.isArray(j.real.marcadores) ? j.real.marcadores : [];
-    return ns.length
-      ? `<div class="live-gols">${ns.map((n) => `<span class="lg">⚽ ${esc(n)}</span>`).join("")}</div>`
-      : "";
+    const gc = Array.isArray(j.real.golsContra) ? j.real.golsContra : [];
+    if (!ns.length && !gc.length) return "";
+    const chips = ns.map((n) => `<span class="lg">⚽ ${esc(n)}</span>`)
+      .concat(gc.map((n) => `<span class="lg gc">⚽ ${esc(n)} <span class="gc-tag">(gc)</span></span>`));
+    return `<div class="live-gols">${chips.join("")}</div>`;
   }
   if (!emJogo || !liveData) return "";
   const gols = Array.isArray(liveData.gols) ? liveData.gols : [];
@@ -363,7 +365,7 @@ function liveExtraHtml(liveData, j, emJogo, fim) {
 
   // eventos unificados (tipo + lado + min) p/ agrupar por time em 2 colunas
   const evs = [
-    ...gols.map((g) => ({ t: "gol", lado: g.lado, min: g.min, nome: g.nome })),
+    ...gols.map((g) => ({ t: "gol", lado: g.lado, min: g.min, nome: g.nome, gc: !!g.gc })),
     ...cards.map((c) => ({ t: "card", lado: c.lado, min: c.min, nome: c.nome, cor: c.cor })),
     ...subs.map((s) => ({ t: "sub", lado: s.lado, min: s.min, entrou: s.entrou, saiu: s.saiu })),
   ];
@@ -372,7 +374,7 @@ function liveExtraHtml(liveData, j, emJogo, fim) {
 
   const chip = (e) =>
     e.t === "gol"
-      ? `<span class="ev gol">⚽ ${esc(e.nome)}${e.min != null ? ` <b>${e.min}'</b>` : ""}</span>`
+      ? `<span class="ev gol${e.gc ? " gc" : ""}">⚽ ${esc(e.nome)}${e.gc ? ` <span class="gc-tag">(gc)</span>` : ""}${e.min != null ? ` <b>${e.min}'</b>` : ""}</span>`
       : e.t === "card"
       ? `<span class="ev card ${e.cor === "vermelho" ? "red" : "yellow"}"><span class="cd"></span>${esc(e.nome)}${e.min != null ? ` <b>${e.min}'</b>` : ""}</span>`
       : `<span class="ev sub">${e.min != null ? `<b>${e.min}'</b> ` : ""}<span class="in">▲ ${esc(e.entrou || "—")}</span> <span class="out">▼ ${esc(e.saiu || "—")}</span></span>`;
@@ -557,9 +559,22 @@ function secHoje() {
 /* ---------- PRÓXIMOS (agenda por dia) ---------- */
 function secProximos() {
   const fut = S.dados.jogos
-    .filter((j) => j.fase === "grupos" && kickData(j) > S.HOJE)
+    .filter((j) => kickData(j) > S.HOJE)
     .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
-  if (!fut.length) return "";
+  const roadmap = secMataDatas();
+  // sem jogos futuros e sem roadmap → nada a mostrar
+  if (!fut.length && !roadmap) return "";
+  // sem jogos futuros (ex.: grupos completos, mata-mata ainda sem confronto) → só o roadmap
+  if (!fut.length) {
+    return `<section class="reveal" id="proximos">
+    <div class="sec-head">
+      <span class="kicker">Agenda</span>
+      <h2>Próximos jogos</h2>
+      <span class="pill">Fase de grupos completa</span>
+    </div>
+    ${roadmap}
+  </section>`;
+  }
   const dias = {};
   fut.forEach((j) => { (dias[kickData(j)] = dias[kickData(j)] || []).push(j); });
   const blocos = Object.keys(dias).sort().map((d, i) => {
@@ -591,7 +606,7 @@ function secProximos() {
       <span class="pill">Fase de grupos completa</span>
     </div>
     <div class="agenda">${blocos}</div>
-    ${secMataDatas()}
+    ${roadmap}
   </section>`;
 }
 
@@ -936,8 +951,10 @@ function secHistorico() {
       return `<span class="ppill" style="--cor:${ia.cor}">${kit(ia, "sm")}<b>${placar(p)}</b>
         <span class="pp ${pts ? "" : "zero"}">+${fmt(pts || 0)}</span></span>`;
     }).join("");
-    const gols = Array.isArray(j.real.marcadores) && j.real.marcadores.length
-      ? `<div class="hgols">${j.real.marcadores.map((n) => `<span>⚽ ${esc(n)}</span>`).join("")}</div>`
+    const marc = (Array.isArray(j.real.marcadores) ? j.real.marcadores : []).map((n) => `<span>⚽ ${esc(n)}</span>`);
+    const gc = (Array.isArray(j.real.golsContra) ? j.real.golsContra : []).map((n) => `<span class="gc">⚽ ${esc(n)} <span class="gc-tag">(gc)</span></span>`);
+    const gols = (marc.length || gc.length)
+      ? `<div class="hgols">${marc.join("")}${gc.join("")}</div>`
       : "";
     return `<div class="hrow">
       <div class="hmatch">

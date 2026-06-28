@@ -349,8 +349,10 @@ function espnEventos(sum, j, resolve) {
   for (const k of (sum?.keyEvents || [])) {
     const type = String(k.type?.text || "");
     const nomes = (k.participants || []).map((p) => p.athlete?.displayName).filter(Boolean);
-    if (k.scoringPlay && !/own goal/i.test(type) && !/own goal/i.test(k.text || "")) {
-      if (nomes[0]) goals.push({ nome: abbrevNome(nomes[0]), min: minOf(k), lado: lado(k) });
+    if (k.scoringPlay) {
+      // gol contra: `team` já é o lado BENEFICIADO (lado certo); só não credita o autor.
+      const og = /own goal/i.test(type) || /own goal/i.test(k.text || "");
+      if (nomes[0]) goals.push({ nome: abbrevNome(nomes[0]), min: minOf(k), lado: lado(k), ...(og ? { gc: true } : {}) });
     } else if (/card/i.test(type)) {
       const cor = /red|second yellow/i.test(type) ? "vermelho" : /yellow/i.test(type) ? "amarelo" : null;
       if (cor && nomes[0]) cards.push({ nome: abbrevNome(nomes[0]), cor, min: minOf(k), lado: lado(k) });
@@ -413,8 +415,12 @@ async function marcadoresEspn(dados, resolve, cache) {
     const sum = await espnSummary(hit.e.id, cache);
     const { goals } = sum ? espnEventos(sum, j, resolve) : { goals: [] };
     if (goals.length) {
-      j.real.marcadores = goals.map((g) => g.nome);
-      console.log(`marcadores ${j.casa} x ${j.fora}: ${j.real.marcadores.join(", ")}`);
+      // marcadores = só autores creditáveis (sem gol contra) → mantém bônus de artilheiro.
+      // golsContra (autores) à parte, só p/ exibição (placar bate com a lista no front).
+      j.real.marcadores = goals.filter((g) => !g.gc).map((g) => g.nome);
+      const gc = goals.filter((g) => g.gc).map((g) => g.nome);
+      if (gc.length) j.real.golsContra = gc; else delete j.real.golsContra;
+      console.log(`marcadores ${j.casa} x ${j.fora}: ${j.real.marcadores.join(", ")}${gc.length ? ` (gc: ${gc.join(", ")})` : ""}`);
       mudou = true;
     } else {
       console.log(`marcadores ${j.casa} x ${j.fora}: eventos ainda indisponíveis`);
@@ -656,7 +662,7 @@ async function escalacoes(dados, resolve, hlFetch, state) {
 
 /* ---------- main ---------- */
 async function main() {
-  if (!FD_KEY && !AF_KEYS.length && !HL_ALL.length) {
+  if (!FD_KEY && !AF_KEYS.length && !HL_ALL.length && !process.env.BACKFILL_MARCADORES) {
     console.log("Nenhuma chave configurada. Nada a fazer.");
     return;
   }
@@ -695,6 +701,19 @@ async function main() {
 
   let mudou = false;
   let dates = [];
+
+  // BACKFILL 1x (manual, env-guard): reextrai marcadores de TODOS os apurados do ESPN,
+  // corrigindo dado stale (gol contra faltando, gol fantasma/anulado, autor duplicado).
+  // marcadoresEspn é idempotente (não recorrige) → limpa antes p/ forçar refetch.
+  // CI nunca seta BACKFILL_MARCADORES → runs normais seguem idempotentes.
+  if (process.env.BACKFILL_MARCADORES) {
+    let n = 0;
+    for (const j of dados.jogos) {
+      if (apurado(j) && Array.isArray(j.real.marcadores)) { delete j.real.marcadores; delete j.real.golsContra; n++; }
+    }
+    console.log(`backfill: limpou marcadores de ${n} jogo(s), reextraindo do ESPN…`);
+    if (await marcadoresEspn(dados, resolve, cache)) mudou = true;
+  }
 
   // FINAIS + MARCADORES (só se há jogo na janela)
   if (alvos.length) {
