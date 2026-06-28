@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:58:18.141Z",
+  "atualizado_em": "2026-06-28T03:58:49.670Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19765,8 +19765,8 @@
     {
       "id": 59,
       "casa": 3,
-      "fora": 2,
-      "min": "90'+6'",
+      "fora": 3,
+      "min": "90'+7'",
       "gols": [
         {
           "nome": "M. Arnautovic",
@@ -19792,6 +19792,11 @@
           "nome": "R. Mahrez",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "nome": "S. Kalajdzic",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "subs": [
