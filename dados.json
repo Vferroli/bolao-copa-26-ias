@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:14:27.776Z",
+  "atualizado_em": "2026-06-28T20:14:59.844Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20719,6 +20719,14 @@
           "saiu": "R. Mofokeng",
           "min": 45,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "N. Saliba",
+          "cor": "amarelo",
+          "min": 54,
+          "lado": "fora"
         }
       ]
     }
