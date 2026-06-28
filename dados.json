@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:18:09.909Z",
+  "atualizado_em": "2026-06-28T20:19:12.895Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20712,13 +20712,25 @@
       "id": 73,
       "casa": 0,
       "fora": 0,
-      "min": "58'",
+      "min": "59'",
       "subs": [
         {
           "entrou": "T. Mbatha",
           "saiu": "R. Mofokeng",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "N. Sigur",
+          "saiu": "N. Saliba",
+          "min": 59,
+          "lado": "fora"
+        },
+        {
+          "entrou": "L. de Fougerolles",
+          "saiu": "M. Bombito",
+          "min": 59,
+          "lado": "fora"
         }
       ],
       "cartoes": [
