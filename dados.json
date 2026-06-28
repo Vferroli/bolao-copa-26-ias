@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:06:38.058Z",
+  "atualizado_em": "2026-06-28T03:07:09.796Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19789,6 +19789,12 @@
         {
           "entrou": "F. Grillitsch",
           "saiu": "X. Schlager",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. Wanner",
+          "saiu": "R. Schmid",
           "min": 45,
           "lado": "fora"
         }
