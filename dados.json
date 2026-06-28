@@ -20126,7 +20126,7 @@
       "num": 82,
       "fase": "16avos",
       "casa": "belgium",
-      "fora": "algeria",
+      "fora": "senegal",
       "kickoff": "2026-07-01T20:00:00Z",
       "real": {
         "casa": null,
@@ -20282,7 +20282,7 @@
       "num": 85,
       "fase": "16avos",
       "casa": "switzerland",
-      "fora": "egypt",
+      "fora": "algeria",
       "kickoff": "2026-07-03T03:00:00Z",
       "real": {
         "casa": null,
@@ -20306,7 +20306,7 @@
           "casa": 1,
           "fora": 1,
           "avanca": "switzerland",
-          "marcador": "Mohamed Salah"
+          "marcador": null
         },
         "grok": {
           "casa": 1,
@@ -20321,7 +20321,7 @@
       "num": 88,
       "fase": "16avos",
       "casa": "australia",
-      "fora": "iran",
+      "fora": "egypt",
       "kickoff": "2026-07-03T18:00:00Z",
       "real": {
         "casa": null,
@@ -20332,20 +20332,20 @@
         "claude": {
           "casa": 1,
           "fora": 2,
-          "avanca": "iran",
-          "marcador": "Mehdi Taremi"
+          "avanca": null,
+          "marcador": null
         },
         "gpt": {
           "casa": 1,
           "fora": 1,
           "avanca": "australia",
-          "marcador": "Mehdi Taremi"
+          "marcador": null
         },
         "gemini": {
           "casa": 1,
           "fora": 1,
           "avanca": "australia",
-          "marcador": "Mehdi Taremi"
+          "marcador": null
         },
         "grok": {
           "casa": 1,
