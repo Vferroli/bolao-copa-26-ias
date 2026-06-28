@@ -1766,10 +1766,27 @@ details.day[open] .day-chev { transform: rotate(180deg); }
 
 .bkt-match {
   width: var(--bkt-cw); flex: 0 0 auto; position: relative; z-index: 1; margin: 3px 0;
-  background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; overflow: visible;
 }
-.bkt-match.live { border-color: color-mix(in oklab, var(--ok) 55%, var(--line)); box-shadow: 0 0 0 1px color-mix(in oklab, var(--ok) 30%, transparent); }
+.bkt-match > .bkt-team:first-of-type { border-radius: 7px 7px 0 0; }
+.bkt-match > .bkt-team:last-of-type { border-radius: 0 0 7px 7px; }
+.bkt-match.live { border-color: color-mix(in oklab, var(--ok) 60%, var(--line)); box-shadow: 0 0 0 1px color-mix(in oklab, var(--ok) 35%, transparent); }
+.bkt-match.today { border-color: color-mix(in oklab, #f5b301 50%, var(--line)); }
 .bkt-match.tbd { border-style: dashed; opacity: 0.78; }
+/* selo de estado no canto do card */
+.bkt-badge {
+  position: absolute; top: -8px; left: 8px; z-index: 5;
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-mono); font-size: 0.5rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  padding: 2px 7px; border-radius: 999px; white-space: nowrap; line-height: 1;
+}
+.bkt-badge .bkt-dot { width: 5px; height: 5px; box-shadow: none; }
+.bkt-badge.live { color: #04240f; background: var(--ok); }
+.bkt-badge.live .bkt-dot { background: #04240f; animation: bktpulse 1.3s ease-in-out infinite; }
+.bkt-badge.today { color: #2a1d00; background: #f5b301; }
+.bkt-badge.today .bkt-dot { background: #2a1d00; }
+@keyframes bktpulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 .bkt-team {
   display: flex; align-items: center; gap: 6px; padding: 4px 7px;
   font-size: 0.66rem; color: var(--dim); min-width: 0;

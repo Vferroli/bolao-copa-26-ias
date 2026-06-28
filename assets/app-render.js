@@ -914,10 +914,18 @@ function pfMatchData(num, liveSet, thirdsMap) {
   const casa = pfSlot(a, liveSet, thirdsMap);
   const fora = pfSlot(b, liveSet, thirdsMap);
   const j = pfJogoNum(num);
-  const placar = j && apurado(j) ? { casa: j.real.casa, fora: j.real.fora } : null;
+  const fim = !!j && apurado(j);
+  const emJogo = !!j && !fim && Date.now() >= new Date(j.kickoff).getTime();
+  const hoje = !!j && !fim && !emJogo && kickData(j) === S.HOJE; // hoje, ainda não começou
+  // placar: final (real) OU ao vivo (dados.live[]) durante o jogo
+  let placar = fim ? { casa: j.real.casa, fora: j.real.fora } : null;
+  let min = null;
+  if (emJogo) {
+    const le = liveEntry(num);
+    if (le && le.casa != null) { placar = { casa: le.casa, fora: le.fora }; min = le.min; }
+  }
   const venc = j ? pfVencedor(j) : null;
-  const emJogo = !!j && !apurado(j) && Date.now() >= new Date(j.kickoff).getTime();
-  return { num, casa, fora, placar, venc, emJogo };
+  return { num, casa, fora, placar, venc, emJogo, hoje, fim, min };
 }
 
 function bktTeam(slot, m, side) {
@@ -927,18 +935,22 @@ function bktTeam(slot, m, side) {
   const win = m.venc && slot.id === m.venc;
   const lose = m.venc && slot.id !== m.venc;
   const sc = m.placar ? (side === "casa" ? m.placar.casa : m.placar.fora) : null;
-  const live = slot.aoVivo ? `<span class="bkt-dot" title="ao vivo"></span>` : "";
   return `<div class="bkt-team${win ? " win" : ""}${lose ? " lose" : ""}">
     ${bandeira(slot.id)}
     <span class="bkt-nm">${esc(slot.nome || "")}</span>
-    ${live}
     <span class="bkt-sc">${sc != null ? sc : ""}</span>
   </div>`;
 }
 
 function bktMatch(m) {
-  const cls = m.placar ? "done" : m.emJogo ? "live" : (m.casa.tipo === "tbd" || m.fora.tipo === "tbd") ? "tbd" : "set";
+  const cls = m.fim ? "done" : m.emJogo ? "live" : m.hoje ? "today" : (m.casa.tipo === "tbd" || m.fora.tipo === "tbd") ? "tbd" : "set";
+  const badge = m.emJogo
+    ? `<span class="bkt-badge live"><span class="bkt-dot"></span>ao vivo${m.min ? ` · ${esc(m.min)}` : ""}</span>`
+    : m.hoje
+    ? `<span class="bkt-badge today"><span class="bkt-dot"></span>hoje</span>`
+    : "";
   return `<div class="bkt-match ${cls}">
+    ${badge}
     ${bktTeam(m.casa, m, "casa")}
     ${bktTeam(m.fora, m, "fora")}
   </div>`;
@@ -982,9 +994,10 @@ function secChave() {
     </div>`;
   }).join("");
   const fin = pfMatchData(104, liveSet, thirdsMap);
+  // box do campeão só aparece quando há campeão de fato
   const champ = fin.venc
     ? `<div class="bkt-champ">${bandeira(fin.venc)}<span class="bkt-champ-nm">${esc(time(fin.venc).nome)}</span><span class="bkt-champ-lbl">Campeão</span></div>`
-    : `<div class="bkt-champ pend"><span class="bkt-q">?</span><span class="bkt-champ-lbl">Campeão</span></div>`;
+    : "";
   return `<section class="reveal bkt-sec" id="chave" aria-label="Chave da Copa">
     <div class="bkt-head">
       <div>
