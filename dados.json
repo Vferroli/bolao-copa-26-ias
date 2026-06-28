@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T02:34:49.021Z",
+  "atualizado_em": "2026-06-28T02:35:20.833Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19766,7 +19766,7 @@
       "id": 59,
       "casa": 0,
       "fora": 1,
-      "min": "34'",
+      "min": "35'",
       "gols": [
         {
           "nome": "M. Arnautovic",
