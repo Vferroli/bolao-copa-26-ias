@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T02:43:13.782Z",
+  "atualizado_em": "2026-06-28T02:43:45.867Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19766,7 +19766,7 @@
       "id": 59,
       "casa": 0,
       "fora": 1,
-      "min": "42'",
+      "min": "43'",
       "gols": [
         {
           "nome": "M. Arnautovic",
@@ -19787,7 +19787,7 @@
       "id": 60,
       "casa": 0,
       "fora": 2,
-      "min": "42'",
+      "min": "43'",
       "gols": [
         {
           "nome": "G. Lo Celso",
