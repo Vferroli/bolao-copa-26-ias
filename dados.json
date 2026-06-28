@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:46:36.916Z",
+  "atualizado_em": "2026-06-28T20:47:08.858Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20712,7 +20712,7 @@
       "id": 73,
       "casa": 0,
       "fora": 0,
-      "min": "86'",
+      "min": "87'",
       "subs": [
         {
           "entrou": "T. Mbatha",
@@ -20749,6 +20749,18 @@
           "saiu": "T. Buchanan",
           "min": 75,
           "lado": "fora"
+        },
+        {
+          "entrou": "I. Rayners",
+          "saiu": "E. Makgopa",
+          "min": 86,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Moremi",
+          "saiu": "T. Maseko",
+          "min": 86,
+          "lado": "casa"
         }
       ],
       "cartoes": [
