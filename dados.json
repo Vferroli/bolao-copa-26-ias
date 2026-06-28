@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:51:27.050Z",
+  "atualizado_em": "2026-06-28T03:51:59.029Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19766,7 +19766,7 @@
       "id": 59,
       "casa": 2,
       "fora": 2,
-      "min": "89'",
+      "min": "90'",
       "gols": [
         {
           "nome": "M. Arnautovic",
@@ -19917,6 +19917,12 @@
           "saiu": "J. Álvarez",
           "min": 82,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Abu Zraiq",
+          "saiu": "A. Olwan",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
