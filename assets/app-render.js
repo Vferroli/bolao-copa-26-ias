@@ -8,12 +8,9 @@ function render() {
   const app = document.getElementById("app");
   // com jogo EM ANDAMENTO (começou e não apurado), "Hoje" sobe pro topo — independe
   // do feed live (cobre o buraco em que dados.live some mas o jogo ainda rola)
-  const agora = Date.now();
-  const temLive = (S.dados.jogos || []).some((j) =>
-    kickData(j) === S.HOJE && agora >= new Date(j.kickoff).getTime() && !apurado(j));
-  const secs = temLive
-    ? [secHoje(), secPrompt(), secProximos(), secChave(), secGrupos(), secHistorico()]
-    : [secPrompt(), secHoje(), secProximos(), secChave(), secGrupos(), secHistorico()];
+  // "Jogos de hoje" sempre primeiro no conteúdo (o header compacto já fica no topo);
+  // "O que foi solicitado às IAs" desce p/ penúltima, logo antes do histórico.
+  const secs = [secHoje(), secProximos(), secChave(), secGrupos(), secPrompt(), secHistorico()];
   app.innerHTML = secs.join("");
   wireInteractions();
   wireNavSpy();
@@ -123,9 +120,9 @@ function placarHeaderHtml() {
       </div>
       ${chips}
     </div>
+    ${drawers}
     <div class="hx-podium">${cards}</div>
     ${note}
-    ${drawers}
   </div>`;
 }
 
@@ -1132,13 +1129,21 @@ function secHistorico() {
       ${gols}
     </div>`;
   }).join("");
+  const nLbl = `${fin.length} jogo${fin.length > 1 ? "s" : ""}`;
   return `<section class="reveal" id="historico">
     <div class="sec-head">
       <span class="kicker">Apurados</span>
       <h2>Histórico</h2>
-      <span class="pill">${fin.length} jogo${fin.length > 1 ? "s" : ""}</span>
+      <span class="pill">${nLbl}</span>
     </div>
-    <div class="hist">${rows}</div>
+    <details class="hist-collapse">
+      <summary class="hist-toggle">
+        <span class="ht-txt"><span class="show">Mostrar histórico dos jogos</span><span class="hide">Ocultar histórico dos jogos</span></span>
+        <span class="ht-count">${nLbl} apurado${fin.length > 1 ? "s" : ""}</span>
+        <span class="ht-chev" aria-hidden="true">▾</span>
+      </summary>
+      <div class="hist">${rows}</div>
+    </details>
   </section>`;
 }
 
