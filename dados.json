@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T20:30:47.171Z",
+  "atualizado_em": "2026-06-28T20:31:19.038Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20730,6 +20730,18 @@
           "entrou": "L. de Fougerolles",
           "saiu": "M. Bombito",
           "min": 59,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. David",
+          "saiu": "T. Oluwaseyi",
+          "min": 70,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Shaffelburg",
+          "saiu": "L. Millar",
+          "min": 70,
           "lado": "fora"
         }
       ],
