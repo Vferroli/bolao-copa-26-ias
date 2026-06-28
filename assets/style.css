@@ -1751,11 +1751,21 @@ details.day[open] .day-chev { transform: rotate(180deg); }
   background: linear-gradient(180deg, var(--bg) 60%, transparent);
 }
 .bkt-mx { color: var(--faint); font-weight: 700; }
-.bkt-col { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-around; min-height: 0; }
+.bkt-col { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-around; min-height: 0; position: relative; }
 .bkt-pair { flex: 1 1 0; display: flex; flex-direction: column; justify-content: space-around; min-height: 0; position: relative; }
 
+/* divisória: onde termina a metade de cima (chave esquerda) e começa a de baixo
+   (chave direita). Linha pontilhada no meio (50%) de cada coluna, exceto a final. */
+.bkt-round:not(.bkt-final) .bkt-col::before {
+  content: ""; position: absolute; left: 0; right: calc(-2 * var(--bkt-g)); top: 50%;
+  border-top: 2px dashed color-mix(in oklab, var(--txt) 26%, transparent);
+  z-index: 0; pointer-events: none;
+}
+.bkt-sub { margin-top: 5px; font-size: 0.7rem; color: var(--dim); max-width: 30rem; line-height: 1.35; }
+.bkt-sub b { color: var(--txt); font-weight: 600; }
+
 .bkt-match {
-  width: var(--bkt-cw); flex: 0 0 auto; position: relative; margin: 3px 0;
+  width: var(--bkt-cw); flex: 0 0 auto; position: relative; z-index: 1; margin: 3px 0;
   background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
 }
 .bkt-match.live { border-color: color-mix(in oklab, var(--ok) 55%, var(--line)); box-shadow: 0 0 0 1px color-mix(in oklab, var(--ok) 30%, transparent); }

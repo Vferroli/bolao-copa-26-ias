@@ -12,8 +12,8 @@ function render() {
   const temLive = (S.dados.jogos || []).some((j) =>
     kickData(j) === S.HOJE && agora >= new Date(j.kickoff).getTime() && !apurado(j));
   const secs = temLive
-    ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secGrupos(), secProximaFase(), secChave(), secHistorico()]
-    : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secGrupos(), secProximaFase(), secChave(), secHistorico()];
+    ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secChave(), secGrupos(), secHistorico()]
+    : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secChave(), secGrupos(), secHistorico()];
   app.innerHTML = secs.join("");
   wireInteractions();
   renderFavBadge();
@@ -561,20 +561,7 @@ function secProximos() {
   const fut = S.dados.jogos
     .filter((j) => kickData(j) > S.HOJE)
     .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
-  const roadmap = secMataDatas();
-  // sem jogos futuros e sem roadmap → nada a mostrar
-  if (!fut.length && !roadmap) return "";
-  // sem jogos futuros (ex.: grupos completos, mata-mata ainda sem confronto) → só o roadmap
-  if (!fut.length) {
-    return `<section class="reveal" id="proximos">
-    <div class="sec-head">
-      <span class="kicker">Agenda</span>
-      <h2>Próximos jogos</h2>
-      <span class="pill">Fase de grupos completa</span>
-    </div>
-    ${roadmap}
-  </section>`;
-  }
+  if (!fut.length) return "";
   const dias = {};
   fut.forEach((j) => { (dias[kickData(j)] = dias[kickData(j)] || []).push(j); });
   const blocos = Object.keys(dias).sort().map((d, i) => {
@@ -606,34 +593,14 @@ function secProximos() {
       <span class="pill">Fase de grupos completa</span>
     </div>
     <div class="agenda">${blocos}</div>
-    ${roadmap}
   </section>`;
 }
 
-/* ---------- datas do mata-mata (roadmap) ---------- */
+/* fmtDiaCurto: "2026-07-03" -> "03 jul" (usado em datas de fase) */
 function fmtDiaCurto(iso) {
   const MES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
   const [, m, dia] = iso.split("-");
   return `${dia} ${MES[Number(m) - 1]}`;
-}
-function secMataDatas() {
-  const fases = (S.dados.fases || []).filter((f) => f.mata && f.inicio);
-  if (!fases.length) return "";
-  const linhas = fases.map((f) => {
-    const dt = f.fim && f.fim !== f.inicio
-      ? `${fmtDiaCurto(f.inicio)} – ${fmtDiaCurto(f.fim)}`
-      : fmtDiaCurto(f.inicio);
-    return `<div class="kr">
-      <span class="kr-fase">${esc(f.nome)}</span>
-      <span class="kr-mx">×${fmt(f.mult)}</span>
-      <span class="kr-data">${dt}</span>
-    </div>`;
-  }).join("");
-  return `<div class="mata-datas">
-    <div class="md-head"><span class="kicker">Eliminatórias · datas</span></div>
-    <div class="kr-list">${linhas}</div>
-    <p class="md-note">Confrontos definidos após a fase de grupos. Fases finais valem mais pontos.</p>
-  </div>`;
 }
 
 /* ---------- GRUPOS & classificação ---------- */
@@ -977,13 +944,33 @@ function bktMatch(m) {
   </div>`;
 }
 
+/* ordem VISUAL da árvore (top→bottom) = in-order a partir da final. Sem isso, os
+   jogos sairiam em ordem numérica e os conectores ligariam os pares errados
+   (ex.: 89 = venc.74 × venc.77, não 73×74). */
+function pfFeeders(n) {
+  const refs = PF_MATCHES[n] || [];
+  const g = refs.map((r) => (r && r.w != null ? r.w : r && r.l != null ? r.l : null)).filter((x) => x != null);
+  return g.length === 2 ? g : null;
+}
+function pfLeafOrder() {
+  const out = [];
+  (function rec(n) { const f = pfFeeders(n); if (f) { rec(f[0]); rec(f[1]); } else out.push(n); })(104);
+  return out;
+}
+function pfRoundOrder(nums, leafIdx) {
+  const ml = (n) => { const f = pfFeeders(n); return f ? Math.min(ml(f[0]), ml(f[1])) : (leafIdx[n] != null ? leafIdx[n] : 999); };
+  return [...nums].sort((a, b) => ml(a) - ml(b));
+}
+
 function secChave() {
   if (!S.dados || !Array.isArray(S.dados.jogos) || !S.dados.jogos.length) return "";
   const liveSet = pfLiveTeams();
   const thirdsMap = pfThirdsMap();
-  const cols = PF_CHAVE_FASES.map((fid) => {
+  const leaf = pfLeafOrder();
+  const leafIdx = {}; leaf.forEach((g, i) => (leafIdx[g] = i));
+  const cols = PF_CHAVE_FASES.map((fid, ci) => {
     const f = S.fases[fid] || {};
-    const nums = PF_FASE_JOGOS[fid];
+    const nums = pfRoundOrder(PF_FASE_JOGOS[fid], leafIdx);
     const isFinal = fid === "final";
     const inner = isFinal
       ? `<div class="bkt-col">${bktMatch(pfMatchData(nums[0], liveSet, thirdsMap))}</div>`
@@ -1000,7 +987,10 @@ function secChave() {
     : `<div class="bkt-champ pend"><span class="bkt-q">?</span><span class="bkt-champ-lbl">Campeão</span></div>`;
   return `<section class="reveal bkt-sec" id="chave" aria-label="Chave da Copa">
     <div class="bkt-head">
-      <div><div class="bkt-kicker">Mata-mata</div><h2>Chave da Copa</h2></div>
+      <div>
+        <div class="bkt-kicker">Mata-mata</div><h2>Chave da Copa</h2>
+        <div class="bkt-sub">linha tracejada divide a metade de cima (<b>chave esquerda</b>) da de baixo (<b>chave direita</b>)</div>
+      </div>
       <span class="bkt-hint" aria-hidden="true">arraste&nbsp;→</span>
     </div>
     <div class="bkt">${cols}</div>
