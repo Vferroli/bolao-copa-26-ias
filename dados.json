@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T00:52:01.568Z",
+  "atualizado_em": "2026-06-28T00:52:38.722Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19211,6 +19211,18 @@
           "saiu": "R. Neves",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "R. Ríos",
+          "saiu": "J. Lerma",
+          "min": 60,
+          "lado": "casa"
+        },
+        {
+          "entrou": "L. Suárez",
+          "saiu": "J. Córdoba",
+          "min": 60,
+          "lado": "casa"
         }
       ]
     },
@@ -19232,6 +19244,18 @@
           "saiu": "C. Bakambu",
           "min": 51,
           "lado": "casa"
+        },
+        {
+          "entrou": "O. Xamrobekov",
+          "saiu": "O. Shukurov",
+          "min": 59,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Ganiev",
+          "saiu": "D. Khamdamov",
+          "min": 59,
+          "lado": "fora"
         }
       ],
       "cartoes": [
