@@ -4,7 +4,7 @@
 
 function render() {
   renderStamp();
-  renderPodium();
+  renderPlacarHeader(); // placar + torcida + pontuação num header compacto (economiza topo)
   const app = document.getElementById("app");
   // com jogo EM ANDAMENTO (começou e não apurado), "Hoje" sobe pro topo — independe
   // do feed live (cobre o buraco em que dados.live some mas o jogo ainda rola)
@@ -12,16 +12,13 @@ function render() {
   const temLive = (S.dados.jogos || []).some((j) =>
     kickData(j) === S.HOJE && agora >= new Date(j.kickoff).getTime() && !apurado(j));
   const secs = temLive
-    ? [secHoje(), secTorcida(), secScoring(), secPrompt(), secProximos(), secChave(), secGrupos(), secHistorico()]
-    : [secTorcida(), secScoring(), secPrompt(), secHoje(), secProximos(), secChave(), secGrupos(), secHistorico()];
+    ? [secHoje(), secPrompt(), secProximos(), secChave(), secGrupos(), secHistorico()]
+    : [secPrompt(), secHoje(), secProximos(), secChave(), secGrupos(), secHistorico()];
   app.innerHTML = secs.join("");
   wireInteractions();
-  renderFavBadge();
   wireNavSpy();
   observeReveal();
   countUp();
-  // podium is above the fold — reveal on load (don't wait for scroll observer)
-  requestAnimationFrame(() => document.getElementById("podium").classList.add("is-in"));
 }
 
 /* carimbo relativo que tiquetaqueia ("há Xs / há X min") → sensação de vivo
@@ -70,39 +67,132 @@ function rankMove(prevPos, id, pos) {
     <span class="arr" aria-hidden="true">–</span><span class="sr">manteve</span></span>`;
 }
 
-function renderPodium() {
+/* ---------- HEADER COMPACTO (placar + torcida + pontuação) ----------
+   Porta o componente "Header compacto" (Claude Design, prefixo hx-): cards full-width
+   alinhados; torcida do público vira micro-barra no rodapé de cada card; "sua torcida"
+   (picker) e "como pontua" (pontos) viram chips que abrem drawers sob demanda.
+   Economiza o espaço premium do topo (substitui hero/torcida/pontuação separados). */
+const hxKit = (ia) => `<span class="hx-kit" style="--cor:${ia.cor}">${LOGOS[ia.id] || ""}</span>`;
+const hxMiniKit = (ia) => `<span class="mini-kit hx-kit" style="--cor:${ia.cor};box-shadow:none">${LOGOS[ia.id] || ""}</span>`;
+const HX_MEDAL = ["gold", "silver", "bronze"];
+
+function placarHeaderHtml() {
   const rk = ranking();
-  const max = Math.max(1, ...rk.map((r) => r.total));
   const prevPos = posicoesAnteriores();
-  const medals = ["🥇", "🥈", "🥉"];
-  const host = document.getElementById("podium");
-  host.innerHTML = rk
-    .map((ia, i) => {
-      const w = Math.round((ia.total / max) * 100);
-      const pos = i + 1;
-      const head = i < 3 ? `<span class="medal">${medals[i]}</span>` : `<span class="num">${pos}º</span>`;
-      const meta = pos === 1
-        ? `<div class="meta meta-leader"><span class="crown" aria-hidden="true">👑</span> Líder</div>`
-        : `<div class="meta">${pos}º lugar</div>`;
-      const torce = !!(S.vote && S.vote.mine && S.vote.mine.champ === ia.id);
-      return `<article class="rank-card ${i === 0 ? "leader" : ""}${torce ? " torcendo" : ""}" data-pos="${pos}" data-ia="${ia.id}" style="--cor:${ia.cor}">
-        <div class="rank-pos">${head}${rankMove(prevPos, ia.id, pos)}</div>
-        <div class="rank-id">
-          ${kit(ia, "lg")}
-          <div>
-            <div class="name">${esc(ia.nome)}</div>
-            ${meta}
-            ${torce ? `<span class="rank-torce">♥ Torcendo</span>` : ""}
-          </div>
-        </div>
-        <div class="rank-pts">
-          <div class="val" data-count="${ia.total}">0</div>
-          <div class="unit">pontos</div>
-        </div>
-        <div class="rank-bar"><i style="--w:${w}%"></i></div>
-      </article>`;
-    })
-    .join("");
+  const favId = S.vote && S.vote.mine ? S.vote.mine.champ : null;
+  const champ = (S.vote && S.vote.tallies && S.vote.tallies.champ) || {};
+  const torTotal = S.dados.ias.reduce((a, ia) => a + (champ[ia.id] || 0), 0);
+  const showPct = !!S.vote && torTotal >= VOTE_MIN;
+  const maxTor = Math.max(1, ...S.dados.ias.map((ia) => champ[ia.id] || 0));
+  const topTor = torTotal > 0 ? S.dados.ias.slice().sort((a, b) => (champ[b.id] || 0) - (champ[a.id] || 0))[0].id : null;
+  const cards = rk.map((ia, i) => hxCard(ia, i, prevPos, favId, { champ, torTotal, showPct, maxTor, topTor })).join("");
+
+  // chip "sua torcida"
+  const favCol = favId
+    ? `${hxMiniKit(S.ia[favId])}<span class="col"><span class="lbl-k">sua torcida</span><span class="lbl-v">${esc(S.ia[favId].nome)}</span></span>`
+    : `<span class="col"><span class="lbl-k">sua torcida</span><span class="lbl-v">Escolher IA</span></span>`;
+  const chips = S.vote ? `<div class="hx-actions">
+    <button class="hx-chip" type="button" data-toggle="pick" aria-expanded="false" aria-controls="dw-pick">
+      ${favCol}<span class="caret" aria-hidden="true">▾</span>
+    </button>
+    <button class="hx-chip" type="button" data-toggle="score" aria-expanded="false" aria-controls="dw-score">
+      <span class="col"><span class="lbl-k">como pontua</span><span class="lbl-v">Pontos</span></span><span class="caret" aria-hidden="true">▾</span>
+    </button>
+  </div>` : `<div class="hx-actions">
+    <button class="hx-chip" type="button" data-toggle="score" aria-expanded="false" aria-controls="dw-score">
+      <span class="col"><span class="lbl-k">como pontua</span><span class="lbl-v">Pontos</span></span><span class="caret" aria-hidden="true">▾</span>
+    </button>
+  </div>`;
+  const votos = S.vote ? `<small>${torTotal} voto${torTotal === 1 ? "" : "s"}</small>` : "";
+  const note = (S.vote && !showPct) ? `<p class="hx-tor-note">Percentuais da torcida liberam a partir de ${VOTE_MIN} votos.</p>` : "";
+
+  const drawers = `${S.vote ? `<div class="hx-drawer" data-drawer="pick" id="dw-pick"><div class="hx-drawer-in"><div class="hx-drawer-pad">
+      <p class="hx-pick-q">Em quem você torce pro título?</p>
+      <div class="hx-pick">${S.dados.ias.map((ia) => {
+        const mine = ia.id === favId;
+        return `<button class="hx-opt ${mine ? "is-mine" : ""}" type="button" data-champ="${ia.id}" style="--cor:${ia.cor}">${hxMiniKit(ia)}<span>${esc(ia.nome)}</span>${mine ? `<span class="you">você</span>` : ""}</button>`;
+      }).join("")}</div>
+    </div></div></div>` : ""}
+    <div class="hx-drawer" data-drawer="score" id="dw-score"><div class="hx-drawer-in"><div class="hx-drawer-pad">${scoringInner()}</div></div></div>`;
+
+  return `<div class="hx">
+    <div class="hx-bar">
+      <div class="hx-title">
+        <span class="k">Placar das IAs</span>
+        <span class="t">Classificação geral ${votos}</span>
+      </div>
+      ${chips}
+    </div>
+    <div class="hx-podium">${cards}</div>
+    ${note}
+    ${drawers}
+  </div>`;
+}
+
+function hxCard(ia, i, prevPos, favId, tor) {
+  const pos = i + 1;
+  const head = i < 3
+    ? `<span class="hx-medal ${HX_MEDAL[i]}">${pos}</span>`
+    : `<span class="hx-num4">${pos}º</span>`;
+  const isFav = ia.id === favId;
+  const sub = pos === 1
+    ? `<span class="hx-leadtag"><span aria-hidden="true">👑</span> Líder</span>`
+    : `<span class="hx-lugar">${pos}º lugar</span>`;
+  const torcendo = isFav ? `<span class="hx-torcendo">♥ Torcendo</span>` : "";
+  const v = tor.champ[ia.id] || 0;
+  const pct = tor.torTotal ? Math.round((v / tor.torTotal) * 100) : 0;
+  const fill = tor.showPct ? pct : Math.round((v / tor.maxTor) * 100);
+  const val = tor.showPct ? `${pct}<small>%</small>` : `${v}<small> voto${v === 1 ? "" : "s"}</small>`;
+  const isTop = ia.id === tor.topTor;
+  const torBar = S.vote ? `<div class="hx-tor ${isFav ? "is-fav" : ""}">
+      <div class="hx-tor-row">
+        <span class="hx-tor-lbl">${isTop ? `<span class="hx-tor-crown">👑</span>` : ""}torcida do público${isFav ? " · você" : ""}</span>
+        <span class="hx-tor-pct">${val}</span>
+      </div>
+      <div class="hx-tor-track"><span class="hx-tor-fill" style="--w:${fill}%"></span></div>
+    </div>` : "";
+  return `<article class="hx-card ${pos === 1 ? "leader" : ""}" data-pos="${pos}" data-ia="${ia.id}" style="--cor:${ia.cor}">
+    <div class="hx-pos">${head}${rankMove(prevPos, ia.id, pos)}</div>
+    ${hxKit(ia)}
+    <div class="hx-id">
+      <div class="hx-name">${esc(ia.nome)}</div>
+      <div class="hx-sub">${sub}${torcendo}</div>
+    </div>
+    <div class="hx-pts"><div class="v val" data-count="${ia.total}">${fmt(ia.total)}</div><div class="u">pontos</div></div>
+    ${torBar}
+  </article>`;
+}
+
+/* faixas + multiplicadores (conteúdo do drawer "como pontua") */
+function scoringInner() {
+  const tiers = [
+    { v: 25, c: "var(--ok)", d: "Placar exato" },
+    { v: 15, c: "var(--gemini)", d: "Vencedor + diferença de gols" },
+    { v: 10, c: "var(--open)", d: "Só o vencedor / empate" },
+    { v: 5, c: "var(--grok)", d: "Gols de um dos times" },
+  ];
+  return `<div class="hx-tiers">
+    ${tiers.map((t) => `<div class="hx-tier" style="--tc:${t.c}"><div class="v">${t.v}<small>pts</small></div><div class="d">${t.d}</div></div>`).join("")}
+  </div>
+  <div class="hx-mults">
+    <span class="hx-mult">Grupos <b>×1</b></span>
+    <span class="hx-mult">16-avos <b>×1.5</b></span>
+    <span class="hx-mult">Oitavas <b>×2</b></span>
+    <span class="hx-mult">Quartas <b>×2.5</b></span>
+    <span class="hx-mult">Semi <b>×3</b></span>
+    <span class="hx-mult">Final <b>×4</b></span>
+    <span class="hx-mult bonus">Cravou quem avança <b>+8</b></span>
+    <span class="hx-mult bonus">Cravou o artilheiro <b>+3</b></span>
+  </div>`;
+}
+
+function renderPlacarHeader(animate) {
+  const host = document.getElementById("placar-header");
+  if (!host) return;
+  host.innerHTML = placarHeaderHtml();
+  const wrap = host.closest(".placar-in"); // above the fold → revela na hora
+  if (wrap) wrap.classList.add("is-in");
+  if (animate !== false) countUp();
 }
 
 /* ---------- SCORING PANEL ---------- */
@@ -1245,27 +1335,15 @@ function refreshGameChips(gameId) {
     if (j) el.outerHTML = chips(j, false, el.dataset.ctx);
   });
 }
+/* re-renderiza o header compacto (torcida/picker/chips) preservando o drawer
+   aberto; sem count-up (os pontos já saem no valor final, sem replay). */
 function refreshChampUI() {
-  const ch = document.getElementById("fav-chooser"); if (ch) ch.innerHTML = favChooserHtml();
-  const bd = document.getElementById("fav-board"); if (bd) bd.innerHTML = favBoardHtml();
-  renderFavBadge();
-  refreshPodiumTorcendo();
-}
-/* destaca no placar geral a IA que o usuário escolheu torcer (borda + tag),
-   sem re-renderizar o pódio (evita replay do count-up). */
-function refreshPodiumTorcendo() {
-  const champ = S.vote && S.vote.mine ? S.vote.mine.champ : null;
-  document.querySelectorAll("#podium .rank-card").forEach((el) => {
-    const on = el.dataset.ia === champ;
-    el.classList.toggle("torcendo", on);
-    const has = el.querySelector(".rank-torce");
-    if (on && !has) {
-      const holder = el.querySelector(".rank-id > div");
-      if (holder) holder.insertAdjacentHTML("beforeend", `<span class="rank-torce">♥ Torcendo</span>`);
-    } else if (!on && has) {
-      has.remove();
-    }
-  });
+  const host = document.getElementById("placar-header");
+  if (!host) return;
+  const open = host.querySelector(".hx-drawer.open");
+  const which = open ? open.dataset.drawer : null;
+  renderPlacarHeader(false);
+  if (which) setHeaderDrawer(which, true);
 }
 /* chamado pelo app.js quando as tallies chegam/atualizam */
 function refreshAllVotes() {
@@ -1307,6 +1385,26 @@ async function onVoteChamp(ia) {
   refreshTallies();
 }
 
+/* abre/fecha um drawer do header compacto (pick | score), exclusivo */
+function setHeaderDrawer(which, open) {
+  const host = document.getElementById("placar-header");
+  if (!host) return;
+  const dw = host.querySelector(`[data-drawer="${which}"]`);
+  const chip = host.querySelector(`[data-toggle="${which}"]`);
+  if (!dw || !chip) return;
+  dw.classList.toggle("open", open);
+  chip.setAttribute("aria-expanded", open ? "true" : "false");
+}
+function toggleHeaderDrawer(which) {
+  const host = document.getElementById("placar-header");
+  if (!host) return;
+  const dw = host.querySelector(`[data-drawer="${which}"]`);
+  const willOpen = dw && !dw.classList.contains("open");
+  setHeaderDrawer("pick", false);
+  setHeaderDrawer("score", false);
+  if (willOpen) setHeaderDrawer(which, true);
+}
+
 /* ---------- wiring (delegação no document, uma vez só) ---------- */
 function wireVotes() {
   if (S._voteWired) return;
@@ -1316,16 +1414,13 @@ function wireVotes() {
     if (chipVote) { const w = chipVote.closest(".preds.votable"); if (w) onVoteGame(w.dataset.game, chipVote.dataset.ia); return; }
     const opt = e.target.closest(".vote-opt");
     if (opt) { const m = opt.closest(".vote-match"); if (m) onVoteGame(m.dataset.game, opt.dataset.ia); return; }
+    // header compacto: chips abrem drawers; picker vota no campeão
+    const tog = e.target.closest(".hx-chip[data-toggle]");
+    if (tog) { toggleHeaderDrawer(tog.dataset.toggle); return; }
+    const hxOpt = e.target.closest(".hx-opt[data-champ]");
+    if (hxOpt) { onVoteChamp(hxOpt.dataset.champ); return; }
     const fav = e.target.closest(".vote-fav-opt");
     if (fav) { onVoteChamp(fav.dataset.champ); return; }
-    const badge = e.target.closest("#fav-badge");
-    if (badge) {
-      const sec = document.getElementById("torcida");
-      if (sec) sec.scrollIntoView({
-        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
-        block: "start",
-      });
-    }
   });
 }
 
@@ -1406,7 +1501,7 @@ function setupPromptModal() {
 /* count-up for ranking points */
 function countUp() {
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  document.querySelectorAll("#podium .val[data-count]").forEach((el) => {
+  document.querySelectorAll("#placar-header .val[data-count], #podium .val[data-count]").forEach((el) => {
     const target = parseFloat(el.dataset.count) || 0;
     if (reduce || target === 0) { el.textContent = fmt(target); return; }
     const dur = 1100, t0 = performance.now();

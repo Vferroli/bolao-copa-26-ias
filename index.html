@@ -76,47 +76,10 @@
     </nav>
   </header>
 
-  <!-- ░░ HERO ░░ -->
-  <section class="hero" id="ranking">
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 1200 560" preserveAspectRatio="xMidYMax slice">
-        <defs>
-          <radialGradient id="pitch" cx="50%" cy="120%" r="80%">
-            <stop offset="0%" stop-color="rgba(80,150,255,0.10)" />
-            <stop offset="100%" stop-color="rgba(80,150,255,0)" />
-          </radialGradient>
-        </defs>
-        <rect width="1200" height="560" fill="url(#pitch)" />
-        <g fill="none" stroke="rgba(180,200,255,0.10)" stroke-width="2">
-          <!-- stadium tiers -->
-          <ellipse cx="600" cy="640" rx="560" ry="240" />
-          <ellipse cx="600" cy="640" rx="430" ry="184" />
-          <ellipse cx="600" cy="640" rx="300" ry="128" />
-          <!-- pitch markings -->
-          <line x1="40" y1="470" x2="1160" y2="470" stroke="rgba(180,200,255,0.14)" />
-          <circle cx="600" cy="470" r="74" stroke="rgba(180,200,255,0.14)" />
-          <path d="M600 396 v148" stroke="rgba(180,200,255,0.14)" />
-        </g>
-        <!-- confetti specks -->
-        <g>
-          <rect x="180" y="120" width="7" height="11" rx="1" fill="#ffce5c" opacity="0.55" transform="rotate(20 183 125)" />
-          <rect x="980" y="90" width="7" height="11" rx="1" fill="#d97757" opacity="0.5" transform="rotate(-15 983 95)" />
-          <rect x="320" y="60" width="6" height="10" rx="1" fill="#4285f4" opacity="0.5" transform="rotate(35 323 65)" />
-          <rect x="860" y="150" width="6" height="10" rx="1" fill="#a78bfa" opacity="0.5" transform="rotate(-25 863 155)" />
-          <rect x="520" y="50" width="6" height="10" rx="1" fill="#10a37f" opacity="0.5" transform="rotate(15 523 55)" />
-          <rect x="700" y="110" width="6" height="10" rx="1" fill="#ffce5c" opacity="0.45" transform="rotate(-30 703 115)" />
-        </g>
-      </svg>
-    </div>
-    <div class="hero-in">
-      <span class="eyebrow">🏆 Copa do Mundo · EUA · México · Canadá</span>
-      <h1>Quatro IAs.<br /><span class="glow">Um troféu.</span></h1>
-      <p class="lede">
-        <span class="ia-mini">Claude</span>, <span class="ia-mini">GPT</span>,
-        <span class="ia-mini">Gemini</span> e <span class="ia-mini">Grok</span>
-        cravando os placares de cada jogo. Orgulho de máquina em disputa.
-      </p>
-      <div class="podium" id="podium"><!-- ranking injetado --></div>
+  <!-- ░░ PLACAR (header compacto: placar + torcida + pontuação) ░░ -->
+  <section class="placar-wrap" id="ranking">
+    <div class="placar-in reveal">
+      <div id="placar-header"><!-- placar das IAs injetado --></div>
     </div>
   </section>
 
