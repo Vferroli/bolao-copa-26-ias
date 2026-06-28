@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:05:15.848Z",
+  "atualizado_em": "2026-06-28T01:06:18.250Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,7 +19198,7 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "73'",
+      "min": "74'",
       "subs": [
         {
           "entrou": "D. Dalot",
@@ -19242,7 +19242,7 @@
       "id": 66,
       "casa": 1,
       "fora": 1,
-      "min": "72'",
+      "min": "73'",
       "gols": [
         {
           "nome": "E. Shomurodov",
@@ -19273,6 +19273,24 @@
           "saiu": "D. Khamdamov",
           "min": 59,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Bongonda",
+          "saiu": "B. Cipenga",
+          "min": 72,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Mukau",
+          "saiu": "S. Moutoussamy",
+          "min": 73,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Elia",
+          "saiu": "N. Mbuku",
+          "min": 73,
+          "lado": "casa"
         }
       ],
       "cartoes": [
