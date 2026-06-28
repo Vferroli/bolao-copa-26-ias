@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:33:22.946Z",
+  "atualizado_em": "2026-06-28T01:37:02.461Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -17216,9 +17216,15 @@
       "fora": "uzbekistan",
       "kickoff": "2026-06-27T23:30:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "E. Shomurodov",
+          "Y. Wissa",
+          "F. Mayele",
+          "Y. Wissa"
+        ]
       },
       "palpites": {
         "claude": {
@@ -19472,128 +19478,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 66,
-      "casa": 3,
-      "fora": 1,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "E. Shomurodov",
-          "min": 10,
-          "lado": "fora"
-        },
-        {
-          "nome": "Y. Wissa",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "nome": "F. Mayele",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "nome": "Y. Wissa",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "F. Mayele",
-          "saiu": "C. Bakambu",
-          "min": 51,
-          "lado": "casa"
-        },
-        {
-          "entrou": "O. Xamrobekov",
-          "saiu": "O. Shukurov",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Ganiev",
-          "saiu": "D. Khamdamov",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Elia",
-          "saiu": "N. Mbuku",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Bongonda",
-          "saiu": "B. Cipenga",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Mukau",
-          "saiu": "S. Moutoussamy",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "O. Urunov",
-          "saiu": "A. Fayzullaev",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Iskanderov",
-          "saiu": "A. Mozgovoy",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Sergeev",
-          "saiu": "J. Urozov",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Kayembe",
-          "saiu": "A. Masuaku",
-          "min": 83,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "N. Sadiki",
-          "cor": "amarelo",
-          "min": 21,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Khusanov",
-          "cor": "amarelo",
-          "min": 43,
-          "lado": "fora"
-        },
-        {
-          "nome": "N. Mbuku",
-          "cor": "amarelo",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Nasrullaev",
-          "cor": "amarelo",
-          "min": 48,
-          "lado": "fora"
-        },
-        {
-          "nome": "S. Moutoussamy",
-          "cor": "amarelo",
-          "min": 62,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
