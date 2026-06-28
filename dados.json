@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T03:41:27.890Z",
+  "atualizado_em": "2026-06-28T03:41:59.724Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19845,7 +19845,7 @@
     {
       "id": 60,
       "casa": 1,
-      "fora": 2,
+      "fora": 3,
       "min": "79'",
       "gols": [
         {
@@ -19862,6 +19862,11 @@
           "nome": "M. Al-Tamari",
           "min": 55,
           "lado": "casa"
+        },
+        {
+          "nome": "L. Messi",
+          "min": 80,
+          "lado": "fora"
         }
       ],
       "subs": [
