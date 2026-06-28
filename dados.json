@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T02:11:45.570Z",
+  "atualizado_em": "2026-06-28T02:12:17.990Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19766,13 +19766,21 @@
       "id": 59,
       "casa": 0,
       "fora": 0,
-      "min": "11'"
+      "min": "11'",
+      "cartoes": [
+        {
+          "nome": "M. Arnautovic",
+          "cor": "amarelo",
+          "min": 11,
+          "lado": "fora"
+        }
+      ]
     },
     {
       "id": 60,
       "casa": 0,
       "fora": 0,
-      "min": "10'"
+      "min": "11'"
     }
   ]
 }
