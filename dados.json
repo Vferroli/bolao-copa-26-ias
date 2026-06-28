@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:24:41.548Z",
+  "atualizado_em": "2026-06-28T01:25:13.662Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19198,7 +19198,7 @@
       "id": 65,
       "casa": 0,
       "fora": 0,
-      "min": "90'+2'",
+      "min": "90'+3'",
       "subs": [
         {
           "entrou": "D. Dalot",
@@ -19253,6 +19253,12 @@
           "saiu": "S. Arias",
           "min": 87,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Nunes",
+          "saiu": "N. Mendes",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -19268,7 +19274,7 @@
       "id": 66,
       "casa": 3,
       "fora": 1,
-      "min": "90'",
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "E. Shomurodov",
@@ -19283,6 +19289,11 @@
         {
           "nome": "F. Mayele",
           "min": 78,
+          "lado": "casa"
+        },
+        {
+          "nome": "Y. Wissa",
+          "min": 90,
           "lado": "casa"
         }
       ],
