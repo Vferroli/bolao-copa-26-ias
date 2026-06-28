@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T00:55:16.924Z",
+  "atualizado_em": "2026-06-28T00:55:48.532Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19230,7 +19230,7 @@
       "id": 66,
       "casa": 0,
       "fora": 1,
-      "min": "61'",
+      "min": "62'",
       "gols": [
         {
           "nome": "E. Shomurodov",
@@ -19282,6 +19282,12 @@
           "cor": "amarelo",
           "min": 48,
           "lado": "fora"
+        },
+        {
+          "nome": "S. Moutoussamy",
+          "cor": "amarelo",
+          "min": 62,
+          "lado": "casa"
         }
       ]
     }
