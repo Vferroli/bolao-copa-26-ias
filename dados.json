@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T12:03:33.917Z",
+  "atualizado_em": "2026-06-28T12:47:27.979Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -19926,7 +19926,7 @@
       "num": 82,
       "fase": "16avos",
       "casa": "belgium",
-      "fora": "senegal",
+      "fora": "algeria",
       "kickoff": "2026-07-01T20:00:00Z",
       "real": {
         "casa": null,
@@ -19982,7 +19982,7 @@
       "num": 85,
       "fase": "16avos",
       "casa": "switzerland",
-      "fora": "algeria",
+      "fora": "egypt",
       "kickoff": "2026-07-03T03:00:00Z",
       "real": {
         "casa": null,
@@ -19996,7 +19996,7 @@
       "num": 88,
       "fase": "16avos",
       "casa": "australia",
-      "fora": "egypt",
+      "fora": "iran",
       "kickoff": "2026-07-03T18:00:00Z",
       "real": {
         "casa": null,

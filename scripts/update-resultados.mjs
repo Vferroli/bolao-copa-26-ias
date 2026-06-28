@@ -110,19 +110,28 @@ const FIXTURES_MATA = [
   { num: 77, fase: "16avos", kickoff: "2026-06-30T21:00:00Z", casa: "france", fora: "sweden" },
   { num: 79, fase: "16avos", kickoff: "2026-07-01T01:00:00Z", casa: "mexico", fora: "ecuador" },
   { num: 80, fase: "16avos", kickoff: "2026-07-01T16:00:00Z", casa: "england", fora: "dr-congo" },
-  { num: 82, fase: "16avos", kickoff: "2026-07-01T20:00:00Z", casa: "belgium", fora: "senegal" },
+  { num: 82, fase: "16avos", kickoff: "2026-07-01T20:00:00Z", casa: "belgium", fora: "algeria" },
   { num: 81, fase: "16avos", kickoff: "2026-07-02T00:00:00Z", casa: "usa", fora: "bosnia-herzegovina" },
   { num: 84, fase: "16avos", kickoff: "2026-07-02T19:00:00Z", casa: "spain", fora: "austria" },
   { num: 83, fase: "16avos", kickoff: "2026-07-02T23:00:00Z", casa: "portugal", fora: "croatia" },
-  { num: 85, fase: "16avos", kickoff: "2026-07-03T03:00:00Z", casa: "switzerland", fora: "algeria" },
-  { num: 88, fase: "16avos", kickoff: "2026-07-03T18:00:00Z", casa: "australia", fora: "egypt" },
+  { num: 85, fase: "16avos", kickoff: "2026-07-03T03:00:00Z", casa: "switzerland", fora: "egypt" },
+  { num: 88, fase: "16avos", kickoff: "2026-07-03T18:00:00Z", casa: "australia", fora: "iran" },
   { num: 86, fase: "16avos", kickoff: "2026-07-03T22:00:00Z", casa: "argentina", fora: "cape-verde" },
   { num: 87, fase: "16avos", kickoff: "2026-07-04T01:30:00Z", casa: "colombia", fora: "ghana" },
 ];
 function inserirFixturesMata(dados) {
   let mudou = false;
   for (const fx of FIXTURES_MATA) {
-    if (dados.jogos.some((j) => j.id === fx.num || j.num === fx.num)) continue; // idempotente
+    const ex = dados.jogos.find((j) => j.id === fx.num || j.num === fx.num);
+    if (ex) {
+      // upsert: corrige times/kickoff de jogo AINDA não apurado (sem mexer em real/palpites)
+      if (!apurado(ex) && (ex.casa !== fx.casa || ex.fora !== fx.fora || ex.kickoff !== fx.kickoff)) {
+        ex.casa = fx.casa; ex.fora = fx.fora; ex.kickoff = fx.kickoff; ex.fase = fx.fase;
+        console.log(`fixture mata corrigido: jogo ${fx.num} -> ${fx.casa} x ${fx.fora}`);
+        mudou = true;
+      }
+      continue;
+    }
     dados.jogos.push({
       id: fx.num, num: fx.num, fase: fx.fase, casa: fx.casa, fora: fx.fora,
       kickoff: fx.kickoff, real: { casa: null, fora: null, avancou: null }, palpites: {},
