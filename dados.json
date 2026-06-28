@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-27",
-  "atualizado_em": "2026-06-28T01:31:47.388Z",
+  "atualizado_em": "2026-06-28T01:33:22.946Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -16893,9 +16893,10 @@
       "fora": "portugal",
       "kickoff": "2026-06-27T23:30:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": []
       },
       "palpites": {
         "claude": {
@@ -19590,82 +19591,6 @@
           "nome": "S. Moutoussamy",
           "cor": "amarelo",
           "min": 62,
-          "lado": "casa"
-        }
-      ]
-    },
-    {
-      "id": 65,
-      "casa": 0,
-      "fora": 0,
-      "min": "90'+6'",
-      "subs": [
-        {
-          "entrou": "D. Dalot",
-          "saiu": "J. Cancelo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Neves",
-          "saiu": "R. Neves",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Ríos",
-          "saiu": "J. Lerma",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Suárez",
-          "saiu": "J. Córdoba",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Leão",
-          "saiu": "J. Félix",
-          "min": 70,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Costa",
-          "saiu": "Vitinha",
-          "min": 70,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Castaño",
-          "saiu": "J. Arias",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Fernando Quintero",
-          "saiu": "J. Rodríguez",
-          "min": 76,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Muñoz",
-          "saiu": "S. Arias",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Nunes",
-          "saiu": "N. Mendes",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "G. Puerta",
-          "cor": "amarelo",
-          "min": 86,
           "lado": "casa"
         }
       ]
