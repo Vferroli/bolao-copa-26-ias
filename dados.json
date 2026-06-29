@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T18:53:43.474Z",
+  "atualizado_em": "2026-06-29T18:54:15.252Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21042,6 +21042,12 @@
           "saiu": "D. Kamada",
           "min": 78,
           "lado": "fora"
+        },
+        {
+          "entrou": "Fabinho",
+          "saiu": "Casemiro",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
