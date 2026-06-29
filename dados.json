@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T23:19:29.215Z",
+  "atualizado_em": "2026-06-29T23:22:38.026Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20454,9 +20454,13 @@
       "fora": "paraguay",
       "kickoff": "2026-06-29T20:30:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 1,
+        "avancou": "germany",
+        "marcadores": [
+          "J. Enciso",
+          "K. Havertz"
+        ]
       },
       "palpites": {
         "claude": {
@@ -21266,124 +21270,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 74,
-      "casa": 1,
-      "fora": 1,
-      "min": "Penalties",
-      "gols": [
-        {
-          "nome": "J. Enciso",
-          "min": 42,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. Havertz",
-          "min": 54,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "L. Goretzka",
-          "saiu": "F. Nmecha",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Caballero",
-          "saiu": "G. Ávalos",
-          "min": 55,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Maurício",
-          "saiu": "J. Enciso",
-          "min": 57,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Musiala",
-          "saiu": "D. Undav",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "W. Anton",
-          "saiu": "A. Pavlovic",
-          "min": 79,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Woltemade",
-          "saiu": "L. Sané",
-          "min": 88,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Velázquez",
-          "saiu": "M. Almirón",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Ojeda",
-          "saiu": "J. Jose Cáceres",
-          "min": 99,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Sanabria",
-          "saiu": "D. Bobadilla",
-          "min": 99,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Amiri",
-          "saiu": "F. Wirtz",
-          "min": 110,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Thiaw",
-          "saiu": "A. Rüdiger",
-          "min": 110,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Balbuena",
-          "saiu": "J. Alonso",
-          "min": 120,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Cubas",
-          "cor": "amarelo",
-          "min": 65,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. Havertz",
-          "cor": "amarelo",
-          "min": 106,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Musiala",
-          "cor": "amarelo",
-          "min": 115,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Galarza",
-          "cor": "amarelo",
-          "min": 117,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
