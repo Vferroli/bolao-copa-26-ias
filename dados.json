@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:32:34.365Z",
+  "atualizado_em": "2026-06-29T22:34:08.935Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21271,7 +21271,7 @@
       "id": 74,
       "casa": 1,
       "fora": 1,
-      "min": "ET",
+      "min": "91'",
       "gols": [
         {
           "nome": "J. Enciso",
