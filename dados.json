@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:42:07.427Z",
+  "atualizado_em": "2026-06-29T22:42:39.682Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21330,6 +21330,12 @@
         {
           "entrou": "B. Ojeda",
           "saiu": "J. Jose Cáceres",
+          "min": 99,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Sanabria",
+          "saiu": "D. Bobadilla",
           "min": 99,
           "lado": "fora"
         }
