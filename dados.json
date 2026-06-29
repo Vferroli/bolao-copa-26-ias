@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:11:24.278Z",
+  "atualizado_em": "2026-06-29T22:12:27.884Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21271,7 +21271,7 @@
       "id": 74,
       "casa": 1,
       "fora": 1,
-      "min": "78'",
+      "min": "80'",
       "gols": [
         {
           "nome": "J. Enciso",
@@ -21307,6 +21307,12 @@
           "entrou": "J. Musiala",
           "saiu": "D. Undav",
           "min": 63,
+          "lado": "casa"
+        },
+        {
+          "entrou": "W. Anton",
+          "saiu": "A. Pavlovic",
+          "min": 79,
           "lado": "casa"
         }
       ],
