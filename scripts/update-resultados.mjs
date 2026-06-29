@@ -410,6 +410,32 @@ function espnEventos(sum, j, resolve) {
   return { goals, subs, cards };
 }
 
+/* disputa de pênaltis via ESPN. Totais = competitor.shootoutScore (autoritativo;
+   fallback = conta `didScore` por lado). Cobranças = summary.shootout[] em ordem
+   cronológica (id numérico crescente entre os dois times). Orientado ao MEU jogo.
+   -> { casa, fora, cobrancas:[{lado,nome,marcou}] } | null (sem disputa). */
+function espnPenaltis(hit, sum, j, resolve) {
+  const ps = (v) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : null; };
+  const penH = ps(hit.home?.shootoutScore), penA = ps(hit.away?.shootoutScore);
+  const temScore = penH != null && penA != null;
+  const blocos = Array.isArray(sum?.shootout) ? sum.shootout : [];
+  if (!temScore && !blocos.length) return null;
+  const shots = [];
+  for (const b of blocos) {
+    const t = resolve(b.team);
+    const lado = t === j.casa ? "casa" : t === j.fora ? "fora" : null;
+    for (const s of (b.shots || [])) {
+      shots.push({ ord: Number(s.id) || 0, lado, nome: abbrevNome(s.player), marcou: !!s.didScore });
+    }
+  }
+  shots.sort((a, b) => a.ord - b.ord);
+  const cobrancas = shots.map(({ lado, nome, marcou }) => ({ lado, nome, marcou }));
+  const cnt = (lado) => cobrancas.filter((c) => c.lado === lado && c.marcou).length;
+  const casa = temScore ? (hit.hId === j.casa ? penH : penA) : cnt("casa");
+  const fora = temScore ? (hit.hId === j.casa ? penA : penH) : cnt("fora");
+  return { casa, fora, ...(cobrancas.length ? { cobrancas } : {}) };
+}
+
 const ESPN_LIVE = new Set(["in"]); // status.type.state
 
 /* ao vivo: 1 scoreboard por data + 1 summary por jogo ao vivo (enriquece gols/
@@ -442,6 +468,12 @@ async function liveEspn(dados, resolve, cache) {
       if (subs.length) item.subs = subs;
       if (cards.length) item.cartoes = cards;
     }
+    // disputa de pênaltis em andamento → anexa cobranças e marca o minuto
+    const pen = espnPenaltis(hit, sum, j, resolve);
+    if (pen && (pen.cobrancas?.length || pen.casa || pen.fora)) {
+      item.penaltis = pen;
+      item.min = "Pênaltis";
+    }
     arr.push(item);
   }
   console.log(`live ESPN: ${arr.length} jogo(s)`);
@@ -471,6 +503,43 @@ async function marcadoresEspn(dados, resolve, cache) {
     } else {
       console.log(`marcadores ${j.casa} x ${j.fora}: eventos ainda indisponíveis`);
     }
+  }
+  return mudou;
+}
+
+/* PÊNALTIS finais (mata-mata) — ESPN é autoritativo p/ jogo decidido nos pênaltis.
+   Grava placar = fim da prorrogação, `avancou` = vencedor da disputa e `penaltis`.
+   SOBRESCREVE mesmo já apurado (self-heal idempotente): cura placar congelado
+   errado — ex.: gol anulado que um provedor contou como FINISHED (Alemanha 2x1 →
+   1x1, Paraguai nos pênaltis). Janela: jogos de mata-mata começados nas últimas 24h
+   (limitado; ESPN é grátis/ilimitado). Não toca em jogo sem disputa. */
+async function penaltisEspn(dados, fases, resolve, cache) {
+  const agora = Date.now();
+  const cand = dados.jogos.filter((j) => {
+    if (!fases[j.fase]?.mata) return false;
+    const k = new Date(j.kickoff).getTime();
+    return k <= agora && (agora - k) < 24 * 3600 * 1000;
+  });
+  if (!cand.length) return false;
+  let mudou = false;
+  for (const j of cand) {
+    const hit = (await espnLocate(j, resolve, cache)).hit;
+    if (!hit || hit.e.status?.type?.state !== "post") continue; // só jogo encerrado
+    const sum = await espnSummary(hit.e.id, cache);
+    const pen = espnPenaltis(hit, sum, j, resolve);
+    if (!pen) continue; // sem disputa → caminho normal de finais cuida
+    const hs = parseInt(hit.home?.score, 10), as = parseInt(hit.away?.score, 10);
+    if (!Number.isFinite(hs) || !Number.isFinite(as)) continue;
+    const casa = hit.hId === j.casa ? hs : as;
+    const fora = hit.hId === j.casa ? as : hs;
+    const avancou = pen.casa > pen.fora ? j.casa : pen.fora > pen.casa ? j.fora : null;
+    const cur = j.real || {};
+    const igual = cur.casa === casa && cur.fora === fora && cur.avancou === avancou &&
+      cur.penaltis && cur.penaltis.casa === pen.casa && cur.penaltis.fora === pen.fora;
+    if (igual) continue; // idempotente
+    j.real = { ...cur, casa, fora, avancou, penaltis: pen };
+    console.log(`PÊNALTIS ${j.casa} ${casa} (${pen.casa}) x (${pen.fora}) ${fora} ${j.fora} → avança ${avancou}`);
+    mudou = true;
   }
   return mudou;
 }
@@ -799,6 +868,14 @@ async function main() {
     if (await marcadoresEspn(dados, resolve, cache)) mudou = true;
   } else {
     console.log("Sem jogos na janela p/ finais.");
+  }
+
+  // PÊNALTIS (mata-mata) — roda SEMPRE: cura placar de jogo decidido nos pênaltis
+  // mesmo fora da janela de finais (ex.: já apurado errado). Cache por-run evita
+  // refetch. marcadoresEspn depois pega os goleadores de jogo recém-gravado aqui.
+  if (await penaltisEspn(dados, fases, resolve, cache)) {
+    mudou = true;
+    if (await marcadoresEspn(dados, resolve, cache)) mudou = true;
   }
 
   // AO VIVO (ESPN, gratuito/ilimitado — sem cota/rotação)

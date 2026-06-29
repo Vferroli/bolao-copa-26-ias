@@ -20454,13 +20454,31 @@
       "fora": "paraguay",
       "kickoff": "2026-06-29T20:30:00Z",
       "real": {
-        "casa": 2,
+        "casa": 1,
         "fora": 1,
-        "avancou": "germany",
+        "avancou": "paraguay",
         "marcadores": [
           "J. Enciso",
           "K. Havertz"
-        ]
+        ],
+        "penaltis": {
+          "casa": 3,
+          "fora": 4,
+          "cobrancas": [
+            { "lado": "casa", "nome": "K. Havertz", "marcou": false },
+            { "lado": "fora", "nome": "Maurício", "marcou": true },
+            { "lado": "casa", "nome": "J. Kimmich", "marcou": true },
+            { "lado": "fora", "nome": "G. Gómez", "marcou": true },
+            { "lado": "casa", "nome": "J. Musiala", "marcou": true },
+            { "lado": "fora", "nome": "M. Galarza", "marcou": true },
+            { "lado": "casa", "nome": "N. Woltemade", "marcou": false },
+            { "lado": "fora", "nome": "A. Sanabria", "marcou": false },
+            { "lado": "casa", "nome": "N. Amiri", "marcou": true },
+            { "lado": "fora", "nome": "F. Balbuena", "marcou": false },
+            { "lado": "casa", "nome": "J. Tah", "marcou": false },
+            { "lado": "fora", "nome": "J. Canale", "marcou": true }
+          ]
+        }
       },
       "palpites": {
         "claude": {
