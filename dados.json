@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T18:17:24.214Z",
+  "atualizado_em": "2026-06-29T18:17:56.189Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20991,7 +20991,7 @@
   "live": [
     {
       "id": 76,
-      "casa": 0,
+      "casa": 1,
       "fora": 1,
       "min": "56'",
       "gols": [
@@ -20999,6 +20999,11 @@
           "nome": "K. Sano",
           "min": 29,
           "lado": "fora"
+        },
+        {
+          "nome": "Casemiro",
+          "min": 56,
+          "lado": "casa"
         }
       ],
       "subs": [
