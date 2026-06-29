@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T17:14:42.655Z",
+  "atualizado_em": "2026-06-29T17:15:14.313Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21000,6 +21000,12 @@
           "cor": "amarelo",
           "min": 12,
           "lado": "fora"
+        },
+        {
+          "nome": "Casemiro",
+          "cor": "amarelo",
+          "min": 14,
+          "lado": "casa"
         }
       ]
     }
