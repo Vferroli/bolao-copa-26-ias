@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T18:27:20.477Z",
+  "atualizado_em": "2026-06-29T18:27:52.391Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21012,6 +21012,18 @@
           "saiu": "L. Paquetá",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "G. Martinelli",
+          "saiu": "M. Cunha",
+          "min": 66,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Suzuki",
+          "saiu": "K. Nakamura",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
