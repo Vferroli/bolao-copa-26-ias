@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:28:54.557Z",
+  "atualizado_em": "2026-06-29T22:32:34.365Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21320,6 +21320,12 @@
           "saiu": "L. Sané",
           "min": 88,
           "lado": "casa"
+        },
+        {
+          "entrou": "G. Velázquez",
+          "saiu": "M. Almirón",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
