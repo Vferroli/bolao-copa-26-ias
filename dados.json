@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
-  "atualizado": "2026-06-28",
-  "atualizado_em": "2026-06-28T21:02:26.000Z",
+  "atualizado": "2026-06-29",
+  "atualizado_em": "2026-06-29T16:30:13.686Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20160,6 +20160,284 @@
           "fora": 1,
           "avanca": "brazil",
           "marcador": "Vinícius Júnior"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-3-3",
+          "fora": "3-4-2-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Alisson",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Douglas Santos",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Gabriel Magalhães",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Marquinhos",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Danilo",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Lucas Paquetá",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Casemiro",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Bruno Guimarães",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Vinícius Júnior",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Matheus Cunha",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Rayan",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 23,
+              "nome": "Ederson",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Weverton",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Alex Sandro",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Bremer",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Léo Pereira",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Roger Ibañez",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Éderson",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Fabinho",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Luiz Henrique",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Danilo Santos",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Endrick",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Gabriel Martinelli",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Igor Thiago",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Neymar",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Zion Suzuki",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "Hiroki Itō",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Shogo Taniguchi",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Takehiro Tomiyasu",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Keito Nakamura",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Daichi Kamada",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Kaishu Sano",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Ritsu Doan",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Daizen Maeda",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Junya Ito",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Ayase Ueda",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Keisuke Osako",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Tomoki Hayakawa",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Yukinari Sugawara",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Ko Itakura",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Yuto Nagatomo",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Tsuyoshi Watanabe",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Ayumu Seko",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Junnosuke Suzuki",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Ao Tanaka",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Yuito Suzuki",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Takefusa Kubo",
+              "pos": "F"
+            },
+            {
+              "num": 6,
+              "nome": "Shuto Machino",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Koki Ogawa",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Kento Shiogai",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Keisuke Goto",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
