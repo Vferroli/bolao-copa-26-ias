@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T17:50:19.303Z",
+  "atualizado_em": "2026-06-29T18:06:25.676Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20999,6 +20999,14 @@
           "nome": "K. Sano",
           "min": 29,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "Endrick",
+          "saiu": "L. Paquetá",
+          "min": 45,
+          "lado": "casa"
         }
       ],
       "cartoes": [
