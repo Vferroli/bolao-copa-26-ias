@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T21:20:59.161Z",
+  "atualizado_em": "2026-06-29T21:36:06.021Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21277,6 +21277,14 @@
           "nome": "J. Enciso",
           "min": 42,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "L. Goretzka",
+          "saiu": "F. Nmecha",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     }
