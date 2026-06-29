@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T21:57:51.406Z",
+  "atualizado_em": "2026-06-29T21:58:23.627Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21308,6 +21308,14 @@
           "saiu": "D. Undav",
           "min": 63,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "A. Cubas",
+          "cor": "amarelo",
+          "min": 65,
+          "lado": "fora"
         }
       ]
     }
