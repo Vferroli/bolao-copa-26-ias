@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T17:45:05.638Z",
+  "atualizado_em": "2026-06-29T17:45:37.481Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21013,6 +21013,12 @@
           "cor": "amarelo",
           "min": 14,
           "lado": "casa"
+        },
+        {
+          "nome": "D. Kamada",
+          "cor": "amarelo",
+          "min": 45,
+          "lado": "fora"
         }
       ]
     }
