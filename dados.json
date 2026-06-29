@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:45:19.596Z",
+  "atualizado_em": "2026-06-29T22:46:23.619Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21269,9 +21269,9 @@
   "live": [
     {
       "id": 74,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
-      "min": "102'",
+      "min": "103'",
       "gols": [
         {
           "nome": "J. Enciso",
@@ -21281,6 +21281,11 @@
         {
           "nome": "K. Havertz",
           "min": 54,
+          "lado": "casa"
+        },
+        {
+          "nome": "J. Tah",
+          "min": 102,
           "lado": "casa"
         }
       ],
