@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T18:09:33.215Z",
+  "atualizado_em": "2026-06-29T18:10:05.048Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21027,6 +21027,12 @@
           "cor": "amarelo",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "nome": "Danilo",
+          "cor": "amarelo",
+          "min": 48,
+          "lado": "casa"
         }
       ]
     }
