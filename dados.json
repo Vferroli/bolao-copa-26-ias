@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T18:58:59.112Z",
+  "atualizado_em": "2026-06-29T18:59:30.791Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20993,7 +20993,7 @@
       "id": 76,
       "casa": 2,
       "fora": 1,
-      "min": "90'+7'",
+      "min": "90'+8'",
       "gols": [
         {
           "nome": "K. Sano",
@@ -21051,6 +21051,18 @@
         {
           "entrou": "Fabinho",
           "saiu": "Casemiro",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "K. Ogawa",
+          "saiu": "D. Maeda",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "entrou": "D. Santos",
+          "saiu": "B. Guimarães",
           "min": 90,
           "lado": "casa"
         }
