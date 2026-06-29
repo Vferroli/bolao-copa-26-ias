@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T18:57:55.197Z",
+  "atualizado_em": "2026-06-29T18:58:27.191Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20991,7 +20991,7 @@
   "live": [
     {
       "id": 76,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
       "min": "90'+6'",
       "gols": [
@@ -21003,6 +21003,11 @@
         {
           "nome": "Casemiro",
           "min": 56,
+          "lado": "casa"
+        },
+        {
+          "nome": "G. Martinelli",
+          "min": 90,
           "lado": "casa"
         }
       ],
