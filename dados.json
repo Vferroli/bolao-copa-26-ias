@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T21:50:25.749Z",
+  "atualizado_em": "2026-06-29T21:50:58.529Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21271,7 +21271,7 @@
       "id": 74,
       "casa": 1,
       "fora": 1,
-      "min": "57'",
+      "min": "58'",
       "gols": [
         {
           "nome": "J. Enciso",
@@ -21295,6 +21295,12 @@
           "entrou": "G. Caballero",
           "saiu": "G. Ávalos",
           "min": 55,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Maurício",
+          "saiu": "J. Enciso",
+          "min": 57,
           "lado": "fora"
         }
       ]
