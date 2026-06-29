@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T19:03:10.842Z",
+  "atualizado_em": "2026-06-29T19:07:49.826Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20132,9 +20132,14 @@
       "fora": "japan",
       "kickoff": "2026-06-29T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 1,
+        "avancou": "brazil",
+        "marcadores": [
+          "K. Sano",
+          "Casemiro",
+          "G. Martinelli"
+        ]
       },
       "palpites": {
         "claude": {
@@ -20988,117 +20993,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 76,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+11'",
-      "gols": [
-        {
-          "nome": "K. Sano",
-          "min": 29,
-          "lado": "fora"
-        },
-        {
-          "nome": "Casemiro",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "nome": "G. Martinelli",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "Endrick",
-          "saiu": "L. Paquetá",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Martinelli",
-          "saiu": "M. Cunha",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Suzuki",
-          "saiu": "K. Nakamura",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Sugawara",
-          "saiu": "R. Doan",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Machino",
-          "saiu": "J. Ito",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Tanaka",
-          "saiu": "D. Kamada",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Fabinho",
-          "saiu": "Casemiro",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Ogawa",
-          "saiu": "D. Maeda",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Santos",
-          "saiu": "B. Guimarães",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "K. Sano",
-          "cor": "amarelo",
-          "min": 12,
-          "lado": "fora"
-        },
-        {
-          "nome": "Casemiro",
-          "cor": "amarelo",
-          "min": 14,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Kamada",
-          "cor": "amarelo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "Danilo",
-          "cor": "amarelo",
-          "min": 48,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Suzuki",
-          "cor": "amarelo",
-          "min": 84,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
