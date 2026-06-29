@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T18:39:22.209Z",
+  "atualizado_em": "2026-06-29T18:39:53.772Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21029,6 +21029,18 @@
           "entrou": "Y. Sugawara",
           "saiu": "R. Doan",
           "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Machino",
+          "saiu": "J. Ito",
+          "min": 78,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Tanaka",
+          "saiu": "D. Kamada",
+          "min": 78,
           "lado": "fora"
         }
       ],
