@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:48:31.087Z",
+  "atualizado_em": "2026-06-29T22:49:03.424Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21281,11 +21281,6 @@
         {
           "nome": "K. Havertz",
           "min": 54,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Tah",
-          "min": 102,
           "lado": "casa"
         }
       ],
