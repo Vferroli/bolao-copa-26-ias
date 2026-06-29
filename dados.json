@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T23:01:32.556Z",
+  "atualizado_em": "2026-06-29T23:02:36.292Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21271,7 +21271,7 @@
       "id": 74,
       "casa": 1,
       "fora": 1,
-      "min": "111'",
+      "min": "112'",
       "gols": [
         {
           "nome": "J. Enciso",
@@ -21340,14 +21340,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "M. Thiaw",
-          "saiu": "A. Rüdiger",
+          "entrou": "N. Amiri",
+          "saiu": "F. Wirtz",
           "min": 110,
           "lado": "casa"
         },
         {
-          "entrou": "N. Amiri",
-          "saiu": "F. Wirtz",
+          "entrou": "M. Thiaw",
+          "saiu": "A. Rüdiger",
           "min": 110,
           "lado": "casa"
         }
