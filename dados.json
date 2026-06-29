@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T17:32:00.599Z",
+  "atualizado_em": "2026-06-29T17:33:03.152Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20993,7 +20993,7 @@
       "id": 76,
       "casa": 0,
       "fora": 1,
-      "min": "32'",
+      "min": "33'",
       "gols": [
         {
           "nome": "K. Sano",
