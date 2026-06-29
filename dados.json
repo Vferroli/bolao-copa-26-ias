@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:20:57.071Z",
+  "atualizado_em": "2026-06-29T22:21:29.571Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21313,6 +21313,12 @@
           "entrou": "W. Anton",
           "saiu": "A. Pavlovic",
           "min": 79,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Woltemade",
+          "saiu": "L. Sané",
+          "min": 88,
           "lado": "casa"
         }
       ],
