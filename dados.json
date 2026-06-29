@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T22:59:54.779Z",
+  "atualizado_em": "2026-06-29T23:00:27.362Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21338,6 +21338,12 @@
           "saiu": "D. Bobadilla",
           "min": 99,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Thiaw",
+          "saiu": "F. Wirtz",
+          "min": 105,
+          "lado": "casa"
         }
       ],
       "cartoes": [
