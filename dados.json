@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:39:46.472Z",
+  "atualizado_em": "2026-06-30T03:45:30.765Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21624,7 +21624,7 @@
       "id": 75,
       "casa": 1,
       "fora": 1,
-      "min": "AET-pens",
+      "min": "Pênaltis",
       "gols": [
         {
           "nome": "C. Gakpo",
@@ -21712,7 +21712,18 @@
           "min": 47,
           "lado": "fora"
         }
-      ]
+      ],
+      "penaltis": {
+        "casa": 1,
+        "fora": 0,
+        "cobrancas": [
+          {
+            "lado": "casa",
+            "nome": "T. Koopmeiners",
+            "marcou": true
+          }
+        ]
+      }
     }
   ]
 }
