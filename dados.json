@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T22:24:30.054Z",
+  "atualizado_em": "2026-06-30T22:25:02.825Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22261,6 +22261,20 @@
           "nome": "B. Barcola",
           "min": 53,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "T. Ali",
+          "saiu": "E. Stroud",
+          "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "B. Zeneli",
+          "saiu": "L. Bergvall",
+          "min": 66,
+          "lado": "fora"
         }
       ]
     }
