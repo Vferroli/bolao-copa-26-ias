@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T18:42:16.154Z",
+  "atualizado_em": "2026-06-30T18:43:18.688Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21967,7 +21967,7 @@
       "id": 78,
       "casa": 1,
       "fora": 1,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "A. Nusa",
@@ -22003,6 +22003,12 @@
           "entrou": "O. Bobb",
           "saiu": "A. Sørloth",
           "min": 71,
+          "lado": "fora"
+        },
+        {
+          "entrou": "F. Aursnes",
+          "saiu": "M. Holmgren Pedersen",
+          "min": 83,
           "lado": "fora"
         }
       ],
