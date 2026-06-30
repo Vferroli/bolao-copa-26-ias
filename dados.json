@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:30:12.896Z",
+  "atualizado_em": "2026-06-30T03:30:45.109Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21624,7 +21624,7 @@
       "id": 75,
       "casa": 1,
       "fora": 1,
-      "min": "113'",
+      "min": "114'",
       "gols": [
         {
           "nome": "C. Gakpo",
@@ -21696,6 +21696,12 @@
           "entrou": "M. de Roon",
           "saiu": "F. de Jong",
           "min": 110,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Kluivert",
+          "saiu": "C. Gakpo",
+          "min": 113,
           "lado": "casa"
         }
       ],
