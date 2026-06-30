@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T18:45:55.989Z",
+  "atualizado_em": "2026-06-30T18:46:27.800Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21978,6 +21978,11 @@
           "nome": "A. Diallo",
           "min": 74,
           "lado": "casa"
+        },
+        {
+          "nome": "E. Haaland",
+          "min": 86,
+          "lado": "fora"
         }
       ],
       "subs": [
