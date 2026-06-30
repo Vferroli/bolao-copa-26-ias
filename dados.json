@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:47:37.477Z",
+  "atualizado_em": "2026-06-30T03:48:09.640Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21731,6 +21731,11 @@
             "lado": "casa",
             "nome": "J. Kluivert",
             "marcou": false
+          },
+          {
+            "lado": "fora",
+            "nome": "S. Rahimi",
+            "marcou": true
           }
         ]
       }
