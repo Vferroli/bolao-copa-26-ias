@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:49:14.497Z",
+  "atualizado_em": "2026-06-30T03:49:46.785Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20836,9 +20836,13 @@
       "fora": "morocco",
       "kickoff": "2026-06-30T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "C. Gakpo",
+          "I. Diop"
+        ]
       },
       "palpites": {
         "claude": {
@@ -21619,131 +21623,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 75,
-      "casa": 1,
-      "fora": 1,
-      "min": "Pênaltis",
-      "gols": [
-        {
-          "nome": "C. Gakpo",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "nome": "I. Diop",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "T. Koopmeiners",
-          "saiu": "N. Aké",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "W. Weghorst",
-          "saiu": "B. Brobbey",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Salah-Eddine",
-          "saiu": "C. Riad",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Yassine",
-          "saiu": "B. Díaz",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. El Mourabet",
-          "saiu": "A. Bouaddi",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Rahimi",
-          "saiu": "A. Ounahi",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Hato",
-          "saiu": "M. van de Ven",
-          "min": 86,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Q. Timber",
-          "saiu": "R. Gravenberch",
-          "min": 86,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Talbi",
-          "saiu": "B. El Khannouss",
-          "min": 87,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. de Roon",
-          "saiu": "F. de Jong",
-          "min": 110,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Kluivert",
-          "saiu": "C. Gakpo",
-          "min": 113,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "I. Diop",
-          "cor": "amarelo",
-          "min": 47,
-          "lado": "fora"
-        }
-      ],
-      "penaltis": {
-        "casa": 1,
-        "fora": 1,
-        "cobrancas": [
-          {
-            "lado": "casa",
-            "nome": "T. Koopmeiners",
-            "marcou": true
-          },
-          {
-            "lado": "fora",
-            "nome": "N. El Aynaoui",
-            "marcou": false
-          },
-          {
-            "lado": "casa",
-            "nome": "J. Kluivert",
-            "marcou": false
-          },
-          {
-            "lado": "fora",
-            "nome": "S. Rahimi",
-            "marcou": true
-          },
-          {
-            "lado": "casa",
-            "nome": "W. Weghorst",
-            "marcou": true
-          }
-        ]
-      }
-    }
-  ]
+  "live": []
 }
