@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-30T02:59:23.440Z",
+  "atualizado_em": "2026-06-30T02:59:55.224Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21624,7 +21624,7 @@
       "id": 75,
       "casa": 1,
       "fora": 1,
-      "min": "90'+7'",
+      "min": "ET",
       "gols": [
         {
           "nome": "C. Gakpo",
