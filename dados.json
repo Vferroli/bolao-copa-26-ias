@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:46:34.175Z",
+  "atualizado_em": "2026-06-30T03:47:37.477Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21725,6 +21725,11 @@
           {
             "lado": "fora",
             "nome": "N. El Aynaoui",
+            "marcou": false
+          },
+          {
+            "lado": "casa",
+            "nome": "J. Kluivert",
             "marcou": false
           }
         ]
