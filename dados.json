@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T22:42:51.432Z",
+  "atualizado_em": "2026-06-30T22:43:55.123Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22250,7 +22250,7 @@
       "id": 77,
       "casa": 3,
       "fora": 0,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -22310,6 +22310,18 @@
           "saiu": "Y. Ayari",
           "min": 82,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Mateta",
+          "saiu": "K. Mbappé",
+          "min": 85,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Cherki",
+          "saiu": "M. Olise",
+          "min": 85,
+          "lado": "casa"
         }
       ]
     }
