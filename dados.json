@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T22:53:31.733Z",
+  "atualizado_em": "2026-06-30T22:58:50.347Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21545,9 +21545,14 @@
       "fora": "sweden",
       "kickoff": "2026-06-30T21:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 0,
+        "avancou": "france",
+        "marcadores": [
+          "K. Mbappé",
+          "B. Barcola",
+          "K. Mbappé"
+        ]
       },
       "palpites": {
         "claude": {
@@ -22245,91 +22250,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 77,
-      "casa": 3,
-      "fora": 0,
-      "min": "90'+4'",
-      "gols": [
-        {
-          "nome": "K. Mbappé",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "nome": "B. Barcola",
-          "min": 53,
-          "lado": "casa"
-        },
-        {
-          "nome": "K. Mbappé",
-          "min": 74,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "T. Ali",
-          "saiu": "E. Stroud",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Zeneli",
-          "saiu": "L. Bergvall",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Gusto",
-          "saiu": "J. Koundé",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Doué",
-          "saiu": "O. Dembélé",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Hernández",
-          "saiu": "L. Digne",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Svanberg",
-          "saiu": "D. Svensson",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Nygren",
-          "saiu": "Y. Ayari",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Mateta",
-          "saiu": "K. Mbappé",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Cherki",
-          "saiu": "M. Olise",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Nilsson",
-          "saiu": "A. Isak",
-          "min": 89,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
