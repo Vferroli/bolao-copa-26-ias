@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T18:47:00.268Z",
+  "atualizado_em": "2026-06-30T18:47:32.126Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22015,6 +22015,12 @@
           "saiu": "M. Holmgren Pedersen",
           "min": 83,
           "lado": "fora"
+        },
+        {
+          "entrou": "O. Diakité",
+          "saiu": "N. Pépé",
+          "min": 87,
+          "lado": "casa"
         }
       ],
       "cartoes": [
