@@ -800,6 +800,44 @@ button.chip { appearance: none; -webkit-appearance: none; font: inherit; color: 
 .live-cards .lc.yellow .cd { background: #facc15; }
 .live-cards .lc.red .cd { background: #ef4444; }
 .live-cards .lc b { color: var(--txt); font-weight: 700; }
+/* disputa de pênaltis (ao vivo e no resultado) */
+.pens {
+  margin-top: 12px; padding: 10px 12px;
+  background: var(--glass); border: 1px solid var(--line); border-radius: 12px;
+}
+.pens-head {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--dim); margin-bottom: 10px;
+}
+.pens-head .pen-ico { font-size: 0.85rem; }
+.pk-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+.pk-col { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.pk-col.fora { align-items: flex-end; }
+.pk-top {
+  display: flex; align-items: center; gap: 7px; margin-bottom: 3px;
+  font-family: var(--font-mono); font-weight: 800; font-size: 1.05rem; color: var(--txt);
+}
+.pk-col.fora .pk-top { flex-direction: row-reverse; }
+.pk {
+  display: inline-flex; align-items: center; gap: 5px; max-width: 100%;
+  font-family: var(--font-mono); font-size: 0.64rem; color: var(--dim);
+  background: rgba(255, 255, 255, 0.02); border: 1px solid var(--line);
+  padding: 2px 8px; border-radius: 999px;
+}
+.pk-col.fora .pk { flex-direction: row-reverse; }
+.pk.ok { color: var(--txt); border-color: color-mix(in srgb, var(--ok) 45%, var(--line)); }
+.pk.miss { opacity: 0.75; }
+.pk .m { font-weight: 800; }
+.pk.ok .m { color: var(--ok); }
+.pk.miss .m { color: #ef4444; }
+/* indicador "pên X–Y" sob o placar de um jogo decidido nos pênaltis */
+.pen-sub {
+  display: block; margin-top: 2px;
+  font-family: var(--font-mono); font-size: 0.5rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint);
+}
+.score.has-pen { line-height: 1; }
 .is-in .chip { animation: chipin 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
 .chip .who {
   grid-column: 2; grid-row: 1; align-self: end;

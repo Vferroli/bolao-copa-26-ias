@@ -464,21 +464,42 @@ function liveFlatHtml(gols, cards, subs) {
   return g + c + s;
 }
 
+/* disputa de pênaltis: cabeçalho com o placar agregado + 2 colunas (casa | fora)
+   com cada cobrança (✓ marcou / ✗ perdeu). `pen` = { casa, fora, cobrancas:[] }. */
+function penaltisHtml(pen, j) {
+  if (!pen) return "";
+  const cob = Array.isArray(pen.cobrancas) ? pen.cobrancas : [];
+  const col = (lado) => {
+    const kicks = cob.filter((c) => c.lado === lado).map((c) =>
+      `<span class="pk ${c.marcou ? "ok" : "miss"}"><span class="m">${c.marcou ? "✓" : "✗"}</span> ${esc(c.nome)}</span>`).join("");
+    return `<div class="pk-col ${lado}">
+        <div class="pk-top">${bandeira(j[lado])}<b>${pen[lado] != null ? pen[lado] : "–"}</b></div>
+        ${kicks}
+      </div>`;
+  };
+  return `<div class="pens">
+      <div class="pens-head"><span class="pen-ico">🥅</span> Disputa de pênaltis</div>
+      <div class="pk-cols">${col("casa")}${col("fora")}</div>
+    </div>`;
+}
+
 function liveExtraHtml(liveData, j, emJogo, fim) {
-  // encerrado: goleadores (real.marcadores) + gols contra (real.golsContra) — chips planos
+  // encerrado: pênaltis (se houve) + goleadores (real.marcadores) + gols contra — chips planos
   if (fim) {
+    const pens = penaltisHtml(j.real.penaltis, j);
     const ns = Array.isArray(j.real.marcadores) ? j.real.marcadores : [];
     const gc = Array.isArray(j.real.golsContra) ? j.real.golsContra : [];
-    if (!ns.length && !gc.length) return "";
+    if (!ns.length && !gc.length) return pens;
     const chips = ns.map((n) => `<span class="lg">⚽ ${esc(n)}</span>`)
       .concat(gc.map((n) => `<span class="lg gc">⚽ ${esc(n)} <span class="gc-tag">(gc)</span></span>`));
-    return `<div class="live-gols">${chips.join("")}</div>`;
+    return pens + `<div class="live-gols">${chips.join("")}</div>`;
   }
   if (!emJogo || !liveData) return "";
+  const pens = penaltisHtml(liveData.penaltis, j);
   const gols = Array.isArray(liveData.gols) ? liveData.gols : [];
   const cards = Array.isArray(liveData.cartoes) ? liveData.cartoes : [];
   const subs = Array.isArray(liveData.subs) ? liveData.subs : [];
-  if (!gols.length && !cards.length && !subs.length) return "";
+  if (!gols.length && !cards.length && !subs.length) return pens;
 
   // eventos unificados (tipo + lado + min) p/ agrupar por time em 2 colunas
   const evs = [
@@ -487,7 +508,7 @@ function liveExtraHtml(liveData, j, emJogo, fim) {
     ...subs.map((s) => ({ t: "sub", lado: s.lado, min: s.min, entrou: s.entrou, saiu: s.saiu })),
   ];
   const hasLado = evs.some((e) => e.lado === "casa" || e.lado === "fora");
-  if (!hasLado) return liveFlatHtml(gols, cards, subs); // sem lado (legado) → flat
+  if (!hasLado) return pens + liveFlatHtml(gols, cards, subs); // sem lado (legado) → flat
 
   const chip = (e) =>
     e.t === "gol"
@@ -505,7 +526,7 @@ function liveExtraHtml(liveData, j, emJogo, fim) {
   };
   const neutros = evs.filter((e) => e.lado !== "casa" && e.lado !== "fora").sort(byMin);
   const neutro = neutros.length ? `<div class="lt-neutro">${neutros.map(chip).join("")}</div>` : "";
-  return `<div class="live-teams">${col("casa")}${col("fora")}</div>${neutro}`;
+  return pens + `<div class="live-teams">${col("casa")}${col("fora")}</div>${neutro}`;
 }
 
 /* card de jogo de hoje. liveData != null → destacado, placar em tempo real.
@@ -539,8 +560,10 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
         <span class="status done">Apurado</span>
         <span class="time">Encerrado</span>
       </div>`;
-    score = `${j.real.casa}<em>:</em>${j.real.fora}`;
-    scoreCls = "";
+    const pen = j.real.penaltis;
+    const penSub = pen ? `<small class="pen-sub">pên ${pen.casa}–${pen.fora}</small>` : "";
+    score = `${j.real.casa}<em>:</em>${j.real.fora}${penSub}`;
+    scoreCls = pen ? "has-pen" : "";
   } else {
     top = `<div class="game-top">
         <span class="tag">${faseLbl(j)}</span>
@@ -1189,7 +1212,7 @@ function secHistorico() {
     return `<div class="hrow">
       <div class="hmatch">
         <div class="t home"><span>${esc(c.nome)}</span>${bandeira(j.casa)}</div>
-        <div class="fin">${j.real.casa}<span style="color:var(--faint)">:</span>${j.real.fora}</div>
+        <div class="fin">${j.real.casa}<span style="color:var(--faint)">:</span>${j.real.fora}${j.real.penaltis ? `<small class="pen-sub">pên ${j.real.penaltis.casa}–${j.real.penaltis.fora}</small>` : ""}</div>
         <div class="t away">${bandeira(j.fora)}<span>${esc(f.nome)}</span></div>
       </div>
       <div class="hpts">${pills}</div>
