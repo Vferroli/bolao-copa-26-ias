@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-30T02:33:36.544Z",
+  "atualizado_em": "2026-06-30T02:34:08.517Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21625,6 +21625,13 @@
       "casa": 0,
       "fora": 0,
       "min": "72'",
+      "gols": [
+        {
+          "nome": "C. Gakpo",
+          "min": 72,
+          "lado": "casa"
+        }
+      ],
       "subs": [
         {
           "entrou": "T. Koopmeiners",
