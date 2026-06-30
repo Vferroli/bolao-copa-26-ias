@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T18:46:27.800Z",
+  "atualizado_em": "2026-06-30T18:47:00.268Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21966,8 +21966,8 @@
     {
       "id": 78,
       "casa": 1,
-      "fora": 1,
-      "min": "86'",
+      "fora": 2,
+      "min": "87'",
       "gols": [
         {
           "nome": "A. Nusa",
