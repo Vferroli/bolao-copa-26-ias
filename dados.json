@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-29T23:22:38.026Z",
+  "atualizado_em": "2026-06-30T00:30:21.874Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20465,18 +20465,66 @@
           "casa": 3,
           "fora": 4,
           "cobrancas": [
-            { "lado": "casa", "nome": "K. Havertz", "marcou": false },
-            { "lado": "fora", "nome": "Maurício", "marcou": true },
-            { "lado": "casa", "nome": "J. Kimmich", "marcou": true },
-            { "lado": "fora", "nome": "G. Gómez", "marcou": true },
-            { "lado": "casa", "nome": "J. Musiala", "marcou": true },
-            { "lado": "fora", "nome": "M. Galarza", "marcou": true },
-            { "lado": "casa", "nome": "N. Woltemade", "marcou": false },
-            { "lado": "fora", "nome": "A. Sanabria", "marcou": false },
-            { "lado": "casa", "nome": "N. Amiri", "marcou": true },
-            { "lado": "fora", "nome": "F. Balbuena", "marcou": false },
-            { "lado": "casa", "nome": "J. Tah", "marcou": false },
-            { "lado": "fora", "nome": "J. Canale", "marcou": true }
+            {
+              "lado": "casa",
+              "nome": "K. Havertz",
+              "marcou": false
+            },
+            {
+              "lado": "fora",
+              "nome": "Maurício",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "J. Kimmich",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "G. Gómez",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "J. Musiala",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "M. Galarza",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "N. Woltemade",
+              "marcou": false
+            },
+            {
+              "lado": "fora",
+              "nome": "A. Sanabria",
+              "marcou": false
+            },
+            {
+              "lado": "casa",
+              "nome": "N. Amiri",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "F. Balbuena",
+              "marcou": false
+            },
+            {
+              "lado": "casa",
+              "nome": "J. Tah",
+              "marcou": false
+            },
+            {
+              "lado": "fora",
+              "nome": "J. Canale",
+              "marcou": true
+            }
           ]
         }
       },
@@ -20816,6 +20864,289 @@
           "fora": 1,
           "avanca": "netherlands",
           "marcador": "Cody Gakpo"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-4-2-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Bart Verbruggen",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Nathan Aké",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Virgil van Dijk",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Jan Paul van Hecke",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Micky van de Ven",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Frenkie de Jong",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Ryan Gravenberch",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Denzel Dumfries",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Cody Gakpo",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Crysencio Summerville",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Brian Brobbey",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 23,
+              "nome": "Mark Flekken",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Robin Roefs",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Jorrel Hato",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Lutsharel Geertruida",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Mats Wieffer",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Guus Til",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Justin Kluivert",
+              "pos": "F"
+            },
+            {
+              "num": 3,
+              "nome": "Marten de Roon",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Quinten Timber",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Teun Koopmeiners",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Tijjani Reijnders",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Donyell Malen",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Memphis Depay",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Wout Weghorst",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Noa Lang",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Yassine Bounou",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Noussair Mazraoui",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Chadi Riad",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Issa Diop",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Achraf Hakimi",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Ayyoub Bouaddi",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Neil El Aynaoui",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Bilal El Khannouss",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Azzedine Ounahi",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Brahim Díaz",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ismael Saibari",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 22,
+              "nome": "Ahmed Reda Tagnaouti",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Munir El Kajoui",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Anass Salah-Eddine",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Marwane Saadane",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Redouane Halhal",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Youssef Belammari",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Zakaria El Ouahdi",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Amine Sbai",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Chemsdine Talbi",
+              "pos": "F"
+            },
+            {
+              "num": 16,
+              "nome": "Gessime Yassine",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Samir El Mourabet",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Sofyan Amrabat",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Ayoub El Kaabi",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Ayoube Amaimouni Echghouyab",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Soufiane Rahimi",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
