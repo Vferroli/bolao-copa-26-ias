@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:27:32.116Z",
+  "atualizado_em": "2026-06-30T03:28:04.638Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21691,6 +21691,12 @@
           "saiu": "B. El Khannouss",
           "min": 87,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. de Roon",
+          "saiu": "F. de Jong",
+          "min": 110,
+          "lado": "casa"
         }
       ],
       "cartoes": [
