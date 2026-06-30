@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-30T02:37:49.663Z",
+  "atualizado_em": "2026-06-30T02:38:22.058Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21648,7 +21648,7 @@
         {
           "entrou": "A. Salah-Eddine",
           "saiu": "C. Riad",
-          "min": 76,
+          "min": 75,
           "lado": "fora"
         }
       ],
