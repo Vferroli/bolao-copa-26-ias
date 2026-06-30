@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:49:46.785Z",
+  "atualizado_em": "2026-06-30T03:54:55.178Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -20838,11 +20838,67 @@
       "real": {
         "casa": 1,
         "fora": 1,
-        "avancou": null,
+        "avancou": "morocco",
         "marcadores": [
           "C. Gakpo",
           "I. Diop"
-        ]
+        ],
+        "penaltis": {
+          "casa": 2,
+          "fora": 3,
+          "cobrancas": [
+            {
+              "lado": "casa",
+              "nome": "T. Koopmeiners",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "N. El Aynaoui",
+              "marcou": false
+            },
+            {
+              "lado": "casa",
+              "nome": "J. Kluivert",
+              "marcou": false
+            },
+            {
+              "lado": "fora",
+              "nome": "S. Rahimi",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "W. Weghorst",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "C. Talbi",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "Q. Timber",
+              "marcou": false
+            },
+            {
+              "lado": "fora",
+              "nome": "A. Hakimi",
+              "marcou": false
+            },
+            {
+              "lado": "casa",
+              "nome": "C. Summerville",
+              "marcou": false
+            },
+            {
+              "lado": "fora",
+              "nome": "I. Saibari",
+              "marcou": true
+            }
+          ]
+        }
       },
       "palpites": {
         "claude": {
