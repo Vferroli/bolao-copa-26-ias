@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-30T02:37:17.785Z",
+  "atualizado_em": "2026-06-30T02:37:49.663Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21624,7 +21624,7 @@
       "id": 75,
       "casa": 1,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "C. Gakpo",
@@ -21644,6 +21644,12 @@
           "saiu": "B. Brobbey",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Salah-Eddine",
+          "saiu": "C. Riad",
+          "min": 76,
+          "lado": "fora"
         }
       ],
       "cartoes": [
