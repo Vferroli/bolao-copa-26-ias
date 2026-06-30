@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T22:32:44.110Z",
+  "atualizado_em": "2026-06-30T22:33:16.419Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22248,7 +22248,7 @@
   "live": [
     {
       "id": 77,
-      "casa": 2,
+      "casa": 3,
       "fora": 0,
       "min": "74'",
       "gols": [
@@ -22260,6 +22260,11 @@
         {
           "nome": "B. Barcola",
           "min": 53,
+          "lado": "casa"
+        },
+        {
+          "nome": "K. Mbappé",
+          "min": 74,
           "lado": "casa"
         }
       ],
