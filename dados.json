@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T18:30:12.188Z",
+  "atualizado_em": "2026-06-30T18:31:14.804Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21967,7 +21967,7 @@
       "id": 78,
       "casa": 0,
       "fora": 1,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "A. Nusa",
@@ -21987,6 +21987,12 @@
           "saiu": "A. Bonny",
           "min": 60,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Schjelderup",
+          "saiu": "A. Nusa",
+          "min": 71,
+          "lado": "fora"
         }
       ],
       "cartoes": [
