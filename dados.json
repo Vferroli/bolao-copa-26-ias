@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T22:36:27.054Z",
+  "atualizado_em": "2026-06-30T22:37:30.581Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22250,7 +22250,7 @@
       "id": 77,
       "casa": 3,
       "fora": 0,
-      "min": "77'",
+      "min": "78'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -22291,6 +22291,12 @@
           "entrou": "D. Doué",
           "saiu": "O. Dembélé",
           "min": 75,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Hernández",
+          "saiu": "L. Digne",
+          "min": 78,
           "lado": "casa"
         }
       ]
