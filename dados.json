@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T18:52:46.431Z",
+  "atualizado_em": "2026-06-30T18:53:18.513Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22020,6 +22020,18 @@
           "entrou": "O. Diakité",
           "saiu": "N. Pépé",
           "min": 87,
+          "lado": "casa"
+        },
+        {
+          "entrou": "E. Guessand",
+          "saiu": "Y. Diomande",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "B. Touré",
+          "saiu": "G. Konan",
+          "min": 90,
           "lado": "casa"
         }
       ],
