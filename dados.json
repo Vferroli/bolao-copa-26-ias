@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:48:41.876Z",
+  "atualizado_em": "2026-06-30T03:49:14.497Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21735,6 +21735,11 @@
           {
             "lado": "fora",
             "nome": "S. Rahimi",
+            "marcou": true
+          },
+          {
+            "lado": "casa",
+            "nome": "W. Weghorst",
             "marcou": true
           }
         ]
