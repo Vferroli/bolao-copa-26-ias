@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T18:58:01.176Z",
+  "atualizado_em": "2026-06-30T19:03:11.130Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21218,9 +21218,14 @@
       "fora": "norway",
       "kickoff": "2026-06-30T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 2,
+        "avancou": "norway",
+        "marcadores": [
+          "A. Nusa",
+          "A. Diallo",
+          "E. Haaland"
+        ]
       },
       "palpites": {
         "claude": {
@@ -21962,87 +21967,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 78,
-      "casa": 1,
-      "fora": 2,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "A. Nusa",
-          "min": 39,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Diallo",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "nome": "E. Haaland",
-          "min": 86,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "A. Diallo",
-          "saiu": "C. Inao Oulaï",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Wahi",
-          "saiu": "A. Bonny",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Schjelderup",
-          "saiu": "A. Nusa",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Bobb",
-          "saiu": "A. Sørloth",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Aursnes",
-          "saiu": "M. Holmgren Pedersen",
-          "min": 83,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Diakité",
-          "saiu": "N. Pépé",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Guessand",
-          "saiu": "Y. Diomande",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Touré",
-          "saiu": "G. Konan",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Nusa",
-          "cor": "amarelo",
-          "min": 45,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
