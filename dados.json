@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-30T02:47:50.931Z",
+  "atualizado_em": "2026-06-30T02:48:22.691Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21662,6 +21662,24 @@
           "saiu": "A. Bouaddi",
           "min": 79,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Rahimi",
+          "saiu": "A. Ounahi",
+          "min": 86,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Hato",
+          "saiu": "M. van de Ven",
+          "min": 86,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Q. Timber",
+          "saiu": "R. Gravenberch",
+          "min": 86,
+          "lado": "casa"
         }
       ],
       "cartoes": [
