@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T03:45:30.765Z",
+  "atualizado_em": "2026-06-30T03:46:34.175Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21721,6 +21721,11 @@
             "lado": "casa",
             "nome": "T. Koopmeiners",
             "marcou": true
+          },
+          {
+            "lado": "fora",
+            "nome": "N. El Aynaoui",
+            "marcou": false
           }
         ]
       }
