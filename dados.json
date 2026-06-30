@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-29",
-  "atualizado_em": "2026-06-30T02:52:03.689Z",
+  "atualizado_em": "2026-06-30T02:53:06.306Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21623,13 +21623,18 @@
     {
       "id": 75,
       "casa": 1,
-      "fora": 0,
-      "min": "90'",
+      "fora": 1,
+      "min": "90'+1'",
       "gols": [
         {
           "nome": "C. Gakpo",
           "min": 72,
           "lado": "casa"
+        },
+        {
+          "nome": "I. Diop",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "subs": [
