@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T22:41:15.715Z",
+  "atualizado_em": "2026-06-30T22:41:48.180Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22250,7 +22250,7 @@
       "id": 77,
       "casa": 3,
       "fora": 0,
-      "min": "82'",
+      "min": "83'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -22302,6 +22302,12 @@
         {
           "entrou": "M. Svanberg",
           "saiu": "D. Svensson",
+          "min": 82,
+          "lado": "fora"
+        },
+        {
+          "entrou": "B. Nygren",
+          "saiu": "Y. Ayari",
           "min": 82,
           "lado": "fora"
         }
