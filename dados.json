@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-06-30T22:47:38.740Z",
+  "atualizado_em": "2026-06-30T22:48:43.165Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22322,6 +22322,12 @@
           "saiu": "M. Olise",
           "min": 85,
           "lado": "casa"
+        },
+        {
+          "entrou": "G. Nilsson",
+          "saiu": "A. Isak",
+          "min": 89,
+          "lado": "fora"
         }
       ]
     }
