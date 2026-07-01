@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:35:47.802Z",
+  "atualizado_em": "2026-07-01T21:36:20.122Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23150,6 +23150,12 @@
         {
           "entrou": "I. Mbaye",
           "saiu": "I. Ndiaye",
+          "min": 73,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. Matar Sarr",
+          "saiu": "H. Diarra",
           "min": 73,
           "lado": "fora"
         }
