@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T17:24:23.466Z",
+  "atualizado_em": "2026-07-01T17:24:55.298Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22835,14 +22835,14 @@
       ],
       "subs": [
         {
-          "entrou": "B. Saka",
-          "saiu": "N. Madueke",
+          "entrou": "A. Gordon",
+          "saiu": "M. Rashford",
           "min": 61,
           "lado": "casa"
         },
         {
-          "entrou": "A. Gordon",
-          "saiu": "M. Rashford",
+          "entrou": "B. Saka",
+          "saiu": "N. Madueke",
           "min": 61,
           "lado": "casa"
         }
