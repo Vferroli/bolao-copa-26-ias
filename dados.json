@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:48:03.405Z",
+  "atualizado_em": "2026-07-01T21:49:06.792Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23103,7 +23103,7 @@
       "id": 82,
       "casa": 0,
       "fora": 2,
-      "min": "86'",
+      "min": "87'",
       "gols": [
         {
           "nome": "H. Diarra",
@@ -23114,6 +23114,11 @@
           "nome": "I. Sarr",
           "min": 51,
           "lado": "fora"
+        },
+        {
+          "nome": "R. Lukaku",
+          "min": 86,
+          "lado": "casa"
         }
       ],
       "subs": [
