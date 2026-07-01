@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T16:19:43.865Z",
+  "atualizado_em": "2026-07-01T16:20:48.367Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22825,7 +22825,7 @@
       "id": 80,
       "casa": 0,
       "fora": 1,
-      "min": "20'",
+      "min": "21'",
       "gols": [
         {
           "nome": "B. Cipenga",
