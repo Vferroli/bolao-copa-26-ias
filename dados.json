@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T22:07:46.925Z",
+  "atualizado_em": "2026-07-01T22:08:49.898Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23103,7 +23103,7 @@
       "id": 82,
       "casa": 2,
       "fora": 2,
-      "min": "93'",
+      "min": "94'",
       "gols": [
         {
           "nome": "H. Diarra",
@@ -23174,6 +23174,18 @@
           "saiu": "M. De Cuyper",
           "min": 78,
           "lado": "casa"
+        },
+        {
+          "entrou": "E. Hadji Malick Diouf",
+          "saiu": "I. Jakobs",
+          "min": 92,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. Jackson",
+          "saiu": "S. Mané",
+          "min": 92,
+          "lado": "fora"
         }
       ],
       "cartoes": [
