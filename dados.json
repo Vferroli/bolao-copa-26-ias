@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T22:08:49.898Z",
+  "atualizado_em": "2026-07-01T22:09:21.605Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23176,15 +23176,15 @@
           "lado": "casa"
         },
         {
-          "entrou": "E. Hadji Malick Diouf",
-          "saiu": "I. Jakobs",
-          "min": 92,
+          "entrou": "N. Jackson",
+          "saiu": "S. Mané",
+          "min": 93,
           "lado": "fora"
         },
         {
-          "entrou": "N. Jackson",
-          "saiu": "S. Mané",
-          "min": 92,
+          "entrou": "E. Hadji Malick Diouf",
+          "saiu": "I. Jakobs",
+          "min": 93,
           "lado": "fora"
         }
       ],
