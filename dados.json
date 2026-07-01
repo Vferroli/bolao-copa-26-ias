@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T04:01:13.431Z",
+  "atualizado_em": "2026-07-01T04:07:30.619Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -21867,9 +21867,13 @@
       "fora": "ecuador",
       "kickoff": "2026-07-01T01:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 0,
+        "avancou": "mexico",
+        "marcadores": [
+          "J. Quiñones",
+          "R. Jiménez"
+        ]
       },
       "palpites": {
         "claude": {
@@ -22533,112 +22537,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 79,
-      "casa": 2,
-      "fora": 0,
-      "min": "90'+9'",
-      "gols": [
-        {
-          "nome": "J. Quiñones",
-          "min": 22,
-          "lado": "casa"
-        },
-        {
-          "nome": "R. Jiménez",
-          "min": 31,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "Á. Preciado",
-          "saiu": "J. Ordóñez",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Y. Medina",
-          "saiu": "A. Franco",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Gutiérrez",
-          "saiu": "G. Mora",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "K. Rodríguez",
-          "saiu": "E. Valencia",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Vargas",
-          "saiu": "L. Romo",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Gimenez",
-          "saiu": "R. Jiménez",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Caicedo",
-          "saiu": "J. Yeboah",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "K. Páez",
-          "saiu": "N. Angulo",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Pineda",
-          "saiu": "J. Quiñones",
-          "min": 80,
-          "lado": "casa"
-        },
-        {
-          "entrou": "I. Reyes",
-          "saiu": "R. Alvarado",
-          "min": 80,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Franco",
-          "cor": "amarelo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. Páez",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "nome": "P. Hincapié",
-          "cor": "vermelho",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Caicedo",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
