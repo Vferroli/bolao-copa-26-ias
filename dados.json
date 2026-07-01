@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-07-01T02:22:39.771Z",
+  "atualizado_em": "2026-07-01T02:23:12.328Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22538,7 +22538,14 @@
       "id": 79,
       "casa": 1,
       "fora": 0,
-      "min": "22'"
+      "min": "23'",
+      "gols": [
+        {
+          "nome": "J. Quiñones",
+          "min": 22,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
