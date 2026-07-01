@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T04:07:30.619Z",
+  "atualizado_em": "2026-07-01T15:30:29.486Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22221,6 +22221,289 @@
           "fora": 0,
           "avanca": "england",
           "marcador": "Harry Kane"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Jordan Pickford",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Nico O'Reilly",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Marc Guéhi",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Ezri Konsa",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Djed Spence",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Declan Rice",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Elliot Anderson",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Marcus Rashford",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Jude Bellingham",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Noni Madueke",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Harry Kane",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 23,
+              "nome": "James Trafford",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Dean Henderson",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Trevoh Chalobah",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "John Stones",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Dan Burn",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Reece James",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Jarell Quansah",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Eberechi Eze",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Jordan Henderson",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Morgan Rogers",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Kobbie Mainoo",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Ollie Watkins",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Anthony Gordon",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Bukayo Saka",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Ivan Toney",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Lionel Mpasi Nzau",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Arthur Masuaku",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Chancel Mbemba",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Axel Tuanzebe",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Aaron Wan-Bissaka",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Noah Sadiki",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Samuel Moutoussamy",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Brian Cipenga",
+              "pos": "F"
+            },
+            {
+              "num": 6,
+              "nome": "Ngal'ayel Mukau",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Nathanaël Mbuku",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Yoane Wissa",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 21,
+              "nome": "Matthieu Epolo",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Timothy Fayulu",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Dylan Batubinsika",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Gedeon Kalulu",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Joris Kayembe",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Steve Kapuadi",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "Gaël Kakuta",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Charles Pickel",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Théo Bongonda",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Aaron Tshibola",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Edo Kayembe",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Fiston Mayele",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Cédric Bakambu",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Simon Banza",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Meschak Elia",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
