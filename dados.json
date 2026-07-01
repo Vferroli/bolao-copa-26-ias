@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T17:39:05.246Z",
+  "atualizado_em": "2026-07-01T17:39:37.196Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22866,6 +22866,12 @@
         {
           "entrou": "T. Bongonda",
           "saiu": "B. Cipenga",
+          "min": 76,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Kayembe",
+          "saiu": "N. Mukau",
           "min": 76,
           "lado": "fora"
         }
