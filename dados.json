@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T22:50:09.844Z",
+  "atualizado_em": "2026-07-01T22:55:01.541Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22520,9 +22520,16 @@
       "fora": "senegal",
       "kickoff": "2026-07-01T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 2,
+        "avancou": "belgium",
+        "marcadores": [
+          "H. Diarra",
+          "I. Sarr",
+          "R. Lukaku",
+          "Y. Tielemans",
+          "Y. Tielemans"
+        ]
       },
       "palpites": {
         "claude": {
@@ -23098,127 +23105,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 82,
-      "casa": 3,
-      "fora": 2,
-      "min": "120'+12'",
-      "gols": [
-        {
-          "nome": "H. Diarra",
-          "min": 25,
-          "lado": "fora"
-        },
-        {
-          "nome": "I. Sarr",
-          "min": 51,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Lukaku",
-          "min": 86,
-          "lado": "casa"
-        },
-        {
-          "nome": "Y. Tielemans",
-          "min": 89,
-          "lado": "casa"
-        },
-        {
-          "nome": "Y. Tielemans",
-          "min": 120,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "R. Lukaku",
-          "saiu": "C. De Ketelaere",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Lukébakio",
-          "saiu": "J. Doku",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Raskin",
-          "saiu": "K. De Bruyne",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Moreira",
-          "saiu": "H. Vanaken",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Camara",
-          "saiu": "P. Gueye",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "I. Mbaye",
-          "saiu": "I. Ndiaye",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Matar Sarr",
-          "saiu": "H. Diarra",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Meunier",
-          "saiu": "M. De Cuyper",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Jackson",
-          "saiu": "S. Mané",
-          "min": 93,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Hadji Malick Diouf",
-          "saiu": "I. Jakobs",
-          "min": 93,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Sapoko Ndiaye",
-          "saiu": "I. Gueye",
-          "min": 96,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Onana",
-          "saiu": "L. Trossard",
-          "min": 109,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "B. Mechele",
-          "cor": "amarelo",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Camara",
-          "cor": "amarelo",
-          "min": 67,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
