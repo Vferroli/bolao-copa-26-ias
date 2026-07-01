@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T03:56:57.041Z",
+  "atualizado_em": "2026-07-01T03:58:00.975Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22538,7 +22538,7 @@
       "id": 79,
       "casa": 2,
       "fora": 0,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "J. Quiñones",
@@ -22623,6 +22623,12 @@
         {
           "nome": "K. Páez",
           "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "nome": "P. Hincapié",
+          "cor": "vermelho",
           "min": 90,
           "lado": "fora"
         }
