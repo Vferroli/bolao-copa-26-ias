@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T03:19:49.255Z",
+  "atualizado_em": "2026-07-01T03:20:52.803Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22538,7 +22538,7 @@
       "id": 79,
       "casa": 2,
       "fora": 0,
-      "min": "57'",
+      "min": "58'",
       "gols": [
         {
           "nome": "J. Quiñones",
@@ -22563,6 +22563,12 @@
           "saiu": "A. Franco",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "B. Gutiérrez",
+          "saiu": "G. Mora",
+          "min": 58,
+          "lado": "casa"
         }
       ],
       "cartoes": [
