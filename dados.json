@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T17:48:30.554Z",
+  "atualizado_em": "2026-07-01T17:49:33.413Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22823,9 +22823,9 @@
   "live": [
     {
       "id": 80,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "B. Cipenga",
@@ -22835,6 +22835,11 @@
         {
           "nome": "H. Kane",
           "min": 75,
+          "lado": "casa"
+        },
+        {
+          "nome": "H. Kane",
+          "min": 86,
           "lado": "casa"
         }
       ],
