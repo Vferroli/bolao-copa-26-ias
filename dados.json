@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T04:00:40.814Z",
+  "atualizado_em": "2026-07-01T04:01:13.431Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22538,7 +22538,7 @@
       "id": 79,
       "casa": 2,
       "fora": 0,
-      "min": "90'+8'",
+      "min": "90'+9'",
       "gols": [
         {
           "nome": "J. Quiñones",
@@ -22629,6 +22629,12 @@
         {
           "nome": "P. Hincapié",
           "cor": "vermelho",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "nome": "M. Caicedo",
+          "cor": "amarelo",
           "min": 90,
           "lado": "fora"
         }
