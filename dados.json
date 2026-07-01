@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:25:38.319Z",
+  "atualizado_em": "2026-07-01T21:26:11.408Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23139,6 +23139,14 @@
           "entrou": "D. Moreira",
           "saiu": "H. Vanaken",
           "min": 63,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "B. Mechele",
+          "cor": "amarelo",
+          "min": 64,
           "lado": "casa"
         }
       ]
