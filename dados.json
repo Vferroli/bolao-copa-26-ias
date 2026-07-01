@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:40:05.429Z",
+  "atualizado_em": "2026-07-01T21:40:37.832Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23158,6 +23158,12 @@
           "saiu": "H. Diarra",
           "min": 73,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Meunier",
+          "saiu": "M. De Cuyper",
+          "min": 78,
+          "lado": "casa"
         }
       ],
       "cartoes": [
