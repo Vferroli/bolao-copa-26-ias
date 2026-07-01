@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T03:36:00.205Z",
+  "atualizado_em": "2026-07-01T03:36:33.246Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22538,7 +22538,7 @@
       "id": 79,
       "casa": 2,
       "fora": 0,
-      "min": "73'",
+      "min": "74'",
       "gols": [
         {
           "nome": "J. Quiñones",
@@ -22580,6 +22580,12 @@
           "entrou": "O. Vargas",
           "saiu": "L. Romo",
           "min": 73,
+          "lado": "casa"
+        },
+        {
+          "entrou": "S. Gimenez",
+          "saiu": "R. Jiménez",
+          "min": 74,
           "lado": "casa"
         }
       ],
