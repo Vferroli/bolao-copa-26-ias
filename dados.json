@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:18:10.752Z",
+  "atualizado_em": "2026-07-01T21:18:43.109Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23121,6 +23121,12 @@
           "entrou": "R. Lukaku",
           "saiu": "C. De Ketelaere",
           "min": 45,
+          "lado": "casa"
+        },
+        {
+          "entrou": "D. Lukébakio",
+          "saiu": "J. Doku",
+          "min": 56,
           "lado": "casa"
         }
       ]
