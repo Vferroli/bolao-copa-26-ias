@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:18:43.109Z",
+  "atualizado_em": "2026-07-01T21:19:15.366Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23126,6 +23126,12 @@
         {
           "entrou": "D. Lukébakio",
           "saiu": "J. Doku",
+          "min": 56,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Raskin",
+          "saiu": "K. De Bruyne",
           "min": 56,
           "lado": "casa"
         }
