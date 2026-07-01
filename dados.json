@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T17:23:20.769Z",
+  "atualizado_em": "2026-07-01T17:24:23.466Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22825,12 +22825,26 @@
       "id": 80,
       "casa": 0,
       "fora": 1,
-      "min": "60'",
+      "min": "61'",
       "gols": [
         {
           "nome": "B. Cipenga",
           "min": 7,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "B. Saka",
+          "saiu": "N. Madueke",
+          "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Gordon",
+          "saiu": "M. Rashford",
+          "min": 61,
+          "lado": "casa"
         }
       ],
       "cartoes": [
