@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:07:52.469Z",
+  "atualizado_em": "2026-07-01T21:08:24.504Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23103,7 +23103,7 @@
       "id": 82,
       "casa": 0,
       "fora": 1,
-      "min": "Intervalo",
+      "min": "46'",
       "gols": [
         {
           "nome": "H. Diarra",
