@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-06-30",
-  "atualizado_em": "2026-07-01T02:31:47.485Z",
+  "atualizado_em": "2026-07-01T02:32:20.698Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22536,13 +22536,18 @@
   "live": [
     {
       "id": 79,
-      "casa": 1,
+      "casa": 2,
       "fora": 0,
-      "min": "31'",
+      "min": "32'",
       "gols": [
         {
           "nome": "J. Quiñones",
           "min": 22,
+          "lado": "casa"
+        },
+        {
+          "nome": "R. Jiménez",
+          "min": 31,
           "lado": "casa"
         }
       ]
