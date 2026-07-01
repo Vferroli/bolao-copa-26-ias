@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T03:07:38.559Z",
+  "atualizado_em": "2026-07-01T03:08:10.872Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22538,7 +22538,7 @@
       "id": 79,
       "casa": 2,
       "fora": 0,
-      "min": "Intervalo",
+      "min": "46'",
       "gols": [
         {
           "nome": "J. Quiñones",
@@ -22560,7 +22560,7 @@
         },
         {
           "entrou": "Y. Medina",
-          "saiu": "J. Ordóñez",
+          "saiu": "A. Franco",
           "min": 45,
           "lado": "fora"
         }
