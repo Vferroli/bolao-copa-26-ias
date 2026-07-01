@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T16:27:13.461Z",
+  "atualizado_em": "2026-07-01T16:27:45.984Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22839,6 +22839,12 @@
           "cor": "amarelo",
           "min": 19,
           "lado": "casa"
+        },
+        {
+          "nome": "N. Sadiki",
+          "cor": "amarelo",
+          "min": 28,
+          "lado": "fora"
         }
       ]
     }
