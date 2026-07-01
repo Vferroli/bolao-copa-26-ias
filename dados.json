@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T03:00:16.873Z",
+  "atualizado_em": "2026-07-01T03:07:06.201Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22549,6 +22549,20 @@
           "nome": "R. Jiménez",
           "min": 31,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "Á. Preciado",
+          "saiu": "A. Franco",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Y. Medina",
+          "saiu": "J. Ordóñez",
+          "min": 45,
+          "lado": "fora"
         }
       ],
       "cartoes": [
