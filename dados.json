@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T16:19:11.476Z",
+  "atualizado_em": "2026-07-01T16:19:43.865Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22825,12 +22825,20 @@
       "id": 80,
       "casa": 0,
       "fora": 1,
-      "min": "18'",
+      "min": "20'",
       "gols": [
         {
           "nome": "B. Cipenga",
           "min": 7,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "J. Bellingham",
+          "cor": "amarelo",
+          "min": 19,
+          "lado": "casa"
         }
       ]
     }
