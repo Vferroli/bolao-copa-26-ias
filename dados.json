@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T17:59:51.372Z",
+  "atualizado_em": "2026-07-01T18:05:36.666Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22193,9 +22193,14 @@
       "fora": "dr-congo",
       "kickoff": "2026-07-01T16:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 1,
+        "avancou": "england",
+        "marcadores": [
+          "B. Cipenga",
+          "H. Kane",
+          "H. Kane"
+        ]
       },
       "palpites": {
         "claude": {
@@ -22820,99 +22825,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 80,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "B. Cipenga",
-          "min": 7,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Kane",
-          "min": 75,
-          "lado": "casa"
-        },
-        {
-          "nome": "H. Kane",
-          "min": 86,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "B. Saka",
-          "saiu": "N. Madueke",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Gordon",
-          "saiu": "M. Rashford",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Elia",
-          "saiu": "N. Mbuku",
-          "min": 64,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Eze",
-          "saiu": "D. Spence",
-          "min": 70,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Bongonda",
-          "saiu": "B. Cipenga",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Kayembe",
-          "saiu": "N. Mukau",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Kayembe",
-          "saiu": "A. Masuaku",
-          "min": 89,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Mayele",
-          "saiu": "S. Moutoussamy",
-          "min": 89,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Stones",
-          "saiu": "D. Rice",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Bellingham",
-          "cor": "amarelo",
-          "min": 19,
-          "lado": "casa"
-        },
-        {
-          "nome": "N. Sadiki",
-          "cor": "amarelo",
-          "min": 28,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
