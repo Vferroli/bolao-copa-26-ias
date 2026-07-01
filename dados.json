@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T21:28:19.567Z",
+  "atualizado_em": "2026-07-01T21:28:51.673Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23140,6 +23140,12 @@
           "saiu": "H. Vanaken",
           "min": 63,
           "lado": "casa"
+        },
+        {
+          "entrou": "L. Camara",
+          "saiu": "P. Gueye",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
