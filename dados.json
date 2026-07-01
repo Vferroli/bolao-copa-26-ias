@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T17:38:01.529Z",
+  "atualizado_em": "2026-07-01T17:38:33.323Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22831,6 +22831,11 @@
           "nome": "B. Cipenga",
           "min": 7,
           "lado": "fora"
+        },
+        {
+          "nome": "H. Kane",
+          "min": 75,
+          "lado": "casa"
         }
       ],
       "subs": [
