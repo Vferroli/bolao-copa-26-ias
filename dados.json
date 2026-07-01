@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-01T03:41:54.695Z",
+  "atualizado_em": "2026-07-01T03:42:27.365Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22538,7 +22538,7 @@
       "id": 79,
       "casa": 2,
       "fora": 0,
-      "min": "79'",
+      "min": "80'",
       "gols": [
         {
           "nome": "J. Quiñones",
@@ -22603,6 +22603,12 @@
         {
           "entrou": "O. Pineda",
           "saiu": "J. Quiñones",
+          "min": 80,
+          "lado": "casa"
+        },
+        {
+          "entrou": "I. Reyes",
+          "saiu": "R. Alvarado",
           "min": 80,
           "lado": "casa"
         }
