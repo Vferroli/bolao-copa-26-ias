@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T20:32:48.614Z",
+  "atualizado_em": "2026-07-02T20:33:21.184Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23711,6 +23711,12 @@
         {
           "entrou": "F. Torres",
           "saiu": "Á. Baena",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Merino",
+          "saiu": "D. Olmo",
           "min": 71,
           "lado": "casa"
         }
