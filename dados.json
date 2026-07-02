@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-02T01:46:32.334Z",
+  "atualizado_em": "2026-07-02T01:47:04.710Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23383,7 +23383,7 @@
       "id": 81,
       "casa": 1,
       "fora": 0,
-      "min": "80'",
+      "min": "81'",
       "gols": [
         {
           "nome": "F. Balogun",
@@ -23429,6 +23429,12 @@
           "cor": "vermelho",
           "min": 64,
           "lado": "casa"
+        },
+        {
+          "nome": "S. Radeljic",
+          "cor": "amarelo",
+          "min": 80,
+          "lado": "fora"
         }
       ]
     }
