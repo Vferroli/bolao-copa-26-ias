@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-02T01:17:02.743Z",
+  "atualizado_em": "2026-07-02T01:17:35.278Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23389,6 +23389,26 @@
           "nome": "F. Balogun",
           "min": 45,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "E. Bajraktarevic",
+          "saiu": "A. Gigovic",
+          "min": 51,
+          "lado": "fora"
+        },
+        {
+          "entrou": "B. Tahirovic",
+          "saiu": "I. Sunjic",
+          "min": 51,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Mahmic",
+          "saiu": "E. Dzeko",
+          "min": 51,
+          "lado": "fora"
         }
       ]
     }
