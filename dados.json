@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T21:03:48.160Z",
+  "atualizado_em": "2026-07-02T22:32:55.005Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23510,6 +23510,289 @@
           "fora": 1,
           "avanca": "portugal",
           "marcador": "Cristiano Ronaldo"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Diogo Costa",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Nuno Mendes",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Renato Veiga",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Rúben Dias",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "João Cancelo",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Vitinha",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "João Neves",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Rafael Leão",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Bruno Fernandes",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Pedro Neto",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Cristiano Ronaldo",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "José Sá",
+              "pos": "G"
+            },
+            {
+              "num": 22,
+              "nome": "Rui Silva",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "Tomás Araújo",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Nélson Semedo",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Matheus Nunes",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Gonçalo Inácio",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Diogo Dalot",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Francisco Trincão",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Gonçalo Guedes",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Bernardo Silva",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Rúben Neves",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Samú Costa",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Francisco Conceição",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Gonçalo Ramos",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "João Félix",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Dominik Livaković",
+              "pos": "G"
+            },
+            {
+              "num": 14,
+              "nome": "Ivan Perišić",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Marin Pongračić",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Josip Šutalo",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Josip Stanišić",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Mateo Kovačić",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Luka Modrić",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Martin Baturina",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Petar Sučić",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Nikola Vlašić",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Ante Budimir",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Ivor Pandur",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Dominik Kotarski",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "Joško Gvardiol",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Duje Ćaleta-Car",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Luka Vušković",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Martin Erlić",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Nikola Moro",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Mario Pašalić",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Marco Pašalić",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Toni Fruk",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Luka Sučić",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Kristijan Jakić",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Andrej Kramarić",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Igor Matanović",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Petar Musa",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
