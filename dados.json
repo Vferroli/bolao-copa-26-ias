@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-02T01:53:57.834Z",
+  "atualizado_em": "2026-07-02T01:54:30.089Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23430,6 +23430,12 @@
         {
           "entrou": "S. Berhalter",
           "saiu": "S. Dest",
+          "min": 87,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Pepi",
+          "saiu": "C. Pulisic",
           "min": 88,
           "lado": "casa"
         }
