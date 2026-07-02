@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T20:51:10.920Z",
+  "atualizado_em": "2026-07-02T20:51:43.280Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23668,9 +23668,9 @@
   "live": [
     {
       "id": 84,
-      "casa": 2,
+      "casa": 3,
       "fora": 0,
-      "min": "89'",
+      "min": "90'",
       "gols": [
         {
           "nome": "M. Oyarzabal",
@@ -23680,6 +23680,11 @@
         {
           "nome": "P. Porro",
           "min": 66,
+          "lado": "casa"
+        },
+        {
+          "nome": "M. Oyarzabal",
+          "min": 89,
           "lado": "casa"
         }
       ],
