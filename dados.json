@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T20:53:50.282Z",
+  "atualizado_em": "2026-07-02T20:54:53.526Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23670,7 +23670,7 @@
       "id": 84,
       "casa": 3,
       "fora": 0,
-      "min": "90'+2'",
+      "min": "90'+3'",
       "gols": [
         {
           "nome": "M. Oyarzabal",
@@ -23736,6 +23736,18 @@
           "saiu": "S. Posch",
           "min": 85,
           "lado": "fora"
+        },
+        {
+          "entrou": "F. Ruiz",
+          "saiu": "Pedri",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Pubill",
+          "saiu": "A. Laporte",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
