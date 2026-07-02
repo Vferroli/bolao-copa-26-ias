@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-02T00:44:09.971Z",
+  "atualizado_em": "2026-07-02T00:45:14.263Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23381,9 +23381,16 @@
   "live": [
     {
       "id": 81,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
-      "min": "44'"
+      "min": "45'",
+      "gols": [
+        {
+          "nome": "F. Balogun",
+          "min": 45,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
