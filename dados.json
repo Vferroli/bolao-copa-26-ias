@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T23:15:49.854Z",
+  "atualizado_em": "2026-07-02T23:16:52.780Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23958,7 +23958,15 @@
       "id": 83,
       "casa": 0,
       "fora": 0,
-      "min": "16'"
+      "min": "17'",
+      "cartoes": [
+        {
+          "nome": "R. Dias",
+          "cor": "amarelo",
+          "min": 17,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
