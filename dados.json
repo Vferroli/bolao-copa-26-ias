@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T19:50:21.187Z",
+  "atualizado_em": "2026-07-02T20:07:13.031Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23676,6 +23676,20 @@
           "nome": "M. Oyarzabal",
           "min": 36,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "F. Grillitsch",
+          "saiu": "X. Schlager",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "C. Chukwuemeka",
+          "saiu": "N. Seiwald",
+          "min": 45,
+          "lado": "fora"
         }
       ]
     }
