@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T20:47:28.173Z",
+  "atualizado_em": "2026-07-02T20:48:00.526Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23719,6 +23719,18 @@
           "saiu": "D. Olmo",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "Gavi",
+          "saiu": "L. Yamal",
+          "min": 85,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Prass",
+          "saiu": "S. Posch",
+          "min": 85,
+          "lado": "fora"
         }
       ],
       "cartoes": [
