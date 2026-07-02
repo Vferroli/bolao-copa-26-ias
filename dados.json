@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T20:58:35.123Z",
+  "atualizado_em": "2026-07-02T21:03:48.160Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23155,9 +23155,14 @@
       "fora": "austria",
       "kickoff": "2026-07-02T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 0,
+        "avancou": "spain",
+        "marcadores": [
+          "M. Oyarzabal",
+          "P. Porro",
+          "M. Oyarzabal"
+        ]
       },
       "palpites": {
         "claude": {
@@ -23665,99 +23670,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 84,
-      "casa": 3,
-      "fora": 0,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "M. Oyarzabal",
-          "min": 36,
-          "lado": "casa"
-        },
-        {
-          "nome": "P. Porro",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Oyarzabal",
-          "min": 89,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "F. Grillitsch",
-          "saiu": "X. Schlager",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Chukwuemeka",
-          "saiu": "N. Seiwald",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Kalajdzic",
-          "saiu": "R. Schmid",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Arnautovic",
-          "saiu": "M. Gregoritsch",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Torres",
-          "saiu": "Á. Baena",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Merino",
-          "saiu": "D. Olmo",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Gavi",
-          "saiu": "L. Yamal",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Prass",
-          "saiu": "S. Posch",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Ruiz",
-          "saiu": "Pedri",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Pubill",
-          "saiu": "A. Laporte",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "S. Posch",
-          "cor": "amarelo",
-          "min": 83,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
