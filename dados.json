@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-02T01:52:54.489Z",
+  "atualizado_em": "2026-07-02T01:53:57.834Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23383,7 +23383,7 @@
       "id": 81,
       "casa": 2,
       "fora": 0,
-      "min": "87'",
+      "min": "88'",
       "gols": [
         {
           "nome": "F. Balogun",
@@ -23426,6 +23426,12 @@
           "saiu": "N. Katic",
           "min": 75,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Berhalter",
+          "saiu": "S. Dest",
+          "min": 88,
+          "lado": "casa"
         }
       ],
       "cartoes": [
