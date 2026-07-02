@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T20:21:03.927Z",
+  "atualizado_em": "2026-07-02T20:22:07.512Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23670,7 +23670,7 @@
       "id": 84,
       "casa": 1,
       "fora": 0,
-      "min": "59'",
+      "min": "60'",
       "gols": [
         {
           "nome": "M. Oyarzabal",
@@ -23689,6 +23689,18 @@
           "entrou": "C. Chukwuemeka",
           "saiu": "N. Seiwald",
           "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Kalajdzic",
+          "saiu": "R. Schmid",
+          "min": 60,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Arnautovic",
+          "saiu": "M. Gregoritsch",
+          "min": 60,
           "lado": "fora"
         }
       ]
