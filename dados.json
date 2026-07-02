@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-02T02:06:10.450Z",
+  "atualizado_em": "2026-07-02T02:11:29.606Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -22839,9 +22839,13 @@
       "fora": "bosnia-herzegovina",
       "kickoff": "2026-07-02T00:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 0,
+        "avancou": "usa",
+        "marcadores": [
+          "F. Balogun",
+          "M. Tillman"
+        ]
       },
       "palpites": {
         "claude": {
@@ -23378,88 +23382,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 81,
-      "casa": 2,
-      "fora": 0,
-      "min": "90'+10'",
-      "gols": [
-        {
-          "nome": "F. Balogun",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Tillman",
-          "min": 82,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "E. Bajraktarevic",
-          "saiu": "A. Gigovic",
-          "min": 51,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Tahirovic",
-          "saiu": "I. Sunjic",
-          "min": 51,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Mahmic",
-          "saiu": "E. Dzeko",
-          "min": 51,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Tabakovic",
-          "saiu": "S. Kolasinac",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Memic",
-          "saiu": "N. Katic",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Berhalter",
-          "saiu": "S. Dest",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Pepi",
-          "saiu": "C. Pulisic",
-          "min": 88,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Reyna",
-          "saiu": "W. McKennie",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "F. Balogun",
-          "cor": "vermelho",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Radeljic",
-          "cor": "amarelo",
-          "min": 80,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
