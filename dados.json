@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-01",
-  "atualizado_em": "2026-07-02T01:41:15.617Z",
+  "atualizado_em": "2026-07-02T01:41:47.551Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23383,7 +23383,7 @@
       "id": 81,
       "casa": 1,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "F. Balogun",
@@ -23408,6 +23408,18 @@
           "entrou": "E. Mahmic",
           "saiu": "E. Dzeko",
           "min": 51,
+          "lado": "fora"
+        },
+        {
+          "entrou": "H. Tabakovic",
+          "saiu": "S. Kolasinac",
+          "min": 75,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Memic",
+          "saiu": "N. Katic",
+          "min": 75,
           "lado": "fora"
         }
       ],
