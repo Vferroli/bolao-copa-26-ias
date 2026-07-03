@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T03:35:18.002Z",
+  "atualizado_em": "2026-07-03T03:36:22.002Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24231,12 +24231,20 @@
       "id": 85,
       "casa": 1,
       "fora": 0,
-      "min": "35'",
+      "min": "36'",
       "gols": [
         {
           "nome": "B. Embolo",
           "min": 10,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "F. Chaïbi",
+          "cor": "amarelo",
+          "min": 36,
+          "lado": "fora"
         }
       ]
     }
