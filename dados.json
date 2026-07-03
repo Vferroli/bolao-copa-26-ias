@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T04:56:42.009Z",
+  "atualizado_em": "2026-07-03T05:01:25.480Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23809,9 +23809,13 @@
       "fora": "algeria",
       "kickoff": "2026-07-03T03:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 0,
+        "avancou": "switzerland",
+        "marcadores": [
+          "B. Embolo",
+          "D. Ndoye"
+        ]
       },
       "palpites": {
         "claude": {
@@ -24226,100 +24230,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 85,
-      "casa": 2,
-      "fora": 0,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "B. Embolo",
-          "min": 10,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Ndoye",
-          "min": 46,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "J. Hadjam",
-          "saiu": "H. Aouar",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Gouiri",
-          "saiu": "R. Zerrouki",
-          "min": 58,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Rieder",
-          "saiu": "R. Vargas",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Okafor",
-          "saiu": "J. Manzambi",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Hadj Moussa",
-          "saiu": "R. Mahrez",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Boudaoui",
-          "saiu": "N. Bentaleb",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Boulbina",
-          "saiu": "R. Belghali",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Z. Amdouni",
-          "saiu": "B. Embolo",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Widmer",
-          "saiu": "D. Zakaria",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Aebischer",
-          "saiu": "D. Ndoye",
-          "min": 87,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "F. Chaïbi",
-          "cor": "amarelo",
-          "min": 36,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Boudaoui",
-          "cor": "amarelo",
-          "min": 72,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
