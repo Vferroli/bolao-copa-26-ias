@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T19:28:30.157Z",
+  "atualizado_em": "2026-07-03T19:29:49.449Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24493,7 +24493,7 @@
       "id": 88,
       "casa": 1,
       "fora": 1,
-      "min": "66'",
+      "min": "68'",
       "gols": [
         {
           "nome": "E. Ashour",
@@ -24513,6 +24513,18 @@
           "saiu": "J. Bos",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "H. Hassan",
+          "saiu": "M. Zico",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "H. Abdelmaguid",
+          "saiu": "H. Fathy",
+          "min": 67,
+          "lado": "fora"
         }
       ]
     }
