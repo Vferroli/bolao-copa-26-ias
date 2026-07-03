@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:19:17.181Z",
+  "atualizado_em": "2026-07-03T00:19:49.022Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23980,6 +23980,12 @@
           "cor": "amarelo",
           "min": 17,
           "lado": "casa"
+        },
+        {
+          "nome": "L. Modric",
+          "cor": "amarelo",
+          "min": 59,
+          "lado": "fora"
         }
       ]
     }
