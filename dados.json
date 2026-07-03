@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:57:35.418Z",
+  "atualizado_em": "2026-07-03T00:58:07.141Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24043,6 +24043,12 @@
           "nome": "L. Modric",
           "cor": "amarelo",
           "min": 59,
+          "lado": "fora"
+        },
+        {
+          "nome": "I. Perisic",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "fora"
         }
       ]
