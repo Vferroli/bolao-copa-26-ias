@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T04:18:06.855Z",
+  "atualizado_em": "2026-07-03T04:18:39.793Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24242,6 +24242,20 @@
           "nome": "D. Ndoye",
           "min": 46,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "A. Gouiri",
+          "saiu": "R. Zerrouki",
+          "min": 58,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Hadjam",
+          "saiu": "H. Aouar",
+          "min": 59,
+          "lado": "fora"
         }
       ],
       "cartoes": [
