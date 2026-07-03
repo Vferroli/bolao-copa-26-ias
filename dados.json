@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T04:07:27.498Z",
+  "atualizado_em": "2026-07-03T04:09:02.529Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24231,7 +24231,7 @@
       "id": 85,
       "casa": 2,
       "fora": 0,
-      "min": "48'",
+      "min": "49'",
       "gols": [
         {
           "nome": "B. Embolo",
