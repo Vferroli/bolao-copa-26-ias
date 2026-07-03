@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:21:55.208Z",
+  "atualizado_em": "2026-07-03T00:22:27.001Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23972,6 +23972,12 @@
           "saiu": "A. Budimir",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "B. Silva",
+          "saiu": "Vitinha",
+          "min": 62,
+          "lado": "casa"
         }
       ],
       "cartoes": [
