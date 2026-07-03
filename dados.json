@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T01:05:07.345Z",
+  "atualizado_em": "2026-07-03T01:05:39.173Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23958,7 +23958,7 @@
       "id": 83,
       "casa": 2,
       "fora": 2,
-      "min": "90'+14'",
+      "min": "90'+15'",
       "gols": [
         {
           "nome": "I. Perisic",
@@ -23974,6 +23974,11 @@
           "nome": "G. Ramos",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "nome": "J. Gvardiol",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "subs": [
