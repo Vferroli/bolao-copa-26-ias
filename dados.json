@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T20:17:07.232Z",
+  "atualizado_em": "2026-07-03T20:18:11.243Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24493,7 +24493,7 @@
       "id": 88,
       "casa": 1,
       "fora": 1,
-      "min": "104'",
+      "min": "105'",
       "gols": [
         {
           "nome": "E. Ashour",
@@ -24555,6 +24555,14 @@
           "saiu": "C. Metcalfe",
           "min": 90,
           "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "H. Hassan",
+          "cor": "amarelo",
+          "min": 105,
+          "lado": "fora"
         }
       ]
     }
