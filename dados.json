@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T20:39:10.422Z",
+  "atualizado_em": "2026-07-03T20:48:33.960Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24120,9 +24120,15 @@
       "fora": "egypt",
       "kickoff": "2026-07-03T18:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 1,
+        "avancou": null,
+        "marcadores": [
+          "E. Ashour"
+        ],
+        "golsContra": [
+          "M. Hany"
+        ]
       },
       "palpites": {
         "claude": {
@@ -24488,107 +24494,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 88,
-      "casa": 1,
-      "fora": 1,
-      "min": "AET-pens",
-      "gols": [
-        {
-          "nome": "E. Ashour",
-          "min": 13,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Hany",
-          "min": 55,
-          "lado": "casa",
-          "gc": true
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "K. Trewin",
-          "saiu": "J. Bos",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "H. Hassan",
-          "saiu": "M. Zico",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Abdelmaguid",
-          "saiu": "H. Fathy",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Hrustic",
-          "saiu": "C. Volpato",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Toure",
-          "saiu": "N. Irankunda",
-          "min": 74,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Trézéguet",
-          "saiu": "K. Hafez",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Okon-Engstler",
-          "saiu": "A. O'Neill",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Mabil",
-          "saiu": "C. Metcalfe",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "H. Abdelkarim",
-          "saiu": "O. Marmoush",
-          "min": 105,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Ryan",
-          "saiu": "P. Beach",
-          "min": 119,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Saber",
-          "saiu": "M. Attia",
-          "min": 120,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "H. Hassan",
-          "cor": "amarelo",
-          "min": 105,
-          "lado": "fora"
-        },
-        {
-          "nome": "Y. Ibrahim",
-          "cor": "amarelo",
-          "min": 120,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
