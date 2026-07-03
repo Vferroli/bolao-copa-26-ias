@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:22:27.001Z",
+  "atualizado_em": "2026-07-03T00:22:58.649Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23977,6 +23977,24 @@
           "entrou": "B. Silva",
           "saiu": "Vitinha",
           "min": 62,
+          "lado": "casa"
+        },
+        {
+          "entrou": "F. Conceição",
+          "saiu": "P. Neto",
+          "min": 63,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Semedo",
+          "saiu": "B. Fernandes",
+          "min": 63,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Ramos",
+          "saiu": "J. Cancelo",
+          "min": 63,
           "lado": "casa"
         }
       ],
