@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:50:47.685Z",
+  "atualizado_em": "2026-07-03T00:52:21.307Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23958,7 +23958,7 @@
       "id": 83,
       "casa": 1,
       "fora": 1,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "gols": [
         {
           "nome": "I. Perisic",
@@ -24013,6 +24013,12 @@
           "saiu": "C. Ronaldo",
           "min": 81,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Gvardiol",
+          "saiu": "N. Vlasic",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
