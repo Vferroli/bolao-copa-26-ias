@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T23:43:59.368Z",
+  "atualizado_em": "2026-07-03T23:45:03.622Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24786,7 +24786,7 @@
       "id": 86,
       "casa": 1,
       "fora": 1,
-      "min": "83'",
+      "min": "84'",
       "gols": [
         {
           "nome": "L. Messi",
@@ -24835,6 +24835,12 @@
           "saiu": "J. Cabral",
           "min": 80,
           "lado": "fora"
+        },
+        {
+          "entrou": "L. Paredes",
+          "saiu": "R. De Paul",
+          "min": 84,
+          "lado": "casa"
         }
       ],
       "cartoes": [
