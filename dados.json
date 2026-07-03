@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T04:42:12.648Z",
+  "atualizado_em": "2026-07-03T04:42:45.646Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24231,7 +24231,7 @@
       "id": 85,
       "casa": 2,
       "fora": 0,
-      "min": "81'",
+      "min": "83'",
       "gols": [
         {
           "nome": "B. Embolo",
@@ -24286,6 +24286,12 @@
           "saiu": "R. Belghali",
           "min": 82,
           "lado": "fora"
+        },
+        {
+          "entrou": "Z. Amdouni",
+          "saiu": "B. Embolo",
+          "min": 83,
+          "lado": "casa"
         }
       ],
       "cartoes": [
