@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:09:20.182Z",
+  "atualizado_em": "2026-07-03T00:09:51.850Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23958,7 +23958,7 @@
       "id": 83,
       "casa": 0,
       "fora": 0,
-      "min": "49'",
+      "min": "50'",
       "subs": [
         {
           "entrou": "I. Matanovic",
