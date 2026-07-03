@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T20:36:30.154Z",
+  "atualizado_em": "2026-07-03T20:37:02.716Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24567,6 +24567,12 @@
           "saiu": "P. Beach",
           "min": 119,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Saber",
+          "saiu": "M. Attia",
+          "min": 120,
+          "lado": "fora"
         }
       ],
       "cartoes": [
