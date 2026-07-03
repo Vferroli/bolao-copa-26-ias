@@ -23483,8 +23483,8 @@
       "kickoff": "2026-07-02T23:00:00Z",
       "real": {
         "casa": 2,
-        "fora": 2,
-        "avancou": null,
+        "fora": 1,
+        "avancou": "portugal",
         "marcadores": [
           "I. Perisic",
           "C. Ronaldo",

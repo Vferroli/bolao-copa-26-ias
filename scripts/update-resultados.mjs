@@ -507,13 +507,16 @@ async function marcadoresEspn(dados, resolve, cache) {
   return mudou;
 }
 
-/* PÊNALTIS finais (mata-mata) — ESPN é autoritativo p/ jogo decidido nos pênaltis.
-   Grava placar = fim da prorrogação, `avancou` = vencedor da disputa e `penaltis`.
-   SOBRESCREVE mesmo já apurado (self-heal idempotente): cura placar congelado
-   errado — ex.: gol anulado que um provedor contou como FINISHED (Alemanha 2x1 →
-   1x1, Paraguai nos pênaltis). Janela: jogos de mata-mata começados nas últimas 24h
-   (limitado; ESPN é grátis/ilimitado). Não toca em jogo sem disputa. */
-async function penaltisEspn(dados, fases, resolve, cache) {
+/* MATA-MATA finais via ESPN — ESPN é autoritativo p/ jogo de mata-mata encerrado.
+   Grava placar (fim do tempo normal/prorrogação), `avancou` (vencedor via flag
+   `winner` do ESPN → disputa de pênaltis → placar) e `penaltis` quando houver
+   disputa. SOBRESCREVE mesmo já apurado (self-heal idempotente): cura placar
+   congelado errado de um provedor de finais — ex.: gol anulado contado como válido
+   (Alemanha 2x1 → 1x1 + pênaltis Paraguai; Portugal 2x2 → 2x1 c/ `avancou` perdido
+   → time não avançava na chave). Cobre TODO jogo de mata-mata, com ou sem disputa —
+   não só os de pênaltis. Janela: mata-mata começado nas últimas 24h (limitado; ESPN
+   é grátis/ilimitado). Só decide jogo que o ESPN já encerrou (state "post"). */
+async function curarMataEspn(dados, fases, resolve, cache) {
   const agora = Date.now();
   const cand = dados.jogos.filter((j) => {
     if (!fases[j.fase]?.mata) return false;
@@ -525,20 +528,26 @@ async function penaltisEspn(dados, fases, resolve, cache) {
   for (const j of cand) {
     const hit = (await espnLocate(j, resolve, cache)).hit;
     if (!hit || hit.e.status?.type?.state !== "post") continue; // só jogo encerrado
-    const sum = await espnSummary(hit.e.id, cache);
-    const pen = espnPenaltis(hit, sum, j, resolve);
-    if (!pen) continue; // sem disputa → caminho normal de finais cuida
     const hs = parseInt(hit.home?.score, 10), as = parseInt(hit.away?.score, 10);
     if (!Number.isFinite(hs) || !Number.isFinite(as)) continue;
     const casa = hit.hId === j.casa ? hs : as;
     const fora = hit.hId === j.casa ? as : hs;
-    const avancou = pen.casa > pen.fora ? j.casa : pen.fora > pen.casa ? j.fora : null;
+    const sum = await espnSummary(hit.e.id, cache);
+    const pen = espnPenaltis(hit, sum, j, resolve); // null se não houve disputa
+    // vencedor: disputa de pênaltis > flag `winner` do ESPN > placar do tempo normal.
+    const outro = hit.hId === j.casa ? j.fora : j.casa;
+    const winFlag = hit.home?.winner ? hit.hId : hit.away?.winner ? outro : null;
+    const avancou = pen
+      ? (pen.casa > pen.fora ? j.casa : pen.fora > pen.casa ? j.fora : null)
+      : (winFlag || (casa > fora ? j.casa : fora > casa ? j.fora : null));
     const cur = j.real || {};
     const igual = cur.casa === casa && cur.fora === fora && cur.avancou === avancou &&
-      cur.penaltis && cur.penaltis.casa === pen.casa && cur.penaltis.fora === pen.fora;
+      (pen ? (cur.penaltis && cur.penaltis.casa === pen.casa && cur.penaltis.fora === pen.fora)
+           : !cur.penaltis);
     if (igual) continue; // idempotente
-    j.real = { ...cur, casa, fora, avancou, penaltis: pen };
-    console.log(`PÊNALTIS ${j.casa} ${casa} (${pen.casa}) x (${pen.fora}) ${fora} ${j.fora} → avança ${avancou}`);
+    j.real = { ...cur, casa, fora, avancou };
+    if (pen) j.real.penaltis = pen; else delete j.real.penaltis;
+    console.log(`MATA ESPN ${j.casa} ${casa}${pen ? ` (${pen.casa})` : ""} x ${pen ? `(${pen.fora}) ` : ""}${fora} ${j.fora} → avança ${avancou}`);
     mudou = true;
   }
   return mudou;
@@ -870,10 +879,11 @@ async function main() {
     console.log("Sem jogos na janela p/ finais.");
   }
 
-  // PÊNALTIS (mata-mata) — roda SEMPRE: cura placar de jogo decidido nos pênaltis
-  // mesmo fora da janela de finais (ex.: já apurado errado). Cache por-run evita
-  // refetch. marcadoresEspn depois pega os goleadores de jogo recém-gravado aqui.
-  if (await penaltisEspn(dados, fases, resolve, cache)) {
+  // MATA-MATA via ESPN — roda SEMPRE: cura placar/`avancou`/pênaltis de jogo de
+  // mata-mata encerrado mesmo fora da janela de finais (ex.: já apurado errado por
+  // gol fantasma de um provedor). Cache por-run evita refetch. marcadoresEspn depois
+  // pega os goleadores de jogo recém-gravado aqui.
+  if (await curarMataEspn(dados, fases, resolve, cache)) {
     mudou = true;
     if (await marcadoresEspn(dados, resolve, cache)) mudou = true;
   }
