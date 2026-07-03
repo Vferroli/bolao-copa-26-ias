@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T18:51:05.023Z",
+  "atualizado_em": "2026-07-03T19:06:11.125Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24499,6 +24499,14 @@
           "nome": "E. Ashour",
           "min": 13,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "K. Trewin",
+          "saiu": "J. Bos",
+          "min": 45,
+          "lado": "casa"
         }
       ]
     }
