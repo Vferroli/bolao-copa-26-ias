@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T19:35:08.650Z",
+  "atualizado_em": "2026-07-03T19:35:41.254Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24525,6 +24525,12 @@
           "saiu": "H. Fathy",
           "min": 67,
           "lado": "fora"
+        },
+        {
+          "entrou": "A. Hrustic",
+          "saiu": "C. Volpato",
+          "min": 74,
+          "lado": "casa"
         }
       ]
     }
