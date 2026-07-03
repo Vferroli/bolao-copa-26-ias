@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T03:50:12.234Z",
+  "atualizado_em": "2026-07-03T04:06:22.503Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24231,11 +24231,16 @@
       "id": 85,
       "casa": 1,
       "fora": 0,
-      "min": "Intervalo",
+      "min": "46'",
       "gols": [
         {
           "nome": "B. Embolo",
           "min": 10,
+          "lado": "casa"
+        },
+        {
+          "nome": "D. Ndoye",
+          "min": 46,
           "lado": "casa"
         }
       ],
