@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T19:41:31.648Z",
+  "atualizado_em": "2026-07-03T19:42:04.448Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24537,6 +24537,12 @@
           "saiu": "N. Irankunda",
           "min": 74,
           "lado": "casa"
+        },
+        {
+          "entrou": "Trézéguet",
+          "saiu": "K. Hafez",
+          "min": 80,
+          "lado": "fora"
         }
       ]
     }
