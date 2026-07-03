@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T20:48:33.960Z",
+  "atualizado_em": "2026-07-03T20:56:46.017Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24122,13 +24122,17 @@
       "real": {
         "casa": 1,
         "fora": 1,
-        "avancou": null,
+        "avancou": "egypt",
         "marcadores": [
           "E. Ashour"
         ],
         "golsContra": [
           "M. Hany"
-        ]
+        ],
+        "penaltis": {
+          "casa": 2,
+          "fora": 4
+        }
       },
       "palpites": {
         "claude": {
