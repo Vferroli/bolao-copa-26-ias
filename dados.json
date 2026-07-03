@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T23:28:00.969Z",
+  "atualizado_em": "2026-07-03T23:28:32.750Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24786,7 +24786,7 @@
       "id": 86,
       "casa": 1,
       "fora": 1,
-      "min": "67'",
+      "min": "68'",
       "gols": [
         {
           "nome": "L. Messi",
@@ -24811,6 +24811,18 @@
           "saiu": "T. Almada",
           "min": 64,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Monteiro",
+          "saiu": "L. Duarte",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "D. Livramento",
+          "saiu": "N. da Costa",
+          "min": 67,
+          "lado": "fora"
         }
       ]
     }
