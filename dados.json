@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T19:58:03.957Z",
+  "atualizado_em": "2026-07-03T20:03:48.975Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24543,6 +24543,18 @@
           "saiu": "K. Hafez",
           "min": 80,
           "lado": "fora"
+        },
+        {
+          "entrou": "P. Okon-Engstler",
+          "saiu": "A. O'Neill",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Mabil",
+          "saiu": "C. Metcalfe",
+          "min": 90,
+          "lado": "casa"
         }
       ]
     }
