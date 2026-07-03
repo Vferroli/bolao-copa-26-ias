@@ -845,6 +845,20 @@ const PF_NOME = {
   "16avos": "16-avos de final", oitavas: "Oitavas de final", quartas: "Quartas de final",
   semi: "Semifinal", terceiro: "Disputa de 3º", final: "Final",
 };
+/* calendário fixo do mata-mata (nº FIFA → kickoff UTC). Fonte: FIFA/Wikipedia
+   (WC2026 knockout). FALLBACK do kickoff na chave: fases futuras ainda não
+   materializadas em dados.json ganham badge hoje/amanhã mesmo antes de virar
+   objeto. 16avos (73–88) já vêm do próprio dados.json; aqui só 89–104. */
+const PF_KICKOFF = {
+  89: "2026-07-04T21:00:00Z", 90: "2026-07-04T17:00:00Z",
+  91: "2026-07-05T20:00:00Z", 92: "2026-07-06T00:00:00Z",
+  93: "2026-07-06T19:00:00Z", 94: "2026-07-07T00:00:00Z",
+  95: "2026-07-07T16:00:00Z", 96: "2026-07-07T20:00:00Z",
+  97: "2026-07-09T20:00:00Z", 98: "2026-07-10T19:00:00Z",
+  99: "2026-07-11T21:00:00Z", 100: "2026-07-12T01:00:00Z",
+  101: "2026-07-14T19:00:00Z", 102: "2026-07-15T19:00:00Z",
+  103: "2026-07-18T21:00:00Z", 104: "2026-07-19T19:00:00Z",
+};
 // vencedores de grupo que pegam 3º (ordem das colunas da Annex C) + grupos permitidos por slot
 const PF_WINCOLS = ["A", "B", "D", "E", "G", "I", "K", "L"];
 const PF_ALLOWED = {
@@ -1055,11 +1069,14 @@ function pfMatchData(num, liveSet, thirdsMap) {
   const fora = pfSlot(b, liveSet, thirdsMap);
   const j = pfJogoNum(num);
   const fim = !!j && apurado(j);
-  const k = j ? new Date(j.kickoff) : null;
-  const emJogo = !!j && !fim && Date.now() >= k.getTime();
+  // kickoff: do jogo em dados.json OU do calendário fixo (fase futura ainda não
+  // materializada) → permite badge hoje/amanhã na chave antes de o jogo existir.
+  const ks = j ? j.kickoff : PF_KICKOFF[num];
+  const k = ks ? new Date(ks) : null;
+  const emJogo = !!j && !fim && k && Date.now() >= k.getTime();
   // hoje/amanhã + horário no FUSO DO NAVEGADOR (dispositivo do usuário)
   let hoje = false, amanha = false, hora = null;
-  if (j && !fim && !emJogo) {
+  if (k && !fim && !emJogo) {
     const sod = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
     const diff = Math.round((sod(k) - sod(new Date())) / 86400000);
     hoje = diff === 0; amanha = diff === 1;
