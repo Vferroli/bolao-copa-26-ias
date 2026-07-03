@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T19:35:41.254Z",
+  "atualizado_em": "2026-07-03T19:36:13.660Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24493,7 +24493,7 @@
       "id": 88,
       "casa": 1,
       "fora": 1,
-      "min": "73'",
+      "min": "75'",
       "gols": [
         {
           "nome": "E. Ashour",
@@ -24529,6 +24529,12 @@
         {
           "entrou": "A. Hrustic",
           "saiu": "C. Volpato",
+          "min": 74,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Toure",
+          "saiu": "N. Irankunda",
           "min": 74,
           "lado": "casa"
         }
