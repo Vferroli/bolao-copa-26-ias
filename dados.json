@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T18:26:36.844Z",
+  "atualizado_em": "2026-07-03T18:27:39.652Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24493,7 +24493,7 @@
       "id": 88,
       "casa": 0,
       "fora": 1,
-      "min": "26'",
+      "min": "27'",
       "gols": [
         {
           "nome": "E. Ashour",
