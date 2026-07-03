@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:54:26.352Z",
+  "atualizado_em": "2026-07-03T00:54:58.380Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23956,9 +23956,9 @@
   "live": [
     {
       "id": 83,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
-      "min": "90'+4'",
+      "min": "90'+5'",
       "gols": [
         {
           "nome": "I. Perisic",
@@ -23968,6 +23968,11 @@
         {
           "nome": "C. Ronaldo",
           "min": 68,
+          "lado": "casa"
+        },
+        {
+          "nome": "G. Ramos",
+          "min": 90,
           "lado": "casa"
         }
       ],
