@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-02T23:50:13.748Z",
+  "atualizado_em": "2026-07-03T00:05:24.797Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23959,6 +23959,14 @@
       "casa": 0,
       "fora": 0,
       "min": "Intervalo",
+      "subs": [
+        {
+          "entrou": "I. Matanovic",
+          "saiu": "A. Budimir",
+          "min": 45,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "R. Dias",
