@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T04:30:40.181Z",
+  "atualizado_em": "2026-07-03T04:31:25.501Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24231,7 +24231,7 @@
       "id": 85,
       "casa": 2,
       "fora": 0,
-      "min": "70'",
+      "min": "71'",
       "gols": [
         {
           "nome": "B. Embolo",
@@ -24255,6 +24255,30 @@
           "entrou": "A. Gouiri",
           "saiu": "R. Zerrouki",
           "min": 58,
+          "lado": "fora"
+        },
+        {
+          "entrou": "F. Rieder",
+          "saiu": "R. Vargas",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Okafor",
+          "saiu": "J. Manzambi",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Hadj Moussa",
+          "saiu": "R. Mahrez",
+          "min": 71,
+          "lado": "fora"
+        },
+        {
+          "entrou": "H. Boudaoui",
+          "saiu": "N. Bentaleb",
+          "min": 71,
           "lado": "fora"
         }
       ],
