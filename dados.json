@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T20:35:26.342Z",
+  "atualizado_em": "2026-07-03T20:36:30.154Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24493,7 +24493,7 @@
       "id": 88,
       "casa": 1,
       "fora": 1,
-      "min": "120'",
+      "min": "120'+1'",
       "gols": [
         {
           "nome": "E. Ashour",
@@ -24574,6 +24574,12 @@
           "nome": "H. Hassan",
           "cor": "amarelo",
           "min": 105,
+          "lado": "fora"
+        },
+        {
+          "nome": "Y. Ibrahim",
+          "cor": "amarelo",
+          "min": 120,
           "lado": "fora"
         }
       ]
