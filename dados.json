@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T04:49:10.934Z",
+  "atualizado_em": "2026-07-03T04:49:43.568Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24231,7 +24231,7 @@
       "id": 85,
       "casa": 2,
       "fora": 0,
-      "min": "89'",
+      "min": "90'",
       "gols": [
         {
           "nome": "B. Embolo",
@@ -24294,14 +24294,14 @@
           "lado": "casa"
         },
         {
-          "entrou": "M. Aebischer",
-          "saiu": "D. Ndoye",
+          "entrou": "S. Widmer",
+          "saiu": "D. Zakaria",
           "min": 87,
           "lado": "casa"
         },
         {
-          "entrou": "S. Widmer",
-          "saiu": "D. Zakaria",
+          "entrou": "M. Aebischer",
+          "saiu": "D. Ndoye",
           "min": 87,
           "lado": "casa"
         }
