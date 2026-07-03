@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T01:09:50.989Z",
+  "atualizado_em": "2026-07-03T01:14:29.838Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -23482,9 +23482,14 @@
       "fora": "croatia",
       "kickoff": "2026-07-02T23:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 2,
+        "avancou": null,
+        "marcadores": [
+          "I. Perisic",
+          "C. Ronaldo",
+          "G. Ramos"
+        ]
       },
       "palpites": {
         "claude": {
@@ -23953,105 +23958,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 83,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+19'",
-      "gols": [
-        {
-          "nome": "I. Perisic",
-          "min": 53,
-          "lado": "fora"
-        },
-        {
-          "nome": "C. Ronaldo",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "nome": "G. Ramos",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "I. Matanovic",
-          "saiu": "A. Budimir",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Silva",
-          "saiu": "Vitinha",
-          "min": 62,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Conceição",
-          "saiu": "P. Neto",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Semedo",
-          "saiu": "B. Fernandes",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Ramos",
-          "saiu": "J. Cancelo",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Pasalic",
-          "saiu": "M. Baturina",
-          "min": 68,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Neves",
-          "saiu": "C. Ronaldo",
-          "min": 81,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Gvardiol",
-          "saiu": "N. Vlasic",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Kramaric",
-          "saiu": "M. Kovacic",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "R. Dias",
-          "cor": "amarelo",
-          "min": 17,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Modric",
-          "cor": "amarelo",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "nome": "I. Perisic",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
