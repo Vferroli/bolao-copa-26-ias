@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-02",
-  "atualizado_em": "2026-07-03T00:54:58.380Z",
+  "atualizado_em": "2026-07-03T00:56:01.174Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24022,6 +24022,12 @@
         {
           "entrou": "J. Gvardiol",
           "saiu": "N. Vlasic",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Kramaric",
+          "saiu": "M. Kovacic",
           "min": 90,
           "lado": "fora"
         }
