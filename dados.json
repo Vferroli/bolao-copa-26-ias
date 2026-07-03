@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-03T20:19:14.633Z",
+  "atualizado_em": "2026-07-03T20:19:46.861Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24555,6 +24555,12 @@
           "saiu": "C. Metcalfe",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "entrou": "H. Abdelkarim",
+          "saiu": "O. Marmoush",
+          "min": 105,
+          "lado": "fora"
         }
       ],
       "cartoes": [
