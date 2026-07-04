@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T22:24:47.808Z",
+  "atualizado_em": "2026-07-04T22:25:20.387Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25959,13 +25959,25 @@
       "id": 89,
       "casa": 0,
       "fora": 0,
-      "min": "60'",
+      "min": "61'",
       "subs": [
         {
           "entrou": "J. Canale",
           "saiu": "O. Alderete",
           "min": 58,
           "lado": "casa"
+        },
+        {
+          "entrou": "G. Caballero",
+          "saiu": "J. Enciso",
+          "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "D. Doué",
+          "saiu": "B. Barcola",
+          "min": 61,
+          "lado": "fora"
         }
       ],
       "cartoes": [
