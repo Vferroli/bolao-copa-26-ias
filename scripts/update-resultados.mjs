@@ -118,6 +118,14 @@ const FIXTURES_MATA = [
   { num: 88, fase: "16avos", kickoff: "2026-07-03T18:00:00Z", casa: "australia", fora: "egypt" },
   { num: 86, fase: "16avos", kickoff: "2026-07-03T22:00:00Z", casa: "argentina", fora: "cape-verde" },
   { num: 87, fase: "16avos", kickoff: "2026-07-04T01:30:00Z", casa: "colombia", fora: "ghana" },
+  { num: 90, fase: "oitavas", kickoff: "2026-07-04T17:00:00Z", casa: "canada", fora: "morocco" },
+  { num: 89, fase: "oitavas", kickoff: "2026-07-04T21:00:00Z", casa: "paraguay", fora: "france" },
+  { num: 91, fase: "oitavas", kickoff: "2026-07-05T20:00:00Z", casa: "brazil", fora: "norway" },
+  { num: 92, fase: "oitavas", kickoff: "2026-07-06T00:00:00Z", casa: "mexico", fora: "england" },
+  { num: 93, fase: "oitavas", kickoff: "2026-07-06T19:00:00Z", casa: "portugal", fora: "spain" },
+  { num: 94, fase: "oitavas", kickoff: "2026-07-07T00:00:00Z", casa: "usa", fora: "belgium" },
+  { num: 95, fase: "oitavas", kickoff: "2026-07-07T16:00:00Z", casa: "argentina", fora: "egypt" },
+  { num: 96, fase: "oitavas", kickoff: "2026-07-07T20:00:00Z", casa: "switzerland", fora: "colombia" },
 ];
 function inserirFixturesMata(dados) {
   let mudou = false;

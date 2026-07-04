@@ -20125,328 +20125,6 @@
       }
     },
     {
-      "id": 76,
-      "num": 76,
-      "fase": "16avos",
-      "casa": "brazil",
-      "fora": "japan",
-      "kickoff": "2026-06-29T17:00:00Z",
-      "real": {
-        "casa": 2,
-        "fora": 1,
-        "avancou": "brazil",
-        "marcadores": [
-          "K. Sano",
-          "Casemiro",
-          "G. Martinelli"
-        ]
-      },
-      "palpites": {
-        "claude": {
-          "casa": 2,
-          "fora": 1,
-          "avanca": "brazil",
-          "marcador": "Vinícius Júnior"
-        },
-        "gpt": {
-          "casa": 2,
-          "fora": 0,
-          "avanca": "brazil",
-          "marcador": "Vinícius Júnior"
-        },
-        "gemini": {
-          "casa": 2,
-          "fora": 1,
-          "avanca": "brazil",
-          "marcador": "Vinícius Júnior"
-        },
-        "grok": {
-          "casa": 2,
-          "fora": 1,
-          "avanca": "brazil",
-          "marcador": "Vinícius Júnior"
-        }
-      },
-      "escalacoes": {
-        "fonte": "highlightly",
-        "formacao": {
-          "casa": "4-3-3",
-          "fora": "3-4-2-1"
-        },
-        "tecnico": {
-          "casa": null,
-          "fora": null
-        },
-        "casa": {
-          "titulares": [
-            {
-              "num": 1,
-              "nome": "Alisson",
-              "pos": "G"
-            },
-            {
-              "num": 16,
-              "nome": "Douglas Santos",
-              "pos": "D"
-            },
-            {
-              "num": 3,
-              "nome": "Gabriel Magalhães",
-              "pos": "D"
-            },
-            {
-              "num": 4,
-              "nome": "Marquinhos",
-              "pos": "D"
-            },
-            {
-              "num": 13,
-              "nome": "Danilo",
-              "pos": "D"
-            },
-            {
-              "num": 20,
-              "nome": "Lucas Paquetá",
-              "pos": "M"
-            },
-            {
-              "num": 5,
-              "nome": "Casemiro",
-              "pos": "M"
-            },
-            {
-              "num": 8,
-              "nome": "Bruno Guimarães",
-              "pos": "M"
-            },
-            {
-              "num": 7,
-              "nome": "Vinícius Júnior",
-              "pos": "F"
-            },
-            {
-              "num": 9,
-              "nome": "Matheus Cunha",
-              "pos": "F"
-            },
-            {
-              "num": 26,
-              "nome": "Rayan",
-              "pos": "F"
-            }
-          ],
-          "reservas": [
-            {
-              "num": 23,
-              "nome": "Ederson",
-              "pos": "G"
-            },
-            {
-              "num": 12,
-              "nome": "Weverton",
-              "pos": "G"
-            },
-            {
-              "num": 6,
-              "nome": "Alex Sandro",
-              "pos": "D"
-            },
-            {
-              "num": 14,
-              "nome": "Bremer",
-              "pos": "D"
-            },
-            {
-              "num": 15,
-              "nome": "Léo Pereira",
-              "pos": "D"
-            },
-            {
-              "num": 24,
-              "nome": "Roger Ibañez",
-              "pos": "D"
-            },
-            {
-              "num": 2,
-              "nome": "Éderson",
-              "pos": "M"
-            },
-            {
-              "num": 17,
-              "nome": "Fabinho",
-              "pos": "M"
-            },
-            {
-              "num": 21,
-              "nome": "Luiz Henrique",
-              "pos": "F"
-            },
-            {
-              "num": 18,
-              "nome": "Danilo Santos",
-              "pos": "M"
-            },
-            {
-              "num": 19,
-              "nome": "Endrick",
-              "pos": "F"
-            },
-            {
-              "num": 22,
-              "nome": "Gabriel Martinelli",
-              "pos": "F"
-            },
-            {
-              "num": 25,
-              "nome": "Igor Thiago",
-              "pos": "F"
-            },
-            {
-              "num": 10,
-              "nome": "Neymar",
-              "pos": "F"
-            }
-          ]
-        },
-        "fora": {
-          "titulares": [
-            {
-              "num": 1,
-              "nome": "Zion Suzuki",
-              "pos": "G"
-            },
-            {
-              "num": 21,
-              "nome": "Hiroki Itō",
-              "pos": "D"
-            },
-            {
-              "num": 3,
-              "nome": "Shogo Taniguchi",
-              "pos": "D"
-            },
-            {
-              "num": 22,
-              "nome": "Takehiro Tomiyasu",
-              "pos": "D"
-            },
-            {
-              "num": 13,
-              "nome": "Keito Nakamura",
-              "pos": "M"
-            },
-            {
-              "num": 15,
-              "nome": "Daichi Kamada",
-              "pos": "M"
-            },
-            {
-              "num": 24,
-              "nome": "Kaishu Sano",
-              "pos": "M"
-            },
-            {
-              "num": 10,
-              "nome": "Ritsu Doan",
-              "pos": "M"
-            },
-            {
-              "num": 11,
-              "nome": "Daizen Maeda",
-              "pos": "F"
-            },
-            {
-              "num": 14,
-              "nome": "Junya Ito",
-              "pos": "F"
-            },
-            {
-              "num": 18,
-              "nome": "Ayase Ueda",
-              "pos": "F"
-            }
-          ],
-          "reservas": [
-            {
-              "num": 12,
-              "nome": "Keisuke Osako",
-              "pos": "G"
-            },
-            {
-              "num": 23,
-              "nome": "Tomoki Hayakawa",
-              "pos": "G"
-            },
-            {
-              "num": 2,
-              "nome": "Yukinari Sugawara",
-              "pos": "D"
-            },
-            {
-              "num": 4,
-              "nome": "Ko Itakura",
-              "pos": "D"
-            },
-            {
-              "num": 5,
-              "nome": "Yuto Nagatomo",
-              "pos": "D"
-            },
-            {
-              "num": 16,
-              "nome": "Tsuyoshi Watanabe",
-              "pos": "D"
-            },
-            {
-              "num": 20,
-              "nome": "Ayumu Seko",
-              "pos": "D"
-            },
-            {
-              "num": 25,
-              "nome": "Junnosuke Suzuki",
-              "pos": "D"
-            },
-            {
-              "num": 7,
-              "nome": "Ao Tanaka",
-              "pos": "M"
-            },
-            {
-              "num": 17,
-              "nome": "Yuito Suzuki",
-              "pos": "M"
-            },
-            {
-              "num": 8,
-              "nome": "Takefusa Kubo",
-              "pos": "F"
-            },
-            {
-              "num": 6,
-              "nome": "Shuto Machino",
-              "pos": "F"
-            },
-            {
-              "num": 19,
-              "nome": "Koki Ogawa",
-              "pos": "F"
-            },
-            {
-              "num": 26,
-              "nome": "Kento Shiogai",
-              "pos": "F"
-            },
-            {
-              "num": 9,
-              "nome": "Keisuke Goto",
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
-    {
       "id": 74,
       "num": 74,
       "fase": "16avos",
@@ -21211,53 +20889,53 @@
       }
     },
     {
-      "id": 78,
-      "num": 78,
+      "id": 76,
+      "num": 76,
       "fase": "16avos",
-      "casa": "ivory-coast",
-      "fora": "norway",
-      "kickoff": "2026-06-30T17:00:00Z",
+      "casa": "brazil",
+      "fora": "japan",
+      "kickoff": "2026-06-29T17:00:00Z",
       "real": {
-        "casa": 1,
-        "fora": 2,
-        "avancou": "norway",
+        "casa": 2,
+        "fora": 1,
+        "avancou": "brazil",
         "marcadores": [
-          "A. Nusa",
-          "A. Diallo",
-          "E. Haaland"
+          "K. Sano",
+          "Casemiro",
+          "G. Martinelli"
         ]
       },
       "palpites": {
         "claude": {
-          "casa": 1,
-          "fora": 2,
-          "avanca": "norway",
-          "marcador": "Erling Haaland"
+          "casa": 2,
+          "fora": 1,
+          "avanca": "brazil",
+          "marcador": "Vinícius Júnior"
         },
         "gpt": {
-          "casa": 1,
-          "fora": 2,
-          "avanca": "norway",
-          "marcador": "Erling Haaland"
+          "casa": 2,
+          "fora": 0,
+          "avanca": "brazil",
+          "marcador": "Vinícius Júnior"
         },
         "gemini": {
-          "casa": 1,
-          "fora": 2,
-          "avanca": "norway",
-          "marcador": "Erling Haaland"
+          "casa": 2,
+          "fora": 1,
+          "avanca": "brazil",
+          "marcador": "Vinícius Júnior"
         },
         "grok": {
-          "casa": 1,
+          "casa": 2,
           "fora": 1,
-          "avanca": "norway",
-          "marcador": "Erling Haaland"
+          "avanca": "brazil",
+          "marcador": "Vinícius Júnior"
         }
       },
       "escalacoes": {
         "fonte": "highlightly",
         "formacao": {
-          "casa": "4-1-4-1",
-          "fora": "4-3-3"
+          "casa": "4-3-3",
+          "fora": "3-4-2-1"
         },
         "tecnico": {
           "casa": null,
@@ -21267,134 +20945,129 @@
           "titulares": [
             {
               "num": 1,
-              "nome": "Yahia Fofana",
+              "nome": "Alisson",
               "pos": "G"
             },
             {
+              "num": 16,
+              "nome": "Douglas Santos",
+              "pos": "D"
+            },
+            {
               "num": 3,
-              "nome": "Ghislain Konan",
+              "nome": "Gabriel Magalhães",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Marquinhos",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Danilo",
               "pos": "D"
             },
             {
               "num": 20,
-              "nome": "Emmanuel Agbadou",
-              "pos": "D"
-            },
-            {
-              "num": 7,
-              "nome": "Odilon Kossounou",
-              "pos": "D"
-            },
-            {
-              "num": 17,
-              "nome": "Guéla Doué",
-              "pos": "D"
-            },
-            {
-              "num": 18,
-              "nome": "Ibrahim Sangaré",
+              "nome": "Lucas Paquetá",
               "pos": "M"
             },
             {
-              "num": 11,
-              "nome": "Yan Diomande",
-              "pos": "M"
-            },
-            {
-              "num": 26,
-              "nome": "Christ Inao Oulaï",
+              "num": 5,
+              "nome": "Casemiro",
               "pos": "M"
             },
             {
               "num": 8,
-              "nome": "Franck Kessié",
+              "nome": "Bruno Guimarães",
               "pos": "M"
             },
             {
-              "num": 19,
-              "nome": "Nicolas Pépé",
-              "pos": "M"
+              "num": 7,
+              "nome": "Vinícius Júnior",
+              "pos": "F"
             },
             {
               "num": 9,
-              "nome": "Ange-Yoan Bonny",
+              "nome": "Matheus Cunha",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Rayan",
               "pos": "F"
             }
           ],
           "reservas": [
             {
-              "num": 16,
-              "nome": "Mohamed Koné",
-              "pos": "G"
-            },
-            {
               "num": 23,
-              "nome": "Alban Lafont",
+              "nome": "Ederson",
               "pos": "G"
-            },
-            {
-              "num": 2,
-              "nome": "Ousmane Diomande",
-              "pos": "D"
-            },
-            {
-              "num": 5,
-              "nome": "Wilfried Singo",
-              "pos": "D"
-            },
-            {
-              "num": 13,
-              "nome": "Christopher Operi",
-              "pos": "D"
-            },
-            {
-              "num": 21,
-              "nome": "Evan Ndicka",
-              "pos": "D"
-            },
-            {
-              "num": 4,
-              "nome": "Jean Michaël Seri",
-              "pos": "M"
-            },
-            {
-              "num": 6,
-              "nome": "Seko Fofana",
-              "pos": "M"
-            },
-            {
-              "num": 25,
-              "nome": "Parfait Guiagon",
-              "pos": "M"
-            },
-            {
-              "num": 10,
-              "nome": "Simon Adingra",
-              "pos": "F"
-            },
-            {
-              "num": 15,
-              "nome": "Amad Diallo",
-              "pos": "F"
-            },
-            {
-              "num": 24,
-              "nome": "Bazoumana Touré",
-              "pos": "F"
             },
             {
               "num": 12,
-              "nome": "Elye Wahi",
-              "pos": "F"
+              "nome": "Weverton",
+              "pos": "G"
+            },
+            {
+              "num": 6,
+              "nome": "Alex Sandro",
+              "pos": "D"
             },
             {
               "num": 14,
-              "nome": "Oumar Diakité",
+              "nome": "Bremer",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Léo Pereira",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Roger Ibañez",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Éderson",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Fabinho",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Luiz Henrique",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Danilo Santos",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Endrick",
               "pos": "F"
             },
             {
               "num": 22,
-              "nome": "Evann Guessand",
+              "nome": "Gabriel Martinelli",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Igor Thiago",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Neymar",
               "pos": "F"
             }
           ]
@@ -21403,135 +21076,135 @@
           "titulares": [
             {
               "num": 1,
-              "nome": "Ørjan Nyland",
+              "nome": "Zion Suzuki",
               "pos": "G"
             },
             {
-              "num": 5,
-              "nome": "David Møller Wolfe",
-              "pos": "D"
-            },
-            {
-              "num": 17,
-              "nome": "Torbjørn Heggem",
+              "num": 21,
+              "nome": "Hiroki Itō",
               "pos": "D"
             },
             {
               "num": 3,
-              "nome": "Kristoffer Ajer",
+              "nome": "Shogo Taniguchi",
               "pos": "D"
             },
             {
-              "num": 16,
-              "nome": "Marcus Pedersen",
+              "num": 22,
+              "nome": "Takehiro Tomiyasu",
               "pos": "D"
             },
             {
-              "num": 6,
-              "nome": "Patrick Berg",
+              "num": 13,
+              "nome": "Keito Nakamura",
               "pos": "M"
             },
             {
-              "num": 8,
-              "nome": "Sander Berge",
+              "num": 15,
+              "nome": "Daichi Kamada",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Kaishu Sano",
               "pos": "M"
             },
             {
               "num": 10,
-              "nome": "Martin Ødegaard",
+              "nome": "Ritsu Doan",
               "pos": "M"
             },
             {
-              "num": 20,
-              "nome": "Antonio Nusa",
+              "num": 11,
+              "nome": "Daizen Maeda",
               "pos": "F"
             },
             {
-              "num": 9,
-              "nome": "Erling Haaland",
+              "num": 14,
+              "nome": "Junya Ito",
               "pos": "F"
             },
             {
-              "num": 7,
-              "nome": "Alexander Sørloth",
+              "num": 18,
+              "nome": "Ayase Ueda",
               "pos": "F"
             }
           ],
           "reservas": [
             {
               "num": 12,
-              "nome": "Sander Tangvik",
+              "nome": "Keisuke Osako",
               "pos": "G"
             },
             {
-              "num": 13,
-              "nome": "Egil Selvik",
+              "num": 23,
+              "nome": "Tomoki Hayakawa",
               "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Yukinari Sugawara",
+              "pos": "D"
             },
             {
               "num": 4,
-              "nome": "Leo Østigård",
+              "nome": "Ko Itakura",
               "pos": "D"
             },
             {
-              "num": 15,
-              "nome": "Fredrik André Bjørkan",
+              "num": 5,
+              "nome": "Yuto Nagatomo",
               "pos": "D"
             },
             {
-              "num": 24,
-              "nome": "Sondre Langås",
+              "num": 16,
+              "nome": "Tsuyoshi Watanabe",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Ayumu Seko",
               "pos": "D"
             },
             {
               "num": 25,
-              "nome": "Henrik Sælebakke Falchener",
+              "nome": "Junnosuke Suzuki",
               "pos": "D"
             },
             {
-              "num": 2,
-              "nome": "Morten Thorsby",
+              "num": 7,
+              "nome": "Ao Tanaka",
               "pos": "M"
             },
             {
-              "num": 14,
-              "nome": "Fredrik Aursnes",
+              "num": 17,
+              "nome": "Yuito Suzuki",
               "pos": "M"
             },
             {
-              "num": 18,
-              "nome": "Kristian Thorstvedt",
-              "pos": "M"
+              "num": 8,
+              "nome": "Takefusa Kubo",
+              "pos": "F"
+            },
+            {
+              "num": 6,
+              "nome": "Shuto Machino",
+              "pos": "F"
             },
             {
               "num": 19,
-              "nome": "Thelo Aasgaard",
-              "pos": "M"
-            },
-            {
-              "num": 21,
-              "nome": "Andreas Schjelderup",
+              "nome": "Koki Ogawa",
               "pos": "F"
-            },
-            {
-              "num": 22,
-              "nome": "Oscar Bobb",
-              "pos": "M"
             },
             {
               "num": 26,
-              "nome": "Julian Ryerson",
-              "pos": "D"
-            },
-            {
-              "num": 11,
-              "nome": "Jørgen Strand Larsen",
+              "nome": "Kento Shiogai",
               "pos": "F"
             },
             {
-              "num": 23,
-              "nome": "Jens Petter Hauge",
-              "pos": "M"
+              "num": 9,
+              "nome": "Keisuke Goto",
+              "pos": "F"
             }
           ]
         }
@@ -21854,6 +21527,333 @@
               "num": 21,
               "nome": "Alexander Bernhardsson",
               "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 78,
+      "num": 78,
+      "fase": "16avos",
+      "casa": "ivory-coast",
+      "fora": "norway",
+      "kickoff": "2026-06-30T17:00:00Z",
+      "real": {
+        "casa": 1,
+        "fora": 2,
+        "avancou": "norway",
+        "marcadores": [
+          "A. Nusa",
+          "A. Diallo",
+          "E. Haaland"
+        ]
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "norway",
+          "marcador": "Erling Haaland"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "norway",
+          "marcador": "Erling Haaland"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "norway",
+          "marcador": "Erling Haaland"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "norway",
+          "marcador": "Erling Haaland"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-1-4-1",
+          "fora": "4-3-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Yahia Fofana",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Ghislain Konan",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "Emmanuel Agbadou",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Odilon Kossounou",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Guéla Doué",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Ibrahim Sangaré",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Yan Diomande",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Christ Inao Oulaï",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Franck Kessié",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Nicolas Pépé",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Ange-Yoan Bonny",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 16,
+              "nome": "Mohamed Koné",
+              "pos": "G"
+            },
+            {
+              "num": 23,
+              "nome": "Alban Lafont",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Ousmane Diomande",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Wilfried Singo",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Christopher Operi",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Evan Ndicka",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Jean Michaël Seri",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Seko Fofana",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Parfait Guiagon",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Simon Adingra",
+              "pos": "F"
+            },
+            {
+              "num": 15,
+              "nome": "Amad Diallo",
+              "pos": "F"
+            },
+            {
+              "num": 24,
+              "nome": "Bazoumana Touré",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Elye Wahi",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Oumar Diakité",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Evann Guessand",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Ørjan Nyland",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "David Møller Wolfe",
+              "pos": "D"
+            },
+            {
+              "num": 17,
+              "nome": "Torbjørn Heggem",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Kristoffer Ajer",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Marcus Pedersen",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Patrick Berg",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Sander Berge",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Martin Ødegaard",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Antonio Nusa",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Erling Haaland",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Alexander Sørloth",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Sander Tangvik",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Egil Selvik",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "Leo Østigård",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Fredrik André Bjørkan",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Sondre Langås",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Henrik Sælebakke Falchener",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Morten Thorsby",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Fredrik Aursnes",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Kristian Thorstvedt",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Thelo Aasgaard",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Andreas Schjelderup",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Oscar Bobb",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Julian Ryerson",
+              "pos": "D"
+            },
+            {
+              "num": 11,
+              "nome": "Jørgen Strand Larsen",
+              "pos": "F"
+            },
+            {
+              "num": 23,
+              "nome": "Jens Petter Hauge",
+              "pos": "M"
             }
           ]
         }
@@ -22513,325 +22513,6 @@
       }
     },
     {
-      "id": 82,
-      "num": 82,
-      "fase": "16avos",
-      "casa": "belgium",
-      "fora": "senegal",
-      "kickoff": "2026-07-01T20:00:00Z",
-      "real": {
-        "casa": 3,
-        "fora": 2,
-        "avancou": "belgium",
-        "marcadores": [
-          "H. Diarra",
-          "I. Sarr",
-          "R. Lukaku",
-          "Y. Tielemans",
-          "Y. Tielemans"
-        ]
-      },
-      "palpites": {
-        "claude": {
-          "casa": 2,
-          "fora": 1,
-          "avanca": "belgium",
-          "marcador": "Romelu Lukaku"
-        },
-        "gpt": {
-          "casa": 2,
-          "fora": 0,
-          "avanca": "belgium",
-          "marcador": "Romelu Lukaku"
-        },
-        "gemini": {
-          "casa": 2,
-          "fora": 1,
-          "avanca": "belgium",
-          "marcador": "Kevin De Bruyne"
-        },
-        "grok": {
-          "casa": 2,
-          "fora": 1,
-          "avanca": "belgium",
-          "marcador": "Kevin De Bruyne"
-        }
-      },
-      "escalacoes": {
-        "fonte": "highlightly",
-        "formacao": {
-          "casa": "4-2-3-1",
-          "fora": "4-3-3"
-        },
-        "tecnico": {
-          "casa": null,
-          "fora": null
-        },
-        "casa": {
-          "titulares": [
-            {
-              "num": 1,
-              "nome": "Thibaut Courtois",
-              "pos": "G"
-            },
-            {
-              "num": 5,
-              "nome": "Maxim De Cuyper",
-              "pos": "D"
-            },
-            {
-              "num": 3,
-              "nome": "Arthur Theate",
-              "pos": "D"
-            },
-            {
-              "num": 4,
-              "nome": "Brandon Mechele",
-              "pos": "D"
-            },
-            {
-              "num": 21,
-              "nome": "Timothy Castagne",
-              "pos": "D"
-            },
-            {
-              "num": 20,
-              "nome": "Hans Vanaken",
-              "pos": "M"
-            },
-            {
-              "num": 8,
-              "nome": "Youri Tielemans",
-              "pos": "M"
-            },
-            {
-              "num": 11,
-              "nome": "Jérémy Doku",
-              "pos": "M"
-            },
-            {
-              "num": 7,
-              "nome": "Kevin De Bruyne",
-              "pos": "M"
-            },
-            {
-              "num": 10,
-              "nome": "Leandro Trossard",
-              "pos": "M"
-            },
-            {
-              "num": 17,
-              "nome": "Charles De Ketelaere",
-              "pos": "F"
-            }
-          ],
-          "reservas": [
-            {
-              "num": 13,
-              "nome": "Mike Penders",
-              "pos": "G"
-            },
-            {
-              "num": 12,
-              "nome": "Senne Lammens",
-              "pos": "G"
-            },
-            {
-              "num": 15,
-              "nome": "Thomas Meunier",
-              "pos": "D"
-            },
-            {
-              "num": 16,
-              "nome": "Koni De Winter",
-              "pos": "D"
-            },
-            {
-              "num": 18,
-              "nome": "Joaquin Seys",
-              "pos": "D"
-            },
-            {
-              "num": 25,
-              "nome": "Nathan Ngoy",
-              "pos": "D"
-            },
-            {
-              "num": 6,
-              "nome": "Axel Witsel",
-              "pos": "M"
-            },
-            {
-              "num": 19,
-              "nome": "Diego Moreira",
-              "pos": "F"
-            },
-            {
-              "num": 22,
-              "nome": "Alexis Saelemaekers",
-              "pos": "F"
-            },
-            {
-              "num": 23,
-              "nome": "Nicolas Raskin",
-              "pos": "M"
-            },
-            {
-              "num": 24,
-              "nome": "Amadou Onana",
-              "pos": "M"
-            },
-            {
-              "num": 14,
-              "nome": "Dodi Lukebakio",
-              "pos": "F"
-            },
-            {
-              "num": 9,
-              "nome": "Romelu Lukaku",
-              "pos": "F"
-            },
-            {
-              "num": 26,
-              "nome": "Matías Fernández-Pardo",
-              "pos": "F"
-            }
-          ]
-        },
-        "fora": {
-          "titulares": [
-            {
-              "num": 23,
-              "nome": "Mory Diaw",
-              "pos": "G"
-            },
-            {
-              "num": 14,
-              "nome": "Ismail Jakobs",
-              "pos": "D"
-            },
-            {
-              "num": 19,
-              "nome": "Moussa Niakhaté",
-              "pos": "D"
-            },
-            {
-              "num": 6,
-              "nome": "Pathé Ismaël Ciss",
-              "pos": "D"
-            },
-            {
-              "num": 15,
-              "nome": "Krépin Diatta",
-              "pos": "D"
-            },
-            {
-              "num": 26,
-              "nome": "Pape Gueye",
-              "pos": "M"
-            },
-            {
-              "num": 5,
-              "nome": "Idrissa Gana Gueye",
-              "pos": "M"
-            },
-            {
-              "num": 21,
-              "nome": "Habib Diarra",
-              "pos": "M"
-            },
-            {
-              "num": 10,
-              "nome": "Sadio Mané",
-              "pos": "F"
-            },
-            {
-              "num": 18,
-              "nome": "Ismaïla Sarr",
-              "pos": "F"
-            },
-            {
-              "num": 13,
-              "nome": "Iliman Ndiaye",
-              "pos": "F"
-            }
-          ],
-          "reservas": [
-            {
-              "num": 1,
-              "nome": "Yehvann Diouf",
-              "pos": "G"
-            },
-            {
-              "num": 3,
-              "nome": "Kalidou Koulibaly",
-              "pos": "D"
-            },
-            {
-              "num": 4,
-              "nome": "Abdoulaye Seck",
-              "pos": "D"
-            },
-            {
-              "num": 24,
-              "nome": "Antoine Mendy",
-              "pos": "D"
-            },
-            {
-              "num": 25,
-              "nome": "El Hadji Malick Diouf",
-              "pos": "D"
-            },
-            {
-              "num": 2,
-              "nome": "Mamadou Sarr",
-              "pos": "D"
-            },
-            {
-              "num": 17,
-              "nome": "Pape Matar Sarr",
-              "pos": "M"
-            },
-            {
-              "num": 8,
-              "nome": "Lamine Camara",
-              "pos": "M"
-            },
-            {
-              "num": 22,
-              "nome": "Bara Sapoko Ndiaye",
-              "pos": "M"
-            },
-            {
-              "num": 7,
-              "nome": "Assane Diao",
-              "pos": "F"
-            },
-            {
-              "num": 9,
-              "nome": "Ahmadou Bamba Dieng",
-              "pos": "F"
-            },
-            {
-              "num": 11,
-              "nome": "Nicolas Jackson",
-              "pos": "F"
-            },
-            {
-              "num": 12,
-              "nome": "Cherif Ndiaye",
-              "pos": "F"
-            },
-            {
-              "num": 20,
-              "nome": "Ibrahim Mbaye",
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
-    {
       "id": 81,
       "num": 81,
       "fase": "16avos",
@@ -23148,53 +22829,55 @@
       }
     },
     {
-      "id": 84,
-      "num": 84,
+      "id": 82,
+      "num": 82,
       "fase": "16avos",
-      "casa": "spain",
-      "fora": "austria",
-      "kickoff": "2026-07-02T19:00:00Z",
+      "casa": "belgium",
+      "fora": "senegal",
+      "kickoff": "2026-07-01T20:00:00Z",
       "real": {
         "casa": 3,
-        "fora": 0,
-        "avancou": "spain",
+        "fora": 2,
+        "avancou": "belgium",
         "marcadores": [
-          "M. Oyarzabal",
-          "P. Porro",
-          "M. Oyarzabal"
+          "H. Diarra",
+          "I. Sarr",
+          "R. Lukaku",
+          "Y. Tielemans",
+          "Y. Tielemans"
         ]
       },
       "palpites": {
         "claude": {
-          "casa": 3,
+          "casa": 2,
           "fora": 1,
-          "avanca": "spain",
-          "marcador": "Lamine Yamal"
+          "avanca": "belgium",
+          "marcador": "Romelu Lukaku"
         },
         "gpt": {
           "casa": 2,
           "fora": 0,
-          "avanca": "spain",
-          "marcador": "Lamine Yamal"
+          "avanca": "belgium",
+          "marcador": "Romelu Lukaku"
         },
         "gemini": {
           "casa": 2,
           "fora": 1,
-          "avanca": "spain",
-          "marcador": "Lamine Yamal"
+          "avanca": "belgium",
+          "marcador": "Kevin De Bruyne"
         },
         "grok": {
           "casa": 2,
-          "fora": 0,
-          "avanca": "spain",
-          "marcador": "Lamine Yamal"
+          "fora": 1,
+          "avanca": "belgium",
+          "marcador": "Kevin De Bruyne"
         }
       },
       "escalacoes": {
         "fonte": "highlightly",
         "formacao": {
-          "casa": "4-1-2-3",
-          "fora": "4-2-3-1"
+          "casa": "4-2-3-1",
+          "fora": "4-3-3"
         },
         "tecnico": {
           "casa": null,
@@ -23203,271 +22886,261 @@
         "casa": {
           "titulares": [
             {
-              "num": 23,
-              "nome": "Unai Simón",
+              "num": 1,
+              "nome": "Thibaut Courtois",
               "pos": "G"
             },
             {
-              "num": 24,
-              "nome": "Marc Cucurella",
+              "num": 5,
+              "nome": "Maxim De Cuyper",
               "pos": "D"
             },
             {
-              "num": 14,
-              "nome": "Aymeric Laporte",
+              "num": 3,
+              "nome": "Arthur Theate",
               "pos": "D"
             },
             {
-              "num": 22,
-              "nome": "Pau Cubarsí Paredes",
+              "num": 4,
+              "nome": "Brandon Mechele",
               "pos": "D"
             },
             {
-              "num": 12,
-              "nome": "Pedro Porro",
+              "num": 21,
+              "nome": "Timothy Castagne",
               "pos": "D"
-            },
-            {
-              "num": 16,
-              "nome": "Rodri",
-              "pos": "M"
             },
             {
               "num": 20,
-              "nome": "Pedri",
+              "nome": "Hans Vanaken",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Youri Tielemans",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Jérémy Doku",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Kevin De Bruyne",
               "pos": "M"
             },
             {
               "num": 10,
-              "nome": "Dani Olmo",
+              "nome": "Leandro Trossard",
               "pos": "M"
             },
             {
-              "num": 15,
-              "nome": "Álex Baena",
-              "pos": "M"
-            },
-            {
-              "num": 21,
-              "nome": "Mikel Oyarzabal",
-              "pos": "F"
-            },
-            {
-              "num": 19,
-              "nome": "Lamine Yamal",
+              "num": 17,
+              "nome": "Charles De Ketelaere",
               "pos": "F"
             }
           ],
           "reservas": [
             {
-              "num": 1,
-              "nome": "David Raya",
+              "num": 13,
+              "nome": "Mike Penders",
               "pos": "G"
             },
             {
-              "num": 5,
-              "nome": "Marcos Llorente",
+              "num": 12,
+              "nome": "Senne Lammens",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Thomas Meunier",
               "pos": "D"
             },
             {
-              "num": 3,
-              "nome": "Álex Grimaldo",
-              "pos": "D"
-            },
-            {
-              "num": 6,
-              "nome": "Mikel Merino",
-              "pos": "M"
-            },
-            {
-              "num": 25,
-              "nome": "Víctor Muñoz",
-              "pos": "F"
-            },
-            {
-              "num": 8,
-              "nome": "Fabián Ruiz",
-              "pos": "M"
-            },
-            {
-              "num": 26,
-              "nome": "Borja Iglesias",
-              "pos": "F"
-            },
-            {
-              "num": 7,
-              "nome": "Ferran Torres",
-              "pos": "F"
-            },
-            {
-              "num": 4,
-              "nome": "Eric García",
+              "num": 16,
+              "nome": "Koni De Winter",
               "pos": "D"
             },
             {
               "num": 18,
-              "nome": "Martín Zubimendi",
+              "nome": "Joaquin Seys",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Nathan Ngoy",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Axel Witsel",
               "pos": "M"
             },
             {
-              "num": 11,
-              "nome": "Yeremy Pino",
+              "num": 19,
+              "nome": "Diego Moreira",
               "pos": "F"
             },
             {
-              "num": 13,
-              "nome": "Joan García",
-              "pos": "G"
+              "num": 22,
+              "nome": "Alexis Saelemaekers",
+              "pos": "F"
             },
             {
-              "num": 17,
-              "nome": "Nico Williams",
+              "num": 23,
+              "nome": "Nicolas Raskin",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Amadou Onana",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Dodi Lukebakio",
               "pos": "F"
             },
             {
               "num": 9,
-              "nome": "Gavi",
-              "pos": "M"
+              "nome": "Romelu Lukaku",
+              "pos": "F"
             },
             {
-              "num": 2,
-              "nome": "Marc Pubill",
-              "pos": "D"
+              "num": 26,
+              "nome": "Matías Fernández-Pardo",
+              "pos": "F"
             }
           ]
         },
         "fora": {
           "titulares": [
             {
-              "num": 1,
-              "nome": "A. Schlager",
+              "num": 23,
+              "nome": "Mory Diaw",
               "pos": "G"
             },
             {
-              "num": 20,
-              "nome": "K. Laimer",
-              "pos": "M"
-            },
-            {
-              "num": 8,
-              "nome": "D. Alaba",
+              "num": 14,
+              "nome": "Ismail Jakobs",
               "pos": "D"
             },
             {
-              "num": 3,
-              "nome": "K. Danso",
+              "num": 19,
+              "nome": "Moussa Niakhaté",
               "pos": "D"
-            },
-            {
-              "num": 5,
-              "nome": "S. Posch",
-              "pos": "D"
-            },
-            {
-              "num": 4,
-              "nome": "X. Schlager",
-              "pos": "M"
             },
             {
               "num": 6,
-              "nome": "N. Seiwald",
+              "nome": "Pathé Ismaël Ciss",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Krépin Diatta",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Pape Gueye",
               "pos": "M"
             },
             {
-              "num": 9,
-              "nome": "M. Sabitzer",
+              "num": 5,
+              "nome": "Idrissa Gana Gueye",
               "pos": "M"
             },
             {
-              "num": 24,
-              "nome": "P. Wanner",
+              "num": 21,
+              "nome": "Habib Diarra",
               "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Sadio Mané",
+              "pos": "F"
             },
             {
               "num": 18,
-              "nome": "R. Schmid",
-              "pos": "M"
+              "nome": "Ismaïla Sarr",
+              "pos": "F"
             },
             {
-              "num": 11,
-              "nome": "M. Gregoritsch",
+              "num": 13,
+              "nome": "Iliman Ndiaye",
               "pos": "F"
             }
           ],
           "reservas": [
             {
-              "num": 17,
-              "nome": "C. Chukwuemeka",
-              "pos": "M"
-            },
-            {
-              "num": 2,
-              "nome": "D. Affengruber",
-              "pos": "D"
-            },
-            {
-              "num": 21,
-              "nome": "P. Wimmer",
-              "pos": "F"
-            },
-            {
-              "num": 22,
-              "nome": "A. Prass",
-              "pos": "D"
-            },
-            {
-              "num": 12,
-              "nome": "F. Wiegele",
+              "num": 1,
+              "nome": "Yehvann Diouf",
               "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Kalidou Koulibaly",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Abdoulaye Seck",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Antoine Mendy",
+              "pos": "D"
             },
             {
               "num": 25,
-              "nome": "M. Svoboda",
+              "nome": "El Hadji Malick Diouf",
               "pos": "D"
             },
             {
-              "num": 14,
-              "nome": "S. Kalajdzic",
-              "pos": "F"
+              "num": 2,
+              "nome": "Mamadou Sarr",
+              "pos": "D"
             },
             {
-              "num": 19,
-              "nome": "D. Ljubičić",
+              "num": 17,
+              "nome": "Pape Matar Sarr",
               "pos": "M"
             },
             {
-              "num": 23,
-              "nome": "M. Friedl",
-              "pos": "D"
-            },
-            {
-              "num": 13,
-              "nome": "P. Pentz",
-              "pos": "G"
-            },
-            {
-              "num": 15,
-              "nome": "P. Lienhart",
-              "pos": "D"
-            },
-            {
-              "num": 10,
-              "nome": "F. Grillitsch",
+              "num": 8,
+              "nome": "Lamine Camara",
               "pos": "M"
             },
             {
-              "num": 26,
-              "nome": "A. Schöpf",
+              "num": 22,
+              "nome": "Bara Sapoko Ndiaye",
               "pos": "M"
-            },
-            {
-              "num": 16,
-              "nome": "P. Mwene",
-              "pos": "D"
             },
             {
               "num": 7,
-              "nome": "M. Arnautović",
+              "nome": "Assane Diao",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Ahmadou Bamba Dieng",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Nicolas Jackson",
+              "pos": "F"
+            },
+            {
+              "num": 12,
+              "nome": "Cherif Ndiaye",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Ibrahim Mbaye",
               "pos": "F"
             }
           ]
@@ -23802,6 +23475,333 @@
       }
     },
     {
+      "id": 84,
+      "num": 84,
+      "fase": "16avos",
+      "casa": "spain",
+      "fora": "austria",
+      "kickoff": "2026-07-02T19:00:00Z",
+      "real": {
+        "casa": 3,
+        "fora": 0,
+        "avancou": "spain",
+        "marcadores": [
+          "M. Oyarzabal",
+          "P. Porro",
+          "M. Oyarzabal"
+        ]
+      },
+      "palpites": {
+        "claude": {
+          "casa": 3,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-1-2-3",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Unai Simón",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Marc Cucurella",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Aymeric Laporte",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Pau Cubarsí Paredes",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Pedro Porro",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Rodri",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Pedri",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Dani Olmo",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Álex Baena",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Mikel Oyarzabal",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Lamine Yamal",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "David Raya",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Marcos Llorente",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Álex Grimaldo",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Mikel Merino",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Víctor Muñoz",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Fabián Ruiz",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "Borja Iglesias",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Ferran Torres",
+              "pos": "F"
+            },
+            {
+              "num": 4,
+              "nome": "Eric García",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Martín Zubimendi",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Yeremy Pino",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Joan García",
+              "pos": "G"
+            },
+            {
+              "num": 17,
+              "nome": "Nico Williams",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Gavi",
+              "pos": "M"
+            },
+            {
+              "num": 2,
+              "nome": "Marc Pubill",
+              "pos": "D"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "A. Schlager",
+              "pos": "G"
+            },
+            {
+              "num": 20,
+              "nome": "K. Laimer",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "D. Alaba",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "K. Danso",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "S. Posch",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "X. Schlager",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "N. Seiwald",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "M. Sabitzer",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "P. Wanner",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "R. Schmid",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "M. Gregoritsch",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 17,
+              "nome": "C. Chukwuemeka",
+              "pos": "M"
+            },
+            {
+              "num": 2,
+              "nome": "D. Affengruber",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "P. Wimmer",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "A. Prass",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "F. Wiegele",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "M. Svoboda",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "S. Kalajdzic",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "D. Ljubičić",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "M. Friedl",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "P. Pentz",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "P. Lienhart",
+              "pos": "D"
+            },
+            {
+              "num": 10,
+              "nome": "F. Grillitsch",
+              "pos": "M"
+            },
+            {
+              "num": 26,
+              "nome": "A. Schöpf",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "P. Mwene",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "M. Arnautović",
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": 85,
       "num": 85,
       "fase": "16avos",
@@ -24106,313 +24106,6 @@
             {
               "num": 25,
               "nome": "Farès Ghedjemis",
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": 88,
-      "num": 88,
-      "fase": "16avos",
-      "casa": "australia",
-      "fora": "egypt",
-      "kickoff": "2026-07-03T18:00:00Z",
-      "real": {
-        "casa": 1,
-        "fora": 1,
-        "avancou": "egypt",
-        "marcadores": [
-          "E. Ashour"
-        ],
-        "golsContra": [
-          "M. Hany"
-        ],
-        "penaltis": {
-          "casa": 2,
-          "fora": 4
-        }
-      },
-      "palpites": {
-        "claude": {
-          "casa": 1,
-          "fora": 2,
-          "avanca": null,
-          "marcador": null
-        },
-        "gpt": {
-          "casa": 1,
-          "fora": 1,
-          "avanca": "australia",
-          "marcador": null
-        },
-        "gemini": {
-          "casa": 1,
-          "fora": 1,
-          "avanca": "australia",
-          "marcador": null
-        },
-        "grok": {
-          "casa": 1,
-          "fora": 1,
-          "avanca": "australia",
-          "marcador": null
-        }
-      },
-      "escalacoes": {
-        "fonte": "highlightly",
-        "formacao": {
-          "casa": "3-4-2-1",
-          "fora": "4-2-3-1"
-        },
-        "tecnico": {
-          "casa": null,
-          "fora": null
-        },
-        "casa": {
-          "titulares": [
-            {
-              "num": 18,
-              "nome": "Patrick Beach",
-              "pos": "G"
-            },
-            {
-              "num": 25,
-              "nome": "Lucas Herrington",
-              "pos": "D"
-            },
-            {
-              "num": 19,
-              "nome": "Harry Souttar",
-              "pos": "D"
-            },
-            {
-              "num": 3,
-              "nome": "Alessandro Circati",
-              "pos": "D"
-            },
-            {
-              "num": 16,
-              "nome": "Aziz Behich",
-              "pos": "M"
-            },
-            {
-              "num": 22,
-              "nome": "Jackson Irvine",
-              "pos": "M"
-            },
-            {
-              "num": 13,
-              "nome": "Aiden O'Neill",
-              "pos": "M"
-            },
-            {
-              "num": 5,
-              "nome": "Jordan Bos",
-              "pos": "M"
-            },
-            {
-              "num": 8,
-              "nome": "Connor Metcalfe",
-              "pos": "F"
-            },
-            {
-              "num": 20,
-              "nome": "Cristian Volpato",
-              "pos": "F"
-            },
-            {
-              "num": 17,
-              "nome": "Nestory Irankunda",
-              "pos": "F"
-            }
-          ],
-          "reservas": [
-            {
-              "num": 1,
-              "nome": "Mathew Ryan",
-              "pos": "G"
-            },
-            {
-              "num": 12,
-              "nome": "Paul Izzo",
-              "pos": "G"
-            },
-            {
-              "num": 2,
-              "nome": "Miloš Degenek",
-              "pos": "D"
-            },
-            {
-              "num": 6,
-              "nome": "Jason Geria",
-              "pos": "D"
-            },
-            {
-              "num": 21,
-              "nome": "Cameron Burgess",
-              "pos": "D"
-            },
-            {
-              "num": 15,
-              "nome": "Kai Trewin",
-              "pos": "D"
-            },
-            {
-              "num": 14,
-              "nome": "Cameron Devlin",
-              "pos": "M"
-            },
-            {
-              "num": 24,
-              "nome": "Paul Okon-Engstler",
-              "pos": "M"
-            },
-            {
-              "num": 10,
-              "nome": "Ajdin Hrustić",
-              "pos": "M"
-            },
-            {
-              "num": 11,
-              "nome": "Awer Mabil",
-              "pos": "M"
-            },
-            {
-              "num": 23,
-              "nome": "Nishan Velupillay",
-              "pos": "F"
-            },
-            {
-              "num": 9,
-              "nome": "Mohamed Touré",
-              "pos": "F"
-            },
-            {
-              "num": 26,
-              "nome": "Tete Yengi",
-              "pos": "F"
-            }
-          ]
-        },
-        "fora": {
-          "titulares": [
-            {
-              "num": 23,
-              "nome": "Mostafa Shobeir",
-              "pos": "G"
-            },
-            {
-              "num": 15,
-              "nome": "Karim Hafez",
-              "pos": "D"
-            },
-            {
-              "num": 2,
-              "nome": "Yasser Ibrahim",
-              "pos": "D"
-            },
-            {
-              "num": 5,
-              "nome": "Rami Rabia",
-              "pos": "D"
-            },
-            {
-              "num": 3,
-              "nome": "Mohamed Hany",
-              "pos": "D"
-            },
-            {
-              "num": 19,
-              "nome": "Marwan Attia",
-              "pos": "M"
-            },
-            {
-              "num": 14,
-              "nome": "Hamdy Fathy",
-              "pos": "M"
-            },
-            {
-              "num": 11,
-              "nome": "Mostafa Ziko",
-              "pos": "M"
-            },
-            {
-              "num": 10,
-              "nome": "Mohamed Salah",
-              "pos": "M"
-            },
-            {
-              "num": 8,
-              "nome": "Emam Ashour",
-              "pos": "M"
-            },
-            {
-              "num": 22,
-              "nome": "Omar Marmoush",
-              "pos": "F"
-            }
-          ],
-          "reservas": [
-            {
-              "num": 1,
-              "nome": "Mohamed El-Shenawy",
-              "pos": "G"
-            },
-            {
-              "num": 26,
-              "nome": "Mohamed Alaa",
-              "pos": "G"
-            },
-            {
-              "num": 16,
-              "nome": "Mahdi Soliman",
-              "pos": "G"
-            },
-            {
-              "num": 4,
-              "nome": "Hossam Abdelmaguid",
-              "pos": "D"
-            },
-            {
-              "num": 24,
-              "nome": "Tarek Alaa",
-              "pos": "D"
-            },
-            {
-              "num": 18,
-              "nome": "Nabil Donga",
-              "pos": "M"
-            },
-            {
-              "num": 7,
-              "nome": "Mahmoud Trézéguet",
-              "pos": "F"
-            },
-            {
-              "num": 21,
-              "nome": "Mahmoud Saber",
-              "pos": "M"
-            },
-            {
-              "num": 12,
-              "nome": "Haissem Hassan",
-              "pos": "F"
-            },
-            {
-              "num": 20,
-              "nome": "Ibrahim Adel",
-              "pos": "F"
-            },
-            {
-              "num": 25,
-              "nome": "Zizo",
-              "pos": "F"
-            },
-            {
-              "num": 9,
-              "nome": "Hamza Abdelkarim",
               "pos": "F"
             }
           ]
@@ -25072,6 +24765,625 @@
               "pos": "F"
             }
           ]
+        }
+      }
+    },
+    {
+      "id": 88,
+      "num": 88,
+      "fase": "16avos",
+      "casa": "australia",
+      "fora": "egypt",
+      "kickoff": "2026-07-03T18:00:00Z",
+      "real": {
+        "casa": 1,
+        "fora": 1,
+        "avancou": "egypt",
+        "marcadores": [
+          "E. Ashour"
+        ],
+        "golsContra": [
+          "M. Hany"
+        ],
+        "penaltis": {
+          "casa": 2,
+          "fora": 4
+        }
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": null,
+          "marcador": null
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "australia",
+          "marcador": null
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "australia",
+          "marcador": null
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "australia",
+          "marcador": null
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "3-4-2-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 18,
+              "nome": "Patrick Beach",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Lucas Herrington",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Harry Souttar",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Alessandro Circati",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Aziz Behich",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Jackson Irvine",
+              "pos": "M"
+            },
+            {
+              "num": 13,
+              "nome": "Aiden O'Neill",
+              "pos": "M"
+            },
+            {
+              "num": 5,
+              "nome": "Jordan Bos",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Connor Metcalfe",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Cristian Volpato",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Nestory Irankunda",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Mathew Ryan",
+              "pos": "G"
+            },
+            {
+              "num": 12,
+              "nome": "Paul Izzo",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Miloš Degenek",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Jason Geria",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Cameron Burgess",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Kai Trewin",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Cameron Devlin",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Paul Okon-Engstler",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Ajdin Hrustić",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Awer Mabil",
+              "pos": "M"
+            },
+            {
+              "num": 23,
+              "nome": "Nishan Velupillay",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Mohamed Touré",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Tete Yengi",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Mostafa Shobeir",
+              "pos": "G"
+            },
+            {
+              "num": 15,
+              "nome": "Karim Hafez",
+              "pos": "D"
+            },
+            {
+              "num": 2,
+              "nome": "Yasser Ibrahim",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Rami Rabia",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Mohamed Hany",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Marwan Attia",
+              "pos": "M"
+            },
+            {
+              "num": 14,
+              "nome": "Hamdy Fathy",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Mostafa Ziko",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Mohamed Salah",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Emam Ashour",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Omar Marmoush",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "Mohamed El-Shenawy",
+              "pos": "G"
+            },
+            {
+              "num": 26,
+              "nome": "Mohamed Alaa",
+              "pos": "G"
+            },
+            {
+              "num": 16,
+              "nome": "Mahdi Soliman",
+              "pos": "G"
+            },
+            {
+              "num": 4,
+              "nome": "Hossam Abdelmaguid",
+              "pos": "D"
+            },
+            {
+              "num": 24,
+              "nome": "Tarek Alaa",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Nabil Donga",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Mahmoud Trézéguet",
+              "pos": "F"
+            },
+            {
+              "num": 21,
+              "nome": "Mahmoud Saber",
+              "pos": "M"
+            },
+            {
+              "num": 12,
+              "nome": "Haissem Hassan",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Ibrahim Adel",
+              "pos": "F"
+            },
+            {
+              "num": 25,
+              "nome": "Zizo",
+              "pos": "F"
+            },
+            {
+              "num": 9,
+              "nome": "Hamza Abdelkarim",
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 89,
+      "num": 89,
+      "fase": "oitavas",
+      "casa": "paraguay",
+      "fora": "france",
+      "kickoff": "2026-07-04T21:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 3,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gpt": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gemini": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "grok": {
+          "casa": 0,
+          "fora": 2,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "num": 90,
+      "fase": "oitavas",
+      "casa": "canada",
+      "fora": "morocco",
+      "kickoff": "2026-07-04T17:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "morocco",
+          "marcador": "Ismael Saibari"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "morocco",
+          "marcador": "Brahim Díaz"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "morocco",
+          "marcador": "Youssef En-Nesyri"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "morocco",
+          "marcador": "Ismael Saibari"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "num": 91,
+      "fase": "oitavas",
+      "casa": "brazil",
+      "fora": "norway",
+      "kickoff": "2026-07-05T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "brazil",
+          "marcador": "Erling Haaland"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "brazil",
+          "marcador": "Erling Haaland"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "brazil",
+          "marcador": "Vinícius Júnior"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "brazil",
+          "marcador": "Vinícius Júnior"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "num": 92,
+      "fase": "oitavas",
+      "casa": "mexico",
+      "fora": "england",
+      "kickoff": "2026-07-06T00:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "england",
+          "marcador": "Harry Kane"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "mexico",
+          "marcador": "Harry Kane"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "england",
+          "marcador": "Harry Kane"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "england",
+          "marcador": "Harry Kane"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "num": 93,
+      "fase": "oitavas",
+      "casa": "portugal",
+      "fora": "spain",
+      "kickoff": "2026-07-06T19:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "spain",
+          "marcador": "Cristiano Ronaldo"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "num": 94,
+      "fase": "oitavas",
+      "casa": "usa",
+      "fora": "belgium",
+      "kickoff": "2026-07-07T00:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "belgium",
+          "marcador": "Romelu Lukaku"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "belgium",
+          "marcador": "Romelu Lukaku"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "usa",
+          "marcador": "Christian Pulisic"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "belgium",
+          "marcador": "Kevin De Bruyne"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "num": 95,
+      "fase": "oitavas",
+      "casa": "argentina",
+      "fora": "egypt",
+      "kickoff": "2026-07-07T16:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "gemini": {
+          "casa": 3,
+          "fora": 0,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "grok": {
+          "casa": 3,
+          "fora": 1,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "num": 96,
+      "fase": "oitavas",
+      "casa": "switzerland",
+      "fora": "colombia",
+      "kickoff": "2026-07-07T20:00:00Z",
+      "real": {
+        "casa": null,
+        "fora": null,
+        "avancou": null
+      },
+      "palpites": {
+        "claude": {
+          "casa": 0,
+          "fora": 1,
+          "avanca": "colombia",
+          "marcador": "Jhon Arias"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "colombia",
+          "marcador": "Luis Díaz"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "colombia",
+          "marcador": "Luis Díaz"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "colombia",
+          "marcador": "Dušan Vlahović"
         }
       }
     }
