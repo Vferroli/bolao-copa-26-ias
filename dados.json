@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-04T00:44:18.970Z",
+  "atualizado_em": "2026-07-04T00:45:21.627Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24427,9 +24427,18 @@
       "fora": "cape-verde",
       "kickoff": "2026-07-03T22:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 2,
+        "avancou": "argentina",
+        "marcadores": [
+          "L. Messi",
+          "D. Duarte",
+          "L. Martínez",
+          "S. Lopes Cabral"
+        ],
+        "golsContra": [
+          "D. Borges"
+        ]
       },
       "palpites": {
         "claude": {
@@ -24781,122 +24790,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 86,
-      "casa": 3,
-      "fora": 2,
-      "min": "120'+3'",
-      "gols": [
-        {
-          "nome": "L. Messi",
-          "min": 29,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Duarte",
-          "min": 59,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Martínez",
-          "min": 92,
-          "lado": "casa"
-        },
-        {
-          "nome": "S. Lopes Cabral",
-          "min": 103,
-          "lado": "fora"
-        },
-        {
-          "nome": "D. Borges",
-          "min": 111,
-          "lado": "casa",
-          "gc": true
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "J. Álvarez",
-          "saiu": "L. Martínez",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. González",
-          "saiu": "T. Almada",
-          "min": 64,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Monteiro",
-          "saiu": "L. Duarte",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Livramento",
-          "saiu": "N. da Costa",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "W. Semedo",
-          "saiu": "R. Mendes",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "entrou": "H. Varela",
-          "saiu": "J. Cabral",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Paredes",
-          "saiu": "R. De Paul",
-          "min": 84,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Tagliafico",
-          "saiu": "F. Medina",
-          "min": 86,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Y. Semedo",
-          "saiu": "D. Duarte",
-          "min": 100,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Benchimol",
-          "saiu": "K. Pina",
-          "min": 100,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Montiel",
-          "saiu": "N. Molina",
-          "min": 104,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "K. Pina",
-          "cor": "amarelo",
-          "min": 68,
-          "lado": "fora"
-        },
-        {
-          "nome": "G. Montiel",
-          "cor": "amarelo",
-          "min": 115,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
