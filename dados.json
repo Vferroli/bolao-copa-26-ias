@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T03:02:52.182Z",
+  "atualizado_em": "2026-07-04T03:03:35.143Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25078,7 +25078,7 @@
       "id": 87,
       "casa": 1,
       "fora": 0,
-      "min": "69'",
+      "min": "70'",
       "gols": [
         {
           "nome": "J. Arias",
