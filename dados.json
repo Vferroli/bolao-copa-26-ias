@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T22:45:05.032Z",
+  "atualizado_em": "2026-07-04T22:45:37.253Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26004,6 +26004,12 @@
           "nome": "B. Barcola",
           "cor": "amarelo",
           "min": 19,
+          "lado": "fora"
+        },
+        {
+          "nome": "M. Koné",
+          "cor": "amarelo",
+          "min": 81,
           "lado": "fora"
         }
       ]
