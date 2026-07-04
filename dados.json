@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T18:26:35.256Z",
+  "atualizado_em": "2026-07-04T18:27:06.999Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25671,7 +25671,7 @@
       "id": 90,
       "casa": 0,
       "fora": 1,
-      "min": "62'",
+      "min": "63'",
       "gols": [
         {
           "nome": "A. Ounahi",
@@ -25685,6 +25685,24 @@
           "saiu": "I. Saibari",
           "min": 22,
           "lado": "fora"
+        },
+        {
+          "entrou": "C. Talbi",
+          "saiu": "B. El Khannouss",
+          "min": 63,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Amrabat",
+          "saiu": "A. Bouaddi",
+          "min": 63,
+          "lado": "fora"
+        },
+        {
+          "entrou": "C. Larin",
+          "saiu": "T. Oluwaseyi",
+          "min": 63,
+          "lado": "casa"
         }
       ],
       "cartoes": [
