@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T19:03:02.955Z",
+  "atualizado_em": "2026-07-04T19:04:38.714Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25122,9 +25122,14 @@
       "fora": "morocco",
       "kickoff": "2026-07-04T17:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 3,
+        "avancou": "morocco",
+        "marcadores": [
+          "A. Ounahi",
+          "A. Ounahi",
+          "S. Rahimi"
+        ]
       },
       "palpites": {
         "claude": {
@@ -25666,141 +25671,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 90,
-      "casa": 0,
-      "fora": 3,
-      "min": "90'+9'",
-      "gols": [
-        {
-          "nome": "A. Ounahi",
-          "min": 50,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Ounahi",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "nome": "S. Rahimi",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "S. Rahimi",
-          "saiu": "I. Saibari",
-          "min": 22,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Talbi",
-          "saiu": "B. El Khannouss",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Amrabat",
-          "saiu": "A. Bouaddi",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Larin",
-          "saiu": "T. Oluwaseyi",
-          "min": 63,
-          "lado": "casa"
-        },
-        {
-          "entrou": "P. David",
-          "saiu": "A. Ahmed",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Shaffelburg",
-          "saiu": "R. Laryea",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Saadane",
-          "saiu": "I. Diop",
-          "min": 87,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. El Mourabet",
-          "saiu": "A. Ounahi",
-          "min": 87,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Osorio",
-          "saiu": "N. Sigur",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Nelson",
-          "saiu": "T. Buchanan",
-          "min": 87,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "R. Halhal",
-          "cor": "amarelo",
-          "min": 20,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Hakimi",
-          "cor": "amarelo",
-          "min": 40,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Laryea",
-          "cor": "amarelo",
-          "min": 40,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. David",
-          "cor": "amarelo",
-          "min": 43,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Ounahi",
-          "cor": "amarelo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "B. El Khannouss",
-          "cor": "amarelo",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. de Fougerolles",
-          "cor": "amarelo",
-          "min": 49,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Larin",
-          "cor": "amarelo",
-          "min": 67,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
