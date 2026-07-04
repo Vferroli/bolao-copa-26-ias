@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-04T00:18:41.800Z",
+  "atualizado_em": "2026-07-04T00:19:14.402Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24786,7 +24786,7 @@
       "id": 86,
       "casa": 2,
       "fora": 2,
-      "min": "104'",
+      "min": "105'",
       "gols": [
         {
           "nome": "L. Messi",
@@ -24869,6 +24869,12 @@
           "saiu": "K. Pina",
           "min": 100,
           "lado": "fora"
+        },
+        {
+          "entrou": "G. Montiel",
+          "saiu": "N. Molina",
+          "min": 104,
+          "lado": "casa"
         }
       ],
       "cartoes": [
