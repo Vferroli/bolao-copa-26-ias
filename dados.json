@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T22:47:45.756Z",
+  "atualizado_em": "2026-07-04T22:48:18.801Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25997,6 +25997,12 @@
           "saiu": "M. Almirón",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. Cherki",
+          "saiu": "O. Dembélé",
+          "min": 84,
+          "lado": "fora"
         }
       ],
       "cartoes": [
