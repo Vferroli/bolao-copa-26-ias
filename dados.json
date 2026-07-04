@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-04T02:54:20.225Z",
+  "atualizado_em": "2026-07-04T02:55:24.051Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25078,7 +25078,7 @@
       "id": 87,
       "casa": 1,
       "fora": 0,
-      "min": "61'",
+      "min": "62'",
       "gols": [
         {
           "nome": "J. Arias",
@@ -25104,6 +25104,12 @@
           "saiu": "J. Rodríguez",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "F. Issahaku",
+          "saiu": "I. Williams",
+          "min": 62,
+          "lado": "fora"
         }
       ],
       "cartoes": [
