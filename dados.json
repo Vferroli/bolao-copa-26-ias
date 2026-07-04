@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T03:12:27.562Z",
+  "atualizado_em": "2026-07-04T03:12:59.248Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25078,7 +25078,7 @@
       "id": 87,
       "casa": 1,
       "fora": 0,
-      "min": "78'",
+      "min": "79'",
       "gols": [
         {
           "nome": "J. Arias",
@@ -25122,6 +25122,18 @@
           "saiu": "J. Arias",
           "min": 73,
           "lado": "casa"
+        },
+        {
+          "entrou": "E. Nuamah",
+          "saiu": "J. Ayew",
+          "min": 79,
+          "lado": "fora"
+        },
+        {
+          "entrou": "P. Adu",
+          "saiu": "C. Yirenkyi",
+          "min": 79,
+          "lado": "fora"
         }
       ],
       "cartoes": [
