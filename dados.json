@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-04T01:42:08.474Z",
+  "atualizado_em": "2026-07-04T01:42:41.277Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25084,6 +25084,14 @@
           "entrou": "L. Suárez",
           "saiu": "J. Córdoba",
           "min": 8,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "J. Arias",
+          "cor": "amarelo",
+          "min": 12,
           "lado": "casa"
         }
       ]
