@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T23:04:46.610Z",
+  "atualizado_em": "2026-07-04T23:05:19.139Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25083,9 +25083,12 @@
       "fora": "france",
       "kickoff": "2026-07-04T21:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 1,
+        "avancou": "france",
+        "marcadores": [
+          "K. Mbappé"
+        ]
       },
       "palpites": {
         "claude": {
@@ -25954,77 +25957,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 89,
-      "casa": 0,
-      "fora": 1,
-      "min": "90'+11'",
-      "gols": [
-        {
-          "nome": "K. Mbappé",
-          "min": 70,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "J. Canale",
-          "saiu": "O. Alderete",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Caballero",
-          "saiu": "J. Enciso",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Doué",
-          "saiu": "B. Barcola",
-          "min": 61,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Maurício",
-          "saiu": "D. Gómez",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Ávalos",
-          "saiu": "M. Almirón",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Cherki",
-          "saiu": "O. Dembélé",
-          "min": 84,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "B. Barcola",
-          "cor": "amarelo",
-          "min": 19,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Koné",
-          "cor": "amarelo",
-          "min": 81,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Olise",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
