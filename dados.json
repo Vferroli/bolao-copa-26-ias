@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T17:50:37.234Z",
+  "atualizado_em": "2026-07-04T17:51:41.170Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25671,7 +25671,7 @@
       "id": 90,
       "casa": 0,
       "fora": 0,
-      "min": "45'+4'",
+      "min": "45'+5'",
       "subs": [
         {
           "entrou": "S. Rahimi",
