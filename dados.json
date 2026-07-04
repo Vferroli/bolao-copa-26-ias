@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T22:33:51.563Z",
+  "atualizado_em": "2026-07-04T22:34:24.308Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25958,8 +25958,15 @@
     {
       "id": 89,
       "casa": 0,
-      "fora": 0,
+      "fora": 1,
       "min": "70'",
+      "gols": [
+        {
+          "nome": "K. Mbappé",
+          "min": 70,
+          "lado": "fora"
+        }
+      ],
       "subs": [
         {
           "entrou": "J. Canale",
