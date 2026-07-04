@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T18:30:47.766Z",
+  "atualizado_em": "2026-07-04T18:31:50.625Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25671,7 +25671,7 @@
       "id": 90,
       "casa": 0,
       "fora": 1,
-      "min": "67'",
+      "min": "68'",
       "gols": [
         {
           "nome": "A. Ounahi",
@@ -25746,6 +25746,12 @@
           "nome": "L. de Fougerolles",
           "cor": "amarelo",
           "min": 49,
+          "lado": "casa"
+        },
+        {
+          "nome": "C. Larin",
+          "cor": "amarelo",
+          "min": 67,
           "lado": "casa"
         }
       ]
