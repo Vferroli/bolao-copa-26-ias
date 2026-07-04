@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T03:05:40.684Z",
+  "atualizado_em": "2026-07-04T03:06:43.543Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25078,7 +25078,7 @@
       "id": 87,
       "casa": 1,
       "fora": 0,
-      "min": "72'",
+      "min": "73'",
       "gols": [
         {
           "nome": "J. Arias",
@@ -25116,6 +25116,12 @@
           "saiu": "K. Sibo",
           "min": 62,
           "lado": "fora"
+        },
+        {
+          "entrou": "J. Fernando Quintero",
+          "saiu": "J. Arias",
+          "min": 73,
+          "lado": "casa"
         }
       ],
       "cartoes": [
