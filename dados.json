@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T18:50:44.291Z",
+  "atualizado_em": "2026-07-04T18:51:16.143Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25720,6 +25720,12 @@
           "saiu": "R. Laryea",
           "min": 78,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Saadane",
+          "saiu": "I. Diop",
+          "min": 87,
+          "lado": "fora"
         }
       ],
       "cartoes": [
