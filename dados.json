@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T22:35:27.982Z",
+  "atualizado_em": "2026-07-04T22:36:00.789Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25959,7 +25959,7 @@
       "id": 89,
       "casa": 0,
       "fora": 1,
-      "min": "71'",
+      "min": "72'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -25985,6 +25985,18 @@
           "saiu": "B. Barcola",
           "min": 61,
           "lado": "fora"
+        },
+        {
+          "entrou": "Maurício",
+          "saiu": "D. Gómez",
+          "min": 71,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Ávalos",
+          "saiu": "M. Almirón",
+          "min": 72,
+          "lado": "casa"
         }
       ],
       "cartoes": [
