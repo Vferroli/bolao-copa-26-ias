@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T03:31:48.781Z",
+  "atualizado_em": "2026-07-04T03:32:51.400Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -24758,9 +24758,12 @@
       "fora": "ghana",
       "kickoff": "2026-07-04T01:30:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 0,
+        "avancou": "colombia",
+        "marcadores": [
+          "J. Arias"
+        ]
       },
       "palpites": {
         "claude": {
@@ -25073,107 +25076,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 87,
-      "casa": 1,
-      "fora": 0,
-      "min": "90'+8'",
-      "gols": [
-        {
-          "nome": "J. Arias",
-          "min": 14,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "L. Suárez",
-          "saiu": "J. Córdoba",
-          "min": 8,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Seidu",
-          "saiu": "M. Senaya",
-          "min": 13,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Ríos",
-          "saiu": "J. Rodríguez",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Issahaku",
-          "saiu": "I. Williams",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Owusu",
-          "saiu": "K. Sibo",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Fernando Quintero",
-          "saiu": "J. Arias",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "E. Nuamah",
-          "saiu": "J. Ayew",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "P. Adu",
-          "saiu": "C. Yirenkyi",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Campaz",
-          "saiu": "L. Díaz",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "J. Arias",
-          "cor": "amarelo",
-          "min": 12,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. Yirenkyi",
-          "cor": "amarelo",
-          "min": 49,
-          "lado": "fora"
-        },
-        {
-          "nome": "F. Issahaku",
-          "cor": "amarelo",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Seidu",
-          "cor": "amarelo",
-          "min": 76,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Ríos",
-          "cor": "amarelo",
-          "min": 78,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
