@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T18:51:48.191Z",
+  "atualizado_em": "2026-07-04T18:52:20.158Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25671,7 +25671,7 @@
       "id": 90,
       "casa": 0,
       "fora": 2,
-      "min": "87'",
+      "min": "88'",
       "gols": [
         {
           "nome": "A. Ounahi",
@@ -25734,15 +25734,15 @@
           "lado": "fora"
         },
         {
-          "entrou": "J. Nelson",
-          "saiu": "T. Buchanan",
+          "entrou": "J. Osorio",
+          "saiu": "N. Sigur",
           "min": 87,
           "lado": "casa"
         },
         {
-          "entrou": "J. Osorio",
-          "saiu": "N. Sigur",
-          "min": 88,
+          "entrou": "J. Nelson",
+          "saiu": "T. Buchanan",
+          "min": 87,
           "lado": "casa"
         }
       ],
