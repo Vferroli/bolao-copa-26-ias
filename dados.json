@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-03",
-  "atualizado_em": "2026-07-04T02:43:06.048Z",
+  "atualizado_em": "2026-07-04T02:43:38.524Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25078,7 +25078,7 @@
       "id": 87,
       "casa": 1,
       "fora": 0,
-      "min": "49'",
+      "min": "50'",
       "gols": [
         {
           "nome": "J. Arias",
@@ -25112,6 +25112,12 @@
           "cor": "amarelo",
           "min": 12,
           "lado": "casa"
+        },
+        {
+          "nome": "C. Yirenkyi",
+          "cor": "amarelo",
+          "min": 49,
+          "lado": "fora"
         }
       ]
     }
