@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T03:09:19.764Z",
+  "atualizado_em": "2026-07-04T03:10:22.219Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25078,7 +25078,7 @@
       "id": 87,
       "casa": 1,
       "fora": 0,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "J. Arias",
@@ -25141,6 +25141,12 @@
           "nome": "F. Issahaku",
           "cor": "amarelo",
           "min": 66,
+          "lado": "fora"
+        },
+        {
+          "nome": "A. Seidu",
+          "cor": "amarelo",
+          "min": 76,
           "lado": "fora"
         }
       ]
