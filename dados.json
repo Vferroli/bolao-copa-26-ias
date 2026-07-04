@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T21:24:15.759Z",
+  "atualizado_em": "2026-07-04T21:25:19.590Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25959,7 +25959,7 @@
       "id": 89,
       "casa": 0,
       "fora": 0,
-      "min": "20'",
+      "min": "21'",
       "cartoes": [
         {
           "nome": "B. Barcola",
