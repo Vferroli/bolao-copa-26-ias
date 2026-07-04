@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T23:01:02.866Z",
+  "atualizado_em": "2026-07-04T23:01:35.489Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25959,7 +25959,7 @@
       "id": 89,
       "casa": 0,
       "fora": 1,
-      "min": "90'+7'",
+      "min": "90'+8'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -26016,6 +26016,12 @@
           "nome": "M. Koné",
           "cor": "amarelo",
           "min": 81,
+          "lado": "fora"
+        },
+        {
+          "nome": "M. Olise",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "fora"
         }
       ]
