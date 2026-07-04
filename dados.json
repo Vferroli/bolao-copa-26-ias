@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-04",
-  "atualizado_em": "2026-07-04T19:01:46.864Z",
+  "atualizado_em": "2026-07-04T19:02:18.610Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25671,7 +25671,7 @@
       "id": 90,
       "casa": 0,
       "fora": 2,
-      "min": "90'+7'",
+      "min": "90'+8'",
       "gols": [
         {
           "nome": "A. Ounahi",
