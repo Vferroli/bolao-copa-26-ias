@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-05T21:42:04.686Z",
+  "atualizado_em": "2026-07-05T21:42:36.295Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26236,6 +26236,13 @@
       "casa": 0,
       "fora": 1,
       "min": "80'",
+      "gols": [
+        {
+          "nome": "E. Haaland",
+          "min": 79,
+          "lado": "fora"
+        }
+      ],
       "subs": [
         {
           "entrou": "O. Bobb",
