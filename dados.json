@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-05T21:20:12.104Z",
+  "atualizado_em": "2026-07-05T21:20:43.619Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26235,7 +26235,7 @@
       "id": 91,
       "casa": 0,
       "fora": 0,
-      "min": "58'",
+      "min": "59'",
       "subs": [
         {
           "entrou": "O. Bobb",
@@ -26248,6 +26248,12 @@
           "saiu": "A. Nusa",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "Endrick",
+          "saiu": "M. Cunha",
+          "min": 58,
+          "lado": "casa"
         }
       ]
     }
