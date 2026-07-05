@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-05T22:01:41.198Z",
+  "atualizado_em": "2026-07-05T22:02:44.511Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26233,9 +26233,9 @@
   "live": [
     {
       "id": 91,
-      "casa": 0,
+      "casa": 1,
       "fora": 2,
-      "min": "90'+9'",
+      "min": "90'+10'",
       "gols": [
         {
           "nome": "E. Haaland",
@@ -26246,6 +26246,11 @@
           "nome": "E. Haaland",
           "min": 90,
           "lado": "fora"
+        },
+        {
+          "nome": "Neymar",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "subs": [
