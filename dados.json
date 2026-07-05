@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-05T21:55:37.926Z",
+  "atualizado_em": "2026-07-05T21:56:53.683Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26235,7 +26235,7 @@
       "id": 91,
       "casa": 0,
       "fora": 2,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "E. Haaland",
@@ -26290,6 +26290,12 @@
           "saiu": "B. Guimarães",
           "min": 79,
           "lado": "casa"
+        },
+        {
+          "entrou": "L. Østigard",
+          "saiu": "D. Møller Wolfe",
+          "min": 90,
+          "lado": "fora"
         }
       ]
     }
