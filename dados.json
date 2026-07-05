@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-05T21:30:05.541Z",
+  "atualizado_em": "2026-07-05T21:31:38.435Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26270,7 +26270,7 @@
         {
           "entrou": "D. Santos",
           "saiu": "Rayan",
-          "min": 68,
+          "min": 67,
           "lado": "casa"
         }
       ]
