@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-05T21:57:26.012Z",
+  "atualizado_em": "2026-07-05T21:58:29.645Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26235,7 +26235,7 @@
       "id": 91,
       "casa": 0,
       "fora": 2,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "E. Haaland",
@@ -26296,6 +26296,14 @@
           "saiu": "D. Møller Wolfe",
           "min": 90,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "Neymar",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "casa"
         }
       ]
     }
