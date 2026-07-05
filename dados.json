@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-05T22:03:47.983Z",
+  "atualizado_em": "2026-07-05T22:04:51.385Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -25730,9 +25730,14 @@
       "fora": "norway",
       "kickoff": "2026-07-05T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 2,
+        "avancou": "norway",
+        "marcadores": [
+          "E. Haaland",
+          "E. Haaland",
+          "Neymar"
+        ]
       },
       "palpites": {
         "claude": {
@@ -26230,87 +26235,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 91,
-      "casa": 1,
-      "fora": 2,
-      "min": "90'+11'",
-      "gols": [
-        {
-          "nome": "E. Haaland",
-          "min": 79,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Haaland",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "nome": "Neymar",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "O. Bobb",
-          "saiu": "A. Sørloth",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Schjelderup",
-          "saiu": "A. Nusa",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Endrick",
-          "saiu": "M. Cunha",
-          "min": 58,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Aursnes",
-          "saiu": "J. Ryerson",
-          "min": 63,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Neymar",
-          "saiu": "G. Martinelli",
-          "min": 67,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Santos",
-          "saiu": "Rayan",
-          "min": 67,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Éderson",
-          "saiu": "B. Guimarães",
-          "min": 79,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Østigard",
-          "saiu": "D. Møller Wolfe",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "Neymar",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
