@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T21:01:18.366Z",
+  "atualizado_em": "2026-07-06T21:02:20.984Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26376,9 +26376,12 @@
       "fora": "spain",
       "kickoff": "2026-07-06T19:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 1,
+        "avancou": "spain",
+        "marcadores": [
+          "M. Merino"
+        ]
       },
       "palpites": {
         "claude": {
@@ -26808,95 +26811,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 93,
-      "casa": 0,
-      "fora": 1,
-      "min": "90'+9'",
-      "gols": [
-        {
-          "nome": "M. Merino",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. Semedo",
-          "saiu": "N. Mendes",
-          "min": 56,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Dalot",
-          "saiu": "J. Cancelo",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Leão",
-          "saiu": "J. Félix",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Torres",
-          "saiu": "Á. Baena",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Conceição",
-          "saiu": "P. Neto",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Silva",
-          "saiu": "Vitinha",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Ruiz",
-          "saiu": "Pedri",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Merino",
-          "saiu": "D. Olmo",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "B. Iglesias",
-          "saiu": "M. Oyarzabal",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "B. Silva",
-          "cor": "amarelo",
-          "min": 89,
-          "lado": "casa"
-        },
-        {
-          "nome": "R. Veiga",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "nome": "F. Torres",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
