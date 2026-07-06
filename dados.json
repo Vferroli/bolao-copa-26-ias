@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T21:00:15.358Z",
+  "atualizado_em": "2026-07-06T21:01:18.366Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26813,7 +26813,7 @@
       "id": 93,
       "casa": 0,
       "fora": 1,
-      "min": "90'+8'",
+      "min": "90'+9'",
       "gols": [
         {
           "nome": "M. Merino",
@@ -26889,6 +26889,12 @@
           "cor": "amarelo",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "nome": "F. Torres",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
         }
       ]
     }
