@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:16:16.826Z",
+  "atualizado_em": "2026-07-06T02:16:48.836Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26521,9 +26521,9 @@
   "live": [
     {
       "id": 92,
-      "casa": 0,
-      "fora": 0,
-      "min": "9'",
+      "casa": 1,
+      "fora": 2,
+      "min": "54'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -26554,6 +26554,12 @@
           "nome": "D. Rice",
           "cor": "amarelo",
           "min": 1,
+          "lado": "fora"
+        },
+        {
+          "nome": "J. Quansah",
+          "cor": "vermelho",
+          "min": 54,
           "lado": "fora"
         }
       ]
