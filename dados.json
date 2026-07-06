@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:35:54.645Z",
+  "atualizado_em": "2026-07-06T02:36:57.315Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26575,6 +26575,12 @@
           "saiu": "L. Romo",
           "min": 61,
           "lado": "casa"
+        },
+        {
+          "entrou": "D. Spence",
+          "saiu": "N. O'Reilly",
+          "min": 75,
+          "lado": "fora"
         }
       ],
       "cartoes": [
