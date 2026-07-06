@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T20:42:24.672Z",
+  "atualizado_em": "2026-07-06T20:43:27.247Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26813,7 +26813,7 @@
       "id": 93,
       "casa": 0,
       "fora": 0,
-      "min": "80'",
+      "min": "81'",
       "subs": [
         {
           "entrou": "N. Semedo",
