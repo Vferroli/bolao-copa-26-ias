@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T03:00:21.537Z",
+  "atualizado_em": "2026-07-06T03:00:54.249Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26637,6 +26637,12 @@
           "cor": "amarelo",
           "min": 72,
           "lado": "fora"
+        },
+        {
+          "nome": "J. Vásquez",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "casa"
         }
       ]
     }
