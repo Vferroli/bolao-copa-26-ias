@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T20:56:03.869Z",
+  "atualizado_em": "2026-07-06T20:56:35.749Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26813,7 +26813,7 @@
       "id": 93,
       "casa": 0,
       "fora": 1,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "M. Merino",
@@ -26876,6 +26876,12 @@
           "nome": "B. Silva",
           "cor": "amarelo",
           "min": 89,
+          "lado": "casa"
+        },
+        {
+          "nome": "R. Veiga",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "casa"
         }
       ]
