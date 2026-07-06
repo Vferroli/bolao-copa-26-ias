@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:23:07.081Z",
+  "atualizado_em": "2026-07-06T02:23:39.033Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26558,6 +26558,12 @@
           "saiu": "B. Saka",
           "min": 57,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Gimenez",
+          "saiu": "G. Mora",
+          "min": 61,
+          "lado": "casa"
         }
       ],
       "cartoes": [
