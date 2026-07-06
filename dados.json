@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:33:15.478Z",
+  "atualizado_em": "2026-07-06T02:33:47.153Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26595,6 +26595,12 @@
           "cor": "amarelo",
           "min": 68,
           "lado": "fora"
+        },
+        {
+          "nome": "J. Sánchez",
+          "cor": "amarelo",
+          "min": 71,
+          "lado": "casa"
         }
       ]
     }
