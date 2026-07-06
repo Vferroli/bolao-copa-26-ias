@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:40:38.493Z",
+  "atualizado_em": "2026-07-06T02:41:10.279Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26587,6 +26587,12 @@
           "saiu": "E. Anderson",
           "min": 75,
           "lado": "fora"
+        },
+        {
+          "entrou": "Á. Fidalgo",
+          "saiu": "J. Sánchez",
+          "min": 79,
+          "lado": "casa"
         }
       ],
       "cartoes": [
