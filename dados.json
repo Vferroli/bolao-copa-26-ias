@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T20:47:08.441Z",
+  "atualizado_em": "2026-07-06T20:47:40.177Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26850,6 +26850,18 @@
           "saiu": "Vitinha",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "entrou": "F. Ruiz",
+          "saiu": "Pedri",
+          "min": 85,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Merino",
+          "saiu": "D. Olmo",
+          "min": 85,
+          "lado": "fora"
         }
       ]
     }
