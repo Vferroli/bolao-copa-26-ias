@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T20:52:54.873Z",
+  "atualizado_em": "2026-07-06T20:53:57.526Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26812,8 +26812,15 @@
     {
       "id": 93,
       "casa": 0,
-      "fora": 0,
-      "min": "90'",
+      "fora": 1,
+      "min": "90'+1'",
+      "gols": [
+        {
+          "nome": "M. Merino",
+          "min": 90,
+          "lado": "fora"
+        }
+      ],
       "subs": [
         {
           "entrou": "N. Semedo",
