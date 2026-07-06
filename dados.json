@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T03:04:38.903Z",
+  "atualizado_em": "2026-07-06T03:05:42.941Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26047,9 +26047,16 @@
       "fora": "england",
       "kickoff": "2026-07-06T00:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 2,
+        "fora": 3,
+        "avancou": "england",
+        "marcadores": [
+          "J. Bellingham",
+          "J. Bellingham",
+          "J. Quiñones",
+          "H. Kane",
+          "R. Jiménez"
+        ]
       },
       "palpites": {
         "claude": {
@@ -26518,139 +26525,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 92,
-      "casa": 2,
-      "fora": 3,
-      "min": "90'+12'",
-      "gols": [
-        {
-          "nome": "J. Bellingham",
-          "min": 36,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Bellingham",
-          "min": 38,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Quiñones",
-          "min": 42,
-          "lado": "casa"
-        },
-        {
-          "nome": "H. Kane",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Jiménez",
-          "min": 69,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "E. Álvarez",
-          "saiu": "C. Montes",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Stones",
-          "saiu": "B. Saka",
-          "min": 57,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Gimenez",
-          "saiu": "G. Mora",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Gutiérrez",
-          "saiu": "L. Romo",
-          "min": 61,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Spence",
-          "saiu": "N. O'Reilly",
-          "min": 74,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Burn",
-          "saiu": "E. Anderson",
-          "min": 75,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Á. Fidalgo",
-          "saiu": "J. Sánchez",
-          "min": 79,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Martínez",
-          "saiu": "J. Quiñones",
-          "min": 81,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Rogers",
-          "saiu": "H. Kane",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "D. Rice",
-          "cor": "amarelo",
-          "min": 1,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Quansah",
-          "cor": "vermelho",
-          "min": 54,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Guéhi",
-          "cor": "amarelo",
-          "min": 68,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Sánchez",
-          "cor": "amarelo",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "nome": "N. O'Reilly",
-          "cor": "amarelo",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Vásquez",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Henderson",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
