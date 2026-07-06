@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:51:40.851Z",
+  "atualizado_em": "2026-07-06T02:52:13.127Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26599,6 +26599,12 @@
           "saiu": "J. Quiñones",
           "min": 81,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Rogers",
+          "saiu": "H. Kane",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
