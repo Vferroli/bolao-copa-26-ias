@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:30:27.126Z",
+  "atualizado_em": "2026-07-06T02:31:29.639Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26523,7 +26523,7 @@
       "id": 92,
       "casa": 1,
       "fora": 3,
-      "min": "68'",
+      "min": "69'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -26544,6 +26544,11 @@
           "nome": "H. Kane",
           "min": 60,
           "lado": "fora"
+        },
+        {
+          "nome": "R. Jiménez",
+          "min": 69,
+          "lado": "casa"
         }
       ],
       "subs": [
@@ -26583,6 +26588,12 @@
           "nome": "J. Quansah",
           "cor": "vermelho",
           "min": 54,
+          "lado": "fora"
+        },
+        {
+          "nome": "M. Guéhi",
+          "cor": "amarelo",
+          "min": 68,
           "lado": "fora"
         }
       ]
