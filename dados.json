@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:23:39.033Z",
+  "atualizado_em": "2026-07-06T02:24:11.056Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26523,7 +26523,7 @@
       "id": 92,
       "casa": 1,
       "fora": 3,
-      "min": "61'",
+      "min": "62'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -26562,6 +26562,12 @@
         {
           "entrou": "S. Gimenez",
           "saiu": "G. Mora",
+          "min": 61,
+          "lado": "casa"
+        },
+        {
+          "entrou": "B. Gutiérrez",
+          "saiu": "L. Romo",
           "min": 61,
           "lado": "casa"
         }
