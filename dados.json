@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T01:41:50.061Z",
+  "atualizado_em": "2026-07-06T01:42:54.051Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26521,9 +26521,9 @@
   "live": [
     {
       "id": 92,
-      "casa": 0,
+      "casa": 1,
       "fora": 2,
-      "min": "42'",
+      "min": "43'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -26534,6 +26534,11 @@
           "nome": "J. Bellingham",
           "min": 38,
           "lado": "fora"
+        },
+        {
+          "nome": "J. Quiñones",
+          "min": 42,
+          "lado": "casa"
         }
       ],
       "cartoes": [
