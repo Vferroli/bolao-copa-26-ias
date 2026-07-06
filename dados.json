@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:38:00.915Z",
+  "atualizado_em": "2026-07-06T02:38:32.734Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26523,7 +26523,7 @@
       "id": 92,
       "casa": 2,
       "fora": 3,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -26579,7 +26579,7 @@
         {
           "entrou": "D. Spence",
           "saiu": "N. O'Reilly",
-          "min": 75,
+          "min": 74,
           "lado": "fora"
         },
         {
