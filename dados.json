@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T20:45:02.138Z",
+  "atualizado_em": "2026-07-06T20:45:34.147Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26838,6 +26838,12 @@
           "saiu": "Á. Baena",
           "min": 75,
           "lado": "fora"
+        },
+        {
+          "entrou": "F. Conceição",
+          "saiu": "P. Neto",
+          "min": 83,
+          "lado": "casa"
         }
       ]
     }
