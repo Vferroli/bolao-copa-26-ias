@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:34:18.895Z",
+  "atualizado_em": "2026-07-06T02:34:50.789Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26601,6 +26601,12 @@
           "cor": "amarelo",
           "min": 71,
           "lado": "casa"
+        },
+        {
+          "nome": "N. O'Reilly",
+          "cor": "amarelo",
+          "min": 72,
+          "lado": "fora"
         }
       ]
     }
