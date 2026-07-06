@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:19:26.228Z",
+  "atualizado_em": "2026-07-06T02:19:57.973Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26523,7 +26523,7 @@
       "id": 92,
       "casa": 1,
       "fora": 2,
-      "min": "57'",
+      "min": "58'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -26547,6 +26547,12 @@
           "saiu": "C. Montes",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Stones",
+          "saiu": "B. Saka",
+          "min": 57,
+          "lado": "fora"
         }
       ],
       "cartoes": [
