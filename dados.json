@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-05",
-  "atualizado_em": "2026-07-06T02:22:03.837Z",
+  "atualizado_em": "2026-07-06T02:23:07.081Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26522,8 +26522,8 @@
     {
       "id": 92,
       "casa": 1,
-      "fora": 2,
-      "min": "60'",
+      "fora": 3,
+      "min": "61'",
       "gols": [
         {
           "nome": "J. Bellingham",
@@ -26539,6 +26539,11 @@
           "nome": "J. Quiñones",
           "min": 42,
           "lado": "casa"
+        },
+        {
+          "nome": "H. Kane",
+          "min": 60,
+          "lado": "fora"
         }
       ],
       "subs": [
