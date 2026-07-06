@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T20:45:34.147Z",
+  "atualizado_em": "2026-07-06T20:46:05.899Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26842,6 +26842,12 @@
         {
           "entrou": "F. Conceição",
           "saiu": "P. Neto",
+          "min": 83,
+          "lado": "casa"
+        },
+        {
+          "entrou": "B. Silva",
+          "saiu": "Vitinha",
           "min": 83,
           "lado": "casa"
         }
