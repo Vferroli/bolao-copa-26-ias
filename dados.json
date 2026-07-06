@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-06T03:05:42.941Z",
+  "atualizado_em": "2026-07-06T18:30:13.777Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26404,6 +26404,289 @@
           "fora": 2,
           "avanca": "spain",
           "marcador": "Lamine Yamal"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-1-2-3"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Diogo Costa",
+              "pos": "G"
+            },
+            {
+              "num": 25,
+              "nome": "Nuno Mendes",
+              "pos": "D"
+            },
+            {
+              "num": 13,
+              "nome": "Renato Veiga",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Rúben Dias",
+              "pos": "D"
+            },
+            {
+              "num": 20,
+              "nome": "João Cancelo",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Vitinha",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "João Neves",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "João Félix",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Bruno Fernandes",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Pedro Neto",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Cristiano Ronaldo",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 2,
+              "nome": "Nélson Semedo",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "José Sá",
+              "pos": "G"
+            },
+            {
+              "num": 9,
+              "nome": "Gonçalo Ramos",
+              "pos": "F"
+            },
+            {
+              "num": 22,
+              "nome": "Rui Silva",
+              "pos": "G"
+            },
+            {
+              "num": 21,
+              "nome": "Rúben Neves",
+              "pos": "M"
+            },
+            {
+              "num": 24,
+              "nome": "Samú Costa",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Gonçalo Guedes",
+              "pos": "F"
+            },
+            {
+              "num": 10,
+              "nome": "Bernardo Silva",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Tomás Araújo",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Trincão",
+              "pos": "F"
+            },
+            {
+              "num": 6,
+              "nome": "Matheus Nunes",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Diogo Dalot",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Gonçalo Inácio",
+              "pos": "D"
+            },
+            {
+              "num": 26,
+              "nome": "Francisco Conceição",
+              "pos": "F"
+            },
+            {
+              "num": 17,
+              "nome": "Rafael Leão",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Unai Simón",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Marc Cucurella",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Aymeric Laporte",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Pau Cubarsí Paredes",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Pedro Porro",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Rodri",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Pedri",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Dani Olmo",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Álex Baena",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Mikel Oyarzabal",
+              "pos": "F"
+            },
+            {
+              "num": 19,
+              "nome": "Lamine Yamal",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 2,
+              "nome": "Marc Pubill",
+              "pos": "D"
+            },
+            {
+              "num": 9,
+              "nome": "Gavi",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Nico Williams",
+              "pos": "F"
+            },
+            {
+              "num": 13,
+              "nome": "Joan García",
+              "pos": "G"
+            },
+            {
+              "num": 11,
+              "nome": "Yeremy Pino",
+              "pos": "F"
+            },
+            {
+              "num": 18,
+              "nome": "Martín Zubimendi",
+              "pos": "M"
+            },
+            {
+              "num": 4,
+              "nome": "Eric García",
+              "pos": "D"
+            },
+            {
+              "num": 7,
+              "nome": "Ferran Torres",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Borja Iglesias",
+              "pos": "F"
+            },
+            {
+              "num": 8,
+              "nome": "Fabián Ruiz",
+              "pos": "M"
+            },
+            {
+              "num": 6,
+              "nome": "Mikel Merino",
+              "pos": "M"
+            },
+            {
+              "num": 1,
+              "nome": "David Raya",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Marcos Llorente",
+              "pos": "D"
+            },
+            {
+              "num": 3,
+              "nome": "Álex Grimaldo",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Víctor Muñoz",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
