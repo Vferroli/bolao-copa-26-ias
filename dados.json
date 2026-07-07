@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T22:01:17.533Z",
+  "atualizado_em": "2026-07-07T22:57:44.930Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27346,8 +27346,64 @@
       "real": {
         "casa": 0,
         "fora": 0,
-        "avancou": null,
-        "marcadores": []
+        "avancou": "switzerland",
+        "marcadores": [],
+        "penaltis": {
+          "casa": 4,
+          "fora": 3,
+          "cobrancas": [
+            {
+              "lado": "fora",
+              "nome": "J. Fernando Quintero",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "G. Xhaka",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "D. Sánchez",
+              "marcou": false
+            },
+            {
+              "lado": "casa",
+              "nome": "Z. Amdouni",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "J. Campaz",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "M. Akanji",
+              "marcou": false
+            },
+            {
+              "lado": "fora",
+              "nome": "C. Hernández",
+              "marcou": false
+            },
+            {
+              "lado": "casa",
+              "nome": "C. Itten",
+              "marcou": true
+            },
+            {
+              "lado": "fora",
+              "nome": "L. Díaz",
+              "marcou": true
+            },
+            {
+              "lado": "casa",
+              "nome": "R. Vargas",
+              "marcou": true
+            }
+          ]
+        }
       },
       "palpites": {
         "claude": {
