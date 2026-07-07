@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:50:29.372Z",
+  "atualizado_em": "2026-07-07T21:51:33.073Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27649,7 +27649,7 @@
       "id": 96,
       "casa": 0,
       "fora": 0,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "subs": [
         {
           "entrou": "D. Sow",
@@ -27697,6 +27697,12 @@
           "entrou": "C. Itten",
           "saiu": "B. Embolo",
           "min": 87,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Vargas",
+          "saiu": "D. Ndoye",
+          "min": 90,
           "lado": "casa"
         }
       ],
