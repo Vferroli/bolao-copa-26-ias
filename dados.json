@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:55:58.660Z",
+  "atualizado_em": "2026-07-07T17:56:31.911Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27374,7 +27374,7 @@
       "id": 95,
       "casa": 2,
       "fora": 2,
-      "min": "90'+1'",
+      "min": "90'+2'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
@@ -27394,6 +27394,11 @@
         {
           "nome": "L. Messi",
           "min": 83,
+          "lado": "casa"
+        },
+        {
+          "nome": "E. Fernández",
+          "min": 90,
           "lado": "casa"
         }
       ],
