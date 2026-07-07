@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:58:41.756Z",
+  "atualizado_em": "2026-07-07T17:59:14.423Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27437,6 +27437,32 @@
           "entrou": "O. Marmoush",
           "saiu": "M. Zico",
           "min": 80,
+          "lado": "fora"
+        },
+        {
+          "entrou": "F. Medina",
+          "saiu": "J. Álvarez",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Otamendi",
+          "saiu": "C. Romero",
+          "min": 90,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "M. Shoubir",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "nome": "H. Fathy",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "fora"
         }
       ]
