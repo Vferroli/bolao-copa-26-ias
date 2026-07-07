@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T01:53:01.709Z",
+  "atualizado_em": "2026-07-07T01:53:35.054Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27094,7 +27094,7 @@
       "id": 94,
       "casa": 1,
       "fora": 3,
-      "min": "88'",
+      "min": "90'",
       "gols": [
         {
           "nome": "C. De Ketelaere",
@@ -27157,6 +27157,12 @@
         {
           "entrou": "A. Saelemaekers",
           "saiu": "L. Trossard",
+          "min": 89,
+          "lado": "fora"
+        },
+        {
+          "entrou": "A. Witsel",
+          "saiu": "N. Raskin",
           "min": 89,
           "lado": "fora"
         }
