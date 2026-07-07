@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:56:02.529Z",
+  "atualizado_em": "2026-07-07T22:01:17.533Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27344,9 +27344,10 @@
       "fora": "colombia",
       "kickoff": "2026-07-07T20:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 0,
+        "fora": 0,
+        "avancou": null,
+        "marcadores": []
       },
       "palpites": {
         "claude": {
@@ -27644,88 +27645,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 96,
-      "casa": 0,
-      "fora": 0,
-      "min": "ET",
-      "subs": [
-        {
-          "entrou": "D. Sow",
-          "saiu": "A. Jashari",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Fernando Quintero",
-          "saiu": "J. Rodríguez",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Campaz",
-          "saiu": "J. Arias",
-          "min": 66,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Muheim",
-          "saiu": "R. Rodríguez",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Ríos",
-          "saiu": "J. Lerma",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "C. Hernández",
-          "saiu": "L. Suárez",
-          "min": 82,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Widmer",
-          "saiu": "D. Zakaria",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "C. Itten",
-          "saiu": "B. Embolo",
-          "min": 87,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Vargas",
-          "saiu": "D. Ndoye",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "G. Xhaka",
-          "cor": "amarelo",
-          "min": 51,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Zakaria",
-          "cor": "amarelo",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Suárez",
-          "cor": "amarelo",
-          "min": 60,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
