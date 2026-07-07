@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T16:53:54.694Z",
+  "atualizado_em": "2026-07-07T17:08:53.024Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27379,6 +27379,14 @@
         {
           "nome": "Y. Ibrahim",
           "min": 15,
+          "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "H. Fathy",
+          "saiu": "E. Ashour",
+          "min": 45,
           "lado": "fora"
         }
       ]
