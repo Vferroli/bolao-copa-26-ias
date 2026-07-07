@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:29:25.971Z",
+  "atualizado_em": "2026-07-07T17:30:28.822Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27374,7 +27374,7 @@
       "id": 95,
       "casa": 0,
       "fora": 1,
-      "min": "65'",
+      "min": "66'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
@@ -27388,6 +27388,18 @@
           "saiu": "E. Ashour",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "N. González",
+          "saiu": "N. Tagliafico",
+          "min": 66,
+          "lado": "casa"
+        },
+        {
+          "entrou": "L. Martínez",
+          "saiu": "R. De Paul",
+          "min": 66,
+          "lado": "casa"
         }
       ],
       "cartoes": [
