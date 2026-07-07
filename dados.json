@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:29:53.972Z",
+  "atualizado_em": "2026-07-07T21:30:26.220Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27668,6 +27668,12 @@
           "saiu": "J. Arias",
           "min": 66,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Muheim",
+          "saiu": "R. Rodríguez",
+          "min": 71,
+          "lado": "casa"
         }
       ],
       "cartoes": [
