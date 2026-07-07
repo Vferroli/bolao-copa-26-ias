@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:59:14.423Z",
+  "atualizado_em": "2026-07-07T17:59:47.187Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27374,7 +27374,7 @@
       "id": 95,
       "casa": 3,
       "fora": 2,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
@@ -27450,6 +27450,12 @@
           "saiu": "C. Romero",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "entrou": "Zizo",
+          "saiu": "M. Lashin",
+          "min": 90,
+          "lado": "fora"
         }
       ],
       "cartoes": [
