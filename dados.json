@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:22:34.705Z",
+  "atualizado_em": "2026-07-07T17:23:06.440Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27373,12 +27373,17 @@
     {
       "id": 95,
       "casa": 0,
-      "fora": 1,
+      "fora": 2,
       "min": "59'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
           "min": 15,
+          "lado": "fora"
+        },
+        {
+          "nome": "M. Zico",
+          "min": 58,
           "lado": "fora"
         }
       ],
