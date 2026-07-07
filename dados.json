@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T01:30:33.604Z",
+  "atualizado_em": "2026-07-07T01:31:36.281Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27094,7 +27094,7 @@
       "id": 94,
       "casa": 1,
       "fora": 3,
-      "min": "66'",
+      "min": "67'",
       "gols": [
         {
           "nome": "C. De Ketelaere",
@@ -27135,6 +27135,18 @@
           "saiu": "C. Pulisic",
           "min": 59,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Doku",
+          "saiu": "D. Lukébakio",
+          "min": 67,
+          "lado": "fora"
+        },
+        {
+          "entrou": "R. Lukaku",
+          "saiu": "C. De Ketelaere",
+          "min": 68,
+          "lado": "fora"
         }
       ],
       "cartoes": [
