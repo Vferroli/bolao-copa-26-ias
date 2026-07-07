@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:25:45.101Z",
+  "atualizado_em": "2026-07-07T17:26:16.922Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27387,6 +27387,14 @@
           "entrou": "H. Fathy",
           "saiu": "E. Ashour",
           "min": 45,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "M. Zico",
+          "cor": "amarelo",
+          "min": 61,
           "lado": "fora"
         }
       ]
