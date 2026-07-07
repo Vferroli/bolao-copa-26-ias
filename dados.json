@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T01:57:53.716Z",
+  "atualizado_em": "2026-07-07T01:59:29.211Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -26701,9 +26701,16 @@
       "fora": "belgium",
       "kickoff": "2026-07-07T00:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 1,
+        "fora": 4,
+        "avancou": "belgium",
+        "marcadores": [
+          "C. De Ketelaere",
+          "M. Tillman",
+          "C. De Ketelaere",
+          "H. Vanaken",
+          "R. Lukaku"
+        ]
       },
       "palpites": {
         "claude": {
@@ -27089,115 +27096,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 94,
-      "casa": 1,
-      "fora": 4,
-      "min": "90'+4'",
-      "gols": [
-        {
-          "nome": "C. De Ketelaere",
-          "min": 9,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Tillman",
-          "min": 31,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. De Ketelaere",
-          "min": 33,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Vanaken",
-          "min": 57,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. Lukaku",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "H. Vanaken",
-          "saiu": "A. Onana",
-          "min": 21,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Reyna",
-          "saiu": "S. Dest",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Berhalter",
-          "saiu": "C. Pulisic",
-          "min": 59,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Doku",
-          "saiu": "D. Lukébakio",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Lukaku",
-          "saiu": "C. De Ketelaere",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. Pepi",
-          "saiu": "T. Adams",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Saelemaekers",
-          "saiu": "L. Trossard",
-          "min": 89,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Witsel",
-          "saiu": "N. Raskin",
-          "min": 89,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Arfsten",
-          "saiu": "A. Robinson",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "H. Wright",
-          "saiu": "F. Balogun",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "W. McKennie",
-          "cor": "amarelo",
-          "min": 35,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Tillman",
-          "cor": "amarelo",
-          "min": 69,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
