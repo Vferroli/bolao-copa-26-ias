@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T16:20:09.394Z",
+  "atualizado_em": "2026-07-07T16:21:12.272Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27374,7 +27374,7 @@
       "id": 95,
       "casa": 0,
       "fora": 1,
-      "min": "18'",
+      "min": "19'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
