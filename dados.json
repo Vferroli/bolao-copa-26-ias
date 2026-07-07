@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T00:52:56.759Z",
+  "atualizado_em": "2026-07-07T01:08:56.910Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27118,6 +27118,12 @@
           "saiu": "A. Onana",
           "min": 21,
           "lado": "fora"
+        },
+        {
+          "entrou": "G. Reyna",
+          "saiu": "S. Dest",
+          "min": 45,
+          "lado": "casa"
         }
       ],
       "cartoes": [
