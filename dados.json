@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:45:40.205Z",
+  "atualizado_em": "2026-07-07T17:46:13.325Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27374,7 +27374,7 @@
       "id": 95,
       "casa": 1,
       "fora": 2,
-      "min": "81'",
+      "min": "82'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
@@ -27421,12 +27421,6 @@
           "entrou": "Trézéguet",
           "saiu": "H. Hassan",
           "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Marmoush",
-          "saiu": "M. Zico",
-          "min": 80,
           "lado": "fora"
         }
       ]
