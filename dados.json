@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T01:36:18.765Z",
+  "atualizado_em": "2026-07-07T01:36:50.604Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27147,6 +27147,12 @@
           "saiu": "C. De Ketelaere",
           "min": 67,
           "lado": "fora"
+        },
+        {
+          "entrou": "R. Pepi",
+          "saiu": "T. Adams",
+          "min": 72,
+          "lado": "casa"
         }
       ],
       "cartoes": [
