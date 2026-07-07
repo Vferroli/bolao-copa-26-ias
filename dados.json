@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:10:20.965Z",
+  "atualizado_em": "2026-07-07T21:10:52.961Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27655,6 +27655,14 @@
           "entrou": "D. Sow",
           "saiu": "A. Jashari",
           "min": 45,
+          "lado": "casa"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "G. Xhaka",
+          "cor": "amarelo",
+          "min": 51,
           "lado": "casa"
         }
       ]
