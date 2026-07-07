@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:36:47.834Z",
+  "atualizado_em": "2026-07-07T17:37:19.925Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27404,6 +27404,12 @@
           "entrou": "L. Martínez",
           "saiu": "R. De Paul",
           "min": 66,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Montiel",
+          "saiu": "N. Molina",
+          "min": 73,
           "lado": "casa"
         }
       ]
