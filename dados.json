@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:46:16.600Z",
+  "atualizado_em": "2026-07-07T21:46:48.912Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27686,6 +27686,18 @@
           "saiu": "L. Suárez",
           "min": 82,
           "lado": "fora"
+        },
+        {
+          "entrou": "S. Widmer",
+          "saiu": "D. Zakaria",
+          "min": 87,
+          "lado": "casa"
+        },
+        {
+          "entrou": "C. Itten",
+          "saiu": "B. Embolo",
+          "min": 87,
+          "lado": "casa"
         }
       ],
       "cartoes": [
