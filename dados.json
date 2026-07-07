@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T00:31:51.951Z",
+  "atualizado_em": "2026-07-07T00:32:23.638Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27100,6 +27100,11 @@
           "nome": "C. De Ketelaere",
           "min": 9,
           "lado": "fora"
+        },
+        {
+          "nome": "M. Tillman",
+          "min": 31,
+          "lado": "casa"
         }
       ],
       "subs": [
