@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T00:18:15.941Z",
+  "atualizado_em": "2026-07-07T00:18:47.653Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27094,7 +27094,7 @@
       "id": 94,
       "casa": 0,
       "fora": 1,
-      "min": "17'",
+      "min": "18'",
       "gols": [
         {
           "nome": "C. De Ketelaere",
