@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:20:23.399Z",
+  "atualizado_em": "2026-07-07T21:20:55.467Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27670,6 +27670,12 @@
           "cor": "amarelo",
           "min": 59,
           "lado": "casa"
+        },
+        {
+          "nome": "L. Suárez",
+          "cor": "amarelo",
+          "min": 60,
+          "lado": "fora"
         }
       ]
     }
