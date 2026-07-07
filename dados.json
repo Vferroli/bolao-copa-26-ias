@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:54:53.530Z",
+  "atualizado_em": "2026-07-07T17:55:26.060Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27374,7 +27374,7 @@
       "id": 95,
       "casa": 2,
       "fora": 2,
-      "min": "90'+1'",
+      "min": "90'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
@@ -27389,11 +27389,6 @@
         {
           "nome": "C. Romero",
           "min": 79,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Messi",
-          "min": 83,
           "lado": "casa"
         }
       ],
@@ -27426,12 +27421,6 @@
           "entrou": "Trézéguet",
           "saiu": "H. Hassan",
           "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Marmoush",
-          "saiu": "M. Zico",
-          "min": 80,
           "lado": "fora"
         }
       ]
