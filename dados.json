@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T01:57:20.961Z",
+  "atualizado_em": "2026-07-07T01:57:53.716Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27094,7 +27094,7 @@
       "id": 94,
       "casa": 1,
       "fora": 4,
-      "min": "90'+3'",
+      "min": "90'+4'",
       "gols": [
         {
           "nome": "C. De Ketelaere",
@@ -27114,6 +27114,11 @@
         {
           "nome": "H. Vanaken",
           "min": 57,
+          "lado": "fora"
+        },
+        {
+          "nome": "R. Lukaku",
+          "min": 90,
           "lado": "fora"
         }
       ],
