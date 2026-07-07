@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T20:49:15.052Z",
+  "atualizado_em": "2026-07-07T21:05:05.412Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27649,7 +27649,15 @@
       "id": 96,
       "casa": 0,
       "fora": 0,
-      "min": "Intervalo"
+      "min": "Intervalo",
+      "subs": [
+        {
+          "entrou": "D. Sow",
+          "saiu": "A. Jashari",
+          "min": 45,
+          "lado": "casa"
+        }
+      ]
     }
   ]
 }
