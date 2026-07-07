@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:18:15.230Z",
+  "atualizado_em": "2026-07-07T21:18:48.182Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27663,6 +27663,12 @@
           "nome": "G. Xhaka",
           "cor": "amarelo",
           "min": 51,
+          "lado": "casa"
+        },
+        {
+          "nome": "D. Zakaria",
+          "cor": "amarelo",
+          "min": 59,
           "lado": "casa"
         }
       ]
