@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:37:51.794Z",
+  "atualizado_em": "2026-07-07T17:38:23.811Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27415,7 +27415,7 @@
         {
           "entrou": "Trézéguet",
           "saiu": "H. Hassan",
-          "min": 74,
+          "min": 73,
           "lado": "fora"
         }
       ]
