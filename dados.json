@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:39:26.576Z",
+  "atualizado_em": "2026-07-07T17:40:12.894Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27374,7 +27374,7 @@
       "id": 95,
       "casa": 0,
       "fora": 2,
-      "min": "75'",
+      "min": "76'",
       "gols": [
         {
           "nome": "Y. Ibrahim",
@@ -27405,17 +27405,13 @@
           "saiu": "R. De Paul",
           "min": 66,
           "lado": "casa"
-        },
+        }
+      ],
+      "cartoes": [
         {
-          "entrou": "G. Montiel",
-          "saiu": "N. Molina",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Trézéguet",
-          "saiu": "H. Hassan",
-          "min": 73,
+          "nome": "M. Zico",
+          "cor": "amarelo",
+          "min": 61,
           "lado": "fora"
         }
       ]
