@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T00:32:23.638Z",
+  "atualizado_em": "2026-07-07T00:33:57.151Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27093,8 +27093,8 @@
     {
       "id": 94,
       "casa": 1,
-      "fora": 1,
-      "min": "32'",
+      "fora": 2,
+      "min": "34'",
       "gols": [
         {
           "nome": "C. De Ketelaere",
@@ -27105,6 +27105,11 @@
           "nome": "M. Tillman",
           "min": 31,
           "lado": "casa"
+        },
+        {
+          "nome": "C. De Ketelaere",
+          "min": 33,
+          "lado": "fora"
         }
       ],
       "subs": [
