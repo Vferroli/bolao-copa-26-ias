@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T17:40:12.894Z",
+  "atualizado_em": "2026-07-07T17:40:45.860Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27405,13 +27405,17 @@
           "saiu": "R. De Paul",
           "min": 66,
           "lado": "casa"
-        }
-      ],
-      "cartoes": [
+        },
         {
-          "nome": "M. Zico",
-          "cor": "amarelo",
-          "min": 61,
+          "entrou": "G. Montiel",
+          "saiu": "N. Molina",
+          "min": 73,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Trézéguet",
+          "saiu": "H. Hassan",
+          "min": 73,
           "lado": "fora"
         }
       ]
