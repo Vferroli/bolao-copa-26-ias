@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T00:20:52.634Z",
+  "atualizado_em": "2026-07-07T00:21:55.208Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27094,11 +27094,19 @@
       "id": 94,
       "casa": 0,
       "fora": 1,
-      "min": "20'",
+      "min": "21'",
       "gols": [
         {
           "nome": "C. De Ketelaere",
           "min": 9,
+          "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "H. Vanaken",
+          "saiu": "A. Onana",
+          "min": 21,
           "lado": "fora"
         }
       ]
