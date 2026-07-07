@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T18:03:02.305Z",
+  "atualizado_em": "2026-07-07T18:03:34.886Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27395,6 +27395,11 @@
           "nome": "L. Messi",
           "min": 83,
           "lado": "casa"
+        },
+        {
+          "nome": "E. Fernández",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "subs": [
@@ -27432,6 +27437,44 @@
           "entrou": "O. Marmoush",
           "saiu": "M. Zico",
           "min": 80,
+          "lado": "fora"
+        },
+        {
+          "entrou": "F. Medina",
+          "saiu": "J. Álvarez",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. Otamendi",
+          "saiu": "C. Romero",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Zizo",
+          "saiu": "M. Lashin",
+          "min": 90,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "M. Shoubir",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "nome": "H. Fathy",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "fora"
+        },
+        {
+          "nome": "M. Attia",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "fora"
         }
       ]
