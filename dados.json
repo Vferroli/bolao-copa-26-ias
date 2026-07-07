@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T21:25:09.393Z",
+  "atualizado_em": "2026-07-07T21:25:41.559Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27649,13 +27649,25 @@
       "id": 96,
       "casa": 0,
       "fora": 0,
-      "min": "65'",
+      "min": "66'",
       "subs": [
         {
           "entrou": "D. Sow",
           "saiu": "A. Jashari",
           "min": 45,
           "lado": "casa"
+        },
+        {
+          "entrou": "J. Fernando Quintero",
+          "saiu": "J. Rodríguez",
+          "min": 66,
+          "lado": "fora"
+        },
+        {
+          "entrou": "J. Campaz",
+          "saiu": "J. Arias",
+          "min": 66,
+          "lado": "fora"
         }
       ],
       "cartoes": [
