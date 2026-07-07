@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-06",
-  "atualizado_em": "2026-07-07T01:52:29.181Z",
+  "atualizado_em": "2026-07-07T01:53:01.709Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27153,6 +27153,12 @@
           "saiu": "T. Adams",
           "min": 72,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Saelemaekers",
+          "saiu": "L. Trossard",
+          "min": 89,
+          "lado": "fora"
         }
       ],
       "cartoes": [
