@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-07",
-  "atualizado_em": "2026-07-07T18:05:43.554Z",
+  "atualizado_em": "2026-07-07T18:06:16.845Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -27025,9 +27025,16 @@
       "fora": "egypt",
       "kickoff": "2026-07-07T16:00:00Z",
       "real": {
-        "casa": null,
-        "fora": null,
-        "avancou": null
+        "casa": 3,
+        "fora": 2,
+        "avancou": "argentina",
+        "marcadores": [
+          "Y. Ibrahim",
+          "M. Zico",
+          "C. Romero",
+          "L. Messi",
+          "E. Fernández"
+        ]
       },
       "palpites": {
         "claude": {
@@ -27369,115 +27376,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 95,
-      "casa": 3,
-      "fora": 2,
-      "min": "90'+11'",
-      "gols": [
-        {
-          "nome": "Y. Ibrahim",
-          "min": 15,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Zico",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "nome": "C. Romero",
-          "min": 79,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Messi",
-          "min": 83,
-          "lado": "casa"
-        },
-        {
-          "nome": "E. Fernández",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "H. Fathy",
-          "saiu": "E. Ashour",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. González",
-          "saiu": "N. Tagliafico",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Martínez",
-          "saiu": "R. De Paul",
-          "min": 66,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Montiel",
-          "saiu": "N. Molina",
-          "min": 73,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Trézéguet",
-          "saiu": "H. Hassan",
-          "min": 73,
-          "lado": "fora"
-        },
-        {
-          "entrou": "O. Marmoush",
-          "saiu": "M. Zico",
-          "min": 80,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Medina",
-          "saiu": "J. Álvarez",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. Otamendi",
-          "saiu": "C. Romero",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Zizo",
-          "saiu": "M. Lashin",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "M. Shoubir",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "nome": "H. Fathy",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Attia",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
