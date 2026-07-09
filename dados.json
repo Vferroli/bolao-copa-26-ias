@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-09",
-  "atualizado_em": "2026-07-09T22:00:49.530Z",
+  "atualizado_em": "2026-07-09T22:02:03.330Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28015,6 +28015,15 @@
             }
           ]
         }
+      },
+      "real": {
+        "casa": 2,
+        "fora": 0,
+        "avancou": "france",
+        "marcadores": [
+          "K. Mbappé",
+          "O. Dembélé"
+        ]
       }
     },
     {
@@ -28120,88 +28129,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 97,
-      "casa": 2,
-      "fora": 0,
-      "min": "90'+6'",
-      "gols": [
-        {
-          "nome": "K. Mbappé",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "nome": "O. Dembélé",
-          "min": 66,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "S. Rahimi",
-          "saiu": "B. El Khannouss",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Amrabat",
-          "saiu": "A. Bouaddi",
-          "min": 62,
-          "lado": "fora"
-        },
-        {
-          "entrou": "W. Zaïre-Emery",
-          "saiu": "M. Koné",
-          "min": 71,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Z. El Ouahdi",
-          "saiu": "A. Salah-Eddine",
-          "min": 74,
-          "lado": "fora"
-        },
-        {
-          "entrou": "G. Yassine",
-          "saiu": "B. Díaz",
-          "min": 74,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Mateta",
-          "saiu": "K. Mbappé",
-          "min": 77,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Barcola",
-          "saiu": "D. Doué",
-          "min": 77,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Sbaï",
-          "saiu": "C. Talbi",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Gusto",
-          "saiu": "J. Koundé",
-          "min": 87,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "I. Diop",
-          "cor": "amarelo",
-          "min": 63,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
