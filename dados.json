@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-09",
-  "atualizado_em": "2026-07-09T21:25:10.273Z",
+  "atualizado_em": "2026-07-09T21:26:12.937Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28131,6 +28131,20 @@
           "nome": "K. Mbappé",
           "min": 60,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "S. Rahimi",
+          "saiu": "B. El Khannouss",
+          "min": 62,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Amrabat",
+          "saiu": "A. Bouaddi",
+          "min": 62,
+          "lado": "fora"
         }
       ]
     }
