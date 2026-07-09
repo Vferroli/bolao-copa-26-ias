@@ -27699,6 +27699,142 @@
           ]
         }
       }
+    },
+    {
+      "id": 97,
+      "num": 97,
+      "fase": "quartas",
+      "casa": "france",
+      "fora": "morocco",
+      "kickoff": "2026-07-09T20:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "num": 98,
+      "fase": "quartas",
+      "casa": "spain",
+      "fora": "belgium",
+      "kickoff": "2026-07-10T19:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Mikel Oyarzábal"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Lamine Yamal"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "num": 99,
+      "fase": "quartas",
+      "casa": "norway",
+      "fora": "england",
+      "kickoff": "2026-07-11T21:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 3,
+          "avanca": "england",
+          "marcador": "Erling Haaland"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "england",
+          "marcador": "Harry Kane"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "england",
+          "marcador": "Harry Kane"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "england",
+          "marcador": "Harry Kane"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "num": 100,
+      "fase": "quartas",
+      "casa": "argentina",
+      "fora": "switzerland",
+      "kickoff": "2026-07-12T01:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 0,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        }
+      }
     }
   ],
   "live": []
