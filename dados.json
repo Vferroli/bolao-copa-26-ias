@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-09",
-  "atualizado_em": "2026-07-09T21:26:45.081Z",
+  "atualizado_em": "2026-07-09T21:27:47.530Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28125,7 +28125,7 @@
       "id": 97,
       "casa": 1,
       "fora": 0,
-      "min": "62'",
+      "min": "63'",
       "gols": [
         {
           "nome": "K. Mbappé",
@@ -28144,6 +28144,14 @@
           "entrou": "S. Amrabat",
           "saiu": "A. Bouaddi",
           "min": 62,
+          "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "I. Diop",
+          "cor": "amarelo",
+          "min": 63,
           "lado": "fora"
         }
       ]
