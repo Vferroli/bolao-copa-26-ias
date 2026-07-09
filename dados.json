@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-09",
-  "atualizado_em": "2026-07-09T21:34:36.628Z",
+  "atualizado_em": "2026-07-09T21:35:08.488Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28150,6 +28150,12 @@
           "saiu": "A. Bouaddi",
           "min": 62,
           "lado": "fora"
+        },
+        {
+          "entrou": "W. Zaïre-Emery",
+          "saiu": "M. Koné",
+          "min": 71,
+          "lado": "casa"
         }
       ],
       "cartoes": [
