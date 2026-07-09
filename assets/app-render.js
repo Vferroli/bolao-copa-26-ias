@@ -549,8 +549,10 @@ function cardHoje(j, liveData, prevScores, newScores, opts) {
       const key = `${liveData.casa}-${liveData.fora}`;
       if (!stale) newScores[j.id] = key;
       const changed = !stale && (j.id in prevScores) && prevScores[j.id] !== key;
-      score = `${liveData.casa}<em>:</em>${liveData.fora}`;
-      scoreCls = (changed ? "flash " : "") + (stale ? "stale" : "");
+      const pen = liveData.penaltis; // disputa em andamento: mostra "pên X–Y" sob o placar
+      const penSub = pen ? `<small class="pen-sub">pên ${pen.casa}–${pen.fora}</small>` : "";
+      score = `${liveData.casa}<em>:</em>${liveData.fora}${penSub}`;
+      scoreCls = (changed ? "flash " : "") + (stale ? "stale" : "") + (pen ? " has-pen" : "");
     } else {
       score = "–"; scoreCls = "tbd"; // começou mas sem placar (feed indisponível)
     }
@@ -629,10 +631,13 @@ function patchLive(payload) {
     const sc = art.querySelector("[data-live-score]");
     if (sc) {
       if (ld.casa != null) {
-        const novo = `${ld.casa}<em>:</em>${ld.fora}`;
+        const pen = ld.penaltis;         // disputa de pênaltis ao vivo → mantém "pên X–Y"
+        const penSub = pen ? `<small class="pen-sub">pên ${pen.casa}–${pen.fora}</small>` : "";
+        const novo = `${ld.casa}<em>:</em>${ld.fora}${penSub}`;
         if (sc.innerHTML !== novo) {       // placar mudou → atualiza + reanima o flash
           sc.innerHTML = novo;
           sc.classList.remove("tbd", "flash");
+          sc.classList.toggle("has-pen", !!pen);
           void sc.offsetWidth;             // reflow força o restart da animação
           sc.classList.add("flash");
         }
@@ -1084,13 +1089,14 @@ function pfMatchData(num, liveSet, thirdsMap) {
   }
   // placar: final (real) OU ao vivo (dados.live[]) durante o jogo
   let placar = fim ? { casa: j.real.casa, fora: j.real.fora } : null;
+  let pen = fim ? (j.real.penaltis || null) : null; // disputa de pênaltis (0x0 → quem passou)
   let min = null;
   if (emJogo) {
     const le = liveEntry(num);
-    if (le && le.casa != null) { placar = { casa: le.casa, fora: le.fora }; min = le.min; }
+    if (le && le.casa != null) { placar = { casa: le.casa, fora: le.fora }; min = le.min; if (le.penaltis) pen = le.penaltis; }
   }
   const venc = j ? pfVencedor(j) : null;
-  return { num, casa, fora, placar, venc, emJogo, hoje, amanha, hora, fim, min };
+  return { num, casa, fora, placar, pen, venc, emJogo, hoje, amanha, hora, fim, min };
 }
 
 function bktTeam(slot, m, side) {
@@ -1100,10 +1106,11 @@ function bktTeam(slot, m, side) {
   const win = m.venc && slot.id === m.venc;
   const lose = m.venc && slot.id !== m.venc;
   const sc = m.placar ? (side === "casa" ? m.placar.casa : m.placar.fora) : null;
+  const pen = m.pen ? (side === "casa" ? m.pen.casa : m.pen.fora) : null; // pênaltis: "(4)" ao lado do placar
   return `<div class="bkt-team${win ? " win" : ""}${lose ? " lose" : ""}">
     ${bandeira(slot.id)}
     <span class="bkt-nm">${esc(slot.nome || "")}</span>
-    <span class="bkt-sc">${sc != null ? sc : ""}</span>
+    <span class="bkt-sc">${sc != null ? sc : ""}${pen != null ? `<i class="bkt-pen">(${pen})</i>` : ""}</span>
   </div>`;
 }
 

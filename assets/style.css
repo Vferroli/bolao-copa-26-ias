@@ -1856,8 +1856,11 @@ details.day[open] .day-chev { transform: rotate(180deg); }
 .bkt-team .flag { width: 19px; height: 13px; flex: none; border-radius: 2px; object-fit: cover; box-shadow: 0 0 0 1px rgba(0,0,0,.3); }
 .bkt-nm { flex: 1 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bkt-sc { font-family: var(--font-mono); font-weight: 700; font-size: 0.78rem; color: var(--txt); margin-left: 4px; min-width: 9px; text-align: right; }
+/* placar da disputa de pênaltis na chave: "(4)" ao lado dos gols; vencedor destacado */
+.bkt-pen { font-style: normal; font-size: 0.6rem; font-weight: 700; color: var(--faint); margin-left: 2px; }
 .bkt-team.win { color: var(--txt); font-weight: 600; }
 .bkt-team.win .bkt-sc { color: var(--ok); }
+.bkt-team.win .bkt-pen { color: var(--ok); }
 .bkt-team.lose { opacity: 0.45; }
 .bkt-team.tbd { color: var(--faint); }
 .bkt-q { display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 12px; flex: none; font-weight: 700; color: var(--faint); }
