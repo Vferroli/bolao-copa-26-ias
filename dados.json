@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-09",
-  "atualizado_em": "2026-07-09T21:30:25.257Z",
+  "atualizado_em": "2026-07-09T21:30:57.122Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28123,13 +28123,18 @@
   "live": [
     {
       "id": 97,
-      "casa": 1,
+      "casa": 2,
       "fora": 0,
-      "min": "66'",
+      "min": "67'",
       "gols": [
         {
           "nome": "K. Mbappé",
           "min": 60,
+          "lado": "casa"
+        },
+        {
+          "nome": "O. Dembélé",
+          "min": 66,
           "lado": "casa"
         }
       ],
