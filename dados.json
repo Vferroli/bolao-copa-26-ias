@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-09",
-  "atualizado_em": "2026-07-09T21:38:50.234Z",
+  "atualizado_em": "2026-07-09T21:39:53.320Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28158,14 +28158,14 @@
           "lado": "casa"
         },
         {
-          "entrou": "G. Yassine",
-          "saiu": "B. Díaz",
+          "entrou": "Z. El Ouahdi",
+          "saiu": "A. Salah-Eddine",
           "min": 74,
           "lado": "fora"
         },
         {
-          "entrou": "Z. El Ouahdi",
-          "saiu": "A. Salah-Eddine",
+          "entrou": "G. Yassine",
+          "saiu": "B. Díaz",
           "min": 74,
           "lado": "fora"
         }
