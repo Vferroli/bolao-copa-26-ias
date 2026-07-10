@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:47:26.132Z",
+  "atualizado_em": "2026-07-10T20:47:58.333Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28407,7 +28407,7 @@
       "id": 98,
       "casa": 1,
       "fora": 1,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "F. Ruiz",
@@ -28462,6 +28462,12 @@
           "saiu": "M. Oyarzabal",
           "min": 79,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Saelemaekers",
+          "saiu": "K. De Bruyne",
+          "min": 86,
+          "lado": "fora"
         }
       ],
       "cartoes": [
