@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T19:41:16.057Z",
+  "atualizado_em": "2026-07-10T19:41:48.566Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28406,13 +28406,18 @@
     {
       "id": 98,
       "casa": 1,
-      "fora": 0,
-      "min": "40'",
+      "fora": 1,
+      "min": "41'",
       "gols": [
         {
           "nome": "F. Ruiz",
           "min": 30,
           "lado": "casa"
+        },
+        {
+          "nome": "C. De Ketelaere",
+          "min": 41,
+          "lado": "fora"
         }
       ]
     }
