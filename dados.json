@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:22:57.905Z",
+  "atualizado_em": "2026-07-10T20:23:29.916Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28434,14 +28434,14 @@
           "lado": "casa"
         },
         {
-          "entrou": "R. Lukaku",
-          "saiu": "H. Vanaken",
+          "entrou": "A. Witsel",
+          "saiu": "L. Trossard",
           "min": 60,
           "lado": "fora"
         },
         {
-          "entrou": "A. Witsel",
-          "saiu": "L. Trossard",
+          "entrou": "R. Lukaku",
+          "saiu": "H. Vanaken",
           "min": 60,
           "lado": "fora"
         },
