@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:54:17.249Z",
+  "atualizado_em": "2026-07-10T20:55:20.393Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28407,7 +28407,7 @@
       "id": 98,
       "casa": 2,
       "fora": 1,
-      "min": "90'+2'",
+      "min": "90'+3'",
       "gols": [
         {
           "nome": "F. Ruiz",
@@ -28493,6 +28493,12 @@
           "cor": "amarelo",
           "min": 85,
           "lado": "fora"
+        },
+        {
+          "nome": "A. Laporte",
+          "cor": "amarelo",
+          "min": 90,
+          "lado": "casa"
         }
       ]
     }
