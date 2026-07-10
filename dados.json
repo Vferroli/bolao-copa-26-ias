@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
-  "atualizado": "2026-07-09",
-  "atualizado_em": "2026-07-09T22:02:03.330Z",
+  "atualizado": "2026-07-10",
+  "atualizado_em": "2026-07-10T18:30:11.988Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28057,6 +28057,279 @@
           "fora": 1,
           "avanca": "spain",
           "marcador": "Lamine Yamal"
+        }
+      },
+      "escalacoes": {
+        "fonte": "highlightly",
+        "formacao": {
+          "casa": "4-2-3-1",
+          "fora": "4-2-3-1"
+        },
+        "tecnico": {
+          "casa": null,
+          "fora": null
+        },
+        "casa": {
+          "titulares": [
+            {
+              "num": 23,
+              "nome": "Unai Simón",
+              "pos": "G"
+            },
+            {
+              "num": 24,
+              "nome": "Marc Cucurella",
+              "pos": "D"
+            },
+            {
+              "num": 14,
+              "nome": "Aymeric Laporte",
+              "pos": "D"
+            },
+            {
+              "num": 22,
+              "nome": "Pau Cubarsí",
+              "pos": "D"
+            },
+            {
+              "num": 12,
+              "nome": "Pedro Porro",
+              "pos": "D"
+            },
+            {
+              "num": 8,
+              "nome": "Fabián Ruiz",
+              "pos": "M"
+            },
+            {
+              "num": 16,
+              "nome": "Rodri",
+              "pos": "M"
+            },
+            {
+              "num": 15,
+              "nome": "Alex Baena",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Dani Olmo",
+              "pos": "M"
+            },
+            {
+              "num": 19,
+              "nome": "Lamine Yamal",
+              "pos": "M"
+            },
+            {
+              "num": 21,
+              "nome": "Mikel Oyarzabal",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 1,
+              "nome": "David Raya",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Joan García",
+              "pos": "G"
+            },
+            {
+              "num": 2,
+              "nome": "Marc Pubill",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Eric García",
+              "pos": "D"
+            },
+            {
+              "num": 5,
+              "nome": "Marcos Llorente",
+              "pos": "M"
+            },
+            {
+              "num": 3,
+              "nome": "Alejandro Grimaldo",
+              "pos": "D"
+            },
+            {
+              "num": 6,
+              "nome": "Mikel Merino",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Pablo Gavi",
+              "pos": "M"
+            },
+            {
+              "num": 18,
+              "nome": "Martín Zubimendi",
+              "pos": "M"
+            },
+            {
+              "num": 20,
+              "nome": "Pedri",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Nico Williams",
+              "pos": "F"
+            },
+            {
+              "num": 7,
+              "nome": "Ferran Torres",
+              "pos": "F"
+            },
+            {
+              "num": 11,
+              "nome": "Yéremy Pino",
+              "pos": "M"
+            },
+            {
+              "num": 25,
+              "nome": "Víctor Muñoz",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Borja Iglesias",
+              "pos": "F"
+            }
+          ]
+        },
+        "fora": {
+          "titulares": [
+            {
+              "num": 1,
+              "nome": "Thibaut Courtois",
+              "pos": "G"
+            },
+            {
+              "num": 5,
+              "nome": "Maxim De Cuyper",
+              "pos": "D"
+            },
+            {
+              "num": 4,
+              "nome": "Brandon Mechele",
+              "pos": "D"
+            },
+            {
+              "num": 25,
+              "nome": "Nathan Ngoy",
+              "pos": "D"
+            },
+            {
+              "num": 21,
+              "nome": "Timothy Castagne",
+              "pos": "D"
+            },
+            {
+              "num": 23,
+              "nome": "Nicolas Raskin",
+              "pos": "M"
+            },
+            {
+              "num": 8,
+              "nome": "Youri Tielemans",
+              "pos": "M"
+            },
+            {
+              "num": 11,
+              "nome": "Jérémy Doku",
+              "pos": "M"
+            },
+            {
+              "num": 7,
+              "nome": "Kevin De Bruyne",
+              "pos": "M"
+            },
+            {
+              "num": 10,
+              "nome": "Leandro Trossard",
+              "pos": "M"
+            },
+            {
+              "num": 17,
+              "nome": "Charles De Ketelaere",
+              "pos": "F"
+            }
+          ],
+          "reservas": [
+            {
+              "num": 12,
+              "nome": "Senne Lammens",
+              "pos": "G"
+            },
+            {
+              "num": 13,
+              "nome": "Mike Penders",
+              "pos": "G"
+            },
+            {
+              "num": 3,
+              "nome": "Arthur Theate",
+              "pos": "D"
+            },
+            {
+              "num": 15,
+              "nome": "Thomas Meunier",
+              "pos": "D"
+            },
+            {
+              "num": 16,
+              "nome": "Koni De Winter",
+              "pos": "D"
+            },
+            {
+              "num": 18,
+              "nome": "Joaquin Seys",
+              "pos": "D"
+            },
+            {
+              "num": 19,
+              "nome": "Diego Moreira",
+              "pos": "F"
+            },
+            {
+              "num": 20,
+              "nome": "Hans Vanaken",
+              "pos": "M"
+            },
+            {
+              "num": 22,
+              "nome": "Alexis Saelemaekers",
+              "pos": "F"
+            },
+            {
+              "num": 14,
+              "nome": "Dodi Lukebakio",
+              "pos": "F"
+            },
+            {
+              "num": 6,
+              "nome": "Axel Witsel",
+              "pos": "M"
+            },
+            {
+              "num": 9,
+              "nome": "Romelu Lukaku",
+              "pos": "F"
+            },
+            {
+              "num": 26,
+              "nome": "Matías Fernández-Pardo",
+              "pos": "F"
+            }
+          ]
         }
       }
     },
