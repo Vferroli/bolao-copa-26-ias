@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T19:38:04.749Z",
+  "atualizado_em": "2026-07-10T19:39:08.464Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28407,7 +28407,7 @@
       "id": 98,
       "casa": 1,
       "fora": 0,
-      "min": "37'",
+      "min": "38'",
       "gols": [
         {
           "nome": "F. Ruiz",
