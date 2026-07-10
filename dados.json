@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:59:32.839Z",
+  "atualizado_em": "2026-07-10T21:00:36.057Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28331,6 +28331,16 @@
             }
           ]
         }
+      },
+      "real": {
+        "casa": 2,
+        "fora": 1,
+        "avancou": "spain",
+        "marcadores": [
+          "F. Ruiz",
+          "C. De Ketelaere",
+          "M. Merino"
+        ]
       }
     },
     {
@@ -28402,111 +28412,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 98,
-      "casa": 2,
-      "fora": 1,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "F. Ruiz",
-          "min": 30,
-          "lado": "casa"
-        },
-        {
-          "nome": "C. De Ketelaere",
-          "min": 41,
-          "lado": "fora"
-        },
-        {
-          "nome": "M. Merino",
-          "min": 88,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "F. Torres",
-          "saiu": "Á. Baena",
-          "min": 55,
-          "lado": "casa"
-        },
-        {
-          "entrou": "Pedri",
-          "saiu": "F. Ruiz",
-          "min": 55,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Lukaku",
-          "saiu": "H. Vanaken",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "A. Witsel",
-          "saiu": "L. Trossard",
-          "min": 60,
-          "lado": "fora"
-        },
-        {
-          "entrou": "J. Seys",
-          "saiu": "M. De Cuyper",
-          "min": 61,
-          "lado": "fora"
-        },
-        {
-          "entrou": "S. Lammens",
-          "saiu": "T. Courtois",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Williams",
-          "saiu": "M. Oyarzabal",
-          "min": 79,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Saelemaekers",
-          "saiu": "K. De Bruyne",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Merino",
-          "saiu": "D. Olmo",
-          "min": 86,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "P. Cubarsí",
-          "cor": "amarelo",
-          "min": 43,
-          "lado": "casa"
-        },
-        {
-          "nome": "K. De Bruyne",
-          "cor": "amarelo",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "nome": "A. Laporte",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "nome": "A. Witsel",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
