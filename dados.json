@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T19:43:24.991Z",
+  "atualizado_em": "2026-07-10T19:43:57.552Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28418,6 +28418,14 @@
           "nome": "C. De Ketelaere",
           "min": 41,
           "lado": "fora"
+        }
+      ],
+      "cartoes": [
+        {
+          "nome": "P. Cubarsí",
+          "cor": "amarelo",
+          "min": 43,
+          "lado": "casa"
         }
       ]
     }
