@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:39:49.932Z",
+  "atualizado_em": "2026-07-10T20:41:23.755Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28407,7 +28407,7 @@
       "id": 98,
       "casa": 1,
       "fora": 1,
-      "min": "78'",
+      "min": "79'",
       "gols": [
         {
           "nome": "F. Ruiz",
@@ -28456,6 +28456,12 @@
           "saiu": "T. Courtois",
           "min": 71,
           "lado": "fora"
+        },
+        {
+          "entrou": "N. Williams",
+          "saiu": "M. Oyarzabal",
+          "min": 79,
+          "lado": "casa"
         }
       ],
       "cartoes": [
