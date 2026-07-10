@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:47:58.333Z",
+  "atualizado_em": "2026-07-10T20:48:30.369Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28468,6 +28468,12 @@
           "saiu": "K. De Bruyne",
           "min": 86,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Merino",
+          "saiu": "D. Olmo",
+          "min": 86,
+          "lado": "casa"
         }
       ],
       "cartoes": [
