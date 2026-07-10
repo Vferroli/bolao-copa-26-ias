@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:46:54.348Z",
+  "atualizado_em": "2026-07-10T20:47:26.132Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28470,6 +28470,12 @@
           "cor": "amarelo",
           "min": 43,
           "lado": "casa"
+        },
+        {
+          "nome": "K. De Bruyne",
+          "cor": "amarelo",
+          "min": 85,
+          "lado": "fora"
         }
       ]
     }
