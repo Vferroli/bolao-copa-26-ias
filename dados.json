@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:17:08.035Z",
+  "atualizado_em": "2026-07-10T20:17:40.562Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28418,6 +28418,20 @@
           "nome": "C. De Ketelaere",
           "min": 41,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "F. Torres",
+          "saiu": "Á. Baena",
+          "min": 55,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Pedri",
+          "saiu": "F. Ruiz",
+          "min": 55,
+          "lado": "casa"
         }
       ],
       "cartoes": [
