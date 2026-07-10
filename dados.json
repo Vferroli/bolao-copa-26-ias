@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:43:31.720Z",
+  "atualizado_em": "2026-07-10T20:44:16.222Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28450,18 +28450,6 @@
           "saiu": "M. De Cuyper",
           "min": 61,
           "lado": "fora"
-        },
-        {
-          "entrou": "S. Lammens",
-          "saiu": "T. Courtois",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Williams",
-          "saiu": "M. Oyarzabal",
-          "min": 79,
-          "lado": "casa"
         }
       ],
       "cartoes": [
