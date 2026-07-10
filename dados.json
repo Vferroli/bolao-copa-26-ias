@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-10",
-  "atualizado_em": "2026-07-10T20:32:58.065Z",
+  "atualizado_em": "2026-07-10T20:33:30.263Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28449,6 +28449,12 @@
           "entrou": "J. Seys",
           "saiu": "M. De Cuyper",
           "min": 61,
+          "lado": "fora"
+        },
+        {
+          "entrou": "S. Lammens",
+          "saiu": "T. Courtois",
+          "min": 71,
           "lado": "fora"
         }
       ],
