@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T22:51:26.644Z",
+  "atualizado_em": "2026-07-11T22:51:58.855Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28750,6 +28750,18 @@
           "saiu": "N. O'Reilly",
           "min": 86,
           "lado": "fora"
+        },
+        {
+          "entrou": "M. Rogers",
+          "saiu": "E. Konsa",
+          "min": 89,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Holmgren Pedersen",
+          "saiu": "D. Møller Wolfe",
+          "min": 90,
+          "lado": "casa"
         }
       ]
     }
