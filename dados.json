@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T22:57:49.380Z",
+  "atualizado_em": "2026-07-11T22:58:53.204Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28695,7 +28695,7 @@
       "id": 99,
       "casa": 1,
       "fora": 1,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "A. Schjelderup",
