@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T23:46:43.918Z",
+  "atualizado_em": "2026-07-11T23:47:46.364Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28653,6 +28653,16 @@
             }
           ]
         }
+      },
+      "real": {
+        "casa": 1,
+        "fora": 2,
+        "avancou": "england",
+        "marcadores": [
+          "A. Schjelderup",
+          "J. Bellingham",
+          "J. Bellingham"
+        ]
       }
     },
     {
@@ -28690,111 +28700,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 99,
-      "casa": 1,
-      "fora": 2,
-      "min": "120'+2'",
-      "gols": [
-        {
-          "nome": "A. Schjelderup",
-          "min": 36,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Bellingham",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Bellingham",
-          "min": 93,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "B. Saka",
-          "saiu": "N. Madueke",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Eze",
-          "saiu": "D. Rice",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "entrou": "F. Aursnes",
-          "saiu": "J. Ryerson",
-          "min": 60,
-          "lado": "casa"
-        },
-        {
-          "entrou": "O. Bobb",
-          "saiu": "A. Sørloth",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Nusa",
-          "saiu": "A. Schjelderup",
-          "min": 68,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. James",
-          "saiu": "A. Gordon",
-          "min": 71,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Spence",
-          "saiu": "N. O'Reilly",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Rogers",
-          "saiu": "E. Konsa",
-          "min": 89,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Holmgren Pedersen",
-          "saiu": "D. Møller Wolfe",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Østigard",
-          "saiu": "T. Heggem",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Strand Larsen",
-          "saiu": "E. Haaland",
-          "min": 105,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Burn",
-          "saiu": "J. Bellingham",
-          "min": 111,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "K. Ajer",
-          "cor": "amarelo",
-          "min": 117,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
