@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T22:47:11.926Z",
+  "atualizado_em": "2026-07-11T22:48:15.945Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28695,7 +28695,7 @@
       "id": 99,
       "casa": 1,
       "fora": 1,
-      "min": "85'",
+      "min": "86'",
       "gols": [
         {
           "nome": "A. Schjelderup",
@@ -28743,6 +28743,12 @@
           "entrou": "R. James",
           "saiu": "A. Gordon",
           "min": 71,
+          "lado": "fora"
+        },
+        {
+          "entrou": "D. Spence",
+          "saiu": "N. O'Reilly",
+          "min": 86,
           "lado": "fora"
         }
       ]
