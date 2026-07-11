@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T22:30:13.920Z",
+  "atualizado_em": "2026-07-11T22:30:45.643Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28725,6 +28725,18 @@
           "entrou": "F. Aursnes",
           "saiu": "J. Ryerson",
           "min": 60,
+          "lado": "casa"
+        },
+        {
+          "entrou": "O. Bobb",
+          "saiu": "A. Sørloth",
+          "min": 68,
+          "lado": "casa"
+        },
+        {
+          "entrou": "A. Nusa",
+          "saiu": "A. Schjelderup",
+          "min": 68,
           "lado": "casa"
         }
       ]
