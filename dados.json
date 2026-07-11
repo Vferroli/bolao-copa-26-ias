@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T23:26:27.119Z",
+  "atualizado_em": "2026-07-11T23:28:32.931Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28772,6 +28772,12 @@
           "entrou": "L. Østigard",
           "saiu": "T. Heggem",
           "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "J. Strand Larsen",
+          "saiu": "E. Haaland",
+          "min": 105,
           "lado": "casa"
         }
       ]
