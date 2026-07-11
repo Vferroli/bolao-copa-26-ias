@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T22:32:51.135Z",
+  "atualizado_em": "2026-07-11T22:33:22.866Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28738,6 +28738,12 @@
           "saiu": "A. Schjelderup",
           "min": 68,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. James",
+          "saiu": "A. Gordon",
+          "min": 71,
+          "lado": "fora"
         }
       ]
     }
