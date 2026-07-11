@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T21:51:56.832Z",
+  "atualizado_em": "2026-07-11T22:07:10.151Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28704,6 +28704,20 @@
         },
         {
           "nome": "J. Bellingham",
+          "min": 45,
+          "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "B. Saka",
+          "saiu": "N. Madueke",
+          "min": 45,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Eze",
+          "saiu": "D. Rice",
           "min": 45,
           "lado": "fora"
         }
