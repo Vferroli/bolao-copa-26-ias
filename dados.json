@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T23:34:54.518Z",
+  "atualizado_em": "2026-07-11T23:35:26.867Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28779,6 +28779,12 @@
           "saiu": "E. Haaland",
           "min": 105,
           "lado": "casa"
+        },
+        {
+          "entrou": "D. Burn",
+          "saiu": "J. Bellingham",
+          "min": 111,
+          "lado": "fora"
         }
       ]
     }
