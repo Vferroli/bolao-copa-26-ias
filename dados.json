@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T22:22:21.619Z",
+  "atualizado_em": "2026-07-11T22:22:53.401Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28720,6 +28720,12 @@
           "saiu": "D. Rice",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "entrou": "F. Aursnes",
+          "saiu": "J. Ryerson",
+          "min": 60,
+          "lado": "casa"
         }
       ]
     }
