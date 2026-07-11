@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T23:02:04.072Z",
+  "atualizado_em": "2026-07-11T23:06:15.283Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28760,6 +28760,12 @@
         {
           "entrou": "M. Holmgren Pedersen",
           "saiu": "D. Møller Wolfe",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "L. Østigard",
+          "saiu": "T. Heggem",
           "min": 90,
           "lado": "casa"
         }
