@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-11T22:17:37.465Z",
+  "atualizado_em": "2026-07-11T22:18:09.401Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28706,6 +28706,11 @@
           "nome": "J. Bellingham",
           "min": 45,
           "lado": "fora"
+        },
+        {
+          "nome": "T. Heggem",
+          "min": 55,
+          "lado": "casa"
         }
       ],
       "subs": [
