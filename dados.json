@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:31:38.452Z",
+  "atualizado_em": "2026-07-12T03:32:41.111Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28981,9 +28981,9 @@
   "live": [
     {
       "id": 100,
-      "casa": 1,
+      "casa": 2,
       "fora": 1,
-      "min": "111'",
+      "min": "112'",
       "gols": [
         {
           "nome": "A. Mac Allister",
@@ -28994,6 +28994,11 @@
           "nome": "D. Ndoye",
           "min": 67,
           "lado": "fora"
+        },
+        {
+          "nome": "J. Álvarez",
+          "min": 112,
+          "lado": "casa"
         }
       ],
       "subs": [
