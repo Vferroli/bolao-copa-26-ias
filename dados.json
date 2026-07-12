@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-12T02:55:55.066Z",
+  "atualizado_em": "2026-07-12T02:56:57.611Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28983,7 +28983,7 @@
       "id": 100,
       "casa": 1,
       "fora": 1,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "gols": [
         {
           "nome": "A. Mac Allister",
@@ -29031,6 +29031,12 @@
           "entrou": "M. Muheim",
           "saiu": "F. Rieder",
           "min": 86,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Cömert",
+          "saiu": "R. Rodríguez",
+          "min": 90,
           "lado": "fora"
         }
       ],
