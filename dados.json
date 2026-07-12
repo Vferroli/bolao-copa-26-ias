@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:30:35.094Z",
+  "atualizado_em": "2026-07-12T03:31:06.802Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29060,7 +29060,7 @@
         {
           "entrou": "J. Manuel López",
           "saiu": "L. Paredes",
-          "min": 105,
+          "min": 110,
           "lado": "casa"
         }
       ],
