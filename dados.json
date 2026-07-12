@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:22:13.750Z",
+  "atualizado_em": "2026-07-12T03:22:45.479Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28983,7 +28983,7 @@
       "id": 100,
       "casa": 1,
       "fora": 1,
-      "min": "105'+2'",
+      "min": "Intervalo",
       "gols": [
         {
           "nome": "A. Mac Allister",
