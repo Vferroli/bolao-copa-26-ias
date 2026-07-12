@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-12T02:45:59.726Z",
+  "atualizado_em": "2026-07-12T02:46:31.436Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28983,7 +28983,7 @@
       "id": 100,
       "casa": 1,
       "fora": 1,
-      "min": "84'",
+      "min": "85'",
       "gols": [
         {
           "nome": "A. Mac Allister",
@@ -29001,6 +29001,12 @@
           "entrou": "N. González",
           "saiu": "N. Tagliafico",
           "min": 78,
+          "lado": "casa"
+        },
+        {
+          "entrou": "L. Martínez",
+          "saiu": "R. De Paul",
+          "min": 85,
           "lado": "casa"
         }
       ],
