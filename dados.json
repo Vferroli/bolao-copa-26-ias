@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-12T02:30:17.896Z",
+  "atualizado_em": "2026-07-12T02:30:49.619Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29002,6 +29002,12 @@
           "cor": "amarelo",
           "min": 44,
           "lado": "fora"
+        },
+        {
+          "nome": "L. Paredes",
+          "cor": "amarelo",
+          "min": 69,
+          "lado": "casa"
         }
       ]
     }
