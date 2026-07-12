@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:11:13.212Z",
+  "atualizado_em": "2026-07-12T03:11:45.058Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29044,6 +29044,12 @@
           "saiu": "E. Fernández",
           "min": 90,
           "lado": "casa"
+        },
+        {
+          "entrou": "A. Jashari",
+          "saiu": "D. Zakaria",
+          "min": 96,
+          "lado": "fora"
         }
       ],
       "cartoes": [
