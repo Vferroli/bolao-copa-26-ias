@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:11:45.058Z",
+  "atualizado_em": "2026-07-12T03:12:16.866Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29064,6 +29064,12 @@
           "cor": "vermelho",
           "min": 72,
           "lado": "fora"
+        },
+        {
+          "nome": "T. Almada",
+          "cor": "amarelo",
+          "min": 97,
+          "lado": "casa"
         }
       ]
     }
