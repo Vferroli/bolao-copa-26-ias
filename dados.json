@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:41:05.294Z",
+  "atualizado_em": "2026-07-12T03:42:07.818Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28981,9 +28981,9 @@
   "live": [
     {
       "id": 100,
-      "casa": 2,
+      "casa": 3,
       "fora": 1,
-      "min": "120'+1'",
+      "min": "120'+2'",
       "gols": [
         {
           "nome": "A. Mac Allister",
@@ -28998,6 +28998,11 @@
         {
           "nome": "J. Álvarez",
           "min": 112,
+          "lado": "casa"
+        },
+        {
+          "nome": "L. Martínez",
+          "min": 120,
           "lado": "casa"
         }
       ],
