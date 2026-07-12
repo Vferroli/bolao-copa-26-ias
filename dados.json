@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:22:45.479Z",
+  "atualizado_em": "2026-07-12T03:25:20.389Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29050,6 +29050,12 @@
           "saiu": "D. Zakaria",
           "min": 96,
           "lado": "fora"
+        },
+        {
+          "entrou": "N. Otamendi",
+          "saiu": "C. Romero",
+          "min": 105,
+          "lado": "casa"
         }
       ],
       "cartoes": [
