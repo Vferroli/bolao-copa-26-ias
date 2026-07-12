@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:01:51.005Z",
+  "atualizado_em": "2026-07-12T03:05:28.399Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29038,6 +29038,12 @@
           "saiu": "R. Rodríguez",
           "min": 90,
           "lado": "fora"
+        },
+        {
+          "entrou": "T. Almada",
+          "saiu": "E. Fernández",
+          "min": 90,
+          "lado": "casa"
         }
       ],
       "cartoes": [
