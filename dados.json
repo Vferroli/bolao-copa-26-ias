@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-12T02:28:12.100Z",
+  "atualizado_em": "2026-07-12T02:29:15.132Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28982,13 +28982,18 @@
     {
       "id": 100,
       "casa": 1,
-      "fora": 0,
-      "min": "67'",
+      "fora": 1,
+      "min": "68'",
       "gols": [
         {
           "nome": "A. Mac Allister",
           "min": 10,
           "lado": "casa"
+        },
+        {
+          "nome": "D. Ndoye",
+          "min": 67,
+          "lado": "fora"
         }
       ],
       "cartoes": [
