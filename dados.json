@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:44:13.363Z",
+  "atualizado_em": "2026-07-12T03:45:15.651Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -28975,143 +28975,19 @@
             }
           ]
         }
+      },
+      "real": {
+        "casa": 3,
+        "fora": 1,
+        "avancou": "argentina",
+        "marcadores": [
+          "A. Mac Allister",
+          "D. Ndoye",
+          "J. Álvarez",
+          "L. Martínez"
+        ]
       }
     }
   ],
-  "live": [
-    {
-      "id": 100,
-      "casa": 3,
-      "fora": 1,
-      "min": "120'+4'",
-      "gols": [
-        {
-          "nome": "A. Mac Allister",
-          "min": 10,
-          "lado": "casa"
-        },
-        {
-          "nome": "D. Ndoye",
-          "min": 67,
-          "lado": "fora"
-        },
-        {
-          "nome": "J. Álvarez",
-          "min": 112,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Martínez",
-          "min": 120,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. González",
-          "saiu": "N. Tagliafico",
-          "min": 78,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Martínez",
-          "saiu": "R. De Paul",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Montiel",
-          "saiu": "N. Molina",
-          "min": 85,
-          "lado": "casa"
-        },
-        {
-          "entrou": "S. Widmer",
-          "saiu": "D. Sow",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Z. Amdouni",
-          "saiu": "D. Ndoye",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Muheim",
-          "saiu": "F. Rieder",
-          "min": 86,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Cömert",
-          "saiu": "R. Rodríguez",
-          "min": 90,
-          "lado": "fora"
-        },
-        {
-          "entrou": "T. Almada",
-          "saiu": "E. Fernández",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "A. Jashari",
-          "saiu": "D. Zakaria",
-          "min": 96,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Otamendi",
-          "saiu": "C. Romero",
-          "min": 105,
-          "lado": "casa"
-        },
-        {
-          "entrou": "J. Manuel López",
-          "saiu": "L. Paredes",
-          "min": 110,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Vargas",
-          "saiu": "R. Freuler",
-          "min": 115,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "B. Embolo",
-          "cor": "amarelo",
-          "min": 44,
-          "lado": "fora"
-        },
-        {
-          "nome": "B. Embolo",
-          "cor": "vermelho",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "nome": "T. Almada",
-          "cor": "amarelo",
-          "min": 97,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Martínez",
-          "cor": "amarelo",
-          "min": 98,
-          "lado": "casa"
-        },
-        {
-          "nome": "J. Manuel López",
-          "cor": "amarelo",
-          "min": 114,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
