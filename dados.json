@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-12T02:33:58.304Z",
+  "atualizado_em": "2026-07-12T02:34:30.341Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29001,6 +29001,12 @@
           "nome": "B. Embolo",
           "cor": "amarelo",
           "min": 44,
+          "lado": "fora"
+        },
+        {
+          "nome": "B. Embolo",
+          "cor": "vermelho",
+          "min": 72,
           "lado": "fora"
         }
       ]
