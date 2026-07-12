@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-12",
-  "atualizado_em": "2026-07-12T03:34:46.835Z",
+  "atualizado_em": "2026-07-12T03:35:18.606Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29067,6 +29067,12 @@
           "saiu": "L. Paredes",
           "min": 110,
           "lado": "casa"
+        },
+        {
+          "entrou": "R. Vargas",
+          "saiu": "R. Freuler",
+          "min": 115,
+          "lado": "fora"
         }
       ],
       "cartoes": [
@@ -29092,6 +29098,12 @@
           "nome": "L. Martínez",
           "cor": "amarelo",
           "min": 98,
+          "lado": "casa"
+        },
+        {
+          "nome": "J. Manuel López",
+          "cor": "amarelo",
+          "min": 114,
           "lado": "casa"
         }
       ]
