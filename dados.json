@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-11",
-  "atualizado_em": "2026-07-12T02:47:03.142Z",
+  "atualizado_em": "2026-07-12T02:47:34.927Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29014,6 +29014,18 @@
           "saiu": "N. Molina",
           "min": 85,
           "lado": "casa"
+        },
+        {
+          "entrou": "S. Widmer",
+          "saiu": "D. Sow",
+          "min": 86,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Z. Amdouni",
+          "saiu": "D. Ndoye",
+          "min": 86,
+          "lado": "fora"
         }
       ],
       "cartoes": [
