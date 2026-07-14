@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-14",
-  "atualizado_em": "2026-07-14T20:59:18.891Z",
+  "atualizado_em": "2026-07-14T20:59:50.882Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29303,6 +29303,15 @@
             }
           ]
         }
+      },
+      "real": {
+        "casa": 0,
+        "fora": 2,
+        "avancou": "spain",
+        "marcadores": [
+          "M. Oyarzabal",
+          "P. Porro"
+        ]
       }
     },
     {
@@ -29340,106 +29349,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 101,
-      "casa": 0,
-      "fora": 2,
-      "min": "90'+7'",
-      "gols": [
-        {
-          "nome": "M. Oyarzabal",
-          "min": 22,
-          "lado": "fora"
-        },
-        {
-          "nome": "P. Porro",
-          "min": 58,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "M. Lacroix",
-          "saiu": "W. Saliba",
-          "min": 30,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Koné",
-          "saiu": "A. Rabiot",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Doué",
-          "saiu": "B. Barcola",
-          "min": 57,
-          "lado": "casa"
-        },
-        {
-          "entrou": "T. Hernández",
-          "saiu": "L. Digne",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "R. Cherki",
-          "saiu": "M. Olise",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "F. Torres",
-          "saiu": "M. Oyarzabal",
-          "min": 74,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Merino",
-          "saiu": "D. Olmo",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "Pedri",
-          "saiu": "F. Ruiz",
-          "min": 78,
-          "lado": "fora"
-        },
-        {
-          "entrou": "M. Llorente",
-          "saiu": "P. Porro",
-          "min": 84,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Williams",
-          "saiu": "Á. Baena",
-          "min": 84,
-          "lado": "fora"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "A. Rabiot",
-          "cor": "amarelo",
-          "min": 9,
-          "lado": "casa"
-        },
-        {
-          "nome": "M. Cucurella",
-          "cor": "amarelo",
-          "min": 31,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. Mbappé",
-          "cor": "amarelo",
-          "min": 86,
-          "lado": "casa"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
