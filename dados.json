@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-14",
-  "atualizado_em": "2026-07-14T19:47:14.025Z",
+  "atualizado_em": "2026-07-14T19:48:17.668Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29345,7 +29345,7 @@
       "id": 101,
       "casa": 0,
       "fora": 1,
-      "min": "45'+2'",
+      "min": "45'+3'",
       "gols": [
         {
           "nome": "M. Oyarzabal",
