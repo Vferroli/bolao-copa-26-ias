@@ -28987,6 +28987,74 @@
           "L. Martínez"
         ]
       }
+    },
+    {
+      "id": 101,
+      "num": 101,
+      "fase": "semi",
+      "casa": "france",
+      "fora": "spain",
+      "kickoff": "2026-07-14T19:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        }
+      }
+    },
+    {
+      "id": 102,
+      "num": 102,
+      "fase": "semi",
+      "casa": "england",
+      "fora": "argentina",
+      "kickoff": "2026-07-15T19:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "england",
+          "marcador": "Harry Kane"
+        },
+        "gpt": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "england",
+          "marcador": "Jude Bellingham"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 2,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        }
+      }
     }
   ],
   "live": []
