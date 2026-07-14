@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-14",
-  "atualizado_em": "2026-07-14T19:22:24.336Z",
+  "atualizado_em": "2026-07-14T19:22:56.688Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29345,7 +29345,14 @@
       "id": 101,
       "casa": 0,
       "fora": 1,
-      "min": "22'",
+      "min": "23'",
+      "gols": [
+        {
+          "nome": "M. Oyarzabal",
+          "min": 22,
+          "lado": "fora"
+        }
+      ],
       "cartoes": [
         {
           "nome": "A. Rabiot",
