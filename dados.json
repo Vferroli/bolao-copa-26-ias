@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-14",
-  "atualizado_em": "2026-07-14T20:38:53.203Z",
+  "atualizado_em": "2026-07-14T20:39:55.868Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29345,7 +29345,7 @@
       "id": 101,
       "casa": 0,
       "fora": 2,
-      "min": "77'",
+      "min": "78'",
       "gols": [
         {
           "nome": "M. Oyarzabal",
@@ -29393,6 +29393,18 @@
           "entrou": "F. Torres",
           "saiu": "M. Oyarzabal",
           "min": 74,
+          "lado": "fora"
+        },
+        {
+          "entrou": "M. Merino",
+          "saiu": "D. Olmo",
+          "min": 78,
+          "lado": "fora"
+        },
+        {
+          "entrou": "Pedri",
+          "saiu": "F. Ruiz",
+          "min": 78,
           "lado": "fora"
         }
       ],
