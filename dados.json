@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-14",
-  "atualizado_em": "2026-07-14T19:29:52.633Z",
+  "atualizado_em": "2026-07-14T19:30:25.600Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29351,6 +29351,14 @@
           "nome": "M. Oyarzabal",
           "min": 22,
           "lado": "fora"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "M. Lacroix",
+          "saiu": "W. Saliba",
+          "min": 30,
+          "lado": "casa"
         }
       ],
       "cartoes": [
