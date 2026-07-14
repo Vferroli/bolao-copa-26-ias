@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-14",
-  "atualizado_em": "2026-07-14T19:30:58.214Z",
+  "atualizado_em": "2026-07-14T19:31:30.990Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29367,6 +29367,12 @@
           "cor": "amarelo",
           "min": 9,
           "lado": "casa"
+        },
+        {
+          "nome": "M. Cucurella",
+          "cor": "amarelo",
+          "min": 31,
+          "lado": "fora"
         }
       ]
     }
