@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-14",
-  "atualizado_em": "2026-07-14T20:34:24.992Z",
+  "atualizado_em": "2026-07-14T20:34:57.401Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29345,7 +29345,7 @@
       "id": 101,
       "casa": 0,
       "fora": 2,
-      "min": "72'",
+      "min": "73'",
       "gols": [
         {
           "nome": "M. Oyarzabal",
@@ -29375,6 +29375,18 @@
           "entrou": "D. Doué",
           "saiu": "B. Barcola",
           "min": 57,
+          "lado": "casa"
+        },
+        {
+          "entrou": "T. Hernández",
+          "saiu": "L. Digne",
+          "min": 72,
+          "lado": "casa"
+        },
+        {
+          "entrou": "R. Cherki",
+          "saiu": "M. Olise",
+          "min": 72,
           "lado": "casa"
         }
       ],
