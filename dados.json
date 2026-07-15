@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:45:37.875Z",
+  "atualizado_em": "2026-07-15T20:46:40.951Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29631,13 +29631,18 @@
     {
       "id": 102,
       "casa": 1,
-      "fora": 0,
-      "min": "85'",
+      "fora": 1,
+      "min": "86'",
       "gols": [
         {
           "nome": "A. Gordon",
           "min": 55,
           "lado": "casa"
+        },
+        {
+          "nome": "E. Fernández",
+          "min": 85,
+          "lado": "fora"
         }
       ],
       "subs": [
