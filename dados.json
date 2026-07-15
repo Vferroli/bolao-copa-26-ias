@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:16:56.778Z",
+  "atualizado_em": "2026-07-15T20:18:31.152Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,7 +29632,7 @@
       "id": 102,
       "casa": 1,
       "fora": 0,
-      "min": "56'",
+      "min": "57'",
       "gols": [
         {
           "nome": "A. Gordon",
