@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:55:08.233Z",
+  "atualizado_em": "2026-07-15T20:55:40.820Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,7 +29632,7 @@
       "id": 102,
       "casa": 1,
       "fora": 2,
-      "min": "90'+4'",
+      "min": "90'+5'",
       "gols": [
         {
           "nome": "A. Gordon",
@@ -29717,6 +29717,12 @@
           "nome": "C. Romero",
           "cor": "amarelo",
           "min": 51,
+          "lado": "fora"
+        },
+        {
+          "nome": "R. De Paul",
+          "cor": "amarelo",
+          "min": 90,
           "lado": "fora"
         }
       ]
