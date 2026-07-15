@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:15:52.226Z",
+  "atualizado_em": "2026-07-15T20:16:24.513Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29630,9 +29630,16 @@
   "live": [
     {
       "id": 102,
-      "casa": 0,
+      "casa": 1,
       "fora": 0,
       "min": "55'",
+      "gols": [
+        {
+          "nome": "A. Gordon",
+          "min": 55,
+          "lado": "casa"
+        }
+      ],
       "cartoes": [
         {
           "nome": "E. Anderson",
