@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:24:20.893Z",
+  "atualizado_em": "2026-07-15T20:25:24.147Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,12 +29632,20 @@
       "id": 102,
       "casa": 1,
       "fora": 0,
-      "min": "63'",
+      "min": "64'",
       "gols": [
         {
           "nome": "A. Gordon",
           "min": 55,
           "lado": "casa"
+        }
+      ],
+      "subs": [
+        {
+          "entrou": "N. González",
+          "saiu": "L. Paredes",
+          "min": 64,
+          "lado": "fora"
         }
       ],
       "cartoes": [
