@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:34:59.163Z",
+  "atualizado_em": "2026-07-15T20:35:31.349Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,7 +29632,7 @@
       "id": 102,
       "casa": 1,
       "fora": 0,
-      "min": "73'",
+      "min": "74'",
       "gols": [
         {
           "nome": "A. Gordon",
@@ -29660,14 +29660,14 @@
           "lado": "fora"
         },
         {
-          "entrou": "R. De Paul",
-          "saiu": "G. Simeone",
+          "entrou": "N. Otamendi",
+          "saiu": "L. Martínez",
           "min": 72,
           "lado": "fora"
         },
         {
-          "entrou": "N. Otamendi",
-          "saiu": "L. Martínez",
+          "entrou": "R. De Paul",
+          "saiu": "G. Simeone",
           "min": 72,
           "lado": "fora"
         }
