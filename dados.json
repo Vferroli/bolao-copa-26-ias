@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:43:29.868Z",
+  "atualizado_em": "2026-07-15T20:44:02.277Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29686,7 +29686,7 @@
         {
           "entrou": "N. O'Reilly",
           "saiu": "D. Rice",
-          "min": 83,
+          "min": 82,
           "lado": "casa"
         }
       ],
