@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:42:26.112Z",
+  "atualizado_em": "2026-07-15T20:43:29.868Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,7 +29632,7 @@
       "id": 102,
       "casa": 1,
       "fora": 0,
-      "min": "81'",
+      "min": "83'",
       "gols": [
         {
           "nome": "A. Gordon",
@@ -29676,6 +29676,18 @@
           "saiu": "N. Tagliafico",
           "min": 81,
           "lado": "fora"
+        },
+        {
+          "entrou": "D. Burn",
+          "saiu": "R. James",
+          "min": 82,
+          "lado": "casa"
+        },
+        {
+          "entrou": "N. O'Reilly",
+          "saiu": "D. Rice",
+          "min": 83,
+          "lado": "casa"
         }
       ],
       "cartoes": [
