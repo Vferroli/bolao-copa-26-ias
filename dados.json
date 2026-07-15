@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:56:44.002Z",
+  "atualizado_em": "2026-07-15T20:57:16.227Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29697,6 +29697,18 @@
           "entrou": "N. O'Reilly",
           "saiu": "D. Rice",
           "min": 82,
+          "lado": "casa"
+        },
+        {
+          "entrou": "I. Toney",
+          "saiu": "J. Stones",
+          "min": 90,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Rashford",
+          "saiu": "D. Spence",
+          "min": 90,
           "lado": "casa"
         }
       ],
