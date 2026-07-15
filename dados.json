@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:12:09.306Z",
+  "atualizado_em": "2026-07-15T20:12:41.465Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,7 +29632,7 @@
       "id": 102,
       "casa": 0,
       "fora": 0,
-      "min": "51'",
+      "min": "52'",
       "cartoes": [
         {
           "nome": "E. Anderson",
@@ -29644,6 +29644,12 @@
           "nome": "L. Martínez",
           "cor": "amarelo",
           "min": 42,
+          "lado": "fora"
+        },
+        {
+          "nome": "C. Romero",
+          "cor": "amarelo",
+          "min": 51,
           "lado": "fora"
         }
       ]
