@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:32:49.462Z",
+  "atualizado_em": "2026-07-15T20:33:21.573Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29645,6 +29645,24 @@
           "entrou": "N. González",
           "saiu": "L. Paredes",
           "min": 64,
+          "lado": "fora"
+        },
+        {
+          "entrou": "R. De Paul",
+          "saiu": "G. Simeone",
+          "min": 72,
+          "lado": "fora"
+        },
+        {
+          "entrou": "E. Konsa",
+          "saiu": "A. Gordon",
+          "min": 72,
+          "lado": "casa"
+        },
+        {
+          "entrou": "G. Montiel",
+          "saiu": "N. Molina",
+          "min": 72,
           "lado": "fora"
         }
       ],
