@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T19:39:26.464Z",
+  "atualizado_em": "2026-07-15T19:39:58.757Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,7 +29632,7 @@
       "id": 102,
       "casa": 0,
       "fora": 0,
-      "min": "39'",
+      "min": "40'",
       "cartoes": [
         {
           "nome": "E. Anderson",
