@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T21:03:12.171Z",
+  "atualizado_em": "2026-07-15T21:03:44.389Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29624,120 +29624,18 @@
             }
           ]
         }
+      },
+      "real": {
+        "casa": 1,
+        "fora": 2,
+        "avancou": "argentina",
+        "marcadores": [
+          "A. Gordon",
+          "E. Fernández",
+          "L. Martínez"
+        ]
       }
     }
   ],
-  "live": [
-    {
-      "id": 102,
-      "casa": 1,
-      "fora": 2,
-      "min": "90'+12'",
-      "gols": [
-        {
-          "nome": "A. Gordon",
-          "min": 55,
-          "lado": "casa"
-        },
-        {
-          "nome": "E. Fernández",
-          "min": 85,
-          "lado": "fora"
-        },
-        {
-          "nome": "L. Martínez",
-          "min": 90,
-          "lado": "fora"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "N. González",
-          "saiu": "L. Paredes",
-          "min": 64,
-          "lado": "fora"
-        },
-        {
-          "entrou": "E. Konsa",
-          "saiu": "A. Gordon",
-          "min": 72,
-          "lado": "casa"
-        },
-        {
-          "entrou": "G. Montiel",
-          "saiu": "N. Molina",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "R. De Paul",
-          "saiu": "G. Simeone",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "N. Otamendi",
-          "saiu": "L. Martínez",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
-          "entrou": "L. Martínez",
-          "saiu": "N. Tagliafico",
-          "min": 81,
-          "lado": "fora"
-        },
-        {
-          "entrou": "D. Burn",
-          "saiu": "R. James",
-          "min": 82,
-          "lado": "casa"
-        },
-        {
-          "entrou": "N. O'Reilly",
-          "saiu": "D. Rice",
-          "min": 82,
-          "lado": "casa"
-        },
-        {
-          "entrou": "I. Toney",
-          "saiu": "J. Stones",
-          "min": 90,
-          "lado": "casa"
-        },
-        {
-          "entrou": "M. Rashford",
-          "saiu": "D. Spence",
-          "min": 90,
-          "lado": "casa"
-        }
-      ],
-      "cartoes": [
-        {
-          "nome": "E. Anderson",
-          "cor": "amarelo",
-          "min": 37,
-          "lado": "casa"
-        },
-        {
-          "nome": "L. Martínez",
-          "cor": "amarelo",
-          "min": 42,
-          "lado": "fora"
-        },
-        {
-          "nome": "C. Romero",
-          "cor": "amarelo",
-          "min": 51,
-          "lado": "fora"
-        },
-        {
-          "nome": "R. De Paul",
-          "cor": "amarelo",
-          "min": 90,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
