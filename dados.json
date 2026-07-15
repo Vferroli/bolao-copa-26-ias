@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:33:53.973Z",
+  "atualizado_em": "2026-07-15T20:34:26.714Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29648,12 +29648,6 @@
           "lado": "fora"
         },
         {
-          "entrou": "R. De Paul",
-          "saiu": "G. Simeone",
-          "min": 72,
-          "lado": "fora"
-        },
-        {
           "entrou": "E. Konsa",
           "saiu": "A. Gordon",
           "min": 72,
@@ -29668,6 +29662,12 @@
         {
           "entrou": "N. Otamendi",
           "saiu": "L. Martínez",
+          "min": 72,
+          "lado": "fora"
+        },
+        {
+          "entrou": "R. De Paul",
+          "saiu": "G. Simeone",
           "min": 72,
           "lado": "fora"
         }
