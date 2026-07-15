@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-15",
-  "atualizado_em": "2026-07-15T20:33:21.573Z",
+  "atualizado_em": "2026-07-15T20:33:53.973Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29632,7 +29632,7 @@
       "id": 102,
       "casa": 1,
       "fora": 0,
-      "min": "72'",
+      "min": "73'",
       "gols": [
         {
           "nome": "A. Gordon",
@@ -29662,6 +29662,12 @@
         {
           "entrou": "G. Montiel",
           "saiu": "N. Molina",
+          "min": 72,
+          "lado": "fora"
+        },
+        {
+          "entrou": "N. Otamendi",
+          "saiu": "L. Martínez",
           "min": 72,
           "lado": "fora"
         }
