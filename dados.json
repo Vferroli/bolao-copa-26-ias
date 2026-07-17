@@ -29635,6 +29635,74 @@
           "L. Martínez"
         ]
       }
+    },
+    {
+      "id": 103,
+      "num": 103,
+      "fase": "terceiro",
+      "casa": "france",
+      "fora": "england",
+      "kickoff": "2026-07-18T19:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 3,
+          "fora": 2,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gpt": {
+          "casa": 3,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "gemini": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        },
+        "grok": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "france",
+          "marcador": "Kylian Mbappé"
+        }
+      }
+    },
+    {
+      "id": 104,
+      "num": 104,
+      "fase": "final",
+      "casa": "spain",
+      "fora": "argentina",
+      "kickoff": "2026-07-19T19:00:00Z",
+      "palpites": {
+        "claude": {
+          "casa": 2,
+          "fora": 1,
+          "avanca": "spain",
+          "marcador": "Mikel Oyarzabal"
+        },
+        "gpt": {
+          "casa": 1,
+          "fora": 0,
+          "avanca": "spain",
+          "marcador": "Mikel Oyarzabal"
+        },
+        "gemini": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "argentina",
+          "marcador": "Lionel Messi"
+        },
+        "grok": {
+          "casa": 1,
+          "fora": 1,
+          "avanca": "argentina",
+          "marcador": "Lautaro Martínez"
+        }
+      }
     }
   ],
   "live": []
