@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-18",
-  "atualizado_em": "2026-07-18T22:30:20.621Z",
+  "atualizado_em": "2026-07-18T23:02:32.865Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29668,6 +29668,23 @@
           "avanca": "france",
           "marcador": "Kylian Mbappé"
         }
+      },
+      "real": {
+        "casa": 4,
+        "fora": 6,
+        "avancou": "england",
+        "marcadores": [
+          "D. Rice",
+          "E. Konsa",
+          "B. Saka",
+          "B. Saka",
+          "K. Mbappé",
+          "B. Barcola",
+          "K. Mbappé",
+          "B. Saka",
+          "O. Dembélé",
+          "J. Bellingham"
+        ]
       }
     },
     {
