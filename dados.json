@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-18",
-  "atualizado_em": "2026-07-18T21:46:52.711Z",
+  "atualizado_em": "2026-07-18T21:47:24.593Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29725,6 +29725,11 @@
         {
           "nome": "B. Saka",
           "min": 37,
+          "lado": "fora"
+        },
+        {
+          "nome": "B. Saka",
+          "min": 45,
           "lado": "fora"
         }
       ]
