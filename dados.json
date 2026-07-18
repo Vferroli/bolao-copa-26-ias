@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-18",
-  "atualizado_em": "2026-07-18T22:29:48.919Z",
+  "atualizado_em": "2026-07-18T22:30:20.621Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29705,81 +29705,5 @@
       }
     }
   ],
-  "live": [
-    {
-      "id": 103,
-      "casa": 3,
-      "fora": 4,
-      "min": "67'",
-      "gols": [
-        {
-          "nome": "D. Rice",
-          "min": 3,
-          "lado": "fora"
-        },
-        {
-          "nome": "E. Konsa",
-          "min": 18,
-          "lado": "fora"
-        },
-        {
-          "nome": "B. Saka",
-          "min": 37,
-          "lado": "fora"
-        },
-        {
-          "nome": "B. Saka",
-          "min": 45,
-          "lado": "fora"
-        },
-        {
-          "nome": "K. Mbappé",
-          "min": 48,
-          "lado": "casa"
-        },
-        {
-          "nome": "B. Barcola",
-          "min": 54,
-          "lado": "casa"
-        },
-        {
-          "nome": "K. Mbappé",
-          "min": 66,
-          "lado": "casa"
-        }
-      ],
-      "subs": [
-        {
-          "entrou": "O. Dembélé",
-          "saiu": "R. Cherki",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "B. Barcola",
-          "saiu": "D. Doué",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "L. Digne",
-          "saiu": "T. Hernández",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "D. Upamecano",
-          "saiu": "I. Konaté",
-          "min": 45,
-          "lado": "casa"
-        },
-        {
-          "entrou": "O. Watkins",
-          "saiu": "M. Rashford",
-          "min": 45,
-          "lado": "fora"
-        }
-      ]
-    }
-  ]
+  "live": []
 }
