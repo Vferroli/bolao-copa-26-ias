@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-18",
-  "atualizado_em": "2026-07-18T22:28:46.259Z",
+  "atualizado_em": "2026-07-18T22:29:48.919Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29708,9 +29708,9 @@
   "live": [
     {
       "id": 103,
-      "casa": 2,
+      "casa": 3,
       "fora": 4,
-      "min": "65'",
+      "min": "67'",
       "gols": [
         {
           "nome": "D. Rice",
@@ -29740,6 +29740,11 @@
         {
           "nome": "B. Barcola",
           "min": 54,
+          "lado": "casa"
+        },
+        {
+          "nome": "K. Mbappé",
+          "min": 66,
           "lado": "casa"
         }
       ],
