@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-18",
-  "atualizado_em": "2026-07-18T21:36:55.629Z",
+  "atualizado_em": "2026-07-18T21:37:27.343Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29709,7 +29709,7 @@
     {
       "id": 103,
       "casa": 0,
-      "fora": 2,
+      "fora": 3,
       "min": "37'",
       "gols": [
         {
@@ -29720,6 +29720,11 @@
         {
           "nome": "E. Konsa",
           "min": 18,
+          "lado": "fora"
+        },
+        {
+          "nome": "B. Saka",
+          "min": 37,
           "lado": "fora"
         }
       ]
