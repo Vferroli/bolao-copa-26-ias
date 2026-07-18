@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-18",
-  "atualizado_em": "2026-07-18T21:35:53.144Z",
+  "atualizado_em": "2026-07-18T21:36:55.629Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29710,7 +29710,7 @@
       "id": 103,
       "casa": 0,
       "fora": 2,
-      "min": "36'",
+      "min": "37'",
       "gols": [
         {
           "nome": "D. Rice",
