@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-18",
-  "atualizado_em": "2026-07-18T21:18:37.156Z",
+  "atualizado_em": "2026-07-18T21:19:09.002Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -29709,12 +29709,17 @@
     {
       "id": 103,
       "casa": 0,
-      "fora": 1,
+      "fora": 2,
       "min": "19'",
       "gols": [
         {
           "nome": "D. Rice",
           "min": 3,
+          "lado": "fora"
+        },
+        {
+          "nome": "E. Konsa",
+          "min": 18,
           "lado": "fora"
         }
       ]
