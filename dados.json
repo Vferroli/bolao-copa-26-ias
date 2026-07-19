@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T21:14:05.577Z",
+  "atualizado_em": "2026-07-19T21:15:40.640Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30010,7 +30010,7 @@
       "id": 104,
       "casa": 0,
       "fora": 0,
-      "min": "90'+7'",
+      "min": "90'+8'",
       "subs": [
         {
           "entrou": "N. Otamendi",
