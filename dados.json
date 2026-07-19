@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T21:31:47.809Z",
+  "atualizado_em": "2026-07-19T21:32:51.712Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30010,7 +30010,7 @@
       "id": 104,
       "casa": 0,
       "fora": 0,
-      "min": "101'",
+      "min": "102'",
       "subs": [
         {
           "entrou": "N. Otamendi",
@@ -30077,6 +30077,12 @@
           "saiu": "A. Laporte",
           "min": 99,
           "lado": "casa"
+        },
+        {
+          "entrou": "M. Senesi",
+          "saiu": "J. Álvarez",
+          "min": 102,
+          "lado": "fora"
         }
       ],
       "cartoes": [
