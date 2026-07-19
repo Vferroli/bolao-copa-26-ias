@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T18:35:18.808Z",
+  "atualizado_em": "2026-07-19T19:06:50.545Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30005,5 +30005,12 @@
       }
     }
   ],
-  "live": []
+  "live": [
+    {
+      "id": 104,
+      "casa": 0,
+      "fora": 0,
+      "min": "1'"
+    }
+  ]
 }
