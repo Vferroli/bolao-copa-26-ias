@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T20:38:27.297Z",
+  "atualizado_em": "2026-07-19T20:39:30.785Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30010,7 +30010,7 @@
       "id": 104,
       "casa": 0,
       "fora": 0,
-      "min": "61'",
+      "min": "62'",
       "subs": [
         {
           "entrou": "N. Otamendi",
@@ -30029,6 +30029,18 @@
           "saiu": "G. Montiel",
           "min": 58,
           "lado": "fora"
+        },
+        {
+          "entrou": "F. Torres",
+          "saiu": "M. Oyarzabal",
+          "min": 62,
+          "lado": "casa"
+        },
+        {
+          "entrou": "Pedri",
+          "saiu": "F. Ruiz",
+          "min": 62,
+          "lado": "casa"
         }
       ],
       "cartoes": [
