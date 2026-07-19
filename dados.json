@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T21:12:29.204Z",
+  "atualizado_em": "2026-07-19T21:13:01.855Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30010,7 +30010,7 @@
       "id": 104,
       "casa": 0,
       "fora": 0,
-      "min": "90'+5'",
+      "min": "90'+6'",
       "subs": [
         {
           "entrou": "N. Otamendi",
@@ -30087,14 +30087,14 @@
           "lado": "fora"
         },
         {
-          "nome": "E. Fernández",
-          "cor": "vermelho",
+          "nome": "C. Romero",
+          "cor": "amarelo",
           "min": 90,
           "lado": "fora"
         },
         {
-          "nome": "C. Romero",
-          "cor": "amarelo",
+          "nome": "E. Fernández",
+          "cor": "vermelho",
           "min": 90,
           "lado": "fora"
         }
