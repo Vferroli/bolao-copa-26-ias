@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T20:28:40.139Z",
+  "atualizado_em": "2026-07-19T20:29:11.911Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30030,6 +30030,12 @@
           "nome": "L. Martínez",
           "cor": "amarelo",
           "min": 41,
+          "lado": "fora"
+        },
+        {
+          "nome": "L. Paredes",
+          "cor": "amarelo",
+          "min": 52,
           "lado": "fora"
         }
       ]
