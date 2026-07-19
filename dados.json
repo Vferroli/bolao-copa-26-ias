@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T21:57:48.503Z",
+  "atualizado_em": "2026-07-19T21:58:52.383Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30010,7 +30010,7 @@
       "id": 104,
       "casa": 1,
       "fora": 0,
-      "min": "120'+1'",
+      "min": "120'+2'",
       "gols": [
         {
           "nome": "F. Torres",
