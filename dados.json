@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T21:28:35.586Z",
+  "atualizado_em": "2026-07-19T21:29:39.061Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30064,6 +30064,12 @@
           "entrou": "M. Merino",
           "saiu": "D. Olmo",
           "min": 75,
+          "lado": "casa"
+        },
+        {
+          "entrou": "M. Zubimendi",
+          "saiu": "Rodri",
+          "min": 99,
           "lado": "casa"
         }
       ],
