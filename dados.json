@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T20:59:11.829Z",
+  "atualizado_em": "2026-07-19T21:00:15.419Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30010,7 +30010,7 @@
       "id": 104,
       "casa": 0,
       "fora": 0,
-      "min": "82'",
+      "min": "83'",
       "subs": [
         {
           "entrou": "N. Otamendi",
@@ -30078,6 +30078,12 @@
           "nome": "L. Paredes",
           "cor": "amarelo",
           "min": 52,
+          "lado": "fora"
+        },
+        {
+          "nome": "E. Fernández",
+          "cor": "amarelo",
+          "min": 82,
           "lado": "fora"
         }
       ]
