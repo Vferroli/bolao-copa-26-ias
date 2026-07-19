@@ -1,7 +1,7 @@
 {
   "torneio": "Copa do Mundo 2026",
   "atualizado": "2026-07-19",
-  "atualizado_em": "2026-07-19T20:46:56.825Z",
+  "atualizado_em": "2026-07-19T20:48:00.605Z",
   "fuso": "America/Sao_Paulo",
   "ao_vivo": {
     "fonte": "thesportsdb",
@@ -30010,7 +30010,7 @@
       "id": 104,
       "casa": 0,
       "fora": 0,
-      "min": "69'",
+      "min": "71'",
       "subs": [
         {
           "entrou": "N. Otamendi",
@@ -30041,6 +30041,18 @@
           "saiu": "F. Ruiz",
           "min": 62,
           "lado": "casa"
+        },
+        {
+          "entrou": "F. Medina",
+          "saiu": "C. Romero",
+          "min": 70,
+          "lado": "fora"
+        },
+        {
+          "entrou": "G. Simeone",
+          "saiu": "R. De Paul",
+          "min": 70,
+          "lado": "fora"
         }
       ],
       "cartoes": [
